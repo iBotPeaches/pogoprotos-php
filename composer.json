@@ -4,6 +4,7 @@
   "type": "library",
   "require": {
     "php": ">=5.5",
+    "google/protobuf": "^3.4",
     "protobuf-php/protobuf": "~0.1"
   },
   "keywords": [
