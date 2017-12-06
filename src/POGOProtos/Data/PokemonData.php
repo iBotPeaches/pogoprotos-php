@@ -161,6 +161,18 @@ class PokemonData extends \Google\Protobuf\Internal\Message
      * <code>bool hatched_from_egg = 38;</code>
      */
     private $hatched_from_egg = false;
+    /**
+     * <code>int32 coins_returned = 39;</code>
+     */
+    private $coins_returned = 0;
+    /**
+     * <code>int64 deployed_duration_ms = 40;</code>
+     */
+    private $deployed_duration_ms = 0;
+    /**
+     * <code>int64 deployed_returned_timestamp_ms = 41;</code>
+     */
+    private $deployed_returned_timestamp_ms = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\PokemonData::initOnce();
@@ -794,6 +806,57 @@ class PokemonData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->hatched_from_egg = $var;
+    }
+
+    /**
+     * <code>int32 coins_returned = 39;</code>
+     */
+    public function getCoinsReturned()
+    {
+        return $this->coins_returned;
+    }
+
+    /**
+     * <code>int32 coins_returned = 39;</code>
+     */
+    public function setCoinsReturned($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->coins_returned = $var;
+    }
+
+    /**
+     * <code>int64 deployed_duration_ms = 40;</code>
+     */
+    public function getDeployedDurationMs()
+    {
+        return $this->deployed_duration_ms;
+    }
+
+    /**
+     * <code>int64 deployed_duration_ms = 40;</code>
+     */
+    public function setDeployedDurationMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->deployed_duration_ms = $var;
+    }
+
+    /**
+     * <code>int64 deployed_returned_timestamp_ms = 41;</code>
+     */
+    public function getDeployedReturnedTimestampMs()
+    {
+        return $this->deployed_returned_timestamp_ms;
+    }
+
+    /**
+     * <code>int64 deployed_returned_timestamp_ms = 41;</code>
+     */
+    public function setDeployedReturnedTimestampMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->deployed_returned_timestamp_ms = $var;
     }
 
 }

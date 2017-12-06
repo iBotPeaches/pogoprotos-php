@@ -53,6 +53,10 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
      * <code>int32 num_players_in_lobby = 10;</code>
      */
     private $num_players_in_lobby = 0;
+    /**
+     * <code>int64 server_ms = 11;</code>
+     */
+    private $server_ms = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\GetRaidDetailsResponse::initOnce();
@@ -227,6 +231,23 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->num_players_in_lobby = $var;
+    }
+
+    /**
+     * <code>int64 server_ms = 11;</code>
+     */
+    public function getServerMs()
+    {
+        return $this->server_ms;
+    }
+
+    /**
+     * <code>int64 server_ms = 11;</code>
+     */
+    public function setServerMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->server_ms = $var;
     }
 
 }

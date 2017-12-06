@@ -25,5 +25,9 @@ class Costume
      * <code>ONE_YEAR_ANNIVERSARY = 3;</code>
      */
     const ONE_YEAR_ANNIVERSARY = 3;
+    /**
+     * <code>HALLOWEEN_2017 = 4;</code>
+     */
+    const HALLOWEEN_2017 = 4;
 }
 

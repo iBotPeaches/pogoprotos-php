@@ -49,6 +49,14 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
      * <code>int64 spawn_time_ms = 10;</code>
      */
     private $spawn_time_ms = 0;
+    /**
+     * <code>bool is_cancelled = 11;</code>
+     */
+    private $is_cancelled = false;
+    /**
+     * <code>.POGOProtos.Data.PokemonData raid_pokemon = 12;</code>
+     */
+    private $raid_pokemon = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Inventory\ExclusiveTicketInfo::initOnce();
@@ -206,6 +214,40 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->spawn_time_ms = $var;
+    }
+
+    /**
+     * <code>bool is_cancelled = 11;</code>
+     */
+    public function getIsCancelled()
+    {
+        return $this->is_cancelled;
+    }
+
+    /**
+     * <code>bool is_cancelled = 11;</code>
+     */
+    public function setIsCancelled($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_cancelled = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.PokemonData raid_pokemon = 12;</code>
+     */
+    public function getRaidPokemon()
+    {
+        return $this->raid_pokemon;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.PokemonData raid_pokemon = 12;</code>
+     */
+    public function setRaidPokemon(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
+        $this->raid_pokemon = $var;
     }
 
 }

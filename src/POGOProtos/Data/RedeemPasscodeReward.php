@@ -42,7 +42,7 @@ class RedeemPasscodeReward extends \Google\Protobuf\Internal\Message
      */
     private $pokecoins = 0;
     /**
-     * <code>repeated .POGOProtos.Enums.GymBadgeType badges = 8;</code>
+     * <code>repeated .POGOProtos.Enums.BadgeType badges = 8;</code>
      */
     private $badges;
 
@@ -171,7 +171,7 @@ class RedeemPasscodeReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.GymBadgeType badges = 8;</code>
+     * <code>repeated .POGOProtos.Enums.BadgeType badges = 8;</code>
      */
     public function getBadges()
     {
@@ -179,11 +179,11 @@ class RedeemPasscodeReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.GymBadgeType badges = 8;</code>
+     * <code>repeated .POGOProtos.Enums.BadgeType badges = 8;</code>
      */
     public function setBadges(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\GymBadgeType::class);
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\BadgeType::class);
         $this->badges = $var;
     }
 

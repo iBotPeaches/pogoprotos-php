@@ -29,5 +29,9 @@ class NotificationCategory
      * <code>EXCLUSIVE_RAID_INVITE = 4;</code>
      */
     const EXCLUSIVE_RAID_INVITE = 4;
+    /**
+     * <code>EXCLUSIVE_RAID_CANCELLATION = 5;</code>
+     */
+    const EXCLUSIVE_RAID_CANCELLATION = 5;
 }
 

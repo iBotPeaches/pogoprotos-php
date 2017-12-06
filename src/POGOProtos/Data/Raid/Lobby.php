@@ -53,6 +53,10 @@ class Lobby extends \Google\Protobuf\Internal\Message
      * <code>int64 creation_ms = 11;</code>
      */
     private $creation_ms = 0;
+    /**
+     * <code>int32 battle_plfe_instance = 12;</code>
+     */
+    private $battle_plfe_instance = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Raid\Lobby::initOnce();
@@ -227,6 +231,23 @@ class Lobby extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->creation_ms = $var;
+    }
+
+    /**
+     * <code>int32 battle_plfe_instance = 12;</code>
+     */
+    public function getBattlePlfeInstance()
+    {
+        return $this->battle_plfe_instance;
+    }
+
+    /**
+     * <code>int32 battle_plfe_instance = 12;</code>
+     */
+    public function setBattlePlfeInstance($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->battle_plfe_instance = $var;
     }
 
 }

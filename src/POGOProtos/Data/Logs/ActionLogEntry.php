@@ -130,6 +130,23 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
         $this->writeOneof(6, $var);
     }
 
+    /**
+     * <code>.POGOProtos.Data.Logs.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     */
+    public function getPasscodeRewards()
+    {
+        return $this->readOneof(7);
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Logs.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     */
+    public function setPasscodeRewards(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\PasscodeRewardsLogEntry::class);
+        $this->writeOneof(7, $var);
+    }
+
     public function getAction()
     {
         return $this->Action;

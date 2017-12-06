@@ -483,6 +483,14 @@ class RequestType
     const ATTACK_RAID = 166;
     /**
      * <pre>
+     * Not yet released.
+     * </pre>
+     *
+     * <code>AWARD_POKECOIN = 167;</code>
+     */
+    const AWARD_POKECOIN = 167;
+    /**
+     * <pre>
      * Implemented [R &amp; M]
      * </pre>
      *

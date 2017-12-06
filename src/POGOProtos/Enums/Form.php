@@ -125,5 +125,37 @@ class Form
      * <code>UNOWN_QUESTION_MARK = 28;</code>
      */
     const UNOWN_QUESTION_MARK = 28;
+    /**
+     * <code>CASTFORM_NORMAL = 29;</code>
+     */
+    const CASTFORM_NORMAL = 29;
+    /**
+     * <code>CASTFORM_SUNNY = 30;</code>
+     */
+    const CASTFORM_SUNNY = 30;
+    /**
+     * <code>CASTFORM_RAINY = 31;</code>
+     */
+    const CASTFORM_RAINY = 31;
+    /**
+     * <code>CASTFORM_SNOWY = 32;</code>
+     */
+    const CASTFORM_SNOWY = 32;
+    /**
+     * <code>DEOXYS_NORMAL = 33;</code>
+     */
+    const DEOXYS_NORMAL = 33;
+    /**
+     * <code>DEOXYS_ATTACK = 34;</code>
+     */
+    const DEOXYS_ATTACK = 34;
+    /**
+     * <code>DEOXYS_DEFENSE = 35;</code>
+     */
+    const DEOXYS_DEFENSE = 35;
+    /**
+     * <code>DEOXYS_SPEED = 36;</code>
+     */
+    const DEOXYS_SPEED = 36;
 }
 

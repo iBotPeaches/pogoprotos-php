@@ -25,6 +25,10 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
      * <code>int32 candy_cost = 3;</code>
      */
     private $candy_cost = 0;
+    /**
+     * <code>float km_buddy_distance_requirement = 4;</code>
+     */
+    private $km_buddy_distance_requirement = 0.0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\Master\Pokemon\EvolutionBranch::initOnce();
@@ -80,6 +84,23 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->candy_cost = $var;
+    }
+
+    /**
+     * <code>float km_buddy_distance_requirement = 4;</code>
+     */
+    public function getKmBuddyDistanceRequirement()
+    {
+        return $this->km_buddy_distance_requirement;
+    }
+
+    /**
+     * <code>float km_buddy_distance_requirement = 4;</code>
+     */
+    public function setKmBuddyDistanceRequirement($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->km_buddy_distance_requirement = $var;
     }
 
 }

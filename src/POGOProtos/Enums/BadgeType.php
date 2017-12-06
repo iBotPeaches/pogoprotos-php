@@ -190,6 +190,10 @@ class BadgeType
      */
     const BADGE_PLACE_HOLDER = 44;
     /**
+     * <code>BADGE_POKEDEX_ENTRIES_GEN3 = 45;</code>
+     */
+    const BADGE_POKEDEX_ENTRIES_GEN3 = 45;
+    /**
      * <code>BADGE_EVENT_MIN = 2000;</code>
      */
     const BADGE_EVENT_MIN = 2000;

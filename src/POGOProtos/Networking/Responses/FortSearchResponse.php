@@ -61,6 +61,10 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Inventory.Loot team_bonus_loot = 12;</code>
      */
     private $team_bonus_loot = null;
+    /**
+     * <code>string fort_id = 13;</code>
+     */
+    private $fort_id = '';
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\FortSearchResponse::initOnce();
@@ -269,6 +273,23 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\Loot::class);
         $this->team_bonus_loot = $var;
+    }
+
+    /**
+     * <code>string fort_id = 13;</code>
+     */
+    public function getFortId()
+    {
+        return $this->fort_id;
+    }
+
+    /**
+     * <code>string fort_id = 13;</code>
+     */
+    public function setFortId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->fort_id = $var;
     }
 
 }

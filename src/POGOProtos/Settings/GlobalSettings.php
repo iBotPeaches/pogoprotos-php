@@ -69,6 +69,14 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Settings.NotificationSettings notification_settings = 15;</code>
      */
     private $notification_settings = null;
+    /**
+     * <code>repeated string client_app_blacklist = 16;</code>
+     */
+    private $client_app_blacklist;
+    /**
+     * <code>.POGOProtos.Settings.ClientPerformanceSettings client_perf_settings = 17;</code>
+     */
+    private $client_perf_settings = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\GlobalSettings::initOnce();
@@ -311,6 +319,40 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\NotificationSettings::class);
         $this->notification_settings = $var;
+    }
+
+    /**
+     * <code>repeated string client_app_blacklist = 16;</code>
+     */
+    public function getClientAppBlacklist()
+    {
+        return $this->client_app_blacklist;
+    }
+
+    /**
+     * <code>repeated string client_app_blacklist = 16;</code>
+     */
+    public function setClientAppBlacklist(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->client_app_blacklist = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.ClientPerformanceSettings client_perf_settings = 17;</code>
+     */
+    public function getClientPerfSettings()
+    {
+        return $this->client_perf_settings;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.ClientPerformanceSettings client_perf_settings = 17;</code>
+     */
+    public function setClientPerfSettings(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\ClientPerformanceSettings::class);
+        $this->client_perf_settings = $var;
     }
 
 }
