@@ -73,6 +73,10 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Settings.Master.Item.FortModifierAttributes fort_modifier = 15;</code>
      */
     private $fort_modifier = null;
+    /**
+     * <code>.POGOProtos.Settings.Master.Item.StardustBoostAttributes stardust_boost = 16;</code>
+     */
+    private $stardust_boost = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\Master\ItemSettings::initOnce();
@@ -332,6 +336,23 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\FortModifierAttributes::class);
         $this->fort_modifier = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.Item.StardustBoostAttributes stardust_boost = 16;</code>
+     */
+    public function getStardustBoost()
+    {
+        return $this->stardust_boost;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.Item.StardustBoostAttributes stardust_boost = 16;</code>
+     */
+    public function setStardustBoost(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\StardustBoostAttributes::class);
+        $this->stardust_boost = $var;
     }
 
 }

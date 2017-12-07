@@ -15,7 +15,7 @@ class GetStoreItemsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
      * <pre>
-     *unconfirmed
+     * Unconfirmed
      * </pre>
      *
      * <code>.POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Status status = 1;</code>
@@ -53,7 +53,7 @@ class GetStoreItemsResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * <pre>
-     *unconfirmed
+     * Unconfirmed
      * </pre>
      *
      * <code>.POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Status status = 1;</code>
@@ -65,7 +65,7 @@ class GetStoreItemsResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * <pre>
-     *unconfirmed
+     * Unconfirmed
      * </pre>
      *
      * <code>.POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Status status = 1;</code>

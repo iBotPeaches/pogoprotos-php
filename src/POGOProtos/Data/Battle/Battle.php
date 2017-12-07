@@ -37,6 +37,10 @@ class Battle extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 6;</code>
      */
     private $attacker = null;
+    /**
+     * <code>.POGOProtos.Enums.WeatherCondition weather_condition = 7;</code>
+     */
+    private $weather_condition = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Battle\Battle::initOnce();
@@ -143,6 +147,23 @@ class Battle extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleParticipant::class);
         $this->attacker = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.WeatherCondition weather_condition = 7;</code>
+     */
+    public function getWeatherCondition()
+    {
+        return $this->weather_condition;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.WeatherCondition weather_condition = 7;</code>
+     */
+    public function setWeatherCondition($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\WeatherCondition::class);
+        $this->weather_condition = $var;
     }
 
 }

@@ -73,5 +73,9 @@ class ItemCategory
      * <code>ITEM_CATEGORY_RAID_TICKET = 15;</code>
      */
     const ITEM_CATEGORY_RAID_TICKET = 15;
+    /**
+     * <code>ITEM_CATEGORY_STARDUST_BOOST = 16;</code>
+     */
+    const ITEM_CATEGORY_STARDUST_BOOST = 16;
 }
 

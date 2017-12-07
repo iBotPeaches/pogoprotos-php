@@ -97,6 +97,14 @@ class DownloadItemTemplatesResponse_ItemTemplate extends \Google\Protobuf\Intern
      * <code>.POGOProtos.Settings.Master.GymBadgeGmtSettings gym_badge_settings = 24;</code>
      */
     private $gym_badge_settings = null;
+    /**
+     * <code>.POGOProtos.Settings.Master.WeatherAffinity weather_affinities = 25;</code>
+     */
+    private $weather_affinities = null;
+    /**
+     * <code>.POGOProtos.Settings.Master.WeatherBonus weather_bonus_settings = 26;</code>
+     */
+    private $weather_bonus_settings = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\DownloadItemTemplatesResponse::initOnce();
@@ -458,6 +466,40 @@ class DownloadItemTemplatesResponse_ItemTemplate extends \Google\Protobuf\Intern
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\GymBadgeGmtSettings::class);
         $this->gym_badge_settings = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.WeatherAffinity weather_affinities = 25;</code>
+     */
+    public function getWeatherAffinities()
+    {
+        return $this->weather_affinities;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.WeatherAffinity weather_affinities = 25;</code>
+     */
+    public function setWeatherAffinities(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\WeatherAffinity::class);
+        $this->weather_affinities = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.WeatherBonus weather_bonus_settings = 26;</code>
+     */
+    public function getWeatherBonusSettings()
+    {
+        return $this->weather_bonus_settings;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.WeatherBonus weather_bonus_settings = 26;</code>
+     */
+    public function setWeatherBonusSettings(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\WeatherBonus::class);
+        $this->weather_bonus_settings = $var;
     }
 
 }

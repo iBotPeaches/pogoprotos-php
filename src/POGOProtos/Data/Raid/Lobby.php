@@ -57,6 +57,10 @@ class Lobby extends \Google\Protobuf\Internal\Message
      * <code>int32 battle_plfe_instance = 12;</code>
      */
     private $battle_plfe_instance = 0;
+    /**
+     * <code>.POGOProtos.Enums.WeatherCondition weather_condition = 13;</code>
+     */
+    private $weather_condition = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Raid\Lobby::initOnce();
@@ -248,6 +252,23 @@ class Lobby extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->battle_plfe_instance = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.WeatherCondition weather_condition = 13;</code>
+     */
+    public function getWeatherCondition()
+    {
+        return $this->weather_condition;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.WeatherCondition weather_condition = 13;</code>
+     */
+    public function setWeatherCondition($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\WeatherCondition::class);
+        $this->weather_condition = $var;
     }
 
 }

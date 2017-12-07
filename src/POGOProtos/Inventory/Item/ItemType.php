@@ -77,5 +77,9 @@ class ItemType
      * <code>ITEM_TYPE_RAID_TICKET = 16;</code>
      */
     const ITEM_TYPE_RAID_TICKET = 16;
+    /**
+     * <code>ITEM_TYPE_STARDUST_BOOST = 17;</code>
+     */
+    const ITEM_TYPE_STARDUST_BOOST = 17;
 }
 

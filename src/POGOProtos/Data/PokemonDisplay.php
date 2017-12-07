@@ -29,6 +29,10 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Enums.Form form = 4;</code>
      */
     private $form = 0;
+    /**
+     * <code>.POGOProtos.Enums.WeatherCondition weather_boosted_condition = 5;</code>
+     */
+    private $weather_boosted_condition = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\PokemonDisplay::initOnce();
@@ -101,6 +105,23 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
         $this->form = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.WeatherCondition weather_boosted_condition = 5;</code>
+     */
+    public function getWeatherBoostedCondition()
+    {
+        return $this->weather_boosted_condition;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.WeatherCondition weather_boosted_condition = 5;</code>
+     */
+    public function setWeatherBoostedCondition($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\WeatherCondition::class);
+        $this->weather_boosted_condition = $var;
     }
 
 }

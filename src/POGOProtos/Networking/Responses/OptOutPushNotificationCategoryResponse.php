@@ -9,6 +9,10 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
+ * <pre>
+ * ???
+ * </pre>
+ *
  * Protobuf type <code>POGOProtos.Networking.Responses.OptOutPushNotificationCategoryResponse</code>
  */
 class OptOutPushNotificationCategoryResponse extends \Google\Protobuf\Internal\Message

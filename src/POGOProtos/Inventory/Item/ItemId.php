@@ -193,5 +193,9 @@ class ItemId
      * <code>ITEM_LEGENDARY_RAID_TICKET = 1403;</code>
      */
     const ITEM_LEGENDARY_RAID_TICKET = 1403;
+    /**
+     * <code>ITEM_STAR_PIECE = 1404;</code>
+     */
+    const ITEM_STAR_PIECE = 1404;
 }
 

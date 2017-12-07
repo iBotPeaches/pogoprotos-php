@@ -211,7 +211,7 @@ class RequestType
     const CHECK_AWARDED_BADGES = 129;
     /**
      * <pre>
-     * Removed
+     * UnUsed - Implemented [R &amp; M]
      * </pre>
      *
      * <code>USE_ITEM_GYM = 133;</code>
@@ -219,7 +219,7 @@ class RequestType
     const USE_ITEM_GYM = 133;
     /**
      * <pre>
-     * Removed
+     * UnUsed - Implemented [R &amp; M]
      * </pre>
      *
      * <code>GET_GYM_DETAILS = 134;</code>
@@ -227,7 +227,7 @@ class RequestType
     const GET_GYM_DETAILS = 134;
     /**
      * <pre>
-     * Removed
+     * UnUsed - Implemented [R &amp; M]
      * </pre>
      *
      * <code>START_GYM_BATTLE = 135;</code>
@@ -235,7 +235,7 @@ class RequestType
     const START_GYM_BATTLE = 135;
     /**
      * <pre>
-     * Removed
+     * UnUsed - Implemented [R &amp; M]
      * </pre>
      *
      * <code>ATTACK_GYM = 136;</code>
@@ -315,7 +315,7 @@ class RequestType
     const DISK_ENCOUNTER = 145;
     /**
      * <pre>
-     * Removed
+     * UnUsed - Implemented [R &amp; M]
      * </pre>
      *
      * <code>COLLECT_DAILY_DEFENDER_BONUS = 146;</code>
@@ -403,7 +403,7 @@ class RequestType
     const GYM_GET_INFO = 156;
     /**
      * <pre>
-     * Not yet released.
+     * Implemented [R &amp; M]
      * </pre>
      *
      * <code>GYM_START_SESSION = 157;</code>
@@ -411,7 +411,7 @@ class RequestType
     const GYM_START_SESSION = 157;
     /**
      * <pre>
-     * Not yet released.
+     * Implemented [R &amp; M]
      * </pre>
      *
      * <code>GYM_BATTLE_ATTACK = 158;</code>
@@ -419,7 +419,7 @@ class RequestType
     const GYM_BATTLE_ATTACK = 158;
     /**
      * <pre>
-     * Not yet released.
+     * Implemented [R &amp; M]
      * </pre>
      *
      * <code>JOIN_LOBBY = 159;</code>
@@ -427,7 +427,7 @@ class RequestType
     const JOIN_LOBBY = 159;
     /**
      * <pre>
-     * Not yet released.
+     * Implemented [R &amp; M]
      * </pre>
      *
      * <code>LEAVE_LOBBY = 160;</code>
@@ -435,7 +435,7 @@ class RequestType
     const LEAVE_LOBBY = 160;
     /**
      * <pre>
-     * Not yet released.
+     * Implemented [R &amp; M]
      * </pre>
      *
      * <code>SET_LOBBY_VISIBILITY = 161;</code>
@@ -443,7 +443,7 @@ class RequestType
     const SET_LOBBY_VISIBILITY = 161;
     /**
      * <pre>
-     * Not yet released.
+     * Implemented [R &amp; M]
      * </pre>
      *
      * <code>SET_LOBBY_POKEMON = 162;</code>
@@ -467,7 +467,7 @@ class RequestType
     const GYM_FEED_POKEMON = 164;
     /**
      * <pre>
-     * Not yet released.
+     * Implemented [R &amp; M]
      * </pre>
      *
      * <code>START_RAID_BATTLE = 165;</code>
@@ -475,7 +475,7 @@ class RequestType
     const START_RAID_BATTLE = 165;
     /**
      * <pre>
-     * Not yet released.
+     * Implemented [R &amp; M]
      * </pre>
      *
      * <code>ATTACK_RAID = 166;</code>
@@ -483,12 +483,20 @@ class RequestType
     const ATTACK_RAID = 166;
     /**
      * <pre>
-     * Not yet released.
+     * ???
      * </pre>
      *
      * <code>AWARD_POKECOIN = 167;</code>
      */
     const AWARD_POKECOIN = 167;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>USE_ITEM_STARDUST_BOOST = 168;</code>
+     */
+    const USE_ITEM_STARDUST_BOOST = 168;
     /**
      * <pre>
      * Implemented [R &amp; M]
@@ -682,26 +690,50 @@ class RequestType
      */
     const AWARD_FREE_RAID_TICKET = 815;
     /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>REGISTER_PUSH_NOTIFICATION = 5000;</code>
      */
     const REGISTER_PUSH_NOTIFICATION = 5000;
     /**
+     * <pre>
+     * Not yet released.
+     * </pre>
+     *
      * <code>UNREGISTER_PUSH_NOTIFICATION = 5001;</code>
      */
     const UNREGISTER_PUSH_NOTIFICATION = 5001;
     /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>UPDATE_NOTIFICATION_STATUS = 5002;</code>
      */
     const UPDATE_NOTIFICATION_STATUS = 5002;
     /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>OPT_OUT_PUSH_NOTIFICATION_CATEGORY = 5003;</code>
      */
     const OPT_OUT_PUSH_NOTIFICATION_CATEGORY = 5003;
     /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>DOWNLOAD_GAME_MASTER_TEMPLATES = 5004;</code>
      */
     const DOWNLOAD_GAME_MASTER_TEMPLATES = 5004;
     /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>GET_INVENTORY = 5005;</code>
      */
     const GET_INVENTORY = 5005;

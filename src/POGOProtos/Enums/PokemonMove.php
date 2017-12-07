@@ -889,5 +889,45 @@ class PokemonMove
      * <code>HIDDEN_POWER_FAST = 281;</code>
      */
     const HIDDEN_POWER_FAST = 281;
+    /**
+     * <code>TAKE_DOWN_FAST = 282;</code>
+     */
+    const TAKE_DOWN_FAST = 282;
+    /**
+     * <code>WATERFALL_FAST = 283;</code>
+     */
+    const WATERFALL_FAST = 283;
+    /**
+     * <code>SURF = 284;</code>
+     */
+    const SURF = 284;
+    /**
+     * <code>DRACO_METEOR = 285;</code>
+     */
+    const DRACO_METEOR = 285;
+    /**
+     * <code>DOOM_DESIRE = 286;</code>
+     */
+    const DOOM_DESIRE = 286;
+    /**
+     * <code>YAWN_FAST = 287;</code>
+     */
+    const YAWN_FAST = 287;
+    /**
+     * <code>PSYCHO_BOOST = 288;</code>
+     */
+    const PSYCHO_BOOST = 288;
+    /**
+     * <code>ORIGIN_PULSE = 289;</code>
+     */
+    const ORIGIN_PULSE = 289;
+    /**
+     * <code>PRECIPICE_BLADES = 290;</code>
+     */
+    const PRECIPICE_BLADES = 290;
+    /**
+     * <code>PRESENT_FAST = 291;</code>
+     */
+    const PRESENT_FAST = 291;
 }
 

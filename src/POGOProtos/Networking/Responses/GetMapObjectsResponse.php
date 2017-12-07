@@ -25,6 +25,10 @@ class GetMapObjectsResponse extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Networking.Responses.GetMapObjectsResponse.TimeOfDay time_of_day = 3;</code>
      */
     private $time_of_day = 0;
+    /**
+     * <code>repeated .POGOProtos.Map.Weather.ClientWeather client_weather = 4;</code>
+     */
+    private $client_weather;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\GetMapObjectsResponse::initOnce();
@@ -80,6 +84,23 @@ class GetMapObjectsResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\GetMapObjectsResponse_TimeOfDay::class);
         $this->time_of_day = $var;
+    }
+
+    /**
+     * <code>repeated .POGOProtos.Map.Weather.ClientWeather client_weather = 4;</code>
+     */
+    public function getClientWeather()
+    {
+        return $this->client_weather;
+    }
+
+    /**
+     * <code>repeated .POGOProtos.Map.Weather.ClientWeather client_weather = 4;</code>
+     */
+    public function setClientWeather(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Weather\ClientWeather::class);
+        $this->client_weather = $var;
     }
 
 }
