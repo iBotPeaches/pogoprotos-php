@@ -49,6 +49,10 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Data.Raid.EventInfo event_info = 9;</code>
      */
     private $event_info = null;
+    /**
+     * <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 10;</code>
+     */
+    private $display_weather = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\GymGetInfoResponse::initOnce();
@@ -206,6 +210,23 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Raid\EventInfo::class);
         $this->event_info = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 10;</code>
+     */
+    public function getDisplayWeather()
+    {
+        return $this->display_weather;
+    }
+
+    /**
+     * <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 10;</code>
+     */
+    public function setDisplayWeather(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Map\Weather\DisplayWeather::class);
+        $this->display_weather = $var;
     }
 
 }

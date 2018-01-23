@@ -105,6 +105,10 @@ class DownloadItemTemplatesResponse_ItemTemplate extends \Google\Protobuf\Intern
      * <code>.POGOProtos.Settings.Master.WeatherBonus weather_bonus_settings = 26;</code>
      */
     private $weather_bonus_settings = null;
+    /**
+     * <code>.POGOProtos.Settings.Master.PokemonScaleSetting pokemon_scale_settings = 27;</code>
+     */
+    private $pokemon_scale_settings = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\DownloadItemTemplatesResponse::initOnce();
@@ -500,6 +504,23 @@ class DownloadItemTemplatesResponse_ItemTemplate extends \Google\Protobuf\Intern
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\WeatherBonus::class);
         $this->weather_bonus_settings = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.PokemonScaleSetting pokemon_scale_settings = 27;</code>
+     */
+    public function getPokemonScaleSettings()
+    {
+        return $this->pokemon_scale_settings;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.PokemonScaleSetting pokemon_scale_settings = 27;</code>
+     */
+    public function setPokemonScaleSettings(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\PokemonScaleSetting::class);
+        $this->pokemon_scale_settings = $var;
     }
 
 }

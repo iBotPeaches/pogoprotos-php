@@ -137,5 +137,9 @@ class ActivityType
      * <code>ACTIVITY_GYM_BATTLE_LOSS = 31;</code>
      */
     const ACTIVITY_GYM_BATTLE_LOSS = 31;
+    /**
+     * <code>ACTIVITY_CATCH_AR_PLUS_BONUS = 32;</code>
+     */
+    const ACTIVITY_CATCH_AR_PLUS_BONUS = 32;
 }
 

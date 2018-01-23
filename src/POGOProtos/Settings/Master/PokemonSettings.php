@@ -113,6 +113,10 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      * <code>repeated .POGOProtos.Settings.Master.Pokemon.EvolutionBranch evolution_branch = 26;</code>
      */
     private $evolution_branch;
+    /**
+     * <code>float model_scale_v2 = 27;</code>
+     */
+    private $model_scale_v2 = 0.0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\Master\PokemonSettings::initOnce();
@@ -542,6 +546,23 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Settings\Master\Pokemon\EvolutionBranch::class);
         $this->evolution_branch = $var;
+    }
+
+    /**
+     * <code>float model_scale_v2 = 27;</code>
+     */
+    public function getModelScaleV2()
+    {
+        return $this->model_scale_v2;
+    }
+
+    /**
+     * <code>float model_scale_v2 = 27;</code>
+     */
+    public function setModelScaleV2($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->model_scale_v2 = $var;
     }
 
 }

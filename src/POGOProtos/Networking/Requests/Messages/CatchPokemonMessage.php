@@ -41,6 +41,10 @@ class CatchPokemonMessage extends \Google\Protobuf\Internal\Message
      * <code>double normalized_hit_position = 7;</code>
      */
     private $normalized_hit_position = 0.0;
+    /**
+     * <code>.POGOProtos.Data.ARPlusEncounterValues ar_plus_values = 8;</code>
+     */
+    private $ar_plus_values = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\CatchPokemonMessage::initOnce();
@@ -164,6 +168,23 @@ class CatchPokemonMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkDouble($var);
         $this->normalized_hit_position = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.ARPlusEncounterValues ar_plus_values = 8;</code>
+     */
+    public function getArPlusValues()
+    {
+        return $this->ar_plus_values;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.ARPlusEncounterValues ar_plus_values = 8;</code>
+     */
+    public function setArPlusValues(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\ARPlusEncounterValues::class);
+        $this->ar_plus_values = $var;
     }
 
 }

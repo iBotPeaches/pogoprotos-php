@@ -29,6 +29,10 @@ class DiskEncounterResponse extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
      */
     private $active_item = 0;
+    /**
+     * <code>int32 arplus_attempts_until_flee = 5;</code>
+     */
+    private $arplus_attempts_until_flee = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\DiskEncounterResponse::initOnce();
@@ -101,6 +105,23 @@ class DiskEncounterResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->active_item = $var;
+    }
+
+    /**
+     * <code>int32 arplus_attempts_until_flee = 5;</code>
+     */
+    public function getArplusAttemptsUntilFlee()
+    {
+        return $this->arplus_attempts_until_flee;
+    }
+
+    /**
+     * <code>int32 arplus_attempts_until_flee = 5;</code>
+     */
+    public function setArplusAttemptsUntilFlee($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->arplus_attempts_until_flee = $var;
     }
 
 }
