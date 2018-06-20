@@ -25,5 +25,17 @@ class EncounterType
      * <code>POST_RAID = 3;</code>
      */
     const POST_RAID = 3;
+    /**
+     * <code>STORY_QUEST = 4;</code>
+     */
+    const STORY_QUEST = 4;
+    /**
+     * <code>QUEST_STAMP_CARD = 5;</code>
+     */
+    const QUEST_STAMP_CARD = 5;
+    /**
+     * <code>CHALLENGE_QUEST = 6;</code>
+     */
+    const CHALLENGE_QUEST = 6;
 }
 

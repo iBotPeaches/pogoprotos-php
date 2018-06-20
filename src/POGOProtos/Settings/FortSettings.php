@@ -49,6 +49,14 @@ class FortSettings extends \Google\Protobuf\Internal\Message
      * <code>int32 max_player_total_deployed_pokemon = 9;</code>
      */
     private $max_player_total_deployed_pokemon = 0;
+    /**
+     * <code>bool enable_hyperlinks_in_poi_descriptions = 10;</code>
+     */
+    private $enable_hyperlinks_in_poi_descriptions = false;
+    /**
+     * <code>bool enable_right_to_left_text_display = 11;</code>
+     */
+    private $enable_right_to_left_text_display = false;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\FortSettings::initOnce();
@@ -206,6 +214,40 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->max_player_total_deployed_pokemon = $var;
+    }
+
+    /**
+     * <code>bool enable_hyperlinks_in_poi_descriptions = 10;</code>
+     */
+    public function getEnableHyperlinksInPoiDescriptions()
+    {
+        return $this->enable_hyperlinks_in_poi_descriptions;
+    }
+
+    /**
+     * <code>bool enable_hyperlinks_in_poi_descriptions = 10;</code>
+     */
+    public function setEnableHyperlinksInPoiDescriptions($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_hyperlinks_in_poi_descriptions = $var;
+    }
+
+    /**
+     * <code>bool enable_right_to_left_text_display = 11;</code>
+     */
+    public function getEnableRightToLeftTextDisplay()
+    {
+        return $this->enable_right_to_left_text_display;
+    }
+
+    /**
+     * <code>bool enable_right_to_left_text_display = 11;</code>
+     */
+    public function setEnableRightToLeftTextDisplay($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_right_to_left_text_display = $var;
     }
 
 }

@@ -33,5 +33,9 @@ class UseItemRareCandyResponse_Result
      * <code>ITEM_NOT_IN_INVENTORY = 5;</code>
      */
     const ITEM_NOT_IN_INVENTORY = 5;
+    /**
+     * <code>NOT_ENOUGH_ITEMS = 6;</code>
+     */
+    const NOT_ENOUGH_ITEMS = 6;
 }
 

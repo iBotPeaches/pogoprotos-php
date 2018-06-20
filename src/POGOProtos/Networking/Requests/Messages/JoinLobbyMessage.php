@@ -37,6 +37,14 @@ class JoinLobbyMessage extends \Google\Protobuf\Internal\Message
      * <code>double player_lng_degrees = 6;</code>
      */
     private $player_lng_degrees = 0.0;
+    /**
+     * <code>double gym_lat_degrees = 7;</code>
+     */
+    private $gym_lat_degrees = 0.0;
+    /**
+     * <code>double gym_lng_degrees = 8;</code>
+     */
+    private $gym_lng_degrees = 0.0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\JoinLobbyMessage::initOnce();
@@ -143,6 +151,40 @@ class JoinLobbyMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkDouble($var);
         $this->player_lng_degrees = $var;
+    }
+
+    /**
+     * <code>double gym_lat_degrees = 7;</code>
+     */
+    public function getGymLatDegrees()
+    {
+        return $this->gym_lat_degrees;
+    }
+
+    /**
+     * <code>double gym_lat_degrees = 7;</code>
+     */
+    public function setGymLatDegrees($var)
+    {
+        GPBUtil::checkDouble($var);
+        $this->gym_lat_degrees = $var;
+    }
+
+    /**
+     * <code>double gym_lng_degrees = 8;</code>
+     */
+    public function getGymLngDegrees()
+    {
+        return $this->gym_lng_degrees;
+    }
+
+    /**
+     * <code>double gym_lng_degrees = 8;</code>
+     */
+    public function setGymLngDegrees($var)
+    {
+        GPBUtil::checkDouble($var);
+        $this->gym_lng_degrees = $var;
     }
 
 }

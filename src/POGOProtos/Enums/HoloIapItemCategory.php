@@ -33,5 +33,9 @@ class HoloIapItemCategory
      * <code>IAP_CATEGORY_AVATAR = 5;</code>
      */
     const IAP_CATEGORY_AVATAR = 5;
+    /**
+     * <code>IAP_CATEGORY_AVATAR_STORE_LINK = 6;</code>
+     */
+    const IAP_CATEGORY_AVATAR_STORE_LINK = 6;
 }
 

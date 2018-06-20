@@ -65,6 +65,10 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
      * <code>string fort_id = 13;</code>
      */
     private $fort_id = '';
+    /**
+     * <code>.POGOProtos.Data.Quests.ClientQuest challenge_quest = 14;</code>
+     */
+    private $challenge_quest = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\FortSearchResponse::initOnce();
@@ -290,6 +294,23 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.ClientQuest challenge_quest = 14;</code>
+     */
+    public function getChallengeQuest()
+    {
+        return $this->challenge_quest;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.ClientQuest challenge_quest = 14;</code>
+     */
+    public function setChallengeQuest(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\ClientQuest::class);
+        $this->challenge_quest = $var;
     }
 
 }

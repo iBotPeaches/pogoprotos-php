@@ -194,6 +194,14 @@ class BadgeType
      */
     const BADGE_POKEDEX_ENTRIES_GEN3 = 45;
     /**
+     * <code>BADGE_CHALLENGE_QUESTS = 46;</code>
+     */
+    const BADGE_CHALLENGE_QUESTS = 46;
+    /**
+     * <code>BADGE_MEW_ENCOUNTER = 47;</code>
+     */
+    const BADGE_MEW_ENCOUNTER = 47;
+    /**
      * <code>BADGE_EVENT_MIN = 2000;</code>
      */
     const BADGE_EVENT_MIN = 2000;

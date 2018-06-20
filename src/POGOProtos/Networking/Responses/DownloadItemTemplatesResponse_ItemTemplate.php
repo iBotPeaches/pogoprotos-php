@@ -109,6 +109,14 @@ class DownloadItemTemplatesResponse_ItemTemplate extends \Google\Protobuf\Intern
      * <code>.POGOProtos.Settings.Master.PokemonScaleSetting pokemon_scale_settings = 27;</code>
      */
     private $pokemon_scale_settings = null;
+    /**
+     * <code>.POGOProtos.Settings.Master.IapItemCategoryDisplay iap_category_display = 28;</code>
+     */
+    private $iap_category_display = null;
+    /**
+     * <code>.POGOProtos.Settings.Master.OnboardingSettings onboarding_settings = 30;</code>
+     */
+    private $onboarding_settings = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\DownloadItemTemplatesResponse::initOnce();
@@ -521,6 +529,40 @@ class DownloadItemTemplatesResponse_ItemTemplate extends \Google\Protobuf\Intern
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\PokemonScaleSetting::class);
         $this->pokemon_scale_settings = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.IapItemCategoryDisplay iap_category_display = 28;</code>
+     */
+    public function getIapCategoryDisplay()
+    {
+        return $this->iap_category_display;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.IapItemCategoryDisplay iap_category_display = 28;</code>
+     */
+    public function setIapCategoryDisplay(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\IapItemCategoryDisplay::class);
+        $this->iap_category_display = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.OnboardingSettings onboarding_settings = 30;</code>
+     */
+    public function getOnboardingSettings()
+    {
+        return $this->onboarding_settings;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.OnboardingSettings onboarding_settings = 30;</code>
+     */
+    public function setOnboardingSettings(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\OnboardingSettings::class);
+        $this->onboarding_settings = $var;
     }
 
 }

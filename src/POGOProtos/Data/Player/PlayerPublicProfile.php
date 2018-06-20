@@ -45,6 +45,14 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 8;</code>
      */
     private $gym_badge_type = 0;
+    /**
+     * <code>repeated .POGOProtos.Data.Player.PlayerBadge badges = 9;</code>
+     */
+    private $badges;
+    /**
+     * <code>int64 experience = 10;</code>
+     */
+    private $experience = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Player\PlayerPublicProfile::initOnce();
@@ -185,6 +193,40 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\GymBadgeType::class);
         $this->gym_badge_type = $var;
+    }
+
+    /**
+     * <code>repeated .POGOProtos.Data.Player.PlayerBadge badges = 9;</code>
+     */
+    public function getBadges()
+    {
+        return $this->badges;
+    }
+
+    /**
+     * <code>repeated .POGOProtos.Data.Player.PlayerBadge badges = 9;</code>
+     */
+    public function setBadges(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Player\PlayerBadge::class);
+        $this->badges = $var;
+    }
+
+    /**
+     * <code>int64 experience = 10;</code>
+     */
+    public function getExperience()
+    {
+        return $this->experience;
+    }
+
+    /**
+     * <code>int64 experience = 10;</code>
+     */
+    public function setExperience($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->experience = $var;
     }
 
 }

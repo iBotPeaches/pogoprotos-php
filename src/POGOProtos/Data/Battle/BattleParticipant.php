@@ -37,6 +37,14 @@ class BattleParticipant extends \Google\Protobuf\Internal\Message
      * <code>int32 damage_dealt = 6;</code>
      */
     private $damage_dealt = 0;
+    /**
+     * <code>bool super_effective_charge_move = 7;</code>
+     */
+    private $super_effective_charge_move = false;
+    /**
+     * <code>bool weather_boosted = 8;</code>
+     */
+    private $weather_boosted = false;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Battle\BattleParticipant::initOnce();
@@ -143,6 +151,40 @@ class BattleParticipant extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->damage_dealt = $var;
+    }
+
+    /**
+     * <code>bool super_effective_charge_move = 7;</code>
+     */
+    public function getSuperEffectiveChargeMove()
+    {
+        return $this->super_effective_charge_move;
+    }
+
+    /**
+     * <code>bool super_effective_charge_move = 7;</code>
+     */
+    public function setSuperEffectiveChargeMove($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->super_effective_charge_move = $var;
+    }
+
+    /**
+     * <code>bool weather_boosted = 8;</code>
+     */
+    public function getWeatherBoosted()
+    {
+        return $this->weather_boosted;
+    }
+
+    /**
+     * <code>bool weather_boosted = 8;</code>
+     */
+    public function setWeatherBoosted($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->weather_boosted = $var;
     }
 
 }

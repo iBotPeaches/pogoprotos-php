@@ -45,6 +45,10 @@ class Raid extends \Google\Protobuf\Internal\Message
      * <code>bool received_default_rewards = 8;</code>
      */
     private $received_default_rewards = false;
+    /**
+     * <code>bool incremented_raid_friends = 9;</code>
+     */
+    private $incremented_raid_friends = false;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Raid\Raid::initOnce();
@@ -185,6 +189,23 @@ class Raid extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->received_default_rewards = $var;
+    }
+
+    /**
+     * <code>bool incremented_raid_friends = 9;</code>
+     */
+    public function getIncrementedRaidFriends()
+    {
+        return $this->incremented_raid_friends;
+    }
+
+    /**
+     * <code>bool incremented_raid_friends = 9;</code>
+     */
+    public function setIncrementedRaidFriends($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->incremented_raid_friends = $var;
     }
 
 }

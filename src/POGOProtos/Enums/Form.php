@@ -157,5 +157,181 @@ class Form
      * <code>DEOXYS_SPEED = 36;</code>
      */
     const DEOXYS_SPEED = 36;
+    /**
+     * <code>SPINDA_00 = 37;</code>
+     */
+    const SPINDA_00 = 37;
+    /**
+     * <code>SPINDA_01 = 38;</code>
+     */
+    const SPINDA_01 = 38;
+    /**
+     * <code>SPINDA_02 = 39;</code>
+     */
+    const SPINDA_02 = 39;
+    /**
+     * <code>SPINDA_03 = 40;</code>
+     */
+    const SPINDA_03 = 40;
+    /**
+     * <code>SPINDA_04 = 41;</code>
+     */
+    const SPINDA_04 = 41;
+    /**
+     * <code>SPINDA_05 = 42;</code>
+     */
+    const SPINDA_05 = 42;
+    /**
+     * <code>SPINDA_06 = 43;</code>
+     */
+    const SPINDA_06 = 43;
+    /**
+     * <code>SPINDA_07 = 44;</code>
+     */
+    const SPINDA_07 = 44;
+    /**
+     * <code>RATTATA_NORMAL = 45;</code>
+     */
+    const RATTATA_NORMAL = 45;
+    /**
+     * <code>RATTATA_ALOLA = 46;</code>
+     */
+    const RATTATA_ALOLA = 46;
+    /**
+     * <code>RATICATE_NORMAL = 47;</code>
+     */
+    const RATICATE_NORMAL = 47;
+    /**
+     * <code>RATICATE_ALOLA = 48;</code>
+     */
+    const RATICATE_ALOLA = 48;
+    /**
+     * <code>RAICHU_NORMAL = 49;</code>
+     */
+    const RAICHU_NORMAL = 49;
+    /**
+     * <code>RAICHU_ALOLA = 50;</code>
+     */
+    const RAICHU_ALOLA = 50;
+    /**
+     * <code>SANDSHREW_NORMAL = 51;</code>
+     */
+    const SANDSHREW_NORMAL = 51;
+    /**
+     * <code>SANDSHREW_ALOLA = 52;</code>
+     */
+    const SANDSHREW_ALOLA = 52;
+    /**
+     * <code>SANDSLASH_NORMAL = 53;</code>
+     */
+    const SANDSLASH_NORMAL = 53;
+    /**
+     * <code>SANDSLASH_ALOLA = 54;</code>
+     */
+    const SANDSLASH_ALOLA = 54;
+    /**
+     * <code>VULPIX_NORMAL = 55;</code>
+     */
+    const VULPIX_NORMAL = 55;
+    /**
+     * <code>VULPIX_ALOLA = 56;</code>
+     */
+    const VULPIX_ALOLA = 56;
+    /**
+     * <code>NINETALES_NORMAL = 57;</code>
+     */
+    const NINETALES_NORMAL = 57;
+    /**
+     * <code>NINETALES_ALOLA = 58;</code>
+     */
+    const NINETALES_ALOLA = 58;
+    /**
+     * <code>DIGLETT_NORMAL = 59;</code>
+     */
+    const DIGLETT_NORMAL = 59;
+    /**
+     * <code>DIGLETT_ALOLA = 60;</code>
+     */
+    const DIGLETT_ALOLA = 60;
+    /**
+     * <code>DUGTRIO_NORMAL = 61;</code>
+     */
+    const DUGTRIO_NORMAL = 61;
+    /**
+     * <code>DUGTRIO_ALOLA = 62;</code>
+     */
+    const DUGTRIO_ALOLA = 62;
+    /**
+     * <code>MEOWTH_NORMAL = 63;</code>
+     */
+    const MEOWTH_NORMAL = 63;
+    /**
+     * <code>MEOWTH_ALOLA = 64;</code>
+     */
+    const MEOWTH_ALOLA = 64;
+    /**
+     * <code>PERSIAN_NORMAL = 65;</code>
+     */
+    const PERSIAN_NORMAL = 65;
+    /**
+     * <code>PERSIAN_ALOLA = 66;</code>
+     */
+    const PERSIAN_ALOLA = 66;
+    /**
+     * <code>GEODUDE_NORMAL = 67;</code>
+     */
+    const GEODUDE_NORMAL = 67;
+    /**
+     * <code>GEODUDE_ALOLA = 68;</code>
+     */
+    const GEODUDE_ALOLA = 68;
+    /**
+     * <code>GRAVELER_NORMAL = 69;</code>
+     */
+    const GRAVELER_NORMAL = 69;
+    /**
+     * <code>GRAVELER_ALOLA = 70;</code>
+     */
+    const GRAVELER_ALOLA = 70;
+    /**
+     * <code>GOLEM_NORMAL = 71;</code>
+     */
+    const GOLEM_NORMAL = 71;
+    /**
+     * <code>GOLEM_ALOLA = 72;</code>
+     */
+    const GOLEM_ALOLA = 72;
+    /**
+     * <code>GRIMER_NORMAL = 73;</code>
+     */
+    const GRIMER_NORMAL = 73;
+    /**
+     * <code>GRIMER_ALOLA = 74;</code>
+     */
+    const GRIMER_ALOLA = 74;
+    /**
+     * <code>MUK_NORMAL = 75;</code>
+     */
+    const MUK_NORMAL = 75;
+    /**
+     * <code>MUK_ALOLA = 76;</code>
+     */
+    const MUK_ALOLA = 76;
+    /**
+     * <code>EXEGGUTOR_NORMAL = 77;</code>
+     */
+    const EXEGGUTOR_NORMAL = 77;
+    /**
+     * <code>EXEGGUTOR_ALOLA = 78;</code>
+     */
+    const EXEGGUTOR_ALOLA = 78;
+    /**
+     * <code>MAROWAK_NORMAL = 79;</code>
+     */
+    const MAROWAK_NORMAL = 79;
+    /**
+     * <code>MAROWAK_ALOLA = 80;</code>
+     */
+    const MAROWAK_ALOLA = 80;
 }
 

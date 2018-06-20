@@ -102,7 +102,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      */
     private $km_buddy_distance = 0.0;
     /**
-     * <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
+     * <code>.POGOProtos.Enums.BuddySize buddy_size = 24;</code>
      */
     private $buddy_size = 0;
     /**
@@ -117,6 +117,38 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      * <code>float model_scale_v2 = 27;</code>
      */
     private $model_scale_v2 = 0.0;
+    /**
+     * <code>.POGOProtos.Enums.Form form = 28;</code>
+     */
+    private $form = 0;
+    /**
+     * <code>.POGOProtos.Enums.PokemonMove event_quick_move = 29;</code>
+     */
+    private $event_quick_move = 0;
+    /**
+     * <code>.POGOProtos.Enums.PokemonMove event_cinematic_move = 30;</code>
+     */
+    private $event_cinematic_move = 0;
+    /**
+     * <code>repeated float buddy_offset_male = 31;</code>
+     */
+    private $buddy_offset_male;
+    /**
+     * <code>repeated float buddy_offset_female = 32;</code>
+     */
+    private $buddy_offset_female;
+    /**
+     * <code>float buddy_scale = 33;</code>
+     */
+    private $buddy_scale = 0.0;
+    /**
+     * <code>repeated float buddy_portrait_offset = 34;</code>
+     */
+    private $buddy_portrait_offset;
+    /**
+     * <code>.POGOProtos.Enums.Form parent_form = 35;</code>
+     */
+    private $parent_form = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\Master\PokemonSettings::initOnce();
@@ -498,7 +530,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
+     * <code>.POGOProtos.Enums.BuddySize buddy_size = 24;</code>
      */
     public function getBuddySize()
     {
@@ -506,11 +538,11 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
+     * <code>.POGOProtos.Enums.BuddySize buddy_size = 24;</code>
      */
     public function setBuddySize($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Settings\Master\PokemonSettings_BuddySize::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\BuddySize::class);
         $this->buddy_size = $var;
     }
 
@@ -563,6 +595,142 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkFloat($var);
         $this->model_scale_v2 = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.Form form = 28;</code>
+     */
+    public function getForm()
+    {
+        return $this->form;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.Form form = 28;</code>
+     */
+    public function setForm($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
+        $this->form = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.PokemonMove event_quick_move = 29;</code>
+     */
+    public function getEventQuickMove()
+    {
+        return $this->event_quick_move;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.PokemonMove event_quick_move = 29;</code>
+     */
+    public function setEventQuickMove($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonMove::class);
+        $this->event_quick_move = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.PokemonMove event_cinematic_move = 30;</code>
+     */
+    public function getEventCinematicMove()
+    {
+        return $this->event_cinematic_move;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.PokemonMove event_cinematic_move = 30;</code>
+     */
+    public function setEventCinematicMove($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonMove::class);
+        $this->event_cinematic_move = $var;
+    }
+
+    /**
+     * <code>repeated float buddy_offset_male = 31;</code>
+     */
+    public function getBuddyOffsetMale()
+    {
+        return $this->buddy_offset_male;
+    }
+
+    /**
+     * <code>repeated float buddy_offset_male = 31;</code>
+     */
+    public function setBuddyOffsetMale(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->buddy_offset_male = $var;
+    }
+
+    /**
+     * <code>repeated float buddy_offset_female = 32;</code>
+     */
+    public function getBuddyOffsetFemale()
+    {
+        return $this->buddy_offset_female;
+    }
+
+    /**
+     * <code>repeated float buddy_offset_female = 32;</code>
+     */
+    public function setBuddyOffsetFemale(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->buddy_offset_female = $var;
+    }
+
+    /**
+     * <code>float buddy_scale = 33;</code>
+     */
+    public function getBuddyScale()
+    {
+        return $this->buddy_scale;
+    }
+
+    /**
+     * <code>float buddy_scale = 33;</code>
+     */
+    public function setBuddyScale($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->buddy_scale = $var;
+    }
+
+    /**
+     * <code>repeated float buddy_portrait_offset = 34;</code>
+     */
+    public function getBuddyPortraitOffset()
+    {
+        return $this->buddy_portrait_offset;
+    }
+
+    /**
+     * <code>repeated float buddy_portrait_offset = 34;</code>
+     */
+    public function setBuddyPortraitOffset(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->buddy_portrait_offset = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.Form parent_form = 35;</code>
+     */
+    public function getParentForm()
+    {
+        return $this->parent_form;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.Form parent_form = 35;</code>
+     */
+    public function setParentForm($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
+        $this->parent_form = $var;
     }
 
 }

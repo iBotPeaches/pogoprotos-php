@@ -141,5 +141,9 @@ class ActivityType
      * <code>ACTIVITY_CATCH_AR_PLUS_BONUS = 32;</code>
      */
     const ACTIVITY_CATCH_AR_PLUS_BONUS = 32;
+    /**
+     * <code>ACTIVITY_CATCH_QUEST_POKEMON_ENCOUNTER = 33;</code>
+     */
+    const ACTIVITY_CATCH_QUEST_POKEMON_ENCOUNTER = 33;
 }
 

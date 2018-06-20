@@ -14,29 +14,34 @@ use Google\Protobuf\Internal\GPBUtil;
 class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
 {
     /**
+     * <pre>
+     *string gym_id = 1;
+     *int64 raid_seed = 2;
+     *repeated int32 lobby_id = 4;
+     *repeated fixed64 attacking_pokemon_id = 5;
+     *double player_lat_degrees = 6;
+     *double player_lng_degrees = 7;
+     * </pre>
+     *
      * <code>string gym_id = 1;</code>
      */
     private $gym_id = '';
     /**
-     * <code>int64 raid_seed = 2;</code>
+     * <code>string battle_id = 2;</code>
      */
-    private $raid_seed = 0;
+    private $battle_id = '';
     /**
-     * <code>repeated int32 lobby_id = 4;</code>
+     * <code>repeated .POGOProtos.Data.Battle.BattleAction attacker_actions = 3;</code>
      */
-    private $lobby_id;
+    private $attacker_actions;
     /**
-     * <code>repeated fixed64 attacking_pokemon_id = 5;</code>
+     * <code>.POGOProtos.Data.Battle.BattleAction last_retrieved_action = 4;</code>
      */
-    private $attacking_pokemon_id;
+    private $last_retrieved_action = null;
     /**
-     * <code>double player_lat_degrees = 6;</code>
+     * <code>int64 timestamp_ms = 5;</code>
      */
-    private $player_lat_degrees = 0.0;
-    /**
-     * <code>double player_lng_degrees = 7;</code>
-     */
-    private $player_lng_degrees = 0.0;
+    private $timestamp_ms = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\AttackRaidBattleMessage::initOnce();
@@ -44,6 +49,15 @@ class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * <pre>
+     *string gym_id = 1;
+     *int64 raid_seed = 2;
+     *repeated int32 lobby_id = 4;
+     *repeated fixed64 attacking_pokemon_id = 5;
+     *double player_lat_degrees = 6;
+     *double player_lng_degrees = 7;
+     * </pre>
+     *
      * <code>string gym_id = 1;</code>
      */
     public function getGymId()
@@ -52,6 +66,15 @@ class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * <pre>
+     *string gym_id = 1;
+     *int64 raid_seed = 2;
+     *repeated int32 lobby_id = 4;
+     *repeated fixed64 attacking_pokemon_id = 5;
+     *double player_lat_degrees = 6;
+     *double player_lng_degrees = 7;
+     * </pre>
+     *
      * <code>string gym_id = 1;</code>
      */
     public function setGymId($var)
@@ -61,88 +84,71 @@ class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 raid_seed = 2;</code>
+     * <code>string battle_id = 2;</code>
      */
-    public function getRaidSeed()
+    public function getBattleId()
     {
-        return $this->raid_seed;
+        return $this->battle_id;
     }
 
     /**
-     * <code>int64 raid_seed = 2;</code>
+     * <code>string battle_id = 2;</code>
      */
-    public function setRaidSeed($var)
+    public function setBattleId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->battle_id = $var;
+    }
+
+    /**
+     * <code>repeated .POGOProtos.Data.Battle.BattleAction attacker_actions = 3;</code>
+     */
+    public function getAttackerActions()
+    {
+        return $this->attacker_actions;
+    }
+
+    /**
+     * <code>repeated .POGOProtos.Data.Battle.BattleAction attacker_actions = 3;</code>
+     */
+    public function setAttackerActions(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Battle\BattleAction::class);
+        $this->attacker_actions = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Battle.BattleAction last_retrieved_action = 4;</code>
+     */
+    public function getLastRetrievedAction()
+    {
+        return $this->last_retrieved_action;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Battle.BattleAction last_retrieved_action = 4;</code>
+     */
+    public function setLastRetrievedAction(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleAction::class);
+        $this->last_retrieved_action = $var;
+    }
+
+    /**
+     * <code>int64 timestamp_ms = 5;</code>
+     */
+    public function getTimestampMs()
+    {
+        return $this->timestamp_ms;
+    }
+
+    /**
+     * <code>int64 timestamp_ms = 5;</code>
+     */
+    public function setTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
-        $this->raid_seed = $var;
-    }
-
-    /**
-     * <code>repeated int32 lobby_id = 4;</code>
-     */
-    public function getLobbyId()
-    {
-        return $this->lobby_id;
-    }
-
-    /**
-     * <code>repeated int32 lobby_id = 4;</code>
-     */
-    public function setLobbyId(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->lobby_id = $var;
-    }
-
-    /**
-     * <code>repeated fixed64 attacking_pokemon_id = 5;</code>
-     */
-    public function getAttackingPokemonId()
-    {
-        return $this->attacking_pokemon_id;
-    }
-
-    /**
-     * <code>repeated fixed64 attacking_pokemon_id = 5;</code>
-     */
-    public function setAttackingPokemonId(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FIXED64);
-        $this->attacking_pokemon_id = $var;
-    }
-
-    /**
-     * <code>double player_lat_degrees = 6;</code>
-     */
-    public function getPlayerLatDegrees()
-    {
-        return $this->player_lat_degrees;
-    }
-
-    /**
-     * <code>double player_lat_degrees = 6;</code>
-     */
-    public function setPlayerLatDegrees($var)
-    {
-        GPBUtil::checkDouble($var);
-        $this->player_lat_degrees = $var;
-    }
-
-    /**
-     * <code>double player_lng_degrees = 7;</code>
-     */
-    public function getPlayerLngDegrees()
-    {
-        return $this->player_lng_degrees;
-    }
-
-    /**
-     * <code>double player_lng_degrees = 7;</code>
-     */
-    public function setPlayerLngDegrees($var)
-    {
-        GPBUtil::checkDouble($var);
-        $this->player_lng_degrees = $var;
+        $this->timestamp_ms = $var;
     }
 
 }

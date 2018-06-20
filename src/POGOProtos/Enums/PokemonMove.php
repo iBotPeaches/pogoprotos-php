@@ -929,5 +929,33 @@ class PokemonMove
      * <code>PRESENT_FAST = 291;</code>
      */
     const PRESENT_FAST = 291;
+    /**
+     * <code>WEATHER_BALL_FIRE = 292;</code>
+     */
+    const WEATHER_BALL_FIRE = 292;
+    /**
+     * <code>WEATHER_BALL_ICE = 293;</code>
+     */
+    const WEATHER_BALL_ICE = 293;
+    /**
+     * <code>WEATHER_BALL_ROCK = 294;</code>
+     */
+    const WEATHER_BALL_ROCK = 294;
+    /**
+     * <code>WEATHER_BALL_WATER = 295;</code>
+     */
+    const WEATHER_BALL_WATER = 295;
+    /**
+     * <code>FRENZY_PLANT = 296;</code>
+     */
+    const FRENZY_PLANT = 296;
+    /**
+     * <code>SMACK_DOWN_FAST = 297;</code>
+     */
+    const SMACK_DOWN_FAST = 297;
+    /**
+     * <code>BLAST_BURN = 298;</code>
+     */
+    const BLAST_BURN = 298;
 }
 

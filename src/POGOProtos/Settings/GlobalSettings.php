@@ -77,6 +77,22 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Settings.ClientPerformanceSettings client_perf_settings = 17;</code>
      */
     private $client_perf_settings = null;
+    /**
+     * <code>.POGOProtos.Settings.NewsGlobalSettings news_global_settings = 18;</code>
+     */
+    private $news_global_settings = null;
+    /**
+     * <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
+     */
+    private $telemetry_global_settings = null;
+    /**
+     * <code>.POGOProtos.Settings.LoginSettings login_settings = 22;</code>
+     */
+    private $login_settings = null;
+    /**
+     * <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
+     */
+    private $quest_global_settings = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\GlobalSettings::initOnce();
@@ -353,6 +369,74 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\ClientPerformanceSettings::class);
         $this->client_perf_settings = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.NewsGlobalSettings news_global_settings = 18;</code>
+     */
+    public function getNewsGlobalSettings()
+    {
+        return $this->news_global_settings;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.NewsGlobalSettings news_global_settings = 18;</code>
+     */
+    public function setNewsGlobalSettings(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\NewsGlobalSettings::class);
+        $this->news_global_settings = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
+     */
+    public function getTelemetryGlobalSettings()
+    {
+        return $this->telemetry_global_settings;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
+     */
+    public function setTelemetryGlobalSettings(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\TelemetryGlobalSettings::class);
+        $this->telemetry_global_settings = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.LoginSettings login_settings = 22;</code>
+     */
+    public function getLoginSettings()
+    {
+        return $this->login_settings;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.LoginSettings login_settings = 22;</code>
+     */
+    public function setLoginSettings(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\LoginSettings::class);
+        $this->login_settings = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
+     */
+    public function getQuestGlobalSettings()
+    {
+        return $this->quest_global_settings;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
+     */
+    public function setQuestGlobalSettings(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\QuestGlobalSettings::class);
+        $this->quest_global_settings = $var;
     }
 
 }

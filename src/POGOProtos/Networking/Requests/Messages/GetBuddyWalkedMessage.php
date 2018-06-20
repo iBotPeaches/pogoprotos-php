@@ -9,6 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
+ * <pre>
+ * </pre>
+ *
  * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetBuddyWalkedMessage</code>
  */
 class GetBuddyWalkedMessage extends \Google\Protobuf\Internal\Message

@@ -33,6 +33,10 @@ class ClaimCodenameResponse extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Data.PlayerData updated_player = 5;</code>
      */
     private $updated_player = null;
+    /**
+     * <code>repeated string suggested_codenames = 6;</code>
+     */
+    private $suggested_codenames;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\ClaimCodenameResponse::initOnce();
@@ -122,6 +126,23 @@ class ClaimCodenameResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PlayerData::class);
         $this->updated_player = $var;
+    }
+
+    /**
+     * <code>repeated string suggested_codenames = 6;</code>
+     */
+    public function getSuggestedCodenames()
+    {
+        return $this->suggested_codenames;
+    }
+
+    /**
+     * <code>repeated string suggested_codenames = 6;</code>
+     */
+    public function setSuggestedCodenames(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->suggested_codenames = $var;
     }
 
 }

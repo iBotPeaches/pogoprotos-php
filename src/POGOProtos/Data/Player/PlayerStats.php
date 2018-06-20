@@ -141,6 +141,14 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
      * <code>repeated .POGOProtos.Enums.GymBadgeType event_badges = 32;</code>
      */
     private $event_badges;
+    /**
+     * <code>float km_walked_past_active_day = 33;</code>
+     */
+    private $km_walked_past_active_day = 0.0;
+    /**
+     * <code>int32 num_challenge_quests_completed = 34;</code>
+     */
+    private $num_challenge_quests_completed = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Player\PlayerStats::initOnce();
@@ -689,6 +697,40 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\GymBadgeType::class);
         $this->event_badges = $var;
+    }
+
+    /**
+     * <code>float km_walked_past_active_day = 33;</code>
+     */
+    public function getKmWalkedPastActiveDay()
+    {
+        return $this->km_walked_past_active_day;
+    }
+
+    /**
+     * <code>float km_walked_past_active_day = 33;</code>
+     */
+    public function setKmWalkedPastActiveDay($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->km_walked_past_active_day = $var;
+    }
+
+    /**
+     * <code>int32 num_challenge_quests_completed = 34;</code>
+     */
+    public function getNumChallengeQuestsCompleted()
+    {
+        return $this->num_challenge_quests_completed;
+    }
+
+    /**
+     * <code>int32 num_challenge_quests_completed = 34;</code>
+     */
+    public function setNumChallengeQuestsCompleted($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->num_challenge_quests_completed = $var;
     }
 
 }

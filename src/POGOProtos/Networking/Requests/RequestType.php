@@ -483,7 +483,7 @@ class RequestType
     const ATTACK_RAID = 166;
     /**
      * <pre>
-     * ???
+     * Not yet released.
      * </pre>
      *
      * <code>AWARD_POKECOIN = 167;</code>
@@ -545,6 +545,14 @@ class RequestType
      * <code>MARK_TUTORIAL_COMPLETE = 406;</code>
      */
     const MARK_TUTORIAL_COMPLETE = 406;
+    /**
+     * <pre>
+     * Not yet released.
+     * </pre>
+     *
+     * <code>UPDATE_PERFORMANCE_METRICS = 407;</code>
+     */
+    const UPDATE_PERFORMANCE_METRICS = 407;
     /**
      * <pre>
      * Implemented [R &amp; M]
@@ -694,6 +702,78 @@ class RequestType
      * Implemented [R &amp; M]
      * </pre>
      *
+     * <code>FETCH_ALL_NEWS = 816;</code>
+     */
+    const FETCH_ALL_NEWS = 816;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>MARK_READ_NEWS_ARTICLE = 817;</code>
+     */
+    const MARK_READ_NEWS_ARTICLE = 817;
+    /**
+     * <pre>
+     * Not yet released.
+     * </pre>
+     *
+     * <code>GET_PLAYER_DISPLAY_INFO = 818;</code>
+     */
+    const GET_PLAYER_DISPLAY_INFO = 818;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_NEW_QUESTS = 900;</code>
+     */
+    const GET_NEW_QUESTS = 900;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_QUEST_DETAILS = 901;</code>
+     */
+    const GET_QUEST_DETAILS = 901;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>COMPLETE_QUEST = 902;</code>
+     */
+    const COMPLETE_QUEST = 902;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>REMOVE_QUEST = 903;</code>
+     */
+    const REMOVE_QUEST = 903;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>QUEST_ENCOUNTER = 904;</code>
+     */
+    const QUEST_ENCOUNTER = 904;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>COMPLETE_QUEST_STAMP_CARD = 905;</code>
+     */
+    const COMPLETE_QUEST_STAMP_CARD = 905;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>REGISTER_PUSH_NOTIFICATION = 5000;</code>
      */
     const REGISTER_PUSH_NOTIFICATION = 5000;
@@ -731,11 +811,43 @@ class RequestType
     const DOWNLOAD_GAME_MASTER_TEMPLATES = 5004;
     /**
      * <pre>
-     * Implemented [R &amp; M]
+     * UnUsed - Implemented [R &amp; M]
      * </pre>
      *
      * <code>GET_INVENTORY = 5005;</code>
      */
     const GET_INVENTORY = 5005;
+    /**
+     * <code>REDEEM_PASSCODE = 5006;</code>
+     */
+    const REDEEM_PASSCODE = 5006;
+    /**
+     * <code>PING = 5007;</code>
+     */
+    const PING = 5007;
+    /**
+     * <code>ADD_LOGIN_ACTION = 5008;</code>
+     */
+    const ADD_LOGIN_ACTION = 5008;
+    /**
+     * <code>REMOVE_LOGIN_ACTION = 5009;</code>
+     */
+    const REMOVE_LOGIN_ACTION = 5009;
+    /**
+     * <code>LIST_LOGIN_ACTION = 5010;</code>
+     */
+    const LIST_LOGIN_ACTION = 5010;
+    /**
+     * <code>ADD_NEW_POI = 5011;</code>
+     */
+    const ADD_NEW_POI = 5011;
+    /**
+     * <code>PROXY_SOCIAL_ACTION = 5012;</code>
+     */
+    const PROXY_SOCIAL_ACTION = 5012;
+    /**
+     * <code>CLIENT_TELEMETRY = 5013;</code>
+     */
+    const CLIENT_TELEMETRY = 5013;
 }
 

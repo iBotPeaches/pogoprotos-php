@@ -29,6 +29,10 @@ class DownloadRemoteConfigVersionResponse extends \Google\Protobuf\Internal\Mess
      * <code>uint64 asset_digest_timestamp_ms = 3;</code>
      */
     private $asset_digest_timestamp_ms = 0;
+    /**
+     * <code>repeated uint32 experiment_id = 4;</code>
+     */
+    private $experiment_id;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\DownloadRemoteConfigVersionResponse::initOnce();
@@ -92,6 +96,23 @@ class DownloadRemoteConfigVersionResponse extends \Google\Protobuf\Internal\Mess
     {
         GPBUtil::checkUint64($var);
         $this->asset_digest_timestamp_ms = $var;
+    }
+
+    /**
+     * <code>repeated uint32 experiment_id = 4;</code>
+     */
+    public function getExperimentId()
+    {
+        return $this->experiment_id;
+    }
+
+    /**
+     * <code>repeated uint32 experiment_id = 4;</code>
+     */
+    public function setExperimentId(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
+        $this->experiment_id = $var;
     }
 
 }

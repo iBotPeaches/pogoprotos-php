@@ -21,6 +21,10 @@ class UseItemRareCandyMessage extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
      */
     private $pokemon_id = 0;
+    /**
+     * <code>int32 candy_count = 3;</code>
+     */
+    private $candy_count = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\UseItemRareCandyMessage::initOnce();
@@ -59,6 +63,23 @@ class UseItemRareCandyMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->pokemon_id = $var;
+    }
+
+    /**
+     * <code>int32 candy_count = 3;</code>
+     */
+    public function getCandyCount()
+    {
+        return $this->candy_count;
+    }
+
+    /**
+     * <code>int32 candy_count = 3;</code>
+     */
+    public function setCandyCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->candy_count = $var;
     }
 
 }

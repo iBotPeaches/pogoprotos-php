@@ -33,6 +33,10 @@ class BadgeSettings extends \Google\Protobuf\Internal\Message
      * <code>bool event_badge = 5;</code>
      */
     private $event_badge = false;
+    /**
+     * <code>.POGOProtos.Settings.Master.EventBadgeSettings event_badge_settings = 6;</code>
+     */
+    private $event_badge_settings = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\Master\BadgeSettings::initOnce();
@@ -122,6 +126,23 @@ class BadgeSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->event_badge = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.EventBadgeSettings event_badge_settings = 6;</code>
+     */
+    public function getEventBadgeSettings()
+    {
+        return $this->event_badge_settings;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.EventBadgeSettings event_badge_settings = 6;</code>
+     */
+    public function setEventBadgeSettings(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\EventBadgeSettings::class);
+        $this->event_badge_settings = $var;
     }
 
 }

@@ -29,6 +29,10 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
      * <code>bool warn = 4;</code>
      */
     private $warn = false;
+    /**
+     * <code>bool was_created = 5;</code>
+     */
+    private $was_created = false;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\GetPlayerResponse::initOnce();
@@ -101,6 +105,23 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->warn = $var;
+    }
+
+    /**
+     * <code>bool was_created = 5;</code>
+     */
+    public function getWasCreated()
+    {
+        return $this->was_created;
+    }
+
+    /**
+     * <code>bool was_created = 5;</code>
+     */
+    public function setWasCreated($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->was_created = $var;
     }
 
 }

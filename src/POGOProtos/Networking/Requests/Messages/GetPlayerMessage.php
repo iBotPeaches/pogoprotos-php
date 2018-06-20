@@ -17,6 +17,10 @@ class GetPlayerMessage extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Networking.Requests.Messages.GetPlayerMessage.PlayerLocale player_locale = 1;</code>
      */
     private $player_locale = null;
+    /**
+     * <code>bool prevent_creation = 2;</code>
+     */
+    private $prevent_creation = false;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetPlayerMessage::initOnce();
@@ -38,6 +42,23 @@ class GetPlayerMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Requests\Messages\GetPlayerMessage_PlayerLocale::class);
         $this->player_locale = $var;
+    }
+
+    /**
+     * <code>bool prevent_creation = 2;</code>
+     */
+    public function getPreventCreation()
+    {
+        return $this->prevent_creation;
+    }
+
+    /**
+     * <code>bool prevent_creation = 2;</code>
+     */
+    public function setPreventCreation($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->prevent_creation = $var;
     }
 
 }

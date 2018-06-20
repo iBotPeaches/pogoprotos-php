@@ -69,6 +69,22 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
      * <code>int32 ar_plus_attempts_until_flee_infinite = 14;</code>
      */
     private $ar_plus_attempts_until_flee_infinite = 0;
+    /**
+     * <code>float escaped_bonus_multiplier_max = 15;</code>
+     */
+    private $escaped_bonus_multiplier_max = 0.0;
+    /**
+     * <code>float escaped_bonus_multiplier_by_excellent_throw = 16;</code>
+     */
+    private $escaped_bonus_multiplier_by_excellent_throw = 0.0;
+    /**
+     * <code>float escaped_bonus_multiplier_by_great_throw = 17;</code>
+     */
+    private $escaped_bonus_multiplier_by_great_throw = 0.0;
+    /**
+     * <code>float escaped_bonus_multiplier_by_nice_throw = 18;</code>
+     */
+    private $escaped_bonus_multiplier_by_nice_throw = 0.0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\Master\EncounterSettings::initOnce();
@@ -311,6 +327,74 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->ar_plus_attempts_until_flee_infinite = $var;
+    }
+
+    /**
+     * <code>float escaped_bonus_multiplier_max = 15;</code>
+     */
+    public function getEscapedBonusMultiplierMax()
+    {
+        return $this->escaped_bonus_multiplier_max;
+    }
+
+    /**
+     * <code>float escaped_bonus_multiplier_max = 15;</code>
+     */
+    public function setEscapedBonusMultiplierMax($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->escaped_bonus_multiplier_max = $var;
+    }
+
+    /**
+     * <code>float escaped_bonus_multiplier_by_excellent_throw = 16;</code>
+     */
+    public function getEscapedBonusMultiplierByExcellentThrow()
+    {
+        return $this->escaped_bonus_multiplier_by_excellent_throw;
+    }
+
+    /**
+     * <code>float escaped_bonus_multiplier_by_excellent_throw = 16;</code>
+     */
+    public function setEscapedBonusMultiplierByExcellentThrow($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->escaped_bonus_multiplier_by_excellent_throw = $var;
+    }
+
+    /**
+     * <code>float escaped_bonus_multiplier_by_great_throw = 17;</code>
+     */
+    public function getEscapedBonusMultiplierByGreatThrow()
+    {
+        return $this->escaped_bonus_multiplier_by_great_throw;
+    }
+
+    /**
+     * <code>float escaped_bonus_multiplier_by_great_throw = 17;</code>
+     */
+    public function setEscapedBonusMultiplierByGreatThrow($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->escaped_bonus_multiplier_by_great_throw = $var;
+    }
+
+    /**
+     * <code>float escaped_bonus_multiplier_by_nice_throw = 18;</code>
+     */
+    public function getEscapedBonusMultiplierByNiceThrow()
+    {
+        return $this->escaped_bonus_multiplier_by_nice_throw;
+    }
+
+    /**
+     * <code>float escaped_bonus_multiplier_by_nice_throw = 18;</code>
+     */
+    public function setEscapedBonusMultiplierByNiceThrow($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->escaped_bonus_multiplier_by_nice_throw = $var;
     }
 
 }

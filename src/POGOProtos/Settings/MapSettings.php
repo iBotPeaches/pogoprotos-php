@@ -45,6 +45,14 @@ class MapSettings extends \Google\Protobuf\Internal\Message
      * <code>int32 min_nearby_hide_sightings = 8;</code>
      */
     private $min_nearby_hide_sightings = 0;
+    /**
+     * <code>bool enable_special_weather = 9;</code>
+     */
+    private $enable_special_weather = false;
+    /**
+     * <code>float special_weather_probability = 10;</code>
+     */
+    private $special_weather_probability = 0.0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\MapSettings::initOnce();
@@ -185,6 +193,40 @@ class MapSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->min_nearby_hide_sightings = $var;
+    }
+
+    /**
+     * <code>bool enable_special_weather = 9;</code>
+     */
+    public function getEnableSpecialWeather()
+    {
+        return $this->enable_special_weather;
+    }
+
+    /**
+     * <code>bool enable_special_weather = 9;</code>
+     */
+    public function setEnableSpecialWeather($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_special_weather = $var;
+    }
+
+    /**
+     * <code>float special_weather_probability = 10;</code>
+     */
+    public function getSpecialWeatherProbability()
+    {
+        return $this->special_weather_probability;
+    }
+
+    /**
+     * <code>float special_weather_probability = 10;</code>
+     */
+    public function setSpecialWeatherProbability($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->special_weather_probability = $var;
     }
 
 }

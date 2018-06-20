@@ -33,6 +33,10 @@ class GymBadgeStats extends \Google\Protobuf\Internal\Message
      * <code>uint32 num_deploys = 4;</code>
      */
     private $num_deploys = 0;
+    /**
+     * <code>repeated .POGOProtos.Data.Gym.GymBattle gym_battles = 15;</code>
+     */
+    private $gym_battles;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Badge\GymBadgeStats::initOnce();
@@ -122,6 +126,23 @@ class GymBadgeStats extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint32($var);
         $this->num_deploys = $var;
+    }
+
+    /**
+     * <code>repeated .POGOProtos.Data.Gym.GymBattle gym_battles = 15;</code>
+     */
+    public function getGymBattles()
+    {
+        return $this->gym_battles;
+    }
+
+    /**
+     * <code>repeated .POGOProtos.Data.Gym.GymBattle gym_battles = 15;</code>
+     */
+    public function setGymBattles(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gym\GymBattle::class);
+        $this->gym_battles = $var;
     }
 
 }

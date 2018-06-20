@@ -65,6 +65,10 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Inventory.RaidTickets raid_tickets = 13;</code>
      */
     private $raid_tickets = null;
+    /**
+     * <code>.POGOProtos.Data.Quests.Quests quests = 14;</code>
+     */
+    private $quests = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Inventory\InventoryItemData::initOnce();
@@ -290,6 +294,23 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\RaidTickets::class);
         $this->raid_tickets = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.Quests quests = 14;</code>
+     */
+    public function getQuests()
+    {
+        return $this->quests;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.Quests quests = 14;</code>
+     */
+    public function setQuests(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\Quests::class);
+        $this->quests = $var;
     }
 
 }

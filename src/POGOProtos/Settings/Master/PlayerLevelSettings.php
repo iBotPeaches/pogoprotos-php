@@ -37,6 +37,10 @@ class PlayerLevelSettings extends \Google\Protobuf\Internal\Message
      * <code>int32 max_raid_encounter_player_level = 6;</code>
      */
     private $max_raid_encounter_player_level = 0;
+    /**
+     * <code>int32 max_quest_encounter_player_level = 7;</code>
+     */
+    private $max_quest_encounter_player_level = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\Master\PlayerLevelSettings::initOnce();
@@ -143,6 +147,23 @@ class PlayerLevelSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->max_raid_encounter_player_level = $var;
+    }
+
+    /**
+     * <code>int32 max_quest_encounter_player_level = 7;</code>
+     */
+    public function getMaxQuestEncounterPlayerLevel()
+    {
+        return $this->max_quest_encounter_player_level;
+    }
+
+    /**
+     * <code>int32 max_quest_encounter_player_level = 7;</code>
+     */
+    public function setMaxQuestEncounterPlayerLevel($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->max_quest_encounter_player_level = $var;
     }
 
 }

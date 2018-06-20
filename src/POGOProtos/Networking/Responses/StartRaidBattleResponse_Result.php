@@ -53,5 +53,13 @@ class StartRaidBattleResponse_Result
      * <code>ERROR_NO_TICKET = 10;</code>
      */
     const ERROR_NO_TICKET = 10;
+    /**
+     * <code>ERROR_INVALID_SERVER = 11;</code>
+     */
+    const ERROR_INVALID_SERVER = 11;
+    /**
+     * <code>ERROR_NEVER_JOINED_BATTLE = 12;</code>
+     */
+    const ERROR_NEVER_JOINED_BATTLE = 12;
 }
 

@@ -21,6 +21,10 @@ class ClaimCodenameMessage extends \Google\Protobuf\Internal\Message
      * <code>bool force = 2;</code>
      */
     private $force = false;
+    /**
+     * <code>bool generate_suggested_codenames = 3;</code>
+     */
+    private $generate_suggested_codenames = false;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\ClaimCodenameMessage::initOnce();
@@ -59,6 +63,23 @@ class ClaimCodenameMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->force = $var;
+    }
+
+    /**
+     * <code>bool generate_suggested_codenames = 3;</code>
+     */
+    public function getGenerateSuggestedCodenames()
+    {
+        return $this->generate_suggested_codenames;
+    }
+
+    /**
+     * <code>bool generate_suggested_codenames = 3;</code>
+     */
+    public function setGenerateSuggestedCodenames($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->generate_suggested_codenames = $var;
     }
 
 }

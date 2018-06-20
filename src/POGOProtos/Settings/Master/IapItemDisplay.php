@@ -26,13 +26,30 @@ class IapItemDisplay extends \Google\Protobuf\Internal\Message
      */
     private $sort_order = 0;
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemId item_ids = 4;</code>
+     * <pre>
+     * repeated .POGOProtos.Inventory.Item.ItemId item_ids = 4;
+     * repeated int32 counts = 5;
+     * </pre>
+     *
+     * <code>bool hidden = 6;</code>
      */
-    private $item_ids;
+    private $hidden = false;
     /**
-     * <code>repeated int32 counts = 5;</code>
+     * <code>bool sale = 7;</code>
      */
-    private $counts;
+    private $sale = false;
+    /**
+     * <code>string sprite_id = 8;</code>
+     */
+    private $sprite_id = '';
+    /**
+     * <code>string title = 9;</code>
+     */
+    private $title = '';
+    /**
+     * <code>string description = 10;</code>
+     */
+    private $description = '';
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\Master\IapItemDisplay::initOnce();
@@ -91,37 +108,98 @@ class IapItemDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemId item_ids = 4;</code>
+     * <pre>
+     * repeated .POGOProtos.Inventory.Item.ItemId item_ids = 4;
+     * repeated int32 counts = 5;
+     * </pre>
+     *
+     * <code>bool hidden = 6;</code>
      */
-    public function getItemIds()
+    public function getHidden()
     {
-        return $this->item_ids;
+        return $this->hidden;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemId item_ids = 4;</code>
+     * <pre>
+     * repeated .POGOProtos.Inventory.Item.ItemId item_ids = 4;
+     * repeated int32 counts = 5;
+     * </pre>
+     *
+     * <code>bool hidden = 6;</code>
      */
-    public function setItemIds(&$var)
+    public function setHidden($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Inventory\Item\ItemId::class);
-        $this->item_ids = $var;
+        GPBUtil::checkBool($var);
+        $this->hidden = $var;
     }
 
     /**
-     * <code>repeated int32 counts = 5;</code>
+     * <code>bool sale = 7;</code>
      */
-    public function getCounts()
+    public function getSale()
     {
-        return $this->counts;
+        return $this->sale;
     }
 
     /**
-     * <code>repeated int32 counts = 5;</code>
+     * <code>bool sale = 7;</code>
      */
-    public function setCounts(&$var)
+    public function setSale($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->counts = $var;
+        GPBUtil::checkBool($var);
+        $this->sale = $var;
+    }
+
+    /**
+     * <code>string sprite_id = 8;</code>
+     */
+    public function getSpriteId()
+    {
+        return $this->sprite_id;
+    }
+
+    /**
+     * <code>string sprite_id = 8;</code>
+     */
+    public function setSpriteId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->sprite_id = $var;
+    }
+
+    /**
+     * <code>string title = 9;</code>
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * <code>string title = 9;</code>
+     */
+    public function setTitle($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->title = $var;
+    }
+
+    /**
+     * <code>string description = 10;</code>
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * <code>string description = 10;</code>
+     */
+    public function setDescription($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->description = $var;
     }
 
 }

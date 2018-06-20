@@ -41,6 +41,10 @@ class CatchPokemonResponse extends \Google\Protobuf\Internal\Message
      * <code>int32 throws_remaining = 7;</code>
      */
     private $throws_remaining = 0;
+    /**
+     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     */
+    private $pokemon_display = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\CatchPokemonResponse::initOnce();
@@ -164,6 +168,23 @@ class CatchPokemonResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->throws_remaining = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     */
+    public function getPokemonDisplay()
+    {
+        return $this->pokemon_display;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     */
+    public function setPokemonDisplay(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonDisplay::class);
+        $this->pokemon_display = $var;
     }
 
 }

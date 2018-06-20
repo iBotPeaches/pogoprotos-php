@@ -49,5 +49,13 @@ class TutorialState
      * <code>GYM_TUTORIAL = 9;</code>
      */
     const GYM_TUTORIAL = 9;
+    /**
+     * <code>CHALLENGE_QUEST_TUTORIAL = 10;</code>
+     */
+    const CHALLENGE_QUEST_TUTORIAL = 10;
+    /**
+     * <code>PRIVACY_POLICY_CONFIRMATION = 11;</code>
+     */
+    const PRIVACY_POLICY_CONFIRMATION = 11;
 }
 

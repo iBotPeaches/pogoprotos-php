@@ -21,6 +21,82 @@ class Quest extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Data.Quests.DailyQuest daily_quest = 2;</code>
      */
     private $daily_quest = null;
+    /**
+     * <code>.POGOProtos.Data.Quests.Quest.MultiPartQuest multi_part = 3;</code>
+     */
+    private $multi_part = null;
+    /**
+     * <code>.POGOProtos.Data.Quests.CatchPokemonQuest catch_pokemon = 4;</code>
+     */
+    private $catch_pokemon = null;
+    /**
+     * <code>string quest_id = 100;</code>
+     */
+    private $quest_id = '';
+    /**
+     * <code>int64 quest_seed = 101;</code>
+     */
+    private $quest_seed = 0;
+    /**
+     * <code>.POGOProtos.Data.Quests.Quest.Context quest_context = 102;</code>
+     */
+    private $quest_context = 0;
+    /**
+     * <code>string template_id = 103;</code>
+     */
+    private $template_id = '';
+    /**
+     * <code>int32 progress = 104;</code>
+     */
+    private $progress = 0;
+    /**
+     * <code>.POGOProtos.Data.Quests.QuestGoal goal = 105;</code>
+     */
+    private $goal = null;
+    /**
+     * <code>.POGOProtos.Data.Quests.Quest.Status status = 106;</code>
+     */
+    private $status = 0;
+    /**
+     * <code>repeated .POGOProtos.Data.Quests.QuestReward quest_rewards = 107;</code>
+     */
+    private $quest_rewards;
+    /**
+     * <code>int64 creation_timestamp_ms = 108;</code>
+     */
+    private $creation_timestamp_ms = 0;
+    /**
+     * <code>int64 last_update_timestamp_ms = 109;</code>
+     */
+    private $last_update_timestamp_ms = 0;
+    /**
+     * <code>int64 compeletion_timestamp_ms = 110;</code>
+     */
+    private $compeletion_timestamp_ms = 0;
+    /**
+     * <code>string fort_id = 111;</code>
+     */
+    private $fort_id = '';
+    /**
+     * <code>bool admin_generated = 112;</code>
+     */
+    private $admin_generated = false;
+    /**
+     * <code>bool stamp_count_override_enabled = 113;</code>
+     */
+    private $stamp_count_override_enabled = false;
+    /**
+     * <code>int32 stamp_count_override = 114;</code>
+     */
+    private $stamp_count_override = 0;
+    /**
+     * <code>int64 s2_cell_id = 115;</code>
+     */
+    private $s2_cell_id = 0;
+    /**
+     * <code>int32 story_quest_template_version = 116;</code>
+     */
+    private $story_quest_template_version = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Quests\Quest::initOnce();
@@ -59,6 +135,329 @@ class Quest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\DailyQuest::class);
         $this->daily_quest = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.Quest.MultiPartQuest multi_part = 3;</code>
+     */
+    public function getMultiPart()
+    {
+        return $this->multi_part;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.Quest.MultiPartQuest multi_part = 3;</code>
+     */
+    public function setMultiPart(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\Quest_MultiPartQuest::class);
+        $this->multi_part = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.CatchPokemonQuest catch_pokemon = 4;</code>
+     */
+    public function getCatchPokemon()
+    {
+        return $this->catch_pokemon;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.CatchPokemonQuest catch_pokemon = 4;</code>
+     */
+    public function setCatchPokemon(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\CatchPokemonQuest::class);
+        $this->catch_pokemon = $var;
+    }
+
+    /**
+     * <code>string quest_id = 100;</code>
+     */
+    public function getQuestId()
+    {
+        return $this->quest_id;
+    }
+
+    /**
+     * <code>string quest_id = 100;</code>
+     */
+    public function setQuestId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->quest_id = $var;
+    }
+
+    /**
+     * <code>int64 quest_seed = 101;</code>
+     */
+    public function getQuestSeed()
+    {
+        return $this->quest_seed;
+    }
+
+    /**
+     * <code>int64 quest_seed = 101;</code>
+     */
+    public function setQuestSeed($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->quest_seed = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.Quest.Context quest_context = 102;</code>
+     */
+    public function getQuestContext()
+    {
+        return $this->quest_context;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.Quest.Context quest_context = 102;</code>
+     */
+    public function setQuestContext($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\Quest_Context::class);
+        $this->quest_context = $var;
+    }
+
+    /**
+     * <code>string template_id = 103;</code>
+     */
+    public function getTemplateId()
+    {
+        return $this->template_id;
+    }
+
+    /**
+     * <code>string template_id = 103;</code>
+     */
+    public function setTemplateId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->template_id = $var;
+    }
+
+    /**
+     * <code>int32 progress = 104;</code>
+     */
+    public function getProgress()
+    {
+        return $this->progress;
+    }
+
+    /**
+     * <code>int32 progress = 104;</code>
+     */
+    public function setProgress($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->progress = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.QuestGoal goal = 105;</code>
+     */
+    public function getGoal()
+    {
+        return $this->goal;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.QuestGoal goal = 105;</code>
+     */
+    public function setGoal(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestGoal::class);
+        $this->goal = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.Quest.Status status = 106;</code>
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Quests.Quest.Status status = 106;</code>
+     */
+    public function setStatus($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\Quest_Status::class);
+        $this->status = $var;
+    }
+
+    /**
+     * <code>repeated .POGOProtos.Data.Quests.QuestReward quest_rewards = 107;</code>
+     */
+    public function getQuestRewards()
+    {
+        return $this->quest_rewards;
+    }
+
+    /**
+     * <code>repeated .POGOProtos.Data.Quests.QuestReward quest_rewards = 107;</code>
+     */
+    public function setQuestRewards(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\QuestReward::class);
+        $this->quest_rewards = $var;
+    }
+
+    /**
+     * <code>int64 creation_timestamp_ms = 108;</code>
+     */
+    public function getCreationTimestampMs()
+    {
+        return $this->creation_timestamp_ms;
+    }
+
+    /**
+     * <code>int64 creation_timestamp_ms = 108;</code>
+     */
+    public function setCreationTimestampMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->creation_timestamp_ms = $var;
+    }
+
+    /**
+     * <code>int64 last_update_timestamp_ms = 109;</code>
+     */
+    public function getLastUpdateTimestampMs()
+    {
+        return $this->last_update_timestamp_ms;
+    }
+
+    /**
+     * <code>int64 last_update_timestamp_ms = 109;</code>
+     */
+    public function setLastUpdateTimestampMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->last_update_timestamp_ms = $var;
+    }
+
+    /**
+     * <code>int64 compeletion_timestamp_ms = 110;</code>
+     */
+    public function getCompeletionTimestampMs()
+    {
+        return $this->compeletion_timestamp_ms;
+    }
+
+    /**
+     * <code>int64 compeletion_timestamp_ms = 110;</code>
+     */
+    public function setCompeletionTimestampMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->compeletion_timestamp_ms = $var;
+    }
+
+    /**
+     * <code>string fort_id = 111;</code>
+     */
+    public function getFortId()
+    {
+        return $this->fort_id;
+    }
+
+    /**
+     * <code>string fort_id = 111;</code>
+     */
+    public function setFortId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->fort_id = $var;
+    }
+
+    /**
+     * <code>bool admin_generated = 112;</code>
+     */
+    public function getAdminGenerated()
+    {
+        return $this->admin_generated;
+    }
+
+    /**
+     * <code>bool admin_generated = 112;</code>
+     */
+    public function setAdminGenerated($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->admin_generated = $var;
+    }
+
+    /**
+     * <code>bool stamp_count_override_enabled = 113;</code>
+     */
+    public function getStampCountOverrideEnabled()
+    {
+        return $this->stamp_count_override_enabled;
+    }
+
+    /**
+     * <code>bool stamp_count_override_enabled = 113;</code>
+     */
+    public function setStampCountOverrideEnabled($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->stamp_count_override_enabled = $var;
+    }
+
+    /**
+     * <code>int32 stamp_count_override = 114;</code>
+     */
+    public function getStampCountOverride()
+    {
+        return $this->stamp_count_override;
+    }
+
+    /**
+     * <code>int32 stamp_count_override = 114;</code>
+     */
+    public function setStampCountOverride($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->stamp_count_override = $var;
+    }
+
+    /**
+     * <code>int64 s2_cell_id = 115;</code>
+     */
+    public function getS2CellId()
+    {
+        return $this->s2_cell_id;
+    }
+
+    /**
+     * <code>int64 s2_cell_id = 115;</code>
+     */
+    public function setS2CellId($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->s2_cell_id = $var;
+    }
+
+    /**
+     * <code>int32 story_quest_template_version = 116;</code>
+     */
+    public function getStoryQuestTemplateVersion()
+    {
+        return $this->story_quest_template_version;
+    }
+
+    /**
+     * <code>int32 story_quest_template_version = 116;</code>
+     */
+    public function setStoryQuestTemplateVersion($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->story_quest_template_version = $var;
     }
 
 }

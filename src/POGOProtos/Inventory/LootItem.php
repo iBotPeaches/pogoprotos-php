@@ -33,6 +33,14 @@ class LootItem extends \Google\Protobuf\Internal\Message
      * <code>int32 count = 5;</code>
      */
     private $count = 0;
+    /**
+     * <code>bool experience = 6;</code>
+     */
+    private $experience = false;
+    /**
+     * <code>.POGOProtos.Data.PokemonData pokemon_egg = 7;</code>
+     */
+    private $pokemon_egg = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Inventory\LootItem::initOnce();
@@ -122,6 +130,40 @@ class LootItem extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->count = $var;
+    }
+
+    /**
+     * <code>bool experience = 6;</code>
+     */
+    public function getExperience()
+    {
+        return $this->experience;
+    }
+
+    /**
+     * <code>bool experience = 6;</code>
+     */
+    public function setExperience($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->experience = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.PokemonData pokemon_egg = 7;</code>
+     */
+    public function getPokemonEgg()
+    {
+        return $this->pokemon_egg;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.PokemonData pokemon_egg = 7;</code>
+     */
+    public function setPokemonEgg(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
+        $this->pokemon_egg = $var;
     }
 
 }

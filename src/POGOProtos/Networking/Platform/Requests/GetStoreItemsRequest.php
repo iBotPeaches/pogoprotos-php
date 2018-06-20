@@ -9,6 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
+ * <pre>
+ * </pre>
+ *
  * Protobuf type <code>POGOProtos.Networking.Platform.Requests.GetStoreItemsRequest</code>
  */
 class GetStoreItemsRequest extends \Google\Protobuf\Internal\Message

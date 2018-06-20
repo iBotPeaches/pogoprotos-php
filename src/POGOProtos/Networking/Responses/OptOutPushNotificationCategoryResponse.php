@@ -10,7 +10,6 @@ use Google\Protobuf\Internal\GPBUtil;
 
 /**
  * <pre>
- * ???
  * </pre>
  *
  * Protobuf type <code>POGOProtos.Networking.Responses.OptOutPushNotificationCategoryResponse</code>

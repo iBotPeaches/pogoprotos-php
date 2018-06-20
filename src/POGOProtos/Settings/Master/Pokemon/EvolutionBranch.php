@@ -29,6 +29,10 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
      * <code>float km_buddy_distance_requirement = 4;</code>
      */
     private $km_buddy_distance_requirement = 0.0;
+    /**
+     * <code>.POGOProtos.Enums.Form form = 5;</code>
+     */
+    private $form = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\Master\Pokemon\EvolutionBranch::initOnce();
@@ -101,6 +105,23 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkFloat($var);
         $this->km_buddy_distance_requirement = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.Form form = 5;</code>
+     */
+    public function getForm()
+    {
+        return $this->form;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.Form form = 5;</code>
+     */
+    public function setForm($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
+        $this->form = $var;
     }
 
 }

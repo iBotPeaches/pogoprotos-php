@@ -37,6 +37,10 @@ class DisplayWeather extends \Google\Protobuf\Internal\Message
      * <code>int32 wind_direction = 6;</code>
      */
     private $wind_direction = 0;
+    /**
+     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel special_effect_level = 7;</code>
+     */
+    private $special_effect_level = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Map\Weather\DisplayWeather::initOnce();
@@ -143,6 +147,23 @@ class DisplayWeather extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->wind_direction = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel special_effect_level = 7;</code>
+     */
+    public function getSpecialEffectLevel()
+    {
+        return $this->special_effect_level;
+    }
+
+    /**
+     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel special_effect_level = 7;</code>
+     */
+    public function setSpecialEffectLevel($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Map\Weather\DisplayWeather_DisplayLevel::class);
+        $this->special_effect_level = $var;
     }
 
 }

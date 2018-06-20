@@ -147,6 +147,57 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
         $this->writeOneof(7, $var);
     }
 
+    /**
+     * <code>.POGOProtos.Data.Logs.CompleteQuestLogEntry complete_quest = 8;</code>
+     */
+    public function getCompleteQuest()
+    {
+        return $this->readOneof(8);
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Logs.CompleteQuestLogEntry complete_quest = 8;</code>
+     */
+    public function setCompleteQuest(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\CompleteQuestLogEntry::class);
+        $this->writeOneof(8, $var);
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Logs.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     */
+    public function getCompleteQuestStampCard()
+    {
+        return $this->readOneof(9);
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Logs.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     */
+    public function setCompleteQuestStampCard(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\CompleteQuestStampCardLogEntry::class);
+        $this->writeOneof(9, $var);
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Logs.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     */
+    public function getCompleteQuestPokemonEncounter()
+    {
+        return $this->readOneof(10);
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Logs.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     */
+    public function setCompleteQuestPokemonEncounter(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\CompleteQuestPokemonEncounterLogEntry::class);
+        $this->writeOneof(10, $var);
+    }
+
     public function getAction()
     {
         return $this->Action;

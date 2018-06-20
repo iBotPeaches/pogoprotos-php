@@ -153,6 +153,14 @@ class FortData extends \Google\Protobuf\Internal\Message
      * <code>string banner_url = 27;</code>
      */
     private $banner_url = '';
+    /**
+     * <code>string partner_id = 28;</code>
+     */
+    private $partner_id = '';
+    /**
+     * <code>bool challenge_quest_completed = 30;</code>
+     */
+    private $challenge_quest_completed = false;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Map\Fort\FortData::initOnce();
@@ -680,6 +688,40 @@ class FortData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->banner_url = $var;
+    }
+
+    /**
+     * <code>string partner_id = 28;</code>
+     */
+    public function getPartnerId()
+    {
+        return $this->partner_id;
+    }
+
+    /**
+     * <code>string partner_id = 28;</code>
+     */
+    public function setPartnerId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->partner_id = $var;
+    }
+
+    /**
+     * <code>bool challenge_quest_completed = 30;</code>
+     */
+    public function getChallengeQuestCompleted()
+    {
+        return $this->challenge_quest_completed;
+    }
+
+    /**
+     * <code>bool challenge_quest_completed = 30;</code>
+     */
+    public function setChallengeQuestCompleted($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->challenge_quest_completed = $var;
     }
 
 }
