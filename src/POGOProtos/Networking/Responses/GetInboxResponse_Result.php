@@ -21,5 +21,9 @@ class GetInboxResponse_Result
      * <code>FAILURE = 2;</code>
      */
     const FAILURE = 2;
+    /**
+     * <code>TIMED_OUT = 3;</code>
+     */
+    const TIMED_OUT = 3;
 }
 

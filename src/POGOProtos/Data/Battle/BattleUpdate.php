@@ -29,6 +29,10 @@ class BattleUpdate extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 4;</code>
      */
     private $active_attacker = null;
+    /**
+     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 5;</code>
+     */
+    private $highest_friendship_milestone = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Battle\BattleUpdate::initOnce();
@@ -101,6 +105,23 @@ class BattleUpdate extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattlePokemonInfo::class);
         $this->active_attacker = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 5;</code>
+     */
+    public function getHighestFriendshipMilestone()
+    {
+        return $this->highest_friendship_milestone;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 5;</code>
+     */
+    public function setHighestFriendshipMilestone($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\FriendshipLevelMilestone::class);
+        $this->highest_friendship_milestone = $var;
     }
 
 }

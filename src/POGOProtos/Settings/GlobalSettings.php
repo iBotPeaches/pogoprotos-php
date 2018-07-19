@@ -93,6 +93,14 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
      */
     private $quest_global_settings = null;
+    /**
+     * <code>.POGOProtos.Settings.SocialClientSettings social_settings = 23;</code>
+     */
+    private $social_settings = null;
+    /**
+     * <code>.POGOProtos.Settings.TradingGlobalSettings trading_global_settings = 24;</code>
+     */
+    private $trading_global_settings = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Settings\GlobalSettings::initOnce();
@@ -437,6 +445,40 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\QuestGlobalSettings::class);
         $this->quest_global_settings = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.SocialClientSettings social_settings = 23;</code>
+     */
+    public function getSocialSettings()
+    {
+        return $this->social_settings;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.SocialClientSettings social_settings = 23;</code>
+     */
+    public function setSocialSettings(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\SocialClientSettings::class);
+        $this->social_settings = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.TradingGlobalSettings trading_global_settings = 24;</code>
+     */
+    public function getTradingGlobalSettings()
+    {
+        return $this->trading_global_settings;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.TradingGlobalSettings trading_global_settings = 24;</code>
+     */
+    public function setTradingGlobalSettings(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\TradingGlobalSettings::class);
+        $this->trading_global_settings = $var;
     }
 
 }

@@ -34,15 +34,15 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
      */
     private $evolution_stones = 0;
     /**
-     * <code>repeated .POGOProtos.Enums.Costume captured_costumes = 6;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Costume captured_costumes = 6;</code>
      */
     private $captured_costumes;
     /**
-     * <code>repeated .POGOProtos.Enums.Form captured_forms = 7;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Form captured_forms = 7;</code>
      */
     private $captured_forms;
     /**
-     * <code>repeated .POGOProtos.Enums.Gender captured_genders = 8;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Gender captured_genders = 8;</code>
      */
     private $captured_genders;
     /**
@@ -50,15 +50,15 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
      */
     private $captured_shiny = false;
     /**
-     * <code>repeated .POGOProtos.Enums.Costume encountered_costumes = 10;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Costume encountered_costumes = 10;</code>
      */
     private $encountered_costumes;
     /**
-     * <code>repeated .POGOProtos.Enums.Form encountered_forms = 11;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Form encountered_forms = 11;</code>
      */
     private $encountered_forms;
     /**
-     * <code>repeated .POGOProtos.Enums.Gender encountered_genders = 12;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Gender encountered_genders = 12;</code>
      */
     private $encountered_genders;
     /**
@@ -157,7 +157,7 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Costume captured_costumes = 6;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Costume captured_costumes = 6;</code>
      */
     public function getCapturedCostumes()
     {
@@ -165,16 +165,16 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Costume captured_costumes = 6;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Costume captured_costumes = 6;</code>
      */
     public function setCapturedCostumes(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\Costume::class);
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\PokemonDisplay_Costume::class);
         $this->captured_costumes = $var;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Form captured_forms = 7;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Form captured_forms = 7;</code>
      */
     public function getCapturedForms()
     {
@@ -182,16 +182,16 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Form captured_forms = 7;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Form captured_forms = 7;</code>
      */
     public function setCapturedForms(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\Form::class);
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\PokemonDisplay_Form::class);
         $this->captured_forms = $var;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Gender captured_genders = 8;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Gender captured_genders = 8;</code>
      */
     public function getCapturedGenders()
     {
@@ -199,11 +199,11 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Gender captured_genders = 8;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Gender captured_genders = 8;</code>
      */
     public function setCapturedGenders(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\Gender::class);
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\PokemonDisplay_Gender::class);
         $this->captured_genders = $var;
     }
 
@@ -225,7 +225,7 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Costume encountered_costumes = 10;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Costume encountered_costumes = 10;</code>
      */
     public function getEncounteredCostumes()
     {
@@ -233,16 +233,16 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Costume encountered_costumes = 10;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Costume encountered_costumes = 10;</code>
      */
     public function setEncounteredCostumes(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\Costume::class);
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\PokemonDisplay_Costume::class);
         $this->encountered_costumes = $var;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Form encountered_forms = 11;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Form encountered_forms = 11;</code>
      */
     public function getEncounteredForms()
     {
@@ -250,16 +250,16 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Form encountered_forms = 11;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Form encountered_forms = 11;</code>
      */
     public function setEncounteredForms(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\Form::class);
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\PokemonDisplay_Form::class);
         $this->encountered_forms = $var;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Gender encountered_genders = 12;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Gender encountered_genders = 12;</code>
      */
     public function getEncounteredGenders()
     {
@@ -267,11 +267,11 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Gender encountered_genders = 12;</code>
+     * <code>repeated .POGOProtos.Data.PokemonDisplay.Gender encountered_genders = 12;</code>
      */
     public function setEncounteredGenders(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\Gender::class);
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\PokemonDisplay_Gender::class);
         $this->encountered_genders = $var;
     }
 

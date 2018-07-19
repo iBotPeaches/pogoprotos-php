@@ -49,6 +49,10 @@ class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
      * <code>repeated .POGOProtos.Inventory.Item.ItemData team_bonus_items = 9;</code>
      */
     private $team_bonus_items;
+    /**
+     * <code>repeated .POGOProtos.Data.Gift.GiftBox gift_boxes = 10;</code>
+     */
+    private $gift_boxes;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Logs\FortSearchLogEntry::initOnce();
@@ -206,6 +210,23 @@ class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
         $this->team_bonus_items = $var;
+    }
+
+    /**
+     * <code>repeated .POGOProtos.Data.Gift.GiftBox gift_boxes = 10;</code>
+     */
+    public function getGiftBoxes()
+    {
+        return $this->gift_boxes;
+    }
+
+    /**
+     * <code>repeated .POGOProtos.Data.Gift.GiftBox gift_boxes = 10;</code>
+     */
+    public function setGiftBoxes(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gift\GiftBox::class);
+        $this->gift_boxes = $var;
     }
 
 }

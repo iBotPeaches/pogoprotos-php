@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class QuestCondition_WithRaidLevel extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Enums.RaidLevel raid_level = 1;</code>
+     * <code>repeated .POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 1;</code>
      */
     private $raid_level;
 
@@ -24,7 +24,7 @@ class QuestCondition_WithRaidLevel extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.RaidLevel raid_level = 1;</code>
+     * <code>repeated .POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 1;</code>
      */
     public function getRaidLevel()
     {
@@ -32,11 +32,11 @@ class QuestCondition_WithRaidLevel extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.RaidLevel raid_level = 1;</code>
+     * <code>repeated .POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 1;</code>
      */
     public function setRaidLevel(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\RaidLevel::class);
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\Raid\RaidInfo_RaidLevel::class);
         $this->raid_level = $var;
     }
 

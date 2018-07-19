@@ -30,7 +30,7 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
      */
     private $km_buddy_distance_requirement = 0.0;
     /**
-     * <code>.POGOProtos.Enums.Form form = 5;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 5;</code>
      */
     private $form = 0;
 
@@ -108,7 +108,7 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Form form = 5;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 5;</code>
      */
     public function getForm()
     {
@@ -116,11 +116,11 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Form form = 5;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 5;</code>
      */
     public function setForm($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Form::class);
         $this->form = $var;
     }
 

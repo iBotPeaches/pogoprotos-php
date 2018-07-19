@@ -149,6 +149,18 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
      * <code>int32 num_challenge_quests_completed = 34;</code>
      */
     private $num_challenge_quests_completed = 0;
+    /**
+     * <code>int32 num_trades = 35;</code>
+     */
+    private $num_trades = 0;
+    /**
+     * <code>int32 num_max_level_friends = 36;</code>
+     */
+    private $num_max_level_friends = 0;
+    /**
+     * <code>int64 trade_accumulated_distance_km = 37;</code>
+     */
+    private $trade_accumulated_distance_km = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Player\PlayerStats::initOnce();
@@ -731,6 +743,57 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->num_challenge_quests_completed = $var;
+    }
+
+    /**
+     * <code>int32 num_trades = 35;</code>
+     */
+    public function getNumTrades()
+    {
+        return $this->num_trades;
+    }
+
+    /**
+     * <code>int32 num_trades = 35;</code>
+     */
+    public function setNumTrades($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->num_trades = $var;
+    }
+
+    /**
+     * <code>int32 num_max_level_friends = 36;</code>
+     */
+    public function getNumMaxLevelFriends()
+    {
+        return $this->num_max_level_friends;
+    }
+
+    /**
+     * <code>int32 num_max_level_friends = 36;</code>
+     */
+    public function setNumMaxLevelFriends($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->num_max_level_friends = $var;
+    }
+
+    /**
+     * <code>int64 trade_accumulated_distance_km = 37;</code>
+     */
+    public function getTradeAccumulatedDistanceKm()
+    {
+        return $this->trade_accumulated_distance_km;
+    }
+
+    /**
+     * <code>int64 trade_accumulated_distance_km = 37;</code>
+     */
+    public function setTradeAccumulatedDistanceKm($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->trade_accumulated_distance_km = $var;
     }
 
 }

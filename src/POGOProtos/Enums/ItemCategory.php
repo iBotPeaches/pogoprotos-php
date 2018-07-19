@@ -77,5 +77,9 @@ class ItemCategory
      * <code>ITEM_CATEGORY_STARDUST_BOOST = 16;</code>
      */
     const ITEM_CATEGORY_STARDUST_BOOST = 16;
+    /**
+     * <code>ITEM_CATEGORY_FRIEND_GIFT_BOX = 17;</code>
+     */
+    const ITEM_CATEGORY_FRIEND_GIFT_BOX = 17;
 }
 

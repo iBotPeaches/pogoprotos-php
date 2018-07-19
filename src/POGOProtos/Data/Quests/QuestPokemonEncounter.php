@@ -22,7 +22,7 @@ class QuestPokemonEncounter extends \Google\Protobuf\Internal\Message
      */
     private $pokemon = 0;
     /**
-     * <code>.POGOProtos.Enums.EncounterType encounter_type = 3;</code>
+     * <code>.POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType encounter_type = 3;</code>
      */
     private $encounter_type = 0;
 
@@ -66,7 +66,7 @@ class QuestPokemonEncounter extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.EncounterType encounter_type = 3;</code>
+     * <code>.POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType encounter_type = 3;</code>
      */
     public function getEncounterType()
     {
@@ -74,11 +74,11 @@ class QuestPokemonEncounter extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.EncounterType encounter_type = 3;</code>
+     * <code>.POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType encounter_type = 3;</code>
      */
     public function setEncounterType($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\EncounterType::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\QuestPokemonEncounter_EncounterType::class);
         $this->encounter_type = $var;
     }
 

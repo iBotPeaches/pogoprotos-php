@@ -57,5 +57,9 @@ class TutorialState
      * <code>PRIVACY_POLICY_CONFIRMATION = 11;</code>
      */
     const PRIVACY_POLICY_CONFIRMATION = 11;
+    /**
+     * <code>TRADING_TUTORIAL = 12;</code>
+     */
+    const TRADING_TUTORIAL = 12;
 }
 

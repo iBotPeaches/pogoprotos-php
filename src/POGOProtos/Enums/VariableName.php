@@ -117,5 +117,41 @@ class VariableName
      * <code>RAID_SEED = 1017;</code>
      */
     const RAID_SEED = 1017;
+    /**
+     * <code>EXCLUSIVE_RAID_CANCELLATION_INFO = 1018;</code>
+     */
+    const EXCLUSIVE_RAID_CANCELLATION_INFO = 1018;
+    /**
+     * <code>GIFTBOX_DETAILS = 1019;</code>
+     */
+    const GIFTBOX_DETAILS = 1019;
+    /**
+     * <code>FRIEND_AVATAR = 1020;</code>
+     */
+    const FRIEND_AVATAR = 1020;
+    /**
+     * <code>FRIEND_TEAM = 1021;</code>
+     */
+    const FRIEND_TEAM = 1021;
+    /**
+     * <code>FRIEND_CODENAME = 1022;</code>
+     */
+    const FRIEND_CODENAME = 1022;
+    /**
+     * <code>GIFT_LOOT_ITEMS = 1023;</code>
+     */
+    const GIFT_LOOT_ITEMS = 1023;
+    /**
+     * <code>GIFT_EGG = 1024;</code>
+     */
+    const GIFT_EGG = 1024;
+    /**
+     * <code>FRIENDSHIP_MILESTONE_REWARD_DETAILS = 1025;</code>
+     */
+    const FRIENDSHIP_MILESTONE_REWARD_DETAILS = 1025;
+    /**
+     * <code>FRIENDSHIP_LEVEL_DISPLAY = 1026;</code>
+     */
+    const FRIENDSHIP_LEVEL_DISPLAY = 1026;
 }
 

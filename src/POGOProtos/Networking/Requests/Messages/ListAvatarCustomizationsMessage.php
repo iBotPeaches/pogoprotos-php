@@ -18,11 +18,11 @@ class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
      */
     private $avatar_type = 0;
     /**
-     * <code>repeated .POGOProtos.Enums.Slot slot = 2;</code>
+     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 2;</code>
      */
     private $slot;
     /**
-     * <code>repeated .POGOProtos.Enums.Filter filters = 3;</code>
+     * <code>repeated .POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter filters = 3;</code>
      */
     private $filters;
     /**
@@ -57,7 +57,7 @@ class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Slot slot = 2;</code>
+     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 2;</code>
      */
     public function getSlot()
     {
@@ -65,16 +65,16 @@ class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Slot slot = 2;</code>
+     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 2;</code>
      */
     public function setSlot(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\Slot::class);
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\Avatar\AvatarCustomization_Slot::class);
         $this->slot = $var;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Filter filters = 3;</code>
+     * <code>repeated .POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter filters = 3;</code>
      */
     public function getFilters()
     {
@@ -82,11 +82,11 @@ class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Filter filters = 3;</code>
+     * <code>repeated .POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter filters = 3;</code>
      */
     public function setFilters(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\Filter::class);
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Networking\Requests\Messages\ListAvatarCustomizationsMessage_Filter::class);
         $this->filters = $var;
     }
 

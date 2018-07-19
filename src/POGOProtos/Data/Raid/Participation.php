@@ -45,6 +45,14 @@ class Participation extends \Google\Protobuf\Internal\Message
      * <code>float bonus_item_multiplier = 8;</code>
      */
     private $bonus_item_multiplier = 0.0;
+    /**
+     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 9;</code>
+     */
+    private $highest_friendship_milestone = 0;
+    /**
+     * <code>int32 highest_friendship_pokeballs = 10;</code>
+     */
+    private $highest_friendship_pokeballs = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Raid\Participation::initOnce();
@@ -185,6 +193,40 @@ class Participation extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkFloat($var);
         $this->bonus_item_multiplier = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 9;</code>
+     */
+    public function getHighestFriendshipMilestone()
+    {
+        return $this->highest_friendship_milestone;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 9;</code>
+     */
+    public function setHighestFriendshipMilestone($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\FriendshipLevelMilestone::class);
+        $this->highest_friendship_milestone = $var;
+    }
+
+    /**
+     * <code>int32 highest_friendship_pokeballs = 10;</code>
+     */
+    public function getHighestFriendshipPokeballs()
+    {
+        return $this->highest_friendship_pokeballs;
+    }
+
+    /**
+     * <code>int32 highest_friendship_pokeballs = 10;</code>
+     */
+    public function setHighestFriendshipPokeballs($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->highest_friendship_pokeballs = $var;
     }
 
 }

@@ -173,6 +173,22 @@ class PokemonData extends \Google\Protobuf\Internal\Message
      * <code>int64 deployed_returned_timestamp_ms = 41;</code>
      */
     private $deployed_returned_timestamp_ms = 0;
+    /**
+     * <code>float cp_multiplier_before_trading = 42;</code>
+     */
+    private $cp_multiplier_before_trading = 0.0;
+    /**
+     * <code>int32 original_owner_hash = 43;</code>
+     */
+    private $original_owner_hash = 0;
+    /**
+     * <code>string original_owner_nickname = 44;</code>
+     */
+    private $original_owner_nickname = '';
+    /**
+     * <code>int64 traded_time_ms = 45;</code>
+     */
+    private $traded_time_ms = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\PokemonData::initOnce();
@@ -857,6 +873,74 @@ class PokemonData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->deployed_returned_timestamp_ms = $var;
+    }
+
+    /**
+     * <code>float cp_multiplier_before_trading = 42;</code>
+     */
+    public function getCpMultiplierBeforeTrading()
+    {
+        return $this->cp_multiplier_before_trading;
+    }
+
+    /**
+     * <code>float cp_multiplier_before_trading = 42;</code>
+     */
+    public function setCpMultiplierBeforeTrading($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->cp_multiplier_before_trading = $var;
+    }
+
+    /**
+     * <code>int32 original_owner_hash = 43;</code>
+     */
+    public function getOriginalOwnerHash()
+    {
+        return $this->original_owner_hash;
+    }
+
+    /**
+     * <code>int32 original_owner_hash = 43;</code>
+     */
+    public function setOriginalOwnerHash($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->original_owner_hash = $var;
+    }
+
+    /**
+     * <code>string original_owner_nickname = 44;</code>
+     */
+    public function getOriginalOwnerNickname()
+    {
+        return $this->original_owner_nickname;
+    }
+
+    /**
+     * <code>string original_owner_nickname = 44;</code>
+     */
+    public function setOriginalOwnerNickname($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->original_owner_nickname = $var;
+    }
+
+    /**
+     * <code>int64 traded_time_ms = 45;</code>
+     */
+    public function getTradedTimeMs()
+    {
+        return $this->traded_time_ms;
+    }
+
+    /**
+     * <code>int64 traded_time_ms = 45;</code>
+     */
+    public function setTradedTimeMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->traded_time_ms = $var;
     }
 
 }

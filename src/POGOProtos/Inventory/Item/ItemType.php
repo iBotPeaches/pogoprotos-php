@@ -81,5 +81,9 @@ class ItemType
      * <code>ITEM_TYPE_STARDUST_BOOST = 17;</code>
      */
     const ITEM_TYPE_STARDUST_BOOST = 17;
+    /**
+     * <code>ITEM_TYPE_FRIEND_GIFT_BOX = 18;</code>
+     */
+    const ITEM_TYPE_FRIEND_GIFT_BOX = 18;
 }
 

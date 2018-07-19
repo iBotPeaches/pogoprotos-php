@@ -14,15 +14,6 @@ use Google\Protobuf\Internal\GPBUtil;
 class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <pre>
-     *string gym_id = 1;
-     *int64 raid_seed = 2;
-     *repeated int32 lobby_id = 4;
-     *repeated fixed64 attacking_pokemon_id = 5;
-     *double player_lat_degrees = 6;
-     *double player_lng_degrees = 7;
-     * </pre>
-     *
      * <code>string gym_id = 1;</code>
      */
     private $gym_id = '';
@@ -49,15 +40,6 @@ class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
-     *string gym_id = 1;
-     *int64 raid_seed = 2;
-     *repeated int32 lobby_id = 4;
-     *repeated fixed64 attacking_pokemon_id = 5;
-     *double player_lat_degrees = 6;
-     *double player_lng_degrees = 7;
-     * </pre>
-     *
      * <code>string gym_id = 1;</code>
      */
     public function getGymId()
@@ -66,15 +48,6 @@ class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
-     *string gym_id = 1;
-     *int64 raid_seed = 2;
-     *repeated int32 lobby_id = 4;
-     *repeated fixed64 attacking_pokemon_id = 5;
-     *double player_lat_degrees = 6;
-     *double player_lng_degrees = 7;
-     * </pre>
-     *
      * <code>string gym_id = 1;</code>
      */
     public function setGymId($var)

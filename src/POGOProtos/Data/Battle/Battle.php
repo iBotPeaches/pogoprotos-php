@@ -38,9 +38,13 @@ class Battle extends \Google\Protobuf\Internal\Message
      */
     private $attacker = null;
     /**
-     * <code>.POGOProtos.Enums.WeatherCondition weather_condition = 7;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 7;</code>
      */
     private $weather_condition = 0;
+    /**
+     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 8;</code>
+     */
+    private $highest_friendship_milestone = 0;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Battle\Battle::initOnce();
@@ -150,7 +154,7 @@ class Battle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.WeatherCondition weather_condition = 7;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 7;</code>
      */
     public function getWeatherCondition()
     {
@@ -158,12 +162,29 @@ class Battle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.WeatherCondition weather_condition = 7;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 7;</code>
      */
     public function setWeatherCondition($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\WeatherCondition::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_WeatherCondition::class);
         $this->weather_condition = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 8;</code>
+     */
+    public function getHighestFriendshipMilestone()
+    {
+        return $this->highest_friendship_milestone;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 8;</code>
+     */
+    public function setHighestFriendshipMilestone($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\FriendshipLevelMilestone::class);
+        $this->highest_friendship_milestone = $var;
     }
 
 }

@@ -45,6 +45,14 @@ class BattleParticipant extends \Google\Protobuf\Internal\Message
      * <code>bool weather_boosted = 8;</code>
      */
     private $weather_boosted = false;
+    /**
+     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 9;</code>
+     */
+    private $highest_friendship_milestone = 0;
+    /**
+     * <code>repeated string friend_codename = 10;</code>
+     */
+    private $friend_codename;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Battle\BattleParticipant::initOnce();
@@ -185,6 +193,40 @@ class BattleParticipant extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->weather_boosted = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 9;</code>
+     */
+    public function getHighestFriendshipMilestone()
+    {
+        return $this->highest_friendship_milestone;
+    }
+
+    /**
+     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 9;</code>
+     */
+    public function setHighestFriendshipMilestone($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\FriendshipLevelMilestone::class);
+        $this->highest_friendship_milestone = $var;
+    }
+
+    /**
+     * <code>repeated string friend_codename = 10;</code>
+     */
+    public function getFriendCodename()
+    {
+        return $this->friend_codename;
+    }
+
+    /**
+     * <code>repeated string friend_codename = 10;</code>
+     */
+    public function setFriendCodename(&$var)
+    {
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->friend_codename = $var;
     }
 
 }

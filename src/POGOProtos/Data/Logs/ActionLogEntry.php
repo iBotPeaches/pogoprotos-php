@@ -198,6 +198,57 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
         $this->writeOneof(10, $var);
     }
 
+    /**
+     * <code>.POGOProtos.Data.Logs.OpenGiftLogEntry open_gift = 12;</code>
+     */
+    public function getOpenGift()
+    {
+        return $this->readOneof(12);
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Logs.OpenGiftLogEntry open_gift = 12;</code>
+     */
+    public function setOpenGift(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\OpenGiftLogEntry::class);
+        $this->writeOneof(12, $var);
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Logs.SendGiftLogEntry send_gift = 13;</code>
+     */
+    public function getSendGift()
+    {
+        return $this->readOneof(13);
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Logs.SendGiftLogEntry send_gift = 13;</code>
+     */
+    public function setSendGift(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\SendGiftLogEntry::class);
+        $this->writeOneof(13, $var);
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Logs.TradingLogEntry trading = 14;</code>
+     */
+    public function getTrading()
+    {
+        return $this->readOneof(14);
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Logs.TradingLogEntry trading = 14;</code>
+     */
+    public function setTrading(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\TradingLogEntry::class);
+        $this->writeOneof(14, $var);
+    }
+
     public function getAction()
     {
         return $this->Action;

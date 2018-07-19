@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class FormSettings_Form extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.Form form = 1;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 1;</code>
      */
     private $form = 0;
     /**
@@ -28,7 +28,7 @@ class FormSettings_Form extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Form form = 1;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 1;</code>
      */
     public function getForm()
     {
@@ -36,11 +36,11 @@ class FormSettings_Form extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Form form = 1;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 1;</code>
      */
     public function setForm($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Form::class);
         $this->form = $var;
     }
 

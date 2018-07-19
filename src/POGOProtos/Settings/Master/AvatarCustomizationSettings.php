@@ -22,7 +22,7 @@ class AvatarCustomizationSettings extends \Google\Protobuf\Internal\Message
      */
     private $avatar_type = 0;
     /**
-     * <code>repeated .POGOProtos.Enums.Slot slot = 3;</code>
+     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 3;</code>
      */
     private $slot;
     /**
@@ -110,7 +110,7 @@ class AvatarCustomizationSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Slot slot = 3;</code>
+     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 3;</code>
      */
     public function getSlot()
     {
@@ -118,11 +118,11 @@ class AvatarCustomizationSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.Slot slot = 3;</code>
+     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 3;</code>
      */
     public function setSlot(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\Slot::class);
+        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\Avatar\AvatarCustomization_Slot::class);
         $this->slot = $var;
     }
 

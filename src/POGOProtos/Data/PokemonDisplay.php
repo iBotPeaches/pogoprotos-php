@@ -14,11 +14,11 @@ use Google\Protobuf\Internal\GPBUtil;
 class PokemonDisplay extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.Costume costume = 1;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Costume costume = 1;</code>
      */
     private $costume = 0;
     /**
-     * <code>.POGOProtos.Enums.Gender gender = 2;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Gender gender = 2;</code>
      */
     private $gender = 0;
     /**
@@ -26,11 +26,11 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
      */
     private $shiny = false;
     /**
-     * <code>.POGOProtos.Enums.Form form = 4;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 4;</code>
      */
     private $form = 0;
     /**
-     * <code>.POGOProtos.Enums.WeatherCondition weather_boosted_condition = 5;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_boosted_condition = 5;</code>
      */
     private $weather_boosted_condition = 0;
 
@@ -40,7 +40,7 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Costume costume = 1;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Costume costume = 1;</code>
      */
     public function getCostume()
     {
@@ -48,16 +48,16 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Costume costume = 1;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Costume costume = 1;</code>
      */
     public function setCostume($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\Costume::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Costume::class);
         $this->costume = $var;
     }
 
     /**
-     * <code>.POGOProtos.Enums.Gender gender = 2;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Gender gender = 2;</code>
      */
     public function getGender()
     {
@@ -65,11 +65,11 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Gender gender = 2;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Gender gender = 2;</code>
      */
     public function setGender($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\Gender::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Gender::class);
         $this->gender = $var;
     }
 
@@ -91,7 +91,7 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Form form = 4;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 4;</code>
      */
     public function getForm()
     {
@@ -99,16 +99,16 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Form form = 4;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 4;</code>
      */
     public function setForm($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Form::class);
         $this->form = $var;
     }
 
     /**
-     * <code>.POGOProtos.Enums.WeatherCondition weather_boosted_condition = 5;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_boosted_condition = 5;</code>
      */
     public function getWeatherBoostedCondition()
     {
@@ -116,11 +116,11 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.WeatherCondition weather_boosted_condition = 5;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_boosted_condition = 5;</code>
      */
     public function setWeatherBoostedCondition($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\WeatherCondition::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_WeatherCondition::class);
         $this->weather_boosted_condition = $var;
     }
 

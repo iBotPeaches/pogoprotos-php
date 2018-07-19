@@ -69,6 +69,10 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Data.Quests.ClientQuest challenge_quest = 14;</code>
      */
     private $challenge_quest = null;
+    /**
+     * <code>.POGOProtos.Data.Gift.GiftBox gift_box = 15;</code>
+     */
+    private $gift_box = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\FortSearchResponse::initOnce();
@@ -311,6 +315,23 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\ClientQuest::class);
         $this->challenge_quest = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Gift.GiftBox gift_box = 15;</code>
+     */
+    public function getGiftBox()
+    {
+        return $this->gift_box;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Gift.GiftBox gift_box = 15;</code>
+     */
+    public function setGiftBox(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Gift\GiftBox::class);
+        $this->gift_box = $var;
     }
 
 }

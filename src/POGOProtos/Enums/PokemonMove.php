@@ -957,5 +957,9 @@ class PokemonMove
      * <code>BLAST_BURN = 298;</code>
      */
     const BLAST_BURN = 298;
+    /**
+     * <code>HYDRO_CANNON = 299;</code>
+     */
+    const HYDRO_CANNON = 299;
 }
 

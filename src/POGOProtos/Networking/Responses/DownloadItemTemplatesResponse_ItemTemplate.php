@@ -117,6 +117,10 @@ class DownloadItemTemplatesResponse_ItemTemplate extends \Google\Protobuf\Intern
      * <code>.POGOProtos.Settings.Master.OnboardingSettings onboarding_settings = 30;</code>
      */
     private $onboarding_settings = null;
+    /**
+     * <code>.POGOProtos.Settings.Master.FriendshipLevelMilestoneSettings friendship_milestone_settings = 31;</code>
+     */
+    private $friendship_milestone_settings = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Networking\Responses\DownloadItemTemplatesResponse::initOnce();
@@ -563,6 +567,23 @@ class DownloadItemTemplatesResponse_ItemTemplate extends \Google\Protobuf\Intern
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\OnboardingSettings::class);
         $this->onboarding_settings = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.FriendshipLevelMilestoneSettings friendship_milestone_settings = 31;</code>
+     */
+    public function getFriendshipMilestoneSettings()
+    {
+        return $this->friendship_milestone_settings;
+    }
+
+    /**
+     * <code>.POGOProtos.Settings.Master.FriendshipLevelMilestoneSettings friendship_milestone_settings = 31;</code>
+     */
+    public function setFriendshipMilestoneSettings(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\FriendshipLevelMilestoneSettings::class);
+        $this->friendship_milestone_settings = $var;
     }
 
 }

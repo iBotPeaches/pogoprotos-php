@@ -38,7 +38,7 @@ class BattleAction extends \Google\Protobuf\Internal\Message
      */
     private $target_index = 0;
     /**
-     * <code>fixed64 active_pokemon_id = 8;</code>
+     * <code>uint64 active_pokemon_id = 8;</code>
      */
     private $active_pokemon_id = 0;
     /**
@@ -62,9 +62,13 @@ class BattleAction extends \Google\Protobuf\Internal\Message
      */
     private $player_left = null;
     /**
-     * <code>fixed64 target_pokemon_id = 14;</code>
+     * <code>uint64 target_pokemon_id = 14;</code>
      */
     private $target_pokemon_id = 0;
+    /**
+     * <code>.POGOProtos.Data.Friends.LeveledUpFriends leveled_up_friends = 15;</code>
+     */
+    private $leveled_up_friends = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Data\Battle\BattleAction::initOnce();
@@ -174,7 +178,7 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 active_pokemon_id = 8;</code>
+     * <code>uint64 active_pokemon_id = 8;</code>
      */
     public function getActivePokemonId()
     {
@@ -182,7 +186,7 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 active_pokemon_id = 8;</code>
+     * <code>uint64 active_pokemon_id = 8;</code>
      */
     public function setActivePokemonId($var)
     {
@@ -276,7 +280,7 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 target_pokemon_id = 14;</code>
+     * <code>uint64 target_pokemon_id = 14;</code>
      */
     public function getTargetPokemonId()
     {
@@ -284,12 +288,29 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 target_pokemon_id = 14;</code>
+     * <code>uint64 target_pokemon_id = 14;</code>
      */
     public function setTargetPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->target_pokemon_id = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Friends.LeveledUpFriends leveled_up_friends = 15;</code>
+     */
+    public function getLeveledUpFriends()
+    {
+        return $this->leveled_up_friends;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Friends.LeveledUpFriends leveled_up_friends = 15;</code>
+     */
+    public function setLeveledUpFriends(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Friends\LeveledUpFriends::class);
+        $this->leveled_up_friends = $var;
     }
 
 }

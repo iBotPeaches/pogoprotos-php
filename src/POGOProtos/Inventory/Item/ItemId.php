@@ -197,5 +197,9 @@ class ItemId
      * <code>ITEM_STAR_PIECE = 1404;</code>
      */
     const ITEM_STAR_PIECE = 1404;
+    /**
+     * <code>ITEM_FRIEND_GIFT_BOX = 1405;</code>
+     */
+    const ITEM_FRIEND_GIFT_BOX = 1405;
 }
 

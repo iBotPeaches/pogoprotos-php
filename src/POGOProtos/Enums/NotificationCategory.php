@@ -33,5 +33,21 @@ class NotificationCategory
      * <code>EXCLUSIVE_RAID_CANCELLATION = 5;</code>
      */
     const EXCLUSIVE_RAID_CANCELLATION = 5;
+    /**
+     * <code>GIFTBOX_INCOMING = 6;</code>
+     */
+    const GIFTBOX_INCOMING = 6;
+    /**
+     * <code>GIFTBOX_DELIVERED = 7;</code>
+     */
+    const GIFTBOX_DELIVERED = 7;
+    /**
+     * <code>FRIENDSHIP_MILESTONE_REWARD = 8;</code>
+     */
+    const FRIENDSHIP_MILESTONE_REWARD = 8;
+    /**
+     * <code>GYM_BATTLE_FRIENDSHIP_INCREMENT = 9;</code>
+     */
+    const GYM_BATTLE_FRIENDSHIP_INCREMENT = 9;
 }
 

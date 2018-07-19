@@ -483,7 +483,7 @@ class RequestType
     const ATTACK_RAID = 166;
     /**
      * <pre>
-     * Not yet released.
+     * Implemented [R &amp; M]
      * </pre>
      *
      * <code>AWARD_POKECOIN = 167;</code>
@@ -547,7 +547,7 @@ class RequestType
     const MARK_TUTORIAL_COMPLETE = 406;
     /**
      * <pre>
-     * Not yet released.
+     * Can't find this one
      * </pre>
      *
      * <code>UPDATE_PERFORMANCE_METRICS = 407;</code>
@@ -595,7 +595,7 @@ class RequestType
     const SFIDA_ACTION_LOG = 801;
     /**
      * <pre>
-     * Not yet released.
+     * Can't find this one
      * </pre>
      *
      * <code>SFIDA_CERTIFICATION = 802;</code>
@@ -603,7 +603,7 @@ class RequestType
     const SFIDA_CERTIFICATION = 802;
     /**
      * <pre>
-     * Not yet released.
+     * Can't find this one
      * </pre>
      *
      * <code>SFIDA_UPDATE = 803;</code>
@@ -611,7 +611,7 @@ class RequestType
     const SFIDA_UPDATE = 803;
     /**
      * <pre>
-     * Not yet released.
+     * Can't find this one
      * </pre>
      *
      * <code>SFIDA_ACTION = 804;</code>
@@ -619,7 +619,7 @@ class RequestType
     const SFIDA_ACTION = 804;
     /**
      * <pre>
-     * Not yet released.
+     * Can't find this one
      * </pre>
      *
      * <code>SFIDA_DOWSER = 805;</code>
@@ -627,7 +627,7 @@ class RequestType
     const SFIDA_DOWSER = 805;
     /**
      * <pre>
-     * Not yet released.
+     * Can't find this one
      * </pre>
      *
      * <code>SFIDA_CAPTURE = 806;</code>
@@ -715,7 +715,7 @@ class RequestType
     const MARK_READ_NEWS_ARTICLE = 817;
     /**
      * <pre>
-     * Not yet released.
+     * Implemented [R &amp; M]
      * </pre>
      *
      * <code>GET_PLAYER_DISPLAY_INFO = 818;</code>
@@ -774,12 +774,236 @@ class RequestType
      * Implemented [R &amp; M]
      * </pre>
      *
+     * <code>SEND_GIFT = 950;</code>
+     */
+    const SEND_GIFT = 950;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>OPEN_GIFT = 951;</code>
+     */
+    const OPEN_GIFT = 951;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GIFT_DETAILS = 952;</code>
+     */
+    const GIFT_DETAILS = 952;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>DELETE_GIFT = 953;</code>
+     */
+    const DELETE_GIFT = 953;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>SAVE_PLAYER_SNAPSHOT = 954;</code>
+     */
+    const SAVE_PLAYER_SNAPSHOT = 954;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_FRIENDSHIP_MILESTONE_REWARDS = 955;</code>
+     */
+    const GET_FRIENDSHIP_MILESTONE_REWARDS = 955;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>CHECK_SEND_GIFT = 956;</code>
+     */
+    const CHECK_SEND_GIFT = 956;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>OPEN_TRADING = 970;</code>
+     */
+    const OPEN_TRADING = 970;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>UPDATE_TRADING = 971;</code>
+     */
+    const UPDATE_TRADING = 971;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>CONFIRM_TRADING = 972;</code>
+     */
+    const CONFIRM_TRADING = 972;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>CANCEL_TRADING = 973;</code>
+     */
+    const CANCEL_TRADING = 973;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_TRADING = 974;</code>
+     */
+    const GET_TRADING = 974;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>ACCEPT_FRIEND_INVITE = 975;</code>
+     */
+    const ACCEPT_FRIEND_INVITE = 975;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>CANCEL_FRIEND_INVITE = 976;</code>
+     */
+    const CANCEL_FRIEND_INVITE = 976;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>DECLINE_FRIEND_INVITE = 977;</code>
+     */
+    const DECLINE_FRIEND_INVITE = 977;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_FRIEND_CODE = 978;</code>
+     */
+    const GET_FRIEND_CODE = 978;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_FRIEND_DETAILS = 979;</code>
+     */
+    const GET_FRIEND_DETAILS = 979;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_FRIEND_LIST = 980;</code>
+     */
+    const GET_FRIEND_LIST = 980;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_INCOMING_FRIEND_INVITES = 981;</code>
+     */
+    const GET_INCOMING_FRIEND_INVITES = 981;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_OUTGOING_FRIEND_INVITES = 982;</code>
+     */
+    const GET_OUTGOING_FRIEND_INVITES = 982;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_UPLOAD_URL = 983;</code>
+     */
+    const GET_UPLOAD_URL = 983;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>INVITE_FACEBOOK_FRIEND = 984;</code>
+     */
+    const INVITE_FACEBOOK_FRIEND = 984;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>IS_MY_FRIEND = 985;</code>
+     */
+    const IS_MY_FRIEND = 985;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>REMOVE_FRIEND = 986;</code>
+     */
+    const REMOVE_FRIEND = 986;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>SEARCH_PLAYER = 987;</code>
+     */
+    const SEARCH_PLAYER = 987;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>SEND_FRIEND_INVITE = 988;</code>
+     */
+    const SEND_FRIEND_INVITE = 988;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_FRIENDSHIP_REWARDS = 989;</code>
+     */
+    const GET_FRIENDSHIP_REWARDS = 989;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_GITBOX_DETAILS = 990;</code>
+     */
+    const GET_GITBOX_DETAILS = 990;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>REGISTER_PUSH_NOTIFICATION = 5000;</code>
      */
     const REGISTER_PUSH_NOTIFICATION = 5000;
     /**
      * <pre>
-     * Not yet released.
+     * Can't find this one
      * </pre>
      *
      * <code>UNREGISTER_PUSH_NOTIFICATION = 5001;</code>
@@ -818,36 +1042,84 @@ class RequestType
      */
     const GET_INVENTORY = 5005;
     /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>REDEEM_PASSCODE = 5006;</code>
      */
     const REDEEM_PASSCODE = 5006;
     /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>PING = 5007;</code>
      */
     const PING = 5007;
     /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>ADD_LOGIN_ACTION = 5008;</code>
      */
     const ADD_LOGIN_ACTION = 5008;
     /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>REMOVE_LOGIN_ACTION = 5009;</code>
      */
     const REMOVE_LOGIN_ACTION = 5009;
     /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>LIST_LOGIN_ACTION = 5010;</code>
      */
     const LIST_LOGIN_ACTION = 5010;
     /**
-     * <code>ADD_NEW_POI = 5011;</code>
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>SUBMIT_NEW_POI = 5011;</code>
      */
-    const ADD_NEW_POI = 5011;
+    const SUBMIT_NEW_POI = 5011;
     /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>PROXY_SOCIAL_ACTION = 5012;</code>
      */
     const PROXY_SOCIAL_ACTION = 5012;
     /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
      * <code>CLIENT_TELEMETRY = 5013;</code>
      */
     const CLIENT_TELEMETRY = 5013;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>GET_AVAILABLE_SUBMISSIONS = 5014;</code>
+     */
+    const GET_AVAILABLE_SUBMISSIONS = 5014;
+    /**
+     * <pre>
+     * Implemented [R &amp; M]
+     * </pre>
+     *
+     * <code>UPLOAD_POI_PHOTO_BY_URL = 5015;</code>
+     */
+    const UPLOAD_POI_PHOTO_BY_URL = 5015;
 }
 

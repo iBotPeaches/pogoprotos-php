@@ -62,7 +62,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      */
     private $evolution_pips = 0;
     /**
-     * <code>.POGOProtos.Enums.PokemonRarity rarity = 14;</code>
+     * <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonRarity rarity = 14;</code>
      */
     private $rarity = 0;
     /**
@@ -102,7 +102,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      */
     private $km_buddy_distance = 0.0;
     /**
-     * <code>.POGOProtos.Enums.BuddySize buddy_size = 24;</code>
+     * <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
      */
     private $buddy_size = 0;
     /**
@@ -118,7 +118,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      */
     private $model_scale_v2 = 0.0;
     /**
-     * <code>.POGOProtos.Enums.Form form = 28;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 28;</code>
      */
     private $form = 0;
     /**
@@ -146,7 +146,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      */
     private $buddy_portrait_offset;
     /**
-     * <code>.POGOProtos.Enums.Form parent_form = 35;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form parent_form = 35;</code>
      */
     private $parent_form = 0;
 
@@ -360,7 +360,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonRarity rarity = 14;</code>
+     * <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonRarity rarity = 14;</code>
      */
     public function getRarity()
     {
@@ -368,11 +368,11 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonRarity rarity = 14;</code>
+     * <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonRarity rarity = 14;</code>
      */
     public function setRarity($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonRarity::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Settings\Master\PokemonSettings_PokemonRarity::class);
         $this->rarity = $var;
     }
 
@@ -530,7 +530,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.BuddySize buddy_size = 24;</code>
+     * <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
      */
     public function getBuddySize()
     {
@@ -538,11 +538,11 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.BuddySize buddy_size = 24;</code>
+     * <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
      */
     public function setBuddySize($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\BuddySize::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Settings\Master\PokemonSettings_BuddySize::class);
         $this->buddy_size = $var;
     }
 
@@ -598,7 +598,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Form form = 28;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 28;</code>
      */
     public function getForm()
     {
@@ -606,11 +606,11 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Form form = 28;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 28;</code>
      */
     public function setForm($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Form::class);
         $this->form = $var;
     }
 
@@ -717,7 +717,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Form parent_form = 35;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form parent_form = 35;</code>
      */
     public function getParentForm()
     {
@@ -725,11 +725,11 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Form parent_form = 35;</code>
+     * <code>.POGOProtos.Data.PokemonDisplay.Form parent_form = 35;</code>
      */
     public function setParentForm($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Form::class);
         $this->parent_form = $var;
     }
 

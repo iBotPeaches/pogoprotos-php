@@ -34,7 +34,7 @@ class CompleteQuestPokemonEncounterLogEntry extends \Google\Protobuf\Internal\Me
      */
     private $pokemon_display = null;
     /**
-     * <code>.POGOProtos.Enums.EncounterType encounter_type = 6;</code>
+     * <code>.POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType encounter_type = 6;</code>
      */
     private $encounter_type = 0;
 
@@ -129,7 +129,7 @@ class CompleteQuestPokemonEncounterLogEntry extends \Google\Protobuf\Internal\Me
     }
 
     /**
-     * <code>.POGOProtos.Enums.EncounterType encounter_type = 6;</code>
+     * <code>.POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType encounter_type = 6;</code>
      */
     public function getEncounterType()
     {
@@ -137,11 +137,11 @@ class CompleteQuestPokemonEncounterLogEntry extends \Google\Protobuf\Internal\Me
     }
 
     /**
-     * <code>.POGOProtos.Enums.EncounterType encounter_type = 6;</code>
+     * <code>.POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType encounter_type = 6;</code>
      */
     public function setEncounterType($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\EncounterType::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\QuestPokemonEncounter_EncounterType::class);
         $this->encounter_type = $var;
     }
 

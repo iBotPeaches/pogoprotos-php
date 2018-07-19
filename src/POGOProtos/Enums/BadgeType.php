@@ -202,6 +202,18 @@ class BadgeType
      */
     const BADGE_MEW_ENCOUNTER = 47;
     /**
+     * <code>BADGE_MAX_LEVEL_FRIENDS = 48;</code>
+     */
+    const BADGE_MAX_LEVEL_FRIENDS = 48;
+    /**
+     * <code>BADGE_TRADING = 49;</code>
+     */
+    const BADGE_TRADING = 49;
+    /**
+     * <code>BADGE_TRADING_DISTANCE = 50;</code>
+     */
+    const BADGE_TRADING_DISTANCE = 50;
+    /**
      * <code>BADGE_EVENT_MIN = 2000;</code>
      */
     const BADGE_EVENT_MIN = 2000;
@@ -225,5 +237,21 @@ class BadgeType
      * <code>BADGE_SAFARI_ZONE_EUROPE_2017_10_14 = 2005;</code>
      */
     const BADGE_SAFARI_ZONE_EUROPE_2017_10_14 = 2005;
+    /**
+     * <code>BADGE_CHICAGO_FEST_JULY_2018_SAT_NORTH = 2006;</code>
+     */
+    const BADGE_CHICAGO_FEST_JULY_2018_SAT_NORTH = 2006;
+    /**
+     * <code>BADGE_CHICAGO_FEST_JULY_2018_SAT_SOUTH = 2007;</code>
+     */
+    const BADGE_CHICAGO_FEST_JULY_2018_SAT_SOUTH = 2007;
+    /**
+     * <code>BADGE_CHICAGO_FEST_JULY_2018_SUN_NORTH = 2008;</code>
+     */
+    const BADGE_CHICAGO_FEST_JULY_2018_SUN_NORTH = 2008;
+    /**
+     * <code>BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUTH = 2009;</code>
+     */
+    const BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUTH = 2009;
 }
 

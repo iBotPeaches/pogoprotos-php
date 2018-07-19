@@ -69,6 +69,10 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      * <code>.POGOProtos.Data.Quests.Quests quests = 14;</code>
      */
     private $quests = null;
+    /**
+     * <code>.POGOProtos.Data.Gift.GiftBoxes gift_boxes = 15;</code>
+     */
+    private $gift_boxes = null;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Inventory\InventoryItemData::initOnce();
@@ -311,6 +315,23 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\Quests::class);
         $this->quests = $var;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Gift.GiftBoxes gift_boxes = 15;</code>
+     */
+    public function getGiftBoxes()
+    {
+        return $this->gift_boxes;
+    }
+
+    /**
+     * <code>.POGOProtos.Data.Gift.GiftBoxes gift_boxes = 15;</code>
+     */
+    public function setGiftBoxes(&$var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Gift\GiftBoxes::class);
+        $this->gift_boxes = $var;
     }
 
 }

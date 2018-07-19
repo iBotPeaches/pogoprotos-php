@@ -74,6 +74,10 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      * <code>bool quests = 14;</code>
      */
     private $quests = false;
+    /**
+     * <code>bool gift_boxes = 15;</code>
+     */
+    private $gift_boxes = false;
 
     public function __construct() {
         \GPBMetadata\POGOProtos\Inventory\InventoryKey::initOnce();
@@ -316,6 +320,23 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->quests = $var;
+    }
+
+    /**
+     * <code>bool gift_boxes = 15;</code>
+     */
+    public function getGiftBoxes()
+    {
+        return $this->gift_boxes;
+    }
+
+    /**
+     * <code>bool gift_boxes = 15;</code>
+     */
+    public function setGiftBoxes($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->gift_boxes = $var;
     }
 
 }

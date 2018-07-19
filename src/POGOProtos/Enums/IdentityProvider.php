@@ -37,5 +37,9 @@ class IdentityProvider
      * <code>SFIDA = 6;</code>
      */
     const SFIDA = 6;
+    /**
+     * <code>SUPER_AWESOME = 7;</code>
+     */
+    const SUPER_AWESOME = 7;
 }
 
