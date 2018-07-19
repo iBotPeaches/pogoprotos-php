@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Fort.GymDisplay</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Fort.GymDisplay</code>
  */
 class GymDisplay extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Map.Fort.GymEvent gym_event = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Fort.GymEvent gym_event = 1;</code>
      */
     private $gym_event;
     /**
-     * <code>int32 total_gym_cp = 2;</code>
+     * Generated from protobuf field <code>int32 total_gym_cp = 2;</code>
      */
     private $total_gym_cp = 0;
     /**
-     * <code>double lowest_pokemon_motivation = 3;</code>
+     * Generated from protobuf field <code>double lowest_pokemon_motivation = 3;</code>
      */
     private $lowest_pokemon_motivation = 0.0;
     /**
-     * <code>int32 slots_available = 4;</code>
+     * Generated from protobuf field <code>int32 slots_available = 4;</code>
      */
     private $slots_available = 0;
     /**
-     * <code>int64 occupied_millis = 5;</code>
+     * Generated from protobuf field <code>int64 occupied_millis = 5;</code>
      */
     private $occupied_millis = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Map\Fort\GymEvent[]|\Google\Protobuf\Internal\RepeatedField $gym_event
+     *     @type int $total_gym_cp
+     *     @type float $lowest_pokemon_motivation
+     *     @type int $slots_available
+     *     @type int|string $occupied_millis
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Fort\GymDisplay::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.Fort.GymEvent gym_event = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Fort.GymEvent gym_event = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getGymEvent()
     {
@@ -48,16 +62,21 @@ class GymDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.Fort.GymEvent gym_event = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Fort.GymEvent gym_event = 1;</code>
+     * @param \POGOProtos\Map\Fort\GymEvent[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGymEvent(&$var)
+    public function setGymEvent($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Fort\GymEvent::class);
-        $this->gym_event = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Fort\GymEvent::class);
+        $this->gym_event = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 total_gym_cp = 2;</code>
+     * Generated from protobuf field <code>int32 total_gym_cp = 2;</code>
+     * @return int
      */
     public function getTotalGymCp()
     {
@@ -65,16 +84,21 @@ class GymDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 total_gym_cp = 2;</code>
+     * Generated from protobuf field <code>int32 total_gym_cp = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTotalGymCp($var)
     {
         GPBUtil::checkInt32($var);
         $this->total_gym_cp = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double lowest_pokemon_motivation = 3;</code>
+     * Generated from protobuf field <code>double lowest_pokemon_motivation = 3;</code>
+     * @return float
      */
     public function getLowestPokemonMotivation()
     {
@@ -82,16 +106,21 @@ class GymDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double lowest_pokemon_motivation = 3;</code>
+     * Generated from protobuf field <code>double lowest_pokemon_motivation = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLowestPokemonMotivation($var)
     {
         GPBUtil::checkDouble($var);
         $this->lowest_pokemon_motivation = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 slots_available = 4;</code>
+     * Generated from protobuf field <code>int32 slots_available = 4;</code>
+     * @return int
      */
     public function getSlotsAvailable()
     {
@@ -99,16 +128,21 @@ class GymDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 slots_available = 4;</code>
+     * Generated from protobuf field <code>int32 slots_available = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSlotsAvailable($var)
     {
         GPBUtil::checkInt32($var);
         $this->slots_available = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 occupied_millis = 5;</code>
+     * Generated from protobuf field <code>int64 occupied_millis = 5;</code>
+     * @return int|string
      */
     public function getOccupiedMillis()
     {
@@ -116,12 +150,16 @@ class GymDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 occupied_millis = 5;</code>
+     * Generated from protobuf field <code>int64 occupied_millis = 5;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setOccupiedMillis($var)
     {
         GPBUtil::checkInt64($var);
         $this->occupied_millis = $var;
+
+        return $this;
     }
 
 }

@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.SubmitNewPoiResponse.Status</code>
- */
-class SubmitNewPoiResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\SubmitNewPoiResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>FAILURE = 2;</code>
-     */
-    const FAILURE = 2;
-    /**
-     * <code>INTERNAL_ERROR = 3;</code>
-     */
-    const INTERNAL_ERROR = 3;
-    /**
-     * <code>TOO_MANY_RECENT_SUBMISSIONS = 4;</code>
-     */
-    const TOO_MANY_RECENT_SUBMISSIONS = 4;
-    /**
-     * <code>INVALID_INPUT = 5;</code>
-     */
-    const INVALID_INPUT = 5;
+    class SubmitNewPoiResponse_Status {}
 }
+class_exists(SubmitNewPoiResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\SubmitNewPoiResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\SubmitNewPoiResponse\Status instead', E_USER_DEPRECATED);
 

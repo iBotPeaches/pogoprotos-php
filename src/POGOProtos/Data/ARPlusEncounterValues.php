@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.ARPlusEncounterValues</code>
+ * Generated from protobuf message <code>POGOProtos.Data.ARPlusEncounterValues</code>
  */
 class ARPlusEncounterValues extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float proximity = 1;</code>
+     * Generated from protobuf field <code>float proximity = 1;</code>
      */
     private $proximity = 0.0;
     /**
-     * <code>float awareness = 2;</code>
+     * Generated from protobuf field <code>float awareness = 2;</code>
      */
     private $awareness = 0.0;
     /**
-     * <code>bool pokemon_frightened = 3;</code>
+     * Generated from protobuf field <code>bool pokemon_frightened = 3;</code>
      */
     private $pokemon_frightened = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $proximity
+     *     @type float $awareness
+     *     @type bool $pokemon_frightened
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\ARPlusEncounterValues::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float proximity = 1;</code>
+     * Generated from protobuf field <code>float proximity = 1;</code>
+     * @return float
      */
     public function getProximity()
     {
@@ -40,16 +52,21 @@ class ARPlusEncounterValues extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float proximity = 1;</code>
+     * Generated from protobuf field <code>float proximity = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setProximity($var)
     {
         GPBUtil::checkFloat($var);
         $this->proximity = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float awareness = 2;</code>
+     * Generated from protobuf field <code>float awareness = 2;</code>
+     * @return float
      */
     public function getAwareness()
     {
@@ -57,16 +74,21 @@ class ARPlusEncounterValues extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float awareness = 2;</code>
+     * Generated from protobuf field <code>float awareness = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setAwareness($var)
     {
         GPBUtil::checkFloat($var);
         $this->awareness = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool pokemon_frightened = 3;</code>
+     * Generated from protobuf field <code>bool pokemon_frightened = 3;</code>
+     * @return bool
      */
     public function getPokemonFrightened()
     {
@@ -74,12 +96,16 @@ class ARPlusEncounterValues extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool pokemon_frightened = 3;</code>
+     * Generated from protobuf field <code>bool pokemon_frightened = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setPokemonFrightened($var)
     {
         GPBUtil::checkBool($var);
         $this->pokemon_frightened = $var;
+
+        return $this;
     }
 
 }

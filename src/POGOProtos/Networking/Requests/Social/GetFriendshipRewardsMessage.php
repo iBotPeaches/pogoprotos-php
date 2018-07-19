@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Social.GetFriendshipRewardsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Social.GetFriendshipRewardsMessage</code>
  */
 class GetFriendshipRewardsMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string friend_id = 1;</code>
+     * Generated from protobuf field <code>string friend_id = 1;</code>
      */
     private $friend_id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $friend_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Social\GetFriendshipRewardsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string friend_id = 1;</code>
+     * Generated from protobuf field <code>string friend_id = 1;</code>
+     * @return string
      */
     public function getFriendId()
     {
@@ -32,12 +42,16 @@ class GetFriendshipRewardsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string friend_id = 1;</code>
+     * Generated from protobuf field <code>string friend_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFriendId($var)
     {
         GPBUtil::checkString($var, True);
         $this->friend_id = $var;
+
+        return $this;
     }
 
 }

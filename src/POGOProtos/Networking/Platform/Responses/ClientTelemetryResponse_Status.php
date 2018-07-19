@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Platform.Responses.ClientTelemetryResponse.Status</code>
- */
-class ClientTelemetryResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Responses\ClientTelemetryResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>FAILURE = 2;</code>
-     */
-    const FAILURE = 2;
-    /**
-     * <code>ERROR_INVALID_REQUEST = 3;</code>
-     */
-    const ERROR_INVALID_REQUEST = 3;
-    /**
-     * <code>ERROR_INVALID_PROTO = 4;</code>
-     */
-    const ERROR_INVALID_PROTO = 4;
-    /**
-     * <code>ERROR_UNSET_TELEMETRY_ID = 5;</code>
-     */
-    const ERROR_UNSET_TELEMETRY_ID = 5;
+    class ClientTelemetryResponse_Status {}
 }
+class_exists(ClientTelemetryResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Platform\Responses\ClientTelemetryResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Responses\ClientTelemetryResponse\Status instead', E_USER_DEPRECATED);
 

@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.UpdateTradingMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.UpdateTradingMessage</code>
  */
 class UpdateTradingMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string player_id = 1;</code>
+     * Generated from protobuf field <code>string player_id = 1;</code>
      */
     private $player_id = '';
     /**
-     * <code>fixed64 pokemon_id = 2;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 2;</code>
      */
     private $pokemon_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $player_id
+     *     @type int|string $pokemon_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\UpdateTradingMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string player_id = 1;</code>
+     * Generated from protobuf field <code>string player_id = 1;</code>
+     * @return string
      */
     public function getPlayerId()
     {
@@ -36,16 +47,21 @@ class UpdateTradingMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string player_id = 1;</code>
+     * Generated from protobuf field <code>string player_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPlayerId($var)
     {
         GPBUtil::checkString($var, True);
         $this->player_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>fixed64 pokemon_id = 2;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 2;</code>
+     * @return int|string
      */
     public function getPokemonId()
     {
@@ -53,12 +69,16 @@ class UpdateTradingMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 pokemon_id = 2;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
 }

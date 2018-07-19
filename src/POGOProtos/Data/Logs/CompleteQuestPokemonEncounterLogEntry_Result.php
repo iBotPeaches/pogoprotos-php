@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Data\Logs;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Logs.CompleteQuestPokemonEncounterLogEntry.Result</code>
- */
-class CompleteQuestPokemonEncounterLogEntry_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Logs\CompleteQuestPokemonEncounterLogEntry\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>POKEMON_CAPTURED = 1;</code>
-     */
-    const POKEMON_CAPTURED = 1;
-    /**
-     * <code>POKEMON_FLED = 2;</code>
-     */
-    const POKEMON_FLED = 2;
+    class CompleteQuestPokemonEncounterLogEntry_Result {}
 }
+class_exists(CompleteQuestPokemonEncounterLogEntry\Result::class);
+@trigger_error('POGOProtos\Data\Logs\CompleteQuestPokemonEncounterLogEntry_Result is deprecated and will be removed in the next major release. Use POGOProtos\Data\Logs\CompleteQuestPokemonEncounterLogEntry\Result instead', E_USER_DEPRECATED);
 

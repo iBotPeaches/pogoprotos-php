@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Raid.ExclusiveRaidCancellation</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Raid.ExclusiveRaidCancellation</code>
  */
 class ExclusiveRaidCancellation extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
      */
     private $fort_id = '';
     /**
-     * <code>int64 start_time_ms = 2;</code>
+     * Generated from protobuf field <code>int64 start_time_ms = 2;</code>
      */
     private $start_time_ms = 0;
     /**
-     * <code>int64 end_time_ms = 3;</code>
+     * Generated from protobuf field <code>int64 end_time_ms = 3;</code>
      */
     private $end_time_ms = 0;
     /**
-     * <code>string image_url = 4;</code>
+     * Generated from protobuf field <code>string image_url = 4;</code>
      */
     private $image_url = '';
     /**
-     * <code>double latitude = 5;</code>
+     * Generated from protobuf field <code>double latitude = 5;</code>
      */
     private $latitude = 0.0;
     /**
-     * <code>double longitude = 6;</code>
+     * Generated from protobuf field <code>double longitude = 6;</code>
      */
     private $longitude = 0.0;
     /**
-     * <code>string gym_name = 7;</code>
+     * Generated from protobuf field <code>string gym_name = 7;</code>
      */
     private $gym_name = '';
     /**
-     * <code>repeated .POGOProtos.Inventory.LootItem rewards = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.LootItem rewards = 8;</code>
      */
     private $rewards;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $fort_id
+     *     @type int|string $start_time_ms
+     *     @type int|string $end_time_ms
+     *     @type string $image_url
+     *     @type float $latitude
+     *     @type float $longitude
+     *     @type string $gym_name
+     *     @type \POGOProtos\Inventory\LootItem[]|\Google\Protobuf\Internal\RepeatedField $rewards
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Raid\ExclusiveRaidCancellation::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -60,16 +77,21 @@ class ExclusiveRaidCancellation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 start_time_ms = 2;</code>
+     * Generated from protobuf field <code>int64 start_time_ms = 2;</code>
+     * @return int|string
      */
     public function getStartTimeMs()
     {
@@ -77,16 +99,21 @@ class ExclusiveRaidCancellation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 start_time_ms = 2;</code>
+     * Generated from protobuf field <code>int64 start_time_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setStartTimeMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->start_time_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 end_time_ms = 3;</code>
+     * Generated from protobuf field <code>int64 end_time_ms = 3;</code>
+     * @return int|string
      */
     public function getEndTimeMs()
     {
@@ -94,16 +121,21 @@ class ExclusiveRaidCancellation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 end_time_ms = 3;</code>
+     * Generated from protobuf field <code>int64 end_time_ms = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setEndTimeMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->end_time_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string image_url = 4;</code>
+     * Generated from protobuf field <code>string image_url = 4;</code>
+     * @return string
      */
     public function getImageUrl()
     {
@@ -111,16 +143,21 @@ class ExclusiveRaidCancellation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string image_url = 4;</code>
+     * Generated from protobuf field <code>string image_url = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setImageUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->image_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double latitude = 5;</code>
+     * Generated from protobuf field <code>double latitude = 5;</code>
+     * @return float
      */
     public function getLatitude()
     {
@@ -128,16 +165,21 @@ class ExclusiveRaidCancellation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double latitude = 5;</code>
+     * Generated from protobuf field <code>double latitude = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double longitude = 6;</code>
+     * Generated from protobuf field <code>double longitude = 6;</code>
+     * @return float
      */
     public function getLongitude()
     {
@@ -145,16 +187,21 @@ class ExclusiveRaidCancellation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double longitude = 6;</code>
+     * Generated from protobuf field <code>double longitude = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->longitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string gym_name = 7;</code>
+     * Generated from protobuf field <code>string gym_name = 7;</code>
+     * @return string
      */
     public function getGymName()
     {
@@ -162,16 +209,21 @@ class ExclusiveRaidCancellation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string gym_name = 7;</code>
+     * Generated from protobuf field <code>string gym_name = 7;</code>
+     * @param string $var
+     * @return $this
      */
     public function setGymName($var)
     {
         GPBUtil::checkString($var, True);
         $this->gym_name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.LootItem rewards = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.LootItem rewards = 8;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getRewards()
     {
@@ -179,12 +231,16 @@ class ExclusiveRaidCancellation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.LootItem rewards = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.LootItem rewards = 8;</code>
+     * @param \POGOProtos\Inventory\LootItem[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setRewards(&$var)
+    public function setRewards($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\LootItem::class);
-        $this->rewards = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\LootItem::class);
+        $this->rewards = $arr;
+
+        return $this;
     }
 
 }

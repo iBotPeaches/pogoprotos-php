@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Responses.ClientTelemetryResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Responses.ClientTelemetryResponse</code>
  */
 class ClientTelemetryResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Platform.Responses.ClientTelemetryResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.ClientTelemetryResponse.Status status = 1;</code>
      */
     private $status = 0;
     /**
-     * <code>int32 rows_written = 2;</code>
+     * Generated from protobuf field <code>int32 rows_written = 2;</code>
      */
     private $rows_written = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status
+     *     @type int $rows_written
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Responses\ClientTelemetryResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Responses.ClientTelemetryResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.ClientTelemetryResponse.Status status = 1;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -36,16 +47,21 @@ class ClientTelemetryResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Responses.ClientTelemetryResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.ClientTelemetryResponse.Status status = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Platform\Responses\ClientTelemetryResponse_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 rows_written = 2;</code>
+     * Generated from protobuf field <code>int32 rows_written = 2;</code>
+     * @return int
      */
     public function getRowsWritten()
     {
@@ -53,12 +69,16 @@ class ClientTelemetryResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 rows_written = 2;</code>
+     * Generated from protobuf field <code>int32 rows_written = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRowsWritten($var)
     {
         GPBUtil::checkInt32($var);
         $this->rows_written = $var;
+
+        return $this;
     }
 
 }

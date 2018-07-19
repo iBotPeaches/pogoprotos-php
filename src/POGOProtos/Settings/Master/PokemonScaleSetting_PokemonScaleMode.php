@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Settings\Master;
 
-/**
- * Protobuf enum <code>POGOProtos.Settings.Master.PokemonScaleSetting.PokemonScaleMode</code>
- */
-class PokemonScaleSetting_PokemonScaleMode
-{
+if (false) {
     /**
-     * <code>NaturalScale = 0;</code>
+     * This class is deprecated. Use POGOProtos\Settings\Master\PokemonScaleSetting\PokemonScaleMode instead.
+     * @deprecated
      */
-    const NaturalScale = 0;
-    /**
-     * <code>GuiScale = 1;</code>
-     */
-    const GuiScale = 1;
-    /**
-     * <code>BattlePokemonScale = 2;</code>
-     */
-    const BattlePokemonScale = 2;
-    /**
-     * <code>RaidBossScale = 3;</code>
-     */
-    const RaidBossScale = 3;
-    /**
-     * <code>GymTopperScale = 4;</code>
-     */
-    const GymTopperScale = 4;
-    /**
-     * <code>MapPokemonScale = 5;</code>
-     */
-    const MapPokemonScale = 5;
+    class PokemonScaleSetting_PokemonScaleMode {}
 }
+class_exists(PokemonScaleSetting\PokemonScaleMode::class);
+@trigger_error('POGOProtos\Settings\Master\PokemonScaleSetting_PokemonScaleMode is deprecated and will be removed in the next major release. Use POGOProtos\Settings\Master\PokemonScaleSetting\PokemonScaleMode instead', E_USER_DEPRECATED);
 

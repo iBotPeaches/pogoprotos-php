@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Raid.EventInfo</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Raid.EventInfo</code>
  */
 class EventInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string image_url = 1;</code>
+     * Generated from protobuf field <code>string image_url = 1;</code>
      */
     private $image_url = '';
     /**
-     * <code>string icon_url = 2;</code>
+     * Generated from protobuf field <code>string icon_url = 2;</code>
      */
     private $icon_url = '';
     /**
-     * <code>string name_key = 3;</code>
+     * Generated from protobuf field <code>string name_key = 3;</code>
      */
     private $name_key = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $image_url
+     *     @type string $icon_url
+     *     @type string $name_key
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Raid\EventInfo::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string image_url = 1;</code>
+     * Generated from protobuf field <code>string image_url = 1;</code>
+     * @return string
      */
     public function getImageUrl()
     {
@@ -40,16 +52,21 @@ class EventInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string image_url = 1;</code>
+     * Generated from protobuf field <code>string image_url = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setImageUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->image_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string icon_url = 2;</code>
+     * Generated from protobuf field <code>string icon_url = 2;</code>
+     * @return string
      */
     public function getIconUrl()
     {
@@ -57,16 +74,21 @@ class EventInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string icon_url = 2;</code>
+     * Generated from protobuf field <code>string icon_url = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setIconUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->icon_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string name_key = 3;</code>
+     * Generated from protobuf field <code>string name_key = 3;</code>
+     * @return string
      */
     public function getNameKey()
     {
@@ -74,12 +96,16 @@ class EventInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string name_key = 3;</code>
+     * Generated from protobuf field <code>string name_key = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setNameKey($var)
     {
         GPBUtil::checkString($var, True);
         $this->name_key = $var;
+
+        return $this;
     }
 
 }

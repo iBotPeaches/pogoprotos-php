@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.SetLobbyPokemonResponse.Result</code>
- */
-class SetLobbyPokemonResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\SetLobbyPokemonResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_LOBBY_NOT_FOUND = 2;</code>
-     */
-    const ERROR_LOBBY_NOT_FOUND = 2;
-    /**
-     * <code>ERROR_RAID_UNAVAILABLE = 3;</code>
-     */
-    const ERROR_RAID_UNAVAILABLE = 3;
-    /**
-     * <code>ERROR_INVALID_POKEMON = 4;</code>
-     */
-    const ERROR_INVALID_POKEMON = 4;
+    class SetLobbyPokemonResponse_Result {}
 }
+class_exists(SetLobbyPokemonResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\SetLobbyPokemonResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\SetLobbyPokemonResponse\Result instead', E_USER_DEPRECATED);
 

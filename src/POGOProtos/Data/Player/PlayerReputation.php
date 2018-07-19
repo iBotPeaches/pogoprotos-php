@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Player.PlayerReputation</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Player.PlayerReputation</code>
  */
 class PlayerReputation extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 account_age_ms = 1;</code>
+     * Generated from protobuf field <code>int64 account_age_ms = 1;</code>
      */
     private $account_age_ms = 0;
     /**
-     * <code>int64 player_level = 2;</code>
+     * Generated from protobuf field <code>int64 player_level = 2;</code>
      */
     private $player_level = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Player.PlayerReputation.CheatReputation cheat_reputation = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.PlayerReputation.CheatReputation cheat_reputation = 3;</code>
      */
     private $cheat_reputation;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $account_age_ms
+     *     @type int|string $player_level
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $cheat_reputation
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Player\PlayerReputation::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 account_age_ms = 1;</code>
+     * Generated from protobuf field <code>int64 account_age_ms = 1;</code>
+     * @return int|string
      */
     public function getAccountAgeMs()
     {
@@ -40,16 +52,21 @@ class PlayerReputation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 account_age_ms = 1;</code>
+     * Generated from protobuf field <code>int64 account_age_ms = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setAccountAgeMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->account_age_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 player_level = 2;</code>
+     * Generated from protobuf field <code>int64 player_level = 2;</code>
+     * @return int|string
      */
     public function getPlayerLevel()
     {
@@ -57,16 +74,21 @@ class PlayerReputation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 player_level = 2;</code>
+     * Generated from protobuf field <code>int64 player_level = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPlayerLevel($var)
     {
         GPBUtil::checkInt64($var);
         $this->player_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Player.PlayerReputation.CheatReputation cheat_reputation = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.PlayerReputation.CheatReputation cheat_reputation = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCheatReputation()
     {
@@ -74,12 +96,16 @@ class PlayerReputation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Player.PlayerReputation.CheatReputation cheat_reputation = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.PlayerReputation.CheatReputation cheat_reputation = 3;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCheatReputation(&$var)
+    public function setCheatReputation($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\Player\PlayerReputation_CheatReputation::class);
-        $this->cheat_reputation = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Data\Player\PlayerReputation\CheatReputation::class);
+        $this->cheat_reputation = $arr;
+
+        return $this;
     }
 
 }

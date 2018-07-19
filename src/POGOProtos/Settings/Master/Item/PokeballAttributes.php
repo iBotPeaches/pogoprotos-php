@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Item.PokeballAttributes</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Item.PokeballAttributes</code>
  */
 class PokeballAttributes extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.ItemEffect item_effect = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.ItemEffect item_effect = 1;</code>
      */
     private $item_effect = 0;
     /**
-     * <code>float capture_multi = 2;</code>
+     * Generated from protobuf field <code>float capture_multi = 2;</code>
      */
     private $capture_multi = 0.0;
     /**
-     * <code>float capture_multi_effect = 3;</code>
+     * Generated from protobuf field <code>float capture_multi_effect = 3;</code>
      */
     private $capture_multi_effect = 0.0;
     /**
-     * <code>float item_effect_mod = 4;</code>
+     * Generated from protobuf field <code>float item_effect_mod = 4;</code>
      */
     private $item_effect_mod = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $item_effect
+     *     @type float $capture_multi
+     *     @type float $capture_multi_effect
+     *     @type float $item_effect_mod
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Item\PokeballAttributes::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.ItemEffect item_effect = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.ItemEffect item_effect = 1;</code>
+     * @return int
      */
     public function getItemEffect()
     {
@@ -44,16 +57,21 @@ class PokeballAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.ItemEffect item_effect = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.ItemEffect item_effect = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemEffect($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\ItemEffect::class);
         $this->item_effect = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float capture_multi = 2;</code>
+     * Generated from protobuf field <code>float capture_multi = 2;</code>
+     * @return float
      */
     public function getCaptureMulti()
     {
@@ -61,16 +79,21 @@ class PokeballAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float capture_multi = 2;</code>
+     * Generated from protobuf field <code>float capture_multi = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setCaptureMulti($var)
     {
         GPBUtil::checkFloat($var);
         $this->capture_multi = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float capture_multi_effect = 3;</code>
+     * Generated from protobuf field <code>float capture_multi_effect = 3;</code>
+     * @return float
      */
     public function getCaptureMultiEffect()
     {
@@ -78,16 +101,21 @@ class PokeballAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float capture_multi_effect = 3;</code>
+     * Generated from protobuf field <code>float capture_multi_effect = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setCaptureMultiEffect($var)
     {
         GPBUtil::checkFloat($var);
         $this->capture_multi_effect = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float item_effect_mod = 4;</code>
+     * Generated from protobuf field <code>float item_effect_mod = 4;</code>
+     * @return float
      */
     public function getItemEffectMod()
     {
@@ -95,12 +123,16 @@ class PokeballAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float item_effect_mod = 4;</code>
+     * Generated from protobuf field <code>float item_effect_mod = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setItemEffectMod($var)
     {
         GPBUtil::checkFloat($var);
         $this->item_effect_mod = $var;
+
+        return $this;
     }
 
 }

@@ -9,27 +9,35 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * <pre>
  * Usage unknown.
  * - Maybe used in envelope (?)
- * </pre>
  *
- * Protobuf type <code>POGOProtos.Data.ClientVersion</code>
+ * Generated from protobuf message <code>POGOProtos.Data.ClientVersion</code>
  */
 class ClientVersion extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string min_version = 1;</code>
+     * Generated from protobuf field <code>string min_version = 1;</code>
      */
     private $min_version = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $min_version
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\ClientVersion::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string min_version = 1;</code>
+     * Generated from protobuf field <code>string min_version = 1;</code>
+     * @return string
      */
     public function getMinVersion()
     {
@@ -37,12 +45,16 @@ class ClientVersion extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string min_version = 1;</code>
+     * Generated from protobuf field <code>string min_version = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setMinVersion($var)
     {
         GPBUtil::checkString($var, True);
         $this->min_version = $var;
+
+        return $this;
     }
 
 }

@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.SetAvatarMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.SetAvatarMessage</code>
  */
 class SetAvatarMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatar player_avatar = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatar player_avatar = 2;</code>
      */
     private $player_avatar = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Player\PlayerAvatar $player_avatar
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\SetAvatarMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatar player_avatar = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatar player_avatar = 2;</code>
+     * @return \POGOProtos\Data\Player\PlayerAvatar
      */
     public function getPlayerAvatar()
     {
@@ -32,12 +42,16 @@ class SetAvatarMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatar player_avatar = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatar player_avatar = 2;</code>
+     * @param \POGOProtos\Data\Player\PlayerAvatar $var
+     * @return $this
      */
-    public function setPlayerAvatar(&$var)
+    public function setPlayerAvatar($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerAvatar::class);
         $this->player_avatar = $var;
+
+        return $this;
     }
 
 }

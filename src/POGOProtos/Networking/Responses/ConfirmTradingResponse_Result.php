@@ -4,74 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.ConfirmTradingResponse.Result</code>
- */
-class ConfirmTradingResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\ConfirmTradingResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_UNKNOWN = 2;</code>
-     */
-    const ERROR_UNKNOWN = 2;
-    /**
-     * <code>ERROR_FRIEND_NOT_FOUND = 3;</code>
-     */
-    const ERROR_FRIEND_NOT_FOUND = 3;
-    /**
-     * <code>ERROR_INVALID_PLAYER_ID = 4;</code>
-     */
-    const ERROR_INVALID_PLAYER_ID = 4;
-    /**
-     * <code>ERROR_INVALID_STATE = 5;</code>
-     */
-    const ERROR_INVALID_STATE = 5;
-    /**
-     * <code>ERROR_STATE_HANDLER = 6;</code>
-     */
-    const ERROR_STATE_HANDLER = 6;
-    /**
-     * <code>ERROR_INVALID_POKEMON = 7;</code>
-     */
-    const ERROR_INVALID_POKEMON = 7;
-    /**
-     * <code>ERROR_INSUFFICIENT_PAYMENT = 8;</code>
-     */
-    const ERROR_INSUFFICIENT_PAYMENT = 8;
-    /**
-     * <code>ERROR_NO_PLAYER_POKEMON = 9;</code>
-     */
-    const ERROR_NO_PLAYER_POKEMON = 9;
-    /**
-     * <code>ERROR_NO_FRIEND_POKEMON = 10;</code>
-     */
-    const ERROR_NO_FRIEND_POKEMON = 10;
-    /**
-     * <code>ERROR_PLAYER_ALREADY_CONFIRMED = 11;</code>
-     */
-    const ERROR_PLAYER_ALREADY_CONFIRMED = 11;
-    /**
-     * <code>ERROR_TRANSACTION_LOG_NOT_MATCH = 12;</code>
-     */
-    const ERROR_TRANSACTION_LOG_NOT_MATCH = 12;
-    /**
-     * <code>ERROR_TRADING_EXPIRED = 13;</code>
-     */
-    const ERROR_TRADING_EXPIRED = 13;
-    /**
-     * <code>ERROR_TRANSACTION = 14;</code>
-     */
-    const ERROR_TRANSACTION = 14;
-    /**
-     * <code>ERROR_DAILY_LIMIT_REACHED = 15;</code>
-     */
-    const ERROR_DAILY_LIMIT_REACHED = 15;
+    class ConfirmTradingResponse_Result {}
 }
+class_exists(ConfirmTradingResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\ConfirmTradingResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\ConfirmTradingResponse\Result instead', E_USER_DEPRECATED);
 

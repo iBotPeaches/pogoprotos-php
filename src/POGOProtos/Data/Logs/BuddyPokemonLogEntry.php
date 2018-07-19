@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Logs.BuddyPokemonLogEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Logs.BuddyPokemonLogEntry</code>
  */
 class BuddyPokemonLogEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Logs.BuddyPokemonLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.BuddyPokemonLogEntry.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
      */
     private $pokemon_id = 0;
     /**
-     * <code>int32 amount = 3;</code>
+     * Generated from protobuf field <code>int32 amount = 3;</code>
      */
     private $amount = 0;
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 4;</code>
      */
     private $pokemon_display = null;
     /**
-     * <code>fixed64 pokemon = 5;</code>
+     * Generated from protobuf field <code>fixed64 pokemon = 5;</code>
      */
     private $pokemon = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type int $pokemon_id
+     *     @type int $amount
+     *     @type \POGOProtos\Data\PokemonDisplay $pokemon_display
+     *     @type int|string $pokemon
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Logs\BuddyPokemonLogEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.BuddyPokemonLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.BuddyPokemonLogEntry.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -48,16 +62,21 @@ class BuddyPokemonLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.BuddyPokemonLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.BuddyPokemonLogEntry.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Logs\BuddyPokemonLogEntry_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * @return int
      */
     public function getPokemonId()
     {
@@ -65,16 +84,21 @@ class BuddyPokemonLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 amount = 3;</code>
+     * Generated from protobuf field <code>int32 amount = 3;</code>
+     * @return int
      */
     public function getAmount()
     {
@@ -82,16 +106,21 @@ class BuddyPokemonLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 amount = 3;</code>
+     * Generated from protobuf field <code>int32 amount = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setAmount($var)
     {
         GPBUtil::checkInt32($var);
         $this->amount = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 4;</code>
+     * @return \POGOProtos\Data\PokemonDisplay
      */
     public function getPokemonDisplay()
     {
@@ -99,16 +128,21 @@ class BuddyPokemonLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 4;</code>
+     * @param \POGOProtos\Data\PokemonDisplay $var
+     * @return $this
      */
-    public function setPokemonDisplay(&$var)
+    public function setPokemonDisplay($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonDisplay::class);
         $this->pokemon_display = $var;
+
+        return $this;
     }
 
     /**
-     * <code>fixed64 pokemon = 5;</code>
+     * Generated from protobuf field <code>fixed64 pokemon = 5;</code>
+     * @return int|string
      */
     public function getPokemon()
     {
@@ -116,12 +150,16 @@ class BuddyPokemonLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 pokemon = 5;</code>
+     * Generated from protobuf field <code>fixed64 pokemon = 5;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemon($var)
     {
         GPBUtil::checkUint64($var);
         $this->pokemon = $var;
+
+        return $this;
     }
 
 }

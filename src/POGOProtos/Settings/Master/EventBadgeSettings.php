@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.EventBadgeSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.EventBadgeSettings</code>
  */
 class EventBadgeSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 valid_from_ms = 1;</code>
+     * Generated from protobuf field <code>int64 valid_from_ms = 1;</code>
      */
     private $valid_from_ms = 0;
     /**
-     * <code>int64 valid_to_ms = 2;</code>
+     * Generated from protobuf field <code>int64 valid_to_ms = 2;</code>
      */
     private $valid_to_ms = 0;
     /**
-     * <code>repeated .POGOProtos.Enums.BadgeType mutually_exclusive_badges = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.BadgeType mutually_exclusive_badges = 3;</code>
      */
     private $mutually_exclusive_badges;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $valid_from_ms
+     *     @type int|string $valid_to_ms
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $mutually_exclusive_badges
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\EventBadgeSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 valid_from_ms = 1;</code>
+     * Generated from protobuf field <code>int64 valid_from_ms = 1;</code>
+     * @return int|string
      */
     public function getValidFromMs()
     {
@@ -40,16 +52,21 @@ class EventBadgeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 valid_from_ms = 1;</code>
+     * Generated from protobuf field <code>int64 valid_from_ms = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setValidFromMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->valid_from_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 valid_to_ms = 2;</code>
+     * Generated from protobuf field <code>int64 valid_to_ms = 2;</code>
+     * @return int|string
      */
     public function getValidToMs()
     {
@@ -57,16 +74,21 @@ class EventBadgeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 valid_to_ms = 2;</code>
+     * Generated from protobuf field <code>int64 valid_to_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setValidToMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->valid_to_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.BadgeType mutually_exclusive_badges = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.BadgeType mutually_exclusive_badges = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getMutuallyExclusiveBadges()
     {
@@ -74,12 +96,16 @@ class EventBadgeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.BadgeType mutually_exclusive_badges = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.BadgeType mutually_exclusive_badges = 3;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setMutuallyExclusiveBadges(&$var)
+    public function setMutuallyExclusiveBadges($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\BadgeType::class);
-        $this->mutually_exclusive_badges = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\BadgeType::class);
+        $this->mutually_exclusive_badges = $arr;
+
+        return $this;
     }
 
 }

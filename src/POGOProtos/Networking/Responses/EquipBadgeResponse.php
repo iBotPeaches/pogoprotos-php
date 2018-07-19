@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.EquipBadgeResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.EquipBadgeResponse</code>
  */
 class EquipBadgeResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.EquipBadgeResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.EquipBadgeResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Data.Player.EquippedBadge equipped = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.EquippedBadge equipped = 2;</code>
      */
     private $equipped = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\Player\EquippedBadge $equipped
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\EquipBadgeResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.EquipBadgeResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.EquipBadgeResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class EquipBadgeResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.EquipBadgeResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.EquipBadgeResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\EquipBadgeResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.EquippedBadge equipped = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.EquippedBadge equipped = 2;</code>
+     * @return \POGOProtos\Data\Player\EquippedBadge
      */
     public function getEquipped()
     {
@@ -53,12 +69,16 @@ class EquipBadgeResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.EquippedBadge equipped = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.EquippedBadge equipped = 2;</code>
+     * @param \POGOProtos\Data\Player\EquippedBadge $var
+     * @return $this
      */
-    public function setEquipped(&$var)
+    public function setEquipped($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\EquippedBadge::class);
         $this->equipped = $var;
+
+        return $this;
     }
 
 }

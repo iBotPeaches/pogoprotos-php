@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Responses\Social;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.Social.SearchPlayerResponse.Result</code>
- */
-class SearchPlayerResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\Social\SearchPlayerResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_UNKNOWN = 2;</code>
-     */
-    const ERROR_UNKNOWN = 2;
-    /**
-     * <code>ERROR_PLAYER_NOT_FOUND = 3;</code>
-     */
-    const ERROR_PLAYER_NOT_FOUND = 3;
+    class SearchPlayerResponse_Result {}
 }
+class_exists(SearchPlayerResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\Social\SearchPlayerResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\Social\SearchPlayerResponse\Result instead', E_USER_DEPRECATED);
 

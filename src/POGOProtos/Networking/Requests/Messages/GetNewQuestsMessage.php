@@ -9,18 +9,24 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * <pre>
  * No message needed.
- * </pre>
  *
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetNewQuestsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GetNewQuestsMessage</code>
  */
 class GetNewQuestsMessage extends \Google\Protobuf\Internal\Message
 {
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetNewQuestsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
 }

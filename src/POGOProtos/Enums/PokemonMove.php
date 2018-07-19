@@ -5,960 +5,960 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.PokemonMove</code>
+ * Protobuf type <code>POGOProtos.Enums.PokemonMove</code>
  */
 class PokemonMove
 {
     /**
-     * <code>MOVE_UNSET = 0;</code>
+     * Generated from protobuf enum <code>MOVE_UNSET = 0;</code>
      */
     const MOVE_UNSET = 0;
     /**
-     * <code>THUNDER_SHOCK = 1;</code>
+     * Generated from protobuf enum <code>THUNDER_SHOCK = 1;</code>
      */
     const THUNDER_SHOCK = 1;
     /**
-     * <code>QUICK_ATTACK = 2;</code>
+     * Generated from protobuf enum <code>QUICK_ATTACK = 2;</code>
      */
     const QUICK_ATTACK = 2;
     /**
-     * <code>SCRATCH = 3;</code>
+     * Generated from protobuf enum <code>SCRATCH = 3;</code>
      */
     const SCRATCH = 3;
     /**
-     * <code>EMBER = 4;</code>
+     * Generated from protobuf enum <code>EMBER = 4;</code>
      */
     const EMBER = 4;
     /**
-     * <code>VINE_WHIP = 5;</code>
+     * Generated from protobuf enum <code>VINE_WHIP = 5;</code>
      */
     const VINE_WHIP = 5;
     /**
-     * <code>TACKLE = 6;</code>
+     * Generated from protobuf enum <code>TACKLE = 6;</code>
      */
     const TACKLE = 6;
     /**
-     * <code>RAZOR_LEAF = 7;</code>
+     * Generated from protobuf enum <code>RAZOR_LEAF = 7;</code>
      */
     const RAZOR_LEAF = 7;
     /**
-     * <code>TAKE_DOWN = 8;</code>
+     * Generated from protobuf enum <code>TAKE_DOWN = 8;</code>
      */
     const TAKE_DOWN = 8;
     /**
-     * <code>WATER_GUN = 9;</code>
+     * Generated from protobuf enum <code>WATER_GUN = 9;</code>
      */
     const WATER_GUN = 9;
     /**
-     * <code>BITE = 10;</code>
+     * Generated from protobuf enum <code>BITE = 10;</code>
      */
     const BITE = 10;
     /**
-     * <code>POUND = 11;</code>
+     * Generated from protobuf enum <code>POUND = 11;</code>
      */
     const POUND = 11;
     /**
-     * <code>DOUBLE_SLAP = 12;</code>
+     * Generated from protobuf enum <code>DOUBLE_SLAP = 12;</code>
      */
     const DOUBLE_SLAP = 12;
     /**
-     * <code>WRAP = 13;</code>
+     * Generated from protobuf enum <code>WRAP = 13;</code>
      */
     const WRAP = 13;
     /**
-     * <code>HYPER_BEAM = 14;</code>
+     * Generated from protobuf enum <code>HYPER_BEAM = 14;</code>
      */
     const HYPER_BEAM = 14;
     /**
-     * <code>LICK = 15;</code>
+     * Generated from protobuf enum <code>LICK = 15;</code>
      */
     const LICK = 15;
     /**
-     * <code>DARK_PULSE = 16;</code>
+     * Generated from protobuf enum <code>DARK_PULSE = 16;</code>
      */
     const DARK_PULSE = 16;
     /**
-     * <code>SMOG = 17;</code>
+     * Generated from protobuf enum <code>SMOG = 17;</code>
      */
     const SMOG = 17;
     /**
-     * <code>SLUDGE = 18;</code>
+     * Generated from protobuf enum <code>SLUDGE = 18;</code>
      */
     const SLUDGE = 18;
     /**
-     * <code>METAL_CLAW = 19;</code>
+     * Generated from protobuf enum <code>METAL_CLAW = 19;</code>
      */
     const METAL_CLAW = 19;
     /**
-     * <code>VICE_GRIP = 20;</code>
+     * Generated from protobuf enum <code>VICE_GRIP = 20;</code>
      */
     const VICE_GRIP = 20;
     /**
-     * <code>FLAME_WHEEL = 21;</code>
+     * Generated from protobuf enum <code>FLAME_WHEEL = 21;</code>
      */
     const FLAME_WHEEL = 21;
     /**
-     * <code>MEGAHORN = 22;</code>
+     * Generated from protobuf enum <code>MEGAHORN = 22;</code>
      */
     const MEGAHORN = 22;
     /**
-     * <code>WING_ATTACK = 23;</code>
+     * Generated from protobuf enum <code>WING_ATTACK = 23;</code>
      */
     const WING_ATTACK = 23;
     /**
-     * <code>FLAMETHROWER = 24;</code>
+     * Generated from protobuf enum <code>FLAMETHROWER = 24;</code>
      */
     const FLAMETHROWER = 24;
     /**
-     * <code>SUCKER_PUNCH = 25;</code>
+     * Generated from protobuf enum <code>SUCKER_PUNCH = 25;</code>
      */
     const SUCKER_PUNCH = 25;
     /**
-     * <code>DIG = 26;</code>
+     * Generated from protobuf enum <code>DIG = 26;</code>
      */
     const DIG = 26;
     /**
-     * <code>LOW_KICK = 27;</code>
+     * Generated from protobuf enum <code>LOW_KICK = 27;</code>
      */
     const LOW_KICK = 27;
     /**
-     * <code>CROSS_CHOP = 28;</code>
+     * Generated from protobuf enum <code>CROSS_CHOP = 28;</code>
      */
     const CROSS_CHOP = 28;
     /**
-     * <code>PSYCHO_CUT = 29;</code>
+     * Generated from protobuf enum <code>PSYCHO_CUT = 29;</code>
      */
     const PSYCHO_CUT = 29;
     /**
-     * <code>PSYBEAM = 30;</code>
+     * Generated from protobuf enum <code>PSYBEAM = 30;</code>
      */
     const PSYBEAM = 30;
     /**
-     * <code>EARTHQUAKE = 31;</code>
+     * Generated from protobuf enum <code>EARTHQUAKE = 31;</code>
      */
     const EARTHQUAKE = 31;
     /**
-     * <code>STONE_EDGE = 32;</code>
+     * Generated from protobuf enum <code>STONE_EDGE = 32;</code>
      */
     const STONE_EDGE = 32;
     /**
-     * <code>ICE_PUNCH = 33;</code>
+     * Generated from protobuf enum <code>ICE_PUNCH = 33;</code>
      */
     const ICE_PUNCH = 33;
     /**
-     * <code>HEART_STAMP = 34;</code>
+     * Generated from protobuf enum <code>HEART_STAMP = 34;</code>
      */
     const HEART_STAMP = 34;
     /**
-     * <code>DISCHARGE = 35;</code>
+     * Generated from protobuf enum <code>DISCHARGE = 35;</code>
      */
     const DISCHARGE = 35;
     /**
-     * <code>FLASH_CANNON = 36;</code>
+     * Generated from protobuf enum <code>FLASH_CANNON = 36;</code>
      */
     const FLASH_CANNON = 36;
     /**
-     * <code>PECK = 37;</code>
+     * Generated from protobuf enum <code>PECK = 37;</code>
      */
     const PECK = 37;
     /**
-     * <code>DRILL_PECK = 38;</code>
+     * Generated from protobuf enum <code>DRILL_PECK = 38;</code>
      */
     const DRILL_PECK = 38;
     /**
-     * <code>ICE_BEAM = 39;</code>
+     * Generated from protobuf enum <code>ICE_BEAM = 39;</code>
      */
     const ICE_BEAM = 39;
     /**
-     * <code>BLIZZARD = 40;</code>
+     * Generated from protobuf enum <code>BLIZZARD = 40;</code>
      */
     const BLIZZARD = 40;
     /**
-     * <code>AIR_SLASH = 41;</code>
+     * Generated from protobuf enum <code>AIR_SLASH = 41;</code>
      */
     const AIR_SLASH = 41;
     /**
-     * <code>HEAT_WAVE = 42;</code>
+     * Generated from protobuf enum <code>HEAT_WAVE = 42;</code>
      */
     const HEAT_WAVE = 42;
     /**
-     * <code>TWINEEDLE = 43;</code>
+     * Generated from protobuf enum <code>TWINEEDLE = 43;</code>
      */
     const TWINEEDLE = 43;
     /**
-     * <code>POISON_JAB = 44;</code>
+     * Generated from protobuf enum <code>POISON_JAB = 44;</code>
      */
     const POISON_JAB = 44;
     /**
-     * <code>AERIAL_ACE = 45;</code>
+     * Generated from protobuf enum <code>AERIAL_ACE = 45;</code>
      */
     const AERIAL_ACE = 45;
     /**
-     * <code>DRILL_RUN = 46;</code>
+     * Generated from protobuf enum <code>DRILL_RUN = 46;</code>
      */
     const DRILL_RUN = 46;
     /**
-     * <code>PETAL_BLIZZARD = 47;</code>
+     * Generated from protobuf enum <code>PETAL_BLIZZARD = 47;</code>
      */
     const PETAL_BLIZZARD = 47;
     /**
-     * <code>MEGA_DRAIN = 48;</code>
+     * Generated from protobuf enum <code>MEGA_DRAIN = 48;</code>
      */
     const MEGA_DRAIN = 48;
     /**
-     * <code>BUG_BUZZ = 49;</code>
+     * Generated from protobuf enum <code>BUG_BUZZ = 49;</code>
      */
     const BUG_BUZZ = 49;
     /**
-     * <code>POISON_FANG = 50;</code>
+     * Generated from protobuf enum <code>POISON_FANG = 50;</code>
      */
     const POISON_FANG = 50;
     /**
-     * <code>NIGHT_SLASH = 51;</code>
+     * Generated from protobuf enum <code>NIGHT_SLASH = 51;</code>
      */
     const NIGHT_SLASH = 51;
     /**
-     * <code>SLASH = 52;</code>
+     * Generated from protobuf enum <code>SLASH = 52;</code>
      */
     const SLASH = 52;
     /**
-     * <code>BUBBLE_BEAM = 53;</code>
+     * Generated from protobuf enum <code>BUBBLE_BEAM = 53;</code>
      */
     const BUBBLE_BEAM = 53;
     /**
-     * <code>SUBMISSION = 54;</code>
+     * Generated from protobuf enum <code>SUBMISSION = 54;</code>
      */
     const SUBMISSION = 54;
     /**
-     * <code>KARATE_CHOP = 55;</code>
+     * Generated from protobuf enum <code>KARATE_CHOP = 55;</code>
      */
     const KARATE_CHOP = 55;
     /**
-     * <code>LOW_SWEEP = 56;</code>
+     * Generated from protobuf enum <code>LOW_SWEEP = 56;</code>
      */
     const LOW_SWEEP = 56;
     /**
-     * <code>AQUA_JET = 57;</code>
+     * Generated from protobuf enum <code>AQUA_JET = 57;</code>
      */
     const AQUA_JET = 57;
     /**
-     * <code>AQUA_TAIL = 58;</code>
+     * Generated from protobuf enum <code>AQUA_TAIL = 58;</code>
      */
     const AQUA_TAIL = 58;
     /**
-     * <code>SEED_BOMB = 59;</code>
+     * Generated from protobuf enum <code>SEED_BOMB = 59;</code>
      */
     const SEED_BOMB = 59;
     /**
-     * <code>PSYSHOCK = 60;</code>
+     * Generated from protobuf enum <code>PSYSHOCK = 60;</code>
      */
     const PSYSHOCK = 60;
     /**
-     * <code>ROCK_THROW = 61;</code>
+     * Generated from protobuf enum <code>ROCK_THROW = 61;</code>
      */
     const ROCK_THROW = 61;
     /**
-     * <code>ANCIENT_POWER = 62;</code>
+     * Generated from protobuf enum <code>ANCIENT_POWER = 62;</code>
      */
     const ANCIENT_POWER = 62;
     /**
-     * <code>ROCK_TOMB = 63;</code>
+     * Generated from protobuf enum <code>ROCK_TOMB = 63;</code>
      */
     const ROCK_TOMB = 63;
     /**
-     * <code>ROCK_SLIDE = 64;</code>
+     * Generated from protobuf enum <code>ROCK_SLIDE = 64;</code>
      */
     const ROCK_SLIDE = 64;
     /**
-     * <code>POWER_GEM = 65;</code>
+     * Generated from protobuf enum <code>POWER_GEM = 65;</code>
      */
     const POWER_GEM = 65;
     /**
-     * <code>SHADOW_SNEAK = 66;</code>
+     * Generated from protobuf enum <code>SHADOW_SNEAK = 66;</code>
      */
     const SHADOW_SNEAK = 66;
     /**
-     * <code>SHADOW_PUNCH = 67;</code>
+     * Generated from protobuf enum <code>SHADOW_PUNCH = 67;</code>
      */
     const SHADOW_PUNCH = 67;
     /**
-     * <code>SHADOW_CLAW = 68;</code>
+     * Generated from protobuf enum <code>SHADOW_CLAW = 68;</code>
      */
     const SHADOW_CLAW = 68;
     /**
-     * <code>OMINOUS_WIND = 69;</code>
+     * Generated from protobuf enum <code>OMINOUS_WIND = 69;</code>
      */
     const OMINOUS_WIND = 69;
     /**
-     * <code>SHADOW_BALL = 70;</code>
+     * Generated from protobuf enum <code>SHADOW_BALL = 70;</code>
      */
     const SHADOW_BALL = 70;
     /**
-     * <code>BULLET_PUNCH = 71;</code>
+     * Generated from protobuf enum <code>BULLET_PUNCH = 71;</code>
      */
     const BULLET_PUNCH = 71;
     /**
-     * <code>MAGNET_BOMB = 72;</code>
+     * Generated from protobuf enum <code>MAGNET_BOMB = 72;</code>
      */
     const MAGNET_BOMB = 72;
     /**
-     * <code>STEEL_WING = 73;</code>
+     * Generated from protobuf enum <code>STEEL_WING = 73;</code>
      */
     const STEEL_WING = 73;
     /**
-     * <code>IRON_HEAD = 74;</code>
+     * Generated from protobuf enum <code>IRON_HEAD = 74;</code>
      */
     const IRON_HEAD = 74;
     /**
-     * <code>PARABOLIC_CHARGE = 75;</code>
+     * Generated from protobuf enum <code>PARABOLIC_CHARGE = 75;</code>
      */
     const PARABOLIC_CHARGE = 75;
     /**
-     * <code>SPARK = 76;</code>
+     * Generated from protobuf enum <code>SPARK = 76;</code>
      */
     const SPARK = 76;
     /**
-     * <code>THUNDER_PUNCH = 77;</code>
+     * Generated from protobuf enum <code>THUNDER_PUNCH = 77;</code>
      */
     const THUNDER_PUNCH = 77;
     /**
-     * <code>THUNDER = 78;</code>
+     * Generated from protobuf enum <code>THUNDER = 78;</code>
      */
     const THUNDER = 78;
     /**
-     * <code>THUNDERBOLT = 79;</code>
+     * Generated from protobuf enum <code>THUNDERBOLT = 79;</code>
      */
     const THUNDERBOLT = 79;
     /**
-     * <code>TWISTER = 80;</code>
+     * Generated from protobuf enum <code>TWISTER = 80;</code>
      */
     const TWISTER = 80;
     /**
-     * <code>DRAGON_BREATH = 81;</code>
+     * Generated from protobuf enum <code>DRAGON_BREATH = 81;</code>
      */
     const DRAGON_BREATH = 81;
     /**
-     * <code>DRAGON_PULSE = 82;</code>
+     * Generated from protobuf enum <code>DRAGON_PULSE = 82;</code>
      */
     const DRAGON_PULSE = 82;
     /**
-     * <code>DRAGON_CLAW = 83;</code>
+     * Generated from protobuf enum <code>DRAGON_CLAW = 83;</code>
      */
     const DRAGON_CLAW = 83;
     /**
-     * <code>DISARMING_VOICE = 84;</code>
+     * Generated from protobuf enum <code>DISARMING_VOICE = 84;</code>
      */
     const DISARMING_VOICE = 84;
     /**
-     * <code>DRAINING_KISS = 85;</code>
+     * Generated from protobuf enum <code>DRAINING_KISS = 85;</code>
      */
     const DRAINING_KISS = 85;
     /**
-     * <code>DAZZLING_GLEAM = 86;</code>
+     * Generated from protobuf enum <code>DAZZLING_GLEAM = 86;</code>
      */
     const DAZZLING_GLEAM = 86;
     /**
-     * <code>MOONBLAST = 87;</code>
+     * Generated from protobuf enum <code>MOONBLAST = 87;</code>
      */
     const MOONBLAST = 87;
     /**
-     * <code>PLAY_ROUGH = 88;</code>
+     * Generated from protobuf enum <code>PLAY_ROUGH = 88;</code>
      */
     const PLAY_ROUGH = 88;
     /**
-     * <code>CROSS_POISON = 89;</code>
+     * Generated from protobuf enum <code>CROSS_POISON = 89;</code>
      */
     const CROSS_POISON = 89;
     /**
-     * <code>SLUDGE_BOMB = 90;</code>
+     * Generated from protobuf enum <code>SLUDGE_BOMB = 90;</code>
      */
     const SLUDGE_BOMB = 90;
     /**
-     * <code>SLUDGE_WAVE = 91;</code>
+     * Generated from protobuf enum <code>SLUDGE_WAVE = 91;</code>
      */
     const SLUDGE_WAVE = 91;
     /**
-     * <code>GUNK_SHOT = 92;</code>
+     * Generated from protobuf enum <code>GUNK_SHOT = 92;</code>
      */
     const GUNK_SHOT = 92;
     /**
-     * <code>MUD_SHOT = 93;</code>
+     * Generated from protobuf enum <code>MUD_SHOT = 93;</code>
      */
     const MUD_SHOT = 93;
     /**
-     * <code>BONE_CLUB = 94;</code>
+     * Generated from protobuf enum <code>BONE_CLUB = 94;</code>
      */
     const BONE_CLUB = 94;
     /**
-     * <code>BULLDOZE = 95;</code>
+     * Generated from protobuf enum <code>BULLDOZE = 95;</code>
      */
     const BULLDOZE = 95;
     /**
-     * <code>MUD_BOMB = 96;</code>
+     * Generated from protobuf enum <code>MUD_BOMB = 96;</code>
      */
     const MUD_BOMB = 96;
     /**
-     * <code>FURY_CUTTER = 97;</code>
+     * Generated from protobuf enum <code>FURY_CUTTER = 97;</code>
      */
     const FURY_CUTTER = 97;
     /**
-     * <code>BUG_BITE = 98;</code>
+     * Generated from protobuf enum <code>BUG_BITE = 98;</code>
      */
     const BUG_BITE = 98;
     /**
-     * <code>SIGNAL_BEAM = 99;</code>
+     * Generated from protobuf enum <code>SIGNAL_BEAM = 99;</code>
      */
     const SIGNAL_BEAM = 99;
     /**
-     * <code>X_SCISSOR = 100;</code>
+     * Generated from protobuf enum <code>X_SCISSOR = 100;</code>
      */
     const X_SCISSOR = 100;
     /**
-     * <code>FLAME_CHARGE = 101;</code>
+     * Generated from protobuf enum <code>FLAME_CHARGE = 101;</code>
      */
     const FLAME_CHARGE = 101;
     /**
-     * <code>FLAME_BURST = 102;</code>
+     * Generated from protobuf enum <code>FLAME_BURST = 102;</code>
      */
     const FLAME_BURST = 102;
     /**
-     * <code>FIRE_BLAST = 103;</code>
+     * Generated from protobuf enum <code>FIRE_BLAST = 103;</code>
      */
     const FIRE_BLAST = 103;
     /**
-     * <code>BRINE = 104;</code>
+     * Generated from protobuf enum <code>BRINE = 104;</code>
      */
     const BRINE = 104;
     /**
-     * <code>WATER_PULSE = 105;</code>
+     * Generated from protobuf enum <code>WATER_PULSE = 105;</code>
      */
     const WATER_PULSE = 105;
     /**
-     * <code>SCALD = 106;</code>
+     * Generated from protobuf enum <code>SCALD = 106;</code>
      */
     const SCALD = 106;
     /**
-     * <code>HYDRO_PUMP = 107;</code>
+     * Generated from protobuf enum <code>HYDRO_PUMP = 107;</code>
      */
     const HYDRO_PUMP = 107;
     /**
-     * <code>PSYCHIC = 108;</code>
+     * Generated from protobuf enum <code>PSYCHIC = 108;</code>
      */
     const PSYCHIC = 108;
     /**
-     * <code>PSYSTRIKE = 109;</code>
+     * Generated from protobuf enum <code>PSYSTRIKE = 109;</code>
      */
     const PSYSTRIKE = 109;
     /**
-     * <code>ICE_SHARD = 110;</code>
+     * Generated from protobuf enum <code>ICE_SHARD = 110;</code>
      */
     const ICE_SHARD = 110;
     /**
-     * <code>ICY_WIND = 111;</code>
+     * Generated from protobuf enum <code>ICY_WIND = 111;</code>
      */
     const ICY_WIND = 111;
     /**
-     * <code>FROST_BREATH = 112;</code>
+     * Generated from protobuf enum <code>FROST_BREATH = 112;</code>
      */
     const FROST_BREATH = 112;
     /**
-     * <code>ABSORB = 113;</code>
+     * Generated from protobuf enum <code>ABSORB = 113;</code>
      */
     const ABSORB = 113;
     /**
-     * <code>GIGA_DRAIN = 114;</code>
+     * Generated from protobuf enum <code>GIGA_DRAIN = 114;</code>
      */
     const GIGA_DRAIN = 114;
     /**
-     * <code>FIRE_PUNCH = 115;</code>
+     * Generated from protobuf enum <code>FIRE_PUNCH = 115;</code>
      */
     const FIRE_PUNCH = 115;
     /**
-     * <code>SOLAR_BEAM = 116;</code>
+     * Generated from protobuf enum <code>SOLAR_BEAM = 116;</code>
      */
     const SOLAR_BEAM = 116;
     /**
-     * <code>LEAF_BLADE = 117;</code>
+     * Generated from protobuf enum <code>LEAF_BLADE = 117;</code>
      */
     const LEAF_BLADE = 117;
     /**
-     * <code>POWER_WHIP = 118;</code>
+     * Generated from protobuf enum <code>POWER_WHIP = 118;</code>
      */
     const POWER_WHIP = 118;
     /**
-     * <code>SPLASH = 119;</code>
+     * Generated from protobuf enum <code>SPLASH = 119;</code>
      */
     const SPLASH = 119;
     /**
-     * <code>ACID = 120;</code>
+     * Generated from protobuf enum <code>ACID = 120;</code>
      */
     const ACID = 120;
     /**
-     * <code>AIR_CUTTER = 121;</code>
+     * Generated from protobuf enum <code>AIR_CUTTER = 121;</code>
      */
     const AIR_CUTTER = 121;
     /**
-     * <code>HURRICANE = 122;</code>
+     * Generated from protobuf enum <code>HURRICANE = 122;</code>
      */
     const HURRICANE = 122;
     /**
-     * <code>BRICK_BREAK = 123;</code>
+     * Generated from protobuf enum <code>BRICK_BREAK = 123;</code>
      */
     const BRICK_BREAK = 123;
     /**
-     * <code>CUT = 124;</code>
+     * Generated from protobuf enum <code>CUT = 124;</code>
      */
     const CUT = 124;
     /**
-     * <code>SWIFT = 125;</code>
+     * Generated from protobuf enum <code>SWIFT = 125;</code>
      */
     const SWIFT = 125;
     /**
-     * <code>HORN_ATTACK = 126;</code>
+     * Generated from protobuf enum <code>HORN_ATTACK = 126;</code>
      */
     const HORN_ATTACK = 126;
     /**
-     * <code>STOMP = 127;</code>
+     * Generated from protobuf enum <code>STOMP = 127;</code>
      */
     const STOMP = 127;
     /**
-     * <code>HEADBUTT = 128;</code>
+     * Generated from protobuf enum <code>HEADBUTT = 128;</code>
      */
     const HEADBUTT = 128;
     /**
-     * <code>HYPER_FANG = 129;</code>
+     * Generated from protobuf enum <code>HYPER_FANG = 129;</code>
      */
     const HYPER_FANG = 129;
     /**
-     * <code>SLAM = 130;</code>
+     * Generated from protobuf enum <code>SLAM = 130;</code>
      */
     const SLAM = 130;
     /**
-     * <code>BODY_SLAM = 131;</code>
+     * Generated from protobuf enum <code>BODY_SLAM = 131;</code>
      */
     const BODY_SLAM = 131;
     /**
-     * <code>REST = 132;</code>
+     * Generated from protobuf enum <code>REST = 132;</code>
      */
     const REST = 132;
     /**
-     * <code>STRUGGLE = 133;</code>
+     * Generated from protobuf enum <code>STRUGGLE = 133;</code>
      */
     const STRUGGLE = 133;
     /**
-     * <code>SCALD_BLASTOISE = 134;</code>
+     * Generated from protobuf enum <code>SCALD_BLASTOISE = 134;</code>
      */
     const SCALD_BLASTOISE = 134;
     /**
-     * <code>HYDRO_PUMP_BLASTOISE = 135;</code>
+     * Generated from protobuf enum <code>HYDRO_PUMP_BLASTOISE = 135;</code>
      */
     const HYDRO_PUMP_BLASTOISE = 135;
     /**
-     * <code>WRAP_GREEN = 136;</code>
+     * Generated from protobuf enum <code>WRAP_GREEN = 136;</code>
      */
     const WRAP_GREEN = 136;
     /**
-     * <code>WRAP_PINK = 137;</code>
+     * Generated from protobuf enum <code>WRAP_PINK = 137;</code>
      */
     const WRAP_PINK = 137;
     /**
-     * <code>FURY_CUTTER_FAST = 200;</code>
+     * Generated from protobuf enum <code>FURY_CUTTER_FAST = 200;</code>
      */
     const FURY_CUTTER_FAST = 200;
     /**
-     * <code>BUG_BITE_FAST = 201;</code>
+     * Generated from protobuf enum <code>BUG_BITE_FAST = 201;</code>
      */
     const BUG_BITE_FAST = 201;
     /**
-     * <code>BITE_FAST = 202;</code>
+     * Generated from protobuf enum <code>BITE_FAST = 202;</code>
      */
     const BITE_FAST = 202;
     /**
-     * <code>SUCKER_PUNCH_FAST = 203;</code>
+     * Generated from protobuf enum <code>SUCKER_PUNCH_FAST = 203;</code>
      */
     const SUCKER_PUNCH_FAST = 203;
     /**
-     * <code>DRAGON_BREATH_FAST = 204;</code>
+     * Generated from protobuf enum <code>DRAGON_BREATH_FAST = 204;</code>
      */
     const DRAGON_BREATH_FAST = 204;
     /**
-     * <code>THUNDER_SHOCK_FAST = 205;</code>
+     * Generated from protobuf enum <code>THUNDER_SHOCK_FAST = 205;</code>
      */
     const THUNDER_SHOCK_FAST = 205;
     /**
-     * <code>SPARK_FAST = 206;</code>
+     * Generated from protobuf enum <code>SPARK_FAST = 206;</code>
      */
     const SPARK_FAST = 206;
     /**
-     * <code>LOW_KICK_FAST = 207;</code>
+     * Generated from protobuf enum <code>LOW_KICK_FAST = 207;</code>
      */
     const LOW_KICK_FAST = 207;
     /**
-     * <code>KARATE_CHOP_FAST = 208;</code>
+     * Generated from protobuf enum <code>KARATE_CHOP_FAST = 208;</code>
      */
     const KARATE_CHOP_FAST = 208;
     /**
-     * <code>EMBER_FAST = 209;</code>
+     * Generated from protobuf enum <code>EMBER_FAST = 209;</code>
      */
     const EMBER_FAST = 209;
     /**
-     * <code>WING_ATTACK_FAST = 210;</code>
+     * Generated from protobuf enum <code>WING_ATTACK_FAST = 210;</code>
      */
     const WING_ATTACK_FAST = 210;
     /**
-     * <code>PECK_FAST = 211;</code>
+     * Generated from protobuf enum <code>PECK_FAST = 211;</code>
      */
     const PECK_FAST = 211;
     /**
-     * <code>LICK_FAST = 212;</code>
+     * Generated from protobuf enum <code>LICK_FAST = 212;</code>
      */
     const LICK_FAST = 212;
     /**
-     * <code>SHADOW_CLAW_FAST = 213;</code>
+     * Generated from protobuf enum <code>SHADOW_CLAW_FAST = 213;</code>
      */
     const SHADOW_CLAW_FAST = 213;
     /**
-     * <code>VINE_WHIP_FAST = 214;</code>
+     * Generated from protobuf enum <code>VINE_WHIP_FAST = 214;</code>
      */
     const VINE_WHIP_FAST = 214;
     /**
-     * <code>RAZOR_LEAF_FAST = 215;</code>
+     * Generated from protobuf enum <code>RAZOR_LEAF_FAST = 215;</code>
      */
     const RAZOR_LEAF_FAST = 215;
     /**
-     * <code>MUD_SHOT_FAST = 216;</code>
+     * Generated from protobuf enum <code>MUD_SHOT_FAST = 216;</code>
      */
     const MUD_SHOT_FAST = 216;
     /**
-     * <code>ICE_SHARD_FAST = 217;</code>
+     * Generated from protobuf enum <code>ICE_SHARD_FAST = 217;</code>
      */
     const ICE_SHARD_FAST = 217;
     /**
-     * <code>FROST_BREATH_FAST = 218;</code>
+     * Generated from protobuf enum <code>FROST_BREATH_FAST = 218;</code>
      */
     const FROST_BREATH_FAST = 218;
     /**
-     * <code>QUICK_ATTACK_FAST = 219;</code>
+     * Generated from protobuf enum <code>QUICK_ATTACK_FAST = 219;</code>
      */
     const QUICK_ATTACK_FAST = 219;
     /**
-     * <code>SCRATCH_FAST = 220;</code>
+     * Generated from protobuf enum <code>SCRATCH_FAST = 220;</code>
      */
     const SCRATCH_FAST = 220;
     /**
-     * <code>TACKLE_FAST = 221;</code>
+     * Generated from protobuf enum <code>TACKLE_FAST = 221;</code>
      */
     const TACKLE_FAST = 221;
     /**
-     * <code>POUND_FAST = 222;</code>
+     * Generated from protobuf enum <code>POUND_FAST = 222;</code>
      */
     const POUND_FAST = 222;
     /**
-     * <code>CUT_FAST = 223;</code>
+     * Generated from protobuf enum <code>CUT_FAST = 223;</code>
      */
     const CUT_FAST = 223;
     /**
-     * <code>POISON_JAB_FAST = 224;</code>
+     * Generated from protobuf enum <code>POISON_JAB_FAST = 224;</code>
      */
     const POISON_JAB_FAST = 224;
     /**
-     * <code>ACID_FAST = 225;</code>
+     * Generated from protobuf enum <code>ACID_FAST = 225;</code>
      */
     const ACID_FAST = 225;
     /**
-     * <code>PSYCHO_CUT_FAST = 226;</code>
+     * Generated from protobuf enum <code>PSYCHO_CUT_FAST = 226;</code>
      */
     const PSYCHO_CUT_FAST = 226;
     /**
-     * <code>ROCK_THROW_FAST = 227;</code>
+     * Generated from protobuf enum <code>ROCK_THROW_FAST = 227;</code>
      */
     const ROCK_THROW_FAST = 227;
     /**
-     * <code>METAL_CLAW_FAST = 228;</code>
+     * Generated from protobuf enum <code>METAL_CLAW_FAST = 228;</code>
      */
     const METAL_CLAW_FAST = 228;
     /**
-     * <code>BULLET_PUNCH_FAST = 229;</code>
+     * Generated from protobuf enum <code>BULLET_PUNCH_FAST = 229;</code>
      */
     const BULLET_PUNCH_FAST = 229;
     /**
-     * <code>WATER_GUN_FAST = 230;</code>
+     * Generated from protobuf enum <code>WATER_GUN_FAST = 230;</code>
      */
     const WATER_GUN_FAST = 230;
     /**
-     * <code>SPLASH_FAST = 231;</code>
+     * Generated from protobuf enum <code>SPLASH_FAST = 231;</code>
      */
     const SPLASH_FAST = 231;
     /**
-     * <code>WATER_GUN_FAST_BLASTOISE = 232;</code>
+     * Generated from protobuf enum <code>WATER_GUN_FAST_BLASTOISE = 232;</code>
      */
     const WATER_GUN_FAST_BLASTOISE = 232;
     /**
-     * <code>MUD_SLAP_FAST = 233;</code>
+     * Generated from protobuf enum <code>MUD_SLAP_FAST = 233;</code>
      */
     const MUD_SLAP_FAST = 233;
     /**
-     * <code>ZEN_HEADBUTT_FAST = 234;</code>
+     * Generated from protobuf enum <code>ZEN_HEADBUTT_FAST = 234;</code>
      */
     const ZEN_HEADBUTT_FAST = 234;
     /**
-     * <code>CONFUSION_FAST = 235;</code>
+     * Generated from protobuf enum <code>CONFUSION_FAST = 235;</code>
      */
     const CONFUSION_FAST = 235;
     /**
-     * <code>POISON_STING_FAST = 236;</code>
+     * Generated from protobuf enum <code>POISON_STING_FAST = 236;</code>
      */
     const POISON_STING_FAST = 236;
     /**
-     * <code>BUBBLE_FAST = 237;</code>
+     * Generated from protobuf enum <code>BUBBLE_FAST = 237;</code>
      */
     const BUBBLE_FAST = 237;
     /**
-     * <code>FEINT_ATTACK_FAST = 238;</code>
+     * Generated from protobuf enum <code>FEINT_ATTACK_FAST = 238;</code>
      */
     const FEINT_ATTACK_FAST = 238;
     /**
-     * <code>STEEL_WING_FAST = 239;</code>
+     * Generated from protobuf enum <code>STEEL_WING_FAST = 239;</code>
      */
     const STEEL_WING_FAST = 239;
     /**
-     * <code>FIRE_FANG_FAST = 240;</code>
+     * Generated from protobuf enum <code>FIRE_FANG_FAST = 240;</code>
      */
     const FIRE_FANG_FAST = 240;
     /**
-     * <code>ROCK_SMASH_FAST = 241;</code>
+     * Generated from protobuf enum <code>ROCK_SMASH_FAST = 241;</code>
      */
     const ROCK_SMASH_FAST = 241;
     /**
-     * <code>TRANSFORM_FAST = 242;</code>
+     * Generated from protobuf enum <code>TRANSFORM_FAST = 242;</code>
      */
     const TRANSFORM_FAST = 242;
     /**
-     * <code>COUNTER_FAST = 243;</code>
+     * Generated from protobuf enum <code>COUNTER_FAST = 243;</code>
      */
     const COUNTER_FAST = 243;
     /**
-     * <code>POWDER_SNOW_FAST = 244;</code>
+     * Generated from protobuf enum <code>POWDER_SNOW_FAST = 244;</code>
      */
     const POWDER_SNOW_FAST = 244;
     /**
-     * <code>CLOSE_COMBAT = 245;</code>
+     * Generated from protobuf enum <code>CLOSE_COMBAT = 245;</code>
      */
     const CLOSE_COMBAT = 245;
     /**
-     * <code>DYNAMIC_PUNCH = 246;</code>
+     * Generated from protobuf enum <code>DYNAMIC_PUNCH = 246;</code>
      */
     const DYNAMIC_PUNCH = 246;
     /**
-     * <code>FOCUS_BLAST = 247;</code>
+     * Generated from protobuf enum <code>FOCUS_BLAST = 247;</code>
      */
     const FOCUS_BLAST = 247;
     /**
-     * <code>AURORA_BEAM = 248;</code>
+     * Generated from protobuf enum <code>AURORA_BEAM = 248;</code>
      */
     const AURORA_BEAM = 248;
     /**
-     * <code>CHARGE_BEAM_FAST = 249;</code>
+     * Generated from protobuf enum <code>CHARGE_BEAM_FAST = 249;</code>
      */
     const CHARGE_BEAM_FAST = 249;
     /**
-     * <code>VOLT_SWITCH_FAST = 250;</code>
+     * Generated from protobuf enum <code>VOLT_SWITCH_FAST = 250;</code>
      */
     const VOLT_SWITCH_FAST = 250;
     /**
-     * <code>WILD_CHARGE = 251;</code>
+     * Generated from protobuf enum <code>WILD_CHARGE = 251;</code>
      */
     const WILD_CHARGE = 251;
     /**
-     * <code>ZAP_CANNON = 252;</code>
+     * Generated from protobuf enum <code>ZAP_CANNON = 252;</code>
      */
     const ZAP_CANNON = 252;
     /**
-     * <code>DRAGON_TAIL_FAST = 253;</code>
+     * Generated from protobuf enum <code>DRAGON_TAIL_FAST = 253;</code>
      */
     const DRAGON_TAIL_FAST = 253;
     /**
-     * <code>AVALANCHE = 254;</code>
+     * Generated from protobuf enum <code>AVALANCHE = 254;</code>
      */
     const AVALANCHE = 254;
     /**
-     * <code>AIR_SLASH_FAST = 255;</code>
+     * Generated from protobuf enum <code>AIR_SLASH_FAST = 255;</code>
      */
     const AIR_SLASH_FAST = 255;
     /**
-     * <code>BRAVE_BIRD = 256;</code>
+     * Generated from protobuf enum <code>BRAVE_BIRD = 256;</code>
      */
     const BRAVE_BIRD = 256;
     /**
-     * <code>SKY_ATTACK = 257;</code>
+     * Generated from protobuf enum <code>SKY_ATTACK = 257;</code>
      */
     const SKY_ATTACK = 257;
     /**
-     * <code>SAND_TOMB = 258;</code>
+     * Generated from protobuf enum <code>SAND_TOMB = 258;</code>
      */
     const SAND_TOMB = 258;
     /**
-     * <code>ROCK_BLAST = 259;</code>
+     * Generated from protobuf enum <code>ROCK_BLAST = 259;</code>
      */
     const ROCK_BLAST = 259;
     /**
-     * <code>INFESTATION_FAST = 260;</code>
+     * Generated from protobuf enum <code>INFESTATION_FAST = 260;</code>
      */
     const INFESTATION_FAST = 260;
     /**
-     * <code>STRUGGLE_BUG_FAST = 261;</code>
+     * Generated from protobuf enum <code>STRUGGLE_BUG_FAST = 261;</code>
      */
     const STRUGGLE_BUG_FAST = 261;
     /**
-     * <code>SILVER_WIND = 262;</code>
+     * Generated from protobuf enum <code>SILVER_WIND = 262;</code>
      */
     const SILVER_WIND = 262;
     /**
-     * <code>ASTONISH_FAST = 263;</code>
+     * Generated from protobuf enum <code>ASTONISH_FAST = 263;</code>
      */
     const ASTONISH_FAST = 263;
     /**
-     * <code>HEX_FAST = 264;</code>
+     * Generated from protobuf enum <code>HEX_FAST = 264;</code>
      */
     const HEX_FAST = 264;
     /**
-     * <code>NIGHT_SHADE = 265;</code>
+     * Generated from protobuf enum <code>NIGHT_SHADE = 265;</code>
      */
     const NIGHT_SHADE = 265;
     /**
-     * <code>IRON_TAIL_FAST = 266;</code>
+     * Generated from protobuf enum <code>IRON_TAIL_FAST = 266;</code>
      */
     const IRON_TAIL_FAST = 266;
     /**
-     * <code>GYRO_BALL = 267;</code>
+     * Generated from protobuf enum <code>GYRO_BALL = 267;</code>
      */
     const GYRO_BALL = 267;
     /**
-     * <code>HEAVY_SLAM = 268;</code>
+     * Generated from protobuf enum <code>HEAVY_SLAM = 268;</code>
      */
     const HEAVY_SLAM = 268;
     /**
-     * <code>FIRE_SPIN_FAST = 269;</code>
+     * Generated from protobuf enum <code>FIRE_SPIN_FAST = 269;</code>
      */
     const FIRE_SPIN_FAST = 269;
     /**
-     * <code>OVERHEAT = 270;</code>
+     * Generated from protobuf enum <code>OVERHEAT = 270;</code>
      */
     const OVERHEAT = 270;
     /**
-     * <code>BULLET_SEED_FAST = 271;</code>
+     * Generated from protobuf enum <code>BULLET_SEED_FAST = 271;</code>
      */
     const BULLET_SEED_FAST = 271;
     /**
-     * <code>GRASS_KNOT = 272;</code>
+     * Generated from protobuf enum <code>GRASS_KNOT = 272;</code>
      */
     const GRASS_KNOT = 272;
     /**
-     * <code>ENERGY_BALL = 273;</code>
+     * Generated from protobuf enum <code>ENERGY_BALL = 273;</code>
      */
     const ENERGY_BALL = 273;
     /**
-     * <code>EXTRASENSORY_FAST = 274;</code>
+     * Generated from protobuf enum <code>EXTRASENSORY_FAST = 274;</code>
      */
     const EXTRASENSORY_FAST = 274;
     /**
-     * <code>FUTURESIGHT = 275;</code>
+     * Generated from protobuf enum <code>FUTURESIGHT = 275;</code>
      */
     const FUTURESIGHT = 275;
     /**
-     * <code>MIRROR_COAT = 276;</code>
+     * Generated from protobuf enum <code>MIRROR_COAT = 276;</code>
      */
     const MIRROR_COAT = 276;
     /**
-     * <code>OUTRAGE = 277;</code>
+     * Generated from protobuf enum <code>OUTRAGE = 277;</code>
      */
     const OUTRAGE = 277;
     /**
-     * <code>SNARL_FAST = 278;</code>
+     * Generated from protobuf enum <code>SNARL_FAST = 278;</code>
      */
     const SNARL_FAST = 278;
     /**
-     * <code>CRUNCH = 279;</code>
+     * Generated from protobuf enum <code>CRUNCH = 279;</code>
      */
     const CRUNCH = 279;
     /**
-     * <code>FOUL_PLAY = 280;</code>
+     * Generated from protobuf enum <code>FOUL_PLAY = 280;</code>
      */
     const FOUL_PLAY = 280;
     /**
-     * <code>HIDDEN_POWER_FAST = 281;</code>
+     * Generated from protobuf enum <code>HIDDEN_POWER_FAST = 281;</code>
      */
     const HIDDEN_POWER_FAST = 281;
     /**
-     * <code>TAKE_DOWN_FAST = 282;</code>
+     * Generated from protobuf enum <code>TAKE_DOWN_FAST = 282;</code>
      */
     const TAKE_DOWN_FAST = 282;
     /**
-     * <code>WATERFALL_FAST = 283;</code>
+     * Generated from protobuf enum <code>WATERFALL_FAST = 283;</code>
      */
     const WATERFALL_FAST = 283;
     /**
-     * <code>SURF = 284;</code>
+     * Generated from protobuf enum <code>SURF = 284;</code>
      */
     const SURF = 284;
     /**
-     * <code>DRACO_METEOR = 285;</code>
+     * Generated from protobuf enum <code>DRACO_METEOR = 285;</code>
      */
     const DRACO_METEOR = 285;
     /**
-     * <code>DOOM_DESIRE = 286;</code>
+     * Generated from protobuf enum <code>DOOM_DESIRE = 286;</code>
      */
     const DOOM_DESIRE = 286;
     /**
-     * <code>YAWN_FAST = 287;</code>
+     * Generated from protobuf enum <code>YAWN_FAST = 287;</code>
      */
     const YAWN_FAST = 287;
     /**
-     * <code>PSYCHO_BOOST = 288;</code>
+     * Generated from protobuf enum <code>PSYCHO_BOOST = 288;</code>
      */
     const PSYCHO_BOOST = 288;
     /**
-     * <code>ORIGIN_PULSE = 289;</code>
+     * Generated from protobuf enum <code>ORIGIN_PULSE = 289;</code>
      */
     const ORIGIN_PULSE = 289;
     /**
-     * <code>PRECIPICE_BLADES = 290;</code>
+     * Generated from protobuf enum <code>PRECIPICE_BLADES = 290;</code>
      */
     const PRECIPICE_BLADES = 290;
     /**
-     * <code>PRESENT_FAST = 291;</code>
+     * Generated from protobuf enum <code>PRESENT_FAST = 291;</code>
      */
     const PRESENT_FAST = 291;
     /**
-     * <code>WEATHER_BALL_FIRE = 292;</code>
+     * Generated from protobuf enum <code>WEATHER_BALL_FIRE = 292;</code>
      */
     const WEATHER_BALL_FIRE = 292;
     /**
-     * <code>WEATHER_BALL_ICE = 293;</code>
+     * Generated from protobuf enum <code>WEATHER_BALL_ICE = 293;</code>
      */
     const WEATHER_BALL_ICE = 293;
     /**
-     * <code>WEATHER_BALL_ROCK = 294;</code>
+     * Generated from protobuf enum <code>WEATHER_BALL_ROCK = 294;</code>
      */
     const WEATHER_BALL_ROCK = 294;
     /**
-     * <code>WEATHER_BALL_WATER = 295;</code>
+     * Generated from protobuf enum <code>WEATHER_BALL_WATER = 295;</code>
      */
     const WEATHER_BALL_WATER = 295;
     /**
-     * <code>FRENZY_PLANT = 296;</code>
+     * Generated from protobuf enum <code>FRENZY_PLANT = 296;</code>
      */
     const FRENZY_PLANT = 296;
     /**
-     * <code>SMACK_DOWN_FAST = 297;</code>
+     * Generated from protobuf enum <code>SMACK_DOWN_FAST = 297;</code>
      */
     const SMACK_DOWN_FAST = 297;
     /**
-     * <code>BLAST_BURN = 298;</code>
+     * Generated from protobuf enum <code>BLAST_BURN = 298;</code>
      */
     const BLAST_BURN = 298;
     /**
-     * <code>HYDRO_CANNON = 299;</code>
+     * Generated from protobuf enum <code>HYDRO_CANNON = 299;</code>
      */
     const HYDRO_CANNON = 299;
 }

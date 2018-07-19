@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Logs.TradingLogEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Logs.TradingLogEntry</code>
  */
 class TradingLogEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Logs.TradingLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.TradingLogEntry.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>string friend_codename = 2;</code>
+     * Generated from protobuf field <code>string friend_codename = 2;</code>
      */
     private $friend_codename = '';
     /**
-     * <code>.POGOProtos.Data.PokemonData trade_out_pokemon = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData trade_out_pokemon = 3;</code>
      */
     private $trade_out_pokemon = null;
     /**
-     * <code>.POGOProtos.Data.PokemonData trade_in_pokemon = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData trade_in_pokemon = 4;</code>
      */
     private $trade_in_pokemon = null;
     /**
-     * <code>.POGOProtos.Inventory.Loot rewards = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot rewards = 5;</code>
      */
     private $rewards = null;
     /**
-     * <code>.POGOProtos.Inventory.Loot price = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot price = 6;</code>
      */
     private $price = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type string $friend_codename
+     *     @type \POGOProtos\Data\PokemonData $trade_out_pokemon
+     *     @type \POGOProtos\Data\PokemonData $trade_in_pokemon
+     *     @type \POGOProtos\Inventory\Loot $rewards
+     *     @type \POGOProtos\Inventory\Loot $price
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Logs\TradingLogEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.TradingLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.TradingLogEntry.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -52,16 +67,21 @@ class TradingLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.TradingLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.TradingLogEntry.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Logs\TradingLogEntry_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string friend_codename = 2;</code>
+     * Generated from protobuf field <code>string friend_codename = 2;</code>
+     * @return string
      */
     public function getFriendCodename()
     {
@@ -69,16 +89,21 @@ class TradingLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string friend_codename = 2;</code>
+     * Generated from protobuf field <code>string friend_codename = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFriendCodename($var)
     {
         GPBUtil::checkString($var, True);
         $this->friend_codename = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData trade_out_pokemon = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData trade_out_pokemon = 3;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getTradeOutPokemon()
     {
@@ -86,16 +111,21 @@ class TradingLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData trade_out_pokemon = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData trade_out_pokemon = 3;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setTradeOutPokemon(&$var)
+    public function setTradeOutPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->trade_out_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData trade_in_pokemon = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData trade_in_pokemon = 4;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getTradeInPokemon()
     {
@@ -103,16 +133,21 @@ class TradingLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData trade_in_pokemon = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData trade_in_pokemon = 4;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setTradeInPokemon(&$var)
+    public function setTradeInPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->trade_in_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot rewards = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot rewards = 5;</code>
+     * @return \POGOProtos\Inventory\Loot
      */
     public function getRewards()
     {
@@ -120,16 +155,21 @@ class TradingLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot rewards = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot rewards = 5;</code>
+     * @param \POGOProtos\Inventory\Loot $var
+     * @return $this
      */
-    public function setRewards(&$var)
+    public function setRewards($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\Loot::class);
         $this->rewards = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot price = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot price = 6;</code>
+     * @return \POGOProtos\Inventory\Loot
      */
     public function getPrice()
     {
@@ -137,12 +177,16 @@ class TradingLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot price = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot price = 6;</code>
+     * @param \POGOProtos\Inventory\Loot $var
+     * @return $this
      */
-    public function setPrice(&$var)
+    public function setPrice($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\Loot::class);
         $this->price = $var;
+
+        return $this;
     }
 
 }

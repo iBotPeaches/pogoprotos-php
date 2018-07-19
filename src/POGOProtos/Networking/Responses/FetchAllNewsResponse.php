@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.FetchAllNewsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.FetchAllNewsResponse</code>
  */
 class FetchAllNewsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.FetchAllNewsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FetchAllNewsResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Data.News.CurrentNews current_news = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.News.CurrentNews current_news = 2;</code>
      */
     private $current_news = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\News\CurrentNews $current_news
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\FetchAllNewsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.FetchAllNewsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FetchAllNewsResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class FetchAllNewsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.FetchAllNewsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FetchAllNewsResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\FetchAllNewsResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.News.CurrentNews current_news = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.News.CurrentNews current_news = 2;</code>
+     * @return \POGOProtos\Data\News\CurrentNews
      */
     public function getCurrentNews()
     {
@@ -53,12 +69,16 @@ class FetchAllNewsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.News.CurrentNews current_news = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.News.CurrentNews current_news = 2;</code>
+     * @param \POGOProtos\Data\News\CurrentNews $var
+     * @return $this
      */
-    public function setCurrentNews(&$var)
+    public function setCurrentNews($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\News\CurrentNews::class);
         $this->current_news = $var;
+
+        return $this;
     }
 
 }

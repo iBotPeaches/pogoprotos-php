@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Friends.Friend</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Friends.Friend</code>
  */
 class Friend extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string player_id = 1;</code>
+     * Generated from protobuf field <code>string player_id = 1;</code>
      */
     private $player_id = '';
     /**
-     * <code>string codename = 2;</code>
+     * Generated from protobuf field <code>string codename = 2;</code>
      */
     private $codename = '';
     /**
-     * <code>string team = 3;</code>
+     * Generated from protobuf field <code>string team = 3;</code>
      */
     private $team = '';
     /**
-     * <code>int32 score = 4;</code>
+     * Generated from protobuf field <code>int32 score = 4;</code>
      */
     private $score = 0;
     /**
-     * <code>bytes data_with_me = 5;</code>
+     * Generated from protobuf field <code>bytes data_with_me = 5;</code>
      */
     private $data_with_me = '';
     /**
-     * <code>int64 version = 6;</code>
+     * Generated from protobuf field <code>int64 version = 6;</code>
      */
     private $version = 0;
     /**
-     * <code>int64 created_ms = 7;</code>
+     * Generated from protobuf field <code>int64 created_ms = 7;</code>
      */
     private $created_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $player_id
+     *     @type string $codename
+     *     @type string $team
+     *     @type int $score
+     *     @type string $data_with_me
+     *     @type int|string $version
+     *     @type int|string $created_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Friends\Friend::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string player_id = 1;</code>
+     * Generated from protobuf field <code>string player_id = 1;</code>
+     * @return string
      */
     public function getPlayerId()
     {
@@ -56,16 +72,21 @@ class Friend extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string player_id = 1;</code>
+     * Generated from protobuf field <code>string player_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPlayerId($var)
     {
         GPBUtil::checkString($var, True);
         $this->player_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string codename = 2;</code>
+     * Generated from protobuf field <code>string codename = 2;</code>
+     * @return string
      */
     public function getCodename()
     {
@@ -73,16 +94,21 @@ class Friend extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string codename = 2;</code>
+     * Generated from protobuf field <code>string codename = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setCodename($var)
     {
         GPBUtil::checkString($var, True);
         $this->codename = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string team = 3;</code>
+     * Generated from protobuf field <code>string team = 3;</code>
+     * @return string
      */
     public function getTeam()
     {
@@ -90,16 +116,21 @@ class Friend extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string team = 3;</code>
+     * Generated from protobuf field <code>string team = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setTeam($var)
     {
         GPBUtil::checkString($var, True);
         $this->team = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 score = 4;</code>
+     * Generated from protobuf field <code>int32 score = 4;</code>
+     * @return int
      */
     public function getScore()
     {
@@ -107,16 +138,21 @@ class Friend extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 score = 4;</code>
+     * Generated from protobuf field <code>int32 score = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setScore($var)
     {
         GPBUtil::checkInt32($var);
         $this->score = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bytes data_with_me = 5;</code>
+     * Generated from protobuf field <code>bytes data_with_me = 5;</code>
+     * @return string
      */
     public function getDataWithMe()
     {
@@ -124,16 +160,21 @@ class Friend extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes data_with_me = 5;</code>
+     * Generated from protobuf field <code>bytes data_with_me = 5;</code>
+     * @param string $var
+     * @return $this
      */
     public function setDataWithMe($var)
     {
         GPBUtil::checkString($var, False);
         $this->data_with_me = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 version = 6;</code>
+     * Generated from protobuf field <code>int64 version = 6;</code>
+     * @return int|string
      */
     public function getVersion()
     {
@@ -141,16 +182,21 @@ class Friend extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 version = 6;</code>
+     * Generated from protobuf field <code>int64 version = 6;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setVersion($var)
     {
         GPBUtil::checkInt64($var);
         $this->version = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 created_ms = 7;</code>
+     * Generated from protobuf field <code>int64 created_ms = 7;</code>
+     * @return int|string
      */
     public function getCreatedMs()
     {
@@ -158,12 +204,16 @@ class Friend extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 created_ms = 7;</code>
+     * Generated from protobuf field <code>int64 created_ms = 7;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setCreatedMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->created_ms = $var;
+
+        return $this;
     }
 
 }

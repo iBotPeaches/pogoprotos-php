@@ -9,54 +9,72 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Raid.Raid</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Raid.Raid</code>
  */
 class Raid extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 raid_seed = 1;</code>
+     * Generated from protobuf field <code>int64 raid_seed = 1;</code>
      */
     private $raid_seed = 0;
     /**
-     * <code>int64 started_ms = 2;</code>
+     * Generated from protobuf field <code>int64 started_ms = 2;</code>
      */
     private $started_ms = 0;
     /**
-     * <code>int64 completed_ms = 3;</code>
+     * Generated from protobuf field <code>int64 completed_ms = 3;</code>
      */
     private $completed_ms = 0;
     /**
-     * <code>.POGOProtos.Enums.PokemonId encounter_pokemon_id = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId encounter_pokemon_id = 4;</code>
      */
     private $encounter_pokemon_id = 0;
     /**
-     * <code>bool completed_battle = 5;</code>
+     * Generated from protobuf field <code>bool completed_battle = 5;</code>
      */
     private $completed_battle = false;
     /**
-     * <code>bool received_rewards = 6;</code>
+     * Generated from protobuf field <code>bool received_rewards = 6;</code>
      */
     private $received_rewards = false;
     /**
-     * <code>bool finished_encounter = 7;</code>
+     * Generated from protobuf field <code>bool finished_encounter = 7;</code>
      */
     private $finished_encounter = false;
     /**
-     * <code>bool received_default_rewards = 8;</code>
+     * Generated from protobuf field <code>bool received_default_rewards = 8;</code>
      */
     private $received_default_rewards = false;
     /**
-     * <code>bool incremented_raid_friends = 9;</code>
+     * Generated from protobuf field <code>bool incremented_raid_friends = 9;</code>
      */
     private $incremented_raid_friends = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $raid_seed
+     *     @type int|string $started_ms
+     *     @type int|string $completed_ms
+     *     @type int $encounter_pokemon_id
+     *     @type bool $completed_battle
+     *     @type bool $received_rewards
+     *     @type bool $finished_encounter
+     *     @type bool $received_default_rewards
+     *     @type bool $incremented_raid_friends
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Raid\Raid::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 raid_seed = 1;</code>
+     * Generated from protobuf field <code>int64 raid_seed = 1;</code>
+     * @return int|string
      */
     public function getRaidSeed()
     {
@@ -64,16 +82,21 @@ class Raid extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 raid_seed = 1;</code>
+     * Generated from protobuf field <code>int64 raid_seed = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setRaidSeed($var)
     {
         GPBUtil::checkInt64($var);
         $this->raid_seed = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 started_ms = 2;</code>
+     * Generated from protobuf field <code>int64 started_ms = 2;</code>
+     * @return int|string
      */
     public function getStartedMs()
     {
@@ -81,16 +104,21 @@ class Raid extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 started_ms = 2;</code>
+     * Generated from protobuf field <code>int64 started_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setStartedMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->started_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 completed_ms = 3;</code>
+     * Generated from protobuf field <code>int64 completed_ms = 3;</code>
+     * @return int|string
      */
     public function getCompletedMs()
     {
@@ -98,16 +126,21 @@ class Raid extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 completed_ms = 3;</code>
+     * Generated from protobuf field <code>int64 completed_ms = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setCompletedMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->completed_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId encounter_pokemon_id = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId encounter_pokemon_id = 4;</code>
+     * @return int
      */
     public function getEncounterPokemonId()
     {
@@ -115,16 +148,21 @@ class Raid extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId encounter_pokemon_id = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId encounter_pokemon_id = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEncounterPokemonId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->encounter_pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool completed_battle = 5;</code>
+     * Generated from protobuf field <code>bool completed_battle = 5;</code>
+     * @return bool
      */
     public function getCompletedBattle()
     {
@@ -132,16 +170,21 @@ class Raid extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool completed_battle = 5;</code>
+     * Generated from protobuf field <code>bool completed_battle = 5;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setCompletedBattle($var)
     {
         GPBUtil::checkBool($var);
         $this->completed_battle = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool received_rewards = 6;</code>
+     * Generated from protobuf field <code>bool received_rewards = 6;</code>
+     * @return bool
      */
     public function getReceivedRewards()
     {
@@ -149,16 +192,21 @@ class Raid extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool received_rewards = 6;</code>
+     * Generated from protobuf field <code>bool received_rewards = 6;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setReceivedRewards($var)
     {
         GPBUtil::checkBool($var);
         $this->received_rewards = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool finished_encounter = 7;</code>
+     * Generated from protobuf field <code>bool finished_encounter = 7;</code>
+     * @return bool
      */
     public function getFinishedEncounter()
     {
@@ -166,16 +214,21 @@ class Raid extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool finished_encounter = 7;</code>
+     * Generated from protobuf field <code>bool finished_encounter = 7;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setFinishedEncounter($var)
     {
         GPBUtil::checkBool($var);
         $this->finished_encounter = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool received_default_rewards = 8;</code>
+     * Generated from protobuf field <code>bool received_default_rewards = 8;</code>
+     * @return bool
      */
     public function getReceivedDefaultRewards()
     {
@@ -183,16 +236,21 @@ class Raid extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool received_default_rewards = 8;</code>
+     * Generated from protobuf field <code>bool received_default_rewards = 8;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setReceivedDefaultRewards($var)
     {
         GPBUtil::checkBool($var);
         $this->received_default_rewards = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool incremented_raid_friends = 9;</code>
+     * Generated from protobuf field <code>bool incremented_raid_friends = 9;</code>
+     * @return bool
      */
     public function getIncrementedRaidFriends()
     {
@@ -200,12 +258,16 @@ class Raid extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool incremented_raid_friends = 9;</code>
+     * Generated from protobuf field <code>bool incremented_raid_friends = 9;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIncrementedRaidFriends($var)
     {
         GPBUtil::checkBool($var);
         $this->incremented_raid_friends = $var;
+
+        return $this;
     }
 
 }

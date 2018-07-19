@@ -9,42 +9,55 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.StartGymBattleMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.StartGymBattleMessage</code>
  */
 class StartGymBattleMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string gym_id = 1;</code>
+     * Generated from protobuf field <code>string gym_id = 1;</code>
      */
     private $gym_id = '';
     /**
-     * <code>repeated fixed64 attacking_pokemon_ids = 2;</code>
+     * Generated from protobuf field <code>repeated fixed64 attacking_pokemon_ids = 2;</code>
      */
     private $attacking_pokemon_ids;
     /**
-     * <pre>
      * needs to be fixed64, tested by Grover
-     * </pre>
      *
-     * <code>fixed64 defending_pokemon_id = 3;</code>
+     * Generated from protobuf field <code>fixed64 defending_pokemon_id = 3;</code>
      */
     private $defending_pokemon_id = 0;
     /**
-     * <code>double player_latitude = 4;</code>
+     * Generated from protobuf field <code>double player_latitude = 4;</code>
      */
     private $player_latitude = 0.0;
     /**
-     * <code>double player_longitude = 5;</code>
+     * Generated from protobuf field <code>double player_longitude = 5;</code>
      */
     private $player_longitude = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $gym_id
+     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $attacking_pokemon_ids
+     *     @type int|string $defending_pokemon_id
+     *           needs to be fixed64, tested by Grover
+     *     @type float $player_latitude
+     *     @type float $player_longitude
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\StartGymBattleMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string gym_id = 1;</code>
+     * Generated from protobuf field <code>string gym_id = 1;</code>
+     * @return string
      */
     public function getGymId()
     {
@@ -52,16 +65,21 @@ class StartGymBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string gym_id = 1;</code>
+     * Generated from protobuf field <code>string gym_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setGymId($var)
     {
         GPBUtil::checkString($var, True);
         $this->gym_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated fixed64 attacking_pokemon_ids = 2;</code>
+     * Generated from protobuf field <code>repeated fixed64 attacking_pokemon_ids = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAttackingPokemonIds()
     {
@@ -69,20 +87,23 @@ class StartGymBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated fixed64 attacking_pokemon_ids = 2;</code>
+     * Generated from protobuf field <code>repeated fixed64 attacking_pokemon_ids = 2;</code>
+     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAttackingPokemonIds(&$var)
+    public function setAttackingPokemonIds($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FIXED64);
-        $this->attacking_pokemon_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FIXED64);
+        $this->attacking_pokemon_ids = $arr;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * needs to be fixed64, tested by Grover
-     * </pre>
      *
-     * <code>fixed64 defending_pokemon_id = 3;</code>
+     * Generated from protobuf field <code>fixed64 defending_pokemon_id = 3;</code>
+     * @return int|string
      */
     public function getDefendingPokemonId()
     {
@@ -90,20 +111,23 @@ class StartGymBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * needs to be fixed64, tested by Grover
-     * </pre>
      *
-     * <code>fixed64 defending_pokemon_id = 3;</code>
+     * Generated from protobuf field <code>fixed64 defending_pokemon_id = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setDefendingPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->defending_pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_latitude = 4;</code>
+     * Generated from protobuf field <code>double player_latitude = 4;</code>
+     * @return float
      */
     public function getPlayerLatitude()
     {
@@ -111,16 +135,21 @@ class StartGymBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_latitude = 4;</code>
+     * Generated from protobuf field <code>double player_latitude = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_longitude = 5;</code>
+     * Generated from protobuf field <code>double player_longitude = 5;</code>
+     * @return float
      */
     public function getPlayerLongitude()
     {
@@ -128,12 +157,16 @@ class StartGymBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_longitude = 5;</code>
+     * Generated from protobuf field <code>double player_longitude = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_longitude = $var;
+
+        return $this;
     }
 
 }

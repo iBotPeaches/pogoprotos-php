@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.Social.GetUploadUrlResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.Social.GetUploadUrlResponse</code>
  */
 class GetUploadUrlResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.GetUploadUrlResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.GetUploadUrlResponse.Status status = 1;</code>
      */
     private $status = 0;
     /**
-     * <code>string url = 2;</code>
+     * Generated from protobuf field <code>string url = 2;</code>
      */
     private $url = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status
+     *     @type string $url
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\Social\GetUploadUrlResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.GetUploadUrlResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.GetUploadUrlResponse.Status status = 1;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -36,16 +47,21 @@ class GetUploadUrlResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.GetUploadUrlResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.GetUploadUrlResponse.Status status = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\Social\GetUploadUrlResponse_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string url = 2;</code>
+     * Generated from protobuf field <code>string url = 2;</code>
+     * @return string
      */
     public function getUrl()
     {
@@ -53,12 +69,16 @@ class GetUploadUrlResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string url = 2;</code>
+     * Generated from protobuf field <code>string url = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->url = $var;
+
+        return $this;
     }
 
 }

@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.StartGymBattleResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.StartGymBattleResponse</code>
  */
 class StartGymBattleResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.StartGymBattleResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.StartGymBattleResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>int64 battle_start_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 battle_start_timestamp_ms = 2;</code>
      */
     private $battle_start_timestamp_ms = 0;
     /**
-     * <code>int64 battle_end_timestamp_ms = 3;</code>
+     * Generated from protobuf field <code>int64 battle_end_timestamp_ms = 3;</code>
      */
     private $battle_end_timestamp_ms = 0;
     /**
-     * <code>string battle_id = 4;</code>
+     * Generated from protobuf field <code>string battle_id = 4;</code>
      */
     private $battle_id = '';
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant defender = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant defender = 5;</code>
      */
     private $defender = null;
     /**
-     * <code>.POGOProtos.Data.Battle.BattleLog battle_log = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleLog battle_log = 6;</code>
      */
     private $battle_log = null;
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 7;</code>
      */
     private $attacker = null;
     /**
-     * <code>.POGOProtos.Data.Battle.Battle battle = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.Battle battle = 8;</code>
      */
     private $battle = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type int|string $battle_start_timestamp_ms
+     *     @type int|string $battle_end_timestamp_ms
+     *     @type string $battle_id
+     *     @type \POGOProtos\Data\Battle\BattleParticipant $defender
+     *     @type \POGOProtos\Data\Battle\BattleLog $battle_log
+     *     @type \POGOProtos\Data\Battle\BattleParticipant $attacker
+     *     @type \POGOProtos\Data\Battle\Battle $battle
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\StartGymBattleResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.StartGymBattleResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.StartGymBattleResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -60,16 +77,21 @@ class StartGymBattleResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.StartGymBattleResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.StartGymBattleResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\StartGymBattleResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 battle_start_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 battle_start_timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getBattleStartTimestampMs()
     {
@@ -77,16 +99,21 @@ class StartGymBattleResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 battle_start_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 battle_start_timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setBattleStartTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->battle_start_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 battle_end_timestamp_ms = 3;</code>
+     * Generated from protobuf field <code>int64 battle_end_timestamp_ms = 3;</code>
+     * @return int|string
      */
     public function getBattleEndTimestampMs()
     {
@@ -94,16 +121,21 @@ class StartGymBattleResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 battle_end_timestamp_ms = 3;</code>
+     * Generated from protobuf field <code>int64 battle_end_timestamp_ms = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setBattleEndTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->battle_end_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string battle_id = 4;</code>
+     * Generated from protobuf field <code>string battle_id = 4;</code>
+     * @return string
      */
     public function getBattleId()
     {
@@ -111,16 +143,21 @@ class StartGymBattleResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string battle_id = 4;</code>
+     * Generated from protobuf field <code>string battle_id = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setBattleId($var)
     {
         GPBUtil::checkString($var, True);
         $this->battle_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant defender = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant defender = 5;</code>
+     * @return \POGOProtos\Data\Battle\BattleParticipant
      */
     public function getDefender()
     {
@@ -128,16 +165,21 @@ class StartGymBattleResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant defender = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant defender = 5;</code>
+     * @param \POGOProtos\Data\Battle\BattleParticipant $var
+     * @return $this
      */
-    public function setDefender(&$var)
+    public function setDefender($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleParticipant::class);
         $this->defender = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleLog battle_log = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleLog battle_log = 6;</code>
+     * @return \POGOProtos\Data\Battle\BattleLog
      */
     public function getBattleLog()
     {
@@ -145,16 +187,21 @@ class StartGymBattleResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleLog battle_log = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleLog battle_log = 6;</code>
+     * @param \POGOProtos\Data\Battle\BattleLog $var
+     * @return $this
      */
-    public function setBattleLog(&$var)
+    public function setBattleLog($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleLog::class);
         $this->battle_log = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 7;</code>
+     * @return \POGOProtos\Data\Battle\BattleParticipant
      */
     public function getAttacker()
     {
@@ -162,16 +209,21 @@ class StartGymBattleResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 7;</code>
+     * @param \POGOProtos\Data\Battle\BattleParticipant $var
+     * @return $this
      */
-    public function setAttacker(&$var)
+    public function setAttacker($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleParticipant::class);
         $this->attacker = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.Battle battle = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.Battle battle = 8;</code>
+     * @return \POGOProtos\Data\Battle\Battle
      */
     public function getBattle()
     {
@@ -179,12 +231,16 @@ class StartGymBattleResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.Battle battle = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.Battle battle = 8;</code>
+     * @param \POGOProtos\Data\Battle\Battle $var
+     * @return $this
      */
-    public function setBattle(&$var)
+    public function setBattle($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\Battle::class);
         $this->battle = $var;
+
+        return $this;
     }
 
 }

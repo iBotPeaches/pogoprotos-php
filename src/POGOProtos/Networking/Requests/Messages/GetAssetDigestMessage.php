@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage</code>
  */
 class GetAssetDigestMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.Platform platform = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.Platform platform = 1;</code>
      */
     private $platform = 0;
     /**
-     * <code>string device_manufacturer = 2;</code>
+     * Generated from protobuf field <code>string device_manufacturer = 2;</code>
      */
     private $device_manufacturer = '';
     /**
-     * <code>string device_model = 3;</code>
+     * Generated from protobuf field <code>string device_model = 3;</code>
      */
     private $device_model = '';
     /**
-     * <code>string locale = 4;</code>
+     * Generated from protobuf field <code>string locale = 4;</code>
      */
     private $locale = '';
     /**
-     * <code>uint32 app_version = 5;</code>
+     * Generated from protobuf field <code>uint32 app_version = 5;</code>
      */
     private $app_version = 0;
     /**
-     * <code>bool paginate = 6;</code>
+     * Generated from protobuf field <code>bool paginate = 6;</code>
      */
     private $paginate = false;
     /**
-     * <code>int32 page_offset = 7;</code>
+     * Generated from protobuf field <code>int32 page_offset = 7;</code>
      */
     private $page_offset = 0;
     /**
-     * <code>uint64 page_timestamp = 8;</code>
+     * Generated from protobuf field <code>uint64 page_timestamp = 8;</code>
      */
     private $page_timestamp = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $platform
+     *     @type string $device_manufacturer
+     *     @type string $device_model
+     *     @type string $locale
+     *     @type int $app_version
+     *     @type bool $paginate
+     *     @type int $page_offset
+     *     @type int|string $page_timestamp
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetAssetDigestMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.Platform platform = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.Platform platform = 1;</code>
+     * @return int
      */
     public function getPlatform()
     {
@@ -60,16 +77,21 @@ class GetAssetDigestMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.Platform platform = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.Platform platform = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPlatform($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\Platform::class);
         $this->platform = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string device_manufacturer = 2;</code>
+     * Generated from protobuf field <code>string device_manufacturer = 2;</code>
+     * @return string
      */
     public function getDeviceManufacturer()
     {
@@ -77,16 +99,21 @@ class GetAssetDigestMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string device_manufacturer = 2;</code>
+     * Generated from protobuf field <code>string device_manufacturer = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setDeviceManufacturer($var)
     {
         GPBUtil::checkString($var, True);
         $this->device_manufacturer = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string device_model = 3;</code>
+     * Generated from protobuf field <code>string device_model = 3;</code>
+     * @return string
      */
     public function getDeviceModel()
     {
@@ -94,16 +121,21 @@ class GetAssetDigestMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string device_model = 3;</code>
+     * Generated from protobuf field <code>string device_model = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setDeviceModel($var)
     {
         GPBUtil::checkString($var, True);
         $this->device_model = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string locale = 4;</code>
+     * Generated from protobuf field <code>string locale = 4;</code>
+     * @return string
      */
     public function getLocale()
     {
@@ -111,16 +143,21 @@ class GetAssetDigestMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string locale = 4;</code>
+     * Generated from protobuf field <code>string locale = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setLocale($var)
     {
         GPBUtil::checkString($var, True);
         $this->locale = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint32 app_version = 5;</code>
+     * Generated from protobuf field <code>uint32 app_version = 5;</code>
+     * @return int
      */
     public function getAppVersion()
     {
@@ -128,16 +165,21 @@ class GetAssetDigestMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 app_version = 5;</code>
+     * Generated from protobuf field <code>uint32 app_version = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setAppVersion($var)
     {
         GPBUtil::checkUint32($var);
         $this->app_version = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool paginate = 6;</code>
+     * Generated from protobuf field <code>bool paginate = 6;</code>
+     * @return bool
      */
     public function getPaginate()
     {
@@ -145,16 +187,21 @@ class GetAssetDigestMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool paginate = 6;</code>
+     * Generated from protobuf field <code>bool paginate = 6;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setPaginate($var)
     {
         GPBUtil::checkBool($var);
         $this->paginate = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 page_offset = 7;</code>
+     * Generated from protobuf field <code>int32 page_offset = 7;</code>
+     * @return int
      */
     public function getPageOffset()
     {
@@ -162,16 +209,21 @@ class GetAssetDigestMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 page_offset = 7;</code>
+     * Generated from protobuf field <code>int32 page_offset = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPageOffset($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_offset = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 page_timestamp = 8;</code>
+     * Generated from protobuf field <code>uint64 page_timestamp = 8;</code>
+     * @return int|string
      */
     public function getPageTimestamp()
     {
@@ -179,12 +231,16 @@ class GetAssetDigestMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 page_timestamp = 8;</code>
+     * Generated from protobuf field <code>uint64 page_timestamp = 8;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPageTimestamp($var)
     {
         GPBUtil::checkUint64($var);
         $this->page_timestamp = $var;
+
+        return $this;
     }
 
 }

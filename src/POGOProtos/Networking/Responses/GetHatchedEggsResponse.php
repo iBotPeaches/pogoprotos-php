@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetHatchedEggsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetHatchedEggsResponse</code>
  */
 class GetHatchedEggsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
      */
     private $success = false;
     /**
-     * <code>repeated fixed64 pokemon_id = 2 [packed = true];</code>
+     * Generated from protobuf field <code>repeated fixed64 pokemon_id = 2 [packed = true];</code>
      */
     private $pokemon_id;
     /**
-     * <code>repeated int32 experience_awarded = 3;</code>
+     * Generated from protobuf field <code>repeated int32 experience_awarded = 3;</code>
      */
     private $experience_awarded;
     /**
-     * <code>repeated int32 candy_awarded = 4;</code>
+     * Generated from protobuf field <code>repeated int32 candy_awarded = 4;</code>
      */
     private $candy_awarded;
     /**
-     * <code>repeated int32 stardust_awarded = 5;</code>
+     * Generated from protobuf field <code>repeated int32 stardust_awarded = 5;</code>
      */
     private $stardust_awarded;
     /**
-     * <code>repeated float egg_km_walked = 6;</code>
+     * Generated from protobuf field <code>repeated float egg_km_walked = 6;</code>
      */
     private $egg_km_walked;
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData hatched_pokemon = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData hatched_pokemon = 7;</code>
      */
     private $hatched_pokemon;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $success
+     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $pokemon_id
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $experience_awarded
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $candy_awarded
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $stardust_awarded
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $egg_km_walked
+     *     @type \POGOProtos\Data\PokemonData[]|\Google\Protobuf\Internal\RepeatedField $hatched_pokemon
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetHatchedEggsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @return bool
      */
     public function getSuccess()
     {
@@ -56,16 +72,21 @@ class GetHatchedEggsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSuccess($var)
     {
         GPBUtil::checkBool($var);
         $this->success = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated fixed64 pokemon_id = 2 [packed = true];</code>
+     * Generated from protobuf field <code>repeated fixed64 pokemon_id = 2 [packed = true];</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPokemonId()
     {
@@ -73,16 +94,21 @@ class GetHatchedEggsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated fixed64 pokemon_id = 2 [packed = true];</code>
+     * Generated from protobuf field <code>repeated fixed64 pokemon_id = 2 [packed = true];</code>
+     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPokemonId(&$var)
+    public function setPokemonId($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FIXED64);
-        $this->pokemon_id = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FIXED64);
+        $this->pokemon_id = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 experience_awarded = 3;</code>
+     * Generated from protobuf field <code>repeated int32 experience_awarded = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getExperienceAwarded()
     {
@@ -90,16 +116,21 @@ class GetHatchedEggsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 experience_awarded = 3;</code>
+     * Generated from protobuf field <code>repeated int32 experience_awarded = 3;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setExperienceAwarded(&$var)
+    public function setExperienceAwarded($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->experience_awarded = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->experience_awarded = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 candy_awarded = 4;</code>
+     * Generated from protobuf field <code>repeated int32 candy_awarded = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCandyAwarded()
     {
@@ -107,16 +138,21 @@ class GetHatchedEggsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 candy_awarded = 4;</code>
+     * Generated from protobuf field <code>repeated int32 candy_awarded = 4;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCandyAwarded(&$var)
+    public function setCandyAwarded($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->candy_awarded = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->candy_awarded = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 stardust_awarded = 5;</code>
+     * Generated from protobuf field <code>repeated int32 stardust_awarded = 5;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getStardustAwarded()
     {
@@ -124,16 +160,21 @@ class GetHatchedEggsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 stardust_awarded = 5;</code>
+     * Generated from protobuf field <code>repeated int32 stardust_awarded = 5;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setStardustAwarded(&$var)
+    public function setStardustAwarded($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->stardust_awarded = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->stardust_awarded = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float egg_km_walked = 6;</code>
+     * Generated from protobuf field <code>repeated float egg_km_walked = 6;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getEggKmWalked()
     {
@@ -141,16 +182,21 @@ class GetHatchedEggsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float egg_km_walked = 6;</code>
+     * Generated from protobuf field <code>repeated float egg_km_walked = 6;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setEggKmWalked(&$var)
+    public function setEggKmWalked($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->egg_km_walked = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->egg_km_walked = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData hatched_pokemon = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData hatched_pokemon = 7;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getHatchedPokemon()
     {
@@ -158,12 +204,16 @@ class GetHatchedEggsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData hatched_pokemon = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData hatched_pokemon = 7;</code>
+     * @param \POGOProtos\Data\PokemonData[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setHatchedPokemon(&$var)
+    public function setHatchedPokemon($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\PokemonData::class);
-        $this->hatched_pokemon = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\PokemonData::class);
+        $this->hatched_pokemon = $arr;
+
+        return $this;
     }
 
 }

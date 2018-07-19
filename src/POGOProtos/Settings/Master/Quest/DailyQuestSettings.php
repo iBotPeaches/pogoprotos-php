@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Quest.DailyQuestSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Quest.DailyQuestSettings</code>
  */
 class DailyQuestSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 buckets_per_day = 1;</code>
+     * Generated from protobuf field <code>int32 buckets_per_day = 1;</code>
      */
     private $buckets_per_day = 0;
     /**
-     * <code>int32 streak_length = 2;</code>
+     * Generated from protobuf field <code>int32 streak_length = 2;</code>
      */
     private $streak_length = 0;
     /**
-     * <code>float bonus_multiplier = 3;</code>
+     * Generated from protobuf field <code>float bonus_multiplier = 3;</code>
      */
     private $bonus_multiplier = 0.0;
     /**
-     * <code>float streak_bonus_multiplier = 4;</code>
+     * Generated from protobuf field <code>float streak_bonus_multiplier = 4;</code>
      */
     private $streak_bonus_multiplier = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $buckets_per_day
+     *     @type int $streak_length
+     *     @type float $bonus_multiplier
+     *     @type float $streak_bonus_multiplier
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Quest\DailyQuestSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 buckets_per_day = 1;</code>
+     * Generated from protobuf field <code>int32 buckets_per_day = 1;</code>
+     * @return int
      */
     public function getBucketsPerDay()
     {
@@ -44,16 +57,21 @@ class DailyQuestSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 buckets_per_day = 1;</code>
+     * Generated from protobuf field <code>int32 buckets_per_day = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBucketsPerDay($var)
     {
         GPBUtil::checkInt32($var);
         $this->buckets_per_day = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 streak_length = 2;</code>
+     * Generated from protobuf field <code>int32 streak_length = 2;</code>
+     * @return int
      */
     public function getStreakLength()
     {
@@ -61,16 +79,21 @@ class DailyQuestSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 streak_length = 2;</code>
+     * Generated from protobuf field <code>int32 streak_length = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStreakLength($var)
     {
         GPBUtil::checkInt32($var);
         $this->streak_length = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float bonus_multiplier = 3;</code>
+     * Generated from protobuf field <code>float bonus_multiplier = 3;</code>
+     * @return float
      */
     public function getBonusMultiplier()
     {
@@ -78,16 +101,21 @@ class DailyQuestSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float bonus_multiplier = 3;</code>
+     * Generated from protobuf field <code>float bonus_multiplier = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setBonusMultiplier($var)
     {
         GPBUtil::checkFloat($var);
         $this->bonus_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float streak_bonus_multiplier = 4;</code>
+     * Generated from protobuf field <code>float streak_bonus_multiplier = 4;</code>
+     * @return float
      */
     public function getStreakBonusMultiplier()
     {
@@ -95,12 +123,16 @@ class DailyQuestSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float streak_bonus_multiplier = 4;</code>
+     * Generated from protobuf field <code>float streak_bonus_multiplier = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setStreakBonusMultiplier($var)
     {
         GPBUtil::checkFloat($var);
         $this->streak_bonus_multiplier = $var;
+
+        return $this;
     }
 
 }

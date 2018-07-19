@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox.Notification.Label</code>
- */
-class GetInboxResponse_ClientInbox_Notification_Label
-{
+if (false) {
     /**
-     * <code>UNSET_LABEL = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GetInboxResponse\ClientInbox\Notification\Label instead.
+     * @deprecated
      */
-    const UNSET_LABEL = 0;
-    /**
-     * <code>UNREAD = 1;</code>
-     */
-    const UNREAD = 1;
-    /**
-     * <code>NEW = 2;</code>
-     */
-    const NEW = 2;
-    /**
-     * <code>IMMEDIATE = 3;</code>
-     */
-    const IMMEDIATE = 3;
+    class GetInboxResponse_ClientInbox_Notification_Label {}
 }
+class_exists(GetInboxResponse\ClientInbox\Notification\Label::class);
+@trigger_error('POGOProtos\Networking\Responses\GetInboxResponse_ClientInbox_Notification_Label is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GetInboxResponse\ClientInbox\Notification\Label instead', E_USER_DEPRECATED);
 

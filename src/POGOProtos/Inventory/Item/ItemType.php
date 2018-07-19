@@ -5,84 +5,84 @@
 namespace POGOProtos\Inventory\Item;
 
 /**
- * Protobuf enum <code>POGOProtos.Inventory.Item.ItemType</code>
+ * Protobuf type <code>POGOProtos.Inventory.Item.ItemType</code>
  */
 class ItemType
 {
     /**
-     * <code>ITEM_TYPE_NONE = 0;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_NONE = 0;</code>
      */
     const ITEM_TYPE_NONE = 0;
     /**
-     * <code>ITEM_TYPE_POKEBALL = 1;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_POKEBALL = 1;</code>
      */
     const ITEM_TYPE_POKEBALL = 1;
     /**
-     * <code>ITEM_TYPE_POTION = 2;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_POTION = 2;</code>
      */
     const ITEM_TYPE_POTION = 2;
     /**
-     * <code>ITEM_TYPE_REVIVE = 3;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_REVIVE = 3;</code>
      */
     const ITEM_TYPE_REVIVE = 3;
     /**
-     * <code>ITEM_TYPE_MAP = 4;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_MAP = 4;</code>
      */
     const ITEM_TYPE_MAP = 4;
     /**
-     * <code>ITEM_TYPE_BATTLE = 5;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_BATTLE = 5;</code>
      */
     const ITEM_TYPE_BATTLE = 5;
     /**
-     * <code>ITEM_TYPE_FOOD = 6;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_FOOD = 6;</code>
      */
     const ITEM_TYPE_FOOD = 6;
     /**
-     * <code>ITEM_TYPE_CAMERA = 7;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_CAMERA = 7;</code>
      */
     const ITEM_TYPE_CAMERA = 7;
     /**
-     * <code>ITEM_TYPE_DISK = 8;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_DISK = 8;</code>
      */
     const ITEM_TYPE_DISK = 8;
     /**
-     * <code>ITEM_TYPE_INCUBATOR = 9;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_INCUBATOR = 9;</code>
      */
     const ITEM_TYPE_INCUBATOR = 9;
     /**
-     * <code>ITEM_TYPE_INCENSE = 10;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_INCENSE = 10;</code>
      */
     const ITEM_TYPE_INCENSE = 10;
     /**
-     * <code>ITEM_TYPE_XP_BOOST = 11;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_XP_BOOST = 11;</code>
      */
     const ITEM_TYPE_XP_BOOST = 11;
     /**
-     * <code>ITEM_TYPE_INVENTORY_UPGRADE = 12;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_INVENTORY_UPGRADE = 12;</code>
      */
     const ITEM_TYPE_INVENTORY_UPGRADE = 12;
     /**
-     * <code>ITEM_TYPE_EVOLUTION_REQUIREMENT = 13;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_EVOLUTION_REQUIREMENT = 13;</code>
      */
     const ITEM_TYPE_EVOLUTION_REQUIREMENT = 13;
     /**
-     * <code>ITEM_TYPE_MOVE_REROLL = 14;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_MOVE_REROLL = 14;</code>
      */
     const ITEM_TYPE_MOVE_REROLL = 14;
     /**
-     * <code>ITEM_TYPE_CANDY = 15;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_CANDY = 15;</code>
      */
     const ITEM_TYPE_CANDY = 15;
     /**
-     * <code>ITEM_TYPE_RAID_TICKET = 16;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_RAID_TICKET = 16;</code>
      */
     const ITEM_TYPE_RAID_TICKET = 16;
     /**
-     * <code>ITEM_TYPE_STARDUST_BOOST = 17;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_STARDUST_BOOST = 17;</code>
      */
     const ITEM_TYPE_STARDUST_BOOST = 17;
     /**
-     * <code>ITEM_TYPE_FRIEND_GIFT_BOX = 18;</code>
+     * Generated from protobuf enum <code>ITEM_TYPE_FRIEND_GIFT_BOX = 18;</code>
      */
     const ITEM_TYPE_FRIEND_GIFT_BOX = 18;
 }

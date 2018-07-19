@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.SetAvatarItemAsViewedResponse.Result</code>
- */
-class SetAvatarItemAsViewedResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\SetAvatarItemAsViewedResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>FAILURE = 2;</code>
-     */
-    const FAILURE = 2;
+    class SetAvatarItemAsViewedResponse_Result {}
 }
+class_exists(SetAvatarItemAsViewedResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\SetAvatarItemAsViewedResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\SetAvatarItemAsViewedResponse\Result instead', E_USER_DEPRECATED);
 

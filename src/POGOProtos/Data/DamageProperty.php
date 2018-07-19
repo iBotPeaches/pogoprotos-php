@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.DamageProperty</code>
+ * Generated from protobuf message <code>POGOProtos.Data.DamageProperty</code>
  */
 class DamageProperty extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool super_effective_charge_move = 1;</code>
+     * Generated from protobuf field <code>bool super_effective_charge_move = 1;</code>
      */
     private $super_effective_charge_move = false;
     /**
-     * <code>bool weather_boosted = 2;</code>
+     * Generated from protobuf field <code>bool weather_boosted = 2;</code>
      */
     private $weather_boosted = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $super_effective_charge_move
+     *     @type bool $weather_boosted
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\DamageProperty::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool super_effective_charge_move = 1;</code>
+     * Generated from protobuf field <code>bool super_effective_charge_move = 1;</code>
+     * @return bool
      */
     public function getSuperEffectiveChargeMove()
     {
@@ -36,16 +47,21 @@ class DamageProperty extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool super_effective_charge_move = 1;</code>
+     * Generated from protobuf field <code>bool super_effective_charge_move = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSuperEffectiveChargeMove($var)
     {
         GPBUtil::checkBool($var);
         $this->super_effective_charge_move = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool weather_boosted = 2;</code>
+     * Generated from protobuf field <code>bool weather_boosted = 2;</code>
+     * @return bool
      */
     public function getWeatherBoosted()
     {
@@ -53,12 +69,16 @@ class DamageProperty extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool weather_boosted = 2;</code>
+     * Generated from protobuf field <code>bool weather_boosted = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setWeatherBoosted($var)
     {
         GPBUtil::checkBool($var);
         $this->weather_boosted = $var;
+
+        return $this;
     }
 
 }

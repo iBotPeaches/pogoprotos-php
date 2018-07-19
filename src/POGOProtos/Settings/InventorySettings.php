@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.InventorySettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.InventorySettings</code>
  */
 class InventorySettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 max_pokemon = 1;</code>
+     * Generated from protobuf field <code>int32 max_pokemon = 1;</code>
      */
     private $max_pokemon = 0;
     /**
-     * <code>int32 max_bag_items = 2;</code>
+     * Generated from protobuf field <code>int32 max_bag_items = 2;</code>
      */
     private $max_bag_items = 0;
     /**
-     * <code>int32 base_pokemon = 3;</code>
+     * Generated from protobuf field <code>int32 base_pokemon = 3;</code>
      */
     private $base_pokemon = 0;
     /**
-     * <code>int32 base_bag_items = 4;</code>
+     * Generated from protobuf field <code>int32 base_bag_items = 4;</code>
      */
     private $base_bag_items = 0;
     /**
-     * <code>int32 base_eggs = 5;</code>
+     * Generated from protobuf field <code>int32 base_eggs = 5;</code>
      */
     private $base_eggs = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $max_pokemon
+     *     @type int $max_bag_items
+     *     @type int $base_pokemon
+     *     @type int $base_bag_items
+     *     @type int $base_eggs
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\InventorySettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 max_pokemon = 1;</code>
+     * Generated from protobuf field <code>int32 max_pokemon = 1;</code>
+     * @return int
      */
     public function getMaxPokemon()
     {
@@ -48,16 +62,21 @@ class InventorySettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_pokemon = 1;</code>
+     * Generated from protobuf field <code>int32 max_pokemon = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxPokemon($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_bag_items = 2;</code>
+     * Generated from protobuf field <code>int32 max_bag_items = 2;</code>
+     * @return int
      */
     public function getMaxBagItems()
     {
@@ -65,16 +84,21 @@ class InventorySettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_bag_items = 2;</code>
+     * Generated from protobuf field <code>int32 max_bag_items = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxBagItems($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_bag_items = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 base_pokemon = 3;</code>
+     * Generated from protobuf field <code>int32 base_pokemon = 3;</code>
+     * @return int
      */
     public function getBasePokemon()
     {
@@ -82,16 +106,21 @@ class InventorySettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 base_pokemon = 3;</code>
+     * Generated from protobuf field <code>int32 base_pokemon = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBasePokemon($var)
     {
         GPBUtil::checkInt32($var);
         $this->base_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 base_bag_items = 4;</code>
+     * Generated from protobuf field <code>int32 base_bag_items = 4;</code>
+     * @return int
      */
     public function getBaseBagItems()
     {
@@ -99,16 +128,21 @@ class InventorySettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 base_bag_items = 4;</code>
+     * Generated from protobuf field <code>int32 base_bag_items = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBaseBagItems($var)
     {
         GPBUtil::checkInt32($var);
         $this->base_bag_items = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 base_eggs = 5;</code>
+     * Generated from protobuf field <code>int32 base_eggs = 5;</code>
+     * @return int
      */
     public function getBaseEggs()
     {
@@ -116,12 +150,16 @@ class InventorySettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 base_eggs = 5;</code>
+     * Generated from protobuf field <code>int32 base_eggs = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBaseEggs($var)
     {
         GPBUtil::checkInt32($var);
         $this->base_eggs = $var;
+
+        return $this;
     }
 
 }

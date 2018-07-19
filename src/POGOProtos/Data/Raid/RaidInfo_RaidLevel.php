@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Data\Raid;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Raid.RaidInfo.RaidLevel</code>
- */
-class RaidInfo_RaidLevel
-{
+if (false) {
     /**
-     * <code>RAID_LEVEL_UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Raid\RaidInfo\RaidLevel instead.
+     * @deprecated
      */
-    const RAID_LEVEL_UNSET = 0;
-    /**
-     * <code>RAID_LEVEL_1 = 1;</code>
-     */
-    const RAID_LEVEL_1 = 1;
-    /**
-     * <code>RAID_LEVEL_2 = 2;</code>
-     */
-    const RAID_LEVEL_2 = 2;
-    /**
-     * <code>RAID_LEVEL_3 = 3;</code>
-     */
-    const RAID_LEVEL_3 = 3;
-    /**
-     * <code>RAID_LEVEL_4 = 4;</code>
-     */
-    const RAID_LEVEL_4 = 4;
-    /**
-     * <code>RAID_LEVEL_5 = 5;</code>
-     */
-    const RAID_LEVEL_5 = 5;
+    class RaidInfo_RaidLevel {}
 }
+class_exists(RaidInfo\RaidLevel::class);
+@trigger_error('POGOProtos\Data\Raid\RaidInfo_RaidLevel is deprecated and will be removed in the next major release. Use POGOProtos\Data\Raid\RaidInfo\RaidLevel instead', E_USER_DEPRECATED);
 

@@ -4,38 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Quests.QuestDialog.CharacterExpression</code>
- */
-class QuestDialog_CharacterExpression
-{
+if (false) {
     /**
-     * <code>EXPRESSION_UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestDialog\CharacterExpression instead.
+     * @deprecated
      */
-    const EXPRESSION_UNSET = 0;
-    /**
-     * <code>HAPPY = 1;</code>
-     */
-    const HAPPY = 1;
-    /**
-     * <code>SYMPATHETIC = 2;</code>
-     */
-    const SYMPATHETIC = 2;
-    /**
-     * <code>ENERGETIC = 3;</code>
-     */
-    const ENERGETIC = 3;
-    /**
-     * <code>PUSHY = 4;</code>
-     */
-    const PUSHY = 4;
-    /**
-     * <code>IMPATIENT = 5;</code>
-     */
-    const IMPATIENT = 5;
-    /**
-     * <code>ADMIRATION = 6;</code>
-     */
-    const ADMIRATION = 6;
+    class QuestDialog_CharacterExpression {}
 }
+class_exists(QuestDialog\CharacterExpression::class);
+@trigger_error('POGOProtos\Data\Quests\QuestDialog_CharacterExpression is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestDialog\CharacterExpression instead', E_USER_DEPRECATED);
 

@@ -5,40 +5,40 @@
 namespace POGOProtos\Networking\Platform;
 
 /**
- * Protobuf enum <code>POGOProtos.Networking.Platform.PlatformRequestType</code>
+ * Protobuf type <code>POGOProtos.Networking.Platform.PlatformRequestType</code>
  */
 class PlatformRequestType
 {
     /**
-     * <code>METHOD_UNSET = 0;</code>
+     * Generated from protobuf enum <code>METHOD_UNSET = 0;</code>
      */
     const METHOD_UNSET = 0;
     /**
-     * <code>BUY_ITEM_POKECOINS = 2;</code>
+     * Generated from protobuf enum <code>BUY_ITEM_POKECOINS = 2;</code>
      */
     const BUY_ITEM_POKECOINS = 2;
     /**
-     * <code>BUY_ITEM_ANDROID = 3;</code>
+     * Generated from protobuf enum <code>BUY_ITEM_ANDROID = 3;</code>
      */
     const BUY_ITEM_ANDROID = 3;
     /**
-     * <code>BUY_ITEM_IOS = 4;</code>
+     * Generated from protobuf enum <code>BUY_ITEM_IOS = 4;</code>
      */
     const BUY_ITEM_IOS = 4;
     /**
-     * <code>GET_STORE_ITEMS = 5;</code>
+     * Generated from protobuf enum <code>GET_STORE_ITEMS = 5;</code>
      */
     const GET_STORE_ITEMS = 5;
     /**
-     * <code>SEND_ENCRYPTED_SIGNATURE = 6;</code>
+     * Generated from protobuf enum <code>SEND_ENCRYPTED_SIGNATURE = 6;</code>
      */
     const SEND_ENCRYPTED_SIGNATURE = 6;
     /**
-     * <code>UNKNOWN_PTR_8 = 8;</code>
+     * Generated from protobuf enum <code>UNKNOWN_PTR_8 = 8;</code>
      */
     const UNKNOWN_PTR_8 = 8;
     /**
-     * <code>JOIN_EVENT = 9;</code>
+     * Generated from protobuf enum <code>JOIN_EVENT = 9;</code>
      */
     const JOIN_EVENT = 9;
 }

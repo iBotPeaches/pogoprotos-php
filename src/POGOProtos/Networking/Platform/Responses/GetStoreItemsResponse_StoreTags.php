@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Responses;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.StoreTags</code>
- */
-class GetStoreItemsResponse_StoreTags extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>string tag = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse\StoreTags instead.
+     * @deprecated
      */
-    private $tag = '';
-    /**
-     * <code>string value = 2;</code>
-     */
-    private $value = '';
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>string tag = 1;</code>
-     */
-    public function getTag()
-    {
-        return $this->tag;
-    }
-
-    /**
-     * <code>string tag = 1;</code>
-     */
-    public function setTag($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->tag = $var;
-    }
-
-    /**
-     * <code>string value = 2;</code>
-     */
-    public function getValue()
-    {
-        return $this->value;
-    }
-
-    /**
-     * <code>string value = 2;</code>
-     */
-    public function setValue($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->value = $var;
-    }
-
+    class GetStoreItemsResponse_StoreTags {}
 }
+class_exists(GetStoreItemsResponse\StoreTags::class);
+@trigger_error('POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse_StoreTags is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse\StoreTags instead', E_USER_DEPRECATED);
 

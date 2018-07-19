@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Player.Currency</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Player.Currency</code>
  */
 class Currency extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string name = 1;</code>
+     * Generated from protobuf field <code>string name = 1;</code>
      */
     private $name = '';
     /**
-     * <code>int32 amount = 2;</code>
+     * Generated from protobuf field <code>int32 amount = 2;</code>
      */
     private $amount = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $name
+     *     @type int $amount
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Player\Currency::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string name = 1;</code>
+     * Generated from protobuf field <code>string name = 1;</code>
+     * @return string
      */
     public function getName()
     {
@@ -36,16 +47,21 @@ class Currency extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string name = 1;</code>
+     * Generated from protobuf field <code>string name = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 amount = 2;</code>
+     * Generated from protobuf field <code>int32 amount = 2;</code>
+     * @return int
      */
     public function getAmount()
     {
@@ -53,12 +69,16 @@ class Currency extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 amount = 2;</code>
+     * Generated from protobuf field <code>int32 amount = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setAmount($var)
     {
         GPBUtil::checkInt32($var);
         $this->amount = $var;
+
+        return $this;
     }
 
 }

@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Logs.CompleteQuestLogEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Logs.CompleteQuestLogEntry</code>
  */
 class CompleteQuestLogEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Logs.CompleteQuestLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CompleteQuestLogEntry.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Data.Quests.ClientQuest quest = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.ClientQuest quest = 2;</code>
      */
     private $quest = null;
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestStamp stamp = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestStamp stamp = 3;</code>
      */
     private $stamp;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\Quests\ClientQuest $quest
+     *     @type \POGOProtos\Data\Quests\QuestStamp[]|\Google\Protobuf\Internal\RepeatedField $stamp
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Logs\CompleteQuestLogEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.CompleteQuestLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CompleteQuestLogEntry.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -40,16 +52,21 @@ class CompleteQuestLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.CompleteQuestLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CompleteQuestLogEntry.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Logs\CompleteQuestLogEntry_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.ClientQuest quest = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.ClientQuest quest = 2;</code>
+     * @return \POGOProtos\Data\Quests\ClientQuest
      */
     public function getQuest()
     {
@@ -57,16 +74,21 @@ class CompleteQuestLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.ClientQuest quest = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.ClientQuest quest = 2;</code>
+     * @param \POGOProtos\Data\Quests\ClientQuest $var
+     * @return $this
      */
-    public function setQuest(&$var)
+    public function setQuest($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\ClientQuest::class);
         $this->quest = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestStamp stamp = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestStamp stamp = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getStamp()
     {
@@ -74,12 +96,16 @@ class CompleteQuestLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestStamp stamp = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestStamp stamp = 3;</code>
+     * @param \POGOProtos\Data\Quests\QuestStamp[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setStamp(&$var)
+    public function setStamp($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\QuestStamp::class);
-        $this->stamp = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\QuestStamp::class);
+        $this->stamp = $arr;
+
+        return $this;
     }
 
 }

@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Responses.JoinEventResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Responses.JoinEventResponse</code>
  */
 class JoinEventResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Platform.Responses.JoinEventResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.JoinEventResponse.Status status = 1;</code>
      */
     private $status = 0;
     /**
-     * <code>string qrcode = 4;</code>
+     * Generated from protobuf field <code>string qrcode = 4;</code>
      */
     private $qrcode = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status
+     *     @type string $qrcode
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Responses\JoinEventResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Responses.JoinEventResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.JoinEventResponse.Status status = 1;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -36,16 +47,21 @@ class JoinEventResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Responses.JoinEventResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.JoinEventResponse.Status status = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Platform\Responses\JoinEventResponse_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string qrcode = 4;</code>
+     * Generated from protobuf field <code>string qrcode = 4;</code>
+     * @return string
      */
     public function getQrcode()
     {
@@ -53,12 +69,16 @@ class JoinEventResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string qrcode = 4;</code>
+     * Generated from protobuf field <code>string qrcode = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setQrcode($var)
     {
         GPBUtil::checkString($var, True);
         $this->qrcode = $var;
+
+        return $this;
     }
 
 }

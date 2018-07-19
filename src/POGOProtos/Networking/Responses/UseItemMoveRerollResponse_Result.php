@@ -4,42 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.UseItemMoveRerollResponse.Result</code>
- */
-class UseItemMoveRerollResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\UseItemMoveRerollResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>NO_POKEMON = 2;</code>
-     */
-    const NO_POKEMON = 2;
-    /**
-     * <code>NO_OTHER_MOVES = 3;</code>
-     */
-    const NO_OTHER_MOVES = 3;
-    /**
-     * <code>NO_PLAYER = 4;</code>
-     */
-    const NO_PLAYER = 4;
-    /**
-     * <code>WRONG_ITEM_TYPE = 5;</code>
-     */
-    const WRONG_ITEM_TYPE = 5;
-    /**
-     * <code>ITEM_NOT_IN_INVENTORY = 6;</code>
-     */
-    const ITEM_NOT_IN_INVENTORY = 6;
-    /**
-     * <code>INVALID_POKEMON = 7;</code>
-     */
-    const INVALID_POKEMON = 7;
+    class UseItemMoveRerollResponse_Result {}
 }
+class_exists(UseItemMoveRerollResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\UseItemMoveRerollResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\UseItemMoveRerollResponse\Result instead', E_USER_DEPRECATED);
 

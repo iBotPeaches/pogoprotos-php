@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Ditto.LocationUpdateEventParams</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Ditto.LocationUpdateEventParams</code>
  */
 class LocationUpdateEventParams extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>double latitude_deg = 1;</code>
+     * Generated from protobuf field <code>double latitude_deg = 1;</code>
      */
     private $latitude_deg = 0.0;
     /**
-     * <code>double longitude_deg = 2;</code>
+     * Generated from protobuf field <code>double longitude_deg = 2;</code>
      */
     private $longitude_deg = 0.0;
     /**
-     * <code>double altitude_m = 3;</code>
+     * Generated from protobuf field <code>double altitude_m = 3;</code>
      */
     private $altitude_m = 0.0;
     /**
-     * <code>double accuracy_m = 4;</code>
+     * Generated from protobuf field <code>double accuracy_m = 4;</code>
      */
     private $accuracy_m = 0.0;
     /**
-     * <code>double timestamp_s = 5;</code>
+     * Generated from protobuf field <code>double timestamp_s = 5;</code>
      */
     private $timestamp_s = 0.0;
     /**
-     * <code>uint32 provider_status = 6;</code>
+     * Generated from protobuf field <code>uint32 provider_status = 6;</code>
      */
     private $provider_status = 0;
     /**
-     * <code>uint32 location_type = 7;</code>
+     * Generated from protobuf field <code>uint32 location_type = 7;</code>
      */
     private $location_type = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $latitude_deg
+     *     @type float $longitude_deg
+     *     @type float $altitude_m
+     *     @type float $accuracy_m
+     *     @type float $timestamp_s
+     *     @type int $provider_status
+     *     @type int $location_type
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Ditto\LocationUpdateEventParams::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>double latitude_deg = 1;</code>
+     * Generated from protobuf field <code>double latitude_deg = 1;</code>
+     * @return float
      */
     public function getLatitudeDeg()
     {
@@ -56,16 +72,21 @@ class LocationUpdateEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double latitude_deg = 1;</code>
+     * Generated from protobuf field <code>double latitude_deg = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLatitudeDeg($var)
     {
         GPBUtil::checkDouble($var);
         $this->latitude_deg = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double longitude_deg = 2;</code>
+     * Generated from protobuf field <code>double longitude_deg = 2;</code>
+     * @return float
      */
     public function getLongitudeDeg()
     {
@@ -73,16 +94,21 @@ class LocationUpdateEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double longitude_deg = 2;</code>
+     * Generated from protobuf field <code>double longitude_deg = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLongitudeDeg($var)
     {
         GPBUtil::checkDouble($var);
         $this->longitude_deg = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double altitude_m = 3;</code>
+     * Generated from protobuf field <code>double altitude_m = 3;</code>
+     * @return float
      */
     public function getAltitudeM()
     {
@@ -90,16 +116,21 @@ class LocationUpdateEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double altitude_m = 3;</code>
+     * Generated from protobuf field <code>double altitude_m = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setAltitudeM($var)
     {
         GPBUtil::checkDouble($var);
         $this->altitude_m = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double accuracy_m = 4;</code>
+     * Generated from protobuf field <code>double accuracy_m = 4;</code>
+     * @return float
      */
     public function getAccuracyM()
     {
@@ -107,16 +138,21 @@ class LocationUpdateEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double accuracy_m = 4;</code>
+     * Generated from protobuf field <code>double accuracy_m = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setAccuracyM($var)
     {
         GPBUtil::checkDouble($var);
         $this->accuracy_m = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double timestamp_s = 5;</code>
+     * Generated from protobuf field <code>double timestamp_s = 5;</code>
+     * @return float
      */
     public function getTimestampS()
     {
@@ -124,16 +160,21 @@ class LocationUpdateEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double timestamp_s = 5;</code>
+     * Generated from protobuf field <code>double timestamp_s = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setTimestampS($var)
     {
         GPBUtil::checkDouble($var);
         $this->timestamp_s = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint32 provider_status = 6;</code>
+     * Generated from protobuf field <code>uint32 provider_status = 6;</code>
+     * @return int
      */
     public function getProviderStatus()
     {
@@ -141,16 +182,21 @@ class LocationUpdateEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 provider_status = 6;</code>
+     * Generated from protobuf field <code>uint32 provider_status = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setProviderStatus($var)
     {
         GPBUtil::checkUint32($var);
         $this->provider_status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint32 location_type = 7;</code>
+     * Generated from protobuf field <code>uint32 location_type = 7;</code>
+     * @return int
      */
     public function getLocationType()
     {
@@ -158,12 +204,16 @@ class LocationUpdateEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 location_type = 7;</code>
+     * Generated from protobuf field <code>uint32 location_type = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setLocationType($var)
     {
         GPBUtil::checkUint32($var);
         $this->location_type = $var;
+
+        return $this;
     }
 
 }

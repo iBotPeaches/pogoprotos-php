@@ -5,152 +5,152 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.VariableName</code>
+ * Protobuf type <code>POGOProtos.Enums.VariableName</code>
  */
 class VariableName
 {
     /**
-     * <code>UNSET_VariableName = 0;</code>
+     * Generated from protobuf enum <code>UNSET_VariableName = 0;</code>
      */
     const UNSET_VariableName = 0;
     /**
-     * <code>CODE_NAME = 1;</code>
+     * Generated from protobuf enum <code>CODE_NAME = 1;</code>
      */
     const CODE_NAME = 1;
     /**
-     * <code>TEAM = 2;</code>
+     * Generated from protobuf enum <code>TEAM = 2;</code>
      */
     const TEAM = 2;
     /**
-     * <code>LEVEL = 3;</code>
+     * Generated from protobuf enum <code>LEVEL = 3;</code>
      */
     const LEVEL = 3;
     /**
-     * <code>EXPERIENCE = 4;</code>
+     * Generated from protobuf enum <code>EXPERIENCE = 4;</code>
      */
     const EXPERIENCE = 4;
     /**
-     * <code>POKECOIN_BALANCE = 5;</code>
+     * Generated from protobuf enum <code>POKECOIN_BALANCE = 5;</code>
      */
     const POKECOIN_BALANCE = 5;
     /**
-     * <code>STARDUST_BALANCE = 6;</code>
+     * Generated from protobuf enum <code>STARDUST_BALANCE = 6;</code>
      */
     const STARDUST_BALANCE = 6;
     /**
-     * <code>EMAIL = 7;</code>
+     * Generated from protobuf enum <code>EMAIL = 7;</code>
      */
     const EMAIL = 7;
     /**
-     * <code>LOGIN_METHOD = 8;</code>
+     * Generated from protobuf enum <code>LOGIN_METHOD = 8;</code>
      */
     const LOGIN_METHOD = 8;
     /**
-     * <code>GYM_ID = 1000;</code>
+     * Generated from protobuf enum <code>GYM_ID = 1000;</code>
      */
     const GYM_ID = 1000;
     /**
-     * <code>GYM_NAME = 1001;</code>
+     * Generated from protobuf enum <code>GYM_NAME = 1001;</code>
      */
     const GYM_NAME = 1001;
     /**
-     * <code>POKEMON_DISPLAY = 1002;</code>
+     * Generated from protobuf enum <code>POKEMON_DISPLAY = 1002;</code>
      */
     const POKEMON_DISPLAY = 1002;
     /**
-     * <code>POKEDEX_ENTRY_NUMBER = 1003;</code>
+     * Generated from protobuf enum <code>POKEDEX_ENTRY_NUMBER = 1003;</code>
      */
     const POKEDEX_ENTRY_NUMBER = 1003;
     /**
-     * <code>POKEMON_ID = 1004;</code>
+     * Generated from protobuf enum <code>POKEMON_ID = 1004;</code>
      */
     const POKEMON_ID = 1004;
     /**
-     * <code>POKEMON_NICKNAME = 1005;</code>
+     * Generated from protobuf enum <code>POKEMON_NICKNAME = 1005;</code>
      */
     const POKEMON_NICKNAME = 1005;
     /**
-     * <code>GYM_BADGE_EARNED_POINTS = 1006;</code>
+     * Generated from protobuf enum <code>GYM_BADGE_EARNED_POINTS = 1006;</code>
      */
     const GYM_BADGE_EARNED_POINTS = 1006;
     /**
-     * <code>GYM_BADGE_PROGRESS = 1007;</code>
+     * Generated from protobuf enum <code>GYM_BADGE_PROGRESS = 1007;</code>
      */
     const GYM_BADGE_PROGRESS = 1007;
     /**
-     * <code>GYM_BADGE_RANK = 1008;</code>
+     * Generated from protobuf enum <code>GYM_BADGE_RANK = 1008;</code>
      */
     const GYM_BADGE_RANK = 1008;
     /**
-     * <code>GYM_BADGE_IMAGE_URL = 1009;</code>
+     * Generated from protobuf enum <code>GYM_BADGE_IMAGE_URL = 1009;</code>
      */
     const GYM_BADGE_IMAGE_URL = 1009;
     /**
-     * <code>GYM_BADGE_LEVEL_UP = 1010;</code>
+     * Generated from protobuf enum <code>GYM_BADGE_LEVEL_UP = 1010;</code>
      */
     const GYM_BADGE_LEVEL_UP = 1010;
     /**
-     * <code>POKECOIN_AWARDED = 1011;</code>
+     * Generated from protobuf enum <code>POKECOIN_AWARDED = 1011;</code>
      */
     const POKECOIN_AWARDED = 1011;
     /**
-     * <code>POKECOIN_AWARDED_TODAY = 1012;</code>
+     * Generated from protobuf enum <code>POKECOIN_AWARDED_TODAY = 1012;</code>
      */
     const POKECOIN_AWARDED_TODAY = 1012;
     /**
-     * <code>MAX_DAILY_POKECOIN = 1013;</code>
+     * Generated from protobuf enum <code>MAX_DAILY_POKECOIN = 1013;</code>
      */
     const MAX_DAILY_POKECOIN = 1013;
     /**
-     * <code>BATTLES_WON = 1014;</code>
+     * Generated from protobuf enum <code>BATTLES_WON = 1014;</code>
      */
     const BATTLES_WON = 1014;
     /**
-     * <code>BATTLES_LOST = 1015;</code>
+     * Generated from protobuf enum <code>BATTLES_LOST = 1015;</code>
      */
     const BATTLES_LOST = 1015;
     /**
-     * <code>DEPLOYED_MILLIS = 1016;</code>
+     * Generated from protobuf enum <code>DEPLOYED_MILLIS = 1016;</code>
      */
     const DEPLOYED_MILLIS = 1016;
     /**
-     * <code>RAID_SEED = 1017;</code>
+     * Generated from protobuf enum <code>RAID_SEED = 1017;</code>
      */
     const RAID_SEED = 1017;
     /**
-     * <code>EXCLUSIVE_RAID_CANCELLATION_INFO = 1018;</code>
+     * Generated from protobuf enum <code>EXCLUSIVE_RAID_CANCELLATION_INFO = 1018;</code>
      */
     const EXCLUSIVE_RAID_CANCELLATION_INFO = 1018;
     /**
-     * <code>GIFTBOX_DETAILS = 1019;</code>
+     * Generated from protobuf enum <code>GIFTBOX_DETAILS = 1019;</code>
      */
     const GIFTBOX_DETAILS = 1019;
     /**
-     * <code>FRIEND_AVATAR = 1020;</code>
+     * Generated from protobuf enum <code>FRIEND_AVATAR = 1020;</code>
      */
     const FRIEND_AVATAR = 1020;
     /**
-     * <code>FRIEND_TEAM = 1021;</code>
+     * Generated from protobuf enum <code>FRIEND_TEAM = 1021;</code>
      */
     const FRIEND_TEAM = 1021;
     /**
-     * <code>FRIEND_CODENAME = 1022;</code>
+     * Generated from protobuf enum <code>FRIEND_CODENAME = 1022;</code>
      */
     const FRIEND_CODENAME = 1022;
     /**
-     * <code>GIFT_LOOT_ITEMS = 1023;</code>
+     * Generated from protobuf enum <code>GIFT_LOOT_ITEMS = 1023;</code>
      */
     const GIFT_LOOT_ITEMS = 1023;
     /**
-     * <code>GIFT_EGG = 1024;</code>
+     * Generated from protobuf enum <code>GIFT_EGG = 1024;</code>
      */
     const GIFT_EGG = 1024;
     /**
-     * <code>FRIENDSHIP_MILESTONE_REWARD_DETAILS = 1025;</code>
+     * Generated from protobuf enum <code>FRIENDSHIP_MILESTONE_REWARD_DETAILS = 1025;</code>
      */
     const FRIENDSHIP_MILESTONE_REWARD_DETAILS = 1025;
     /**
-     * <code>FRIENDSHIP_LEVEL_DISPLAY = 1026;</code>
+     * Generated from protobuf enum <code>FRIENDSHIP_LEVEL_DISPLAY = 1026;</code>
      */
     const FRIENDSHIP_LEVEL_DISPLAY = 1026;
 }

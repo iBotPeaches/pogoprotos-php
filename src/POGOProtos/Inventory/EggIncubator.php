@@ -9,50 +9,65 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.EggIncubator</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.EggIncubator</code>
  */
 class EggIncubator extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string id = 1;</code>
+     * Generated from protobuf field <code>string id = 1;</code>
      */
     private $id = '';
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 2;</code>
      */
     private $item_id = 0;
     /**
-     * <code>.POGOProtos.Inventory.EggIncubatorType incubator_type = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.EggIncubatorType incubator_type = 3;</code>
      */
     private $incubator_type = 0;
     /**
-     * <code>int32 uses_remaining = 4;</code>
+     * Generated from protobuf field <code>int32 uses_remaining = 4;</code>
      */
     private $uses_remaining = 0;
     /**
-     * <pre>
      * TODO: Check if is PokemonType
-     * </pre>
      *
-     * <code>uint64 pokemon_id = 5;</code>
+     * Generated from protobuf field <code>uint64 pokemon_id = 5;</code>
      */
     private $pokemon_id = 0;
     /**
-     * <code>double start_km_walked = 6;</code>
+     * Generated from protobuf field <code>double start_km_walked = 6;</code>
      */
     private $start_km_walked = 0.0;
     /**
-     * <code>double target_km_walked = 7;</code>
+     * Generated from protobuf field <code>double target_km_walked = 7;</code>
      */
     private $target_km_walked = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $id
+     *     @type int $item_id
+     *     @type int $incubator_type
+     *     @type int $uses_remaining
+     *     @type int|string $pokemon_id
+     *           TODO: Check if is PokemonType
+     *     @type float $start_km_walked
+     *     @type float $target_km_walked
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\EggIncubator::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string id = 1;</code>
+     * Generated from protobuf field <code>string id = 1;</code>
+     * @return string
      */
     public function getId()
     {
@@ -60,16 +75,21 @@ class EggIncubator extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string id = 1;</code>
+     * Generated from protobuf field <code>string id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setId($var)
     {
         GPBUtil::checkString($var, True);
         $this->id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 2;</code>
+     * @return int
      */
     public function getItemId()
     {
@@ -77,16 +97,21 @@ class EggIncubator extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.EggIncubatorType incubator_type = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.EggIncubatorType incubator_type = 3;</code>
+     * @return int
      */
     public function getIncubatorType()
     {
@@ -94,16 +119,21 @@ class EggIncubator extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.EggIncubatorType incubator_type = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.EggIncubatorType incubator_type = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setIncubatorType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\EggIncubatorType::class);
         $this->incubator_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 uses_remaining = 4;</code>
+     * Generated from protobuf field <code>int32 uses_remaining = 4;</code>
+     * @return int
      */
     public function getUsesRemaining()
     {
@@ -111,20 +141,23 @@ class EggIncubator extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 uses_remaining = 4;</code>
+     * Generated from protobuf field <code>int32 uses_remaining = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setUsesRemaining($var)
     {
         GPBUtil::checkInt32($var);
         $this->uses_remaining = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * TODO: Check if is PokemonType
-     * </pre>
      *
-     * <code>uint64 pokemon_id = 5;</code>
+     * Generated from protobuf field <code>uint64 pokemon_id = 5;</code>
+     * @return int|string
      */
     public function getPokemonId()
     {
@@ -132,20 +165,23 @@ class EggIncubator extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * TODO: Check if is PokemonType
-     * </pre>
      *
-     * <code>uint64 pokemon_id = 5;</code>
+     * Generated from protobuf field <code>uint64 pokemon_id = 5;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double start_km_walked = 6;</code>
+     * Generated from protobuf field <code>double start_km_walked = 6;</code>
+     * @return float
      */
     public function getStartKmWalked()
     {
@@ -153,16 +189,21 @@ class EggIncubator extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double start_km_walked = 6;</code>
+     * Generated from protobuf field <code>double start_km_walked = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setStartKmWalked($var)
     {
         GPBUtil::checkDouble($var);
         $this->start_km_walked = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double target_km_walked = 7;</code>
+     * Generated from protobuf field <code>double target_km_walked = 7;</code>
+     * @return float
      */
     public function getTargetKmWalked()
     {
@@ -170,12 +211,16 @@ class EggIncubator extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double target_km_walked = 7;</code>
+     * Generated from protobuf field <code>double target_km_walked = 7;</code>
+     * @param float $var
+     * @return $this
      */
     public function setTargetKmWalked($var)
     {
         GPBUtil::checkDouble($var);
         $this->target_km_walked = $var;
+
+        return $this;
     }
 
 }

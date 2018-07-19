@@ -5,24 +5,24 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.TeamColor</code>
+ * Protobuf type <code>POGOProtos.Enums.TeamColor</code>
  */
 class TeamColor
 {
     /**
-     * <code>NEUTRAL = 0;</code>
+     * Generated from protobuf enum <code>NEUTRAL = 0;</code>
      */
     const NEUTRAL = 0;
     /**
-     * <code>BLUE = 1;</code>
+     * Generated from protobuf enum <code>BLUE = 1;</code>
      */
     const BLUE = 1;
     /**
-     * <code>RED = 2;</code>
+     * Generated from protobuf enum <code>RED = 2;</code>
      */
     const RED = 2;
     /**
-     * <code>YELLOW = 3;</code>
+     * Generated from protobuf enum <code>YELLOW = 3;</code>
      */
     const YELLOW = 3;
 }

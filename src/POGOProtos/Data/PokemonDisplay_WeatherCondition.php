@@ -4,42 +4,13 @@
 
 namespace POGOProtos\Data;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.PokemonDisplay.WeatherCondition</code>
- */
-class PokemonDisplay_WeatherCondition
-{
+if (false) {
     /**
-     * <code>NONE = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\PokemonDisplay\WeatherCondition instead.
+     * @deprecated
      */
-    const NONE = 0;
-    /**
-     * <code>CLEAR = 1;</code>
-     */
-    const CLEAR = 1;
-    /**
-     * <code>RAINY = 2;</code>
-     */
-    const RAINY = 2;
-    /**
-     * <code>PARTLY_CLOUDY = 3;</code>
-     */
-    const PARTLY_CLOUDY = 3;
-    /**
-     * <code>OVERCAST = 4;</code>
-     */
-    const OVERCAST = 4;
-    /**
-     * <code>WINDY = 5;</code>
-     */
-    const WINDY = 5;
-    /**
-     * <code>SNOW = 6;</code>
-     */
-    const SNOW = 6;
-    /**
-     * <code>FOG = 7;</code>
-     */
-    const FOG = 7;
+    class PokemonDisplay_WeatherCondition {}
 }
+class_exists(PokemonDisplay\WeatherCondition::class);
+@trigger_error('POGOProtos\Data\PokemonDisplay_WeatherCondition is deprecated and will be removed in the next major release. Use POGOProtos\Data\PokemonDisplay\WeatherCondition instead', E_USER_DEPRECATED);
 

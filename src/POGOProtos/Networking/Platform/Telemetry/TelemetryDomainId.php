@@ -5,20 +5,20 @@
 namespace POGOProtos\Networking\Platform\Telemetry;
 
 /**
- * Protobuf enum <code>POGOProtos.Networking.Platform.Telemetry.TelemetryDomainId</code>
+ * Protobuf type <code>POGOProtos.Networking.Platform.Telemetry.TelemetryDomainId</code>
  */
 class TelemetryDomainId
 {
     /**
-     * <code>TELEMETRY_NO_DOMAIN_ID = 0;</code>
+     * Generated from protobuf enum <code>TELEMETRY_NO_DOMAIN_ID = 0;</code>
      */
     const TELEMETRY_NO_DOMAIN_ID = 0;
     /**
-     * <code>TELEMETRY_DITTO = 1;</code>
+     * Generated from protobuf enum <code>TELEMETRY_DITTO = 1;</code>
      */
     const TELEMETRY_DITTO = 1;
     /**
-     * <code>TELEMETRY_GAME = 2;</code>
+     * Generated from protobuf enum <code>TELEMETRY_GAME = 2;</code>
      */
     const TELEMETRY_GAME = 2;
 }

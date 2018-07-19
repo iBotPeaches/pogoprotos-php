@@ -9,55 +9,72 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.IapItemDisplay</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.IapItemDisplay</code>
  */
 class IapItemDisplay extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string sku = 1;</code>
+     * Generated from protobuf field <code>string sku = 1;</code>
      */
     private $sku = '';
     /**
-     * <code>.POGOProtos.Enums.HoloIapItemCategory category = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.HoloIapItemCategory category = 2;</code>
      */
     private $category = 0;
     /**
-     * <code>int32 sort_order = 3;</code>
+     * Generated from protobuf field <code>int32 sort_order = 3;</code>
      */
     private $sort_order = 0;
     /**
-     * <pre>
      * repeated .POGOProtos.Inventory.Item.ItemId item_ids = 4;
      * repeated int32 counts = 5;
-     * </pre>
      *
-     * <code>bool hidden = 6;</code>
+     * Generated from protobuf field <code>bool hidden = 6;</code>
      */
     private $hidden = false;
     /**
-     * <code>bool sale = 7;</code>
+     * Generated from protobuf field <code>bool sale = 7;</code>
      */
     private $sale = false;
     /**
-     * <code>string sprite_id = 8;</code>
+     * Generated from protobuf field <code>string sprite_id = 8;</code>
      */
     private $sprite_id = '';
     /**
-     * <code>string title = 9;</code>
+     * Generated from protobuf field <code>string title = 9;</code>
      */
     private $title = '';
     /**
-     * <code>string description = 10;</code>
+     * Generated from protobuf field <code>string description = 10;</code>
      */
     private $description = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $sku
+     *     @type int $category
+     *     @type int $sort_order
+     *     @type bool $hidden
+     *           repeated .POGOProtos.Inventory.Item.ItemId item_ids = 4;
+     *           repeated int32 counts = 5;
+     *     @type bool $sale
+     *     @type string $sprite_id
+     *     @type string $title
+     *     @type string $description
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\IapItemDisplay::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string sku = 1;</code>
+     * Generated from protobuf field <code>string sku = 1;</code>
+     * @return string
      */
     public function getSku()
     {
@@ -65,16 +82,21 @@ class IapItemDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string sku = 1;</code>
+     * Generated from protobuf field <code>string sku = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSku($var)
     {
         GPBUtil::checkString($var, True);
         $this->sku = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.HoloIapItemCategory category = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.HoloIapItemCategory category = 2;</code>
+     * @return int
      */
     public function getCategory()
     {
@@ -82,16 +104,21 @@ class IapItemDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.HoloIapItemCategory category = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.HoloIapItemCategory category = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCategory($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\HoloIapItemCategory::class);
         $this->category = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 sort_order = 3;</code>
+     * Generated from protobuf field <code>int32 sort_order = 3;</code>
+     * @return int
      */
     public function getSortOrder()
     {
@@ -99,21 +126,24 @@ class IapItemDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 sort_order = 3;</code>
+     * Generated from protobuf field <code>int32 sort_order = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSortOrder($var)
     {
         GPBUtil::checkInt32($var);
         $this->sort_order = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * repeated .POGOProtos.Inventory.Item.ItemId item_ids = 4;
      * repeated int32 counts = 5;
-     * </pre>
      *
-     * <code>bool hidden = 6;</code>
+     * Generated from protobuf field <code>bool hidden = 6;</code>
+     * @return bool
      */
     public function getHidden()
     {
@@ -121,21 +151,24 @@ class IapItemDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * repeated .POGOProtos.Inventory.Item.ItemId item_ids = 4;
      * repeated int32 counts = 5;
-     * </pre>
      *
-     * <code>bool hidden = 6;</code>
+     * Generated from protobuf field <code>bool hidden = 6;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setHidden($var)
     {
         GPBUtil::checkBool($var);
         $this->hidden = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool sale = 7;</code>
+     * Generated from protobuf field <code>bool sale = 7;</code>
+     * @return bool
      */
     public function getSale()
     {
@@ -143,16 +176,21 @@ class IapItemDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool sale = 7;</code>
+     * Generated from protobuf field <code>bool sale = 7;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSale($var)
     {
         GPBUtil::checkBool($var);
         $this->sale = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string sprite_id = 8;</code>
+     * Generated from protobuf field <code>string sprite_id = 8;</code>
+     * @return string
      */
     public function getSpriteId()
     {
@@ -160,16 +198,21 @@ class IapItemDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string sprite_id = 8;</code>
+     * Generated from protobuf field <code>string sprite_id = 8;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSpriteId($var)
     {
         GPBUtil::checkString($var, True);
         $this->sprite_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string title = 9;</code>
+     * Generated from protobuf field <code>string title = 9;</code>
+     * @return string
      */
     public function getTitle()
     {
@@ -177,16 +220,21 @@ class IapItemDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string title = 9;</code>
+     * Generated from protobuf field <code>string title = 9;</code>
+     * @param string $var
+     * @return $this
      */
     public function setTitle($var)
     {
         GPBUtil::checkString($var, True);
         $this->title = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string description = 10;</code>
+     * Generated from protobuf field <code>string description = 10;</code>
+     * @return string
      */
     public function getDescription()
     {
@@ -194,12 +242,16 @@ class IapItemDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string description = 10;</code>
+     * Generated from protobuf field <code>string description = 10;</code>
+     * @param string $var
+     * @return $this
      */
     public function setDescription($var)
     {
         GPBUtil::checkString($var, True);
         $this->description = $var;
+
+        return $this;
     }
 
 }

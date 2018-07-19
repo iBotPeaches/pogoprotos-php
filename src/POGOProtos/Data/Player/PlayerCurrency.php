@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Player.PlayerCurrency</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Player.PlayerCurrency</code>
  */
 class PlayerCurrency extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 gems = 1;</code>
+     * Generated from protobuf field <code>int32 gems = 1;</code>
      */
     private $gems = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $gems
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Player\PlayerCurrency::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 gems = 1;</code>
+     * Generated from protobuf field <code>int32 gems = 1;</code>
+     * @return int
      */
     public function getGems()
     {
@@ -32,12 +42,16 @@ class PlayerCurrency extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 gems = 1;</code>
+     * Generated from protobuf field <code>int32 gems = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setGems($var)
     {
         GPBUtil::checkInt32($var);
         $this->gems = $var;
+
+        return $this;
     }
 
 }

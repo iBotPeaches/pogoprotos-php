@@ -9,102 +9,132 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Player.PlayerAvatar</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Player.PlayerAvatar</code>
  */
 class PlayerAvatar extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 skin = 2;</code>
+     * Generated from protobuf field <code>int32 skin = 2;</code>
      */
     private $skin = 0;
     /**
-     * <code>int32 hair = 3;</code>
+     * Generated from protobuf field <code>int32 hair = 3;</code>
      */
     private $hair = 0;
     /**
-     * <code>int32 shirt = 4;</code>
+     * Generated from protobuf field <code>int32 shirt = 4;</code>
      */
     private $shirt = 0;
     /**
-     * <code>int32 pants = 5;</code>
+     * Generated from protobuf field <code>int32 pants = 5;</code>
      */
     private $pants = 0;
     /**
-     * <code>int32 hat = 6;</code>
+     * Generated from protobuf field <code>int32 hat = 6;</code>
      */
     private $hat = 0;
     /**
-     * <code>int32 shoes = 7;</code>
+     * Generated from protobuf field <code>int32 shoes = 7;</code>
      */
     private $shoes = 0;
     /**
-     * <code>int32 avatar = 8;</code>
+     * Generated from protobuf field <code>int32 avatar = 8;</code>
      */
     private $avatar = 0;
     /**
-     * <code>int32 eyes = 9;</code>
+     * Generated from protobuf field <code>int32 eyes = 9;</code>
      */
     private $eyes = 0;
     /**
-     * <code>int32 backpack = 10;</code>
+     * Generated from protobuf field <code>int32 backpack = 10;</code>
      */
     private $backpack = 0;
     /**
-     * <code>string avatar_hair = 11;</code>
+     * Generated from protobuf field <code>string avatar_hair = 11;</code>
      */
     private $avatar_hair = '';
     /**
-     * <code>string avatar_shirt = 12;</code>
+     * Generated from protobuf field <code>string avatar_shirt = 12;</code>
      */
     private $avatar_shirt = '';
     /**
-     * <code>string avatar_pants = 13;</code>
+     * Generated from protobuf field <code>string avatar_pants = 13;</code>
      */
     private $avatar_pants = '';
     /**
-     * <code>string avatar_hat = 14;</code>
+     * Generated from protobuf field <code>string avatar_hat = 14;</code>
      */
     private $avatar_hat = '';
     /**
-     * <code>string avatar_shoes = 15;</code>
+     * Generated from protobuf field <code>string avatar_shoes = 15;</code>
      */
     private $avatar_shoes = '';
     /**
-     * <code>string avatar_eyes = 16;</code>
+     * Generated from protobuf field <code>string avatar_eyes = 16;</code>
      */
     private $avatar_eyes = '';
     /**
-     * <code>string avatar_backpack = 17;</code>
+     * Generated from protobuf field <code>string avatar_backpack = 17;</code>
      */
     private $avatar_backpack = '';
     /**
-     * <code>string avatar_gloves = 18;</code>
+     * Generated from protobuf field <code>string avatar_gloves = 18;</code>
      */
     private $avatar_gloves = '';
     /**
-     * <code>string avatar_socks = 19;</code>
+     * Generated from protobuf field <code>string avatar_socks = 19;</code>
      */
     private $avatar_socks = '';
     /**
-     * <code>string avatar_belt = 20;</code>
+     * Generated from protobuf field <code>string avatar_belt = 20;</code>
      */
     private $avatar_belt = '';
     /**
-     * <code>string avatar_glasses = 21;</code>
+     * Generated from protobuf field <code>string avatar_glasses = 21;</code>
      */
     private $avatar_glasses = '';
     /**
-     * <code>string avatar_necklace = 22;</code>
+     * Generated from protobuf field <code>string avatar_necklace = 22;</code>
      */
     private $avatar_necklace = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $skin
+     *     @type int $hair
+     *     @type int $shirt
+     *     @type int $pants
+     *     @type int $hat
+     *     @type int $shoes
+     *     @type int $avatar
+     *     @type int $eyes
+     *     @type int $backpack
+     *     @type string $avatar_hair
+     *     @type string $avatar_shirt
+     *     @type string $avatar_pants
+     *     @type string $avatar_hat
+     *     @type string $avatar_shoes
+     *     @type string $avatar_eyes
+     *     @type string $avatar_backpack
+     *     @type string $avatar_gloves
+     *     @type string $avatar_socks
+     *     @type string $avatar_belt
+     *     @type string $avatar_glasses
+     *     @type string $avatar_necklace
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Player\PlayerAvatar::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 skin = 2;</code>
+     * Generated from protobuf field <code>int32 skin = 2;</code>
+     * @return int
      */
     public function getSkin()
     {
@@ -112,16 +142,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 skin = 2;</code>
+     * Generated from protobuf field <code>int32 skin = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSkin($var)
     {
         GPBUtil::checkInt32($var);
         $this->skin = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 hair = 3;</code>
+     * Generated from protobuf field <code>int32 hair = 3;</code>
+     * @return int
      */
     public function getHair()
     {
@@ -129,16 +164,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 hair = 3;</code>
+     * Generated from protobuf field <code>int32 hair = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setHair($var)
     {
         GPBUtil::checkInt32($var);
         $this->hair = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 shirt = 4;</code>
+     * Generated from protobuf field <code>int32 shirt = 4;</code>
+     * @return int
      */
     public function getShirt()
     {
@@ -146,16 +186,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 shirt = 4;</code>
+     * Generated from protobuf field <code>int32 shirt = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setShirt($var)
     {
         GPBUtil::checkInt32($var);
         $this->shirt = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 pants = 5;</code>
+     * Generated from protobuf field <code>int32 pants = 5;</code>
+     * @return int
      */
     public function getPants()
     {
@@ -163,16 +208,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 pants = 5;</code>
+     * Generated from protobuf field <code>int32 pants = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPants($var)
     {
         GPBUtil::checkInt32($var);
         $this->pants = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 hat = 6;</code>
+     * Generated from protobuf field <code>int32 hat = 6;</code>
+     * @return int
      */
     public function getHat()
     {
@@ -180,16 +230,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 hat = 6;</code>
+     * Generated from protobuf field <code>int32 hat = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setHat($var)
     {
         GPBUtil::checkInt32($var);
         $this->hat = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 shoes = 7;</code>
+     * Generated from protobuf field <code>int32 shoes = 7;</code>
+     * @return int
      */
     public function getShoes()
     {
@@ -197,16 +252,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 shoes = 7;</code>
+     * Generated from protobuf field <code>int32 shoes = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setShoes($var)
     {
         GPBUtil::checkInt32($var);
         $this->shoes = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 avatar = 8;</code>
+     * Generated from protobuf field <code>int32 avatar = 8;</code>
+     * @return int
      */
     public function getAvatar()
     {
@@ -214,16 +274,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 avatar = 8;</code>
+     * Generated from protobuf field <code>int32 avatar = 8;</code>
+     * @param int $var
+     * @return $this
      */
     public function setAvatar($var)
     {
         GPBUtil::checkInt32($var);
         $this->avatar = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 eyes = 9;</code>
+     * Generated from protobuf field <code>int32 eyes = 9;</code>
+     * @return int
      */
     public function getEyes()
     {
@@ -231,16 +296,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 eyes = 9;</code>
+     * Generated from protobuf field <code>int32 eyes = 9;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEyes($var)
     {
         GPBUtil::checkInt32($var);
         $this->eyes = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 backpack = 10;</code>
+     * Generated from protobuf field <code>int32 backpack = 10;</code>
+     * @return int
      */
     public function getBackpack()
     {
@@ -248,16 +318,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 backpack = 10;</code>
+     * Generated from protobuf field <code>int32 backpack = 10;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBackpack($var)
     {
         GPBUtil::checkInt32($var);
         $this->backpack = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_hair = 11;</code>
+     * Generated from protobuf field <code>string avatar_hair = 11;</code>
+     * @return string
      */
     public function getAvatarHair()
     {
@@ -265,16 +340,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_hair = 11;</code>
+     * Generated from protobuf field <code>string avatar_hair = 11;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarHair($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_hair = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_shirt = 12;</code>
+     * Generated from protobuf field <code>string avatar_shirt = 12;</code>
+     * @return string
      */
     public function getAvatarShirt()
     {
@@ -282,16 +362,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_shirt = 12;</code>
+     * Generated from protobuf field <code>string avatar_shirt = 12;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarShirt($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_shirt = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_pants = 13;</code>
+     * Generated from protobuf field <code>string avatar_pants = 13;</code>
+     * @return string
      */
     public function getAvatarPants()
     {
@@ -299,16 +384,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_pants = 13;</code>
+     * Generated from protobuf field <code>string avatar_pants = 13;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarPants($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_pants = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_hat = 14;</code>
+     * Generated from protobuf field <code>string avatar_hat = 14;</code>
+     * @return string
      */
     public function getAvatarHat()
     {
@@ -316,16 +406,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_hat = 14;</code>
+     * Generated from protobuf field <code>string avatar_hat = 14;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarHat($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_hat = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_shoes = 15;</code>
+     * Generated from protobuf field <code>string avatar_shoes = 15;</code>
+     * @return string
      */
     public function getAvatarShoes()
     {
@@ -333,16 +428,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_shoes = 15;</code>
+     * Generated from protobuf field <code>string avatar_shoes = 15;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarShoes($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_shoes = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_eyes = 16;</code>
+     * Generated from protobuf field <code>string avatar_eyes = 16;</code>
+     * @return string
      */
     public function getAvatarEyes()
     {
@@ -350,16 +450,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_eyes = 16;</code>
+     * Generated from protobuf field <code>string avatar_eyes = 16;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarEyes($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_eyes = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_backpack = 17;</code>
+     * Generated from protobuf field <code>string avatar_backpack = 17;</code>
+     * @return string
      */
     public function getAvatarBackpack()
     {
@@ -367,16 +472,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_backpack = 17;</code>
+     * Generated from protobuf field <code>string avatar_backpack = 17;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarBackpack($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_backpack = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_gloves = 18;</code>
+     * Generated from protobuf field <code>string avatar_gloves = 18;</code>
+     * @return string
      */
     public function getAvatarGloves()
     {
@@ -384,16 +494,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_gloves = 18;</code>
+     * Generated from protobuf field <code>string avatar_gloves = 18;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarGloves($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_gloves = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_socks = 19;</code>
+     * Generated from protobuf field <code>string avatar_socks = 19;</code>
+     * @return string
      */
     public function getAvatarSocks()
     {
@@ -401,16 +516,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_socks = 19;</code>
+     * Generated from protobuf field <code>string avatar_socks = 19;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarSocks($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_socks = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_belt = 20;</code>
+     * Generated from protobuf field <code>string avatar_belt = 20;</code>
+     * @return string
      */
     public function getAvatarBelt()
     {
@@ -418,16 +538,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_belt = 20;</code>
+     * Generated from protobuf field <code>string avatar_belt = 20;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarBelt($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_belt = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_glasses = 21;</code>
+     * Generated from protobuf field <code>string avatar_glasses = 21;</code>
+     * @return string
      */
     public function getAvatarGlasses()
     {
@@ -435,16 +560,21 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_glasses = 21;</code>
+     * Generated from protobuf field <code>string avatar_glasses = 21;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarGlasses($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_glasses = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_necklace = 22;</code>
+     * Generated from protobuf field <code>string avatar_necklace = 22;</code>
+     * @return string
      */
     public function getAvatarNecklace()
     {
@@ -452,12 +582,16 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_necklace = 22;</code>
+     * Generated from protobuf field <code>string avatar_necklace = 22;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarNecklace($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_necklace = $var;
+
+        return $this;
     }
 
 }

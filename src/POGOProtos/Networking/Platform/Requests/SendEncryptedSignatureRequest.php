@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Requests.SendEncryptedSignatureRequest</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Requests.SendEncryptedSignatureRequest</code>
  */
 class SendEncryptedSignatureRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bytes encrypted_signature = 1;</code>
+     * Generated from protobuf field <code>bytes encrypted_signature = 1;</code>
      */
     private $encrypted_signature = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $encrypted_signature
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Requests\SendEncryptedSignatureRequest::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bytes encrypted_signature = 1;</code>
+     * Generated from protobuf field <code>bytes encrypted_signature = 1;</code>
+     * @return string
      */
     public function getEncryptedSignature()
     {
@@ -32,12 +42,16 @@ class SendEncryptedSignatureRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes encrypted_signature = 1;</code>
+     * Generated from protobuf field <code>bytes encrypted_signature = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setEncryptedSignature($var)
     {
         GPBUtil::checkString($var, False);
         $this->encrypted_signature = $var;
+
+        return $this;
     }
 
 }

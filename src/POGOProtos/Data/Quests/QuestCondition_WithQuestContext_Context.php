@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Quests.QuestCondition.WithQuestContext.Context</code>
- */
-class QuestCondition_WithQuestContext_Context
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestCondition\WithQuestContext\Context instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>STORY_QUEST = 1;</code>
-     */
-    const STORY_QUEST = 1;
-    /**
-     * <code>CHALLENGE_QUEST = 2;</code>
-     */
-    const CHALLENGE_QUEST = 2;
+    class QuestCondition_WithQuestContext_Context {}
 }
+class_exists(QuestCondition\WithQuestContext\Context::class);
+@trigger_error('POGOProtos\Data\Quests\QuestCondition_WithQuestContext_Context is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestCondition\WithQuestContext\Context instead', E_USER_DEPRECATED);
 

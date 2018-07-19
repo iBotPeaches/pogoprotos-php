@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.ProxySocialActionResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.ProxySocialActionResponse</code>
  */
 class ProxySocialActionResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.ProxySocialActionResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.ProxySocialActionResponse.Status status = 1;</code>
      */
     private $status = 0;
     /**
-     * <code>string assigned_host = 2;</code>
+     * Generated from protobuf field <code>string assigned_host = 2;</code>
      */
     private $assigned_host = '';
     /**
-     * <code>bytes payload = 3;</code>
+     * Generated from protobuf field <code>bytes payload = 3;</code>
      */
     private $payload = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status
+     *     @type string $assigned_host
+     *     @type string $payload
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\PlatformClientActionsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.ProxySocialActionResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.ProxySocialActionResponse.Status status = 1;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -40,16 +52,21 @@ class ProxySocialActionResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.ProxySocialActionResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.ProxySocialActionResponse.Status status = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\ProxySocialActionResponse_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string assigned_host = 2;</code>
+     * Generated from protobuf field <code>string assigned_host = 2;</code>
+     * @return string
      */
     public function getAssignedHost()
     {
@@ -57,16 +74,21 @@ class ProxySocialActionResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string assigned_host = 2;</code>
+     * Generated from protobuf field <code>string assigned_host = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAssignedHost($var)
     {
         GPBUtil::checkString($var, True);
         $this->assigned_host = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bytes payload = 3;</code>
+     * Generated from protobuf field <code>bytes payload = 3;</code>
+     * @return string
      */
     public function getPayload()
     {
@@ -74,12 +96,16 @@ class ProxySocialActionResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes payload = 3;</code>
+     * Generated from protobuf field <code>bytes payload = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPayload($var)
     {
         GPBUtil::checkString($var, False);
         $this->payload = $var;
+
+        return $this;
     }
 
 }

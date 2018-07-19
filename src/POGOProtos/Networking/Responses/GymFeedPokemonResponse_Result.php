@@ -4,66 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.GymFeedPokemonResponse.Result</code>
- */
-class GymFeedPokemonResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GymFeedPokemonResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_CANNOT_USE = 2;</code>
-     */
-    const ERROR_CANNOT_USE = 2;
-    /**
-     * <code>ERROR_NOT_IN_RANGE = 3;</code>
-     */
-    const ERROR_NOT_IN_RANGE = 3;
-    /**
-     * <code>ERROR_POKEMON_NOT_THERE = 4;</code>
-     */
-    const ERROR_POKEMON_NOT_THERE = 4;
-    /**
-     * <code>ERROR_POKEMON_FULL = 5;</code>
-     */
-    const ERROR_POKEMON_FULL = 5;
-    /**
-     * <code>ERROR_NO_BERRIES_LEFT = 6;</code>
-     */
-    const ERROR_NO_BERRIES_LEFT = 6;
-    /**
-     * <code>ERROR_WRONG_TEAM = 7;</code>
-     */
-    const ERROR_WRONG_TEAM = 7;
-    /**
-     * <code>ERROR_WRONG_COUNT = 8;</code>
-     */
-    const ERROR_WRONG_COUNT = 8;
-    /**
-     * <code>ERROR_TOO_FAST = 9;</code>
-     */
-    const ERROR_TOO_FAST = 9;
-    /**
-     * <code>ERROR_TOO_FREQUENT = 10;</code>
-     */
-    const ERROR_TOO_FREQUENT = 10;
-    /**
-     * <code>ERROR_GYM_BUSY = 11;</code>
-     */
-    const ERROR_GYM_BUSY = 11;
-    /**
-     * <code>ERROR_RAID_ACTIVE = 12;</code>
-     */
-    const ERROR_RAID_ACTIVE = 12;
-    /**
-     * <code>ERROR_GYM_CLOSED = 13;</code>
-     */
-    const ERROR_GYM_CLOSED = 13;
+    class GymFeedPokemonResponse_Result {}
 }
+class_exists(GymFeedPokemonResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\GymFeedPokemonResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GymFeedPokemonResponse\Result instead', E_USER_DEPRECATED);
 

@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.RedeemPasscodeResponse.Result</code>
- */
-class RedeemPasscodeResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\RedeemPasscodeResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>NOT_AVAILABLE = 2;</code>
-     */
-    const NOT_AVAILABLE = 2;
-    /**
-     * <code>OVER_INVENTORY_LIMIT = 3;</code>
-     */
-    const OVER_INVENTORY_LIMIT = 3;
-    /**
-     * <code>ALREADY_REDEEMED = 4;</code>
-     */
-    const ALREADY_REDEEMED = 4;
+    class RedeemPasscodeResponse_Result {}
 }
+class_exists(RedeemPasscodeResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\RedeemPasscodeResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\RedeemPasscodeResponse\Result instead', E_USER_DEPRECATED);
 

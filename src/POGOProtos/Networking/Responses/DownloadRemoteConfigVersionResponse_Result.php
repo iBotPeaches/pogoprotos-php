@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Result</code>
- */
-class DownloadRemoteConfigVersionResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\DownloadRemoteConfigVersionResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
+    class DownloadRemoteConfigVersionResponse_Result {}
 }
+class_exists(DownloadRemoteConfigVersionResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\DownloadRemoteConfigVersionResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\DownloadRemoteConfigVersionResponse\Result instead', E_USER_DEPRECATED);
 

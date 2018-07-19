@@ -4,38 +4,13 @@
 
 namespace POGOProtos\Networking\Requests\Messages;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter</code>
- */
-class ListAvatarCustomizationsMessage_Filter
-{
+if (false) {
     /**
-     * <code>UNSET_FILTER = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Requests\Messages\ListAvatarCustomizationsMessage\Filter instead.
+     * @deprecated
      */
-    const UNSET_FILTER = 0;
-    /**
-     * <code>ALL = 1;</code>
-     */
-    const ALL = 1;
-    /**
-     * <code>DEFAULT = 2;</code>
-     */
-    const DEFAULT = 2;
-    /**
-     * <code>OWNED = 3;</code>
-     */
-    const OWNED = 3;
-    /**
-     * <code>FEATURED = 4;</code>
-     */
-    const FEATURED = 4;
-    /**
-     * <code>PURCHASABLE = 5;</code>
-     */
-    const PURCHASABLE = 5;
-    /**
-     * <code>UNLOCKABLE = 6;</code>
-     */
-    const UNLOCKABLE = 6;
+    class ListAvatarCustomizationsMessage_Filter {}
 }
+class_exists(ListAvatarCustomizationsMessage\Filter::class);
+@trigger_error('POGOProtos\Networking\Requests\Messages\ListAvatarCustomizationsMessage_Filter is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Requests\Messages\ListAvatarCustomizationsMessage\Filter instead', E_USER_DEPRECATED);
 

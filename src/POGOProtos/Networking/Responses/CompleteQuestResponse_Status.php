@@ -4,58 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.CompleteQuestResponse.Status</code>
- */
-class CompleteQuestResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\CompleteQuestResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_QUEST_NOT_FOUND = 2;</code>
-     */
-    const ERROR_QUEST_NOT_FOUND = 2;
-    /**
-     * <code>ERROR_QUEST_STILL_IN_PROGRESS = 3;</code>
-     */
-    const ERROR_QUEST_STILL_IN_PROGRESS = 3;
-    /**
-     * <code>ERROR_QUEST_ALREADY_COMPLETED = 4;</code>
-     */
-    const ERROR_QUEST_ALREADY_COMPLETED = 4;
-    /**
-     * <code>ERROR_SUBQUEST_NOT_FOUND = 5;</code>
-     */
-    const ERROR_SUBQUEST_NOT_FOUND = 5;
-    /**
-     * <code>ERROR_SUBQUEST_STILL_IN_PROGRESS = 6;</code>
-     */
-    const ERROR_SUBQUEST_STILL_IN_PROGRESS = 6;
-    /**
-     * <code>ERROR_SUBQUEST_ALREADY_COMPLETED = 7;</code>
-     */
-    const ERROR_SUBQUEST_ALREADY_COMPLETED = 7;
-    /**
-     * <code>ERROR_MULTIPART_STILL_IN_PROGRESS = 8;</code>
-     */
-    const ERROR_MULTIPART_STILL_IN_PROGRESS = 8;
-    /**
-     * <code>ERROR_MULTIPART_ALREADY_COMPLETED = 9;</code>
-     */
-    const ERROR_MULTIPART_ALREADY_COMPLETED = 9;
-    /**
-     * <code>ERROR_REDEEM_COMPLETED_QUEST_STAMP_CARD_FIRST = 10;</code>
-     */
-    const ERROR_REDEEM_COMPLETED_QUEST_STAMP_CARD_FIRST = 10;
-    /**
-     * <code>ERROR_INVENTORY_FULL = 11;</code>
-     */
-    const ERROR_INVENTORY_FULL = 11;
+    class CompleteQuestResponse_Status {}
 }
+class_exists(CompleteQuestResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\CompleteQuestResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\CompleteQuestResponse\Status instead', E_USER_DEPRECATED);
 

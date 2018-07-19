@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.GpsSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.GpsSettings</code>
  */
 class GpsSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float driving_warning_speed_meters_per_second = 1;</code>
+     * Generated from protobuf field <code>float driving_warning_speed_meters_per_second = 1;</code>
      */
     private $driving_warning_speed_meters_per_second = 0.0;
     /**
-     * <code>float driving_warning_cooldown_minutes = 2;</code>
+     * Generated from protobuf field <code>float driving_warning_cooldown_minutes = 2;</code>
      */
     private $driving_warning_cooldown_minutes = 0.0;
     /**
-     * <code>float driving_speed_sample_interval_seconds = 3;</code>
+     * Generated from protobuf field <code>float driving_speed_sample_interval_seconds = 3;</code>
      */
     private $driving_speed_sample_interval_seconds = 0.0;
     /**
-     * <code>int32 driving_speed_sample_count = 4;</code>
+     * Generated from protobuf field <code>int32 driving_speed_sample_count = 4;</code>
      */
     private $driving_speed_sample_count = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $driving_warning_speed_meters_per_second
+     *     @type float $driving_warning_cooldown_minutes
+     *     @type float $driving_speed_sample_interval_seconds
+     *     @type int $driving_speed_sample_count
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\GpsSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float driving_warning_speed_meters_per_second = 1;</code>
+     * Generated from protobuf field <code>float driving_warning_speed_meters_per_second = 1;</code>
+     * @return float
      */
     public function getDrivingWarningSpeedMetersPerSecond()
     {
@@ -44,16 +57,21 @@ class GpsSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float driving_warning_speed_meters_per_second = 1;</code>
+     * Generated from protobuf field <code>float driving_warning_speed_meters_per_second = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDrivingWarningSpeedMetersPerSecond($var)
     {
         GPBUtil::checkFloat($var);
         $this->driving_warning_speed_meters_per_second = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float driving_warning_cooldown_minutes = 2;</code>
+     * Generated from protobuf field <code>float driving_warning_cooldown_minutes = 2;</code>
+     * @return float
      */
     public function getDrivingWarningCooldownMinutes()
     {
@@ -61,16 +79,21 @@ class GpsSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float driving_warning_cooldown_minutes = 2;</code>
+     * Generated from protobuf field <code>float driving_warning_cooldown_minutes = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDrivingWarningCooldownMinutes($var)
     {
         GPBUtil::checkFloat($var);
         $this->driving_warning_cooldown_minutes = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float driving_speed_sample_interval_seconds = 3;</code>
+     * Generated from protobuf field <code>float driving_speed_sample_interval_seconds = 3;</code>
+     * @return float
      */
     public function getDrivingSpeedSampleIntervalSeconds()
     {
@@ -78,16 +101,21 @@ class GpsSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float driving_speed_sample_interval_seconds = 3;</code>
+     * Generated from protobuf field <code>float driving_speed_sample_interval_seconds = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDrivingSpeedSampleIntervalSeconds($var)
     {
         GPBUtil::checkFloat($var);
         $this->driving_speed_sample_interval_seconds = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 driving_speed_sample_count = 4;</code>
+     * Generated from protobuf field <code>int32 driving_speed_sample_count = 4;</code>
+     * @return int
      */
     public function getDrivingSpeedSampleCount()
     {
@@ -95,12 +123,16 @@ class GpsSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 driving_speed_sample_count = 4;</code>
+     * Generated from protobuf field <code>int32 driving_speed_sample_count = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setDrivingSpeedSampleCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->driving_speed_sample_count = $var;
+
+        return $this;
     }
 
 }

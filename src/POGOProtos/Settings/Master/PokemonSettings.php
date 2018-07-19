@@ -9,154 +9,197 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.PokemonSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.PokemonSettings</code>
  */
 class PokemonSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
      */
     private $pokemon_id = 0;
     /**
-     * <code>float model_scale = 3;</code>
+     * Generated from protobuf field <code>float model_scale = 3;</code>
      */
     private $model_scale = 0.0;
     /**
-     * <code>.POGOProtos.Enums.PokemonType type = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonType type = 4;</code>
      */
     private $type = 0;
     /**
-     * <code>.POGOProtos.Enums.PokemonType type_2 = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonType type_2 = 5;</code>
      */
     private $type_2 = 0;
     /**
-     * <code>.POGOProtos.Settings.Master.Pokemon.CameraAttributes camera = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Pokemon.CameraAttributes camera = 6;</code>
      */
     private $camera = null;
     /**
-     * <code>.POGOProtos.Settings.Master.Pokemon.EncounterAttributes encounter = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Pokemon.EncounterAttributes encounter = 7;</code>
      */
     private $encounter = null;
     /**
-     * <code>.POGOProtos.Settings.Master.Pokemon.StatsAttributes stats = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Pokemon.StatsAttributes stats = 8;</code>
      */
     private $stats = null;
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonMove quick_moves = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonMove quick_moves = 9;</code>
      */
     private $quick_moves;
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonMove cinematic_moves = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonMove cinematic_moves = 10;</code>
      */
     private $cinematic_moves;
     /**
-     * <code>repeated float animation_time = 11;</code>
+     * Generated from protobuf field <code>repeated float animation_time = 11;</code>
      */
     private $animation_time;
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonId evolution_ids = 12;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonId evolution_ids = 12;</code>
      */
     private $evolution_ids;
     /**
-     * <code>int32 evolution_pips = 13;</code>
+     * Generated from protobuf field <code>int32 evolution_pips = 13;</code>
      */
     private $evolution_pips = 0;
     /**
-     * <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonRarity rarity = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonRarity rarity = 14;</code>
      */
     private $rarity = 0;
     /**
-     * <code>float pokedex_height_m = 15;</code>
+     * Generated from protobuf field <code>float pokedex_height_m = 15;</code>
      */
     private $pokedex_height_m = 0.0;
     /**
-     * <code>float pokedex_weight_kg = 16;</code>
+     * Generated from protobuf field <code>float pokedex_weight_kg = 16;</code>
      */
     private $pokedex_weight_kg = 0.0;
     /**
-     * <code>.POGOProtos.Enums.PokemonId parent_pokemon_id = 17;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId parent_pokemon_id = 17;</code>
      */
     private $parent_pokemon_id = 0;
     /**
-     * <code>float height_std_dev = 18;</code>
+     * Generated from protobuf field <code>float height_std_dev = 18;</code>
      */
     private $height_std_dev = 0.0;
     /**
-     * <code>float weight_std_dev = 19;</code>
+     * Generated from protobuf field <code>float weight_std_dev = 19;</code>
      */
     private $weight_std_dev = 0.0;
     /**
-     * <code>float km_distance_to_hatch = 20;</code>
+     * Generated from protobuf field <code>float km_distance_to_hatch = 20;</code>
      */
     private $km_distance_to_hatch = 0.0;
     /**
-     * <code>.POGOProtos.Enums.PokemonFamilyId family_id = 21;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId family_id = 21;</code>
      */
     private $family_id = 0;
     /**
-     * <code>int32 candy_to_evolve = 22;</code>
+     * Generated from protobuf field <code>int32 candy_to_evolve = 22;</code>
      */
     private $candy_to_evolve = 0;
     /**
-     * <code>float km_buddy_distance = 23;</code>
+     * Generated from protobuf field <code>float km_buddy_distance = 23;</code>
      */
     private $km_buddy_distance = 0.0;
     /**
-     * <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
      */
     private $buddy_size = 0;
     /**
-     * <code>float model_height = 25;</code>
+     * Generated from protobuf field <code>float model_height = 25;</code>
      */
     private $model_height = 0.0;
     /**
-     * <code>repeated .POGOProtos.Settings.Master.Pokemon.EvolutionBranch evolution_branch = 26;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.Pokemon.EvolutionBranch evolution_branch = 26;</code>
      */
     private $evolution_branch;
     /**
-     * <code>float model_scale_v2 = 27;</code>
+     * Generated from protobuf field <code>float model_scale_v2 = 27;</code>
      */
     private $model_scale_v2 = 0.0;
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 28;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form form = 28;</code>
      */
     private $form = 0;
     /**
-     * <code>.POGOProtos.Enums.PokemonMove event_quick_move = 29;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove event_quick_move = 29;</code>
      */
     private $event_quick_move = 0;
     /**
-     * <code>.POGOProtos.Enums.PokemonMove event_cinematic_move = 30;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove event_cinematic_move = 30;</code>
      */
     private $event_cinematic_move = 0;
     /**
-     * <code>repeated float buddy_offset_male = 31;</code>
+     * Generated from protobuf field <code>repeated float buddy_offset_male = 31;</code>
      */
     private $buddy_offset_male;
     /**
-     * <code>repeated float buddy_offset_female = 32;</code>
+     * Generated from protobuf field <code>repeated float buddy_offset_female = 32;</code>
      */
     private $buddy_offset_female;
     /**
-     * <code>float buddy_scale = 33;</code>
+     * Generated from protobuf field <code>float buddy_scale = 33;</code>
      */
     private $buddy_scale = 0.0;
     /**
-     * <code>repeated float buddy_portrait_offset = 34;</code>
+     * Generated from protobuf field <code>repeated float buddy_portrait_offset = 34;</code>
      */
     private $buddy_portrait_offset;
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form parent_form = 35;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form parent_form = 35;</code>
      */
     private $parent_form = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $pokemon_id
+     *     @type float $model_scale
+     *     @type int $type
+     *     @type int $type_2
+     *     @type \POGOProtos\Settings\Master\Pokemon\CameraAttributes $camera
+     *     @type \POGOProtos\Settings\Master\Pokemon\EncounterAttributes $encounter
+     *     @type \POGOProtos\Settings\Master\Pokemon\StatsAttributes $stats
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $quick_moves
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $cinematic_moves
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $animation_time
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $evolution_ids
+     *     @type int $evolution_pips
+     *     @type int $rarity
+     *     @type float $pokedex_height_m
+     *     @type float $pokedex_weight_kg
+     *     @type int $parent_pokemon_id
+     *     @type float $height_std_dev
+     *     @type float $weight_std_dev
+     *     @type float $km_distance_to_hatch
+     *     @type int $family_id
+     *     @type int $candy_to_evolve
+     *     @type float $km_buddy_distance
+     *     @type int $buddy_size
+     *     @type float $model_height
+     *     @type \POGOProtos\Settings\Master\Pokemon\EvolutionBranch[]|\Google\Protobuf\Internal\RepeatedField $evolution_branch
+     *     @type float $model_scale_v2
+     *     @type int $form
+     *     @type int $event_quick_move
+     *     @type int $event_cinematic_move
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $buddy_offset_male
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $buddy_offset_female
+     *     @type float $buddy_scale
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $buddy_portrait_offset
+     *     @type int $parent_form
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\PokemonSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
+     * @return int
      */
     public function getPokemonId()
     {
@@ -164,16 +207,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float model_scale = 3;</code>
+     * Generated from protobuf field <code>float model_scale = 3;</code>
+     * @return float
      */
     public function getModelScale()
     {
@@ -181,16 +229,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float model_scale = 3;</code>
+     * Generated from protobuf field <code>float model_scale = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setModelScale($var)
     {
         GPBUtil::checkFloat($var);
         $this->model_scale = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonType type = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonType type = 4;</code>
+     * @return int
      */
     public function getType()
     {
@@ -198,16 +251,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonType type = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonType type = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonType::class);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonType type_2 = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonType type_2 = 5;</code>
+     * @return int
      */
     public function getType2()
     {
@@ -215,16 +273,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonType type_2 = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonType type_2 = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setType2($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonType::class);
         $this->type_2 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Pokemon.CameraAttributes camera = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Pokemon.CameraAttributes camera = 6;</code>
+     * @return \POGOProtos\Settings\Master\Pokemon\CameraAttributes
      */
     public function getCamera()
     {
@@ -232,16 +295,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Pokemon.CameraAttributes camera = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Pokemon.CameraAttributes camera = 6;</code>
+     * @param \POGOProtos\Settings\Master\Pokemon\CameraAttributes $var
+     * @return $this
      */
-    public function setCamera(&$var)
+    public function setCamera($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Pokemon\CameraAttributes::class);
         $this->camera = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Pokemon.EncounterAttributes encounter = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Pokemon.EncounterAttributes encounter = 7;</code>
+     * @return \POGOProtos\Settings\Master\Pokemon\EncounterAttributes
      */
     public function getEncounter()
     {
@@ -249,16 +317,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Pokemon.EncounterAttributes encounter = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Pokemon.EncounterAttributes encounter = 7;</code>
+     * @param \POGOProtos\Settings\Master\Pokemon\EncounterAttributes $var
+     * @return $this
      */
-    public function setEncounter(&$var)
+    public function setEncounter($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Pokemon\EncounterAttributes::class);
         $this->encounter = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Pokemon.StatsAttributes stats = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Pokemon.StatsAttributes stats = 8;</code>
+     * @return \POGOProtos\Settings\Master\Pokemon\StatsAttributes
      */
     public function getStats()
     {
@@ -266,16 +339,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Pokemon.StatsAttributes stats = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Pokemon.StatsAttributes stats = 8;</code>
+     * @param \POGOProtos\Settings\Master\Pokemon\StatsAttributes $var
+     * @return $this
      */
-    public function setStats(&$var)
+    public function setStats($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Pokemon\StatsAttributes::class);
         $this->stats = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonMove quick_moves = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonMove quick_moves = 9;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getQuickMoves()
     {
@@ -283,16 +361,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonMove quick_moves = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonMove quick_moves = 9;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setQuickMoves(&$var)
+    public function setQuickMoves($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\PokemonMove::class);
-        $this->quick_moves = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\PokemonMove::class);
+        $this->quick_moves = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonMove cinematic_moves = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonMove cinematic_moves = 10;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCinematicMoves()
     {
@@ -300,16 +383,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonMove cinematic_moves = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonMove cinematic_moves = 10;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCinematicMoves(&$var)
+    public function setCinematicMoves($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\PokemonMove::class);
-        $this->cinematic_moves = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\PokemonMove::class);
+        $this->cinematic_moves = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float animation_time = 11;</code>
+     * Generated from protobuf field <code>repeated float animation_time = 11;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAnimationTime()
     {
@@ -317,16 +405,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float animation_time = 11;</code>
+     * Generated from protobuf field <code>repeated float animation_time = 11;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAnimationTime(&$var)
+    public function setAnimationTime($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->animation_time = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->animation_time = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonId evolution_ids = 12;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonId evolution_ids = 12;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getEvolutionIds()
     {
@@ -334,16 +427,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonId evolution_ids = 12;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonId evolution_ids = 12;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setEvolutionIds(&$var)
+    public function setEvolutionIds($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\PokemonId::class);
-        $this->evolution_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\PokemonId::class);
+        $this->evolution_ids = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 evolution_pips = 13;</code>
+     * Generated from protobuf field <code>int32 evolution_pips = 13;</code>
+     * @return int
      */
     public function getEvolutionPips()
     {
@@ -351,16 +449,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 evolution_pips = 13;</code>
+     * Generated from protobuf field <code>int32 evolution_pips = 13;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEvolutionPips($var)
     {
         GPBUtil::checkInt32($var);
         $this->evolution_pips = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonRarity rarity = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonRarity rarity = 14;</code>
+     * @return int
      */
     public function getRarity()
     {
@@ -368,16 +471,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonRarity rarity = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonRarity rarity = 14;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRarity($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Settings\Master\PokemonSettings_PokemonRarity::class);
         $this->rarity = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float pokedex_height_m = 15;</code>
+     * Generated from protobuf field <code>float pokedex_height_m = 15;</code>
+     * @return float
      */
     public function getPokedexHeightM()
     {
@@ -385,16 +493,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float pokedex_height_m = 15;</code>
+     * Generated from protobuf field <code>float pokedex_height_m = 15;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPokedexHeightM($var)
     {
         GPBUtil::checkFloat($var);
         $this->pokedex_height_m = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float pokedex_weight_kg = 16;</code>
+     * Generated from protobuf field <code>float pokedex_weight_kg = 16;</code>
+     * @return float
      */
     public function getPokedexWeightKg()
     {
@@ -402,16 +515,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float pokedex_weight_kg = 16;</code>
+     * Generated from protobuf field <code>float pokedex_weight_kg = 16;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPokedexWeightKg($var)
     {
         GPBUtil::checkFloat($var);
         $this->pokedex_weight_kg = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId parent_pokemon_id = 17;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId parent_pokemon_id = 17;</code>
+     * @return int
      */
     public function getParentPokemonId()
     {
@@ -419,16 +537,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId parent_pokemon_id = 17;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId parent_pokemon_id = 17;</code>
+     * @param int $var
+     * @return $this
      */
     public function setParentPokemonId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->parent_pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float height_std_dev = 18;</code>
+     * Generated from protobuf field <code>float height_std_dev = 18;</code>
+     * @return float
      */
     public function getHeightStdDev()
     {
@@ -436,16 +559,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float height_std_dev = 18;</code>
+     * Generated from protobuf field <code>float height_std_dev = 18;</code>
+     * @param float $var
+     * @return $this
      */
     public function setHeightStdDev($var)
     {
         GPBUtil::checkFloat($var);
         $this->height_std_dev = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float weight_std_dev = 19;</code>
+     * Generated from protobuf field <code>float weight_std_dev = 19;</code>
+     * @return float
      */
     public function getWeightStdDev()
     {
@@ -453,16 +581,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float weight_std_dev = 19;</code>
+     * Generated from protobuf field <code>float weight_std_dev = 19;</code>
+     * @param float $var
+     * @return $this
      */
     public function setWeightStdDev($var)
     {
         GPBUtil::checkFloat($var);
         $this->weight_std_dev = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float km_distance_to_hatch = 20;</code>
+     * Generated from protobuf field <code>float km_distance_to_hatch = 20;</code>
+     * @return float
      */
     public function getKmDistanceToHatch()
     {
@@ -470,16 +603,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float km_distance_to_hatch = 20;</code>
+     * Generated from protobuf field <code>float km_distance_to_hatch = 20;</code>
+     * @param float $var
+     * @return $this
      */
     public function setKmDistanceToHatch($var)
     {
         GPBUtil::checkFloat($var);
         $this->km_distance_to_hatch = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonFamilyId family_id = 21;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId family_id = 21;</code>
+     * @return int
      */
     public function getFamilyId()
     {
@@ -487,16 +625,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonFamilyId family_id = 21;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId family_id = 21;</code>
+     * @param int $var
+     * @return $this
      */
     public function setFamilyId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonFamilyId::class);
         $this->family_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 candy_to_evolve = 22;</code>
+     * Generated from protobuf field <code>int32 candy_to_evolve = 22;</code>
+     * @return int
      */
     public function getCandyToEvolve()
     {
@@ -504,16 +647,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 candy_to_evolve = 22;</code>
+     * Generated from protobuf field <code>int32 candy_to_evolve = 22;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCandyToEvolve($var)
     {
         GPBUtil::checkInt32($var);
         $this->candy_to_evolve = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float km_buddy_distance = 23;</code>
+     * Generated from protobuf field <code>float km_buddy_distance = 23;</code>
+     * @return float
      */
     public function getKmBuddyDistance()
     {
@@ -521,16 +669,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float km_buddy_distance = 23;</code>
+     * Generated from protobuf field <code>float km_buddy_distance = 23;</code>
+     * @param float $var
+     * @return $this
      */
     public function setKmBuddyDistance($var)
     {
         GPBUtil::checkFloat($var);
         $this->km_buddy_distance = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
+     * @return int
      */
     public function getBuddySize()
     {
@@ -538,16 +691,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBuddySize($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Settings\Master\PokemonSettings_BuddySize::class);
         $this->buddy_size = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float model_height = 25;</code>
+     * Generated from protobuf field <code>float model_height = 25;</code>
+     * @return float
      */
     public function getModelHeight()
     {
@@ -555,16 +713,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float model_height = 25;</code>
+     * Generated from protobuf field <code>float model_height = 25;</code>
+     * @param float $var
+     * @return $this
      */
     public function setModelHeight($var)
     {
         GPBUtil::checkFloat($var);
         $this->model_height = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Settings.Master.Pokemon.EvolutionBranch evolution_branch = 26;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.Pokemon.EvolutionBranch evolution_branch = 26;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getEvolutionBranch()
     {
@@ -572,16 +735,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Settings.Master.Pokemon.EvolutionBranch evolution_branch = 26;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.Pokemon.EvolutionBranch evolution_branch = 26;</code>
+     * @param \POGOProtos\Settings\Master\Pokemon\EvolutionBranch[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setEvolutionBranch(&$var)
+    public function setEvolutionBranch($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Settings\Master\Pokemon\EvolutionBranch::class);
-        $this->evolution_branch = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Settings\Master\Pokemon\EvolutionBranch::class);
+        $this->evolution_branch = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>float model_scale_v2 = 27;</code>
+     * Generated from protobuf field <code>float model_scale_v2 = 27;</code>
+     * @return float
      */
     public function getModelScaleV2()
     {
@@ -589,16 +757,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float model_scale_v2 = 27;</code>
+     * Generated from protobuf field <code>float model_scale_v2 = 27;</code>
+     * @param float $var
+     * @return $this
      */
     public function setModelScaleV2($var)
     {
         GPBUtil::checkFloat($var);
         $this->model_scale_v2 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 28;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form form = 28;</code>
+     * @return int
      */
     public function getForm()
     {
@@ -606,16 +779,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 28;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form form = 28;</code>
+     * @param int $var
+     * @return $this
      */
     public function setForm($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Form::class);
         $this->form = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonMove event_quick_move = 29;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove event_quick_move = 29;</code>
+     * @return int
      */
     public function getEventQuickMove()
     {
@@ -623,16 +801,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonMove event_quick_move = 29;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove event_quick_move = 29;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEventQuickMove($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonMove::class);
         $this->event_quick_move = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonMove event_cinematic_move = 30;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove event_cinematic_move = 30;</code>
+     * @return int
      */
     public function getEventCinematicMove()
     {
@@ -640,16 +823,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonMove event_cinematic_move = 30;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove event_cinematic_move = 30;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEventCinematicMove($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonMove::class);
         $this->event_cinematic_move = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float buddy_offset_male = 31;</code>
+     * Generated from protobuf field <code>repeated float buddy_offset_male = 31;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getBuddyOffsetMale()
     {
@@ -657,16 +845,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float buddy_offset_male = 31;</code>
+     * Generated from protobuf field <code>repeated float buddy_offset_male = 31;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setBuddyOffsetMale(&$var)
+    public function setBuddyOffsetMale($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->buddy_offset_male = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->buddy_offset_male = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float buddy_offset_female = 32;</code>
+     * Generated from protobuf field <code>repeated float buddy_offset_female = 32;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getBuddyOffsetFemale()
     {
@@ -674,16 +867,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float buddy_offset_female = 32;</code>
+     * Generated from protobuf field <code>repeated float buddy_offset_female = 32;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setBuddyOffsetFemale(&$var)
+    public function setBuddyOffsetFemale($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->buddy_offset_female = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->buddy_offset_female = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>float buddy_scale = 33;</code>
+     * Generated from protobuf field <code>float buddy_scale = 33;</code>
+     * @return float
      */
     public function getBuddyScale()
     {
@@ -691,16 +889,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float buddy_scale = 33;</code>
+     * Generated from protobuf field <code>float buddy_scale = 33;</code>
+     * @param float $var
+     * @return $this
      */
     public function setBuddyScale($var)
     {
         GPBUtil::checkFloat($var);
         $this->buddy_scale = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float buddy_portrait_offset = 34;</code>
+     * Generated from protobuf field <code>repeated float buddy_portrait_offset = 34;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getBuddyPortraitOffset()
     {
@@ -708,16 +911,21 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float buddy_portrait_offset = 34;</code>
+     * Generated from protobuf field <code>repeated float buddy_portrait_offset = 34;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setBuddyPortraitOffset(&$var)
+    public function setBuddyPortraitOffset($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->buddy_portrait_offset = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->buddy_portrait_offset = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form parent_form = 35;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form parent_form = 35;</code>
+     * @return int
      */
     public function getParentForm()
     {
@@ -725,12 +933,16 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form parent_form = 35;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form parent_form = 35;</code>
+     * @param int $var
+     * @return $this
      */
     public function setParentForm($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Form::class);
         $this->parent_form = $var;
+
+        return $this;
     }
 
 }

@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.FetchAllNewsResponse.Result</code>
- */
-class FetchAllNewsResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\FetchAllNewsResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>NO_NEWS_FOUND = 2;</code>
-     */
-    const NO_NEWS_FOUND = 2;
+    class FetchAllNewsResponse_Result {}
 }
+class_exists(FetchAllNewsResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\FetchAllNewsResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\FetchAllNewsResponse\Result instead', E_USER_DEPRECATED);
 

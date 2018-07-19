@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Data\Player;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Player.PlayerReputation.CheatReputation</code>
- */
-class PlayerReputation_CheatReputation
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Player\PlayerReputation\CheatReputation instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>BOT = 1;</code>
-     */
-    const BOT = 1;
-    /**
-     * <code>SPOOFER = 2;</code>
-     */
-    const SPOOFER = 2;
+    class PlayerReputation_CheatReputation {}
 }
+class_exists(PlayerReputation\CheatReputation::class);
+@trigger_error('POGOProtos\Data\Player\PlayerReputation_CheatReputation is deprecated and will be removed in the next major release. Use POGOProtos\Data\Player\PlayerReputation\CheatReputation instead', E_USER_DEPRECATED);
 

@@ -4,83 +4,13 @@
 
 namespace POGOProtos\Networking\Requests\Messages;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetPlayerMessage.PlayerLocale</code>
- */
-class GetPlayerMessage_PlayerLocale extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>string country = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Requests\Messages\GetPlayerMessage\PlayerLocale instead.
+     * @deprecated
      */
-    private $country = '';
-    /**
-     * <code>string language = 2;</code>
-     */
-    private $language = '';
-    /**
-     * <code>string timezone = 3;</code>
-     */
-    private $timezone = '';
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetPlayerMessage::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>string country = 1;</code>
-     */
-    public function getCountry()
-    {
-        return $this->country;
-    }
-
-    /**
-     * <code>string country = 1;</code>
-     */
-    public function setCountry($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->country = $var;
-    }
-
-    /**
-     * <code>string language = 2;</code>
-     */
-    public function getLanguage()
-    {
-        return $this->language;
-    }
-
-    /**
-     * <code>string language = 2;</code>
-     */
-    public function setLanguage($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->language = $var;
-    }
-
-    /**
-     * <code>string timezone = 3;</code>
-     */
-    public function getTimezone()
-    {
-        return $this->timezone;
-    }
-
-    /**
-     * <code>string timezone = 3;</code>
-     */
-    public function setTimezone($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->timezone = $var;
-    }
-
+    class GetPlayerMessage_PlayerLocale {}
 }
+class_exists(GetPlayerMessage\PlayerLocale::class);
+@trigger_error('POGOProtos\Networking\Requests\Messages\GetPlayerMessage_PlayerLocale is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Requests\Messages\GetPlayerMessage\PlayerLocale instead', E_USER_DEPRECATED);
 

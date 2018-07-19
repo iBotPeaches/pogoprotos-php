@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetAvailableSubmissionsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetAvailableSubmissionsResponse</code>
  */
 class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 submissions_left = 1;</code>
+     * Generated from protobuf field <code>int32 submissions_left = 1;</code>
      */
     private $submissions_left = 0;
     /**
-     * <code>int32 min_player_level = 2;</code>
+     * Generated from protobuf field <code>int32 min_player_level = 2;</code>
      */
     private $min_player_level = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $submissions_left
+     *     @type int $min_player_level
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\PlatformClientActionsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 submissions_left = 1;</code>
+     * Generated from protobuf field <code>int32 submissions_left = 1;</code>
+     * @return int
      */
     public function getSubmissionsLeft()
     {
@@ -36,16 +47,21 @@ class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 submissions_left = 1;</code>
+     * Generated from protobuf field <code>int32 submissions_left = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSubmissionsLeft($var)
     {
         GPBUtil::checkInt32($var);
         $this->submissions_left = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 min_player_level = 2;</code>
+     * Generated from protobuf field <code>int32 min_player_level = 2;</code>
+     * @return int
      */
     public function getMinPlayerLevel()
     {
@@ -53,12 +69,16 @@ class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 min_player_level = 2;</code>
+     * Generated from protobuf field <code>int32 min_player_level = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMinPlayerLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->min_player_level = $var;
+
+        return $this;
     }
 
 }

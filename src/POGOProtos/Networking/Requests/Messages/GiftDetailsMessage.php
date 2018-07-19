@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GiftDetailsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GiftDetailsMessage</code>
  */
 class GiftDetailsMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated fixed64 giftbox_id = 1;</code>
+     * Generated from protobuf field <code>repeated fixed64 giftbox_id = 1;</code>
      */
     private $giftbox_id;
     /**
-     * <code>string player_id = 2;</code>
+     * Generated from protobuf field <code>string player_id = 2;</code>
      */
     private $player_id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $giftbox_id
+     *     @type string $player_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GiftDetailsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated fixed64 giftbox_id = 1;</code>
+     * Generated from protobuf field <code>repeated fixed64 giftbox_id = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getGiftboxId()
     {
@@ -36,16 +47,21 @@ class GiftDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated fixed64 giftbox_id = 1;</code>
+     * Generated from protobuf field <code>repeated fixed64 giftbox_id = 1;</code>
+     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGiftboxId(&$var)
+    public function setGiftboxId($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FIXED64);
-        $this->giftbox_id = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FIXED64);
+        $this->giftbox_id = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>string player_id = 2;</code>
+     * Generated from protobuf field <code>string player_id = 2;</code>
+     * @return string
      */
     public function getPlayerId()
     {
@@ -53,12 +69,16 @@ class GiftDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string player_id = 2;</code>
+     * Generated from protobuf field <code>string player_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPlayerId($var)
     {
         GPBUtil::checkString($var, True);
         $this->player_id = $var;
+
+        return $this;
     }
 
 }

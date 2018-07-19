@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Result</code>
- */
-class DownloadItemTemplatesResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\DownloadItemTemplatesResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>PAGE = 2;</code>
-     */
-    const PAGE = 2;
-    /**
-     * <code>RETRY = 3;</code>
-     */
-    const RETRY = 3;
+    class DownloadItemTemplatesResponse_Result {}
 }
+class_exists(DownloadItemTemplatesResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\DownloadItemTemplatesResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\DownloadItemTemplatesResponse\Result instead', E_USER_DEPRECATED);
 

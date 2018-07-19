@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Telemetry;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Platform.Telemetry.Distribution.Range</code>
- */
-class Distribution_Range extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>int64 min = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Telemetry\Distribution\Range instead.
+     * @deprecated
      */
-    private $min = 0;
-    /**
-     * <code>int64 max = 2;</code>
-     */
-    private $max = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Platform\Telemetry\Distribution::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>int64 min = 1;</code>
-     */
-    public function getMin()
-    {
-        return $this->min;
-    }
-
-    /**
-     * <code>int64 min = 1;</code>
-     */
-    public function setMin($var)
-    {
-        GPBUtil::checkInt64($var);
-        $this->min = $var;
-    }
-
-    /**
-     * <code>int64 max = 2;</code>
-     */
-    public function getMax()
-    {
-        return $this->max;
-    }
-
-    /**
-     * <code>int64 max = 2;</code>
-     */
-    public function setMax($var)
-    {
-        GPBUtil::checkInt64($var);
-        $this->max = $var;
-    }
-
+    class Distribution_Range {}
 }
+class_exists(Distribution\Range::class);
+@trigger_error('POGOProtos\Networking\Platform\Telemetry\Distribution_Range is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Telemetry\Distribution\Range instead', E_USER_DEPRECATED);
 

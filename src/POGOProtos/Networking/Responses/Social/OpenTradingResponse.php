@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.Social.OpenTradingResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.Social.OpenTradingResponse</code>
  */
 class OpenTradingResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.OpenTradingResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.OpenTradingResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Data.Trading.Trading trading = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Trading.Trading trading = 2;</code>
      */
     private $trading = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\Trading\Trading $trading
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\Social\OpenTradingResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.OpenTradingResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.OpenTradingResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class OpenTradingResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.OpenTradingResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.OpenTradingResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\Social\OpenTradingResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Trading.Trading trading = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Trading.Trading trading = 2;</code>
+     * @return \POGOProtos\Data\Trading\Trading
      */
     public function getTrading()
     {
@@ -53,12 +69,16 @@ class OpenTradingResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Trading.Trading trading = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Trading.Trading trading = 2;</code>
+     * @param \POGOProtos\Data\Trading\Trading $var
+     * @return $this
      */
-    public function setTrading(&$var)
+    public function setTrading($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Trading\Trading::class);
         $this->trading = $var;
+
+        return $this;
     }
 
 }

@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.BackgroundToken</code>
+ * Generated from protobuf message <code>POGOProtos.Data.BackgroundToken</code>
  */
 class BackgroundToken extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bytes token = 1;</code>
+     * Generated from protobuf field <code>bytes token = 1;</code>
      */
     private $token = '';
     /**
-     * <code>int64 expiration_time = 2;</code>
+     * Generated from protobuf field <code>int64 expiration_time = 2;</code>
      */
     private $expiration_time = 0;
     /**
-     * <code>bytes iv = 3;</code>
+     * Generated from protobuf field <code>bytes iv = 3;</code>
      */
     private $iv = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $token
+     *     @type int|string $expiration_time
+     *     @type string $iv
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\BackgroundToken::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bytes token = 1;</code>
+     * Generated from protobuf field <code>bytes token = 1;</code>
+     * @return string
      */
     public function getToken()
     {
@@ -40,16 +52,21 @@ class BackgroundToken extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes token = 1;</code>
+     * Generated from protobuf field <code>bytes token = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setToken($var)
     {
         GPBUtil::checkString($var, False);
         $this->token = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 expiration_time = 2;</code>
+     * Generated from protobuf field <code>int64 expiration_time = 2;</code>
+     * @return int|string
      */
     public function getExpirationTime()
     {
@@ -57,16 +74,21 @@ class BackgroundToken extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 expiration_time = 2;</code>
+     * Generated from protobuf field <code>int64 expiration_time = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setExpirationTime($var)
     {
         GPBUtil::checkInt64($var);
         $this->expiration_time = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bytes iv = 3;</code>
+     * Generated from protobuf field <code>bytes iv = 3;</code>
+     * @return string
      */
     public function getIv()
     {
@@ -74,12 +96,16 @@ class BackgroundToken extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes iv = 3;</code>
+     * Generated from protobuf field <code>bytes iv = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setIv($var)
     {
         GPBUtil::checkString($var, False);
         $this->iv = $var;
+
+        return $this;
     }
 
 }

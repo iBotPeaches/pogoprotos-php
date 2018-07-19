@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.AssetDigestEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.AssetDigestEntry</code>
  */
 class AssetDigestEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string asset_id = 1;</code>
+     * Generated from protobuf field <code>string asset_id = 1;</code>
      */
     private $asset_id = '';
     /**
-     * <code>string bundle_name = 2;</code>
+     * Generated from protobuf field <code>string bundle_name = 2;</code>
      */
     private $bundle_name = '';
     /**
-     * <code>int64 version = 3;</code>
+     * Generated from protobuf field <code>int64 version = 3;</code>
      */
     private $version = 0;
     /**
-     * <code>fixed32 checksum = 4;</code>
+     * Generated from protobuf field <code>fixed32 checksum = 4;</code>
      */
     private $checksum = 0;
     /**
-     * <code>int32 size = 5;</code>
+     * Generated from protobuf field <code>int32 size = 5;</code>
      */
     private $size = 0;
     /**
-     * <code>bytes key = 6;</code>
+     * Generated from protobuf field <code>bytes key = 6;</code>
      */
     private $key = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $asset_id
+     *     @type string $bundle_name
+     *     @type int|string $version
+     *     @type int $checksum
+     *     @type int $size
+     *     @type string $key
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\AssetDigestEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string asset_id = 1;</code>
+     * Generated from protobuf field <code>string asset_id = 1;</code>
+     * @return string
      */
     public function getAssetId()
     {
@@ -52,16 +67,21 @@ class AssetDigestEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string asset_id = 1;</code>
+     * Generated from protobuf field <code>string asset_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAssetId($var)
     {
         GPBUtil::checkString($var, True);
         $this->asset_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string bundle_name = 2;</code>
+     * Generated from protobuf field <code>string bundle_name = 2;</code>
+     * @return string
      */
     public function getBundleName()
     {
@@ -69,16 +89,21 @@ class AssetDigestEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string bundle_name = 2;</code>
+     * Generated from protobuf field <code>string bundle_name = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setBundleName($var)
     {
         GPBUtil::checkString($var, True);
         $this->bundle_name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 version = 3;</code>
+     * Generated from protobuf field <code>int64 version = 3;</code>
+     * @return int|string
      */
     public function getVersion()
     {
@@ -86,16 +111,21 @@ class AssetDigestEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 version = 3;</code>
+     * Generated from protobuf field <code>int64 version = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setVersion($var)
     {
         GPBUtil::checkInt64($var);
         $this->version = $var;
+
+        return $this;
     }
 
     /**
-     * <code>fixed32 checksum = 4;</code>
+     * Generated from protobuf field <code>fixed32 checksum = 4;</code>
+     * @return int
      */
     public function getChecksum()
     {
@@ -103,16 +133,21 @@ class AssetDigestEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed32 checksum = 4;</code>
+     * Generated from protobuf field <code>fixed32 checksum = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setChecksum($var)
     {
         GPBUtil::checkUint32($var);
         $this->checksum = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 size = 5;</code>
+     * Generated from protobuf field <code>int32 size = 5;</code>
+     * @return int
      */
     public function getSize()
     {
@@ -120,16 +155,21 @@ class AssetDigestEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 size = 5;</code>
+     * Generated from protobuf field <code>int32 size = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSize($var)
     {
         GPBUtil::checkInt32($var);
         $this->size = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bytes key = 6;</code>
+     * Generated from protobuf field <code>bytes key = 6;</code>
+     * @return string
      */
     public function getKey()
     {
@@ -137,12 +177,16 @@ class AssetDigestEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes key = 6;</code>
+     * Generated from protobuf field <code>bytes key = 6;</code>
+     * @param string $var
+     * @return $this
      */
     public function setKey($var)
     {
         GPBUtil::checkString($var, False);
         $this->key = $var;
+
+        return $this;
     }
 
 }

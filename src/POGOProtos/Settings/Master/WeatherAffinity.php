@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.WeatherAffinity</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.WeatherAffinity</code>
  */
 class WeatherAffinity extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 1;</code>
      */
     private $weather_condition = 0;
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;</code>
      */
     private $pokemon_type;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $weather_condition
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $pokemon_type
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\WeatherAffinity::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 1;</code>
+     * @return int
      */
     public function getWeatherCondition()
     {
@@ -36,16 +47,21 @@ class WeatherAffinity extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setWeatherCondition($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_WeatherCondition::class);
         $this->weather_condition = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPokemonType()
     {
@@ -53,12 +69,16 @@ class WeatherAffinity extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPokemonType(&$var)
+    public function setPokemonType($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\PokemonType::class);
-        $this->pokemon_type = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\PokemonType::class);
+        $this->pokemon_type = $arr;
+
+        return $this;
     }
 
 }

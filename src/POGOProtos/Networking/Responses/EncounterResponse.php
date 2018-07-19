@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.EncounterResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.EncounterResponse</code>
  */
 class EncounterResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon wild_pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Pokemon.WildPokemon wild_pokemon = 1;</code>
      */
     private $wild_pokemon = null;
     /**
-     * <code>.POGOProtos.Networking.Responses.EncounterResponse.Background background = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.EncounterResponse.Background background = 2;</code>
      */
     private $background = 0;
     /**
-     * <code>.POGOProtos.Networking.Responses.EncounterResponse.Status status = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.EncounterResponse.Status status = 3;</code>
      */
     private $status = 0;
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 4;</code>
      */
     private $capture_probability = null;
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId active_item = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId active_item = 5;</code>
      */
     private $active_item = 0;
     /**
-     * <code>int32 arplus_attempts_until_flee = 6;</code>
+     * Generated from protobuf field <code>int32 arplus_attempts_until_flee = 6;</code>
      */
     private $arplus_attempts_until_flee = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Map\Pokemon\WildPokemon $wild_pokemon
+     *     @type int $background
+     *     @type int $status
+     *     @type \POGOProtos\Data\Capture\CaptureProbability $capture_probability
+     *     @type int $active_item
+     *     @type int $arplus_attempts_until_flee
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\EncounterResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon wild_pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Pokemon.WildPokemon wild_pokemon = 1;</code>
+     * @return \POGOProtos\Map\Pokemon\WildPokemon
      */
     public function getWildPokemon()
     {
@@ -52,16 +67,21 @@ class EncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon wild_pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Pokemon.WildPokemon wild_pokemon = 1;</code>
+     * @param \POGOProtos\Map\Pokemon\WildPokemon $var
+     * @return $this
      */
-    public function setWildPokemon(&$var)
+    public function setWildPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Map\Pokemon\WildPokemon::class);
         $this->wild_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.EncounterResponse.Background background = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.EncounterResponse.Background background = 2;</code>
+     * @return int
      */
     public function getBackground()
     {
@@ -69,16 +89,21 @@ class EncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.EncounterResponse.Background background = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.EncounterResponse.Background background = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBackground($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\EncounterResponse_Background::class);
         $this->background = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.EncounterResponse.Status status = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.EncounterResponse.Status status = 3;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -86,16 +111,21 @@ class EncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.EncounterResponse.Status status = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.EncounterResponse.Status status = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\EncounterResponse_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 4;</code>
+     * @return \POGOProtos\Data\Capture\CaptureProbability
      */
     public function getCaptureProbability()
     {
@@ -103,16 +133,21 @@ class EncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 4;</code>
+     * @param \POGOProtos\Data\Capture\CaptureProbability $var
+     * @return $this
      */
-    public function setCaptureProbability(&$var)
+    public function setCaptureProbability($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Capture\CaptureProbability::class);
         $this->capture_probability = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId active_item = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId active_item = 5;</code>
+     * @return int
      */
     public function getActiveItem()
     {
@@ -120,16 +155,21 @@ class EncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId active_item = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId active_item = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setActiveItem($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->active_item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 arplus_attempts_until_flee = 6;</code>
+     * Generated from protobuf field <code>int32 arplus_attempts_until_flee = 6;</code>
+     * @return int
      */
     public function getArplusAttemptsUntilFlee()
     {
@@ -137,12 +177,16 @@ class EncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 arplus_attempts_until_flee = 6;</code>
+     * Generated from protobuf field <code>int32 arplus_attempts_until_flee = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setArplusAttemptsUntilFlee($var)
     {
         GPBUtil::checkInt32($var);
         $this->arplus_attempts_until_flee = $var;
+
+        return $this;
     }
 
 }

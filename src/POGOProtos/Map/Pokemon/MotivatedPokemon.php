@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Pokemon.MotivatedPokemon</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Pokemon.MotivatedPokemon</code>
  */
 class MotivatedPokemon extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon = 1;</code>
      */
     private $pokemon = null;
     /**
-     * <code>int64 deploy_ms = 2;</code>
+     * Generated from protobuf field <code>int64 deploy_ms = 2;</code>
      */
     private $deploy_ms = 0;
     /**
-     * <code>int32 cp_when_deployed = 3;</code>
+     * Generated from protobuf field <code>int32 cp_when_deployed = 3;</code>
      */
     private $cp_when_deployed = 0;
     /**
-     * <code>double motivation_now = 4;</code>
+     * Generated from protobuf field <code>double motivation_now = 4;</code>
      */
     private $motivation_now = 0.0;
     /**
-     * <code>int32 cp_now = 5;</code>
+     * Generated from protobuf field <code>int32 cp_now = 5;</code>
      */
     private $cp_now = 0;
     /**
-     * <code>float berry_value = 6;</code>
+     * Generated from protobuf field <code>float berry_value = 6;</code>
      */
     private $berry_value = 0.0;
     /**
-     * <code>int64 feed_cooldown_duration_millis = 7;</code>
+     * Generated from protobuf field <code>int64 feed_cooldown_duration_millis = 7;</code>
      */
     private $feed_cooldown_duration_millis = 0;
     /**
-     * <code>repeated .POGOProtos.Data.FoodValue food_value = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.FoodValue food_value = 8;</code>
      */
     private $food_value;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\PokemonData $pokemon
+     *     @type int|string $deploy_ms
+     *     @type int $cp_when_deployed
+     *     @type float $motivation_now
+     *     @type int $cp_now
+     *     @type float $berry_value
+     *     @type int|string $feed_cooldown_duration_millis
+     *     @type \POGOProtos\Data\FoodValue[]|\Google\Protobuf\Internal\RepeatedField $food_value
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Pokemon\MotivatedPokemon::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon = 1;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getPokemon()
     {
@@ -60,16 +77,21 @@ class MotivatedPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon = 1;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setPokemon(&$var)
+    public function setPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 deploy_ms = 2;</code>
+     * Generated from protobuf field <code>int64 deploy_ms = 2;</code>
+     * @return int|string
      */
     public function getDeployMs()
     {
@@ -77,16 +99,21 @@ class MotivatedPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 deploy_ms = 2;</code>
+     * Generated from protobuf field <code>int64 deploy_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setDeployMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->deploy_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 cp_when_deployed = 3;</code>
+     * Generated from protobuf field <code>int32 cp_when_deployed = 3;</code>
+     * @return int
      */
     public function getCpWhenDeployed()
     {
@@ -94,16 +121,21 @@ class MotivatedPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 cp_when_deployed = 3;</code>
+     * Generated from protobuf field <code>int32 cp_when_deployed = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCpWhenDeployed($var)
     {
         GPBUtil::checkInt32($var);
         $this->cp_when_deployed = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double motivation_now = 4;</code>
+     * Generated from protobuf field <code>double motivation_now = 4;</code>
+     * @return float
      */
     public function getMotivationNow()
     {
@@ -111,16 +143,21 @@ class MotivatedPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double motivation_now = 4;</code>
+     * Generated from protobuf field <code>double motivation_now = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setMotivationNow($var)
     {
         GPBUtil::checkDouble($var);
         $this->motivation_now = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 cp_now = 5;</code>
+     * Generated from protobuf field <code>int32 cp_now = 5;</code>
+     * @return int
      */
     public function getCpNow()
     {
@@ -128,16 +165,21 @@ class MotivatedPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 cp_now = 5;</code>
+     * Generated from protobuf field <code>int32 cp_now = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCpNow($var)
     {
         GPBUtil::checkInt32($var);
         $this->cp_now = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float berry_value = 6;</code>
+     * Generated from protobuf field <code>float berry_value = 6;</code>
+     * @return float
      */
     public function getBerryValue()
     {
@@ -145,16 +187,21 @@ class MotivatedPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float berry_value = 6;</code>
+     * Generated from protobuf field <code>float berry_value = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setBerryValue($var)
     {
         GPBUtil::checkFloat($var);
         $this->berry_value = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 feed_cooldown_duration_millis = 7;</code>
+     * Generated from protobuf field <code>int64 feed_cooldown_duration_millis = 7;</code>
+     * @return int|string
      */
     public function getFeedCooldownDurationMillis()
     {
@@ -162,16 +209,21 @@ class MotivatedPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 feed_cooldown_duration_millis = 7;</code>
+     * Generated from protobuf field <code>int64 feed_cooldown_duration_millis = 7;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setFeedCooldownDurationMillis($var)
     {
         GPBUtil::checkInt64($var);
         $this->feed_cooldown_duration_millis = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.FoodValue food_value = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.FoodValue food_value = 8;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getFoodValue()
     {
@@ -179,12 +231,16 @@ class MotivatedPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.FoodValue food_value = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.FoodValue food_value = 8;</code>
+     * @param \POGOProtos\Data\FoodValue[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setFoodValue(&$var)
+    public function setFoodValue($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\FoodValue::class);
-        $this->food_value = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\FoodValue::class);
+        $this->food_value = $arr;
+
+        return $this;
     }
 
 }

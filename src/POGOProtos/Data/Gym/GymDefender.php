@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Gym.GymDefender</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Gym.GymDefender</code>
  */
 class GymDefender extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Map.Pokemon.MotivatedPokemon motivated_pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Pokemon.MotivatedPokemon motivated_pokemon = 1;</code>
      */
     private $motivated_pokemon = null;
     /**
-     * <code>.POGOProtos.Data.Gym.GymDefender.DeploymentTotals deployment_totals = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymDefender.DeploymentTotals deployment_totals = 2;</code>
      */
     private $deployment_totals = null;
     /**
-     * <code>.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 3;</code>
      */
     private $trainer_public_profile = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Map\Pokemon\MotivatedPokemon $motivated_pokemon
+     *     @type \POGOProtos\Data\Gym\GymDefender\DeploymentTotals $deployment_totals
+     *     @type \POGOProtos\Data\Player\PlayerPublicProfile $trainer_public_profile
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Gym\GymDefender::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Map.Pokemon.MotivatedPokemon motivated_pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Pokemon.MotivatedPokemon motivated_pokemon = 1;</code>
+     * @return \POGOProtos\Map\Pokemon\MotivatedPokemon
      */
     public function getMotivatedPokemon()
     {
@@ -40,16 +52,21 @@ class GymDefender extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Pokemon.MotivatedPokemon motivated_pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Pokemon.MotivatedPokemon motivated_pokemon = 1;</code>
+     * @param \POGOProtos\Map\Pokemon\MotivatedPokemon $var
+     * @return $this
      */
-    public function setMotivatedPokemon(&$var)
+    public function setMotivatedPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Map\Pokemon\MotivatedPokemon::class);
         $this->motivated_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Gym.GymDefender.DeploymentTotals deployment_totals = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymDefender.DeploymentTotals deployment_totals = 2;</code>
+     * @return \POGOProtos\Data\Gym\GymDefender\DeploymentTotals
      */
     public function getDeploymentTotals()
     {
@@ -57,16 +74,21 @@ class GymDefender extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Gym.GymDefender.DeploymentTotals deployment_totals = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymDefender.DeploymentTotals deployment_totals = 2;</code>
+     * @param \POGOProtos\Data\Gym\GymDefender\DeploymentTotals $var
+     * @return $this
      */
-    public function setDeploymentTotals(&$var)
+    public function setDeploymentTotals($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Gym\GymDefender_DeploymentTotals::class);
         $this->deployment_totals = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 3;</code>
+     * @return \POGOProtos\Data\Player\PlayerPublicProfile
      */
     public function getTrainerPublicProfile()
     {
@@ -74,12 +96,16 @@ class GymDefender extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 3;</code>
+     * @param \POGOProtos\Data\Player\PlayerPublicProfile $var
+     * @return $this
      */
-    public function setTrainerPublicProfile(&$var)
+    public function setTrainerPublicProfile($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerPublicProfile::class);
         $this->trainer_public_profile = $var;
+
+        return $this;
     }
 
 }

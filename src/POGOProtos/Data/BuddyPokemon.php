@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.BuddyPokemon</code>
+ * Generated from protobuf message <code>POGOProtos.Data.BuddyPokemon</code>
  */
 class BuddyPokemon extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>fixed64 id = 1;</code>
+     * Generated from protobuf field <code>fixed64 id = 1;</code>
      */
     private $id = 0;
     /**
-     * <code>double start_km_walked = 2;</code>
+     * Generated from protobuf field <code>double start_km_walked = 2;</code>
      */
     private $start_km_walked = 0.0;
     /**
-     * <code>double last_km_awarded = 3;</code>
+     * Generated from protobuf field <code>double last_km_awarded = 3;</code>
      */
     private $last_km_awarded = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $id
+     *     @type float $start_km_walked
+     *     @type float $last_km_awarded
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\BuddyPokemon::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>fixed64 id = 1;</code>
+     * Generated from protobuf field <code>fixed64 id = 1;</code>
+     * @return int|string
      */
     public function getId()
     {
@@ -40,16 +52,21 @@ class BuddyPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 id = 1;</code>
+     * Generated from protobuf field <code>fixed64 id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setId($var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double start_km_walked = 2;</code>
+     * Generated from protobuf field <code>double start_km_walked = 2;</code>
+     * @return float
      */
     public function getStartKmWalked()
     {
@@ -57,16 +74,21 @@ class BuddyPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double start_km_walked = 2;</code>
+     * Generated from protobuf field <code>double start_km_walked = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setStartKmWalked($var)
     {
         GPBUtil::checkDouble($var);
         $this->start_km_walked = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double last_km_awarded = 3;</code>
+     * Generated from protobuf field <code>double last_km_awarded = 3;</code>
+     * @return float
      */
     public function getLastKmAwarded()
     {
@@ -74,12 +96,16 @@ class BuddyPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double last_km_awarded = 3;</code>
+     * Generated from protobuf field <code>double last_km_awarded = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLastKmAwarded($var)
     {
         GPBUtil::checkDouble($var);
         $this->last_km_awarded = $var;
+
+        return $this;
     }
 
 }

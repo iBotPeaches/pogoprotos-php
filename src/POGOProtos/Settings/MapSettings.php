@@ -9,58 +9,77 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.MapSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.MapSettings</code>
  */
 class MapSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>double pokemon_visible_range = 1;</code>
+     * Generated from protobuf field <code>double pokemon_visible_range = 1;</code>
      */
     private $pokemon_visible_range = 0.0;
     /**
-     * <code>double poke_nav_range_meters = 2;</code>
+     * Generated from protobuf field <code>double poke_nav_range_meters = 2;</code>
      */
     private $poke_nav_range_meters = 0.0;
     /**
-     * <code>double encounter_range_meters = 3;</code>
+     * Generated from protobuf field <code>double encounter_range_meters = 3;</code>
      */
     private $encounter_range_meters = 0.0;
     /**
-     * <code>float get_map_objects_min_refresh_seconds = 4;</code>
+     * Generated from protobuf field <code>float get_map_objects_min_refresh_seconds = 4;</code>
      */
     private $get_map_objects_min_refresh_seconds = 0.0;
     /**
-     * <code>float get_map_objects_max_refresh_seconds = 5;</code>
+     * Generated from protobuf field <code>float get_map_objects_max_refresh_seconds = 5;</code>
      */
     private $get_map_objects_max_refresh_seconds = 0.0;
     /**
-     * <code>float get_map_objects_min_distance_meters = 6;</code>
+     * Generated from protobuf field <code>float get_map_objects_min_distance_meters = 6;</code>
      */
     private $get_map_objects_min_distance_meters = 0.0;
     /**
-     * <code>string google_maps_api_key = 7;</code>
+     * Generated from protobuf field <code>string google_maps_api_key = 7;</code>
      */
     private $google_maps_api_key = '';
     /**
-     * <code>int32 min_nearby_hide_sightings = 8;</code>
+     * Generated from protobuf field <code>int32 min_nearby_hide_sightings = 8;</code>
      */
     private $min_nearby_hide_sightings = 0;
     /**
-     * <code>bool enable_special_weather = 9;</code>
+     * Generated from protobuf field <code>bool enable_special_weather = 9;</code>
      */
     private $enable_special_weather = false;
     /**
-     * <code>float special_weather_probability = 10;</code>
+     * Generated from protobuf field <code>float special_weather_probability = 10;</code>
      */
     private $special_weather_probability = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $pokemon_visible_range
+     *     @type float $poke_nav_range_meters
+     *     @type float $encounter_range_meters
+     *     @type float $get_map_objects_min_refresh_seconds
+     *     @type float $get_map_objects_max_refresh_seconds
+     *     @type float $get_map_objects_min_distance_meters
+     *     @type string $google_maps_api_key
+     *     @type int $min_nearby_hide_sightings
+     *     @type bool $enable_special_weather
+     *     @type float $special_weather_probability
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\MapSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>double pokemon_visible_range = 1;</code>
+     * Generated from protobuf field <code>double pokemon_visible_range = 1;</code>
+     * @return float
      */
     public function getPokemonVisibleRange()
     {
@@ -68,16 +87,21 @@ class MapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double pokemon_visible_range = 1;</code>
+     * Generated from protobuf field <code>double pokemon_visible_range = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPokemonVisibleRange($var)
     {
         GPBUtil::checkDouble($var);
         $this->pokemon_visible_range = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double poke_nav_range_meters = 2;</code>
+     * Generated from protobuf field <code>double poke_nav_range_meters = 2;</code>
+     * @return float
      */
     public function getPokeNavRangeMeters()
     {
@@ -85,16 +109,21 @@ class MapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double poke_nav_range_meters = 2;</code>
+     * Generated from protobuf field <code>double poke_nav_range_meters = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPokeNavRangeMeters($var)
     {
         GPBUtil::checkDouble($var);
         $this->poke_nav_range_meters = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double encounter_range_meters = 3;</code>
+     * Generated from protobuf field <code>double encounter_range_meters = 3;</code>
+     * @return float
      */
     public function getEncounterRangeMeters()
     {
@@ -102,16 +131,21 @@ class MapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double encounter_range_meters = 3;</code>
+     * Generated from protobuf field <code>double encounter_range_meters = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setEncounterRangeMeters($var)
     {
         GPBUtil::checkDouble($var);
         $this->encounter_range_meters = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float get_map_objects_min_refresh_seconds = 4;</code>
+     * Generated from protobuf field <code>float get_map_objects_min_refresh_seconds = 4;</code>
+     * @return float
      */
     public function getGetMapObjectsMinRefreshSeconds()
     {
@@ -119,16 +153,21 @@ class MapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float get_map_objects_min_refresh_seconds = 4;</code>
+     * Generated from protobuf field <code>float get_map_objects_min_refresh_seconds = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setGetMapObjectsMinRefreshSeconds($var)
     {
         GPBUtil::checkFloat($var);
         $this->get_map_objects_min_refresh_seconds = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float get_map_objects_max_refresh_seconds = 5;</code>
+     * Generated from protobuf field <code>float get_map_objects_max_refresh_seconds = 5;</code>
+     * @return float
      */
     public function getGetMapObjectsMaxRefreshSeconds()
     {
@@ -136,16 +175,21 @@ class MapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float get_map_objects_max_refresh_seconds = 5;</code>
+     * Generated from protobuf field <code>float get_map_objects_max_refresh_seconds = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setGetMapObjectsMaxRefreshSeconds($var)
     {
         GPBUtil::checkFloat($var);
         $this->get_map_objects_max_refresh_seconds = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float get_map_objects_min_distance_meters = 6;</code>
+     * Generated from protobuf field <code>float get_map_objects_min_distance_meters = 6;</code>
+     * @return float
      */
     public function getGetMapObjectsMinDistanceMeters()
     {
@@ -153,16 +197,21 @@ class MapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float get_map_objects_min_distance_meters = 6;</code>
+     * Generated from protobuf field <code>float get_map_objects_min_distance_meters = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setGetMapObjectsMinDistanceMeters($var)
     {
         GPBUtil::checkFloat($var);
         $this->get_map_objects_min_distance_meters = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string google_maps_api_key = 7;</code>
+     * Generated from protobuf field <code>string google_maps_api_key = 7;</code>
+     * @return string
      */
     public function getGoogleMapsApiKey()
     {
@@ -170,16 +219,21 @@ class MapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string google_maps_api_key = 7;</code>
+     * Generated from protobuf field <code>string google_maps_api_key = 7;</code>
+     * @param string $var
+     * @return $this
      */
     public function setGoogleMapsApiKey($var)
     {
         GPBUtil::checkString($var, True);
         $this->google_maps_api_key = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 min_nearby_hide_sightings = 8;</code>
+     * Generated from protobuf field <code>int32 min_nearby_hide_sightings = 8;</code>
+     * @return int
      */
     public function getMinNearbyHideSightings()
     {
@@ -187,16 +241,21 @@ class MapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 min_nearby_hide_sightings = 8;</code>
+     * Generated from protobuf field <code>int32 min_nearby_hide_sightings = 8;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMinNearbyHideSightings($var)
     {
         GPBUtil::checkInt32($var);
         $this->min_nearby_hide_sightings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool enable_special_weather = 9;</code>
+     * Generated from protobuf field <code>bool enable_special_weather = 9;</code>
+     * @return bool
      */
     public function getEnableSpecialWeather()
     {
@@ -204,16 +263,21 @@ class MapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool enable_special_weather = 9;</code>
+     * Generated from protobuf field <code>bool enable_special_weather = 9;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEnableSpecialWeather($var)
     {
         GPBUtil::checkBool($var);
         $this->enable_special_weather = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float special_weather_probability = 10;</code>
+     * Generated from protobuf field <code>float special_weather_probability = 10;</code>
+     * @return float
      */
     public function getSpecialWeatherProbability()
     {
@@ -221,12 +285,16 @@ class MapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float special_weather_probability = 10;</code>
+     * Generated from protobuf field <code>float special_weather_probability = 10;</code>
+     * @param float $var
+     * @return $this
      */
     public function setSpecialWeatherProbability($var)
     {
         GPBUtil::checkFloat($var);
         $this->special_weather_probability = $var;
+
+        return $this;
     }
 
 }

@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Weather.DisplayWeather</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Weather.DisplayWeather</code>
  */
 class DisplayWeather extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel cloud_level = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel cloud_level = 1;</code>
      */
     private $cloud_level = 0;
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel rain_level = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel rain_level = 2;</code>
      */
     private $rain_level = 0;
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel wind_level = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel wind_level = 3;</code>
      */
     private $wind_level = 0;
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel snow_level = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel snow_level = 4;</code>
      */
     private $snow_level = 0;
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel fog_level = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel fog_level = 5;</code>
      */
     private $fog_level = 0;
     /**
-     * <code>int32 wind_direction = 6;</code>
+     * Generated from protobuf field <code>int32 wind_direction = 6;</code>
      */
     private $wind_direction = 0;
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel special_effect_level = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel special_effect_level = 7;</code>
      */
     private $special_effect_level = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $cloud_level
+     *     @type int $rain_level
+     *     @type int $wind_level
+     *     @type int $snow_level
+     *     @type int $fog_level
+     *     @type int $wind_direction
+     *     @type int $special_effect_level
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Weather\DisplayWeather::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel cloud_level = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel cloud_level = 1;</code>
+     * @return int
      */
     public function getCloudLevel()
     {
@@ -56,16 +72,21 @@ class DisplayWeather extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel cloud_level = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel cloud_level = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCloudLevel($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Weather\DisplayWeather_DisplayLevel::class);
         $this->cloud_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel rain_level = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel rain_level = 2;</code>
+     * @return int
      */
     public function getRainLevel()
     {
@@ -73,16 +94,21 @@ class DisplayWeather extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel rain_level = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel rain_level = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRainLevel($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Weather\DisplayWeather_DisplayLevel::class);
         $this->rain_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel wind_level = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel wind_level = 3;</code>
+     * @return int
      */
     public function getWindLevel()
     {
@@ -90,16 +116,21 @@ class DisplayWeather extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel wind_level = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel wind_level = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setWindLevel($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Weather\DisplayWeather_DisplayLevel::class);
         $this->wind_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel snow_level = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel snow_level = 4;</code>
+     * @return int
      */
     public function getSnowLevel()
     {
@@ -107,16 +138,21 @@ class DisplayWeather extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel snow_level = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel snow_level = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSnowLevel($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Weather\DisplayWeather_DisplayLevel::class);
         $this->snow_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel fog_level = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel fog_level = 5;</code>
+     * @return int
      */
     public function getFogLevel()
     {
@@ -124,16 +160,21 @@ class DisplayWeather extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel fog_level = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel fog_level = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setFogLevel($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Weather\DisplayWeather_DisplayLevel::class);
         $this->fog_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 wind_direction = 6;</code>
+     * Generated from protobuf field <code>int32 wind_direction = 6;</code>
+     * @return int
      */
     public function getWindDirection()
     {
@@ -141,16 +182,21 @@ class DisplayWeather extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 wind_direction = 6;</code>
+     * Generated from protobuf field <code>int32 wind_direction = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setWindDirection($var)
     {
         GPBUtil::checkInt32($var);
         $this->wind_direction = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel special_effect_level = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel special_effect_level = 7;</code>
+     * @return int
      */
     public function getSpecialEffectLevel()
     {
@@ -158,12 +204,16 @@ class DisplayWeather extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel special_effect_level = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather.DisplayLevel special_effect_level = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSpecialEffectLevel($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Weather\DisplayWeather_DisplayLevel::class);
         $this->special_effect_level = $var;
+
+        return $this;
     }
 
 }

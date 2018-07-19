@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Social.GetFriendDetailsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Social.GetFriendDetailsMessage</code>
  */
 class GetFriendDetailsMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated string player_id = 1;</code>
+     * Generated from protobuf field <code>repeated string player_id = 1;</code>
      */
     private $player_id;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $player_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Social\GetFriendDetailsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated string player_id = 1;</code>
+     * Generated from protobuf field <code>repeated string player_id = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPlayerId()
     {
@@ -32,12 +42,16 @@ class GetFriendDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string player_id = 1;</code>
+     * Generated from protobuf field <code>repeated string player_id = 1;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPlayerId(&$var)
+    public function setPlayerId($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->player_id = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->player_id = $arr;
+
+        return $this;
     }
 
 }

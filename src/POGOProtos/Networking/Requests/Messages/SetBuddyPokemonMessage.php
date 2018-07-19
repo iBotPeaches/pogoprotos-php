@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.SetBuddyPokemonMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.SetBuddyPokemonMessage</code>
  */
 class SetBuddyPokemonMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
      */
     private $pokemon_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $pokemon_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\SetBuddyPokemonMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
+     * @return int|string
      */
     public function getPokemonId()
     {
@@ -32,12 +42,16 @@ class SetBuddyPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
 }

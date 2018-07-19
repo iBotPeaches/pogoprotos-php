@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Redeem.PokeCandy</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Redeem.PokeCandy</code>
  */
 class PokeCandy extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
      */
     private $pokemon_id = 0;
     /**
-     * <code>int32 candy_count = 2;</code>
+     * Generated from protobuf field <code>int32 candy_count = 2;</code>
      */
     private $candy_count = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $pokemon_id
+     *     @type int $candy_count
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Redeem\PokeCandy::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
+     * @return int|string
      */
     public function getPokemonId()
     {
@@ -36,16 +47,21 @@ class PokeCandy extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 candy_count = 2;</code>
+     * Generated from protobuf field <code>int32 candy_count = 2;</code>
+     * @return int
      */
     public function getCandyCount()
     {
@@ -53,12 +69,16 @@ class PokeCandy extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 candy_count = 2;</code>
+     * Generated from protobuf field <code>int32 candy_count = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCandyCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->candy_count = $var;
+
+        return $this;
     }
 
 }

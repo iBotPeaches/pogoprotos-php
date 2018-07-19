@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.LoginSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.LoginSettings</code>
  */
 class LoginSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool enable_multi_login_linking = 1;</code>
+     * Generated from protobuf field <code>bool enable_multi_login_linking = 1;</code>
      */
     private $enable_multi_login_linking = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $enable_multi_login_linking
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\LoginSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool enable_multi_login_linking = 1;</code>
+     * Generated from protobuf field <code>bool enable_multi_login_linking = 1;</code>
+     * @return bool
      */
     public function getEnableMultiLoginLinking()
     {
@@ -32,12 +42,16 @@ class LoginSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool enable_multi_login_linking = 1;</code>
+     * Generated from protobuf field <code>bool enable_multi_login_linking = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEnableMultiLoginLinking($var)
     {
         GPBUtil::checkBool($var);
         $this->enable_multi_login_linking = $var;
+
+        return $this;
     }
 
 }

@@ -4,38 +4,13 @@
 
 namespace POGOProtos\Networking\Responses\Social;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.Social.InviteFacebookFriendResponse.Result</code>
- */
-class InviteFacebookFriendResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\Social\InviteFacebookFriendResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_UNKNOWN = 2;</code>
-     */
-    const ERROR_UNKNOWN = 2;
-    /**
-     * <code>ERROR_ALREADY_A_FRIEND = 3;</code>
-     */
-    const ERROR_ALREADY_A_FRIEND = 3;
-    /**
-     * <code>ERROR_PLAYER_DOES_NOT_EXIST = 4;</code>
-     */
-    const ERROR_PLAYER_DOES_NOT_EXIST = 4;
-    /**
-     * <code>ERROR_PLAYER_INBOX_FULL = 5;</code>
-     */
-    const ERROR_PLAYER_INBOX_FULL = 5;
-    /**
-     * <code>ERROR_PLAYER_OUTBOX_FULL = 6;</code>
-     */
-    const ERROR_PLAYER_OUTBOX_FULL = 6;
+    class InviteFacebookFriendResponse_Result {}
 }
+class_exists(InviteFacebookFriendResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\Social\InviteFacebookFriendResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\Social\InviteFacebookFriendResponse\Result instead', E_USER_DEPRECATED);
 

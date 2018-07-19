@@ -4,20 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestCondition.WithWinBattleStatus</code>
- */
-class QuestCondition_WithWinBattleStatus extends \Google\Protobuf\Internal\Message
-{
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestCondition::initOnce();
-        parent::__construct();
-    }
-
+if (false) {
+    /**
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestCondition\WithWinBattleStatus instead.
+     * @deprecated
+     */
+    class QuestCondition_WithWinBattleStatus {}
 }
+class_exists(QuestCondition\WithWinBattleStatus::class);
+@trigger_error('POGOProtos\Data\Quests\QuestCondition_WithWinBattleStatus is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestCondition\WithWinBattleStatus instead', E_USER_DEPRECATED);
 

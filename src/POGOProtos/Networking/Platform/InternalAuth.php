@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.InternalAuth</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.InternalAuth</code>
  */
 class InternalAuth extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string email = 1;</code>
+     * Generated from protobuf field <code>string email = 1;</code>
      */
     private $email = '';
     /**
-     * <code>string player_id = 2;</code>
+     * Generated from protobuf field <code>string player_id = 2;</code>
      */
     private $player_id = '';
     /**
-     * <code>string app_id = 3;</code>
+     * Generated from protobuf field <code>string app_id = 3;</code>
      */
     private $app_id = '';
     /**
-     * <code>string key = 4;</code>
+     * Generated from protobuf field <code>string key = 4;</code>
      */
     private $key = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $email
+     *     @type string $player_id
+     *     @type string $app_id
+     *     @type string $key
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\InternalAuth::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string email = 1;</code>
+     * Generated from protobuf field <code>string email = 1;</code>
+     * @return string
      */
     public function getEmail()
     {
@@ -44,16 +57,21 @@ class InternalAuth extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string email = 1;</code>
+     * Generated from protobuf field <code>string email = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setEmail($var)
     {
         GPBUtil::checkString($var, True);
         $this->email = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string player_id = 2;</code>
+     * Generated from protobuf field <code>string player_id = 2;</code>
+     * @return string
      */
     public function getPlayerId()
     {
@@ -61,16 +79,21 @@ class InternalAuth extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string player_id = 2;</code>
+     * Generated from protobuf field <code>string player_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPlayerId($var)
     {
         GPBUtil::checkString($var, True);
         $this->player_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string app_id = 3;</code>
+     * Generated from protobuf field <code>string app_id = 3;</code>
+     * @return string
      */
     public function getAppId()
     {
@@ -78,16 +101,21 @@ class InternalAuth extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string app_id = 3;</code>
+     * Generated from protobuf field <code>string app_id = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAppId($var)
     {
         GPBUtil::checkString($var, True);
         $this->app_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string key = 4;</code>
+     * Generated from protobuf field <code>string key = 4;</code>
+     * @return string
      */
     public function getKey()
     {
@@ -95,12 +123,16 @@ class InternalAuth extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string key = 4;</code>
+     * Generated from protobuf field <code>string key = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setKey($var)
     {
         GPBUtil::checkString($var, True);
         $this->key = $var;
+
+        return $this;
     }
 
 }

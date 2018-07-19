@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Player.PlayerSummary</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Player.PlayerSummary</code>
  */
 class PlayerSummary extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string player_id = 1;</code>
+     * Generated from protobuf field <code>string player_id = 1;</code>
      */
     private $player_id = '';
     /**
-     * <code>string codename = 2;</code>
+     * Generated from protobuf field <code>string codename = 2;</code>
      */
     private $codename = '';
     /**
-     * <code>bytes public_data = 3;</code>
+     * Generated from protobuf field <code>bytes public_data = 3;</code>
      */
     private $public_data = '';
     /**
-     * <code>string team = 4;</code>
+     * Generated from protobuf field <code>string team = 4;</code>
      */
     private $team = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $player_id
+     *     @type string $codename
+     *     @type string $public_data
+     *     @type string $team
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Player\PlayerSummary::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string player_id = 1;</code>
+     * Generated from protobuf field <code>string player_id = 1;</code>
+     * @return string
      */
     public function getPlayerId()
     {
@@ -44,16 +57,21 @@ class PlayerSummary extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string player_id = 1;</code>
+     * Generated from protobuf field <code>string player_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPlayerId($var)
     {
         GPBUtil::checkString($var, True);
         $this->player_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string codename = 2;</code>
+     * Generated from protobuf field <code>string codename = 2;</code>
+     * @return string
      */
     public function getCodename()
     {
@@ -61,16 +79,21 @@ class PlayerSummary extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string codename = 2;</code>
+     * Generated from protobuf field <code>string codename = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setCodename($var)
     {
         GPBUtil::checkString($var, True);
         $this->codename = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bytes public_data = 3;</code>
+     * Generated from protobuf field <code>bytes public_data = 3;</code>
+     * @return string
      */
     public function getPublicData()
     {
@@ -78,16 +101,21 @@ class PlayerSummary extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes public_data = 3;</code>
+     * Generated from protobuf field <code>bytes public_data = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPublicData($var)
     {
         GPBUtil::checkString($var, False);
         $this->public_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string team = 4;</code>
+     * Generated from protobuf field <code>string team = 4;</code>
+     * @return string
      */
     public function getTeam()
     {
@@ -95,12 +123,16 @@ class PlayerSummary extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string team = 4;</code>
+     * Generated from protobuf field <code>string team = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setTeam($var)
     {
         GPBUtil::checkString($var, True);
         $this->team = $var;
+
+        return $this;
     }
 
 }

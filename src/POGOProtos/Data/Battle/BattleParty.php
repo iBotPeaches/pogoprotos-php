@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Battle.BattleParty</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Battle.BattleParty</code>
  */
 class BattleParty extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string name = 1;</code>
+     * Generated from protobuf field <code>string name = 1;</code>
      */
     private $name = '';
     /**
-     * <code>int32 team_number = 2;</code>
+     * Generated from protobuf field <code>int32 team_number = 2;</code>
      */
     private $team_number = 0;
     /**
-     * <code>repeated uint64 ids = 3;</code>
+     * Generated from protobuf field <code>repeated uint64 ids = 3;</code>
      */
     private $ids;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $name
+     *     @type int $team_number
+     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $ids
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Battle\BattleParty::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string name = 1;</code>
+     * Generated from protobuf field <code>string name = 1;</code>
+     * @return string
      */
     public function getName()
     {
@@ -40,16 +52,21 @@ class BattleParty extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string name = 1;</code>
+     * Generated from protobuf field <code>string name = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 team_number = 2;</code>
+     * Generated from protobuf field <code>int32 team_number = 2;</code>
+     * @return int
      */
     public function getTeamNumber()
     {
@@ -57,16 +74,21 @@ class BattleParty extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 team_number = 2;</code>
+     * Generated from protobuf field <code>int32 team_number = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTeamNumber($var)
     {
         GPBUtil::checkInt32($var);
         $this->team_number = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated uint64 ids = 3;</code>
+     * Generated from protobuf field <code>repeated uint64 ids = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getIds()
     {
@@ -74,12 +96,16 @@ class BattleParty extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated uint64 ids = 3;</code>
+     * Generated from protobuf field <code>repeated uint64 ids = 3;</code>
+     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setIds(&$var)
+    public function setIds($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
-        $this->ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
+        $this->ids = $arr;
+
+        return $this;
     }
 
 }

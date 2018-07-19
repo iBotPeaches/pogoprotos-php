@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Weather.WeatherAlert</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Weather.WeatherAlert</code>
  */
 class WeatherAlert extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Map.Weather.WeatherAlert.Severity severity = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.WeatherAlert.Severity severity = 1;</code>
      */
     private $severity = 0;
     /**
-     * <code>bool warn_weather = 2;</code>
+     * Generated from protobuf field <code>bool warn_weather = 2;</code>
      */
     private $warn_weather = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $severity
+     *     @type bool $warn_weather
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Weather\WeatherAlert::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.WeatherAlert.Severity severity = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.WeatherAlert.Severity severity = 1;</code>
+     * @return int
      */
     public function getSeverity()
     {
@@ -36,16 +47,21 @@ class WeatherAlert extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.WeatherAlert.Severity severity = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.WeatherAlert.Severity severity = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSeverity($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Weather\WeatherAlert_Severity::class);
         $this->severity = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool warn_weather = 2;</code>
+     * Generated from protobuf field <code>bool warn_weather = 2;</code>
+     * @return bool
      */
     public function getWarnWeather()
     {
@@ -53,12 +69,16 @@ class WeatherAlert extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool warn_weather = 2;</code>
+     * Generated from protobuf field <code>bool warn_weather = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setWarnWeather($var)
     {
         GPBUtil::checkBool($var);
         $this->warn_weather = $var;
+
+        return $this;
     }
 
 }

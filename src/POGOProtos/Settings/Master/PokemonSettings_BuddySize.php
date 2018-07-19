@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Settings\Master;
 
-/**
- * Protobuf enum <code>POGOProtos.Settings.Master.PokemonSettings.BuddySize</code>
- */
-class PokemonSettings_BuddySize
-{
+if (false) {
     /**
-     * <code>BUDDY_MEDIUM = 0;</code>
+     * This class is deprecated. Use POGOProtos\Settings\Master\PokemonSettings\BuddySize instead.
+     * @deprecated
      */
-    const BUDDY_MEDIUM = 0;
-    /**
-     * <code>BUDDY_SHOULDER = 1;</code>
-     */
-    const BUDDY_SHOULDER = 1;
-    /**
-     * <code>BUDDY_BIG = 2;</code>
-     */
-    const BUDDY_BIG = 2;
-    /**
-     * <code>BUDDY_FLYING = 3;</code>
-     */
-    const BUDDY_FLYING = 3;
-    /**
-     * <code>BUDDY_BABY = 4;</code>
-     */
-    const BUDDY_BABY = 4;
+    class PokemonSettings_BuddySize {}
 }
+class_exists(PokemonSettings\BuddySize::class);
+@trigger_error('POGOProtos\Settings\Master\PokemonSettings_BuddySize is deprecated and will be removed in the next major release. Use POGOProtos\Settings\Master\PokemonSettings\BuddySize instead', E_USER_DEPRECATED);
 

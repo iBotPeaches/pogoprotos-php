@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse</code>
  */
 class GetFriendDetailsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Friends.FriendDetails friend = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Friends.FriendDetails friend = 2;</code>
      */
     private $friend;
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Debug friend_details_debug_info = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Debug friend_details_debug_info = 3;</code>
      */
     private $friend_details_debug_info = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\Friends\FriendDetails[]|\Google\Protobuf\Internal\RepeatedField $friend
+     *     @type \POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse\Debug $friend_details_debug_info
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -40,16 +52,21 @@ class GetFriendDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Friends.FriendDetails friend = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Friends.FriendDetails friend = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getFriend()
     {
@@ -57,16 +74,21 @@ class GetFriendDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Friends.FriendDetails friend = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Friends.FriendDetails friend = 2;</code>
+     * @param \POGOProtos\Data\Friends\FriendDetails[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setFriend(&$var)
+    public function setFriend($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Friends\FriendDetails::class);
-        $this->friend = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Friends\FriendDetails::class);
+        $this->friend = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Debug friend_details_debug_info = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Debug friend_details_debug_info = 3;</code>
+     * @return \POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse\Debug
      */
     public function getFriendDetailsDebugInfo()
     {
@@ -74,12 +96,16 @@ class GetFriendDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Debug friend_details_debug_info = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Debug friend_details_debug_info = 3;</code>
+     * @param \POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse\Debug $var
+     * @return $this
      */
-    public function setFriendDetailsDebugInfo(&$var)
+    public function setFriendDetailsDebugInfo($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse_Debug::class);
         $this->friend_details_debug_info = $var;
+
+        return $this;
     }
 
 }

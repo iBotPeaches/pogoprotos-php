@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses\Social;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.Social.ListFriendsResponse.Result</code>
- */
-class ListFriendsResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\Social\ListFriendsResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_UNKNOWN = 2;</code>
-     */
-    const ERROR_UNKNOWN = 2;
+    class ListFriendsResponse_Result {}
 }
+class_exists(ListFriendsResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\Social\ListFriendsResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\Social\ListFriendsResponse\Result instead', E_USER_DEPRECATED);
 

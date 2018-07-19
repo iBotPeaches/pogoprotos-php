@@ -4,125 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox.TemplateVariable</code>
- */
-class GetInboxResponse_ClientInbox_TemplateVariable extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>string name = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GetInboxResponse\ClientInbox\TemplateVariable instead.
+     * @deprecated
      */
-    private $name = '';
-    /**
-     * <code>string literal = 2;</code>
-     */
-    private $literal = '';
-    /**
-     * <code>string key = 3;</code>
-     */
-    private $key = '';
-    /**
-     * <code>string lookup_table = 4;</code>
-     */
-    private $lookup_table = '';
-    /**
-     * <code>bytes byte_value = 5;</code>
-     */
-    private $byte_value = '';
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Responses\GetInboxResponse::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>string name = 1;</code>
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * <code>string name = 1;</code>
-     */
-    public function setName($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->name = $var;
-    }
-
-    /**
-     * <code>string literal = 2;</code>
-     */
-    public function getLiteral()
-    {
-        return $this->literal;
-    }
-
-    /**
-     * <code>string literal = 2;</code>
-     */
-    public function setLiteral($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->literal = $var;
-    }
-
-    /**
-     * <code>string key = 3;</code>
-     */
-    public function getKey()
-    {
-        return $this->key;
-    }
-
-    /**
-     * <code>string key = 3;</code>
-     */
-    public function setKey($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->key = $var;
-    }
-
-    /**
-     * <code>string lookup_table = 4;</code>
-     */
-    public function getLookupTable()
-    {
-        return $this->lookup_table;
-    }
-
-    /**
-     * <code>string lookup_table = 4;</code>
-     */
-    public function setLookupTable($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->lookup_table = $var;
-    }
-
-    /**
-     * <code>bytes byte_value = 5;</code>
-     */
-    public function getByteValue()
-    {
-        return $this->byte_value;
-    }
-
-    /**
-     * <code>bytes byte_value = 5;</code>
-     */
-    public function setByteValue($var)
-    {
-        GPBUtil::checkString($var, False);
-        $this->byte_value = $var;
-    }
-
+    class GetInboxResponse_ClientInbox_TemplateVariable {}
 }
+class_exists(GetInboxResponse\ClientInbox\TemplateVariable::class);
+@trigger_error('POGOProtos\Networking\Responses\GetInboxResponse_ClientInbox_TemplateVariable is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GetInboxResponse\ClientInbox\TemplateVariable instead', E_USER_DEPRECATED);
 

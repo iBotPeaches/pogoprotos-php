@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.QuestGlobalSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.QuestGlobalSettings</code>
  */
 class QuestGlobalSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool enable_quests = 1;</code>
+     * Generated from protobuf field <code>bool enable_quests = 1;</code>
      */
     private $enable_quests = false;
     /**
-     * <code>int32 max_challenge_quests = 2;</code>
+     * Generated from protobuf field <code>int32 max_challenge_quests = 2;</code>
      */
     private $max_challenge_quests = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $enable_quests
+     *     @type int $max_challenge_quests
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\QuestGlobalSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool enable_quests = 1;</code>
+     * Generated from protobuf field <code>bool enable_quests = 1;</code>
+     * @return bool
      */
     public function getEnableQuests()
     {
@@ -36,16 +47,21 @@ class QuestGlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool enable_quests = 1;</code>
+     * Generated from protobuf field <code>bool enable_quests = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEnableQuests($var)
     {
         GPBUtil::checkBool($var);
         $this->enable_quests = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_challenge_quests = 2;</code>
+     * Generated from protobuf field <code>int32 max_challenge_quests = 2;</code>
+     * @return int
      */
     public function getMaxChallengeQuests()
     {
@@ -53,12 +69,16 @@ class QuestGlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_challenge_quests = 2;</code>
+     * Generated from protobuf field <code>int32 max_challenge_quests = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxChallengeQuests($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_challenge_quests = $var;
+
+        return $this;
     }
 
 }

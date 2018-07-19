@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.GetIncensePokemonResponse.Result</code>
- */
-class GetIncensePokemonResponse_Result
-{
+if (false) {
     /**
-     * <code>INCENSE_ENCOUNTER_UNKNOWN = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GetIncensePokemonResponse\Result instead.
+     * @deprecated
      */
-    const INCENSE_ENCOUNTER_UNKNOWN = 0;
-    /**
-     * <code>INCENSE_ENCOUNTER_AVAILABLE = 1;</code>
-     */
-    const INCENSE_ENCOUNTER_AVAILABLE = 1;
-    /**
-     * <code>INCENSE_ENCOUNTER_NOT_AVAILABLE = 2;</code>
-     */
-    const INCENSE_ENCOUNTER_NOT_AVAILABLE = 2;
+    class GetIncensePokemonResponse_Result {}
 }
+class_exists(GetIncensePokemonResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\GetIncensePokemonResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GetIncensePokemonResponse\Result instead', E_USER_DEPRECATED);
 

@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.Social.IsMyFriendResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.Social.IsMyFriendResponse</code>
  */
 class IsMyFriendResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.IsMyFriendResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.IsMyFriendResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>bool is_friend = 2;</code>
+     * Generated from protobuf field <code>bool is_friend = 2;</code>
      */
     private $is_friend = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type bool $is_friend
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\Social\IsMyFriendResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.IsMyFriendResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.IsMyFriendResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class IsMyFriendResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.IsMyFriendResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.IsMyFriendResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\Social\IsMyFriendResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool is_friend = 2;</code>
+     * Generated from protobuf field <code>bool is_friend = 2;</code>
+     * @return bool
      */
     public function getIsFriend()
     {
@@ -53,12 +69,16 @@ class IsMyFriendResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool is_friend = 2;</code>
+     * Generated from protobuf field <code>bool is_friend = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsFriend($var)
     {
         GPBUtil::checkBool($var);
         $this->is_friend = $var;
+
+        return $this;
     }
 
 }

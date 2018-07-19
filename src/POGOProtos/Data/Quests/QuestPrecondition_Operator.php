@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Quests.QuestPrecondition.Operator</code>
- */
-class QuestPrecondition_Operator
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestPrecondition\Operator instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>EQUALS = 1;</code>
-     */
-    const EQUALS = 1;
-    /**
-     * <code>GREATER_THAN = 2;</code>
-     */
-    const GREATER_THAN = 2;
-    /**
-     * <code>LESS_THAN = 3;</code>
-     */
-    const LESS_THAN = 3;
+    class QuestPrecondition_Operator {}
 }
+class_exists(QuestPrecondition\Operator::class);
+@trigger_error('POGOProtos\Data\Quests\QuestPrecondition_Operator is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestPrecondition\Operator instead', E_USER_DEPRECATED);
 

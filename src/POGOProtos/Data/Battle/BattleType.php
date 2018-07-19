@@ -5,24 +5,24 @@
 namespace POGOProtos\Data\Battle;
 
 /**
- * Protobuf enum <code>POGOProtos.Data.Battle.BattleType</code>
+ * Protobuf type <code>POGOProtos.Data.Battle.BattleType</code>
  */
 class BattleType
 {
     /**
-     * <code>BATTLE_TYPE_UNSET = 0;</code>
+     * Generated from protobuf enum <code>BATTLE_TYPE_UNSET = 0;</code>
      */
     const BATTLE_TYPE_UNSET = 0;
     /**
-     * <code>BATTLE_TYPE_NORMAL = 1;</code>
+     * Generated from protobuf enum <code>BATTLE_TYPE_NORMAL = 1;</code>
      */
     const BATTLE_TYPE_NORMAL = 1;
     /**
-     * <code>BATTLE_TYPE_TRAINING = 2;</code>
+     * Generated from protobuf enum <code>BATTLE_TYPE_TRAINING = 2;</code>
      */
     const BATTLE_TYPE_TRAINING = 2;
     /**
-     * <code>BATTLE_TYPE_RAID = 3;</code>
+     * Generated from protobuf enum <code>BATTLE_TYPE_RAID = 3;</code>
      */
     const BATTLE_TYPE_RAID = 3;
 }

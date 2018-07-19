@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Gym.GymMembership</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Gym.GymMembership</code>
  */
 class GymMembership extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
      */
     private $pokemon_data = null;
     /**
-     * <code>.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 2;</code>
      */
     private $trainer_public_profile = null;
     /**
-     * <code>.POGOProtos.Data.PokemonData training_pokemon = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData training_pokemon = 3;</code>
      */
     private $training_pokemon = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\PokemonData $pokemon_data
+     *     @type \POGOProtos\Data\Player\PlayerPublicProfile $trainer_public_profile
+     *     @type \POGOProtos\Data\PokemonData $training_pokemon
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Gym\GymMembership::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getPokemonData()
     {
@@ -40,16 +52,21 @@ class GymMembership extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setPokemonData(&$var)
+    public function setPokemonData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->pokemon_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 2;</code>
+     * @return \POGOProtos\Data\Player\PlayerPublicProfile
      */
     public function getTrainerPublicProfile()
     {
@@ -57,16 +74,21 @@ class GymMembership extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerPublicProfile trainer_public_profile = 2;</code>
+     * @param \POGOProtos\Data\Player\PlayerPublicProfile $var
+     * @return $this
      */
-    public function setTrainerPublicProfile(&$var)
+    public function setTrainerPublicProfile($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerPublicProfile::class);
         $this->trainer_public_profile = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData training_pokemon = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData training_pokemon = 3;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getTrainingPokemon()
     {
@@ -74,12 +96,16 @@ class GymMembership extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData training_pokemon = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData training_pokemon = 3;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setTrainingPokemon(&$var)
+    public function setTrainingPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->training_pokemon = $var;
+
+        return $this;
     }
 
 }

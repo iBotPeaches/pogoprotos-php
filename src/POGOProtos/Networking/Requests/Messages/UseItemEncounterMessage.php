@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.UseItemEncounterMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.UseItemEncounterMessage</code>
  */
 class UseItemEncounterMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
      */
     private $item = 0;
     /**
-     * <code>fixed64 encounter_id = 2;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 2;</code>
      */
     private $encounter_id = 0;
     /**
-     * <code>string spawn_point_guid = 3;</code>
+     * Generated from protobuf field <code>string spawn_point_guid = 3;</code>
      */
     private $spawn_point_guid = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $item
+     *     @type int|string $encounter_id
+     *     @type string $spawn_point_guid
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\UseItemEncounterMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * @return int
      */
     public function getItem()
     {
@@ -40,16 +52,21 @@ class UseItemEncounterMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItem($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>fixed64 encounter_id = 2;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 2;</code>
+     * @return int|string
      */
     public function getEncounterId()
     {
@@ -57,16 +74,21 @@ class UseItemEncounterMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 encounter_id = 2;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setEncounterId($var)
     {
         GPBUtil::checkUint64($var);
         $this->encounter_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string spawn_point_guid = 3;</code>
+     * Generated from protobuf field <code>string spawn_point_guid = 3;</code>
+     * @return string
      */
     public function getSpawnPointGuid()
     {
@@ -74,12 +96,16 @@ class UseItemEncounterMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string spawn_point_guid = 3;</code>
+     * Generated from protobuf field <code>string spawn_point_guid = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSpawnPointGuid($var)
     {
         GPBUtil::checkString($var, True);
         $this->spawn_point_guid = $var;
+
+        return $this;
     }
 
 }

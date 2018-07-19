@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.SfidaActionLogResponse.Result</code>
- */
-class SfidaActionLogResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\SfidaActionLogResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
+    class SfidaActionLogResponse_Result {}
 }
+class_exists(SfidaActionLogResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\SfidaActionLogResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\SfidaActionLogResponse\Result instead', E_USER_DEPRECATED);
 

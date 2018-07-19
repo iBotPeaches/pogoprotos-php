@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.SubmitNewPoiResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.SubmitNewPoiResponse</code>
  */
 class SubmitNewPoiResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.SubmitNewPoiResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SubmitNewPoiResponse.Status status = 1;</code>
      */
     private $status = 0;
     /**
-     * <code>repeated string message = 2;</code>
+     * Generated from protobuf field <code>repeated string message = 2;</code>
      */
     private $message;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $message
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\PlatformClientActionsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.SubmitNewPoiResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SubmitNewPoiResponse.Status status = 1;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -36,16 +47,21 @@ class SubmitNewPoiResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.SubmitNewPoiResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SubmitNewPoiResponse.Status status = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\SubmitNewPoiResponse_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated string message = 2;</code>
+     * Generated from protobuf field <code>repeated string message = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getMessage()
     {
@@ -53,12 +69,16 @@ class SubmitNewPoiResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string message = 2;</code>
+     * Generated from protobuf field <code>repeated string message = 2;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setMessage(&$var)
+    public function setMessage($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->message = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->message = $arr;
+
+        return $this;
     }
 
 }

@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.CurrencyQuantity</code>
+ * Generated from protobuf message <code>POGOProtos.Data.CurrencyQuantity</code>
  */
 class CurrencyQuantity extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string currency_type = 1;</code>
+     * Generated from protobuf field <code>string currency_type = 1;</code>
      */
     private $currency_type = '';
     /**
-     * <code>int32 quantity = 2;</code>
+     * Generated from protobuf field <code>int32 quantity = 2;</code>
      */
     private $quantity = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $currency_type
+     *     @type int $quantity
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\CurrencyQuantity::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string currency_type = 1;</code>
+     * Generated from protobuf field <code>string currency_type = 1;</code>
+     * @return string
      */
     public function getCurrencyType()
     {
@@ -36,16 +47,21 @@ class CurrencyQuantity extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string currency_type = 1;</code>
+     * Generated from protobuf field <code>string currency_type = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setCurrencyType($var)
     {
         GPBUtil::checkString($var, True);
         $this->currency_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 quantity = 2;</code>
+     * Generated from protobuf field <code>int32 quantity = 2;</code>
+     * @return int
      */
     public function getQuantity()
     {
@@ -53,12 +69,16 @@ class CurrencyQuantity extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 quantity = 2;</code>
+     * Generated from protobuf field <code>int32 quantity = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setQuantity($var)
     {
         GPBUtil::checkInt32($var);
         $this->quantity = $var;
+
+        return $this;
     }
 
 }

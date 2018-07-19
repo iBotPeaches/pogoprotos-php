@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Data;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.PokemonData.PokemonClass</code>
- */
-class PokemonData_PokemonClass
-{
+if (false) {
     /**
-     * <code>POKEMON_CLASS_NORMAL = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\PokemonData\PokemonClass instead.
+     * @deprecated
      */
-    const POKEMON_CLASS_NORMAL = 0;
-    /**
-     * <code>POKEMON_CLASS_LEGENDARY = 1;</code>
-     */
-    const POKEMON_CLASS_LEGENDARY = 1;
-    /**
-     * <code>POKEMON_CLASS_MYTHIC = 2;</code>
-     */
-    const POKEMON_CLASS_MYTHIC = 2;
+    class PokemonData_PokemonClass {}
 }
+class_exists(PokemonData\PokemonClass::class);
+@trigger_error('POGOProtos\Data\PokemonData_PokemonClass is deprecated and will be removed in the next major release. Use POGOProtos\Data\PokemonData\PokemonClass instead', E_USER_DEPRECATED);
 

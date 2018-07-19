@@ -4,41 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.Quest.MultiPartQuest</code>
- */
-class Quest_MultiPartQuest extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>repeated .POGOProtos.Data.Quests.Quest sub_quests = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\Quest\MultiPartQuest instead.
+     * @deprecated
      */
-    private $sub_quests;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\Quest::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Data.Quests.Quest sub_quests = 1;</code>
-     */
-    public function getSubQuests()
-    {
-        return $this->sub_quests;
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Data.Quests.Quest sub_quests = 1;</code>
-     */
-    public function setSubQuests(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\Quest::class);
-        $this->sub_quests = $var;
-    }
-
+    class Quest_MultiPartQuest {}
 }
+class_exists(Quest\MultiPartQuest::class);
+@trigger_error('POGOProtos\Data\Quests\Quest_MultiPartQuest is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\Quest\MultiPartQuest instead', E_USER_DEPRECATED);
 

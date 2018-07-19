@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Raid.RaidEncounter</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Raid.RaidEncounter</code>
  */
 class RaidEncounter extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon = 1;</code>
      */
     private $pokemon = null;
     /**
-     * <code>int64 encounter_id = 2;</code>
+     * Generated from protobuf field <code>int64 encounter_id = 2;</code>
      */
     private $encounter_id = 0;
     /**
-     * <code>string spawnpoint_id = 3;</code>
+     * Generated from protobuf field <code>string spawnpoint_id = 3;</code>
      */
     private $spawnpoint_id = '';
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probabilities = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureProbability capture_probabilities = 4;</code>
      */
     private $capture_probabilities = null;
     /**
-     * <code>int32 throws_remaining = 5;</code>
+     * Generated from protobuf field <code>int32 throws_remaining = 5;</code>
      */
     private $throws_remaining = 0;
     /**
-     * <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
      */
     private $raid_level = 0;
     /**
-     * <code>string fort_id = 7;</code>
+     * Generated from protobuf field <code>string fort_id = 7;</code>
      */
     private $fort_id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\PokemonData $pokemon
+     *     @type int|string $encounter_id
+     *     @type string $spawnpoint_id
+     *     @type \POGOProtos\Data\Capture\CaptureProbability $capture_probabilities
+     *     @type int $throws_remaining
+     *     @type int $raid_level
+     *     @type string $fort_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Raid\RaidEncounter::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon = 1;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getPokemon()
     {
@@ -56,16 +72,21 @@ class RaidEncounter extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon = 1;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setPokemon(&$var)
+    public function setPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 encounter_id = 2;</code>
+     * Generated from protobuf field <code>int64 encounter_id = 2;</code>
+     * @return int|string
      */
     public function getEncounterId()
     {
@@ -73,16 +94,21 @@ class RaidEncounter extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 encounter_id = 2;</code>
+     * Generated from protobuf field <code>int64 encounter_id = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setEncounterId($var)
     {
         GPBUtil::checkInt64($var);
         $this->encounter_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string spawnpoint_id = 3;</code>
+     * Generated from protobuf field <code>string spawnpoint_id = 3;</code>
+     * @return string
      */
     public function getSpawnpointId()
     {
@@ -90,16 +116,21 @@ class RaidEncounter extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string spawnpoint_id = 3;</code>
+     * Generated from protobuf field <code>string spawnpoint_id = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSpawnpointId($var)
     {
         GPBUtil::checkString($var, True);
         $this->spawnpoint_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probabilities = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureProbability capture_probabilities = 4;</code>
+     * @return \POGOProtos\Data\Capture\CaptureProbability
      */
     public function getCaptureProbabilities()
     {
@@ -107,16 +138,21 @@ class RaidEncounter extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probabilities = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureProbability capture_probabilities = 4;</code>
+     * @param \POGOProtos\Data\Capture\CaptureProbability $var
+     * @return $this
      */
-    public function setCaptureProbabilities(&$var)
+    public function setCaptureProbabilities($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Capture\CaptureProbability::class);
         $this->capture_probabilities = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 throws_remaining = 5;</code>
+     * Generated from protobuf field <code>int32 throws_remaining = 5;</code>
+     * @return int
      */
     public function getThrowsRemaining()
     {
@@ -124,16 +160,21 @@ class RaidEncounter extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 throws_remaining = 5;</code>
+     * Generated from protobuf field <code>int32 throws_remaining = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setThrowsRemaining($var)
     {
         GPBUtil::checkInt32($var);
         $this->throws_remaining = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * @return int
      */
     public function getRaidLevel()
     {
@@ -141,16 +182,21 @@ class RaidEncounter extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRaidLevel($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Raid\RaidInfo_RaidLevel::class);
         $this->raid_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string fort_id = 7;</code>
+     * Generated from protobuf field <code>string fort_id = 7;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -158,12 +204,16 @@ class RaidEncounter extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 7;</code>
+     * Generated from protobuf field <code>string fort_id = 7;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
 }

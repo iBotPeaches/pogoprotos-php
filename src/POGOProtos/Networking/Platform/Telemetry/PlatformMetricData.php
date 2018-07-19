@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Telemetry.PlatformMetricData</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Telemetry.PlatformMetricData</code>
  */
 class PlatformMetricData extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryCommon common_telemetry = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryCommon common_telemetry = 1;</code>
      */
     private $common_telemetry = null;
     /**
-     * <code>int64 long_value = 2;</code>
+     * Generated from protobuf field <code>int64 long_value = 2;</code>
      */
     private $long_value = 0;
     /**
-     * <code>double double_value = 3;</code>
+     * Generated from protobuf field <code>double double_value = 3;</code>
      */
     private $double_value = 0.0;
     /**
-     * <code>bool boolean_value = 4;</code>
+     * Generated from protobuf field <code>bool boolean_value = 4;</code>
      */
     private $boolean_value = false;
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution distribution = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution distribution = 5;</code>
      */
     private $distribution = null;
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData.Kind metric_kind = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData.Kind metric_kind = 6;</code>
      */
     private $metric_kind = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Networking\Platform\Telemetry\TelemetryCommon $common_telemetry
+     *     @type int|string $long_value
+     *     @type float $double_value
+     *     @type bool $boolean_value
+     *     @type \POGOProtos\Networking\Platform\Telemetry\Distribution $distribution
+     *     @type int $metric_kind
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Telemetry\PlatformMetricData::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryCommon common_telemetry = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryCommon common_telemetry = 1;</code>
+     * @return \POGOProtos\Networking\Platform\Telemetry\TelemetryCommon
      */
     public function getCommonTelemetry()
     {
@@ -52,16 +67,21 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryCommon common_telemetry = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryCommon common_telemetry = 1;</code>
+     * @param \POGOProtos\Networking\Platform\Telemetry\TelemetryCommon $var
+     * @return $this
      */
-    public function setCommonTelemetry(&$var)
+    public function setCommonTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\TelemetryCommon::class);
         $this->common_telemetry = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 long_value = 2;</code>
+     * Generated from protobuf field <code>int64 long_value = 2;</code>
+     * @return int|string
      */
     public function getLongValue()
     {
@@ -69,16 +89,21 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 long_value = 2;</code>
+     * Generated from protobuf field <code>int64 long_value = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLongValue($var)
     {
         GPBUtil::checkInt64($var);
         $this->long_value = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double double_value = 3;</code>
+     * Generated from protobuf field <code>double double_value = 3;</code>
+     * @return float
      */
     public function getDoubleValue()
     {
@@ -86,16 +111,21 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double double_value = 3;</code>
+     * Generated from protobuf field <code>double double_value = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDoubleValue($var)
     {
         GPBUtil::checkDouble($var);
         $this->double_value = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool boolean_value = 4;</code>
+     * Generated from protobuf field <code>bool boolean_value = 4;</code>
+     * @return bool
      */
     public function getBooleanValue()
     {
@@ -103,16 +133,21 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool boolean_value = 4;</code>
+     * Generated from protobuf field <code>bool boolean_value = 4;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setBooleanValue($var)
     {
         GPBUtil::checkBool($var);
         $this->boolean_value = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution distribution = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution distribution = 5;</code>
+     * @return \POGOProtos\Networking\Platform\Telemetry\Distribution
      */
     public function getDistribution()
     {
@@ -120,16 +155,21 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution distribution = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution distribution = 5;</code>
+     * @param \POGOProtos\Networking\Platform\Telemetry\Distribution $var
+     * @return $this
      */
-    public function setDistribution(&$var)
+    public function setDistribution($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\Distribution::class);
         $this->distribution = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData.Kind metric_kind = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData.Kind metric_kind = 6;</code>
+     * @return int
      */
     public function getMetricKind()
     {
@@ -137,12 +177,16 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData.Kind metric_kind = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData.Kind metric_kind = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMetricKind($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData_Kind::class);
         $this->metric_kind = $var;
+
+        return $this;
     }
 
 }

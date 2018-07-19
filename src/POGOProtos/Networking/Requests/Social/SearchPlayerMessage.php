@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Social.SearchPlayerMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Social.SearchPlayerMessage</code>
  */
 class SearchPlayerMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string friend_code = 1;</code>
+     * Generated from protobuf field <code>string friend_code = 1;</code>
      */
     private $friend_code = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $friend_code
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Social\SearchPlayerMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string friend_code = 1;</code>
+     * Generated from protobuf field <code>string friend_code = 1;</code>
+     * @return string
      */
     public function getFriendCode()
     {
@@ -32,12 +42,16 @@ class SearchPlayerMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string friend_code = 1;</code>
+     * Generated from protobuf field <code>string friend_code = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFriendCode($var)
     {
         GPBUtil::checkString($var, True);
         $this->friend_code = $var;
+
+        return $this;
     }
 
 }

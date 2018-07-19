@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.RecycleInventoryItemResponse.Result</code>
- */
-class RecycleInventoryItemResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\RecycleInventoryItemResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_NOT_ENOUGH_COPIES = 2;</code>
-     */
-    const ERROR_NOT_ENOUGH_COPIES = 2;
-    /**
-     * <code>ERROR_CANNOT_RECYCLE_INCUBATORS = 3;</code>
-     */
-    const ERROR_CANNOT_RECYCLE_INCUBATORS = 3;
+    class RecycleInventoryItemResponse_Result {}
 }
+class_exists(RecycleInventoryItemResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\RecycleInventoryItemResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\RecycleInventoryItemResponse\Result instead', E_USER_DEPRECATED);
 

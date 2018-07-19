@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetInboxResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetInboxResponse</code>
  */
 class GetInboxResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.GetInboxResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetInboxResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox inbox = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox inbox = 2;</code>
      */
     private $inbox = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Networking\Responses\GetInboxResponse\ClientInbox $inbox
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetInboxResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetInboxResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetInboxResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class GetInboxResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetInboxResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetInboxResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\GetInboxResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox inbox = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox inbox = 2;</code>
+     * @return \POGOProtos\Networking\Responses\GetInboxResponse\ClientInbox
      */
     public function getInbox()
     {
@@ -53,12 +69,16 @@ class GetInboxResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox inbox = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox inbox = 2;</code>
+     * @param \POGOProtos\Networking\Responses\GetInboxResponse\ClientInbox $var
+     * @return $this
      */
-    public function setInbox(&$var)
+    public function setInbox($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Responses\GetInboxResponse_ClientInbox::class);
         $this->inbox = $var;
+
+        return $this;
     }
 
 }

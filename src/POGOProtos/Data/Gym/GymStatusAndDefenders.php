@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Gym.GymStatusAndDefenders</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Gym.GymStatusAndDefenders</code>
  */
 class GymStatusAndDefenders extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Map.Fort.FortData pokemon_fort_proto = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortData pokemon_fort_proto = 1;</code>
      */
     private $pokemon_fort_proto = null;
     /**
-     * <code>repeated .POGOProtos.Data.Gym.GymDefender gym_defender = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gym.GymDefender gym_defender = 2;</code>
      */
     private $gym_defender;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Map\Fort\FortData $pokemon_fort_proto
+     *     @type \POGOProtos\Data\Gym\GymDefender[]|\Google\Protobuf\Internal\RepeatedField $gym_defender
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Gym\GymStatusAndDefenders::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortData pokemon_fort_proto = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortData pokemon_fort_proto = 1;</code>
+     * @return \POGOProtos\Map\Fort\FortData
      */
     public function getPokemonFortProto()
     {
@@ -36,16 +47,21 @@ class GymStatusAndDefenders extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortData pokemon_fort_proto = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortData pokemon_fort_proto = 1;</code>
+     * @param \POGOProtos\Map\Fort\FortData $var
+     * @return $this
      */
-    public function setPokemonFortProto(&$var)
+    public function setPokemonFortProto($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Map\Fort\FortData::class);
         $this->pokemon_fort_proto = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gym.GymDefender gym_defender = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gym.GymDefender gym_defender = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getGymDefender()
     {
@@ -53,12 +69,16 @@ class GymStatusAndDefenders extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gym.GymDefender gym_defender = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gym.GymDefender gym_defender = 2;</code>
+     * @param \POGOProtos\Data\Gym\GymDefender[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGymDefender(&$var)
+    public function setGymDefender($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gym\GymDefender::class);
-        $this->gym_defender = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gym\GymDefender::class);
+        $this->gym_defender = $arr;
+
+        return $this;
     }
 
 }

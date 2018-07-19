@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Logs.SendGiftLogEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Logs.SendGiftLogEntry</code>
  */
 class SendGiftLogEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Logs.SendGiftLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.SendGiftLogEntry.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>string friend_codename = 2;</code>
+     * Generated from protobuf field <code>string friend_codename = 2;</code>
      */
     private $friend_codename = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type string $friend_codename
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Logs\SendGiftLogEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.SendGiftLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.SendGiftLogEntry.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class SendGiftLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.SendGiftLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.SendGiftLogEntry.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Logs\SendGiftLogEntry_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string friend_codename = 2;</code>
+     * Generated from protobuf field <code>string friend_codename = 2;</code>
+     * @return string
      */
     public function getFriendCodename()
     {
@@ -53,12 +69,16 @@ class SendGiftLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string friend_codename = 2;</code>
+     * Generated from protobuf field <code>string friend_codename = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFriendCodename($var)
     {
         GPBUtil::checkString($var, True);
         $this->friend_codename = $var;
+
+        return $this;
     }
 
 }

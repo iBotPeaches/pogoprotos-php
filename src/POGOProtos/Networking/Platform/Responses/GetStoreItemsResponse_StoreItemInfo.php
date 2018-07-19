@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Responses;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItemInfo</code>
- */
-class GetStoreItemsResponse_StoreItemInfo extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>string item_id = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse\StoreItemInfo instead.
+     * @deprecated
      */
-    private $item_id = '';
-    /**
-     * <code>int32 count = 2;</code>
-     */
-    private $count = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>string item_id = 1;</code>
-     */
-    public function getItemId()
-    {
-        return $this->item_id;
-    }
-
-    /**
-     * <code>string item_id = 1;</code>
-     */
-    public function setItemId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->item_id = $var;
-    }
-
-    /**
-     * <code>int32 count = 2;</code>
-     */
-    public function getCount()
-    {
-        return $this->count;
-    }
-
-    /**
-     * <code>int32 count = 2;</code>
-     */
-    public function setCount($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->count = $var;
-    }
-
+    class GetStoreItemsResponse_StoreItemInfo {}
 }
+class_exists(GetStoreItemsResponse\StoreItemInfo::class);
+@trigger_error('POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse_StoreItemInfo is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse\StoreItemInfo instead', E_USER_DEPRECATED);
 

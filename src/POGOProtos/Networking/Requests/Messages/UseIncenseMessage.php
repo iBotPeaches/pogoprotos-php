@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.UseIncenseMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.UseIncenseMessage</code>
  */
 class UseIncenseMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId incense_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId incense_type = 1;</code>
      */
     private $incense_type = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $incense_type
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\UseIncenseMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId incense_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId incense_type = 1;</code>
+     * @return int
      */
     public function getIncenseType()
     {
@@ -32,12 +42,16 @@ class UseIncenseMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId incense_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId incense_type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setIncenseType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->incense_type = $var;
+
+        return $this;
     }
 
 }

@@ -4,83 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestReward.PokemonEncounterReward</code>
- */
-class QuestReward_PokemonEncounterReward extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestReward\PokemonEncounterReward instead.
+     * @deprecated
      */
-    private $pokemon_id = 0;
-    /**
-     * <code>bool use_quest_pokemon_encounter_distribuition = 2;</code>
-     */
-    private $use_quest_pokemon_encounter_distribuition = false;
-    /**
-     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 3;</code>
-     */
-    private $pokemon_display = null;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestReward::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
-     */
-    public function getPokemonId()
-    {
-        return $this->pokemon_id;
-    }
-
-    /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
-     */
-    public function setPokemonId($var)
-    {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
-        $this->pokemon_id = $var;
-    }
-
-    /**
-     * <code>bool use_quest_pokemon_encounter_distribuition = 2;</code>
-     */
-    public function getUseQuestPokemonEncounterDistribuition()
-    {
-        return $this->use_quest_pokemon_encounter_distribuition;
-    }
-
-    /**
-     * <code>bool use_quest_pokemon_encounter_distribuition = 2;</code>
-     */
-    public function setUseQuestPokemonEncounterDistribuition($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->use_quest_pokemon_encounter_distribuition = $var;
-    }
-
-    /**
-     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 3;</code>
-     */
-    public function getPokemonDisplay()
-    {
-        return $this->pokemon_display;
-    }
-
-    /**
-     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 3;</code>
-     */
-    public function setPokemonDisplay(&$var)
-    {
-        GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonDisplay::class);
-        $this->pokemon_display = $var;
-    }
-
+    class QuestReward_PokemonEncounterReward {}
 }
+class_exists(QuestReward\PokemonEncounterReward::class);
+@trigger_error('POGOProtos\Data\Quests\QuestReward_PokemonEncounterReward is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestReward\PokemonEncounterReward instead', E_USER_DEPRECATED);
 

@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.RedeemPasscodeReward</code>
+ * Generated from protobuf message <code>POGOProtos.Data.RedeemPasscodeReward</code>
  */
 class RedeemPasscodeReward extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Data.Redeem.RedeemedItem items = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Redeem.RedeemedItem items = 1;</code>
      */
     private $items;
     /**
-     * <code>repeated .POGOProtos.Data.Redeem.RedeemedAvatarItem avatar_items = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Redeem.RedeemedAvatarItem avatar_items = 2;</code>
      */
     private $avatar_items;
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData egg_pokemon = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData egg_pokemon = 3;</code>
      */
     private $egg_pokemon;
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData pokemon = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData pokemon = 4;</code>
      */
     private $pokemon;
     /**
-     * <code>repeated .POGOProtos.Data.Redeem.PokeCandy poke_candy = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Redeem.PokeCandy poke_candy = 5;</code>
      */
     private $poke_candy;
     /**
-     * <code>int32 stardust = 6;</code>
+     * Generated from protobuf field <code>int32 stardust = 6;</code>
      */
     private $stardust = 0;
     /**
-     * <code>int32 pokecoins = 7;</code>
+     * Generated from protobuf field <code>int32 pokecoins = 7;</code>
      */
     private $pokecoins = 0;
     /**
-     * <code>repeated .POGOProtos.Enums.BadgeType badges = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.BadgeType badges = 8;</code>
      */
     private $badges;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Redeem\RedeemedItem[]|\Google\Protobuf\Internal\RepeatedField $items
+     *     @type \POGOProtos\Data\Redeem\RedeemedAvatarItem[]|\Google\Protobuf\Internal\RepeatedField $avatar_items
+     *     @type \POGOProtos\Data\PokemonData[]|\Google\Protobuf\Internal\RepeatedField $egg_pokemon
+     *     @type \POGOProtos\Data\PokemonData[]|\Google\Protobuf\Internal\RepeatedField $pokemon
+     *     @type \POGOProtos\Data\Redeem\PokeCandy[]|\Google\Protobuf\Internal\RepeatedField $poke_candy
+     *     @type int $stardust
+     *     @type int $pokecoins
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $badges
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\RedeemPasscodeReward::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Redeem.RedeemedItem items = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Redeem.RedeemedItem items = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getItems()
     {
@@ -60,16 +77,21 @@ class RedeemPasscodeReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Redeem.RedeemedItem items = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Redeem.RedeemedItem items = 1;</code>
+     * @param \POGOProtos\Data\Redeem\RedeemedItem[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItems(&$var)
+    public function setItems($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Redeem\RedeemedItem::class);
-        $this->items = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Redeem\RedeemedItem::class);
+        $this->items = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Redeem.RedeemedAvatarItem avatar_items = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Redeem.RedeemedAvatarItem avatar_items = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAvatarItems()
     {
@@ -77,16 +99,21 @@ class RedeemPasscodeReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Redeem.RedeemedAvatarItem avatar_items = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Redeem.RedeemedAvatarItem avatar_items = 2;</code>
+     * @param \POGOProtos\Data\Redeem\RedeemedAvatarItem[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAvatarItems(&$var)
+    public function setAvatarItems($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Redeem\RedeemedAvatarItem::class);
-        $this->avatar_items = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Redeem\RedeemedAvatarItem::class);
+        $this->avatar_items = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData egg_pokemon = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData egg_pokemon = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getEggPokemon()
     {
@@ -94,16 +121,21 @@ class RedeemPasscodeReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData egg_pokemon = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData egg_pokemon = 3;</code>
+     * @param \POGOProtos\Data\PokemonData[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setEggPokemon(&$var)
+    public function setEggPokemon($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\PokemonData::class);
-        $this->egg_pokemon = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\PokemonData::class);
+        $this->egg_pokemon = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData pokemon = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData pokemon = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPokemon()
     {
@@ -111,16 +143,21 @@ class RedeemPasscodeReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData pokemon = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData pokemon = 4;</code>
+     * @param \POGOProtos\Data\PokemonData[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPokemon(&$var)
+    public function setPokemon($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\PokemonData::class);
-        $this->pokemon = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\PokemonData::class);
+        $this->pokemon = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Redeem.PokeCandy poke_candy = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Redeem.PokeCandy poke_candy = 5;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPokeCandy()
     {
@@ -128,16 +165,21 @@ class RedeemPasscodeReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Redeem.PokeCandy poke_candy = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Redeem.PokeCandy poke_candy = 5;</code>
+     * @param \POGOProtos\Data\Redeem\PokeCandy[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPokeCandy(&$var)
+    public function setPokeCandy($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Redeem\PokeCandy::class);
-        $this->poke_candy = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Redeem\PokeCandy::class);
+        $this->poke_candy = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 stardust = 6;</code>
+     * Generated from protobuf field <code>int32 stardust = 6;</code>
+     * @return int
      */
     public function getStardust()
     {
@@ -145,16 +187,21 @@ class RedeemPasscodeReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 stardust = 6;</code>
+     * Generated from protobuf field <code>int32 stardust = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStardust($var)
     {
         GPBUtil::checkInt32($var);
         $this->stardust = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 pokecoins = 7;</code>
+     * Generated from protobuf field <code>int32 pokecoins = 7;</code>
+     * @return int
      */
     public function getPokecoins()
     {
@@ -162,16 +209,21 @@ class RedeemPasscodeReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 pokecoins = 7;</code>
+     * Generated from protobuf field <code>int32 pokecoins = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokecoins($var)
     {
         GPBUtil::checkInt32($var);
         $this->pokecoins = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.BadgeType badges = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.BadgeType badges = 8;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getBadges()
     {
@@ -179,12 +231,16 @@ class RedeemPasscodeReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.BadgeType badges = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.BadgeType badges = 8;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setBadges(&$var)
+    public function setBadges($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\BadgeType::class);
-        $this->badges = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\BadgeType::class);
+        $this->badges = $arr;
+
+        return $this;
     }
 
 }

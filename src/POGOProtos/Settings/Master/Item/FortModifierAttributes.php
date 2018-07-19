@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Item.FortModifierAttributes</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Item.FortModifierAttributes</code>
  */
 class FortModifierAttributes extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 modifier_lifetime_seconds = 1;</code>
+     * Generated from protobuf field <code>int32 modifier_lifetime_seconds = 1;</code>
      */
     private $modifier_lifetime_seconds = 0;
     /**
-     * <code>int32 troy_disk_num_pokemon_spawned = 2;</code>
+     * Generated from protobuf field <code>int32 troy_disk_num_pokemon_spawned = 2;</code>
      */
     private $troy_disk_num_pokemon_spawned = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $modifier_lifetime_seconds
+     *     @type int $troy_disk_num_pokemon_spawned
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Item\FortModifierAttributes::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 modifier_lifetime_seconds = 1;</code>
+     * Generated from protobuf field <code>int32 modifier_lifetime_seconds = 1;</code>
+     * @return int
      */
     public function getModifierLifetimeSeconds()
     {
@@ -36,16 +47,21 @@ class FortModifierAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 modifier_lifetime_seconds = 1;</code>
+     * Generated from protobuf field <code>int32 modifier_lifetime_seconds = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setModifierLifetimeSeconds($var)
     {
         GPBUtil::checkInt32($var);
         $this->modifier_lifetime_seconds = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 troy_disk_num_pokemon_spawned = 2;</code>
+     * Generated from protobuf field <code>int32 troy_disk_num_pokemon_spawned = 2;</code>
+     * @return int
      */
     public function getTroyDiskNumPokemonSpawned()
     {
@@ -53,12 +69,16 @@ class FortModifierAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 troy_disk_num_pokemon_spawned = 2;</code>
+     * Generated from protobuf field <code>int32 troy_disk_num_pokemon_spawned = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTroyDiskNumPokemonSpawned($var)
     {
         GPBUtil::checkInt32($var);
         $this->troy_disk_num_pokemon_spawned = $var;
+
+        return $this;
     }
 
 }

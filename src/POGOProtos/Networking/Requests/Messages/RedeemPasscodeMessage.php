@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.RedeemPasscodeMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.RedeemPasscodeMessage</code>
  */
 class RedeemPasscodeMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string passcode = 1;</code>
+     * Generated from protobuf field <code>string passcode = 1;</code>
      */
     private $passcode = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $passcode
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\PlatformClientActionsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string passcode = 1;</code>
+     * Generated from protobuf field <code>string passcode = 1;</code>
+     * @return string
      */
     public function getPasscode()
     {
@@ -32,12 +42,16 @@ class RedeemPasscodeMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string passcode = 1;</code>
+     * Generated from protobuf field <code>string passcode = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPasscode($var)
     {
         GPBUtil::checkString($var, True);
         $this->passcode = $var;
+
+        return $this;
     }
 
 }

@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.AwardFreeRaidTicketResponse.Result</code>
- */
-class AwardFreeRaidTicketResponse_Result
-{
+if (false) {
     /**
-     * <code>NO_RESULT_SET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\AwardFreeRaidTicketResponse\Result instead.
+     * @deprecated
      */
-    const NO_RESULT_SET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_PLAYER_DOES_NOT_MEET_MIN_LEVEL = 2;</code>
-     */
-    const ERROR_PLAYER_DOES_NOT_MEET_MIN_LEVEL = 2;
-    /**
-     * <code>ERROR_DAILY_TICKET_ALREADY_AWARDED = 3;</code>
-     */
-    const ERROR_DAILY_TICKET_ALREADY_AWARDED = 3;
-    /**
-     * <code>ERROR_PLAYER_OUT_OF_RANGE = 4;</code>
-     */
-    const ERROR_PLAYER_OUT_OF_RANGE = 4;
+    class AwardFreeRaidTicketResponse_Result {}
 }
+class_exists(AwardFreeRaidTicketResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\AwardFreeRaidTicketResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\AwardFreeRaidTicketResponse\Result instead', E_USER_DEPRECATED);
 

@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Pokemon.StatsAttributes</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Pokemon.StatsAttributes</code>
  */
 class StatsAttributes extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 base_stamina = 1;</code>
+     * Generated from protobuf field <code>int32 base_stamina = 1;</code>
      */
     private $base_stamina = 0;
     /**
-     * <code>int32 base_attack = 2;</code>
+     * Generated from protobuf field <code>int32 base_attack = 2;</code>
      */
     private $base_attack = 0;
     /**
-     * <code>int32 base_defense = 3;</code>
+     * Generated from protobuf field <code>int32 base_defense = 3;</code>
      */
     private $base_defense = 0;
     /**
-     * <code>int32 dodge_energy_delta = 8;</code>
+     * Generated from protobuf field <code>int32 dodge_energy_delta = 8;</code>
      */
     private $dodge_energy_delta = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $base_stamina
+     *     @type int $base_attack
+     *     @type int $base_defense
+     *     @type int $dodge_energy_delta
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Pokemon\StatsAttributes::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 base_stamina = 1;</code>
+     * Generated from protobuf field <code>int32 base_stamina = 1;</code>
+     * @return int
      */
     public function getBaseStamina()
     {
@@ -44,16 +57,21 @@ class StatsAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 base_stamina = 1;</code>
+     * Generated from protobuf field <code>int32 base_stamina = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBaseStamina($var)
     {
         GPBUtil::checkInt32($var);
         $this->base_stamina = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 base_attack = 2;</code>
+     * Generated from protobuf field <code>int32 base_attack = 2;</code>
+     * @return int
      */
     public function getBaseAttack()
     {
@@ -61,16 +79,21 @@ class StatsAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 base_attack = 2;</code>
+     * Generated from protobuf field <code>int32 base_attack = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBaseAttack($var)
     {
         GPBUtil::checkInt32($var);
         $this->base_attack = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 base_defense = 3;</code>
+     * Generated from protobuf field <code>int32 base_defense = 3;</code>
+     * @return int
      */
     public function getBaseDefense()
     {
@@ -78,16 +101,21 @@ class StatsAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 base_defense = 3;</code>
+     * Generated from protobuf field <code>int32 base_defense = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBaseDefense($var)
     {
         GPBUtil::checkInt32($var);
         $this->base_defense = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 dodge_energy_delta = 8;</code>
+     * Generated from protobuf field <code>int32 dodge_energy_delta = 8;</code>
+     * @return int
      */
     public function getDodgeEnergyDelta()
     {
@@ -95,12 +123,16 @@ class StatsAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 dodge_energy_delta = 8;</code>
+     * Generated from protobuf field <code>int32 dodge_energy_delta = 8;</code>
+     * @param int $var
+     * @return $this
      */
     public function setDodgeEnergyDelta($var)
     {
         GPBUtil::checkInt32($var);
         $this->dodge_energy_delta = $var;
+
+        return $this;
     }
 
 }

@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.UpdateNotificationMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.UpdateNotificationMessage</code>
  */
 class UpdateNotificationMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated string notification_ids = 1;</code>
+     * Generated from protobuf field <code>repeated string notification_ids = 1;</code>
      */
     private $notification_ids;
     /**
-     * <code>repeated int64 create_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>repeated int64 create_timestamp_ms = 2;</code>
      */
     private $create_timestamp_ms;
     /**
-     * <code>.POGOProtos.Enums.NotificationState state = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.NotificationState state = 3;</code>
      */
     private $state = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $notification_ids
+     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $create_timestamp_ms
+     *     @type int $state
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\UpdateNotificationMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated string notification_ids = 1;</code>
+     * Generated from protobuf field <code>repeated string notification_ids = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getNotificationIds()
     {
@@ -40,16 +52,21 @@ class UpdateNotificationMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string notification_ids = 1;</code>
+     * Generated from protobuf field <code>repeated string notification_ids = 1;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setNotificationIds(&$var)
+    public function setNotificationIds($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->notification_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->notification_ids = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int64 create_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>repeated int64 create_timestamp_ms = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCreateTimestampMs()
     {
@@ -57,16 +74,21 @@ class UpdateNotificationMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int64 create_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>repeated int64 create_timestamp_ms = 2;</code>
+     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCreateTimestampMs(&$var)
+    public function setCreateTimestampMs($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT64);
-        $this->create_timestamp_ms = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT64);
+        $this->create_timestamp_ms = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.NotificationState state = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.NotificationState state = 3;</code>
+     * @return int
      */
     public function getState()
     {
@@ -74,12 +96,16 @@ class UpdateNotificationMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.NotificationState state = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.NotificationState state = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setState($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\NotificationState::class);
         $this->state = $var;
+
+        return $this;
     }
 
 }

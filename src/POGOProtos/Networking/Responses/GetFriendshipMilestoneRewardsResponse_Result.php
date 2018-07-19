@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.GetFriendshipMilestoneRewardsResponse.Result</code>
- */
-class GetFriendshipMilestoneRewardsResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GetFriendshipMilestoneRewardsResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_UNKNOWN = 2;</code>
-     */
-    const ERROR_UNKNOWN = 2;
-    /**
-     * <code>ERROR_NOT_FRIENDS = 3;</code>
-     */
-    const ERROR_NOT_FRIENDS = 3;
-    /**
-     * <code>ERROR_MILESTONE_ALREADY_AWARDED = 4;</code>
-     */
-    const ERROR_MILESTONE_ALREADY_AWARDED = 4;
-    /**
-     * <code>ERROR_FAILED_TO_UPDATE = 5;</code>
-     */
-    const ERROR_FAILED_TO_UPDATE = 5;
+    class GetFriendshipMilestoneRewardsResponse_Result {}
 }
+class_exists(GetFriendshipMilestoneRewardsResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\GetFriendshipMilestoneRewardsResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GetFriendshipMilestoneRewardsResponse\Result instead', E_USER_DEPRECATED);
 

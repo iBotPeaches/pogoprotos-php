@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestReward.PokemonCandyReward</code>
- */
-class QuestReward_PokemonCandyReward extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestReward\PokemonCandyReward instead.
+     * @deprecated
      */
-    private $pokemon_id = 0;
-    /**
-     * <code>int32 amount = 2;</code>
-     */
-    private $amount = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestReward::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
-     */
-    public function getPokemonId()
-    {
-        return $this->pokemon_id;
-    }
-
-    /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
-     */
-    public function setPokemonId($var)
-    {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
-        $this->pokemon_id = $var;
-    }
-
-    /**
-     * <code>int32 amount = 2;</code>
-     */
-    public function getAmount()
-    {
-        return $this->amount;
-    }
-
-    /**
-     * <code>int32 amount = 2;</code>
-     */
-    public function setAmount($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->amount = $var;
-    }
-
+    class QuestReward_PokemonCandyReward {}
 }
+class_exists(QuestReward\PokemonCandyReward::class);
+@trigger_error('POGOProtos\Data\Quests\QuestReward_PokemonCandyReward is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestReward\PokemonCandyReward instead', E_USER_DEPRECATED);
 

@@ -9,30 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Responses.SendEncryptedSignatureResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Responses.SendEncryptedSignatureResponse</code>
  */
 class SendEncryptedSignatureResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <pre>
      * speculated, could be an enum
-     * </pre>
      *
-     * <code>bool received = 1;</code>
+     * Generated from protobuf field <code>bool received = 1;</code>
      */
     private $received = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $received
+     *           speculated, could be an enum
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Responses\SendEncryptedSignatureResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <pre>
      * speculated, could be an enum
-     * </pre>
      *
-     * <code>bool received = 1;</code>
+     * Generated from protobuf field <code>bool received = 1;</code>
+     * @return bool
      */
     public function getReceived()
     {
@@ -40,16 +47,18 @@ class SendEncryptedSignatureResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * speculated, could be an enum
-     * </pre>
      *
-     * <code>bool received = 1;</code>
+     * Generated from protobuf field <code>bool received = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setReceived($var)
     {
         GPBUtil::checkBool($var);
         $this->received = $var;
+
+        return $this;
     }
 
 }

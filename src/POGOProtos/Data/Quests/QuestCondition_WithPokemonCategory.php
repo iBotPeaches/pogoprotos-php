@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestCondition.WithPokemonCategory</code>
- */
-class QuestCondition_WithPokemonCategory extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>string category_name = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestCondition\WithPokemonCategory instead.
+     * @deprecated
      */
-    private $category_name = '';
-    /**
-     * <code>repeated .POGOProtos.Enums.PokemonId pokemon_ids = 2;</code>
-     */
-    private $pokemon_ids;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestCondition::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>string category_name = 1;</code>
-     */
-    public function getCategoryName()
-    {
-        return $this->category_name;
-    }
-
-    /**
-     * <code>string category_name = 1;</code>
-     */
-    public function setCategoryName($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->category_name = $var;
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Enums.PokemonId pokemon_ids = 2;</code>
-     */
-    public function getPokemonIds()
-    {
-        return $this->pokemon_ids;
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Enums.PokemonId pokemon_ids = 2;</code>
-     */
-    public function setPokemonIds(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\PokemonId::class);
-        $this->pokemon_ids = $var;
-    }
-
+    class QuestCondition_WithPokemonCategory {}
 }
+class_exists(QuestCondition\WithPokemonCategory::class);
+@trigger_error('POGOProtos\Data\Quests\QuestCondition_WithPokemonCategory is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestCondition\WithPokemonCategory instead', E_USER_DEPRECATED);
 

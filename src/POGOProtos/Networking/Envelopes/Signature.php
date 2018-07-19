@@ -9,138 +9,169 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Envelopes.Signature</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Envelopes.Signature</code>
  */
 class Signature extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.UnknownMessage field1 = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.UnknownMessage field1 = 1;</code>
      */
     private $field1;
     /**
-     * <pre>
      * in ms
-     * </pre>
      *
-     * <code>uint64 timestamp_since_start = 2;</code>
+     * Generated from protobuf field <code>uint64 timestamp_since_start = 2;</code>
      */
     private $timestamp_since_start = 0;
     /**
-     * <code>string field3 = 3;</code>
+     * Generated from protobuf field <code>string field3 = 3;</code>
      */
     private $field3 = '';
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.Signature.LocationFix location_fix = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.Signature.LocationFix location_fix = 4;</code>
      */
     private $location_fix;
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.Signature.AndroidGpsInfo gps_info = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.Signature.AndroidGpsInfo gps_info = 5;</code>
      */
     private $gps_info;
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.UnknownMessage field6 = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.UnknownMessage field6 = 6;</code>
      */
     private $field6;
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.Signature.SensorInfo sensor_info = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.Signature.SensorInfo sensor_info = 7;</code>
      */
     private $sensor_info;
     /**
-     * <code>.POGOProtos.Networking.Envelopes.Signature.DeviceInfo device_info = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.Signature.DeviceInfo device_info = 8;</code>
      */
     private $device_info = null;
     /**
-     * <code>.POGOProtos.Networking.Envelopes.Signature.ActivityStatus activity_status = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.Signature.ActivityStatus activity_status = 9;</code>
      */
     private $activity_status = null;
     /**
-     * <code>int32 location_hash1 = 10;</code>
+     * Generated from protobuf field <code>int32 location_hash1 = 10;</code>
      */
     private $location_hash1 = 0;
     /**
-     * <code>bool field11 = 11;</code>
+     * Generated from protobuf field <code>bool field11 = 11;</code>
      */
     private $field11 = false;
     /**
-     * <code>bool field12 = 12;</code>
+     * Generated from protobuf field <code>bool field12 = 12;</code>
      */
     private $field12 = false;
     /**
-     * <code>int32 field13 = 13;</code>
+     * Generated from protobuf field <code>int32 field13 = 13;</code>
      */
     private $field13 = 0;
     /**
-     * <code>int32 field14 = 14;</code>
+     * Generated from protobuf field <code>int32 field14 = 14;</code>
      */
     private $field14 = 0;
     /**
-     * <code>string field15 = 15;</code>
+     * Generated from protobuf field <code>string field15 = 15;</code>
      */
     private $field15 = '';
     /**
-     * <code>int32 field16 = 16;</code>
+     * Generated from protobuf field <code>int32 field16 = 16;</code>
      */
     private $field16 = 0;
     /**
-     * <code>string field17 = 17;</code>
+     * Generated from protobuf field <code>string field17 = 17;</code>
      */
     private $field17 = '';
     /**
-     * <code>string field18 = 18;</code>
+     * Generated from protobuf field <code>string field18 = 18;</code>
      */
     private $field18 = '';
     /**
-     * <code>bool field19 = 19;</code>
+     * Generated from protobuf field <code>bool field19 = 19;</code>
      */
     private $field19 = false;
     /**
-     * <code>int32 location_hash2 = 20;</code>
+     * Generated from protobuf field <code>int32 location_hash2 = 20;</code>
      */
     private $location_hash2 = 0;
     /**
-     * <code>bool field21 = 21;</code>
+     * Generated from protobuf field <code>bool field21 = 21;</code>
      */
     private $field21 = false;
     /**
-     * <pre>
      * 32 random bytes, unique per session.
-     * </pre>
      *
-     * <code>bytes session_hash = 22;</code>
+     * Generated from protobuf field <code>bytes session_hash = 22;</code>
      */
     private $session_hash = '';
     /**
-     * <pre>
      * epoch timestamp in ms
-     * </pre>
      *
-     * <code>uint64 timestamp = 23;</code>
+     * Generated from protobuf field <code>uint64 timestamp = 23;</code>
      */
     private $timestamp = 0;
     /**
-     * <pre>
      * hashes of each request message in a hashArray signed based on the auth_token or auth_info - xxhash64
-     * </pre>
      *
-     * <code>repeated uint64 request_hash = 24;</code>
+     * Generated from protobuf field <code>repeated uint64 request_hash = 24;</code>
      */
     private $request_hash;
     /**
-     * <code>int64 unknown25 = 25;</code>
+     * Generated from protobuf field <code>int64 unknown25 = 25;</code>
      */
     private $unknown25 = 0;
     /**
-     * <code>int32 unknown27 = 27;</code>
+     * Generated from protobuf field <code>int32 unknown27 = 27;</code>
      */
     private $unknown27 = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Networking\Envelopes\UnknownMessage[]|\Google\Protobuf\Internal\RepeatedField $field1
+     *     @type int|string $timestamp_since_start
+     *           in ms
+     *     @type string $field3
+     *     @type \POGOProtos\Networking\Envelopes\Signature\LocationFix[]|\Google\Protobuf\Internal\RepeatedField $location_fix
+     *     @type \POGOProtos\Networking\Envelopes\Signature\AndroidGpsInfo[]|\Google\Protobuf\Internal\RepeatedField $gps_info
+     *     @type \POGOProtos\Networking\Envelopes\UnknownMessage[]|\Google\Protobuf\Internal\RepeatedField $field6
+     *     @type \POGOProtos\Networking\Envelopes\Signature\SensorInfo[]|\Google\Protobuf\Internal\RepeatedField $sensor_info
+     *     @type \POGOProtos\Networking\Envelopes\Signature\DeviceInfo $device_info
+     *     @type \POGOProtos\Networking\Envelopes\Signature\ActivityStatus $activity_status
+     *     @type int $location_hash1
+     *     @type bool $field11
+     *     @type bool $field12
+     *     @type int $field13
+     *     @type int $field14
+     *     @type string $field15
+     *     @type int $field16
+     *     @type string $field17
+     *     @type string $field18
+     *     @type bool $field19
+     *     @type int $location_hash2
+     *     @type bool $field21
+     *     @type string $session_hash
+     *           32 random bytes, unique per session.
+     *     @type int|string $timestamp
+     *           epoch timestamp in ms
+     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $request_hash
+     *           hashes of each request message in a hashArray signed based on the auth_token or auth_info - xxhash64
+     *     @type int|string $unknown25
+     *     @type int $unknown27
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Envelopes\Signature::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.UnknownMessage field1 = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.UnknownMessage field1 = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getField1()
     {
@@ -148,20 +179,23 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.UnknownMessage field1 = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.UnknownMessage field1 = 1;</code>
+     * @param \POGOProtos\Networking\Envelopes\UnknownMessage[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setField1(&$var)
+    public function setField1($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\UnknownMessage::class);
-        $this->field1 = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\UnknownMessage::class);
+        $this->field1 = $arr;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * in ms
-     * </pre>
      *
-     * <code>uint64 timestamp_since_start = 2;</code>
+     * Generated from protobuf field <code>uint64 timestamp_since_start = 2;</code>
+     * @return int|string
      */
     public function getTimestampSinceStart()
     {
@@ -169,20 +203,23 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * in ms
-     * </pre>
      *
-     * <code>uint64 timestamp_since_start = 2;</code>
+     * Generated from protobuf field <code>uint64 timestamp_since_start = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTimestampSinceStart($var)
     {
         GPBUtil::checkUint64($var);
         $this->timestamp_since_start = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string field3 = 3;</code>
+     * Generated from protobuf field <code>string field3 = 3;</code>
+     * @return string
      */
     public function getField3()
     {
@@ -190,16 +227,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string field3 = 3;</code>
+     * Generated from protobuf field <code>string field3 = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setField3($var)
     {
         GPBUtil::checkString($var, True);
         $this->field3 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.Signature.LocationFix location_fix = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.Signature.LocationFix location_fix = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getLocationFix()
     {
@@ -207,16 +249,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.Signature.LocationFix location_fix = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.Signature.LocationFix location_fix = 4;</code>
+     * @param \POGOProtos\Networking\Envelopes\Signature\LocationFix[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setLocationFix(&$var)
+    public function setLocationFix($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\Signature_LocationFix::class);
-        $this->location_fix = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\Signature\LocationFix::class);
+        $this->location_fix = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.Signature.AndroidGpsInfo gps_info = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.Signature.AndroidGpsInfo gps_info = 5;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getGpsInfo()
     {
@@ -224,16 +271,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.Signature.AndroidGpsInfo gps_info = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.Signature.AndroidGpsInfo gps_info = 5;</code>
+     * @param \POGOProtos\Networking\Envelopes\Signature\AndroidGpsInfo[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGpsInfo(&$var)
+    public function setGpsInfo($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\Signature_AndroidGpsInfo::class);
-        $this->gps_info = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\Signature\AndroidGpsInfo::class);
+        $this->gps_info = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.UnknownMessage field6 = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.UnknownMessage field6 = 6;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getField6()
     {
@@ -241,16 +293,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.UnknownMessage field6 = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.UnknownMessage field6 = 6;</code>
+     * @param \POGOProtos\Networking\Envelopes\UnknownMessage[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setField6(&$var)
+    public function setField6($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\UnknownMessage::class);
-        $this->field6 = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\UnknownMessage::class);
+        $this->field6 = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.Signature.SensorInfo sensor_info = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.Signature.SensorInfo sensor_info = 7;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getSensorInfo()
     {
@@ -258,16 +315,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.Signature.SensorInfo sensor_info = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.Signature.SensorInfo sensor_info = 7;</code>
+     * @param \POGOProtos\Networking\Envelopes\Signature\SensorInfo[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSensorInfo(&$var)
+    public function setSensorInfo($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\Signature_SensorInfo::class);
-        $this->sensor_info = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\Signature\SensorInfo::class);
+        $this->sensor_info = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Envelopes.Signature.DeviceInfo device_info = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.Signature.DeviceInfo device_info = 8;</code>
+     * @return \POGOProtos\Networking\Envelopes\Signature\DeviceInfo
      */
     public function getDeviceInfo()
     {
@@ -275,16 +337,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Envelopes.Signature.DeviceInfo device_info = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.Signature.DeviceInfo device_info = 8;</code>
+     * @param \POGOProtos\Networking\Envelopes\Signature\DeviceInfo $var
+     * @return $this
      */
-    public function setDeviceInfo(&$var)
+    public function setDeviceInfo($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Envelopes\Signature_DeviceInfo::class);
         $this->device_info = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Envelopes.Signature.ActivityStatus activity_status = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.Signature.ActivityStatus activity_status = 9;</code>
+     * @return \POGOProtos\Networking\Envelopes\Signature\ActivityStatus
      */
     public function getActivityStatus()
     {
@@ -292,16 +359,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Envelopes.Signature.ActivityStatus activity_status = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.Signature.ActivityStatus activity_status = 9;</code>
+     * @param \POGOProtos\Networking\Envelopes\Signature\ActivityStatus $var
+     * @return $this
      */
-    public function setActivityStatus(&$var)
+    public function setActivityStatus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Envelopes\Signature_ActivityStatus::class);
         $this->activity_status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 location_hash1 = 10;</code>
+     * Generated from protobuf field <code>int32 location_hash1 = 10;</code>
+     * @return int
      */
     public function getLocationHash1()
     {
@@ -309,16 +381,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 location_hash1 = 10;</code>
+     * Generated from protobuf field <code>int32 location_hash1 = 10;</code>
+     * @param int $var
+     * @return $this
      */
     public function setLocationHash1($var)
     {
         GPBUtil::checkInt32($var);
         $this->location_hash1 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool field11 = 11;</code>
+     * Generated from protobuf field <code>bool field11 = 11;</code>
+     * @return bool
      */
     public function getField11()
     {
@@ -326,16 +403,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool field11 = 11;</code>
+     * Generated from protobuf field <code>bool field11 = 11;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setField11($var)
     {
         GPBUtil::checkBool($var);
         $this->field11 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool field12 = 12;</code>
+     * Generated from protobuf field <code>bool field12 = 12;</code>
+     * @return bool
      */
     public function getField12()
     {
@@ -343,16 +425,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool field12 = 12;</code>
+     * Generated from protobuf field <code>bool field12 = 12;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setField12($var)
     {
         GPBUtil::checkBool($var);
         $this->field12 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 field13 = 13;</code>
+     * Generated from protobuf field <code>int32 field13 = 13;</code>
+     * @return int
      */
     public function getField13()
     {
@@ -360,16 +447,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 field13 = 13;</code>
+     * Generated from protobuf field <code>int32 field13 = 13;</code>
+     * @param int $var
+     * @return $this
      */
     public function setField13($var)
     {
         GPBUtil::checkInt32($var);
         $this->field13 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 field14 = 14;</code>
+     * Generated from protobuf field <code>int32 field14 = 14;</code>
+     * @return int
      */
     public function getField14()
     {
@@ -377,16 +469,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 field14 = 14;</code>
+     * Generated from protobuf field <code>int32 field14 = 14;</code>
+     * @param int $var
+     * @return $this
      */
     public function setField14($var)
     {
         GPBUtil::checkInt32($var);
         $this->field14 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string field15 = 15;</code>
+     * Generated from protobuf field <code>string field15 = 15;</code>
+     * @return string
      */
     public function getField15()
     {
@@ -394,16 +491,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string field15 = 15;</code>
+     * Generated from protobuf field <code>string field15 = 15;</code>
+     * @param string $var
+     * @return $this
      */
     public function setField15($var)
     {
         GPBUtil::checkString($var, True);
         $this->field15 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 field16 = 16;</code>
+     * Generated from protobuf field <code>int32 field16 = 16;</code>
+     * @return int
      */
     public function getField16()
     {
@@ -411,16 +513,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 field16 = 16;</code>
+     * Generated from protobuf field <code>int32 field16 = 16;</code>
+     * @param int $var
+     * @return $this
      */
     public function setField16($var)
     {
         GPBUtil::checkInt32($var);
         $this->field16 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string field17 = 17;</code>
+     * Generated from protobuf field <code>string field17 = 17;</code>
+     * @return string
      */
     public function getField17()
     {
@@ -428,16 +535,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string field17 = 17;</code>
+     * Generated from protobuf field <code>string field17 = 17;</code>
+     * @param string $var
+     * @return $this
      */
     public function setField17($var)
     {
         GPBUtil::checkString($var, True);
         $this->field17 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string field18 = 18;</code>
+     * Generated from protobuf field <code>string field18 = 18;</code>
+     * @return string
      */
     public function getField18()
     {
@@ -445,16 +557,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string field18 = 18;</code>
+     * Generated from protobuf field <code>string field18 = 18;</code>
+     * @param string $var
+     * @return $this
      */
     public function setField18($var)
     {
         GPBUtil::checkString($var, True);
         $this->field18 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool field19 = 19;</code>
+     * Generated from protobuf field <code>bool field19 = 19;</code>
+     * @return bool
      */
     public function getField19()
     {
@@ -462,16 +579,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool field19 = 19;</code>
+     * Generated from protobuf field <code>bool field19 = 19;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setField19($var)
     {
         GPBUtil::checkBool($var);
         $this->field19 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 location_hash2 = 20;</code>
+     * Generated from protobuf field <code>int32 location_hash2 = 20;</code>
+     * @return int
      */
     public function getLocationHash2()
     {
@@ -479,16 +601,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 location_hash2 = 20;</code>
+     * Generated from protobuf field <code>int32 location_hash2 = 20;</code>
+     * @param int $var
+     * @return $this
      */
     public function setLocationHash2($var)
     {
         GPBUtil::checkInt32($var);
         $this->location_hash2 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool field21 = 21;</code>
+     * Generated from protobuf field <code>bool field21 = 21;</code>
+     * @return bool
      */
     public function getField21()
     {
@@ -496,20 +623,23 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool field21 = 21;</code>
+     * Generated from protobuf field <code>bool field21 = 21;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setField21($var)
     {
         GPBUtil::checkBool($var);
         $this->field21 = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * 32 random bytes, unique per session.
-     * </pre>
      *
-     * <code>bytes session_hash = 22;</code>
+     * Generated from protobuf field <code>bytes session_hash = 22;</code>
+     * @return string
      */
     public function getSessionHash()
     {
@@ -517,24 +647,25 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * 32 random bytes, unique per session.
-     * </pre>
      *
-     * <code>bytes session_hash = 22;</code>
+     * Generated from protobuf field <code>bytes session_hash = 22;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSessionHash($var)
     {
         GPBUtil::checkString($var, False);
         $this->session_hash = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * epoch timestamp in ms
-     * </pre>
      *
-     * <code>uint64 timestamp = 23;</code>
+     * Generated from protobuf field <code>uint64 timestamp = 23;</code>
+     * @return int|string
      */
     public function getTimestamp()
     {
@@ -542,24 +673,25 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * epoch timestamp in ms
-     * </pre>
      *
-     * <code>uint64 timestamp = 23;</code>
+     * Generated from protobuf field <code>uint64 timestamp = 23;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTimestamp($var)
     {
         GPBUtil::checkUint64($var);
         $this->timestamp = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * hashes of each request message in a hashArray signed based on the auth_token or auth_info - xxhash64
-     * </pre>
      *
-     * <code>repeated uint64 request_hash = 24;</code>
+     * Generated from protobuf field <code>repeated uint64 request_hash = 24;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getRequestHash()
     {
@@ -567,20 +699,23 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * hashes of each request message in a hashArray signed based on the auth_token or auth_info - xxhash64
-     * </pre>
      *
-     * <code>repeated uint64 request_hash = 24;</code>
+     * Generated from protobuf field <code>repeated uint64 request_hash = 24;</code>
+     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setRequestHash(&$var)
+    public function setRequestHash($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
-        $this->request_hash = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
+        $this->request_hash = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int64 unknown25 = 25;</code>
+     * Generated from protobuf field <code>int64 unknown25 = 25;</code>
+     * @return int|string
      */
     public function getUnknown25()
     {
@@ -588,16 +723,21 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 unknown25 = 25;</code>
+     * Generated from protobuf field <code>int64 unknown25 = 25;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setUnknown25($var)
     {
         GPBUtil::checkInt64($var);
         $this->unknown25 = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 unknown27 = 27;</code>
+     * Generated from protobuf field <code>int32 unknown27 = 27;</code>
+     * @return int
      */
     public function getUnknown27()
     {
@@ -605,12 +745,16 @@ class Signature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 unknown27 = 27;</code>
+     * Generated from protobuf field <code>int32 unknown27 = 27;</code>
+     * @param int $var
+     * @return $this
      */
     public function setUnknown27($var)
     {
         GPBUtil::checkInt32($var);
         $this->unknown27 = $var;
+
+        return $this;
     }
 
 }

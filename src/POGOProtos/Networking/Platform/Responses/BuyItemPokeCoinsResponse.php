@@ -9,30 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Responses.BuyItemPokeCoinsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Responses.BuyItemPokeCoinsResponse</code>
  */
 class BuyItemPokeCoinsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <pre>
      * result
-     * </pre>
      *
-     * <code>.POGOProtos.Networking.Platform.Responses.BuyItemPokeCoinsResponse.Status result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.BuyItemPokeCoinsResponse.Status result = 1;</code>
      */
     private $result = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *           result
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Responses\BuyItemPokeCoinsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <pre>
      * result
-     * </pre>
      *
-     * <code>.POGOProtos.Networking.Platform.Responses.BuyItemPokeCoinsResponse.Status result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.BuyItemPokeCoinsResponse.Status result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -40,16 +47,18 @@ class BuyItemPokeCoinsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * result
-     * </pre>
      *
-     * <code>.POGOProtos.Networking.Platform.Responses.BuyItemPokeCoinsResponse.Status result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.BuyItemPokeCoinsResponse.Status result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Platform\Responses\BuyItemPokeCoinsResponse_Status::class);
         $this->result = $var;
+
+        return $this;
     }
 
 }

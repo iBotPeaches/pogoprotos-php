@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestPrecondition.Level</code>
- */
-class QuestPrecondition_Level extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>.POGOProtos.Data.Quests.QuestPrecondition.Operator operator = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestPrecondition\Level instead.
+     * @deprecated
      */
-    private $operator = 0;
-    /**
-     * <code>int32 level = 2;</code>
-     */
-    private $level = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestPrecondition::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>.POGOProtos.Data.Quests.QuestPrecondition.Operator operator = 1;</code>
-     */
-    public function getOperator()
-    {
-        return $this->operator;
-    }
-
-    /**
-     * <code>.POGOProtos.Data.Quests.QuestPrecondition.Operator operator = 1;</code>
-     */
-    public function setOperator($var)
-    {
-        GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\QuestPrecondition_Operator::class);
-        $this->operator = $var;
-    }
-
-    /**
-     * <code>int32 level = 2;</code>
-     */
-    public function getLevel()
-    {
-        return $this->level;
-    }
-
-    /**
-     * <code>int32 level = 2;</code>
-     */
-    public function setLevel($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->level = $var;
-    }
-
+    class QuestPrecondition_Level {}
 }
+class_exists(QuestPrecondition\Level::class);
+@trigger_error('POGOProtos\Data\Quests\QuestPrecondition_Level is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestPrecondition\Level instead', E_USER_DEPRECATED);
 

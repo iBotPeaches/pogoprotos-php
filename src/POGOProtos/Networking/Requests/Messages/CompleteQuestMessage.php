@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.CompleteQuestMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.CompleteQuestMessage</code>
  */
 class CompleteQuestMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string quest_id = 1;</code>
+     * Generated from protobuf field <code>string quest_id = 1;</code>
      */
     private $quest_id = '';
     /**
-     * <code>string sub_quest_id = 2;</code>
+     * Generated from protobuf field <code>string sub_quest_id = 2;</code>
      */
     private $sub_quest_id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $quest_id
+     *     @type string $sub_quest_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\CompleteQuestMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string quest_id = 1;</code>
+     * Generated from protobuf field <code>string quest_id = 1;</code>
+     * @return string
      */
     public function getQuestId()
     {
@@ -36,16 +47,21 @@ class CompleteQuestMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string quest_id = 1;</code>
+     * Generated from protobuf field <code>string quest_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setQuestId($var)
     {
         GPBUtil::checkString($var, True);
         $this->quest_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string sub_quest_id = 2;</code>
+     * Generated from protobuf field <code>string sub_quest_id = 2;</code>
+     * @return string
      */
     public function getSubQuestId()
     {
@@ -53,12 +69,16 @@ class CompleteQuestMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string sub_quest_id = 2;</code>
+     * Generated from protobuf field <code>string sub_quest_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSubQuestId($var)
     {
         GPBUtil::checkString($var, True);
         $this->sub_quest_id = $var;
+
+        return $this;
     }
 
 }

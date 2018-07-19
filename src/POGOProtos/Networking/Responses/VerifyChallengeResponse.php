@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.VerifyChallengeResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.VerifyChallengeResponse</code>
  */
 class VerifyChallengeResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
      */
     private $success = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $success
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\VerifyChallengeResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @return bool
      */
     public function getSuccess()
     {
@@ -32,12 +42,16 @@ class VerifyChallengeResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSuccess($var)
     {
         GPBUtil::checkBool($var);
         $this->success = $var;
+
+        return $this;
     }
 
 }

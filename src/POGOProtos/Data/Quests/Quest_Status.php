@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Quests.Quest.Status</code>
- */
-class Quest_Status
-{
+if (false) {
     /**
-     * <code>STATUS_UNDEFINED = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\Quest\Status instead.
+     * @deprecated
      */
-    const STATUS_UNDEFINED = 0;
-    /**
-     * <code>STATUS_ACTIVE = 1;</code>
-     */
-    const STATUS_ACTIVE = 1;
-    /**
-     * <code>STATUS_COMPLETED = 2;</code>
-     */
-    const STATUS_COMPLETED = 2;
+    class Quest_Status {}
 }
+class_exists(Quest\Status::class);
+@trigger_error('POGOProtos\Data\Quests\Quest_Status is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\Quest\Status instead', E_USER_DEPRECATED);
 

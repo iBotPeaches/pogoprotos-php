@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.SetBuddyPokemonResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.SetBuddyPokemonResponse</code>
  */
 class SetBuddyPokemonResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.SetBuddyPokemonResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SetBuddyPokemonResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Data.BuddyPokemon updated_buddy = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BuddyPokemon updated_buddy = 2;</code>
      */
     private $updated_buddy = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\BuddyPokemon $updated_buddy
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\SetBuddyPokemonResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.SetBuddyPokemonResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SetBuddyPokemonResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class SetBuddyPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.SetBuddyPokemonResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SetBuddyPokemonResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\SetBuddyPokemonResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.BuddyPokemon updated_buddy = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BuddyPokemon updated_buddy = 2;</code>
+     * @return \POGOProtos\Data\BuddyPokemon
      */
     public function getUpdatedBuddy()
     {
@@ -53,12 +69,16 @@ class SetBuddyPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.BuddyPokemon updated_buddy = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BuddyPokemon updated_buddy = 2;</code>
+     * @param \POGOProtos\Data\BuddyPokemon $var
+     * @return $this
      */
-    public function setUpdatedBuddy(&$var)
+    public function setUpdatedBuddy($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\BuddyPokemon::class);
         $this->updated_buddy = $var;
+
+        return $this;
     }
 
 }

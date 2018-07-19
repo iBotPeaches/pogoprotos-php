@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.MarkReadNewsArticleMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.MarkReadNewsArticleMessage</code>
  */
 class MarkReadNewsArticleMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated string news_ids = 1;</code>
+     * Generated from protobuf field <code>repeated string news_ids = 1;</code>
      */
     private $news_ids;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $news_ids
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\MarkReadNewsArticleMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated string news_ids = 1;</code>
+     * Generated from protobuf field <code>repeated string news_ids = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getNewsIds()
     {
@@ -32,12 +42,16 @@ class MarkReadNewsArticleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string news_ids = 1;</code>
+     * Generated from protobuf field <code>repeated string news_ids = 1;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setNewsIds(&$var)
+    public function setNewsIds($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->news_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->news_ids = $arr;
+
+        return $this;
     }
 
 }

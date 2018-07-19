@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Battle.BattleLog</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Battle.BattleLog</code>
  */
 class BattleLog extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Battle.BattleState state = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleState state = 1;</code>
      */
     private $state = 0;
     /**
-     * <code>.POGOProtos.Data.Battle.BattleType battle_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleType battle_type = 2;</code>
      */
     private $battle_type = 0;
     /**
-     * <code>int64 server_ms = 3;</code>
+     * Generated from protobuf field <code>int64 server_ms = 3;</code>
      */
     private $server_ms = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Battle.BattleAction battle_actions = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Battle.BattleAction battle_actions = 4;</code>
      */
     private $battle_actions;
     /**
-     * <code>int64 battle_start_timestamp_ms = 5;</code>
+     * Generated from protobuf field <code>int64 battle_start_timestamp_ms = 5;</code>
      */
     private $battle_start_timestamp_ms = 0;
     /**
-     * <code>int64 battle_end_timestamp_ms = 6;</code>
+     * Generated from protobuf field <code>int64 battle_end_timestamp_ms = 6;</code>
      */
     private $battle_end_timestamp_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $state
+     *     @type int $battle_type
+     *     @type int|string $server_ms
+     *     @type \POGOProtos\Data\Battle\BattleAction[]|\Google\Protobuf\Internal\RepeatedField $battle_actions
+     *     @type int|string $battle_start_timestamp_ms
+     *     @type int|string $battle_end_timestamp_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Battle\BattleLog::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleState state = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleState state = 1;</code>
+     * @return int
      */
     public function getState()
     {
@@ -52,16 +67,21 @@ class BattleLog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleState state = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleState state = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setState($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Battle\BattleState::class);
         $this->state = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleType battle_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleType battle_type = 2;</code>
+     * @return int
      */
     public function getBattleType()
     {
@@ -69,16 +89,21 @@ class BattleLog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleType battle_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleType battle_type = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBattleType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Battle\BattleType::class);
         $this->battle_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 server_ms = 3;</code>
+     * Generated from protobuf field <code>int64 server_ms = 3;</code>
+     * @return int|string
      */
     public function getServerMs()
     {
@@ -86,16 +111,21 @@ class BattleLog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 server_ms = 3;</code>
+     * Generated from protobuf field <code>int64 server_ms = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setServerMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->server_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Battle.BattleAction battle_actions = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Battle.BattleAction battle_actions = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getBattleActions()
     {
@@ -103,16 +133,21 @@ class BattleLog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Battle.BattleAction battle_actions = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Battle.BattleAction battle_actions = 4;</code>
+     * @param \POGOProtos\Data\Battle\BattleAction[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setBattleActions(&$var)
+    public function setBattleActions($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Battle\BattleAction::class);
-        $this->battle_actions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Battle\BattleAction::class);
+        $this->battle_actions = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int64 battle_start_timestamp_ms = 5;</code>
+     * Generated from protobuf field <code>int64 battle_start_timestamp_ms = 5;</code>
+     * @return int|string
      */
     public function getBattleStartTimestampMs()
     {
@@ -120,16 +155,21 @@ class BattleLog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 battle_start_timestamp_ms = 5;</code>
+     * Generated from protobuf field <code>int64 battle_start_timestamp_ms = 5;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setBattleStartTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->battle_start_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 battle_end_timestamp_ms = 6;</code>
+     * Generated from protobuf field <code>int64 battle_end_timestamp_ms = 6;</code>
+     * @return int|string
      */
     public function getBattleEndTimestampMs()
     {
@@ -137,12 +177,16 @@ class BattleLog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 battle_end_timestamp_ms = 6;</code>
+     * Generated from protobuf field <code>int64 battle_end_timestamp_ms = 6;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setBattleEndTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->battle_end_timestamp_ms = $var;
+
+        return $this;
     }
 
 }

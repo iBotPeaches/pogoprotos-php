@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Redeem.RedeemedAvatarItem</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Redeem.RedeemedAvatarItem</code>
  */
 class RedeemedAvatarItem extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string avatar_template_id = 1;</code>
+     * Generated from protobuf field <code>string avatar_template_id = 1;</code>
      */
     private $avatar_template_id = '';
     /**
-     * <code>int32 item_count = 2;</code>
+     * Generated from protobuf field <code>int32 item_count = 2;</code>
      */
     private $item_count = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $avatar_template_id
+     *     @type int $item_count
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Redeem\RedeemedAvatarItem::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string avatar_template_id = 1;</code>
+     * Generated from protobuf field <code>string avatar_template_id = 1;</code>
+     * @return string
      */
     public function getAvatarTemplateId()
     {
@@ -36,16 +47,21 @@ class RedeemedAvatarItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_template_id = 1;</code>
+     * Generated from protobuf field <code>string avatar_template_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarTemplateId($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_template_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 item_count = 2;</code>
+     * Generated from protobuf field <code>int32 item_count = 2;</code>
+     * @return int
      */
     public function getItemCount()
     {
@@ -53,12 +69,16 @@ class RedeemedAvatarItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 item_count = 2;</code>
+     * Generated from protobuf field <code>int32 item_count = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->item_count = $var;
+
+        return $this;
     }
 
 }

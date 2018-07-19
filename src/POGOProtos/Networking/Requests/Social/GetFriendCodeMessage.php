@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Social.GetFriendCodeMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Social.GetFriendCodeMessage</code>
  */
 class GetFriendCodeMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool force_generate_code = 1;</code>
+     * Generated from protobuf field <code>bool force_generate_code = 1;</code>
      */
     private $force_generate_code = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $force_generate_code
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Social\GetFriendCodeMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool force_generate_code = 1;</code>
+     * Generated from protobuf field <code>bool force_generate_code = 1;</code>
+     * @return bool
      */
     public function getForceGenerateCode()
     {
@@ -32,12 +42,16 @@ class GetFriendCodeMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool force_generate_code = 1;</code>
+     * Generated from protobuf field <code>bool force_generate_code = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setForceGenerateCode($var)
     {
         GPBUtil::checkBool($var);
         $this->force_generate_code = $var;
+
+        return $this;
     }
 
 }

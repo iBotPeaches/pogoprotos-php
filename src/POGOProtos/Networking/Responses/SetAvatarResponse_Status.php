@@ -4,38 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.SetAvatarResponse.Status</code>
- */
-class SetAvatarResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\SetAvatarResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>AVATAR_ALREADY_SET = 2;</code>
-     */
-    const AVATAR_ALREADY_SET = 2;
-    /**
-     * <code>FAILURE = 3;</code>
-     */
-    const FAILURE = 3;
-    /**
-     * <code>SLOT_NOT_ALLOWED = 4;</code>
-     */
-    const SLOT_NOT_ALLOWED = 4;
-    /**
-     * <code>ITEM_NOT_OWNED = 5;</code>
-     */
-    const ITEM_NOT_OWNED = 5;
-    /**
-     * <code>INVALID_AVATAR_TYPE = 6;</code>
-     */
-    const INVALID_AVATAR_TYPE = 6;
+    class SetAvatarResponse_Status {}
 }
+class_exists(SetAvatarResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\SetAvatarResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\SetAvatarResponse\Status instead', E_USER_DEPRECATED);
 

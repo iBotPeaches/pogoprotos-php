@@ -9,54 +9,72 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.News.NewsArticle</code>
+ * Generated from protobuf message <code>POGOProtos.Data.News.NewsArticle</code>
  */
 class NewsArticle extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string id = 1;</code>
+     * Generated from protobuf field <code>string id = 1;</code>
      */
     private $id = '';
     /**
-     * <code>repeated string image_url = 2;</code>
+     * Generated from protobuf field <code>repeated string image_url = 2;</code>
      */
     private $image_url;
     /**
-     * <code>string header_key = 3;</code>
+     * Generated from protobuf field <code>string header_key = 3;</code>
      */
     private $header_key = '';
     /**
-     * <code>string subheader_key = 4;</code>
+     * Generated from protobuf field <code>string subheader_key = 4;</code>
      */
     private $subheader_key = '';
     /**
-     * <code>string main_text_key = 5;</code>
+     * Generated from protobuf field <code>string main_text_key = 5;</code>
      */
     private $main_text_key = '';
     /**
-     * <code>int64 timestamp = 6;</code>
+     * Generated from protobuf field <code>int64 timestamp = 6;</code>
      */
     private $timestamp = 0;
     /**
-     * <code>.POGOProtos.Data.News.NewsArticle.NewsTemplate template = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.News.NewsArticle.NewsTemplate template = 7;</code>
      */
     private $template = 0;
     /**
-     * <code>bool enabled = 8;</code>
+     * Generated from protobuf field <code>bool enabled = 8;</code>
      */
     private $enabled = false;
     /**
-     * <code>bool article_read = 9;</code>
+     * Generated from protobuf field <code>bool article_read = 9;</code>
      */
     private $article_read = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $id
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $image_url
+     *     @type string $header_key
+     *     @type string $subheader_key
+     *     @type string $main_text_key
+     *     @type int|string $timestamp
+     *     @type int $template
+     *     @type bool $enabled
+     *     @type bool $article_read
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\News\NewsArticle::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string id = 1;</code>
+     * Generated from protobuf field <code>string id = 1;</code>
+     * @return string
      */
     public function getId()
     {
@@ -64,16 +82,21 @@ class NewsArticle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string id = 1;</code>
+     * Generated from protobuf field <code>string id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setId($var)
     {
         GPBUtil::checkString($var, True);
         $this->id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated string image_url = 2;</code>
+     * Generated from protobuf field <code>repeated string image_url = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getImageUrl()
     {
@@ -81,16 +104,21 @@ class NewsArticle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string image_url = 2;</code>
+     * Generated from protobuf field <code>repeated string image_url = 2;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setImageUrl(&$var)
+    public function setImageUrl($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->image_url = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->image_url = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>string header_key = 3;</code>
+     * Generated from protobuf field <code>string header_key = 3;</code>
+     * @return string
      */
     public function getHeaderKey()
     {
@@ -98,16 +126,21 @@ class NewsArticle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string header_key = 3;</code>
+     * Generated from protobuf field <code>string header_key = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setHeaderKey($var)
     {
         GPBUtil::checkString($var, True);
         $this->header_key = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string subheader_key = 4;</code>
+     * Generated from protobuf field <code>string subheader_key = 4;</code>
+     * @return string
      */
     public function getSubheaderKey()
     {
@@ -115,16 +148,21 @@ class NewsArticle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string subheader_key = 4;</code>
+     * Generated from protobuf field <code>string subheader_key = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSubheaderKey($var)
     {
         GPBUtil::checkString($var, True);
         $this->subheader_key = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string main_text_key = 5;</code>
+     * Generated from protobuf field <code>string main_text_key = 5;</code>
+     * @return string
      */
     public function getMainTextKey()
     {
@@ -132,16 +170,21 @@ class NewsArticle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string main_text_key = 5;</code>
+     * Generated from protobuf field <code>string main_text_key = 5;</code>
+     * @param string $var
+     * @return $this
      */
     public function setMainTextKey($var)
     {
         GPBUtil::checkString($var, True);
         $this->main_text_key = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 timestamp = 6;</code>
+     * Generated from protobuf field <code>int64 timestamp = 6;</code>
+     * @return int|string
      */
     public function getTimestamp()
     {
@@ -149,16 +192,21 @@ class NewsArticle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 timestamp = 6;</code>
+     * Generated from protobuf field <code>int64 timestamp = 6;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTimestamp($var)
     {
         GPBUtil::checkInt64($var);
         $this->timestamp = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.News.NewsArticle.NewsTemplate template = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.News.NewsArticle.NewsTemplate template = 7;</code>
+     * @return int
      */
     public function getTemplate()
     {
@@ -166,16 +214,21 @@ class NewsArticle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.News.NewsArticle.NewsTemplate template = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.News.NewsArticle.NewsTemplate template = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTemplate($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\News\NewsArticle_NewsTemplate::class);
         $this->template = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool enabled = 8;</code>
+     * Generated from protobuf field <code>bool enabled = 8;</code>
+     * @return bool
      */
     public function getEnabled()
     {
@@ -183,16 +236,21 @@ class NewsArticle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool enabled = 8;</code>
+     * Generated from protobuf field <code>bool enabled = 8;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEnabled($var)
     {
         GPBUtil::checkBool($var);
         $this->enabled = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool article_read = 9;</code>
+     * Generated from protobuf field <code>bool article_read = 9;</code>
+     * @return bool
      */
     public function getArticleRead()
     {
@@ -200,12 +258,16 @@ class NewsArticle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool article_read = 9;</code>
+     * Generated from protobuf field <code>bool article_read = 9;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setArticleRead($var)
     {
         GPBUtil::checkBool($var);
         $this->article_read = $var;
+
+        return $this;
     }
 
 }

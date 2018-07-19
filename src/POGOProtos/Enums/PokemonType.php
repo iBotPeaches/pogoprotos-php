@@ -5,84 +5,84 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.PokemonType</code>
+ * Protobuf type <code>POGOProtos.Enums.PokemonType</code>
  */
 class PokemonType
 {
     /**
-     * <code>POKEMON_TYPE_NONE = 0;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_NONE = 0;</code>
      */
     const POKEMON_TYPE_NONE = 0;
     /**
-     * <code>POKEMON_TYPE_NORMAL = 1;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_NORMAL = 1;</code>
      */
     const POKEMON_TYPE_NORMAL = 1;
     /**
-     * <code>POKEMON_TYPE_FIGHTING = 2;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_FIGHTING = 2;</code>
      */
     const POKEMON_TYPE_FIGHTING = 2;
     /**
-     * <code>POKEMON_TYPE_FLYING = 3;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_FLYING = 3;</code>
      */
     const POKEMON_TYPE_FLYING = 3;
     /**
-     * <code>POKEMON_TYPE_POISON = 4;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_POISON = 4;</code>
      */
     const POKEMON_TYPE_POISON = 4;
     /**
-     * <code>POKEMON_TYPE_GROUND = 5;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_GROUND = 5;</code>
      */
     const POKEMON_TYPE_GROUND = 5;
     /**
-     * <code>POKEMON_TYPE_ROCK = 6;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_ROCK = 6;</code>
      */
     const POKEMON_TYPE_ROCK = 6;
     /**
-     * <code>POKEMON_TYPE_BUG = 7;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_BUG = 7;</code>
      */
     const POKEMON_TYPE_BUG = 7;
     /**
-     * <code>POKEMON_TYPE_GHOST = 8;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_GHOST = 8;</code>
      */
     const POKEMON_TYPE_GHOST = 8;
     /**
-     * <code>POKEMON_TYPE_STEEL = 9;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_STEEL = 9;</code>
      */
     const POKEMON_TYPE_STEEL = 9;
     /**
-     * <code>POKEMON_TYPE_FIRE = 10;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_FIRE = 10;</code>
      */
     const POKEMON_TYPE_FIRE = 10;
     /**
-     * <code>POKEMON_TYPE_WATER = 11;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_WATER = 11;</code>
      */
     const POKEMON_TYPE_WATER = 11;
     /**
-     * <code>POKEMON_TYPE_GRASS = 12;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_GRASS = 12;</code>
      */
     const POKEMON_TYPE_GRASS = 12;
     /**
-     * <code>POKEMON_TYPE_ELECTRIC = 13;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_ELECTRIC = 13;</code>
      */
     const POKEMON_TYPE_ELECTRIC = 13;
     /**
-     * <code>POKEMON_TYPE_PSYCHIC = 14;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_PSYCHIC = 14;</code>
      */
     const POKEMON_TYPE_PSYCHIC = 14;
     /**
-     * <code>POKEMON_TYPE_ICE = 15;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_ICE = 15;</code>
      */
     const POKEMON_TYPE_ICE = 15;
     /**
-     * <code>POKEMON_TYPE_DRAGON = 16;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_DRAGON = 16;</code>
      */
     const POKEMON_TYPE_DRAGON = 16;
     /**
-     * <code>POKEMON_TYPE_DARK = 17;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_DARK = 17;</code>
      */
     const POKEMON_TYPE_DARK = 17;
     /**
-     * <code>POKEMON_TYPE_FAIRY = 18;</code>
+     * Generated from protobuf enum <code>POKEMON_TYPE_FAIRY = 18;</code>
      */
     const POKEMON_TYPE_FAIRY = 18;
 }

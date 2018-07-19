@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.GetPlayerProfileResponse.Result</code>
- */
-class GetPlayerProfileResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GetPlayerProfileResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
+    class GetPlayerProfileResponse_Result {}
 }
+class_exists(GetPlayerProfileResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\GetPlayerProfileResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GetPlayerProfileResponse\Result instead', E_USER_DEPRECATED);
 

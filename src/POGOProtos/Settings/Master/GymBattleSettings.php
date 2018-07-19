@@ -9,82 +9,107 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.GymBattleSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.GymBattleSettings</code>
  */
 class GymBattleSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float energy_per_sec = 1;</code>
+     * Generated from protobuf field <code>float energy_per_sec = 1;</code>
      */
     private $energy_per_sec = 0.0;
     /**
-     * <code>float dodge_energy_cost = 2;</code>
+     * Generated from protobuf field <code>float dodge_energy_cost = 2;</code>
      */
     private $dodge_energy_cost = 0.0;
     /**
-     * <code>float retarget_seconds = 3;</code>
+     * Generated from protobuf field <code>float retarget_seconds = 3;</code>
      */
     private $retarget_seconds = 0.0;
     /**
-     * <code>float enemy_attack_interval = 4;</code>
+     * Generated from protobuf field <code>float enemy_attack_interval = 4;</code>
      */
     private $enemy_attack_interval = 0.0;
     /**
-     * <code>float attack_server_interval = 5;</code>
+     * Generated from protobuf field <code>float attack_server_interval = 5;</code>
      */
     private $attack_server_interval = 0.0;
     /**
-     * <code>float round_duration_seconds = 6;</code>
+     * Generated from protobuf field <code>float round_duration_seconds = 6;</code>
      */
     private $round_duration_seconds = 0.0;
     /**
-     * <code>float bonus_time_per_ally_seconds = 7;</code>
+     * Generated from protobuf field <code>float bonus_time_per_ally_seconds = 7;</code>
      */
     private $bonus_time_per_ally_seconds = 0.0;
     /**
-     * <code>int32 maximum_attackers_per_battle = 8;</code>
+     * Generated from protobuf field <code>int32 maximum_attackers_per_battle = 8;</code>
      */
     private $maximum_attackers_per_battle = 0;
     /**
-     * <code>float same_type_attack_bonus_multiplier = 9;</code>
+     * Generated from protobuf field <code>float same_type_attack_bonus_multiplier = 9;</code>
      */
     private $same_type_attack_bonus_multiplier = 0.0;
     /**
-     * <code>int32 maximum_energy = 10;</code>
+     * Generated from protobuf field <code>int32 maximum_energy = 10;</code>
      */
     private $maximum_energy = 0;
     /**
-     * <code>float energy_delta_per_health_lost = 11;</code>
+     * Generated from protobuf field <code>float energy_delta_per_health_lost = 11;</code>
      */
     private $energy_delta_per_health_lost = 0.0;
     /**
-     * <code>int32 dodge_duration_ms = 12;</code>
+     * Generated from protobuf field <code>int32 dodge_duration_ms = 12;</code>
      */
     private $dodge_duration_ms = 0;
     /**
-     * <code>int32 minimum_player_level = 13;</code>
+     * Generated from protobuf field <code>int32 minimum_player_level = 13;</code>
      */
     private $minimum_player_level = 0;
     /**
-     * <code>int32 swap_duration_ms = 14;</code>
+     * Generated from protobuf field <code>int32 swap_duration_ms = 14;</code>
      */
     private $swap_duration_ms = 0;
     /**
-     * <code>float dodge_damage_reduction_percent = 15;</code>
+     * Generated from protobuf field <code>float dodge_damage_reduction_percent = 15;</code>
      */
     private $dodge_damage_reduction_percent = 0.0;
     /**
-     * <code>int32 minimum_raid_player_level = 16;</code>
+     * Generated from protobuf field <code>int32 minimum_raid_player_level = 16;</code>
      */
     private $minimum_raid_player_level = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $energy_per_sec
+     *     @type float $dodge_energy_cost
+     *     @type float $retarget_seconds
+     *     @type float $enemy_attack_interval
+     *     @type float $attack_server_interval
+     *     @type float $round_duration_seconds
+     *     @type float $bonus_time_per_ally_seconds
+     *     @type int $maximum_attackers_per_battle
+     *     @type float $same_type_attack_bonus_multiplier
+     *     @type int $maximum_energy
+     *     @type float $energy_delta_per_health_lost
+     *     @type int $dodge_duration_ms
+     *     @type int $minimum_player_level
+     *     @type int $swap_duration_ms
+     *     @type float $dodge_damage_reduction_percent
+     *     @type int $minimum_raid_player_level
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\GymBattleSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float energy_per_sec = 1;</code>
+     * Generated from protobuf field <code>float energy_per_sec = 1;</code>
+     * @return float
      */
     public function getEnergyPerSec()
     {
@@ -92,16 +117,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float energy_per_sec = 1;</code>
+     * Generated from protobuf field <code>float energy_per_sec = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setEnergyPerSec($var)
     {
         GPBUtil::checkFloat($var);
         $this->energy_per_sec = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float dodge_energy_cost = 2;</code>
+     * Generated from protobuf field <code>float dodge_energy_cost = 2;</code>
+     * @return float
      */
     public function getDodgeEnergyCost()
     {
@@ -109,16 +139,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float dodge_energy_cost = 2;</code>
+     * Generated from protobuf field <code>float dodge_energy_cost = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDodgeEnergyCost($var)
     {
         GPBUtil::checkFloat($var);
         $this->dodge_energy_cost = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float retarget_seconds = 3;</code>
+     * Generated from protobuf field <code>float retarget_seconds = 3;</code>
+     * @return float
      */
     public function getRetargetSeconds()
     {
@@ -126,16 +161,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float retarget_seconds = 3;</code>
+     * Generated from protobuf field <code>float retarget_seconds = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setRetargetSeconds($var)
     {
         GPBUtil::checkFloat($var);
         $this->retarget_seconds = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float enemy_attack_interval = 4;</code>
+     * Generated from protobuf field <code>float enemy_attack_interval = 4;</code>
+     * @return float
      */
     public function getEnemyAttackInterval()
     {
@@ -143,16 +183,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float enemy_attack_interval = 4;</code>
+     * Generated from protobuf field <code>float enemy_attack_interval = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setEnemyAttackInterval($var)
     {
         GPBUtil::checkFloat($var);
         $this->enemy_attack_interval = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float attack_server_interval = 5;</code>
+     * Generated from protobuf field <code>float attack_server_interval = 5;</code>
+     * @return float
      */
     public function getAttackServerInterval()
     {
@@ -160,16 +205,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float attack_server_interval = 5;</code>
+     * Generated from protobuf field <code>float attack_server_interval = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setAttackServerInterval($var)
     {
         GPBUtil::checkFloat($var);
         $this->attack_server_interval = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float round_duration_seconds = 6;</code>
+     * Generated from protobuf field <code>float round_duration_seconds = 6;</code>
+     * @return float
      */
     public function getRoundDurationSeconds()
     {
@@ -177,16 +227,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float round_duration_seconds = 6;</code>
+     * Generated from protobuf field <code>float round_duration_seconds = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setRoundDurationSeconds($var)
     {
         GPBUtil::checkFloat($var);
         $this->round_duration_seconds = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float bonus_time_per_ally_seconds = 7;</code>
+     * Generated from protobuf field <code>float bonus_time_per_ally_seconds = 7;</code>
+     * @return float
      */
     public function getBonusTimePerAllySeconds()
     {
@@ -194,16 +249,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float bonus_time_per_ally_seconds = 7;</code>
+     * Generated from protobuf field <code>float bonus_time_per_ally_seconds = 7;</code>
+     * @param float $var
+     * @return $this
      */
     public function setBonusTimePerAllySeconds($var)
     {
         GPBUtil::checkFloat($var);
         $this->bonus_time_per_ally_seconds = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 maximum_attackers_per_battle = 8;</code>
+     * Generated from protobuf field <code>int32 maximum_attackers_per_battle = 8;</code>
+     * @return int
      */
     public function getMaximumAttackersPerBattle()
     {
@@ -211,16 +271,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 maximum_attackers_per_battle = 8;</code>
+     * Generated from protobuf field <code>int32 maximum_attackers_per_battle = 8;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaximumAttackersPerBattle($var)
     {
         GPBUtil::checkInt32($var);
         $this->maximum_attackers_per_battle = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float same_type_attack_bonus_multiplier = 9;</code>
+     * Generated from protobuf field <code>float same_type_attack_bonus_multiplier = 9;</code>
+     * @return float
      */
     public function getSameTypeAttackBonusMultiplier()
     {
@@ -228,16 +293,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float same_type_attack_bonus_multiplier = 9;</code>
+     * Generated from protobuf field <code>float same_type_attack_bonus_multiplier = 9;</code>
+     * @param float $var
+     * @return $this
      */
     public function setSameTypeAttackBonusMultiplier($var)
     {
         GPBUtil::checkFloat($var);
         $this->same_type_attack_bonus_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 maximum_energy = 10;</code>
+     * Generated from protobuf field <code>int32 maximum_energy = 10;</code>
+     * @return int
      */
     public function getMaximumEnergy()
     {
@@ -245,16 +315,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 maximum_energy = 10;</code>
+     * Generated from protobuf field <code>int32 maximum_energy = 10;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaximumEnergy($var)
     {
         GPBUtil::checkInt32($var);
         $this->maximum_energy = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float energy_delta_per_health_lost = 11;</code>
+     * Generated from protobuf field <code>float energy_delta_per_health_lost = 11;</code>
+     * @return float
      */
     public function getEnergyDeltaPerHealthLost()
     {
@@ -262,16 +337,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float energy_delta_per_health_lost = 11;</code>
+     * Generated from protobuf field <code>float energy_delta_per_health_lost = 11;</code>
+     * @param float $var
+     * @return $this
      */
     public function setEnergyDeltaPerHealthLost($var)
     {
         GPBUtil::checkFloat($var);
         $this->energy_delta_per_health_lost = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 dodge_duration_ms = 12;</code>
+     * Generated from protobuf field <code>int32 dodge_duration_ms = 12;</code>
+     * @return int
      */
     public function getDodgeDurationMs()
     {
@@ -279,16 +359,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 dodge_duration_ms = 12;</code>
+     * Generated from protobuf field <code>int32 dodge_duration_ms = 12;</code>
+     * @param int $var
+     * @return $this
      */
     public function setDodgeDurationMs($var)
     {
         GPBUtil::checkInt32($var);
         $this->dodge_duration_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 minimum_player_level = 13;</code>
+     * Generated from protobuf field <code>int32 minimum_player_level = 13;</code>
+     * @return int
      */
     public function getMinimumPlayerLevel()
     {
@@ -296,16 +381,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 minimum_player_level = 13;</code>
+     * Generated from protobuf field <code>int32 minimum_player_level = 13;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMinimumPlayerLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->minimum_player_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 swap_duration_ms = 14;</code>
+     * Generated from protobuf field <code>int32 swap_duration_ms = 14;</code>
+     * @return int
      */
     public function getSwapDurationMs()
     {
@@ -313,16 +403,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 swap_duration_ms = 14;</code>
+     * Generated from protobuf field <code>int32 swap_duration_ms = 14;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSwapDurationMs($var)
     {
         GPBUtil::checkInt32($var);
         $this->swap_duration_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float dodge_damage_reduction_percent = 15;</code>
+     * Generated from protobuf field <code>float dodge_damage_reduction_percent = 15;</code>
+     * @return float
      */
     public function getDodgeDamageReductionPercent()
     {
@@ -330,16 +425,21 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float dodge_damage_reduction_percent = 15;</code>
+     * Generated from protobuf field <code>float dodge_damage_reduction_percent = 15;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDodgeDamageReductionPercent($var)
     {
         GPBUtil::checkFloat($var);
         $this->dodge_damage_reduction_percent = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 minimum_raid_player_level = 16;</code>
+     * Generated from protobuf field <code>int32 minimum_raid_player_level = 16;</code>
+     * @return int
      */
     public function getMinimumRaidPlayerLevel()
     {
@@ -347,12 +447,16 @@ class GymBattleSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 minimum_raid_player_level = 16;</code>
+     * Generated from protobuf field <code>int32 minimum_raid_player_level = 16;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMinimumRaidPlayerLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->minimum_raid_player_level = $var;
+
+        return $this;
     }
 
 }

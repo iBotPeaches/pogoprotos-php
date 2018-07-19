@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Social.InviteFacebookFriendMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Social.InviteFacebookFriendMessage</code>
  */
 class InviteFacebookFriendMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string business_token = 1;</code>
+     * Generated from protobuf field <code>string business_token = 1;</code>
      */
     private $business_token = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $business_token
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Social\InviteFacebookFriendMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string business_token = 1;</code>
+     * Generated from protobuf field <code>string business_token = 1;</code>
+     * @return string
      */
     public function getBusinessToken()
     {
@@ -32,12 +42,16 @@ class InviteFacebookFriendMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string business_token = 1;</code>
+     * Generated from protobuf field <code>string business_token = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setBusinessToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->business_token = $var;
+
+        return $this;
     }
 
 }

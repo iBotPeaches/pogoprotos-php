@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.Item.ItemAward</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.Item.ItemAward</code>
  */
 class ItemAward extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
      */
     private $item_id = 0;
     /**
-     * <code>int32 item_count = 2;</code>
+     * Generated from protobuf field <code>int32 item_count = 2;</code>
      */
     private $item_count = 0;
     /**
-     * <code>int32 bonus_count = 3;</code>
+     * Generated from protobuf field <code>int32 bonus_count = 3;</code>
      */
     private $bonus_count = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $item_id
+     *     @type int $item_count
+     *     @type int $bonus_count
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\Item\ItemAward::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * @return int
      */
     public function getItemId()
     {
@@ -40,16 +52,21 @@ class ItemAward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 item_count = 2;</code>
+     * Generated from protobuf field <code>int32 item_count = 2;</code>
+     * @return int
      */
     public function getItemCount()
     {
@@ -57,16 +74,21 @@ class ItemAward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 item_count = 2;</code>
+     * Generated from protobuf field <code>int32 item_count = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->item_count = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 bonus_count = 3;</code>
+     * Generated from protobuf field <code>int32 bonus_count = 3;</code>
+     * @return int
      */
     public function getBonusCount()
     {
@@ -74,12 +96,16 @@ class ItemAward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 bonus_count = 3;</code>
+     * Generated from protobuf field <code>int32 bonus_count = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBonusCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->bonus_count = $var;
+
+        return $this;
     }
 
 }

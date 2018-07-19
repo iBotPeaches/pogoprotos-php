@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.SetBuddyPokemonResponse.Result</code>
- */
-class SetBuddyPokemonResponse_Result
-{
+if (false) {
     /**
-     * <code>UNEST = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\SetBuddyPokemonResponse\Result instead.
+     * @deprecated
      */
-    const UNEST = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_POKEMON_DEPLOYED = 2;</code>
-     */
-    const ERROR_POKEMON_DEPLOYED = 2;
-    /**
-     * <code>ERROR_POKEMON_NOT_OWNED = 3;</code>
-     */
-    const ERROR_POKEMON_NOT_OWNED = 3;
-    /**
-     * <code>ERROR_POKEMON_IS_EGG = 4;</code>
-     */
-    const ERROR_POKEMON_IS_EGG = 4;
-    /**
-     * <code>ERROR_INVALID_POKEMON = 5;</code>
-     */
-    const ERROR_INVALID_POKEMON = 5;
+    class SetBuddyPokemonResponse_Result {}
 }
+class_exists(SetBuddyPokemonResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\SetBuddyPokemonResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\SetBuddyPokemonResponse\Result instead', E_USER_DEPRECATED);
 

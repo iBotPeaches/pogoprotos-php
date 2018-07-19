@@ -9,62 +9,82 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.ExclusiveTicketInfo</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.ExclusiveTicketInfo</code>
  */
 class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 raid_seed = 1;</code>
+     * Generated from protobuf field <code>int64 raid_seed = 1;</code>
      */
     private $raid_seed = 0;
     /**
-     * <code>string fort_id = 2;</code>
+     * Generated from protobuf field <code>string fort_id = 2;</code>
      */
     private $fort_id = '';
     /**
-     * <code>int64 start_time_ms = 4;</code>
+     * Generated from protobuf field <code>int64 start_time_ms = 4;</code>
      */
     private $start_time_ms = 0;
     /**
-     * <code>int64 end_time_ms = 5;</code>
+     * Generated from protobuf field <code>int64 end_time_ms = 5;</code>
      */
     private $end_time_ms = 0;
     /**
-     * <code>string image_url = 6;</code>
+     * Generated from protobuf field <code>string image_url = 6;</code>
      */
     private $image_url = '';
     /**
-     * <code>double latitude = 7;</code>
+     * Generated from protobuf field <code>double latitude = 7;</code>
      */
     private $latitude = 0.0;
     /**
-     * <code>double longitude = 8;</code>
+     * Generated from protobuf field <code>double longitude = 8;</code>
      */
     private $longitude = 0.0;
     /**
-     * <code>string gym_name = 9;</code>
+     * Generated from protobuf field <code>string gym_name = 9;</code>
      */
     private $gym_name = '';
     /**
-     * <code>int64 spawn_time_ms = 10;</code>
+     * Generated from protobuf field <code>int64 spawn_time_ms = 10;</code>
      */
     private $spawn_time_ms = 0;
     /**
-     * <code>bool is_cancelled = 11;</code>
+     * Generated from protobuf field <code>bool is_cancelled = 11;</code>
      */
     private $is_cancelled = false;
     /**
-     * <code>.POGOProtos.Data.PokemonData raid_pokemon = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData raid_pokemon = 12;</code>
      */
     private $raid_pokemon = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $raid_seed
+     *     @type string $fort_id
+     *     @type int|string $start_time_ms
+     *     @type int|string $end_time_ms
+     *     @type string $image_url
+     *     @type float $latitude
+     *     @type float $longitude
+     *     @type string $gym_name
+     *     @type int|string $spawn_time_ms
+     *     @type bool $is_cancelled
+     *     @type \POGOProtos\Data\PokemonData $raid_pokemon
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\ExclusiveTicketInfo::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 raid_seed = 1;</code>
+     * Generated from protobuf field <code>int64 raid_seed = 1;</code>
+     * @return int|string
      */
     public function getRaidSeed()
     {
@@ -72,16 +92,21 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 raid_seed = 1;</code>
+     * Generated from protobuf field <code>int64 raid_seed = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setRaidSeed($var)
     {
         GPBUtil::checkInt64($var);
         $this->raid_seed = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string fort_id = 2;</code>
+     * Generated from protobuf field <code>string fort_id = 2;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -89,16 +114,21 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 2;</code>
+     * Generated from protobuf field <code>string fort_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 start_time_ms = 4;</code>
+     * Generated from protobuf field <code>int64 start_time_ms = 4;</code>
+     * @return int|string
      */
     public function getStartTimeMs()
     {
@@ -106,16 +136,21 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 start_time_ms = 4;</code>
+     * Generated from protobuf field <code>int64 start_time_ms = 4;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setStartTimeMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->start_time_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 end_time_ms = 5;</code>
+     * Generated from protobuf field <code>int64 end_time_ms = 5;</code>
+     * @return int|string
      */
     public function getEndTimeMs()
     {
@@ -123,16 +158,21 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 end_time_ms = 5;</code>
+     * Generated from protobuf field <code>int64 end_time_ms = 5;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setEndTimeMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->end_time_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string image_url = 6;</code>
+     * Generated from protobuf field <code>string image_url = 6;</code>
+     * @return string
      */
     public function getImageUrl()
     {
@@ -140,16 +180,21 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string image_url = 6;</code>
+     * Generated from protobuf field <code>string image_url = 6;</code>
+     * @param string $var
+     * @return $this
      */
     public function setImageUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->image_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double latitude = 7;</code>
+     * Generated from protobuf field <code>double latitude = 7;</code>
+     * @return float
      */
     public function getLatitude()
     {
@@ -157,16 +202,21 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double latitude = 7;</code>
+     * Generated from protobuf field <code>double latitude = 7;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double longitude = 8;</code>
+     * Generated from protobuf field <code>double longitude = 8;</code>
+     * @return float
      */
     public function getLongitude()
     {
@@ -174,16 +224,21 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double longitude = 8;</code>
+     * Generated from protobuf field <code>double longitude = 8;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->longitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string gym_name = 9;</code>
+     * Generated from protobuf field <code>string gym_name = 9;</code>
+     * @return string
      */
     public function getGymName()
     {
@@ -191,16 +246,21 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string gym_name = 9;</code>
+     * Generated from protobuf field <code>string gym_name = 9;</code>
+     * @param string $var
+     * @return $this
      */
     public function setGymName($var)
     {
         GPBUtil::checkString($var, True);
         $this->gym_name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 spawn_time_ms = 10;</code>
+     * Generated from protobuf field <code>int64 spawn_time_ms = 10;</code>
+     * @return int|string
      */
     public function getSpawnTimeMs()
     {
@@ -208,16 +268,21 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 spawn_time_ms = 10;</code>
+     * Generated from protobuf field <code>int64 spawn_time_ms = 10;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setSpawnTimeMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->spawn_time_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool is_cancelled = 11;</code>
+     * Generated from protobuf field <code>bool is_cancelled = 11;</code>
+     * @return bool
      */
     public function getIsCancelled()
     {
@@ -225,16 +290,21 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool is_cancelled = 11;</code>
+     * Generated from protobuf field <code>bool is_cancelled = 11;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsCancelled($var)
     {
         GPBUtil::checkBool($var);
         $this->is_cancelled = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData raid_pokemon = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData raid_pokemon = 12;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getRaidPokemon()
     {
@@ -242,12 +312,16 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData raid_pokemon = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData raid_pokemon = 12;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setRaidPokemon(&$var)
+    public function setRaidPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->raid_pokemon = $var;
+
+        return $this;
     }
 
 }

@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.DebugInfo</code>
+ * Generated from protobuf message <code>POGOProtos.Data.DebugInfo</code>
  */
 class DebugInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>double latitude = 1;</code>
+     * Generated from protobuf field <code>double latitude = 1;</code>
      */
     private $latitude = 0.0;
     /**
-     * <code>double longitude = 2;</code>
+     * Generated from protobuf field <code>double longitude = 2;</code>
      */
     private $longitude = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $latitude
+     *     @type float $longitude
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\DebugInfo::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>double latitude = 1;</code>
+     * Generated from protobuf field <code>double latitude = 1;</code>
+     * @return float
      */
     public function getLatitude()
     {
@@ -36,16 +47,21 @@ class DebugInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double latitude = 1;</code>
+     * Generated from protobuf field <code>double latitude = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double longitude = 2;</code>
+     * Generated from protobuf field <code>double longitude = 2;</code>
+     * @return float
      */
     public function getLongitude()
     {
@@ -53,12 +69,16 @@ class DebugInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double longitude = 2;</code>
+     * Generated from protobuf field <code>double longitude = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->longitude = $var;
+
+        return $this;
     }
 
 }

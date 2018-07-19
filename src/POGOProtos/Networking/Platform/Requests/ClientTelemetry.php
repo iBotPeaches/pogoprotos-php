@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Requests.ClientTelemetry</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Requests.ClientTelemetry</code>
  */
 class ClientTelemetry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Networking.Platform.Telemetry.PlatformDataId data_id = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Platform.Telemetry.PlatformDataId data_id = 1;</code>
      */
     private $data_id;
     /**
-     * <code>repeated bytes application_data = 2;</code>
+     * Generated from protobuf field <code>repeated bytes application_data = 2;</code>
      */
     private $application_data;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Networking\Platform\Telemetry\PlatformDataId[]|\Google\Protobuf\Internal\RepeatedField $data_id
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $application_data
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Requests\ClientTelemetryRequest::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Platform.Telemetry.PlatformDataId data_id = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Platform.Telemetry.PlatformDataId data_id = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getDataId()
     {
@@ -36,16 +47,21 @@ class ClientTelemetry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Platform.Telemetry.PlatformDataId data_id = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Platform.Telemetry.PlatformDataId data_id = 1;</code>
+     * @param \POGOProtos\Networking\Platform\Telemetry\PlatformDataId[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDataId(&$var)
+    public function setDataId($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Platform\Telemetry\PlatformDataId::class);
-        $this->data_id = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Platform\Telemetry\PlatformDataId::class);
+        $this->data_id = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated bytes application_data = 2;</code>
+     * Generated from protobuf field <code>repeated bytes application_data = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getApplicationData()
     {
@@ -53,12 +69,16 @@ class ClientTelemetry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated bytes application_data = 2;</code>
+     * Generated from protobuf field <code>repeated bytes application_data = 2;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setApplicationData(&$var)
+    public function setApplicationData($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::BYTES);
-        $this->application_data = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::BYTES);
+        $this->application_data = $arr;
+
+        return $this;
     }
 
 }

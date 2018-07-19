@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Telemetry.TelemetryCommon</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Telemetry.TelemetryCommon</code>
  */
 class TelemetryCommon extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 timestamp = 1;</code>
+     * Generated from protobuf field <code>int64 timestamp = 1;</code>
      */
     private $timestamp = 0;
     /**
-     * <code>string correlation_vector = 2;</code>
+     * Generated from protobuf field <code>string correlation_vector = 2;</code>
      */
     private $correlation_vector = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $timestamp
+     *     @type string $correlation_vector
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Telemetry\TelemetryCommon::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 timestamp = 1;</code>
+     * Generated from protobuf field <code>int64 timestamp = 1;</code>
+     * @return int|string
      */
     public function getTimestamp()
     {
@@ -36,16 +47,21 @@ class TelemetryCommon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 timestamp = 1;</code>
+     * Generated from protobuf field <code>int64 timestamp = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTimestamp($var)
     {
         GPBUtil::checkInt64($var);
         $this->timestamp = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string correlation_vector = 2;</code>
+     * Generated from protobuf field <code>string correlation_vector = 2;</code>
+     * @return string
      */
     public function getCorrelationVector()
     {
@@ -53,12 +69,16 @@ class TelemetryCommon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string correlation_vector = 2;</code>
+     * Generated from protobuf field <code>string correlation_vector = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setCorrelationVector($var)
     {
         GPBUtil::checkString($var, True);
         $this->correlation_vector = $var;
+
+        return $this;
     }
 
 }

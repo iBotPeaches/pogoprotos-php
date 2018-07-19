@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.PasscodeSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.PasscodeSettings</code>
  */
 class PasscodeSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool show_passcode_in_store = 1;</code>
+     * Generated from protobuf field <code>bool show_passcode_in_store = 1;</code>
      */
     private $show_passcode_in_store = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $show_passcode_in_store
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\PasscodeSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool show_passcode_in_store = 1;</code>
+     * Generated from protobuf field <code>bool show_passcode_in_store = 1;</code>
+     * @return bool
      */
     public function getShowPasscodeInStore()
     {
@@ -32,12 +42,16 @@ class PasscodeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool show_passcode_in_store = 1;</code>
+     * Generated from protobuf field <code>bool show_passcode_in_store = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setShowPasscodeInStore($var)
     {
         GPBUtil::checkBool($var);
         $this->show_passcode_in_store = $var;
+
+        return $this;
     }
 
 }

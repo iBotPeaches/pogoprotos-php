@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.UncommentAnnotationTest</code>
+ * Generated from protobuf message <code>POGOProtos.Data.UncommentAnnotationTest</code>
  */
 class UncommentAnnotationTest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string string_property = 1;</code>
+     * Generated from protobuf field <code>string string_property = 1;</code>
      */
     private $string_property = '';
     /**
-     * <code>int64 long_property = 2;</code>
+     * Generated from protobuf field <code>int64 long_property = 2;</code>
      */
     private $long_property = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $string_property
+     *     @type int|string $long_property
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\UncommentAnnotationTest::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string string_property = 1;</code>
+     * Generated from protobuf field <code>string string_property = 1;</code>
+     * @return string
      */
     public function getStringProperty()
     {
@@ -36,16 +47,21 @@ class UncommentAnnotationTest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string string_property = 1;</code>
+     * Generated from protobuf field <code>string string_property = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setStringProperty($var)
     {
         GPBUtil::checkString($var, True);
         $this->string_property = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 long_property = 2;</code>
+     * Generated from protobuf field <code>int64 long_property = 2;</code>
+     * @return int|string
      */
     public function getLongProperty()
     {
@@ -53,12 +69,16 @@ class UncommentAnnotationTest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 long_property = 2;</code>
+     * Generated from protobuf field <code>int64 long_property = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLongProperty($var)
     {
         GPBUtil::checkInt64($var);
         $this->long_property = $var;
+
+        return $this;
     }
 
 }

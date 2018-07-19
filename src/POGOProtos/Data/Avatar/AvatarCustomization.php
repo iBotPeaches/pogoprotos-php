@@ -9,74 +9,97 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Avatar.AvatarCustomization</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Avatar.AvatarCustomization</code>
  */
 class AvatarCustomization extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool enabled = 1;</code>
+     * Generated from protobuf field <code>bool enabled = 1;</code>
      */
     private $enabled = false;
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatarType avatar_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatarType avatar_type = 2;</code>
      */
     private $avatar_type = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 3;</code>
      */
     private $slot;
     /**
-     * <code>string bundle_name = 4;</code>
+     * Generated from protobuf field <code>string bundle_name = 4;</code>
      */
     private $bundle_name = '';
     /**
-     * <code>string asset_name = 5;</code>
+     * Generated from protobuf field <code>string asset_name = 5;</code>
      */
     private $asset_name = '';
     /**
-     * <code>string group_name = 6;</code>
+     * Generated from protobuf field <code>string group_name = 6;</code>
      */
     private $group_name = '';
     /**
-     * <code>int32 sort_order = 7;</code>
+     * Generated from protobuf field <code>int32 sort_order = 7;</code>
      */
     private $sort_order = 0;
     /**
-     * <code>.POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationUnlockType unlock_type = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationUnlockType unlock_type = 8;</code>
      */
     private $unlock_type = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationPromoType promo_type = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationPromoType promo_type = 9;</code>
      */
     private $promo_type;
     /**
-     * <code>.POGOProtos.Enums.BadgeType unlock_badge_type = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BadgeType unlock_badge_type = 10;</code>
      */
     private $unlock_badge_type = 0;
     /**
-     * <code>string iap_sku = 11;</code>
+     * Generated from protobuf field <code>string iap_sku = 11;</code>
      */
     private $iap_sku = '';
     /**
-     * <code>int32 unlock_badge_level = 12;</code>
+     * Generated from protobuf field <code>int32 unlock_badge_level = 12;</code>
      */
     private $unlock_badge_level = 0;
     /**
-     * <code>string icon_name = 13;</code>
+     * Generated from protobuf field <code>string icon_name = 13;</code>
      */
     private $icon_name = '';
     /**
-     * <code>int32 unlock_player_level = 14;</code>
+     * Generated from protobuf field <code>int32 unlock_player_level = 14;</code>
      */
     private $unlock_player_level = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $enabled
+     *     @type int $avatar_type
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $slot
+     *     @type string $bundle_name
+     *     @type string $asset_name
+     *     @type string $group_name
+     *     @type int $sort_order
+     *     @type int $unlock_type
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $promo_type
+     *     @type int $unlock_badge_type
+     *     @type string $iap_sku
+     *     @type int $unlock_badge_level
+     *     @type string $icon_name
+     *     @type int $unlock_player_level
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Avatar\AvatarCustomization::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool enabled = 1;</code>
+     * Generated from protobuf field <code>bool enabled = 1;</code>
+     * @return bool
      */
     public function getEnabled()
     {
@@ -84,16 +107,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool enabled = 1;</code>
+     * Generated from protobuf field <code>bool enabled = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEnabled($var)
     {
         GPBUtil::checkBool($var);
         $this->enabled = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatarType avatar_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatarType avatar_type = 2;</code>
+     * @return int
      */
     public function getAvatarType()
     {
@@ -101,16 +129,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatarType avatar_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatarType avatar_type = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setAvatarType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Player\PlayerAvatarType::class);
         $this->avatar_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getSlot()
     {
@@ -118,16 +151,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 3;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSlot(&$var)
+    public function setSlot($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\Avatar\AvatarCustomization_Slot::class);
-        $this->slot = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Data\Avatar\AvatarCustomization\Slot::class);
+        $this->slot = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>string bundle_name = 4;</code>
+     * Generated from protobuf field <code>string bundle_name = 4;</code>
+     * @return string
      */
     public function getBundleName()
     {
@@ -135,16 +173,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string bundle_name = 4;</code>
+     * Generated from protobuf field <code>string bundle_name = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setBundleName($var)
     {
         GPBUtil::checkString($var, True);
         $this->bundle_name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string asset_name = 5;</code>
+     * Generated from protobuf field <code>string asset_name = 5;</code>
+     * @return string
      */
     public function getAssetName()
     {
@@ -152,16 +195,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string asset_name = 5;</code>
+     * Generated from protobuf field <code>string asset_name = 5;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAssetName($var)
     {
         GPBUtil::checkString($var, True);
         $this->asset_name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string group_name = 6;</code>
+     * Generated from protobuf field <code>string group_name = 6;</code>
+     * @return string
      */
     public function getGroupName()
     {
@@ -169,16 +217,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string group_name = 6;</code>
+     * Generated from protobuf field <code>string group_name = 6;</code>
+     * @param string $var
+     * @return $this
      */
     public function setGroupName($var)
     {
         GPBUtil::checkString($var, True);
         $this->group_name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 sort_order = 7;</code>
+     * Generated from protobuf field <code>int32 sort_order = 7;</code>
+     * @return int
      */
     public function getSortOrder()
     {
@@ -186,16 +239,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 sort_order = 7;</code>
+     * Generated from protobuf field <code>int32 sort_order = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSortOrder($var)
     {
         GPBUtil::checkInt32($var);
         $this->sort_order = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationUnlockType unlock_type = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationUnlockType unlock_type = 8;</code>
+     * @return int
      */
     public function getUnlockType()
     {
@@ -203,16 +261,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationUnlockType unlock_type = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationUnlockType unlock_type = 8;</code>
+     * @param int $var
+     * @return $this
      */
     public function setUnlockType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Avatar\AvatarCustomization_AvatarCustomizationUnlockType::class);
         $this->unlock_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationPromoType promo_type = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationPromoType promo_type = 9;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPromoType()
     {
@@ -220,16 +283,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationPromoType promo_type = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationPromoType promo_type = 9;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPromoType(&$var)
+    public function setPromoType($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\Avatar\AvatarCustomization_AvatarCustomizationPromoType::class);
-        $this->promo_type = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Data\Avatar\AvatarCustomization\AvatarCustomizationPromoType::class);
+        $this->promo_type = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.BadgeType unlock_badge_type = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BadgeType unlock_badge_type = 10;</code>
+     * @return int
      */
     public function getUnlockBadgeType()
     {
@@ -237,16 +305,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.BadgeType unlock_badge_type = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BadgeType unlock_badge_type = 10;</code>
+     * @param int $var
+     * @return $this
      */
     public function setUnlockBadgeType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\BadgeType::class);
         $this->unlock_badge_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string iap_sku = 11;</code>
+     * Generated from protobuf field <code>string iap_sku = 11;</code>
+     * @return string
      */
     public function getIapSku()
     {
@@ -254,16 +327,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string iap_sku = 11;</code>
+     * Generated from protobuf field <code>string iap_sku = 11;</code>
+     * @param string $var
+     * @return $this
      */
     public function setIapSku($var)
     {
         GPBUtil::checkString($var, True);
         $this->iap_sku = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 unlock_badge_level = 12;</code>
+     * Generated from protobuf field <code>int32 unlock_badge_level = 12;</code>
+     * @return int
      */
     public function getUnlockBadgeLevel()
     {
@@ -271,16 +349,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 unlock_badge_level = 12;</code>
+     * Generated from protobuf field <code>int32 unlock_badge_level = 12;</code>
+     * @param int $var
+     * @return $this
      */
     public function setUnlockBadgeLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->unlock_badge_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string icon_name = 13;</code>
+     * Generated from protobuf field <code>string icon_name = 13;</code>
+     * @return string
      */
     public function getIconName()
     {
@@ -288,16 +371,21 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string icon_name = 13;</code>
+     * Generated from protobuf field <code>string icon_name = 13;</code>
+     * @param string $var
+     * @return $this
      */
     public function setIconName($var)
     {
         GPBUtil::checkString($var, True);
         $this->icon_name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 unlock_player_level = 14;</code>
+     * Generated from protobuf field <code>int32 unlock_player_level = 14;</code>
+     * @return int
      */
     public function getUnlockPlayerLevel()
     {
@@ -305,12 +393,16 @@ class AvatarCustomization extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 unlock_player_level = 14;</code>
+     * Generated from protobuf field <code>int32 unlock_player_level = 14;</code>
+     * @param int $var
+     * @return $this
      */
     public function setUnlockPlayerLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->unlock_player_level = $var;
+
+        return $this;
     }
 
 }

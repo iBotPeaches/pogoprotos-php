@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.AddLoginActionResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.AddLoginActionResponse</code>
  */
 class AddLoginActionResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
      */
     private $success = false;
     /**
-     * <code>repeated .POGOProtos.Data.Login.LoginDetail login_detail = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Login.LoginDetail login_detail = 2;</code>
      */
     private $login_detail;
     /**
-     * <code>.POGOProtos.Networking.Responses.AddLoginActionResponse.Status status = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.AddLoginActionResponse.Status status = 3;</code>
      */
     private $status = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $success
+     *     @type \POGOProtos\Data\Login\LoginDetail[]|\Google\Protobuf\Internal\RepeatedField $login_detail
+     *     @type int $status
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\PlatformClientActionsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @return bool
      */
     public function getSuccess()
     {
@@ -40,16 +52,21 @@ class AddLoginActionResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSuccess($var)
     {
         GPBUtil::checkBool($var);
         $this->success = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Login.LoginDetail login_detail = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Login.LoginDetail login_detail = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getLoginDetail()
     {
@@ -57,16 +74,21 @@ class AddLoginActionResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Login.LoginDetail login_detail = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Login.LoginDetail login_detail = 2;</code>
+     * @param \POGOProtos\Data\Login\LoginDetail[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setLoginDetail(&$var)
+    public function setLoginDetail($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Login\LoginDetail::class);
-        $this->login_detail = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Login\LoginDetail::class);
+        $this->login_detail = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.AddLoginActionResponse.Status status = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.AddLoginActionResponse.Status status = 3;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -74,12 +96,16 @@ class AddLoginActionResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.AddLoginActionResponse.Status status = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.AddLoginActionResponse.Status status = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\AddLoginActionResponse_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
 }

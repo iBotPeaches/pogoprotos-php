@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Friends.PlayerFriendDisplay</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Friends.PlayerFriendDisplay</code>
  */
 class PlayerFriendDisplay extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay buddy = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay buddy = 1;</code>
      */
     private $buddy = null;
     /**
-     * <code>int32 buddy_display_pokemon_id = 2;</code>
+     * Generated from protobuf field <code>int32 buddy_display_pokemon_id = 2;</code>
      */
     private $buddy_display_pokemon_id = 0;
     /**
-     * <code>string buddy_pokemon_nickname = 3;</code>
+     * Generated from protobuf field <code>string buddy_pokemon_nickname = 3;</code>
      */
     private $buddy_pokemon_nickname = '';
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay last_pokemon_caught = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay last_pokemon_caught = 4;</code>
      */
     private $last_pokemon_caught = null;
     /**
-     * <code>int32 last_pokemon_caught_display_id = 5;</code>
+     * Generated from protobuf field <code>int32 last_pokemon_caught_display_id = 5;</code>
      */
     private $last_pokemon_caught_display_id = 0;
     /**
-     * <code>int64 last_pokemon_caught_timestamp = 6;</code>
+     * Generated from protobuf field <code>int64 last_pokemon_caught_timestamp = 6;</code>
      */
     private $last_pokemon_caught_timestamp = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\PokemonDisplay $buddy
+     *     @type int $buddy_display_pokemon_id
+     *     @type string $buddy_pokemon_nickname
+     *     @type \POGOProtos\Data\PokemonDisplay $last_pokemon_caught
+     *     @type int $last_pokemon_caught_display_id
+     *     @type int|string $last_pokemon_caught_timestamp
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Friends\PlayerFriendDisplay::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay buddy = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay buddy = 1;</code>
+     * @return \POGOProtos\Data\PokemonDisplay
      */
     public function getBuddy()
     {
@@ -52,16 +67,21 @@ class PlayerFriendDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay buddy = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay buddy = 1;</code>
+     * @param \POGOProtos\Data\PokemonDisplay $var
+     * @return $this
      */
-    public function setBuddy(&$var)
+    public function setBuddy($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonDisplay::class);
         $this->buddy = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 buddy_display_pokemon_id = 2;</code>
+     * Generated from protobuf field <code>int32 buddy_display_pokemon_id = 2;</code>
+     * @return int
      */
     public function getBuddyDisplayPokemonId()
     {
@@ -69,16 +89,21 @@ class PlayerFriendDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 buddy_display_pokemon_id = 2;</code>
+     * Generated from protobuf field <code>int32 buddy_display_pokemon_id = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBuddyDisplayPokemonId($var)
     {
         GPBUtil::checkInt32($var);
         $this->buddy_display_pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string buddy_pokemon_nickname = 3;</code>
+     * Generated from protobuf field <code>string buddy_pokemon_nickname = 3;</code>
+     * @return string
      */
     public function getBuddyPokemonNickname()
     {
@@ -86,16 +111,21 @@ class PlayerFriendDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string buddy_pokemon_nickname = 3;</code>
+     * Generated from protobuf field <code>string buddy_pokemon_nickname = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setBuddyPokemonNickname($var)
     {
         GPBUtil::checkString($var, True);
         $this->buddy_pokemon_nickname = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay last_pokemon_caught = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay last_pokemon_caught = 4;</code>
+     * @return \POGOProtos\Data\PokemonDisplay
      */
     public function getLastPokemonCaught()
     {
@@ -103,16 +133,21 @@ class PlayerFriendDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay last_pokemon_caught = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay last_pokemon_caught = 4;</code>
+     * @param \POGOProtos\Data\PokemonDisplay $var
+     * @return $this
      */
-    public function setLastPokemonCaught(&$var)
+    public function setLastPokemonCaught($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonDisplay::class);
         $this->last_pokemon_caught = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 last_pokemon_caught_display_id = 5;</code>
+     * Generated from protobuf field <code>int32 last_pokemon_caught_display_id = 5;</code>
+     * @return int
      */
     public function getLastPokemonCaughtDisplayId()
     {
@@ -120,16 +155,21 @@ class PlayerFriendDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 last_pokemon_caught_display_id = 5;</code>
+     * Generated from protobuf field <code>int32 last_pokemon_caught_display_id = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setLastPokemonCaughtDisplayId($var)
     {
         GPBUtil::checkInt32($var);
         $this->last_pokemon_caught_display_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 last_pokemon_caught_timestamp = 6;</code>
+     * Generated from protobuf field <code>int64 last_pokemon_caught_timestamp = 6;</code>
+     * @return int|string
      */
     public function getLastPokemonCaughtTimestamp()
     {
@@ -137,12 +177,16 @@ class PlayerFriendDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 last_pokemon_caught_timestamp = 6;</code>
+     * Generated from protobuf field <code>int64 last_pokemon_caught_timestamp = 6;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLastPokemonCaughtTimestamp($var)
     {
         GPBUtil::checkInt64($var);
         $this->last_pokemon_caught_timestamp = $var;
+
+        return $this;
     }
 
 }

@@ -9,34 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Responses.BuyItemAndroidResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Responses.BuyItemAndroidResponse</code>
  */
 class BuyItemAndroidResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <pre>
      * result
-     * </pre>
      *
-     * <code>.POGOProtos.Networking.Platform.Responses.BuyItemAndroidResponse.Status result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.BuyItemAndroidResponse.Status result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>string purchase_token = 2;</code>
+     * Generated from protobuf field <code>string purchase_token = 2;</code>
      */
     private $purchase_token = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *           result
+     *     @type string $purchase_token
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Responses\BuyItemAndroidResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <pre>
      * result
-     * </pre>
      *
-     * <code>.POGOProtos.Networking.Platform.Responses.BuyItemAndroidResponse.Status result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.BuyItemAndroidResponse.Status result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -44,20 +52,23 @@ class BuyItemAndroidResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * result
-     * </pre>
      *
-     * <code>.POGOProtos.Networking.Platform.Responses.BuyItemAndroidResponse.Status result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.BuyItemAndroidResponse.Status result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Platform\Responses\BuyItemAndroidResponse_Status::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string purchase_token = 2;</code>
+     * Generated from protobuf field <code>string purchase_token = 2;</code>
+     * @return string
      */
     public function getPurchaseToken()
     {
@@ -65,12 +76,16 @@ class BuyItemAndroidResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string purchase_token = 2;</code>
+     * Generated from protobuf field <code>string purchase_token = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPurchaseToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->purchase_token = $var;
+
+        return $this;
     }
 
 }

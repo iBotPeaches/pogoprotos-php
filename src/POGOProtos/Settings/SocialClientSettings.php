@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.SocialClientSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.SocialClientSettings</code>
  */
 class SocialClientSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool enable_social = 1;</code>
+     * Generated from protobuf field <code>bool enable_social = 1;</code>
      */
     private $enable_social = false;
     /**
-     * <code>int32 max_friend_details = 2;</code>
+     * Generated from protobuf field <code>int32 max_friend_details = 2;</code>
      */
     private $max_friend_details = 0;
     /**
-     * <code>int32 player_level_gate = 3;</code>
+     * Generated from protobuf field <code>int32 player_level_gate = 3;</code>
      */
     private $player_level_gate = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $enable_social
+     *     @type int $max_friend_details
+     *     @type int $player_level_gate
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\SocialClientSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool enable_social = 1;</code>
+     * Generated from protobuf field <code>bool enable_social = 1;</code>
+     * @return bool
      */
     public function getEnableSocial()
     {
@@ -40,16 +52,21 @@ class SocialClientSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool enable_social = 1;</code>
+     * Generated from protobuf field <code>bool enable_social = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEnableSocial($var)
     {
         GPBUtil::checkBool($var);
         $this->enable_social = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_friend_details = 2;</code>
+     * Generated from protobuf field <code>int32 max_friend_details = 2;</code>
+     * @return int
      */
     public function getMaxFriendDetails()
     {
@@ -57,16 +74,21 @@ class SocialClientSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_friend_details = 2;</code>
+     * Generated from protobuf field <code>int32 max_friend_details = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxFriendDetails($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_friend_details = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 player_level_gate = 3;</code>
+     * Generated from protobuf field <code>int32 player_level_gate = 3;</code>
+     * @return int
      */
     public function getPlayerLevelGate()
     {
@@ -74,12 +96,16 @@ class SocialClientSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 player_level_gate = 3;</code>
+     * Generated from protobuf field <code>int32 player_level_gate = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPlayerLevelGate($var)
     {
         GPBUtil::checkInt32($var);
         $this->player_level_gate = $var;
+
+        return $this;
     }
 
 }

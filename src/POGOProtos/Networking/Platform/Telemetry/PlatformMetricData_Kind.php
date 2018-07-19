@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Telemetry;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Platform.Telemetry.PlatformMetricData.Kind</code>
- */
-class PlatformMetricData_Kind
-{
+if (false) {
     /**
-     * <code>UNSPECIFIED = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Telemetry\PlatformMetricData\Kind instead.
+     * @deprecated
      */
-    const UNSPECIFIED = 0;
-    /**
-     * <code>GAUGE = 1;</code>
-     */
-    const GAUGE = 1;
-    /**
-     * <code>DELTA = 2;</code>
-     */
-    const DELTA = 2;
-    /**
-     * <code>CUMULATIVE = 3;</code>
-     */
-    const CUMULATIVE = 3;
+    class PlatformMetricData_Kind {}
 }
+class_exists(PlatformMetricData\Kind::class);
+@trigger_error('POGOProtos\Networking\Platform\Telemetry\PlatformMetricData_Kind is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Telemetry\PlatformMetricData\Kind instead', E_USER_DEPRECATED);
 

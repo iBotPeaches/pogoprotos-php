@@ -9,17 +9,23 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * <pre>
- * </pre>
  *
- * Protobuf type <code>POGOProtos.Data.Quests.CatchPokemonQuest</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Quests.CatchPokemonQuest</code>
  */
 class CatchPokemonQuest extends \Google\Protobuf\Internal\Message
 {
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Quests\CatchPokemonQuest::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
 }

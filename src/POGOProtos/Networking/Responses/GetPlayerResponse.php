@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetPlayerResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetPlayerResponse</code>
  */
 class GetPlayerResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
      */
     private $success = false;
     /**
-     * <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
      */
     private $player_data = null;
     /**
-     * <code>bool banned = 3;</code>
+     * Generated from protobuf field <code>bool banned = 3;</code>
      */
     private $banned = false;
     /**
-     * <code>bool warn = 4;</code>
+     * Generated from protobuf field <code>bool warn = 4;</code>
      */
     private $warn = false;
     /**
-     * <code>bool was_created = 5;</code>
+     * Generated from protobuf field <code>bool was_created = 5;</code>
      */
     private $was_created = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $success
+     *     @type \POGOProtos\Data\PlayerData $player_data
+     *     @type bool $banned
+     *     @type bool $warn
+     *     @type bool $was_created
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetPlayerResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @return bool
      */
     public function getSuccess()
     {
@@ -48,16 +62,21 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSuccess($var)
     {
         GPBUtil::checkBool($var);
         $this->success = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * @return \POGOProtos\Data\PlayerData
      */
     public function getPlayerData()
     {
@@ -65,16 +84,21 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * @param \POGOProtos\Data\PlayerData $var
+     * @return $this
      */
-    public function setPlayerData(&$var)
+    public function setPlayerData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PlayerData::class);
         $this->player_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool banned = 3;</code>
+     * Generated from protobuf field <code>bool banned = 3;</code>
+     * @return bool
      */
     public function getBanned()
     {
@@ -82,16 +106,21 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool banned = 3;</code>
+     * Generated from protobuf field <code>bool banned = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setBanned($var)
     {
         GPBUtil::checkBool($var);
         $this->banned = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool warn = 4;</code>
+     * Generated from protobuf field <code>bool warn = 4;</code>
+     * @return bool
      */
     public function getWarn()
     {
@@ -99,16 +128,21 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool warn = 4;</code>
+     * Generated from protobuf field <code>bool warn = 4;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setWarn($var)
     {
         GPBUtil::checkBool($var);
         $this->warn = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool was_created = 5;</code>
+     * Generated from protobuf field <code>bool was_created = 5;</code>
+     * @return bool
      */
     public function getWasCreated()
     {
@@ -116,12 +150,16 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool was_created = 5;</code>
+     * Generated from protobuf field <code>bool was_created = 5;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setWasCreated($var)
     {
         GPBUtil::checkBool($var);
         $this->was_created = $var;
+
+        return $this;
     }
 
 }

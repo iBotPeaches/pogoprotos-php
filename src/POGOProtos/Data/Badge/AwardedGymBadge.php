@@ -9,78 +9,102 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Badge.AwardedGymBadge</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Badge.AwardedGymBadge</code>
  */
 class AwardedGymBadge extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
      */
     private $fort_id = '';
     /**
-     * <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 2;</code>
      */
     private $gym_badge_type = 0;
     /**
-     * <code>uint32 score = 3;</code>
+     * Generated from protobuf field <code>uint32 score = 3;</code>
      */
     private $score = 0;
     /**
-     * <code>.POGOProtos.Data.Badge.GymBadgeStats gym_badge_stats = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Badge.GymBadgeStats gym_badge_stats = 4;</code>
      */
     private $gym_badge_stats = null;
     /**
-     * <code>uint64 last_update_timestamp_ms = 5;</code>
+     * Generated from protobuf field <code>uint64 last_update_timestamp_ms = 5;</code>
      */
     private $last_update_timestamp_ms = 0;
     /**
-     * <code>uint64 last_check_timestamp_ms = 11;</code>
+     * Generated from protobuf field <code>uint64 last_check_timestamp_ms = 11;</code>
      */
     private $last_check_timestamp_ms = 0;
     /**
-     * <code>uint32 earned_points = 12;</code>
+     * Generated from protobuf field <code>uint32 earned_points = 12;</code>
      */
     private $earned_points = 0;
     /**
-     * <code>float progress = 13;</code>
+     * Generated from protobuf field <code>float progress = 13;</code>
      */
     private $progress = 0.0;
     /**
-     * <code>bool level_up = 14;</code>
+     * Generated from protobuf field <code>bool level_up = 14;</code>
      */
     private $level_up = false;
     /**
-     * <code>string name = 6;</code>
+     * Generated from protobuf field <code>string name = 6;</code>
      */
     private $name = '';
     /**
-     * <code>string image_url = 7;</code>
+     * Generated from protobuf field <code>string image_url = 7;</code>
      */
     private $image_url = '';
     /**
-     * <code>string description = 8;</code>
+     * Generated from protobuf field <code>string description = 8;</code>
      */
     private $description = '';
     /**
-     * <code>double latitude = 9;</code>
+     * Generated from protobuf field <code>double latitude = 9;</code>
      */
     private $latitude = 0.0;
     /**
-     * <code>double longitude = 10;</code>
+     * Generated from protobuf field <code>double longitude = 10;</code>
      */
     private $longitude = 0.0;
     /**
-     * <code>.POGOProtos.Data.Raid.PlayerRaidInfo raids = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.PlayerRaidInfo raids = 15;</code>
      */
     private $raids = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $fort_id
+     *     @type int $gym_badge_type
+     *     @type int $score
+     *     @type \POGOProtos\Data\Badge\GymBadgeStats $gym_badge_stats
+     *     @type int|string $last_update_timestamp_ms
+     *     @type int|string $last_check_timestamp_ms
+     *     @type int $earned_points
+     *     @type float $progress
+     *     @type bool $level_up
+     *     @type string $name
+     *     @type string $image_url
+     *     @type string $description
+     *     @type float $latitude
+     *     @type float $longitude
+     *     @type \POGOProtos\Data\Raid\PlayerRaidInfo $raids
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Badge\AwardedGymBadge::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -88,16 +112,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 2;</code>
+     * @return int
      */
     public function getGymBadgeType()
     {
@@ -105,16 +134,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setGymBadgeType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\GymBadgeType::class);
         $this->gym_badge_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint32 score = 3;</code>
+     * Generated from protobuf field <code>uint32 score = 3;</code>
+     * @return int
      */
     public function getScore()
     {
@@ -122,16 +156,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 score = 3;</code>
+     * Generated from protobuf field <code>uint32 score = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setScore($var)
     {
         GPBUtil::checkUint32($var);
         $this->score = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Badge.GymBadgeStats gym_badge_stats = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Badge.GymBadgeStats gym_badge_stats = 4;</code>
+     * @return \POGOProtos\Data\Badge\GymBadgeStats
      */
     public function getGymBadgeStats()
     {
@@ -139,16 +178,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Badge.GymBadgeStats gym_badge_stats = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Badge.GymBadgeStats gym_badge_stats = 4;</code>
+     * @param \POGOProtos\Data\Badge\GymBadgeStats $var
+     * @return $this
      */
-    public function setGymBadgeStats(&$var)
+    public function setGymBadgeStats($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Badge\GymBadgeStats::class);
         $this->gym_badge_stats = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 last_update_timestamp_ms = 5;</code>
+     * Generated from protobuf field <code>uint64 last_update_timestamp_ms = 5;</code>
+     * @return int|string
      */
     public function getLastUpdateTimestampMs()
     {
@@ -156,16 +200,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 last_update_timestamp_ms = 5;</code>
+     * Generated from protobuf field <code>uint64 last_update_timestamp_ms = 5;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLastUpdateTimestampMs($var)
     {
         GPBUtil::checkUint64($var);
         $this->last_update_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 last_check_timestamp_ms = 11;</code>
+     * Generated from protobuf field <code>uint64 last_check_timestamp_ms = 11;</code>
+     * @return int|string
      */
     public function getLastCheckTimestampMs()
     {
@@ -173,16 +222,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 last_check_timestamp_ms = 11;</code>
+     * Generated from protobuf field <code>uint64 last_check_timestamp_ms = 11;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLastCheckTimestampMs($var)
     {
         GPBUtil::checkUint64($var);
         $this->last_check_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint32 earned_points = 12;</code>
+     * Generated from protobuf field <code>uint32 earned_points = 12;</code>
+     * @return int
      */
     public function getEarnedPoints()
     {
@@ -190,16 +244,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 earned_points = 12;</code>
+     * Generated from protobuf field <code>uint32 earned_points = 12;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEarnedPoints($var)
     {
         GPBUtil::checkUint32($var);
         $this->earned_points = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float progress = 13;</code>
+     * Generated from protobuf field <code>float progress = 13;</code>
+     * @return float
      */
     public function getProgress()
     {
@@ -207,16 +266,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float progress = 13;</code>
+     * Generated from protobuf field <code>float progress = 13;</code>
+     * @param float $var
+     * @return $this
      */
     public function setProgress($var)
     {
         GPBUtil::checkFloat($var);
         $this->progress = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool level_up = 14;</code>
+     * Generated from protobuf field <code>bool level_up = 14;</code>
+     * @return bool
      */
     public function getLevelUp()
     {
@@ -224,16 +288,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool level_up = 14;</code>
+     * Generated from protobuf field <code>bool level_up = 14;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setLevelUp($var)
     {
         GPBUtil::checkBool($var);
         $this->level_up = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string name = 6;</code>
+     * Generated from protobuf field <code>string name = 6;</code>
+     * @return string
      */
     public function getName()
     {
@@ -241,16 +310,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string name = 6;</code>
+     * Generated from protobuf field <code>string name = 6;</code>
+     * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string image_url = 7;</code>
+     * Generated from protobuf field <code>string image_url = 7;</code>
+     * @return string
      */
     public function getImageUrl()
     {
@@ -258,16 +332,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string image_url = 7;</code>
+     * Generated from protobuf field <code>string image_url = 7;</code>
+     * @param string $var
+     * @return $this
      */
     public function setImageUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->image_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string description = 8;</code>
+     * Generated from protobuf field <code>string description = 8;</code>
+     * @return string
      */
     public function getDescription()
     {
@@ -275,16 +354,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string description = 8;</code>
+     * Generated from protobuf field <code>string description = 8;</code>
+     * @param string $var
+     * @return $this
      */
     public function setDescription($var)
     {
         GPBUtil::checkString($var, True);
         $this->description = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double latitude = 9;</code>
+     * Generated from protobuf field <code>double latitude = 9;</code>
+     * @return float
      */
     public function getLatitude()
     {
@@ -292,16 +376,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double latitude = 9;</code>
+     * Generated from protobuf field <code>double latitude = 9;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double longitude = 10;</code>
+     * Generated from protobuf field <code>double longitude = 10;</code>
+     * @return float
      */
     public function getLongitude()
     {
@@ -309,16 +398,21 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double longitude = 10;</code>
+     * Generated from protobuf field <code>double longitude = 10;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->longitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.PlayerRaidInfo raids = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.PlayerRaidInfo raids = 15;</code>
+     * @return \POGOProtos\Data\Raid\PlayerRaidInfo
      */
     public function getRaids()
     {
@@ -326,12 +420,16 @@ class AwardedGymBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.PlayerRaidInfo raids = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.PlayerRaidInfo raids = 15;</code>
+     * @param \POGOProtos\Data\Raid\PlayerRaidInfo $var
+     * @return $this
      */
-    public function setRaids(&$var)
+    public function setRaids($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Raid\PlayerRaidInfo::class);
         $this->raids = $var;
+
+        return $this;
     }
 
 }

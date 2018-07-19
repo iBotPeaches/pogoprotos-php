@@ -4,66 +4,13 @@
 
 namespace POGOProtos\Settings\Master;
 
-/**
- * Protobuf enum <code>POGOProtos.Settings.Master.CameraSettings.CameraTarget</code>
- */
-class CameraSettings_CameraTarget
-{
+if (false) {
     /**
-     * <code>CAM_TARGET_ATTACKER = 0;</code>
+     * This class is deprecated. Use POGOProtos\Settings\Master\CameraSettings\CameraTarget instead.
+     * @deprecated
      */
-    const CAM_TARGET_ATTACKER = 0;
-    /**
-     * <code>CAM_TARGET_ATTACKER_EDGE = 1;</code>
-     */
-    const CAM_TARGET_ATTACKER_EDGE = 1;
-    /**
-     * <code>CAM_TARGET_ATTACKER_GROUND = 2;</code>
-     */
-    const CAM_TARGET_ATTACKER_GROUND = 2;
-    /**
-     * <code>CAM_TARGET_DEFENDER = 3;</code>
-     */
-    const CAM_TARGET_DEFENDER = 3;
-    /**
-     * <code>CAM_TARGET_DEFENDER_EDGE = 4;</code>
-     */
-    const CAM_TARGET_DEFENDER_EDGE = 4;
-    /**
-     * <code>CAM_TARGET_DEFENDER_GROUND = 5;</code>
-     */
-    const CAM_TARGET_DEFENDER_GROUND = 5;
-    /**
-     * <code>CAM_TARGET_ATTACKER_DEFENDER = 6;</code>
-     */
-    const CAM_TARGET_ATTACKER_DEFENDER = 6;
-    /**
-     * <code>CAM_TARGET_ATTACKER_DEFENDER_EDGE = 7;</code>
-     */
-    const CAM_TARGET_ATTACKER_DEFENDER_EDGE = 7;
-    /**
-     * <code>CAM_TARGET_DEFENDER_ATTACKER = 8;</code>
-     */
-    const CAM_TARGET_DEFENDER_ATTACKER = 8;
-    /**
-     * <code>CAM_TARGET_DEFENDER_ATTACKER_EDGE = 9;</code>
-     */
-    const CAM_TARGET_DEFENDER_ATTACKER_EDGE = 9;
-    /**
-     * <code>CAM_TARGET_ATTACKER_DEFENDER_MIRROR = 11;</code>
-     */
-    const CAM_TARGET_ATTACKER_DEFENDER_MIRROR = 11;
-    /**
-     * <code>CAM_TARGET_SHOULDER_ATTACKER_DEFENDER = 12;</code>
-     */
-    const CAM_TARGET_SHOULDER_ATTACKER_DEFENDER = 12;
-    /**
-     * <code>CAM_TARGET_SHOULDER_ATTACKER_DEFENDER_MIRROR = 13;</code>
-     */
-    const CAM_TARGET_SHOULDER_ATTACKER_DEFENDER_MIRROR = 13;
-    /**
-     * <code>CAM_TARGET_ATTACKER_DEFENDER_WORLD = 14;</code>
-     */
-    const CAM_TARGET_ATTACKER_DEFENDER_WORLD = 14;
+    class CameraSettings_CameraTarget {}
 }
+class_exists(CameraSettings\CameraTarget::class);
+@trigger_error('POGOProtos\Settings\Master\CameraSettings_CameraTarget is deprecated and will be removed in the next major release. Use POGOProtos\Settings\Master\CameraSettings\CameraTarget instead', E_USER_DEPRECATED);
 

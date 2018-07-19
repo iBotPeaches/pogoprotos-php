@@ -9,38 +9,50 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse</code>
  */
 class DownloadRemoteConfigVersionResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <pre>
      * Latest available?
-     * </pre>
      *
-     * <code>uint64 item_templates_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 item_templates_timestamp_ms = 2;</code>
      */
     private $item_templates_timestamp_ms = 0;
     /**
-     * <code>uint64 asset_digest_timestamp_ms = 3;</code>
+     * Generated from protobuf field <code>uint64 asset_digest_timestamp_ms = 3;</code>
      */
     private $asset_digest_timestamp_ms = 0;
     /**
-     * <code>repeated uint32 experiment_id = 4;</code>
+     * Generated from protobuf field <code>repeated uint32 experiment_id = 4;</code>
      */
     private $experiment_id;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type int|string $item_templates_timestamp_ms
+     *           Latest available?
+     *     @type int|string $asset_digest_timestamp_ms
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $experiment_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\DownloadRemoteConfigVersionResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -48,20 +60,23 @@ class DownloadRemoteConfigVersionResponse extends \Google\Protobuf\Internal\Mess
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\DownloadRemoteConfigVersionResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * Latest available?
-     * </pre>
      *
-     * <code>uint64 item_templates_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 item_templates_timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getItemTemplatesTimestampMs()
     {
@@ -69,20 +84,23 @@ class DownloadRemoteConfigVersionResponse extends \Google\Protobuf\Internal\Mess
     }
 
     /**
-     * <pre>
      * Latest available?
-     * </pre>
      *
-     * <code>uint64 item_templates_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 item_templates_timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setItemTemplatesTimestampMs($var)
     {
         GPBUtil::checkUint64($var);
         $this->item_templates_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 asset_digest_timestamp_ms = 3;</code>
+     * Generated from protobuf field <code>uint64 asset_digest_timestamp_ms = 3;</code>
+     * @return int|string
      */
     public function getAssetDigestTimestampMs()
     {
@@ -90,16 +108,21 @@ class DownloadRemoteConfigVersionResponse extends \Google\Protobuf\Internal\Mess
     }
 
     /**
-     * <code>uint64 asset_digest_timestamp_ms = 3;</code>
+     * Generated from protobuf field <code>uint64 asset_digest_timestamp_ms = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setAssetDigestTimestampMs($var)
     {
         GPBUtil::checkUint64($var);
         $this->asset_digest_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated uint32 experiment_id = 4;</code>
+     * Generated from protobuf field <code>repeated uint32 experiment_id = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getExperimentId()
     {
@@ -107,12 +130,16 @@ class DownloadRemoteConfigVersionResponse extends \Google\Protobuf\Internal\Mess
     }
 
     /**
-     * <code>repeated uint32 experiment_id = 4;</code>
+     * Generated from protobuf field <code>repeated uint32 experiment_id = 4;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setExperimentId(&$var)
+    public function setExperimentId($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
-        $this->experiment_id = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
+        $this->experiment_id = $arr;
+
+        return $this;
     }
 
 }

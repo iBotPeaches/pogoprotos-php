@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.RegisterBackgroundDeviceResponse.Status</code>
- */
-class RegisterBackgroundDeviceResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\RegisterBackgroundDeviceResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR = 2;</code>
-     */
-    const ERROR = 2;
+    class RegisterBackgroundDeviceResponse_Status {}
 }
+class_exists(RegisterBackgroundDeviceResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\RegisterBackgroundDeviceResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\RegisterBackgroundDeviceResponse\Status instead', E_USER_DEPRECATED);
 

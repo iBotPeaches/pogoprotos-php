@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Data\Logs;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Logs.CompleteQuestLogEntry.Result</code>
- */
-class CompleteQuestLogEntry_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Logs\CompleteQuestLogEntry\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
+    class CompleteQuestLogEntry_Result {}
 }
+class_exists(CompleteQuestLogEntry\Result::class);
+@trigger_error('POGOProtos\Data\Logs\CompleteQuestLogEntry_Result is deprecated and will be removed in the next major release. Use POGOProtos\Data\Logs\CompleteQuestLogEntry\Result instead', E_USER_DEPRECATED);
 

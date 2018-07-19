@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.Item.ItemData</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.Item.ItemData</code>
  */
 class ItemData extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
      */
     private $item_id = 0;
     /**
-     * <code>int32 count = 2;</code>
+     * Generated from protobuf field <code>int32 count = 2;</code>
      */
     private $count = 0;
     /**
-     * <code>bool unseen = 3;</code>
+     * Generated from protobuf field <code>bool unseen = 3;</code>
      */
     private $unseen = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $item_id
+     *     @type int $count
+     *     @type bool $unseen
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\Item\ItemData::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * @return int
      */
     public function getItemId()
     {
@@ -40,16 +52,21 @@ class ItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 count = 2;</code>
+     * Generated from protobuf field <code>int32 count = 2;</code>
+     * @return int
      */
     public function getCount()
     {
@@ -57,16 +74,21 @@ class ItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 count = 2;</code>
+     * Generated from protobuf field <code>int32 count = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->count = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool unseen = 3;</code>
+     * Generated from protobuf field <code>bool unseen = 3;</code>
+     * @return bool
      */
     public function getUnseen()
     {
@@ -74,12 +96,16 @@ class ItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool unseen = 3;</code>
+     * Generated from protobuf field <code>bool unseen = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setUnseen($var)
     {
         GPBUtil::checkBool($var);
         $this->unseen = $var;
+
+        return $this;
     }
 
 }

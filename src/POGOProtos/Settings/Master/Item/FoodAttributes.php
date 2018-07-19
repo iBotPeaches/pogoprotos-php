@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Item.FoodAttributes</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Item.FoodAttributes</code>
  */
 class FoodAttributes extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Enums.ItemEffect item_effect = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.ItemEffect item_effect = 1;</code>
      */
     private $item_effect;
     /**
-     * <code>repeated float item_effect_percent = 2;</code>
+     * Generated from protobuf field <code>repeated float item_effect_percent = 2;</code>
      */
     private $item_effect_percent;
     /**
-     * <code>float growth_percent = 3;</code>
+     * Generated from protobuf field <code>float growth_percent = 3;</code>
      */
     private $growth_percent = 0.0;
     /**
-     * <code>float berry_multiplier = 4;</code>
+     * Generated from protobuf field <code>float berry_multiplier = 4;</code>
      */
     private $berry_multiplier = 0.0;
     /**
-     * <code>float remote_berry_multiplier = 5;</code>
+     * Generated from protobuf field <code>float remote_berry_multiplier = 5;</code>
      */
     private $remote_berry_multiplier = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $item_effect
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $item_effect_percent
+     *     @type float $growth_percent
+     *     @type float $berry_multiplier
+     *     @type float $remote_berry_multiplier
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Item\FoodAttributes::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.ItemEffect item_effect = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.ItemEffect item_effect = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getItemEffect()
     {
@@ -48,16 +62,21 @@ class FoodAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.ItemEffect item_effect = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.ItemEffect item_effect = 1;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItemEffect(&$var)
+    public function setItemEffect($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\ItemEffect::class);
-        $this->item_effect = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\ItemEffect::class);
+        $this->item_effect = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float item_effect_percent = 2;</code>
+     * Generated from protobuf field <code>repeated float item_effect_percent = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getItemEffectPercent()
     {
@@ -65,16 +84,21 @@ class FoodAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float item_effect_percent = 2;</code>
+     * Generated from protobuf field <code>repeated float item_effect_percent = 2;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItemEffectPercent(&$var)
+    public function setItemEffectPercent($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->item_effect_percent = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->item_effect_percent = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>float growth_percent = 3;</code>
+     * Generated from protobuf field <code>float growth_percent = 3;</code>
+     * @return float
      */
     public function getGrowthPercent()
     {
@@ -82,16 +106,21 @@ class FoodAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float growth_percent = 3;</code>
+     * Generated from protobuf field <code>float growth_percent = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setGrowthPercent($var)
     {
         GPBUtil::checkFloat($var);
         $this->growth_percent = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float berry_multiplier = 4;</code>
+     * Generated from protobuf field <code>float berry_multiplier = 4;</code>
+     * @return float
      */
     public function getBerryMultiplier()
     {
@@ -99,16 +128,21 @@ class FoodAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float berry_multiplier = 4;</code>
+     * Generated from protobuf field <code>float berry_multiplier = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setBerryMultiplier($var)
     {
         GPBUtil::checkFloat($var);
         $this->berry_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float remote_berry_multiplier = 5;</code>
+     * Generated from protobuf field <code>float remote_berry_multiplier = 5;</code>
+     * @return float
      */
     public function getRemoteBerryMultiplier()
     {
@@ -116,12 +150,16 @@ class FoodAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float remote_berry_multiplier = 5;</code>
+     * Generated from protobuf field <code>float remote_berry_multiplier = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setRemoteBerryMultiplier($var)
     {
         GPBUtil::checkFloat($var);
         $this->remote_berry_multiplier = $var;
+
+        return $this;
     }
 
 }

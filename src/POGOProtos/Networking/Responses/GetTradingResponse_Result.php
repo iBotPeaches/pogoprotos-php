@@ -4,38 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.GetTradingResponse.Result</code>
- */
-class GetTradingResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GetTradingResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_UNKNOWN = 2;</code>
-     */
-    const ERROR_UNKNOWN = 2;
-    /**
-     * <code>ERROR_FRIEND_NOT_FOUND = 3;</code>
-     */
-    const ERROR_FRIEND_NOT_FOUND = 3;
-    /**
-     * <code>ERROR_INVALID_PLAYER_ID = 4;</code>
-     */
-    const ERROR_INVALID_PLAYER_ID = 4;
-    /**
-     * <code>ERROR_INVALID_STATE = 5;</code>
-     */
-    const ERROR_INVALID_STATE = 5;
-    /**
-     * <code>ERROR_STATE_HANDLER = 6;</code>
-     */
-    const ERROR_STATE_HANDLER = 6;
+    class GetTradingResponse_Result {}
 }
+class_exists(GetTradingResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\GetTradingResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GetTradingResponse\Result instead', E_USER_DEPRECATED);
 

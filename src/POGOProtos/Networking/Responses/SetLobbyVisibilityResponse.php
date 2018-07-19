@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.SetLobbyVisibilityResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.SetLobbyVisibilityResponse</code>
  */
 class SetLobbyVisibilityResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.SetLobbyVisibilityResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SetLobbyVisibilityResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Data.Raid.Lobby lobby = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.Lobby lobby = 2;</code>
      */
     private $lobby = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\Raid\Lobby $lobby
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\SetLobbyVisibilityResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.SetLobbyVisibilityResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SetLobbyVisibilityResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class SetLobbyVisibilityResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.SetLobbyVisibilityResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SetLobbyVisibilityResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\SetLobbyVisibilityResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.Lobby lobby = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.Lobby lobby = 2;</code>
+     * @return \POGOProtos\Data\Raid\Lobby
      */
     public function getLobby()
     {
@@ -53,12 +69,16 @@ class SetLobbyVisibilityResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.Lobby lobby = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.Lobby lobby = 2;</code>
+     * @param \POGOProtos\Data\Raid\Lobby $var
+     * @return $this
      */
-    public function setLobby(&$var)
+    public function setLobby($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Raid\Lobby::class);
         $this->lobby = $var;
+
+        return $this;
     }
 
 }

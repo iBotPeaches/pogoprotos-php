@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.AppliedItems</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.AppliedItems</code>
  */
 class AppliedItems extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Inventory.AppliedItem item = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.AppliedItem item = 4;</code>
      */
     private $item;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Inventory\AppliedItem[]|\Google\Protobuf\Internal\RepeatedField $item
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\AppliedItems::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.AppliedItem item = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.AppliedItem item = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getItem()
     {
@@ -32,12 +42,16 @@ class AppliedItems extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.AppliedItem item = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.AppliedItem item = 4;</code>
+     * @param \POGOProtos\Inventory\AppliedItem[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItem(&$var)
+    public function setItem($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\AppliedItem::class);
-        $this->item = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\AppliedItem::class);
+        $this->item = $arr;
+
+        return $this;
     }
 
 }

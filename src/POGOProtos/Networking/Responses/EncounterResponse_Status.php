@@ -4,42 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.EncounterResponse.Status</code>
- */
-class EncounterResponse_Status
-{
+if (false) {
     /**
-     * <code>ENCOUNTER_ERROR = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\EncounterResponse\Status instead.
+     * @deprecated
      */
-    const ENCOUNTER_ERROR = 0;
-    /**
-     * <code>ENCOUNTER_SUCCESS = 1;</code>
-     */
-    const ENCOUNTER_SUCCESS = 1;
-    /**
-     * <code>ENCOUNTER_NOT_FOUND = 2;</code>
-     */
-    const ENCOUNTER_NOT_FOUND = 2;
-    /**
-     * <code>ENCOUNTER_CLOSED = 3;</code>
-     */
-    const ENCOUNTER_CLOSED = 3;
-    /**
-     * <code>ENCOUNTER_POKEMON_FLED = 4;</code>
-     */
-    const ENCOUNTER_POKEMON_FLED = 4;
-    /**
-     * <code>ENCOUNTER_NOT_IN_RANGE = 5;</code>
-     */
-    const ENCOUNTER_NOT_IN_RANGE = 5;
-    /**
-     * <code>ENCOUNTER_ALREADY_HAPPENED = 6;</code>
-     */
-    const ENCOUNTER_ALREADY_HAPPENED = 6;
-    /**
-     * <code>POKEMON_INVENTORY_FULL = 7;</code>
-     */
-    const POKEMON_INVENTORY_FULL = 7;
+    class EncounterResponse_Status {}
 }
+class_exists(EncounterResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\EncounterResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\EncounterResponse\Status instead', E_USER_DEPRECATED);
 

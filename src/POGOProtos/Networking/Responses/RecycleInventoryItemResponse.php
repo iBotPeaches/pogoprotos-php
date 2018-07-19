@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.RecycleInventoryItemResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.RecycleInventoryItemResponse</code>
  */
 class RecycleInventoryItemResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.RecycleInventoryItemResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.RecycleInventoryItemResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>int32 new_count = 2;</code>
+     * Generated from protobuf field <code>int32 new_count = 2;</code>
      */
     private $new_count = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type int $new_count
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\RecycleInventoryItemResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.RecycleInventoryItemResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.RecycleInventoryItemResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class RecycleInventoryItemResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.RecycleInventoryItemResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.RecycleInventoryItemResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\RecycleInventoryItemResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 new_count = 2;</code>
+     * Generated from protobuf field <code>int32 new_count = 2;</code>
+     * @return int
      */
     public function getNewCount()
     {
@@ -53,12 +69,16 @@ class RecycleInventoryItemResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 new_count = 2;</code>
+     * Generated from protobuf field <code>int32 new_count = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNewCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->new_count = $var;
+
+        return $this;
     }
 
 }

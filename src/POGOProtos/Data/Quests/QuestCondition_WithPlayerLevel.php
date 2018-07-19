@@ -4,41 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestCondition.WithPlayerLevel</code>
- */
-class QuestCondition_WithPlayerLevel extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>int32 level = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestCondition\WithPlayerLevel instead.
+     * @deprecated
      */
-    private $level = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestCondition::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>int32 level = 1;</code>
-     */
-    public function getLevel()
-    {
-        return $this->level;
-    }
-
-    /**
-     * <code>int32 level = 1;</code>
-     */
-    public function setLevel($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->level = $var;
-    }
-
+    class QuestCondition_WithPlayerLevel {}
 }
+class_exists(QuestCondition\WithPlayerLevel::class);
+@trigger_error('POGOProtos\Data\Quests\QuestCondition_WithPlayerLevel is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestCondition\WithPlayerLevel instead', E_USER_DEPRECATED);
 

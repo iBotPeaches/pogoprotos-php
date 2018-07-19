@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Data\Logs;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Logs.RaidRewardsLogEntry.Result</code>
- */
-class RaidRewardsLogEntry_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Logs\RaidRewardsLogEntry\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
+    class RaidRewardsLogEntry_Result {}
 }
+class_exists(RaidRewardsLogEntry\Result::class);
+@trigger_error('POGOProtos\Data\Logs\RaidRewardsLogEntry_Result is deprecated and will be removed in the next major release. Use POGOProtos\Data\Logs\RaidRewardsLogEntry\Result instead', E_USER_DEPRECATED);
 

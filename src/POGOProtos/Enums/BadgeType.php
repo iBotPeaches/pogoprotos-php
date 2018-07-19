@@ -5,252 +5,252 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.BadgeType</code>
+ * Protobuf type <code>POGOProtos.Enums.BadgeType</code>
  */
 class BadgeType
 {
     /**
-     * <code>BADGE_UNSET = 0;</code>
+     * Generated from protobuf enum <code>BADGE_UNSET = 0;</code>
      */
     const BADGE_UNSET = 0;
     /**
-     * <code>BADGE_TRAVEL_KM = 1;</code>
+     * Generated from protobuf enum <code>BADGE_TRAVEL_KM = 1;</code>
      */
     const BADGE_TRAVEL_KM = 1;
     /**
-     * <code>BADGE_POKEDEX_ENTRIES = 2;</code>
+     * Generated from protobuf enum <code>BADGE_POKEDEX_ENTRIES = 2;</code>
      */
     const BADGE_POKEDEX_ENTRIES = 2;
     /**
-     * <code>BADGE_CAPTURE_TOTAL = 3;</code>
+     * Generated from protobuf enum <code>BADGE_CAPTURE_TOTAL = 3;</code>
      */
     const BADGE_CAPTURE_TOTAL = 3;
     /**
-     * <code>BADGE_DEFEATED_FORT = 4;</code>
+     * Generated from protobuf enum <code>BADGE_DEFEATED_FORT = 4;</code>
      */
     const BADGE_DEFEATED_FORT = 4;
     /**
-     * <code>BADGE_EVOLVED_TOTAL = 5;</code>
+     * Generated from protobuf enum <code>BADGE_EVOLVED_TOTAL = 5;</code>
      */
     const BADGE_EVOLVED_TOTAL = 5;
     /**
-     * <code>BADGE_HATCHED_TOTAL = 6;</code>
+     * Generated from protobuf enum <code>BADGE_HATCHED_TOTAL = 6;</code>
      */
     const BADGE_HATCHED_TOTAL = 6;
     /**
-     * <code>BADGE_ENCOUNTERED_TOTAL = 7;</code>
+     * Generated from protobuf enum <code>BADGE_ENCOUNTERED_TOTAL = 7;</code>
      */
     const BADGE_ENCOUNTERED_TOTAL = 7;
     /**
-     * <code>BADGE_POKESTOPS_VISITED = 8;</code>
+     * Generated from protobuf enum <code>BADGE_POKESTOPS_VISITED = 8;</code>
      */
     const BADGE_POKESTOPS_VISITED = 8;
     /**
-     * <code>BADGE_UNIQUE_POKESTOPS = 9;</code>
+     * Generated from protobuf enum <code>BADGE_UNIQUE_POKESTOPS = 9;</code>
      */
     const BADGE_UNIQUE_POKESTOPS = 9;
     /**
-     * <code>BADGE_POKEBALL_THROWN = 10;</code>
+     * Generated from protobuf enum <code>BADGE_POKEBALL_THROWN = 10;</code>
      */
     const BADGE_POKEBALL_THROWN = 10;
     /**
-     * <code>BADGE_BIG_MAGIKARP = 11;</code>
+     * Generated from protobuf enum <code>BADGE_BIG_MAGIKARP = 11;</code>
      */
     const BADGE_BIG_MAGIKARP = 11;
     /**
-     * <code>BADGE_DEPLOYED_TOTAL = 12;</code>
+     * Generated from protobuf enum <code>BADGE_DEPLOYED_TOTAL = 12;</code>
      */
     const BADGE_DEPLOYED_TOTAL = 12;
     /**
-     * <code>BADGE_BATTLE_ATTACK_WON = 13;</code>
+     * Generated from protobuf enum <code>BADGE_BATTLE_ATTACK_WON = 13;</code>
      */
     const BADGE_BATTLE_ATTACK_WON = 13;
     /**
-     * <code>BADGE_BATTLE_TRAINING_WON = 14;</code>
+     * Generated from protobuf enum <code>BADGE_BATTLE_TRAINING_WON = 14;</code>
      */
     const BADGE_BATTLE_TRAINING_WON = 14;
     /**
-     * <code>BADGE_BATTLE_DEFEND_WON = 15;</code>
+     * Generated from protobuf enum <code>BADGE_BATTLE_DEFEND_WON = 15;</code>
      */
     const BADGE_BATTLE_DEFEND_WON = 15;
     /**
-     * <code>BADGE_PRESTIGE_RAISED = 16;</code>
+     * Generated from protobuf enum <code>BADGE_PRESTIGE_RAISED = 16;</code>
      */
     const BADGE_PRESTIGE_RAISED = 16;
     /**
-     * <code>BADGE_PRESTIGE_DROPPED = 17;</code>
+     * Generated from protobuf enum <code>BADGE_PRESTIGE_DROPPED = 17;</code>
      */
     const BADGE_PRESTIGE_DROPPED = 17;
     /**
-     * <code>BADGE_TYPE_NORMAL = 18;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_NORMAL = 18;</code>
      */
     const BADGE_TYPE_NORMAL = 18;
     /**
-     * <code>BADGE_TYPE_FIGHTING = 19;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_FIGHTING = 19;</code>
      */
     const BADGE_TYPE_FIGHTING = 19;
     /**
-     * <code>BADGE_TYPE_FLYING = 20;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_FLYING = 20;</code>
      */
     const BADGE_TYPE_FLYING = 20;
     /**
-     * <code>BADGE_TYPE_POISON = 21;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_POISON = 21;</code>
      */
     const BADGE_TYPE_POISON = 21;
     /**
-     * <code>BADGE_TYPE_GROUND = 22;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_GROUND = 22;</code>
      */
     const BADGE_TYPE_GROUND = 22;
     /**
-     * <code>BADGE_TYPE_ROCK = 23;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_ROCK = 23;</code>
      */
     const BADGE_TYPE_ROCK = 23;
     /**
-     * <code>BADGE_TYPE_BUG = 24;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_BUG = 24;</code>
      */
     const BADGE_TYPE_BUG = 24;
     /**
-     * <code>BADGE_TYPE_GHOST = 25;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_GHOST = 25;</code>
      */
     const BADGE_TYPE_GHOST = 25;
     /**
-     * <code>BADGE_TYPE_STEEL = 26;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_STEEL = 26;</code>
      */
     const BADGE_TYPE_STEEL = 26;
     /**
-     * <code>BADGE_TYPE_FIRE = 27;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_FIRE = 27;</code>
      */
     const BADGE_TYPE_FIRE = 27;
     /**
-     * <code>BADGE_TYPE_WATER = 28;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_WATER = 28;</code>
      */
     const BADGE_TYPE_WATER = 28;
     /**
-     * <code>BADGE_TYPE_GRASS = 29;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_GRASS = 29;</code>
      */
     const BADGE_TYPE_GRASS = 29;
     /**
-     * <code>BADGE_TYPE_ELECTRIC = 30;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_ELECTRIC = 30;</code>
      */
     const BADGE_TYPE_ELECTRIC = 30;
     /**
-     * <code>BADGE_TYPE_PSYCHIC = 31;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_PSYCHIC = 31;</code>
      */
     const BADGE_TYPE_PSYCHIC = 31;
     /**
-     * <code>BADGE_TYPE_ICE = 32;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_ICE = 32;</code>
      */
     const BADGE_TYPE_ICE = 32;
     /**
-     * <code>BADGE_TYPE_DRAGON = 33;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_DRAGON = 33;</code>
      */
     const BADGE_TYPE_DRAGON = 33;
     /**
-     * <code>BADGE_TYPE_DARK = 34;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_DARK = 34;</code>
      */
     const BADGE_TYPE_DARK = 34;
     /**
-     * <code>BADGE_TYPE_FAIRY = 35;</code>
+     * Generated from protobuf enum <code>BADGE_TYPE_FAIRY = 35;</code>
      */
     const BADGE_TYPE_FAIRY = 35;
     /**
-     * <code>BADGE_SMALL_RATTATA = 36;</code>
+     * Generated from protobuf enum <code>BADGE_SMALL_RATTATA = 36;</code>
      */
     const BADGE_SMALL_RATTATA = 36;
     /**
-     * <code>BADGE_PIKACHU = 37;</code>
+     * Generated from protobuf enum <code>BADGE_PIKACHU = 37;</code>
      */
     const BADGE_PIKACHU = 37;
     /**
-     * <code>BADGE_UNOWN = 38;</code>
+     * Generated from protobuf enum <code>BADGE_UNOWN = 38;</code>
      */
     const BADGE_UNOWN = 38;
     /**
-     * <code>BADGE_POKEDEX_ENTRIES_GEN2 = 39;</code>
+     * Generated from protobuf enum <code>BADGE_POKEDEX_ENTRIES_GEN2 = 39;</code>
      */
     const BADGE_POKEDEX_ENTRIES_GEN2 = 39;
     /**
-     * <code>BADGE_RAID_BATTLE_WON = 40;</code>
+     * Generated from protobuf enum <code>BADGE_RAID_BATTLE_WON = 40;</code>
      */
     const BADGE_RAID_BATTLE_WON = 40;
     /**
-     * <code>BADGE_LEGENDARY_BATTLE_WON = 41;</code>
+     * Generated from protobuf enum <code>BADGE_LEGENDARY_BATTLE_WON = 41;</code>
      */
     const BADGE_LEGENDARY_BATTLE_WON = 41;
     /**
-     * <code>BADGE_BERRIES_FED = 42;</code>
+     * Generated from protobuf enum <code>BADGE_BERRIES_FED = 42;</code>
      */
     const BADGE_BERRIES_FED = 42;
     /**
-     * <code>BADGE_HOURS_DEFENDED = 43;</code>
+     * Generated from protobuf enum <code>BADGE_HOURS_DEFENDED = 43;</code>
      */
     const BADGE_HOURS_DEFENDED = 43;
     /**
-     * <code>BADGE_PLACE_HOLDER = 44;</code>
+     * Generated from protobuf enum <code>BADGE_PLACE_HOLDER = 44;</code>
      */
     const BADGE_PLACE_HOLDER = 44;
     /**
-     * <code>BADGE_POKEDEX_ENTRIES_GEN3 = 45;</code>
+     * Generated from protobuf enum <code>BADGE_POKEDEX_ENTRIES_GEN3 = 45;</code>
      */
     const BADGE_POKEDEX_ENTRIES_GEN3 = 45;
     /**
-     * <code>BADGE_CHALLENGE_QUESTS = 46;</code>
+     * Generated from protobuf enum <code>BADGE_CHALLENGE_QUESTS = 46;</code>
      */
     const BADGE_CHALLENGE_QUESTS = 46;
     /**
-     * <code>BADGE_MEW_ENCOUNTER = 47;</code>
+     * Generated from protobuf enum <code>BADGE_MEW_ENCOUNTER = 47;</code>
      */
     const BADGE_MEW_ENCOUNTER = 47;
     /**
-     * <code>BADGE_MAX_LEVEL_FRIENDS = 48;</code>
+     * Generated from protobuf enum <code>BADGE_MAX_LEVEL_FRIENDS = 48;</code>
      */
     const BADGE_MAX_LEVEL_FRIENDS = 48;
     /**
-     * <code>BADGE_TRADING = 49;</code>
+     * Generated from protobuf enum <code>BADGE_TRADING = 49;</code>
      */
     const BADGE_TRADING = 49;
     /**
-     * <code>BADGE_TRADING_DISTANCE = 50;</code>
+     * Generated from protobuf enum <code>BADGE_TRADING_DISTANCE = 50;</code>
      */
     const BADGE_TRADING_DISTANCE = 50;
     /**
-     * <code>BADGE_EVENT_MIN = 2000;</code>
+     * Generated from protobuf enum <code>BADGE_EVENT_MIN = 2000;</code>
      */
     const BADGE_EVENT_MIN = 2000;
     /**
-     * <code>BADGE_CHICAGO_FEST_JULY_2017 = 2001;</code>
+     * Generated from protobuf enum <code>BADGE_CHICAGO_FEST_JULY_2017 = 2001;</code>
      */
     const BADGE_CHICAGO_FEST_JULY_2017 = 2001;
     /**
-     * <code>BADGE_PIKACHU_OUTBREAK_YOKOHAMA_2017 = 2002;</code>
+     * Generated from protobuf enum <code>BADGE_PIKACHU_OUTBREAK_YOKOHAMA_2017 = 2002;</code>
      */
     const BADGE_PIKACHU_OUTBREAK_YOKOHAMA_2017 = 2002;
     /**
-     * <code>BADGE_SAFARI_ZONE_EUROPE_2017 = 2003;</code>
+     * Generated from protobuf enum <code>BADGE_SAFARI_ZONE_EUROPE_2017 = 2003;</code>
      */
     const BADGE_SAFARI_ZONE_EUROPE_2017 = 2003;
     /**
-     * <code>BADGE_SAFARI_ZONE_EUROPE_2017_10_07 = 2004;</code>
+     * Generated from protobuf enum <code>BADGE_SAFARI_ZONE_EUROPE_2017_10_07 = 2004;</code>
      */
     const BADGE_SAFARI_ZONE_EUROPE_2017_10_07 = 2004;
     /**
-     * <code>BADGE_SAFARI_ZONE_EUROPE_2017_10_14 = 2005;</code>
+     * Generated from protobuf enum <code>BADGE_SAFARI_ZONE_EUROPE_2017_10_14 = 2005;</code>
      */
     const BADGE_SAFARI_ZONE_EUROPE_2017_10_14 = 2005;
     /**
-     * <code>BADGE_CHICAGO_FEST_JULY_2018_SAT_NORTH = 2006;</code>
+     * Generated from protobuf enum <code>BADGE_CHICAGO_FEST_JULY_2018_SAT_NORTH = 2006;</code>
      */
     const BADGE_CHICAGO_FEST_JULY_2018_SAT_NORTH = 2006;
     /**
-     * <code>BADGE_CHICAGO_FEST_JULY_2018_SAT_SOUTH = 2007;</code>
+     * Generated from protobuf enum <code>BADGE_CHICAGO_FEST_JULY_2018_SAT_SOUTH = 2007;</code>
      */
     const BADGE_CHICAGO_FEST_JULY_2018_SAT_SOUTH = 2007;
     /**
-     * <code>BADGE_CHICAGO_FEST_JULY_2018_SUN_NORTH = 2008;</code>
+     * Generated from protobuf enum <code>BADGE_CHICAGO_FEST_JULY_2018_SUN_NORTH = 2008;</code>
      */
     const BADGE_CHICAGO_FEST_JULY_2018_SUN_NORTH = 2008;
     /**
-     * <code>BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUTH = 2009;</code>
+     * Generated from protobuf enum <code>BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUTH = 2009;</code>
      */
     const BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUTH = 2009;
 }

@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.News.CurrentNews</code>
+ * Generated from protobuf message <code>POGOProtos.Data.News.CurrentNews</code>
  */
 class CurrentNews extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Data.News.NewsArticle news_articles = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.News.NewsArticle news_articles = 1;</code>
      */
     private $news_articles;
     /**
-     * <code>string news_strings_url = 2;</code>
+     * Generated from protobuf field <code>string news_strings_url = 2;</code>
      */
     private $news_strings_url = '';
     /**
-     * <code>int64 last_updated_timestamp = 3;</code>
+     * Generated from protobuf field <code>int64 last_updated_timestamp = 3;</code>
      */
     private $last_updated_timestamp = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\News\NewsArticle[]|\Google\Protobuf\Internal\RepeatedField $news_articles
+     *     @type string $news_strings_url
+     *     @type int|string $last_updated_timestamp
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\News\CurrentNews::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.News.NewsArticle news_articles = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.News.NewsArticle news_articles = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getNewsArticles()
     {
@@ -40,16 +52,21 @@ class CurrentNews extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.News.NewsArticle news_articles = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.News.NewsArticle news_articles = 1;</code>
+     * @param \POGOProtos\Data\News\NewsArticle[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setNewsArticles(&$var)
+    public function setNewsArticles($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\News\NewsArticle::class);
-        $this->news_articles = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\News\NewsArticle::class);
+        $this->news_articles = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>string news_strings_url = 2;</code>
+     * Generated from protobuf field <code>string news_strings_url = 2;</code>
+     * @return string
      */
     public function getNewsStringsUrl()
     {
@@ -57,16 +74,21 @@ class CurrentNews extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string news_strings_url = 2;</code>
+     * Generated from protobuf field <code>string news_strings_url = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setNewsStringsUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->news_strings_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 last_updated_timestamp = 3;</code>
+     * Generated from protobuf field <code>int64 last_updated_timestamp = 3;</code>
+     * @return int|string
      */
     public function getLastUpdatedTimestamp()
     {
@@ -74,12 +96,16 @@ class CurrentNews extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 last_updated_timestamp = 3;</code>
+     * Generated from protobuf field <code>int64 last_updated_timestamp = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLastUpdatedTimestamp($var)
     {
         GPBUtil::checkInt64($var);
         $this->last_updated_timestamp = $var;
+
+        return $this;
     }
 
 }

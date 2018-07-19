@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Envelopes.AuthTicket</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Envelopes.AuthTicket</code>
  */
 class AuthTicket extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bytes start = 1;</code>
+     * Generated from protobuf field <code>bytes start = 1;</code>
      */
     private $start = '';
     /**
-     * <code>uint64 expire_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 expire_timestamp_ms = 2;</code>
      */
     private $expire_timestamp_ms = 0;
     /**
-     * <code>bytes end = 3;</code>
+     * Generated from protobuf field <code>bytes end = 3;</code>
      */
     private $end = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $start
+     *     @type int|string $expire_timestamp_ms
+     *     @type string $end
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Envelopes\AuthTicket::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bytes start = 1;</code>
+     * Generated from protobuf field <code>bytes start = 1;</code>
+     * @return string
      */
     public function getStart()
     {
@@ -40,16 +52,21 @@ class AuthTicket extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes start = 1;</code>
+     * Generated from protobuf field <code>bytes start = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setStart($var)
     {
         GPBUtil::checkString($var, False);
         $this->start = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 expire_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 expire_timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getExpireTimestampMs()
     {
@@ -57,16 +74,21 @@ class AuthTicket extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 expire_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 expire_timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setExpireTimestampMs($var)
     {
         GPBUtil::checkUint64($var);
         $this->expire_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bytes end = 3;</code>
+     * Generated from protobuf field <code>bytes end = 3;</code>
+     * @return string
      */
     public function getEnd()
     {
@@ -74,12 +96,16 @@ class AuthTicket extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes end = 3;</code>
+     * Generated from protobuf field <code>bytes end = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setEnd($var)
     {
         GPBUtil::checkString($var, False);
         $this->end = $var;
+
+        return $this;
     }
 
 }

@@ -5,60 +5,60 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.TutorialState</code>
+ * Protobuf type <code>POGOProtos.Enums.TutorialState</code>
  */
 class TutorialState
 {
     /**
-     * <code>LEGAL_SCREEN = 0;</code>
+     * Generated from protobuf enum <code>LEGAL_SCREEN = 0;</code>
      */
     const LEGAL_SCREEN = 0;
     /**
-     * <code>AVATAR_SELECTION = 1;</code>
+     * Generated from protobuf enum <code>AVATAR_SELECTION = 1;</code>
      */
     const AVATAR_SELECTION = 1;
     /**
-     * <code>ACCOUNT_CREATION = 2;</code>
+     * Generated from protobuf enum <code>ACCOUNT_CREATION = 2;</code>
      */
     const ACCOUNT_CREATION = 2;
     /**
-     * <code>POKEMON_CAPTURE = 3;</code>
+     * Generated from protobuf enum <code>POKEMON_CAPTURE = 3;</code>
      */
     const POKEMON_CAPTURE = 3;
     /**
-     * <code>NAME_SELECTION = 4;</code>
+     * Generated from protobuf enum <code>NAME_SELECTION = 4;</code>
      */
     const NAME_SELECTION = 4;
     /**
-     * <code>POKEMON_BERRY = 5;</code>
+     * Generated from protobuf enum <code>POKEMON_BERRY = 5;</code>
      */
     const POKEMON_BERRY = 5;
     /**
-     * <code>USE_ITEM = 6;</code>
+     * Generated from protobuf enum <code>USE_ITEM = 6;</code>
      */
     const USE_ITEM = 6;
     /**
-     * <code>FIRST_TIME_EXPERIENCE_COMPLETE = 7;</code>
+     * Generated from protobuf enum <code>FIRST_TIME_EXPERIENCE_COMPLETE = 7;</code>
      */
     const FIRST_TIME_EXPERIENCE_COMPLETE = 7;
     /**
-     * <code>POKESTOP_TUTORIAL = 8;</code>
+     * Generated from protobuf enum <code>POKESTOP_TUTORIAL = 8;</code>
      */
     const POKESTOP_TUTORIAL = 8;
     /**
-     * <code>GYM_TUTORIAL = 9;</code>
+     * Generated from protobuf enum <code>GYM_TUTORIAL = 9;</code>
      */
     const GYM_TUTORIAL = 9;
     /**
-     * <code>CHALLENGE_QUEST_TUTORIAL = 10;</code>
+     * Generated from protobuf enum <code>CHALLENGE_QUEST_TUTORIAL = 10;</code>
      */
     const CHALLENGE_QUEST_TUTORIAL = 10;
     /**
-     * <code>PRIVACY_POLICY_CONFIRMATION = 11;</code>
+     * Generated from protobuf enum <code>PRIVACY_POLICY_CONFIRMATION = 11;</code>
      */
     const PRIVACY_POLICY_CONFIRMATION = 11;
     /**
-     * <code>TRADING_TUTORIAL = 12;</code>
+     * Generated from protobuf enum <code>TRADING_TUTORIAL = 12;</code>
      */
     const TRADING_TUTORIAL = 12;
 }

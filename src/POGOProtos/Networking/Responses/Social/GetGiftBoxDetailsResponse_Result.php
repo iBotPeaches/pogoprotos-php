@@ -4,38 +4,13 @@
 
 namespace POGOProtos\Networking\Responses\Social;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.Social.GetGiftBoxDetailsResponse.Result</code>
- */
-class GetGiftBoxDetailsResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\Social\GetGiftBoxDetailsResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_UNKNOWN = 2;</code>
-     */
-    const ERROR_UNKNOWN = 2;
-    /**
-     * <code>ERROR_GIFT_DOES_NOT_EXIST = 3;</code>
-     */
-    const ERROR_GIFT_DOES_NOT_EXIST = 3;
-    /**
-     * <code>ERROR_INVALID_PLAYER_ID = 4;</code>
-     */
-    const ERROR_INVALID_PLAYER_ID = 4;
-    /**
-     * <code>ERROR_FRIEND_NOT_FOUND = 5;</code>
-     */
-    const ERROR_FRIEND_NOT_FOUND = 5;
-    /**
-     * <code>ERROR_FORT_SEARCH = 6;</code>
-     */
-    const ERROR_FORT_SEARCH = 6;
+    class GetGiftBoxDetailsResponse_Result {}
 }
+class_exists(GetGiftBoxDetailsResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\Social\GetGiftBoxDetailsResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\Social\GetGiftBoxDetailsResponse\Result instead', E_USER_DEPRECATED);
 

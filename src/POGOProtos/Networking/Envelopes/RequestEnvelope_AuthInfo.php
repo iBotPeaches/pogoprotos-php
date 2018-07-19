@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Networking\Envelopes;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo</code>
- */
-class RequestEnvelope_AuthInfo extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>string provider = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Envelopes\RequestEnvelope\AuthInfo instead.
+     * @deprecated
      */
-    private $provider = '';
-    /**
-     * <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo.JWT token = 2;</code>
-     */
-    private $token = null;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Envelopes\RequestEnvelope::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>string provider = 1;</code>
-     */
-    public function getProvider()
-    {
-        return $this->provider;
-    }
-
-    /**
-     * <code>string provider = 1;</code>
-     */
-    public function setProvider($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->provider = $var;
-    }
-
-    /**
-     * <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo.JWT token = 2;</code>
-     */
-    public function getToken()
-    {
-        return $this->token;
-    }
-
-    /**
-     * <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo.JWT token = 2;</code>
-     */
-    public function setToken(&$var)
-    {
-        GPBUtil::checkMessage($var, \POGOProtos\Networking\Envelopes\RequestEnvelope_AuthInfo_JWT::class);
-        $this->token = $var;
-    }
-
+    class RequestEnvelope_AuthInfo {}
 }
+class_exists(RequestEnvelope\AuthInfo::class);
+@trigger_error('POGOProtos\Networking\Envelopes\RequestEnvelope_AuthInfo is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Envelopes\RequestEnvelope\AuthInfo instead', E_USER_DEPRECATED);
 

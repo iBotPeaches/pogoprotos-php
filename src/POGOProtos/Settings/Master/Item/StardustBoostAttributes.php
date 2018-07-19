@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Item.StardustBoostAttributes</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Item.StardustBoostAttributes</code>
  */
 class StardustBoostAttributes extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float stardust_multiplier = 1;</code>
+     * Generated from protobuf field <code>float stardust_multiplier = 1;</code>
      */
     private $stardust_multiplier = 0.0;
     /**
-     * <code>int32 boost_duration_ms = 2;</code>
+     * Generated from protobuf field <code>int32 boost_duration_ms = 2;</code>
      */
     private $boost_duration_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $stardust_multiplier
+     *     @type int $boost_duration_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Item\StardustBoostAttributes::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float stardust_multiplier = 1;</code>
+     * Generated from protobuf field <code>float stardust_multiplier = 1;</code>
+     * @return float
      */
     public function getStardustMultiplier()
     {
@@ -36,16 +47,21 @@ class StardustBoostAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float stardust_multiplier = 1;</code>
+     * Generated from protobuf field <code>float stardust_multiplier = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setStardustMultiplier($var)
     {
         GPBUtil::checkFloat($var);
         $this->stardust_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 boost_duration_ms = 2;</code>
+     * Generated from protobuf field <code>int32 boost_duration_ms = 2;</code>
+     * @return int
      */
     public function getBoostDurationMs()
     {
@@ -53,12 +69,16 @@ class StardustBoostAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 boost_duration_ms = 2;</code>
+     * Generated from protobuf field <code>int32 boost_duration_ms = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBoostDurationMs($var)
     {
         GPBUtil::checkInt32($var);
         $this->boost_duration_ms = $var;
+
+        return $this;
     }
 
 }

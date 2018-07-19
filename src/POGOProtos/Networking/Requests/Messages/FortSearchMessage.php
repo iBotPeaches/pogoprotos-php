@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.FortSearchMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.FortSearchMessage</code>
  */
 class FortSearchMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
      */
     private $fort_id = '';
     /**
-     * <code>double player_latitude = 2;</code>
+     * Generated from protobuf field <code>double player_latitude = 2;</code>
      */
     private $player_latitude = 0.0;
     /**
-     * <code>double player_longitude = 3;</code>
+     * Generated from protobuf field <code>double player_longitude = 3;</code>
      */
     private $player_longitude = 0.0;
     /**
-     * <code>double fort_latitude = 4;</code>
+     * Generated from protobuf field <code>double fort_latitude = 4;</code>
      */
     private $fort_latitude = 0.0;
     /**
-     * <code>double fort_longitude = 5;</code>
+     * Generated from protobuf field <code>double fort_longitude = 5;</code>
      */
     private $fort_longitude = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $fort_id
+     *     @type float $player_latitude
+     *     @type float $player_longitude
+     *     @type float $fort_latitude
+     *     @type float $fort_longitude
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\FortSearchMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -48,16 +62,21 @@ class FortSearchMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_latitude = 2;</code>
+     * Generated from protobuf field <code>double player_latitude = 2;</code>
+     * @return float
      */
     public function getPlayerLatitude()
     {
@@ -65,16 +84,21 @@ class FortSearchMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_latitude = 2;</code>
+     * Generated from protobuf field <code>double player_latitude = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_longitude = 3;</code>
+     * Generated from protobuf field <code>double player_longitude = 3;</code>
+     * @return float
      */
     public function getPlayerLongitude()
     {
@@ -82,16 +106,21 @@ class FortSearchMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_longitude = 3;</code>
+     * Generated from protobuf field <code>double player_longitude = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_longitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double fort_latitude = 4;</code>
+     * Generated from protobuf field <code>double fort_latitude = 4;</code>
+     * @return float
      */
     public function getFortLatitude()
     {
@@ -99,16 +128,21 @@ class FortSearchMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double fort_latitude = 4;</code>
+     * Generated from protobuf field <code>double fort_latitude = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setFortLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->fort_latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double fort_longitude = 5;</code>
+     * Generated from protobuf field <code>double fort_longitude = 5;</code>
+     * @return float
      */
     public function getFortLongitude()
     {
@@ -116,12 +150,16 @@ class FortSearchMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double fort_longitude = 5;</code>
+     * Generated from protobuf field <code>double fort_longitude = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setFortLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->fort_longitude = $var;
+
+        return $this;
     }
 
 }

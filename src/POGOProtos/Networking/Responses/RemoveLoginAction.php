@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.RemoveLoginAction</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.RemoveLoginAction</code>
  */
 class RemoveLoginAction extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.IdentityProvider identity_provider = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.IdentityProvider identity_provider = 1;</code>
      */
     private $identity_provider = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $identity_provider
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\PlatformClientActionsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.IdentityProvider identity_provider = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.IdentityProvider identity_provider = 1;</code>
+     * @return int
      */
     public function getIdentityProvider()
     {
@@ -32,12 +42,16 @@ class RemoveLoginAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.IdentityProvider identity_provider = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.IdentityProvider identity_provider = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setIdentityProvider($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\IdentityProvider::class);
         $this->identity_provider = $var;
+
+        return $this;
     }
 
 }

@@ -4,41 +4,13 @@
 
 namespace POGOProtos\Networking\Requests\Messages;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.GcmToken</code>
- */
-class RegisterPushNotificationMessage_GcmToken extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>string registration_id = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Requests\Messages\RegisterPushNotificationMessage\GcmToken instead.
+     * @deprecated
      */
-    private $registration_id = '';
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Requests\Messages\PlatformClientActionsMessage::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>string registration_id = 1;</code>
-     */
-    public function getRegistrationId()
-    {
-        return $this->registration_id;
-    }
-
-    /**
-     * <code>string registration_id = 1;</code>
-     */
-    public function setRegistrationId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->registration_id = $var;
-    }
-
+    class RegisterPushNotificationMessage_GcmToken {}
 }
+class_exists(RegisterPushNotificationMessage\GcmToken::class);
+@trigger_error('POGOProtos\Networking\Requests\Messages\RegisterPushNotificationMessage_GcmToken is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Requests\Messages\RegisterPushNotificationMessage\GcmToken instead', E_USER_DEPRECATED);
 

@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.InventoryDelta</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.InventoryDelta</code>
  */
 class InventoryDelta extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 original_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 original_timestamp_ms = 1;</code>
      */
     private $original_timestamp_ms = 0;
     /**
-     * <code>int64 new_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 new_timestamp_ms = 2;</code>
      */
     private $new_timestamp_ms = 0;
     /**
-     * <code>repeated .POGOProtos.Inventory.InventoryItem inventory_items = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.InventoryItem inventory_items = 3;</code>
      */
     private $inventory_items;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $original_timestamp_ms
+     *     @type int|string $new_timestamp_ms
+     *     @type \POGOProtos\Inventory\InventoryItem[]|\Google\Protobuf\Internal\RepeatedField $inventory_items
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\InventoryDelta::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 original_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 original_timestamp_ms = 1;</code>
+     * @return int|string
      */
     public function getOriginalTimestampMs()
     {
@@ -40,16 +52,21 @@ class InventoryDelta extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 original_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 original_timestamp_ms = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setOriginalTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->original_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 new_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 new_timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getNewTimestampMs()
     {
@@ -57,16 +74,21 @@ class InventoryDelta extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 new_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 new_timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setNewTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->new_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.InventoryItem inventory_items = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.InventoryItem inventory_items = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getInventoryItems()
     {
@@ -74,12 +96,16 @@ class InventoryDelta extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.InventoryItem inventory_items = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.InventoryItem inventory_items = 3;</code>
+     * @param \POGOProtos\Inventory\InventoryItem[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setInventoryItems(&$var)
+    public function setInventoryItems($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\InventoryItem::class);
-        $this->inventory_items = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\InventoryItem::class);
+        $this->inventory_items = $arr;
+
+        return $this;
     }
 
 }

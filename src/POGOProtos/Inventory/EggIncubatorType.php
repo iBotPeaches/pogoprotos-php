@@ -5,16 +5,16 @@
 namespace POGOProtos\Inventory;
 
 /**
- * Protobuf enum <code>POGOProtos.Inventory.EggIncubatorType</code>
+ * Protobuf type <code>POGOProtos.Inventory.EggIncubatorType</code>
  */
 class EggIncubatorType
 {
     /**
-     * <code>INCUBATOR_UNSET = 0;</code>
+     * Generated from protobuf enum <code>INCUBATOR_UNSET = 0;</code>
      */
     const INCUBATOR_UNSET = 0;
     /**
-     * <code>INCUBATOR_DISTANCE = 1;</code>
+     * Generated from protobuf enum <code>INCUBATOR_DISTANCE = 1;</code>
      */
     const INCUBATOR_DISTANCE = 1;
 }

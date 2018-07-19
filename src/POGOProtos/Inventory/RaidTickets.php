@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.RaidTickets</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.RaidTickets</code>
  */
 class RaidTickets extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Inventory.RaidTicket raid_ticket = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.RaidTicket raid_ticket = 1;</code>
      */
     private $raid_ticket;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Inventory\RaidTicket[]|\Google\Protobuf\Internal\RepeatedField $raid_ticket
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\RaidTickets::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.RaidTicket raid_ticket = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.RaidTicket raid_ticket = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getRaidTicket()
     {
@@ -32,12 +42,16 @@ class RaidTickets extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.RaidTicket raid_ticket = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.RaidTicket raid_ticket = 1;</code>
+     * @param \POGOProtos\Inventory\RaidTicket[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setRaidTicket(&$var)
+    public function setRaidTicket($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\RaidTicket::class);
-        $this->raid_ticket = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\RaidTicket::class);
+        $this->raid_ticket = $arr;
+
+        return $this;
     }
 
 }

@@ -4,38 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.UseItemRareCandyResponse.Result</code>
- */
-class UseItemRareCandyResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\UseItemRareCandyResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>INVALID_POKEMON_ID = 2;</code>
-     */
-    const INVALID_POKEMON_ID = 2;
-    /**
-     * <code>NO_PLAYER = 3;</code>
-     */
-    const NO_PLAYER = 3;
-    /**
-     * <code>WRONG_ITEM_TYPE = 4;</code>
-     */
-    const WRONG_ITEM_TYPE = 4;
-    /**
-     * <code>ITEM_NOT_IN_INVENTORY = 5;</code>
-     */
-    const ITEM_NOT_IN_INVENTORY = 5;
-    /**
-     * <code>NOT_ENOUGH_ITEMS = 6;</code>
-     */
-    const NOT_ENOUGH_ITEMS = 6;
+    class UseItemRareCandyResponse_Result {}
 }
+class_exists(UseItemRareCandyResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\UseItemRareCandyResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\UseItemRareCandyResponse\Result instead', E_USER_DEPRECATED);
 

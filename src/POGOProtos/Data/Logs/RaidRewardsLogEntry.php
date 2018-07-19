@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Logs.RaidRewardsLogEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Logs.RaidRewardsLogEntry</code>
  */
 class RaidRewardsLogEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Logs.RaidRewardsLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.RaidRewardsLogEntry.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>bool is_exclusive = 2;</code>
+     * Generated from protobuf field <code>bool is_exclusive = 2;</code>
      */
     private $is_exclusive = false;
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData items = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData items = 3;</code>
      */
     private $items;
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData default_rewards = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData default_rewards = 4;</code>
      */
     private $default_rewards;
     /**
-     * <code>int32 stardust = 5;</code>
+     * Generated from protobuf field <code>int32 stardust = 5;</code>
      */
     private $stardust = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type bool $is_exclusive
+     *     @type \POGOProtos\Inventory\Item\ItemData[]|\Google\Protobuf\Internal\RepeatedField $items
+     *     @type \POGOProtos\Inventory\Item\ItemData[]|\Google\Protobuf\Internal\RepeatedField $default_rewards
+     *     @type int $stardust
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Logs\RaidRewardsLogEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.RaidRewardsLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.RaidRewardsLogEntry.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -48,16 +62,21 @@ class RaidRewardsLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.RaidRewardsLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.RaidRewardsLogEntry.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Logs\RaidRewardsLogEntry_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool is_exclusive = 2;</code>
+     * Generated from protobuf field <code>bool is_exclusive = 2;</code>
+     * @return bool
      */
     public function getIsExclusive()
     {
@@ -65,16 +84,21 @@ class RaidRewardsLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool is_exclusive = 2;</code>
+     * Generated from protobuf field <code>bool is_exclusive = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsExclusive($var)
     {
         GPBUtil::checkBool($var);
         $this->is_exclusive = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData items = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData items = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getItems()
     {
@@ -82,16 +106,21 @@ class RaidRewardsLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData items = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData items = 3;</code>
+     * @param \POGOProtos\Inventory\Item\ItemData[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItems(&$var)
+    public function setItems($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
-        $this->items = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
+        $this->items = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData default_rewards = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData default_rewards = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getDefaultRewards()
     {
@@ -99,16 +128,21 @@ class RaidRewardsLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData default_rewards = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData default_rewards = 4;</code>
+     * @param \POGOProtos\Inventory\Item\ItemData[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDefaultRewards(&$var)
+    public function setDefaultRewards($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
-        $this->default_rewards = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
+        $this->default_rewards = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 stardust = 5;</code>
+     * Generated from protobuf field <code>int32 stardust = 5;</code>
+     * @return int
      */
     public function getStardust()
     {
@@ -116,12 +150,16 @@ class RaidRewardsLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 stardust = 5;</code>
+     * Generated from protobuf field <code>int32 stardust = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStardust($var)
     {
         GPBUtil::checkInt32($var);
         $this->stardust = $var;
+
+        return $this;
     }
 
 }

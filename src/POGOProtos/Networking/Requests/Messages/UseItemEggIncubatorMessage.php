@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.UseItemEggIncubatorMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.UseItemEggIncubatorMessage</code>
  */
 class UseItemEggIncubatorMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string item_id = 1;</code>
+     * Generated from protobuf field <code>string item_id = 1;</code>
      */
     private $item_id = '';
     /**
-     * <code>uint64 pokemon_id = 2;</code>
+     * Generated from protobuf field <code>uint64 pokemon_id = 2;</code>
      */
     private $pokemon_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $item_id
+     *     @type int|string $pokemon_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\UseItemEggIncubatorMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string item_id = 1;</code>
+     * Generated from protobuf field <code>string item_id = 1;</code>
+     * @return string
      */
     public function getItemId()
     {
@@ -36,16 +47,21 @@ class UseItemEggIncubatorMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string item_id = 1;</code>
+     * Generated from protobuf field <code>string item_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setItemId($var)
     {
         GPBUtil::checkString($var, True);
         $this->item_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 pokemon_id = 2;</code>
+     * Generated from protobuf field <code>uint64 pokemon_id = 2;</code>
+     * @return int|string
      */
     public function getPokemonId()
     {
@@ -53,12 +69,16 @@ class UseItemEggIncubatorMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 pokemon_id = 2;</code>
+     * Generated from protobuf field <code>uint64 pokemon_id = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
 }

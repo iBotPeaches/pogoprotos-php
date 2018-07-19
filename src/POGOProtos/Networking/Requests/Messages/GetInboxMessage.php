@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetInboxMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GetInboxMessage</code>
  */
 class GetInboxMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool is_history = 1;</code>
+     * Generated from protobuf field <code>bool is_history = 1;</code>
      */
     private $is_history = false;
     /**
-     * <code>bool is_reverse = 2;</code>
+     * Generated from protobuf field <code>bool is_reverse = 2;</code>
      */
     private $is_reverse = false;
     /**
-     * <code>int64 not_before_ms = 3;</code>
+     * Generated from protobuf field <code>int64 not_before_ms = 3;</code>
      */
     private $not_before_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $is_history
+     *     @type bool $is_reverse
+     *     @type int|string $not_before_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetInboxMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool is_history = 1;</code>
+     * Generated from protobuf field <code>bool is_history = 1;</code>
+     * @return bool
      */
     public function getIsHistory()
     {
@@ -40,16 +52,21 @@ class GetInboxMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool is_history = 1;</code>
+     * Generated from protobuf field <code>bool is_history = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsHistory($var)
     {
         GPBUtil::checkBool($var);
         $this->is_history = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool is_reverse = 2;</code>
+     * Generated from protobuf field <code>bool is_reverse = 2;</code>
+     * @return bool
      */
     public function getIsReverse()
     {
@@ -57,16 +74,21 @@ class GetInboxMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool is_reverse = 2;</code>
+     * Generated from protobuf field <code>bool is_reverse = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsReverse($var)
     {
         GPBUtil::checkBool($var);
         $this->is_reverse = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 not_before_ms = 3;</code>
+     * Generated from protobuf field <code>int64 not_before_ms = 3;</code>
+     * @return int|string
      */
     public function getNotBeforeMs()
     {
@@ -74,12 +96,16 @@ class GetInboxMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 not_before_ms = 3;</code>
+     * Generated from protobuf field <code>int64 not_before_ms = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setNotBeforeMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->not_before_ms = $var;
+
+        return $this;
     }
 
 }

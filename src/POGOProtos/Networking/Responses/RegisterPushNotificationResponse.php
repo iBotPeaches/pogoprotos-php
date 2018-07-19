@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.RegisterPushNotificationResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.RegisterPushNotificationResponse</code>
  */
 class RegisterPushNotificationResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.RegisterPushNotificationResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.RegisterPushNotificationResponse.Result result = 1;</code>
      */
     private $result = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\PlatformClientActionsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.RegisterPushNotificationResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.RegisterPushNotificationResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -32,12 +42,16 @@ class RegisterPushNotificationResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.RegisterPushNotificationResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.RegisterPushNotificationResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\RegisterPushNotificationResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
 }

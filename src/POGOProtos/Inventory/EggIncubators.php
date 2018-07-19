@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.EggIncubators</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.EggIncubators</code>
  */
 class EggIncubators extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Inventory.EggIncubator egg_incubator = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.EggIncubator egg_incubator = 1;</code>
      */
     private $egg_incubator;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Inventory\EggIncubator[]|\Google\Protobuf\Internal\RepeatedField $egg_incubator
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\EggIncubators::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.EggIncubator egg_incubator = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.EggIncubator egg_incubator = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getEggIncubator()
     {
@@ -32,12 +42,16 @@ class EggIncubators extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.EggIncubator egg_incubator = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.EggIncubator egg_incubator = 1;</code>
+     * @param \POGOProtos\Inventory\EggIncubator[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setEggIncubator(&$var)
+    public function setEggIncubator($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\EggIncubator::class);
-        $this->egg_incubator = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\EggIncubator::class);
+        $this->egg_incubator = $arr;
+
+        return $this;
     }
 
 }

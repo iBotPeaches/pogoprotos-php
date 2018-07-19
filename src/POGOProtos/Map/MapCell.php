@@ -9,86 +9,98 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * <pre>
  * A cell is a geographical "zone" containing objects like pokemon, gyms, and pokestops.
- * </pre>
  *
- * Protobuf type <code>POGOProtos.Map.MapCell</code>
+ * Generated from protobuf message <code>POGOProtos.Map.MapCell</code>
  */
 class MapCell extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <pre>
      * S2 geographic area that the cell covers (http://s2map.com/) (https://code.google.com/archive/p/s2-geometry-library/)
-     * </pre>
      *
-     * <code>uint64 s2_cell_id = 1;</code>
+     * Generated from protobuf field <code>uint64 s2_cell_id = 1;</code>
      */
     private $s2_cell_id = 0;
     /**
-     * <code>int64 current_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 current_timestamp_ms = 2;</code>
      */
     private $current_timestamp_ms = 0;
     /**
-     * <code>repeated .POGOProtos.Map.Fort.FortData forts = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Fort.FortData forts = 3;</code>
      */
     private $forts;
     /**
-     * <code>repeated .POGOProtos.Map.SpawnPoint spawn_points = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.SpawnPoint spawn_points = 4;</code>
      */
     private $spawn_points;
     /**
-     * <code>repeated string deleted_objects = 6;</code>
+     * Generated from protobuf field <code>repeated string deleted_objects = 6;</code>
      */
     private $deleted_objects;
     /**
-     * <code>bool is_truncated_list = 7;</code>
+     * Generated from protobuf field <code>bool is_truncated_list = 7;</code>
      */
     private $is_truncated_list = false;
     /**
-     * <code>repeated .POGOProtos.Map.Fort.FortSummary fort_summaries = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Fort.FortSummary fort_summaries = 8;</code>
      */
     private $fort_summaries;
     /**
-     * <code>repeated .POGOProtos.Map.SpawnPoint decimated_spawn_points = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.SpawnPoint decimated_spawn_points = 9;</code>
      */
     private $decimated_spawn_points;
     /**
-     * <pre>
      * Pokemon within 2 steps or less.
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Map.Pokemon.WildPokemon wild_pokemons = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Pokemon.WildPokemon wild_pokemons = 5;</code>
      */
     private $wild_pokemons;
     /**
-     * <pre>
      * Pokemon within 1 step or none.
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Map.Pokemon.MapPokemon catchable_pokemons = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Pokemon.MapPokemon catchable_pokemons = 10;</code>
      */
     private $catchable_pokemons;
     /**
-     * <pre>
      * Pokemon farther away than 2 steps, but still in the area.
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Map.Pokemon.NearbyPokemon nearby_pokemons = 11;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Pokemon.NearbyPokemon nearby_pokemons = 11;</code>
      */
     private $nearby_pokemons;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $s2_cell_id
+     *           S2 geographic area that the cell covers (http://s2map.com/) (https://code.google.com/archive/p/s2-geometry-library/)
+     *     @type int|string $current_timestamp_ms
+     *     @type \POGOProtos\Map\Fort\FortData[]|\Google\Protobuf\Internal\RepeatedField $forts
+     *     @type \POGOProtos\Map\SpawnPoint[]|\Google\Protobuf\Internal\RepeatedField $spawn_points
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $deleted_objects
+     *     @type bool $is_truncated_list
+     *     @type \POGOProtos\Map\Fort\FortSummary[]|\Google\Protobuf\Internal\RepeatedField $fort_summaries
+     *     @type \POGOProtos\Map\SpawnPoint[]|\Google\Protobuf\Internal\RepeatedField $decimated_spawn_points
+     *     @type \POGOProtos\Map\Pokemon\WildPokemon[]|\Google\Protobuf\Internal\RepeatedField $wild_pokemons
+     *           Pokemon within 2 steps or less.
+     *     @type \POGOProtos\Map\Pokemon\MapPokemon[]|\Google\Protobuf\Internal\RepeatedField $catchable_pokemons
+     *           Pokemon within 1 step or none.
+     *     @type \POGOProtos\Map\Pokemon\NearbyPokemon[]|\Google\Protobuf\Internal\RepeatedField $nearby_pokemons
+     *           Pokemon farther away than 2 steps, but still in the area.
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\MapCell::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <pre>
      * S2 geographic area that the cell covers (http://s2map.com/) (https://code.google.com/archive/p/s2-geometry-library/)
-     * </pre>
      *
-     * <code>uint64 s2_cell_id = 1;</code>
+     * Generated from protobuf field <code>uint64 s2_cell_id = 1;</code>
+     * @return int|string
      */
     public function getS2CellId()
     {
@@ -96,20 +108,23 @@ class MapCell extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * S2 geographic area that the cell covers (http://s2map.com/) (https://code.google.com/archive/p/s2-geometry-library/)
-     * </pre>
      *
-     * <code>uint64 s2_cell_id = 1;</code>
+     * Generated from protobuf field <code>uint64 s2_cell_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setS2CellId($var)
     {
         GPBUtil::checkUint64($var);
         $this->s2_cell_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 current_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 current_timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getCurrentTimestampMs()
     {
@@ -117,16 +132,21 @@ class MapCell extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 current_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 current_timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setCurrentTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->current_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.Fort.FortData forts = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Fort.FortData forts = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getForts()
     {
@@ -134,16 +154,21 @@ class MapCell extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.Fort.FortData forts = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Fort.FortData forts = 3;</code>
+     * @param \POGOProtos\Map\Fort\FortData[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setForts(&$var)
+    public function setForts($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Fort\FortData::class);
-        $this->forts = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Fort\FortData::class);
+        $this->forts = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.SpawnPoint spawn_points = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.SpawnPoint spawn_points = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getSpawnPoints()
     {
@@ -151,16 +176,21 @@ class MapCell extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.SpawnPoint spawn_points = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.SpawnPoint spawn_points = 4;</code>
+     * @param \POGOProtos\Map\SpawnPoint[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSpawnPoints(&$var)
+    public function setSpawnPoints($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\SpawnPoint::class);
-        $this->spawn_points = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\SpawnPoint::class);
+        $this->spawn_points = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated string deleted_objects = 6;</code>
+     * Generated from protobuf field <code>repeated string deleted_objects = 6;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getDeletedObjects()
     {
@@ -168,16 +198,21 @@ class MapCell extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string deleted_objects = 6;</code>
+     * Generated from protobuf field <code>repeated string deleted_objects = 6;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDeletedObjects(&$var)
+    public function setDeletedObjects($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->deleted_objects = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->deleted_objects = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>bool is_truncated_list = 7;</code>
+     * Generated from protobuf field <code>bool is_truncated_list = 7;</code>
+     * @return bool
      */
     public function getIsTruncatedList()
     {
@@ -185,16 +220,21 @@ class MapCell extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool is_truncated_list = 7;</code>
+     * Generated from protobuf field <code>bool is_truncated_list = 7;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsTruncatedList($var)
     {
         GPBUtil::checkBool($var);
         $this->is_truncated_list = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.Fort.FortSummary fort_summaries = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Fort.FortSummary fort_summaries = 8;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getFortSummaries()
     {
@@ -202,16 +242,21 @@ class MapCell extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.Fort.FortSummary fort_summaries = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Fort.FortSummary fort_summaries = 8;</code>
+     * @param \POGOProtos\Map\Fort\FortSummary[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setFortSummaries(&$var)
+    public function setFortSummaries($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Fort\FortSummary::class);
-        $this->fort_summaries = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Fort\FortSummary::class);
+        $this->fort_summaries = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.SpawnPoint decimated_spawn_points = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.SpawnPoint decimated_spawn_points = 9;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getDecimatedSpawnPoints()
     {
@@ -219,20 +264,23 @@ class MapCell extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.SpawnPoint decimated_spawn_points = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.SpawnPoint decimated_spawn_points = 9;</code>
+     * @param \POGOProtos\Map\SpawnPoint[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDecimatedSpawnPoints(&$var)
+    public function setDecimatedSpawnPoints($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\SpawnPoint::class);
-        $this->decimated_spawn_points = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\SpawnPoint::class);
+        $this->decimated_spawn_points = $arr;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * Pokemon within 2 steps or less.
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Map.Pokemon.WildPokemon wild_pokemons = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Pokemon.WildPokemon wild_pokemons = 5;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getWildPokemons()
     {
@@ -240,24 +288,25 @@ class MapCell extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * Pokemon within 2 steps or less.
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Map.Pokemon.WildPokemon wild_pokemons = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Pokemon.WildPokemon wild_pokemons = 5;</code>
+     * @param \POGOProtos\Map\Pokemon\WildPokemon[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setWildPokemons(&$var)
+    public function setWildPokemons($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Pokemon\WildPokemon::class);
-        $this->wild_pokemons = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Pokemon\WildPokemon::class);
+        $this->wild_pokemons = $arr;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * Pokemon within 1 step or none.
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Map.Pokemon.MapPokemon catchable_pokemons = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Pokemon.MapPokemon catchable_pokemons = 10;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCatchablePokemons()
     {
@@ -265,24 +314,25 @@ class MapCell extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * Pokemon within 1 step or none.
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Map.Pokemon.MapPokemon catchable_pokemons = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Pokemon.MapPokemon catchable_pokemons = 10;</code>
+     * @param \POGOProtos\Map\Pokemon\MapPokemon[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCatchablePokemons(&$var)
+    public function setCatchablePokemons($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Pokemon\MapPokemon::class);
-        $this->catchable_pokemons = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Pokemon\MapPokemon::class);
+        $this->catchable_pokemons = $arr;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * Pokemon farther away than 2 steps, but still in the area.
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Map.Pokemon.NearbyPokemon nearby_pokemons = 11;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Pokemon.NearbyPokemon nearby_pokemons = 11;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getNearbyPokemons()
     {
@@ -290,16 +340,18 @@ class MapCell extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * Pokemon farther away than 2 steps, but still in the area.
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Map.Pokemon.NearbyPokemon nearby_pokemons = 11;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Pokemon.NearbyPokemon nearby_pokemons = 11;</code>
+     * @param \POGOProtos\Map\Pokemon\NearbyPokemon[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setNearbyPokemons(&$var)
+    public function setNearbyPokemons($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Pokemon\NearbyPokemon::class);
-        $this->nearby_pokemons = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Pokemon\NearbyPokemon::class);
+        $this->nearby_pokemons = $arr;
+
+        return $this;
     }
 
 }

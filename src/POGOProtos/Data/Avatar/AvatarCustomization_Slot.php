@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Data\Avatar;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Avatar.AvatarCustomization.Slot</code>
- */
-class AvatarCustomization_Slot
-{
+if (false) {
     /**
-     * <code>UNSET_SLOT = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Avatar\AvatarCustomization\Slot instead.
+     * @deprecated
      */
-    const UNSET_SLOT = 0;
-    /**
-     * <code>HAIR = 1;</code>
-     */
-    const HAIR = 1;
-    /**
-     * <code>SHIRT = 2;</code>
-     */
-    const SHIRT = 2;
-    /**
-     * <code>PANTS = 3;</code>
-     */
-    const PANTS = 3;
-    /**
-     * <code>HAT = 4;</code>
-     */
-    const HAT = 4;
-    /**
-     * <code>SHOES = 5;</code>
-     */
-    const SHOES = 5;
-    /**
-     * <code>EYES = 6;</code>
-     */
-    const EYES = 6;
-    /**
-     * <code>BACKPACK = 7;</code>
-     */
-    const BACKPACK = 7;
-    /**
-     * <code>GLOVES = 8;</code>
-     */
-    const GLOVES = 8;
-    /**
-     * <code>SOCKS = 9;</code>
-     */
-    const SOCKS = 9;
-    /**
-     * <code>BELT = 10;</code>
-     */
-    const BELT = 10;
-    /**
-     * <code>GLASSES = 11;</code>
-     */
-    const GLASSES = 11;
-    /**
-     * <code>NECKLACE = 12;</code>
-     */
-    const NECKLACE = 12;
+    class AvatarCustomization_Slot {}
 }
+class_exists(AvatarCustomization\Slot::class);
+@trigger_error('POGOProtos\Data\Avatar\AvatarCustomization_Slot is deprecated and will be removed in the next major release. Use POGOProtos\Data\Avatar\AvatarCustomization\Slot instead', E_USER_DEPRECATED);
 

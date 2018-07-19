@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.RecycleInventoryItemMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.RecycleInventoryItemMessage</code>
  */
 class RecycleInventoryItemMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
      */
     private $item_id = 0;
     /**
-     * <code>int32 count = 2;</code>
+     * Generated from protobuf field <code>int32 count = 2;</code>
      */
     private $count = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $item_id
+     *     @type int $count
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\RecycleInventoryItemMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * @return int
      */
     public function getItemId()
     {
@@ -36,16 +47,21 @@ class RecycleInventoryItemMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 count = 2;</code>
+     * Generated from protobuf field <code>int32 count = 2;</code>
+     * @return int
      */
     public function getCount()
     {
@@ -53,12 +69,16 @@ class RecycleInventoryItemMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 count = 2;</code>
+     * Generated from protobuf field <code>int32 count = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->count = $var;
+
+        return $this;
     }
 
 }

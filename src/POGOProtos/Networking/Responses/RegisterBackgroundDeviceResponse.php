@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.RegisterBackgroundDeviceResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.RegisterBackgroundDeviceResponse</code>
  */
 class RegisterBackgroundDeviceResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.RegisterBackgroundDeviceResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.RegisterBackgroundDeviceResponse.Status status = 1;</code>
      */
     private $status = 0;
     /**
-     * <code>.POGOProtos.Data.BackgroundToken token = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BackgroundToken token = 2;</code>
      */
     private $token = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status
+     *     @type \POGOProtos\Data\BackgroundToken $token
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\RegisterBackgroundDeviceResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.RegisterBackgroundDeviceResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.RegisterBackgroundDeviceResponse.Status status = 1;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -36,16 +47,21 @@ class RegisterBackgroundDeviceResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.RegisterBackgroundDeviceResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.RegisterBackgroundDeviceResponse.Status status = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\RegisterBackgroundDeviceResponse_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.BackgroundToken token = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BackgroundToken token = 2;</code>
+     * @return \POGOProtos\Data\BackgroundToken
      */
     public function getToken()
     {
@@ -53,12 +69,16 @@ class RegisterBackgroundDeviceResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.BackgroundToken token = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BackgroundToken token = 2;</code>
+     * @param \POGOProtos\Data\BackgroundToken $var
+     * @return $this
      */
-    public function setToken(&$var)
+    public function setToken($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\BackgroundToken::class);
         $this->token = $var;
+
+        return $this;
     }
 
 }

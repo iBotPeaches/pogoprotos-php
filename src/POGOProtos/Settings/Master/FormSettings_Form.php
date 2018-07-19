@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Settings\Master;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Settings.Master.FormSettings.Form</code>
- */
-class FormSettings_Form extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 1;</code>
+     * This class is deprecated. Use POGOProtos\Settings\Master\FormSettings\Form instead.
+     * @deprecated
      */
-    private $form = 0;
-    /**
-     * <code>int32 asset_bundle_value = 2;</code>
-     */
-    private $asset_bundle_value = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Settings\Master\FormSettings::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 1;</code>
-     */
-    public function getForm()
-    {
-        return $this->form;
-    }
-
-    /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 1;</code>
-     */
-    public function setForm($var)
-    {
-        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Form::class);
-        $this->form = $var;
-    }
-
-    /**
-     * <code>int32 asset_bundle_value = 2;</code>
-     */
-    public function getAssetBundleValue()
-    {
-        return $this->asset_bundle_value;
-    }
-
-    /**
-     * <code>int32 asset_bundle_value = 2;</code>
-     */
-    public function setAssetBundleValue($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->asset_bundle_value = $var;
-    }
-
+    class FormSettings_Form {}
 }
+class_exists(FormSettings\Form::class);
+@trigger_error('POGOProtos\Settings\Master\FormSettings_Form is deprecated and will be removed in the next major release. Use POGOProtos\Settings\Master\FormSettings\Form instead', E_USER_DEPRECATED);
 

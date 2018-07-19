@@ -5,1556 +5,1556 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.PokemonId</code>
+ * Protobuf type <code>POGOProtos.Enums.PokemonId</code>
  */
 class PokemonId
 {
     /**
-     * <code>MISSINGNO = 0;</code>
+     * Generated from protobuf enum <code>MISSINGNO = 0;</code>
      */
     const MISSINGNO = 0;
     /**
-     * <code>BULBASAUR = 1;</code>
+     * Generated from protobuf enum <code>BULBASAUR = 1;</code>
      */
     const BULBASAUR = 1;
     /**
-     * <code>IVYSAUR = 2;</code>
+     * Generated from protobuf enum <code>IVYSAUR = 2;</code>
      */
     const IVYSAUR = 2;
     /**
-     * <code>VENUSAUR = 3;</code>
+     * Generated from protobuf enum <code>VENUSAUR = 3;</code>
      */
     const VENUSAUR = 3;
     /**
-     * <code>CHARMANDER = 4;</code>
+     * Generated from protobuf enum <code>CHARMANDER = 4;</code>
      */
     const CHARMANDER = 4;
     /**
-     * <code>CHARMELEON = 5;</code>
+     * Generated from protobuf enum <code>CHARMELEON = 5;</code>
      */
     const CHARMELEON = 5;
     /**
-     * <code>CHARIZARD = 6;</code>
+     * Generated from protobuf enum <code>CHARIZARD = 6;</code>
      */
     const CHARIZARD = 6;
     /**
-     * <code>SQUIRTLE = 7;</code>
+     * Generated from protobuf enum <code>SQUIRTLE = 7;</code>
      */
     const SQUIRTLE = 7;
     /**
-     * <code>WARTORTLE = 8;</code>
+     * Generated from protobuf enum <code>WARTORTLE = 8;</code>
      */
     const WARTORTLE = 8;
     /**
-     * <code>BLASTOISE = 9;</code>
+     * Generated from protobuf enum <code>BLASTOISE = 9;</code>
      */
     const BLASTOISE = 9;
     /**
-     * <code>CATERPIE = 10;</code>
+     * Generated from protobuf enum <code>CATERPIE = 10;</code>
      */
     const CATERPIE = 10;
     /**
-     * <code>METAPOD = 11;</code>
+     * Generated from protobuf enum <code>METAPOD = 11;</code>
      */
     const METAPOD = 11;
     /**
-     * <code>BUTTERFREE = 12;</code>
+     * Generated from protobuf enum <code>BUTTERFREE = 12;</code>
      */
     const BUTTERFREE = 12;
     /**
-     * <code>WEEDLE = 13;</code>
+     * Generated from protobuf enum <code>WEEDLE = 13;</code>
      */
     const WEEDLE = 13;
     /**
-     * <code>KAKUNA = 14;</code>
+     * Generated from protobuf enum <code>KAKUNA = 14;</code>
      */
     const KAKUNA = 14;
     /**
-     * <code>BEEDRILL = 15;</code>
+     * Generated from protobuf enum <code>BEEDRILL = 15;</code>
      */
     const BEEDRILL = 15;
     /**
-     * <code>PIDGEY = 16;</code>
+     * Generated from protobuf enum <code>PIDGEY = 16;</code>
      */
     const PIDGEY = 16;
     /**
-     * <code>PIDGEOTTO = 17;</code>
+     * Generated from protobuf enum <code>PIDGEOTTO = 17;</code>
      */
     const PIDGEOTTO = 17;
     /**
-     * <code>PIDGEOT = 18;</code>
+     * Generated from protobuf enum <code>PIDGEOT = 18;</code>
      */
     const PIDGEOT = 18;
     /**
-     * <code>RATTATA = 19;</code>
+     * Generated from protobuf enum <code>RATTATA = 19;</code>
      */
     const RATTATA = 19;
     /**
-     * <code>RATICATE = 20;</code>
+     * Generated from protobuf enum <code>RATICATE = 20;</code>
      */
     const RATICATE = 20;
     /**
-     * <code>SPEAROW = 21;</code>
+     * Generated from protobuf enum <code>SPEAROW = 21;</code>
      */
     const SPEAROW = 21;
     /**
-     * <code>FEAROW = 22;</code>
+     * Generated from protobuf enum <code>FEAROW = 22;</code>
      */
     const FEAROW = 22;
     /**
-     * <code>EKANS = 23;</code>
+     * Generated from protobuf enum <code>EKANS = 23;</code>
      */
     const EKANS = 23;
     /**
-     * <code>ARBOK = 24;</code>
+     * Generated from protobuf enum <code>ARBOK = 24;</code>
      */
     const ARBOK = 24;
     /**
-     * <code>PIKACHU = 25;</code>
+     * Generated from protobuf enum <code>PIKACHU = 25;</code>
      */
     const PIKACHU = 25;
     /**
-     * <code>RAICHU = 26;</code>
+     * Generated from protobuf enum <code>RAICHU = 26;</code>
      */
     const RAICHU = 26;
     /**
-     * <code>SANDSHREW = 27;</code>
+     * Generated from protobuf enum <code>SANDSHREW = 27;</code>
      */
     const SANDSHREW = 27;
     /**
-     * <code>SANDSLASH = 28;</code>
+     * Generated from protobuf enum <code>SANDSLASH = 28;</code>
      */
     const SANDSLASH = 28;
     /**
-     * <code>NIDORAN_FEMALE = 29;</code>
+     * Generated from protobuf enum <code>NIDORAN_FEMALE = 29;</code>
      */
     const NIDORAN_FEMALE = 29;
     /**
-     * <code>NIDORINA = 30;</code>
+     * Generated from protobuf enum <code>NIDORINA = 30;</code>
      */
     const NIDORINA = 30;
     /**
-     * <code>NIDOQUEEN = 31;</code>
+     * Generated from protobuf enum <code>NIDOQUEEN = 31;</code>
      */
     const NIDOQUEEN = 31;
     /**
-     * <code>NIDORAN_MALE = 32;</code>
+     * Generated from protobuf enum <code>NIDORAN_MALE = 32;</code>
      */
     const NIDORAN_MALE = 32;
     /**
-     * <code>NIDORINO = 33;</code>
+     * Generated from protobuf enum <code>NIDORINO = 33;</code>
      */
     const NIDORINO = 33;
     /**
-     * <code>NIDOKING = 34;</code>
+     * Generated from protobuf enum <code>NIDOKING = 34;</code>
      */
     const NIDOKING = 34;
     /**
-     * <code>CLEFAIRY = 35;</code>
+     * Generated from protobuf enum <code>CLEFAIRY = 35;</code>
      */
     const CLEFAIRY = 35;
     /**
-     * <code>CLEFABLE = 36;</code>
+     * Generated from protobuf enum <code>CLEFABLE = 36;</code>
      */
     const CLEFABLE = 36;
     /**
-     * <code>VULPIX = 37;</code>
+     * Generated from protobuf enum <code>VULPIX = 37;</code>
      */
     const VULPIX = 37;
     /**
-     * <code>NINETALES = 38;</code>
+     * Generated from protobuf enum <code>NINETALES = 38;</code>
      */
     const NINETALES = 38;
     /**
-     * <code>JIGGLYPUFF = 39;</code>
+     * Generated from protobuf enum <code>JIGGLYPUFF = 39;</code>
      */
     const JIGGLYPUFF = 39;
     /**
-     * <code>WIGGLYTUFF = 40;</code>
+     * Generated from protobuf enum <code>WIGGLYTUFF = 40;</code>
      */
     const WIGGLYTUFF = 40;
     /**
-     * <code>ZUBAT = 41;</code>
+     * Generated from protobuf enum <code>ZUBAT = 41;</code>
      */
     const ZUBAT = 41;
     /**
-     * <code>GOLBAT = 42;</code>
+     * Generated from protobuf enum <code>GOLBAT = 42;</code>
      */
     const GOLBAT = 42;
     /**
-     * <code>ODDISH = 43;</code>
+     * Generated from protobuf enum <code>ODDISH = 43;</code>
      */
     const ODDISH = 43;
     /**
-     * <code>GLOOM = 44;</code>
+     * Generated from protobuf enum <code>GLOOM = 44;</code>
      */
     const GLOOM = 44;
     /**
-     * <code>VILEPLUME = 45;</code>
+     * Generated from protobuf enum <code>VILEPLUME = 45;</code>
      */
     const VILEPLUME = 45;
     /**
-     * <code>PARAS = 46;</code>
+     * Generated from protobuf enum <code>PARAS = 46;</code>
      */
     const PARAS = 46;
     /**
-     * <code>PARASECT = 47;</code>
+     * Generated from protobuf enum <code>PARASECT = 47;</code>
      */
     const PARASECT = 47;
     /**
-     * <code>VENONAT = 48;</code>
+     * Generated from protobuf enum <code>VENONAT = 48;</code>
      */
     const VENONAT = 48;
     /**
-     * <code>VENOMOTH = 49;</code>
+     * Generated from protobuf enum <code>VENOMOTH = 49;</code>
      */
     const VENOMOTH = 49;
     /**
-     * <code>DIGLETT = 50;</code>
+     * Generated from protobuf enum <code>DIGLETT = 50;</code>
      */
     const DIGLETT = 50;
     /**
-     * <code>DUGTRIO = 51;</code>
+     * Generated from protobuf enum <code>DUGTRIO = 51;</code>
      */
     const DUGTRIO = 51;
     /**
-     * <code>MEOWTH = 52;</code>
+     * Generated from protobuf enum <code>MEOWTH = 52;</code>
      */
     const MEOWTH = 52;
     /**
-     * <code>PERSIAN = 53;</code>
+     * Generated from protobuf enum <code>PERSIAN = 53;</code>
      */
     const PERSIAN = 53;
     /**
-     * <code>PSYDUCK = 54;</code>
+     * Generated from protobuf enum <code>PSYDUCK = 54;</code>
      */
     const PSYDUCK = 54;
     /**
-     * <code>GOLDUCK = 55;</code>
+     * Generated from protobuf enum <code>GOLDUCK = 55;</code>
      */
     const GOLDUCK = 55;
     /**
-     * <code>MANKEY = 56;</code>
+     * Generated from protobuf enum <code>MANKEY = 56;</code>
      */
     const MANKEY = 56;
     /**
-     * <code>PRIMEAPE = 57;</code>
+     * Generated from protobuf enum <code>PRIMEAPE = 57;</code>
      */
     const PRIMEAPE = 57;
     /**
-     * <code>GROWLITHE = 58;</code>
+     * Generated from protobuf enum <code>GROWLITHE = 58;</code>
      */
     const GROWLITHE = 58;
     /**
-     * <code>ARCANINE = 59;</code>
+     * Generated from protobuf enum <code>ARCANINE = 59;</code>
      */
     const ARCANINE = 59;
     /**
-     * <code>POLIWAG = 60;</code>
+     * Generated from protobuf enum <code>POLIWAG = 60;</code>
      */
     const POLIWAG = 60;
     /**
-     * <code>POLIWHIRL = 61;</code>
+     * Generated from protobuf enum <code>POLIWHIRL = 61;</code>
      */
     const POLIWHIRL = 61;
     /**
-     * <code>POLIWRATH = 62;</code>
+     * Generated from protobuf enum <code>POLIWRATH = 62;</code>
      */
     const POLIWRATH = 62;
     /**
-     * <code>ABRA = 63;</code>
+     * Generated from protobuf enum <code>ABRA = 63;</code>
      */
     const ABRA = 63;
     /**
-     * <code>KADABRA = 64;</code>
+     * Generated from protobuf enum <code>KADABRA = 64;</code>
      */
     const KADABRA = 64;
     /**
-     * <code>ALAKAZAM = 65;</code>
+     * Generated from protobuf enum <code>ALAKAZAM = 65;</code>
      */
     const ALAKAZAM = 65;
     /**
-     * <code>MACHOP = 66;</code>
+     * Generated from protobuf enum <code>MACHOP = 66;</code>
      */
     const MACHOP = 66;
     /**
-     * <code>MACHOKE = 67;</code>
+     * Generated from protobuf enum <code>MACHOKE = 67;</code>
      */
     const MACHOKE = 67;
     /**
-     * <code>MACHAMP = 68;</code>
+     * Generated from protobuf enum <code>MACHAMP = 68;</code>
      */
     const MACHAMP = 68;
     /**
-     * <code>BELLSPROUT = 69;</code>
+     * Generated from protobuf enum <code>BELLSPROUT = 69;</code>
      */
     const BELLSPROUT = 69;
     /**
-     * <code>WEEPINBELL = 70;</code>
+     * Generated from protobuf enum <code>WEEPINBELL = 70;</code>
      */
     const WEEPINBELL = 70;
     /**
-     * <code>VICTREEBEL = 71;</code>
+     * Generated from protobuf enum <code>VICTREEBEL = 71;</code>
      */
     const VICTREEBEL = 71;
     /**
-     * <code>TENTACOOL = 72;</code>
+     * Generated from protobuf enum <code>TENTACOOL = 72;</code>
      */
     const TENTACOOL = 72;
     /**
-     * <code>TENTACRUEL = 73;</code>
+     * Generated from protobuf enum <code>TENTACRUEL = 73;</code>
      */
     const TENTACRUEL = 73;
     /**
-     * <code>GEODUDE = 74;</code>
+     * Generated from protobuf enum <code>GEODUDE = 74;</code>
      */
     const GEODUDE = 74;
     /**
-     * <code>GRAVELER = 75;</code>
+     * Generated from protobuf enum <code>GRAVELER = 75;</code>
      */
     const GRAVELER = 75;
     /**
-     * <code>GOLEM = 76;</code>
+     * Generated from protobuf enum <code>GOLEM = 76;</code>
      */
     const GOLEM = 76;
     /**
-     * <code>PONYTA = 77;</code>
+     * Generated from protobuf enum <code>PONYTA = 77;</code>
      */
     const PONYTA = 77;
     /**
-     * <code>RAPIDASH = 78;</code>
+     * Generated from protobuf enum <code>RAPIDASH = 78;</code>
      */
     const RAPIDASH = 78;
     /**
-     * <code>SLOWPOKE = 79;</code>
+     * Generated from protobuf enum <code>SLOWPOKE = 79;</code>
      */
     const SLOWPOKE = 79;
     /**
-     * <code>SLOWBRO = 80;</code>
+     * Generated from protobuf enum <code>SLOWBRO = 80;</code>
      */
     const SLOWBRO = 80;
     /**
-     * <code>MAGNEMITE = 81;</code>
+     * Generated from protobuf enum <code>MAGNEMITE = 81;</code>
      */
     const MAGNEMITE = 81;
     /**
-     * <code>MAGNETON = 82;</code>
+     * Generated from protobuf enum <code>MAGNETON = 82;</code>
      */
     const MAGNETON = 82;
     /**
-     * <code>FARFETCHD = 83;</code>
+     * Generated from protobuf enum <code>FARFETCHD = 83;</code>
      */
     const FARFETCHD = 83;
     /**
-     * <code>DODUO = 84;</code>
+     * Generated from protobuf enum <code>DODUO = 84;</code>
      */
     const DODUO = 84;
     /**
-     * <code>DODRIO = 85;</code>
+     * Generated from protobuf enum <code>DODRIO = 85;</code>
      */
     const DODRIO = 85;
     /**
-     * <code>SEEL = 86;</code>
+     * Generated from protobuf enum <code>SEEL = 86;</code>
      */
     const SEEL = 86;
     /**
-     * <code>DEWGONG = 87;</code>
+     * Generated from protobuf enum <code>DEWGONG = 87;</code>
      */
     const DEWGONG = 87;
     /**
-     * <code>GRIMER = 88;</code>
+     * Generated from protobuf enum <code>GRIMER = 88;</code>
      */
     const GRIMER = 88;
     /**
-     * <code>MUK = 89;</code>
+     * Generated from protobuf enum <code>MUK = 89;</code>
      */
     const MUK = 89;
     /**
-     * <code>SHELLDER = 90;</code>
+     * Generated from protobuf enum <code>SHELLDER = 90;</code>
      */
     const SHELLDER = 90;
     /**
-     * <code>CLOYSTER = 91;</code>
+     * Generated from protobuf enum <code>CLOYSTER = 91;</code>
      */
     const CLOYSTER = 91;
     /**
-     * <code>GASTLY = 92;</code>
+     * Generated from protobuf enum <code>GASTLY = 92;</code>
      */
     const GASTLY = 92;
     /**
-     * <code>HAUNTER = 93;</code>
+     * Generated from protobuf enum <code>HAUNTER = 93;</code>
      */
     const HAUNTER = 93;
     /**
-     * <code>GENGAR = 94;</code>
+     * Generated from protobuf enum <code>GENGAR = 94;</code>
      */
     const GENGAR = 94;
     /**
-     * <code>ONIX = 95;</code>
+     * Generated from protobuf enum <code>ONIX = 95;</code>
      */
     const ONIX = 95;
     /**
-     * <code>DROWZEE = 96;</code>
+     * Generated from protobuf enum <code>DROWZEE = 96;</code>
      */
     const DROWZEE = 96;
     /**
-     * <code>HYPNO = 97;</code>
+     * Generated from protobuf enum <code>HYPNO = 97;</code>
      */
     const HYPNO = 97;
     /**
-     * <code>KRABBY = 98;</code>
+     * Generated from protobuf enum <code>KRABBY = 98;</code>
      */
     const KRABBY = 98;
     /**
-     * <code>KINGLER = 99;</code>
+     * Generated from protobuf enum <code>KINGLER = 99;</code>
      */
     const KINGLER = 99;
     /**
-     * <code>VOLTORB = 100;</code>
+     * Generated from protobuf enum <code>VOLTORB = 100;</code>
      */
     const VOLTORB = 100;
     /**
-     * <code>ELECTRODE = 101;</code>
+     * Generated from protobuf enum <code>ELECTRODE = 101;</code>
      */
     const ELECTRODE = 101;
     /**
-     * <code>EXEGGCUTE = 102;</code>
+     * Generated from protobuf enum <code>EXEGGCUTE = 102;</code>
      */
     const EXEGGCUTE = 102;
     /**
-     * <code>EXEGGUTOR = 103;</code>
+     * Generated from protobuf enum <code>EXEGGUTOR = 103;</code>
      */
     const EXEGGUTOR = 103;
     /**
-     * <code>CUBONE = 104;</code>
+     * Generated from protobuf enum <code>CUBONE = 104;</code>
      */
     const CUBONE = 104;
     /**
-     * <code>MAROWAK = 105;</code>
+     * Generated from protobuf enum <code>MAROWAK = 105;</code>
      */
     const MAROWAK = 105;
     /**
-     * <code>HITMONLEE = 106;</code>
+     * Generated from protobuf enum <code>HITMONLEE = 106;</code>
      */
     const HITMONLEE = 106;
     /**
-     * <code>HITMONCHAN = 107;</code>
+     * Generated from protobuf enum <code>HITMONCHAN = 107;</code>
      */
     const HITMONCHAN = 107;
     /**
-     * <code>LICKITUNG = 108;</code>
+     * Generated from protobuf enum <code>LICKITUNG = 108;</code>
      */
     const LICKITUNG = 108;
     /**
-     * <code>KOFFING = 109;</code>
+     * Generated from protobuf enum <code>KOFFING = 109;</code>
      */
     const KOFFING = 109;
     /**
-     * <code>WEEZING = 110;</code>
+     * Generated from protobuf enum <code>WEEZING = 110;</code>
      */
     const WEEZING = 110;
     /**
-     * <code>RHYHORN = 111;</code>
+     * Generated from protobuf enum <code>RHYHORN = 111;</code>
      */
     const RHYHORN = 111;
     /**
-     * <code>RHYDON = 112;</code>
+     * Generated from protobuf enum <code>RHYDON = 112;</code>
      */
     const RHYDON = 112;
     /**
-     * <code>CHANSEY = 113;</code>
+     * Generated from protobuf enum <code>CHANSEY = 113;</code>
      */
     const CHANSEY = 113;
     /**
-     * <code>TANGELA = 114;</code>
+     * Generated from protobuf enum <code>TANGELA = 114;</code>
      */
     const TANGELA = 114;
     /**
-     * <code>KANGASKHAN = 115;</code>
+     * Generated from protobuf enum <code>KANGASKHAN = 115;</code>
      */
     const KANGASKHAN = 115;
     /**
-     * <code>HORSEA = 116;</code>
+     * Generated from protobuf enum <code>HORSEA = 116;</code>
      */
     const HORSEA = 116;
     /**
-     * <code>SEADRA = 117;</code>
+     * Generated from protobuf enum <code>SEADRA = 117;</code>
      */
     const SEADRA = 117;
     /**
-     * <code>GOLDEEN = 118;</code>
+     * Generated from protobuf enum <code>GOLDEEN = 118;</code>
      */
     const GOLDEEN = 118;
     /**
-     * <code>SEAKING = 119;</code>
+     * Generated from protobuf enum <code>SEAKING = 119;</code>
      */
     const SEAKING = 119;
     /**
-     * <code>STARYU = 120;</code>
+     * Generated from protobuf enum <code>STARYU = 120;</code>
      */
     const STARYU = 120;
     /**
-     * <code>STARMIE = 121;</code>
+     * Generated from protobuf enum <code>STARMIE = 121;</code>
      */
     const STARMIE = 121;
     /**
-     * <code>MR_MIME = 122;</code>
+     * Generated from protobuf enum <code>MR_MIME = 122;</code>
      */
     const MR_MIME = 122;
     /**
-     * <code>SCYTHER = 123;</code>
+     * Generated from protobuf enum <code>SCYTHER = 123;</code>
      */
     const SCYTHER = 123;
     /**
-     * <code>JYNX = 124;</code>
+     * Generated from protobuf enum <code>JYNX = 124;</code>
      */
     const JYNX = 124;
     /**
-     * <code>ELECTABUZZ = 125;</code>
+     * Generated from protobuf enum <code>ELECTABUZZ = 125;</code>
      */
     const ELECTABUZZ = 125;
     /**
-     * <code>MAGMAR = 126;</code>
+     * Generated from protobuf enum <code>MAGMAR = 126;</code>
      */
     const MAGMAR = 126;
     /**
-     * <code>PINSIR = 127;</code>
+     * Generated from protobuf enum <code>PINSIR = 127;</code>
      */
     const PINSIR = 127;
     /**
-     * <code>TAUROS = 128;</code>
+     * Generated from protobuf enum <code>TAUROS = 128;</code>
      */
     const TAUROS = 128;
     /**
-     * <code>MAGIKARP = 129;</code>
+     * Generated from protobuf enum <code>MAGIKARP = 129;</code>
      */
     const MAGIKARP = 129;
     /**
-     * <code>GYARADOS = 130;</code>
+     * Generated from protobuf enum <code>GYARADOS = 130;</code>
      */
     const GYARADOS = 130;
     /**
-     * <code>LAPRAS = 131;</code>
+     * Generated from protobuf enum <code>LAPRAS = 131;</code>
      */
     const LAPRAS = 131;
     /**
-     * <code>DITTO = 132;</code>
+     * Generated from protobuf enum <code>DITTO = 132;</code>
      */
     const DITTO = 132;
     /**
-     * <code>EEVEE = 133;</code>
+     * Generated from protobuf enum <code>EEVEE = 133;</code>
      */
     const EEVEE = 133;
     /**
-     * <code>VAPOREON = 134;</code>
+     * Generated from protobuf enum <code>VAPOREON = 134;</code>
      */
     const VAPOREON = 134;
     /**
-     * <code>JOLTEON = 135;</code>
+     * Generated from protobuf enum <code>JOLTEON = 135;</code>
      */
     const JOLTEON = 135;
     /**
-     * <code>FLAREON = 136;</code>
+     * Generated from protobuf enum <code>FLAREON = 136;</code>
      */
     const FLAREON = 136;
     /**
-     * <code>PORYGON = 137;</code>
+     * Generated from protobuf enum <code>PORYGON = 137;</code>
      */
     const PORYGON = 137;
     /**
-     * <code>OMANYTE = 138;</code>
+     * Generated from protobuf enum <code>OMANYTE = 138;</code>
      */
     const OMANYTE = 138;
     /**
-     * <code>OMASTAR = 139;</code>
+     * Generated from protobuf enum <code>OMASTAR = 139;</code>
      */
     const OMASTAR = 139;
     /**
-     * <code>KABUTO = 140;</code>
+     * Generated from protobuf enum <code>KABUTO = 140;</code>
      */
     const KABUTO = 140;
     /**
-     * <code>KABUTOPS = 141;</code>
+     * Generated from protobuf enum <code>KABUTOPS = 141;</code>
      */
     const KABUTOPS = 141;
     /**
-     * <code>AERODACTYL = 142;</code>
+     * Generated from protobuf enum <code>AERODACTYL = 142;</code>
      */
     const AERODACTYL = 142;
     /**
-     * <code>SNORLAX = 143;</code>
+     * Generated from protobuf enum <code>SNORLAX = 143;</code>
      */
     const SNORLAX = 143;
     /**
-     * <code>ARTICUNO = 144;</code>
+     * Generated from protobuf enum <code>ARTICUNO = 144;</code>
      */
     const ARTICUNO = 144;
     /**
-     * <code>ZAPDOS = 145;</code>
+     * Generated from protobuf enum <code>ZAPDOS = 145;</code>
      */
     const ZAPDOS = 145;
     /**
-     * <code>MOLTRES = 146;</code>
+     * Generated from protobuf enum <code>MOLTRES = 146;</code>
      */
     const MOLTRES = 146;
     /**
-     * <code>DRATINI = 147;</code>
+     * Generated from protobuf enum <code>DRATINI = 147;</code>
      */
     const DRATINI = 147;
     /**
-     * <code>DRAGONAIR = 148;</code>
+     * Generated from protobuf enum <code>DRAGONAIR = 148;</code>
      */
     const DRAGONAIR = 148;
     /**
-     * <code>DRAGONITE = 149;</code>
+     * Generated from protobuf enum <code>DRAGONITE = 149;</code>
      */
     const DRAGONITE = 149;
     /**
-     * <code>MEWTWO = 150;</code>
+     * Generated from protobuf enum <code>MEWTWO = 150;</code>
      */
     const MEWTWO = 150;
     /**
-     * <code>MEW = 151;</code>
+     * Generated from protobuf enum <code>MEW = 151;</code>
      */
     const MEW = 151;
     /**
-     * <code>CHIKORITA = 152;</code>
+     * Generated from protobuf enum <code>CHIKORITA = 152;</code>
      */
     const CHIKORITA = 152;
     /**
-     * <code>BAYLEEF = 153;</code>
+     * Generated from protobuf enum <code>BAYLEEF = 153;</code>
      */
     const BAYLEEF = 153;
     /**
-     * <code>MEGANIUM = 154;</code>
+     * Generated from protobuf enum <code>MEGANIUM = 154;</code>
      */
     const MEGANIUM = 154;
     /**
-     * <code>CYNDAQUIL = 155;</code>
+     * Generated from protobuf enum <code>CYNDAQUIL = 155;</code>
      */
     const CYNDAQUIL = 155;
     /**
-     * <code>QUILAVA = 156;</code>
+     * Generated from protobuf enum <code>QUILAVA = 156;</code>
      */
     const QUILAVA = 156;
     /**
-     * <code>TYPHLOSION = 157;</code>
+     * Generated from protobuf enum <code>TYPHLOSION = 157;</code>
      */
     const TYPHLOSION = 157;
     /**
-     * <code>TOTODILE = 158;</code>
+     * Generated from protobuf enum <code>TOTODILE = 158;</code>
      */
     const TOTODILE = 158;
     /**
-     * <code>CROCONAW = 159;</code>
+     * Generated from protobuf enum <code>CROCONAW = 159;</code>
      */
     const CROCONAW = 159;
     /**
-     * <code>FERALIGATR = 160;</code>
+     * Generated from protobuf enum <code>FERALIGATR = 160;</code>
      */
     const FERALIGATR = 160;
     /**
-     * <code>SENTRET = 161;</code>
+     * Generated from protobuf enum <code>SENTRET = 161;</code>
      */
     const SENTRET = 161;
     /**
-     * <code>FURRET = 162;</code>
+     * Generated from protobuf enum <code>FURRET = 162;</code>
      */
     const FURRET = 162;
     /**
-     * <code>HOOTHOOT = 163;</code>
+     * Generated from protobuf enum <code>HOOTHOOT = 163;</code>
      */
     const HOOTHOOT = 163;
     /**
-     * <code>NOCTOWL = 164;</code>
+     * Generated from protobuf enum <code>NOCTOWL = 164;</code>
      */
     const NOCTOWL = 164;
     /**
-     * <code>LEDYBA = 165;</code>
+     * Generated from protobuf enum <code>LEDYBA = 165;</code>
      */
     const LEDYBA = 165;
     /**
-     * <code>LEDIAN = 166;</code>
+     * Generated from protobuf enum <code>LEDIAN = 166;</code>
      */
     const LEDIAN = 166;
     /**
-     * <code>SPINARAK = 167;</code>
+     * Generated from protobuf enum <code>SPINARAK = 167;</code>
      */
     const SPINARAK = 167;
     /**
-     * <code>ARIADOS = 168;</code>
+     * Generated from protobuf enum <code>ARIADOS = 168;</code>
      */
     const ARIADOS = 168;
     /**
-     * <code>CROBAT = 169;</code>
+     * Generated from protobuf enum <code>CROBAT = 169;</code>
      */
     const CROBAT = 169;
     /**
-     * <code>CHINCHOU = 170;</code>
+     * Generated from protobuf enum <code>CHINCHOU = 170;</code>
      */
     const CHINCHOU = 170;
     /**
-     * <code>LANTURN = 171;</code>
+     * Generated from protobuf enum <code>LANTURN = 171;</code>
      */
     const LANTURN = 171;
     /**
-     * <code>PICHU = 172;</code>
+     * Generated from protobuf enum <code>PICHU = 172;</code>
      */
     const PICHU = 172;
     /**
-     * <code>CLEFFA = 173;</code>
+     * Generated from protobuf enum <code>CLEFFA = 173;</code>
      */
     const CLEFFA = 173;
     /**
-     * <code>IGGLYBUFF = 174;</code>
+     * Generated from protobuf enum <code>IGGLYBUFF = 174;</code>
      */
     const IGGLYBUFF = 174;
     /**
-     * <code>TOGEPI = 175;</code>
+     * Generated from protobuf enum <code>TOGEPI = 175;</code>
      */
     const TOGEPI = 175;
     /**
-     * <code>TOGETIC = 176;</code>
+     * Generated from protobuf enum <code>TOGETIC = 176;</code>
      */
     const TOGETIC = 176;
     /**
-     * <code>NATU = 177;</code>
+     * Generated from protobuf enum <code>NATU = 177;</code>
      */
     const NATU = 177;
     /**
-     * <code>XATU = 178;</code>
+     * Generated from protobuf enum <code>XATU = 178;</code>
      */
     const XATU = 178;
     /**
-     * <code>MAREEP = 179;</code>
+     * Generated from protobuf enum <code>MAREEP = 179;</code>
      */
     const MAREEP = 179;
     /**
-     * <code>FLAAFFY = 180;</code>
+     * Generated from protobuf enum <code>FLAAFFY = 180;</code>
      */
     const FLAAFFY = 180;
     /**
-     * <code>AMPHAROS = 181;</code>
+     * Generated from protobuf enum <code>AMPHAROS = 181;</code>
      */
     const AMPHAROS = 181;
     /**
-     * <code>BELLOSSOM = 182;</code>
+     * Generated from protobuf enum <code>BELLOSSOM = 182;</code>
      */
     const BELLOSSOM = 182;
     /**
-     * <code>MARILL = 183;</code>
+     * Generated from protobuf enum <code>MARILL = 183;</code>
      */
     const MARILL = 183;
     /**
-     * <code>AZUMARILL = 184;</code>
+     * Generated from protobuf enum <code>AZUMARILL = 184;</code>
      */
     const AZUMARILL = 184;
     /**
-     * <code>SUDOWOODO = 185;</code>
+     * Generated from protobuf enum <code>SUDOWOODO = 185;</code>
      */
     const SUDOWOODO = 185;
     /**
-     * <code>POLITOED = 186;</code>
+     * Generated from protobuf enum <code>POLITOED = 186;</code>
      */
     const POLITOED = 186;
     /**
-     * <code>HOPPIP = 187;</code>
+     * Generated from protobuf enum <code>HOPPIP = 187;</code>
      */
     const HOPPIP = 187;
     /**
-     * <code>SKIPLOOM = 188;</code>
+     * Generated from protobuf enum <code>SKIPLOOM = 188;</code>
      */
     const SKIPLOOM = 188;
     /**
-     * <code>JUMPLUFF = 189;</code>
+     * Generated from protobuf enum <code>JUMPLUFF = 189;</code>
      */
     const JUMPLUFF = 189;
     /**
-     * <code>AIPOM = 190;</code>
+     * Generated from protobuf enum <code>AIPOM = 190;</code>
      */
     const AIPOM = 190;
     /**
-     * <code>SUNKERN = 191;</code>
+     * Generated from protobuf enum <code>SUNKERN = 191;</code>
      */
     const SUNKERN = 191;
     /**
-     * <code>SUNFLORA = 192;</code>
+     * Generated from protobuf enum <code>SUNFLORA = 192;</code>
      */
     const SUNFLORA = 192;
     /**
-     * <code>YANMA = 193;</code>
+     * Generated from protobuf enum <code>YANMA = 193;</code>
      */
     const YANMA = 193;
     /**
-     * <code>WOOPER = 194;</code>
+     * Generated from protobuf enum <code>WOOPER = 194;</code>
      */
     const WOOPER = 194;
     /**
-     * <code>QUAGSIRE = 195;</code>
+     * Generated from protobuf enum <code>QUAGSIRE = 195;</code>
      */
     const QUAGSIRE = 195;
     /**
-     * <code>ESPEON = 196;</code>
+     * Generated from protobuf enum <code>ESPEON = 196;</code>
      */
     const ESPEON = 196;
     /**
-     * <code>UMBREON = 197;</code>
+     * Generated from protobuf enum <code>UMBREON = 197;</code>
      */
     const UMBREON = 197;
     /**
-     * <code>MURKROW = 198;</code>
+     * Generated from protobuf enum <code>MURKROW = 198;</code>
      */
     const MURKROW = 198;
     /**
-     * <code>SLOWKING = 199;</code>
+     * Generated from protobuf enum <code>SLOWKING = 199;</code>
      */
     const SLOWKING = 199;
     /**
-     * <code>MISDREAVUS = 200;</code>
+     * Generated from protobuf enum <code>MISDREAVUS = 200;</code>
      */
     const MISDREAVUS = 200;
     /**
-     * <code>UNOWN = 201;</code>
+     * Generated from protobuf enum <code>UNOWN = 201;</code>
      */
     const UNOWN = 201;
     /**
-     * <code>WOBBUFFET = 202;</code>
+     * Generated from protobuf enum <code>WOBBUFFET = 202;</code>
      */
     const WOBBUFFET = 202;
     /**
-     * <code>GIRAFARIG = 203;</code>
+     * Generated from protobuf enum <code>GIRAFARIG = 203;</code>
      */
     const GIRAFARIG = 203;
     /**
-     * <code>PINECO = 204;</code>
+     * Generated from protobuf enum <code>PINECO = 204;</code>
      */
     const PINECO = 204;
     /**
-     * <code>FORRETRESS = 205;</code>
+     * Generated from protobuf enum <code>FORRETRESS = 205;</code>
      */
     const FORRETRESS = 205;
     /**
-     * <code>DUNSPARCE = 206;</code>
+     * Generated from protobuf enum <code>DUNSPARCE = 206;</code>
      */
     const DUNSPARCE = 206;
     /**
-     * <code>GLIGAR = 207;</code>
+     * Generated from protobuf enum <code>GLIGAR = 207;</code>
      */
     const GLIGAR = 207;
     /**
-     * <code>STEELIX = 208;</code>
+     * Generated from protobuf enum <code>STEELIX = 208;</code>
      */
     const STEELIX = 208;
     /**
-     * <code>SNUBBULL = 209;</code>
+     * Generated from protobuf enum <code>SNUBBULL = 209;</code>
      */
     const SNUBBULL = 209;
     /**
-     * <code>GRANBULL = 210;</code>
+     * Generated from protobuf enum <code>GRANBULL = 210;</code>
      */
     const GRANBULL = 210;
     /**
-     * <code>QWILFISH = 211;</code>
+     * Generated from protobuf enum <code>QWILFISH = 211;</code>
      */
     const QWILFISH = 211;
     /**
-     * <code>SCIZOR = 212;</code>
+     * Generated from protobuf enum <code>SCIZOR = 212;</code>
      */
     const SCIZOR = 212;
     /**
-     * <code>SHUCKLE = 213;</code>
+     * Generated from protobuf enum <code>SHUCKLE = 213;</code>
      */
     const SHUCKLE = 213;
     /**
-     * <code>HERACROSS = 214;</code>
+     * Generated from protobuf enum <code>HERACROSS = 214;</code>
      */
     const HERACROSS = 214;
     /**
-     * <code>SNEASEL = 215;</code>
+     * Generated from protobuf enum <code>SNEASEL = 215;</code>
      */
     const SNEASEL = 215;
     /**
-     * <code>TEDDIURSA = 216;</code>
+     * Generated from protobuf enum <code>TEDDIURSA = 216;</code>
      */
     const TEDDIURSA = 216;
     /**
-     * <code>URSARING = 217;</code>
+     * Generated from protobuf enum <code>URSARING = 217;</code>
      */
     const URSARING = 217;
     /**
-     * <code>SLUGMA = 218;</code>
+     * Generated from protobuf enum <code>SLUGMA = 218;</code>
      */
     const SLUGMA = 218;
     /**
-     * <code>MAGCARGO = 219;</code>
+     * Generated from protobuf enum <code>MAGCARGO = 219;</code>
      */
     const MAGCARGO = 219;
     /**
-     * <code>SWINUB = 220;</code>
+     * Generated from protobuf enum <code>SWINUB = 220;</code>
      */
     const SWINUB = 220;
     /**
-     * <code>PILOSWINE = 221;</code>
+     * Generated from protobuf enum <code>PILOSWINE = 221;</code>
      */
     const PILOSWINE = 221;
     /**
-     * <code>CORSOLA = 222;</code>
+     * Generated from protobuf enum <code>CORSOLA = 222;</code>
      */
     const CORSOLA = 222;
     /**
-     * <code>REMORAID = 223;</code>
+     * Generated from protobuf enum <code>REMORAID = 223;</code>
      */
     const REMORAID = 223;
     /**
-     * <code>OCTILLERY = 224;</code>
+     * Generated from protobuf enum <code>OCTILLERY = 224;</code>
      */
     const OCTILLERY = 224;
     /**
-     * <code>DELIBIRD = 225;</code>
+     * Generated from protobuf enum <code>DELIBIRD = 225;</code>
      */
     const DELIBIRD = 225;
     /**
-     * <code>MANTINE = 226;</code>
+     * Generated from protobuf enum <code>MANTINE = 226;</code>
      */
     const MANTINE = 226;
     /**
-     * <code>SKARMORY = 227;</code>
+     * Generated from protobuf enum <code>SKARMORY = 227;</code>
      */
     const SKARMORY = 227;
     /**
-     * <code>HOUNDOUR = 228;</code>
+     * Generated from protobuf enum <code>HOUNDOUR = 228;</code>
      */
     const HOUNDOUR = 228;
     /**
-     * <code>HOUNDOOM = 229;</code>
+     * Generated from protobuf enum <code>HOUNDOOM = 229;</code>
      */
     const HOUNDOOM = 229;
     /**
-     * <code>KINGDRA = 230;</code>
+     * Generated from protobuf enum <code>KINGDRA = 230;</code>
      */
     const KINGDRA = 230;
     /**
-     * <code>PHANPY = 231;</code>
+     * Generated from protobuf enum <code>PHANPY = 231;</code>
      */
     const PHANPY = 231;
     /**
-     * <code>DONPHAN = 232;</code>
+     * Generated from protobuf enum <code>DONPHAN = 232;</code>
      */
     const DONPHAN = 232;
     /**
-     * <code>PORYGON2 = 233;</code>
+     * Generated from protobuf enum <code>PORYGON2 = 233;</code>
      */
     const PORYGON2 = 233;
     /**
-     * <code>STANTLER = 234;</code>
+     * Generated from protobuf enum <code>STANTLER = 234;</code>
      */
     const STANTLER = 234;
     /**
-     * <code>SMEARGLE = 235;</code>
+     * Generated from protobuf enum <code>SMEARGLE = 235;</code>
      */
     const SMEARGLE = 235;
     /**
-     * <code>TYROGUE = 236;</code>
+     * Generated from protobuf enum <code>TYROGUE = 236;</code>
      */
     const TYROGUE = 236;
     /**
-     * <code>HITMONTOP = 237;</code>
+     * Generated from protobuf enum <code>HITMONTOP = 237;</code>
      */
     const HITMONTOP = 237;
     /**
-     * <code>SMOOCHUM = 238;</code>
+     * Generated from protobuf enum <code>SMOOCHUM = 238;</code>
      */
     const SMOOCHUM = 238;
     /**
-     * <code>ELEKID = 239;</code>
+     * Generated from protobuf enum <code>ELEKID = 239;</code>
      */
     const ELEKID = 239;
     /**
-     * <code>MAGBY = 240;</code>
+     * Generated from protobuf enum <code>MAGBY = 240;</code>
      */
     const MAGBY = 240;
     /**
-     * <code>MILTANK = 241;</code>
+     * Generated from protobuf enum <code>MILTANK = 241;</code>
      */
     const MILTANK = 241;
     /**
-     * <code>BLISSEY = 242;</code>
+     * Generated from protobuf enum <code>BLISSEY = 242;</code>
      */
     const BLISSEY = 242;
     /**
-     * <code>RAIKOU = 243;</code>
+     * Generated from protobuf enum <code>RAIKOU = 243;</code>
      */
     const RAIKOU = 243;
     /**
-     * <code>ENTEI = 244;</code>
+     * Generated from protobuf enum <code>ENTEI = 244;</code>
      */
     const ENTEI = 244;
     /**
-     * <code>SUICUNE = 245;</code>
+     * Generated from protobuf enum <code>SUICUNE = 245;</code>
      */
     const SUICUNE = 245;
     /**
-     * <code>LARVITAR = 246;</code>
+     * Generated from protobuf enum <code>LARVITAR = 246;</code>
      */
     const LARVITAR = 246;
     /**
-     * <code>PUPITAR = 247;</code>
+     * Generated from protobuf enum <code>PUPITAR = 247;</code>
      */
     const PUPITAR = 247;
     /**
-     * <code>TYRANITAR = 248;</code>
+     * Generated from protobuf enum <code>TYRANITAR = 248;</code>
      */
     const TYRANITAR = 248;
     /**
-     * <code>LUGIA = 249;</code>
+     * Generated from protobuf enum <code>LUGIA = 249;</code>
      */
     const LUGIA = 249;
     /**
-     * <code>HO_OH = 250;</code>
+     * Generated from protobuf enum <code>HO_OH = 250;</code>
      */
     const HO_OH = 250;
     /**
-     * <code>CELEBI = 251;</code>
+     * Generated from protobuf enum <code>CELEBI = 251;</code>
      */
     const CELEBI = 251;
     /**
-     * <code>TREECKO = 252;</code>
+     * Generated from protobuf enum <code>TREECKO = 252;</code>
      */
     const TREECKO = 252;
     /**
-     * <code>GROVYLE = 253;</code>
+     * Generated from protobuf enum <code>GROVYLE = 253;</code>
      */
     const GROVYLE = 253;
     /**
-     * <code>SCEPTILE = 254;</code>
+     * Generated from protobuf enum <code>SCEPTILE = 254;</code>
      */
     const SCEPTILE = 254;
     /**
-     * <code>TORCHIC = 255;</code>
+     * Generated from protobuf enum <code>TORCHIC = 255;</code>
      */
     const TORCHIC = 255;
     /**
-     * <code>COMBUSKEN = 256;</code>
+     * Generated from protobuf enum <code>COMBUSKEN = 256;</code>
      */
     const COMBUSKEN = 256;
     /**
-     * <code>BLAZIKEN = 257;</code>
+     * Generated from protobuf enum <code>BLAZIKEN = 257;</code>
      */
     const BLAZIKEN = 257;
     /**
-     * <code>MUDKIP = 258;</code>
+     * Generated from protobuf enum <code>MUDKIP = 258;</code>
      */
     const MUDKIP = 258;
     /**
-     * <code>MARSHTOMP = 259;</code>
+     * Generated from protobuf enum <code>MARSHTOMP = 259;</code>
      */
     const MARSHTOMP = 259;
     /**
-     * <code>SWAMPERT = 260;</code>
+     * Generated from protobuf enum <code>SWAMPERT = 260;</code>
      */
     const SWAMPERT = 260;
     /**
-     * <code>POOCHYENA = 261;</code>
+     * Generated from protobuf enum <code>POOCHYENA = 261;</code>
      */
     const POOCHYENA = 261;
     /**
-     * <code>MIGHTYENA = 262;</code>
+     * Generated from protobuf enum <code>MIGHTYENA = 262;</code>
      */
     const MIGHTYENA = 262;
     /**
-     * <code>ZIGZAGOON = 263;</code>
+     * Generated from protobuf enum <code>ZIGZAGOON = 263;</code>
      */
     const ZIGZAGOON = 263;
     /**
-     * <code>LINOONE = 264;</code>
+     * Generated from protobuf enum <code>LINOONE = 264;</code>
      */
     const LINOONE = 264;
     /**
-     * <code>WURMPLE = 265;</code>
+     * Generated from protobuf enum <code>WURMPLE = 265;</code>
      */
     const WURMPLE = 265;
     /**
-     * <code>SILCOON = 266;</code>
+     * Generated from protobuf enum <code>SILCOON = 266;</code>
      */
     const SILCOON = 266;
     /**
-     * <code>BEAUTIFLY = 267;</code>
+     * Generated from protobuf enum <code>BEAUTIFLY = 267;</code>
      */
     const BEAUTIFLY = 267;
     /**
-     * <code>CASCOON = 268;</code>
+     * Generated from protobuf enum <code>CASCOON = 268;</code>
      */
     const CASCOON = 268;
     /**
-     * <code>DUSTOX = 269;</code>
+     * Generated from protobuf enum <code>DUSTOX = 269;</code>
      */
     const DUSTOX = 269;
     /**
-     * <code>LOTAD = 270;</code>
+     * Generated from protobuf enum <code>LOTAD = 270;</code>
      */
     const LOTAD = 270;
     /**
-     * <code>LOMBRE = 271;</code>
+     * Generated from protobuf enum <code>LOMBRE = 271;</code>
      */
     const LOMBRE = 271;
     /**
-     * <code>LUDICOLO = 272;</code>
+     * Generated from protobuf enum <code>LUDICOLO = 272;</code>
      */
     const LUDICOLO = 272;
     /**
-     * <code>SEEDOT = 273;</code>
+     * Generated from protobuf enum <code>SEEDOT = 273;</code>
      */
     const SEEDOT = 273;
     /**
-     * <code>NUZLEAF = 274;</code>
+     * Generated from protobuf enum <code>NUZLEAF = 274;</code>
      */
     const NUZLEAF = 274;
     /**
-     * <code>SHIFTRY = 275;</code>
+     * Generated from protobuf enum <code>SHIFTRY = 275;</code>
      */
     const SHIFTRY = 275;
     /**
-     * <code>TAILLOW = 276;</code>
+     * Generated from protobuf enum <code>TAILLOW = 276;</code>
      */
     const TAILLOW = 276;
     /**
-     * <code>SWELLOW = 277;</code>
+     * Generated from protobuf enum <code>SWELLOW = 277;</code>
      */
     const SWELLOW = 277;
     /**
-     * <code>WINGULL = 278;</code>
+     * Generated from protobuf enum <code>WINGULL = 278;</code>
      */
     const WINGULL = 278;
     /**
-     * <code>PELIPPER = 279;</code>
+     * Generated from protobuf enum <code>PELIPPER = 279;</code>
      */
     const PELIPPER = 279;
     /**
-     * <code>RALTS = 280;</code>
+     * Generated from protobuf enum <code>RALTS = 280;</code>
      */
     const RALTS = 280;
     /**
-     * <code>KIRLIA = 281;</code>
+     * Generated from protobuf enum <code>KIRLIA = 281;</code>
      */
     const KIRLIA = 281;
     /**
-     * <code>GARDEVOIR = 282;</code>
+     * Generated from protobuf enum <code>GARDEVOIR = 282;</code>
      */
     const GARDEVOIR = 282;
     /**
-     * <code>SURSKIT = 283;</code>
+     * Generated from protobuf enum <code>SURSKIT = 283;</code>
      */
     const SURSKIT = 283;
     /**
-     * <code>MASQUERAIN = 284;</code>
+     * Generated from protobuf enum <code>MASQUERAIN = 284;</code>
      */
     const MASQUERAIN = 284;
     /**
-     * <code>SHROOMISH = 285;</code>
+     * Generated from protobuf enum <code>SHROOMISH = 285;</code>
      */
     const SHROOMISH = 285;
     /**
-     * <code>BRELOOM = 286;</code>
+     * Generated from protobuf enum <code>BRELOOM = 286;</code>
      */
     const BRELOOM = 286;
     /**
-     * <code>SLAKOTH = 287;</code>
+     * Generated from protobuf enum <code>SLAKOTH = 287;</code>
      */
     const SLAKOTH = 287;
     /**
-     * <code>VIGOROTH = 288;</code>
+     * Generated from protobuf enum <code>VIGOROTH = 288;</code>
      */
     const VIGOROTH = 288;
     /**
-     * <code>SLAKING = 289;</code>
+     * Generated from protobuf enum <code>SLAKING = 289;</code>
      */
     const SLAKING = 289;
     /**
-     * <code>NINCADA = 290;</code>
+     * Generated from protobuf enum <code>NINCADA = 290;</code>
      */
     const NINCADA = 290;
     /**
-     * <code>NINJASK = 291;</code>
+     * Generated from protobuf enum <code>NINJASK = 291;</code>
      */
     const NINJASK = 291;
     /**
-     * <code>SHEDINJA = 292;</code>
+     * Generated from protobuf enum <code>SHEDINJA = 292;</code>
      */
     const SHEDINJA = 292;
     /**
-     * <code>WHISMUR = 293;</code>
+     * Generated from protobuf enum <code>WHISMUR = 293;</code>
      */
     const WHISMUR = 293;
     /**
-     * <code>LOUDRED = 294;</code>
+     * Generated from protobuf enum <code>LOUDRED = 294;</code>
      */
     const LOUDRED = 294;
     /**
-     * <code>EXPLOUD = 295;</code>
+     * Generated from protobuf enum <code>EXPLOUD = 295;</code>
      */
     const EXPLOUD = 295;
     /**
-     * <code>MAKUHITA = 296;</code>
+     * Generated from protobuf enum <code>MAKUHITA = 296;</code>
      */
     const MAKUHITA = 296;
     /**
-     * <code>HARIYAMA = 297;</code>
+     * Generated from protobuf enum <code>HARIYAMA = 297;</code>
      */
     const HARIYAMA = 297;
     /**
-     * <code>AZURILL = 298;</code>
+     * Generated from protobuf enum <code>AZURILL = 298;</code>
      */
     const AZURILL = 298;
     /**
-     * <code>NOSEPASS = 299;</code>
+     * Generated from protobuf enum <code>NOSEPASS = 299;</code>
      */
     const NOSEPASS = 299;
     /**
-     * <code>SKITTY = 300;</code>
+     * Generated from protobuf enum <code>SKITTY = 300;</code>
      */
     const SKITTY = 300;
     /**
-     * <code>DELCATTY = 301;</code>
+     * Generated from protobuf enum <code>DELCATTY = 301;</code>
      */
     const DELCATTY = 301;
     /**
-     * <code>SABLEYE = 302;</code>
+     * Generated from protobuf enum <code>SABLEYE = 302;</code>
      */
     const SABLEYE = 302;
     /**
-     * <code>MAWILE = 303;</code>
+     * Generated from protobuf enum <code>MAWILE = 303;</code>
      */
     const MAWILE = 303;
     /**
-     * <code>ARON = 304;</code>
+     * Generated from protobuf enum <code>ARON = 304;</code>
      */
     const ARON = 304;
     /**
-     * <code>LAIRON = 305;</code>
+     * Generated from protobuf enum <code>LAIRON = 305;</code>
      */
     const LAIRON = 305;
     /**
-     * <code>AGGRON = 306;</code>
+     * Generated from protobuf enum <code>AGGRON = 306;</code>
      */
     const AGGRON = 306;
     /**
-     * <code>MEDITITE = 307;</code>
+     * Generated from protobuf enum <code>MEDITITE = 307;</code>
      */
     const MEDITITE = 307;
     /**
-     * <code>MEDICHAM = 308;</code>
+     * Generated from protobuf enum <code>MEDICHAM = 308;</code>
      */
     const MEDICHAM = 308;
     /**
-     * <code>ELECTRIKE = 309;</code>
+     * Generated from protobuf enum <code>ELECTRIKE = 309;</code>
      */
     const ELECTRIKE = 309;
     /**
-     * <code>MANECTRIC = 310;</code>
+     * Generated from protobuf enum <code>MANECTRIC = 310;</code>
      */
     const MANECTRIC = 310;
     /**
-     * <code>PLUSLE = 311;</code>
+     * Generated from protobuf enum <code>PLUSLE = 311;</code>
      */
     const PLUSLE = 311;
     /**
-     * <code>MINUN = 312;</code>
+     * Generated from protobuf enum <code>MINUN = 312;</code>
      */
     const MINUN = 312;
     /**
-     * <code>VOLBEAT = 313;</code>
+     * Generated from protobuf enum <code>VOLBEAT = 313;</code>
      */
     const VOLBEAT = 313;
     /**
-     * <code>ILLUMISE = 314;</code>
+     * Generated from protobuf enum <code>ILLUMISE = 314;</code>
      */
     const ILLUMISE = 314;
     /**
-     * <code>ROSELIA = 315;</code>
+     * Generated from protobuf enum <code>ROSELIA = 315;</code>
      */
     const ROSELIA = 315;
     /**
-     * <code>GULPIN = 316;</code>
+     * Generated from protobuf enum <code>GULPIN = 316;</code>
      */
     const GULPIN = 316;
     /**
-     * <code>SWALOT = 317;</code>
+     * Generated from protobuf enum <code>SWALOT = 317;</code>
      */
     const SWALOT = 317;
     /**
-     * <code>CARVANHA = 318;</code>
+     * Generated from protobuf enum <code>CARVANHA = 318;</code>
      */
     const CARVANHA = 318;
     /**
-     * <code>SHARPEDO = 319;</code>
+     * Generated from protobuf enum <code>SHARPEDO = 319;</code>
      */
     const SHARPEDO = 319;
     /**
-     * <code>WAILMER = 320;</code>
+     * Generated from protobuf enum <code>WAILMER = 320;</code>
      */
     const WAILMER = 320;
     /**
-     * <code>WAILORD = 321;</code>
+     * Generated from protobuf enum <code>WAILORD = 321;</code>
      */
     const WAILORD = 321;
     /**
-     * <code>NUMEL = 322;</code>
+     * Generated from protobuf enum <code>NUMEL = 322;</code>
      */
     const NUMEL = 322;
     /**
-     * <code>CAMERUPT = 323;</code>
+     * Generated from protobuf enum <code>CAMERUPT = 323;</code>
      */
     const CAMERUPT = 323;
     /**
-     * <code>TORKOAL = 324;</code>
+     * Generated from protobuf enum <code>TORKOAL = 324;</code>
      */
     const TORKOAL = 324;
     /**
-     * <code>SPOINK = 325;</code>
+     * Generated from protobuf enum <code>SPOINK = 325;</code>
      */
     const SPOINK = 325;
     /**
-     * <code>GRUMPIG = 326;</code>
+     * Generated from protobuf enum <code>GRUMPIG = 326;</code>
      */
     const GRUMPIG = 326;
     /**
-     * <code>SPINDA = 327;</code>
+     * Generated from protobuf enum <code>SPINDA = 327;</code>
      */
     const SPINDA = 327;
     /**
-     * <code>TRAPINCH = 328;</code>
+     * Generated from protobuf enum <code>TRAPINCH = 328;</code>
      */
     const TRAPINCH = 328;
     /**
-     * <code>VIBRAVA = 329;</code>
+     * Generated from protobuf enum <code>VIBRAVA = 329;</code>
      */
     const VIBRAVA = 329;
     /**
-     * <code>FLYGON = 330;</code>
+     * Generated from protobuf enum <code>FLYGON = 330;</code>
      */
     const FLYGON = 330;
     /**
-     * <code>CACNEA = 331;</code>
+     * Generated from protobuf enum <code>CACNEA = 331;</code>
      */
     const CACNEA = 331;
     /**
-     * <code>CACTURNE = 332;</code>
+     * Generated from protobuf enum <code>CACTURNE = 332;</code>
      */
     const CACTURNE = 332;
     /**
-     * <code>SWABLU = 333;</code>
+     * Generated from protobuf enum <code>SWABLU = 333;</code>
      */
     const SWABLU = 333;
     /**
-     * <code>ALTARIA = 334;</code>
+     * Generated from protobuf enum <code>ALTARIA = 334;</code>
      */
     const ALTARIA = 334;
     /**
-     * <code>ZANGOOSE = 335;</code>
+     * Generated from protobuf enum <code>ZANGOOSE = 335;</code>
      */
     const ZANGOOSE = 335;
     /**
-     * <code>SEVIPER = 336;</code>
+     * Generated from protobuf enum <code>SEVIPER = 336;</code>
      */
     const SEVIPER = 336;
     /**
-     * <code>LUNATONE = 337;</code>
+     * Generated from protobuf enum <code>LUNATONE = 337;</code>
      */
     const LUNATONE = 337;
     /**
-     * <code>SOLROCK = 338;</code>
+     * Generated from protobuf enum <code>SOLROCK = 338;</code>
      */
     const SOLROCK = 338;
     /**
-     * <code>BARBOACH = 339;</code>
+     * Generated from protobuf enum <code>BARBOACH = 339;</code>
      */
     const BARBOACH = 339;
     /**
-     * <code>WHISCASH = 340;</code>
+     * Generated from protobuf enum <code>WHISCASH = 340;</code>
      */
     const WHISCASH = 340;
     /**
-     * <code>CORPHISH = 341;</code>
+     * Generated from protobuf enum <code>CORPHISH = 341;</code>
      */
     const CORPHISH = 341;
     /**
-     * <code>CRAWDAUNT = 342;</code>
+     * Generated from protobuf enum <code>CRAWDAUNT = 342;</code>
      */
     const CRAWDAUNT = 342;
     /**
-     * <code>BALTOY = 343;</code>
+     * Generated from protobuf enum <code>BALTOY = 343;</code>
      */
     const BALTOY = 343;
     /**
-     * <code>CLAYDOL = 344;</code>
+     * Generated from protobuf enum <code>CLAYDOL = 344;</code>
      */
     const CLAYDOL = 344;
     /**
-     * <code>LILEEP = 345;</code>
+     * Generated from protobuf enum <code>LILEEP = 345;</code>
      */
     const LILEEP = 345;
     /**
-     * <code>CRADILY = 346;</code>
+     * Generated from protobuf enum <code>CRADILY = 346;</code>
      */
     const CRADILY = 346;
     /**
-     * <code>ANORITH = 347;</code>
+     * Generated from protobuf enum <code>ANORITH = 347;</code>
      */
     const ANORITH = 347;
     /**
-     * <code>ARMALDO = 348;</code>
+     * Generated from protobuf enum <code>ARMALDO = 348;</code>
      */
     const ARMALDO = 348;
     /**
-     * <code>FEEBAS = 349;</code>
+     * Generated from protobuf enum <code>FEEBAS = 349;</code>
      */
     const FEEBAS = 349;
     /**
-     * <code>MILOTIC = 350;</code>
+     * Generated from protobuf enum <code>MILOTIC = 350;</code>
      */
     const MILOTIC = 350;
     /**
-     * <code>CASTFORM = 351;</code>
+     * Generated from protobuf enum <code>CASTFORM = 351;</code>
      */
     const CASTFORM = 351;
     /**
-     * <code>KECLEON = 352;</code>
+     * Generated from protobuf enum <code>KECLEON = 352;</code>
      */
     const KECLEON = 352;
     /**
-     * <code>SHUPPET = 353;</code>
+     * Generated from protobuf enum <code>SHUPPET = 353;</code>
      */
     const SHUPPET = 353;
     /**
-     * <code>BANETTE = 354;</code>
+     * Generated from protobuf enum <code>BANETTE = 354;</code>
      */
     const BANETTE = 354;
     /**
-     * <code>DUSKULL = 355;</code>
+     * Generated from protobuf enum <code>DUSKULL = 355;</code>
      */
     const DUSKULL = 355;
     /**
-     * <code>DUSCLOPS = 356;</code>
+     * Generated from protobuf enum <code>DUSCLOPS = 356;</code>
      */
     const DUSCLOPS = 356;
     /**
-     * <code>TROPIUS = 357;</code>
+     * Generated from protobuf enum <code>TROPIUS = 357;</code>
      */
     const TROPIUS = 357;
     /**
-     * <code>CHIMECHO = 358;</code>
+     * Generated from protobuf enum <code>CHIMECHO = 358;</code>
      */
     const CHIMECHO = 358;
     /**
-     * <code>ABSOL = 359;</code>
+     * Generated from protobuf enum <code>ABSOL = 359;</code>
      */
     const ABSOL = 359;
     /**
-     * <code>WYNAUT = 360;</code>
+     * Generated from protobuf enum <code>WYNAUT = 360;</code>
      */
     const WYNAUT = 360;
     /**
-     * <code>SNORUNT = 361;</code>
+     * Generated from protobuf enum <code>SNORUNT = 361;</code>
      */
     const SNORUNT = 361;
     /**
-     * <code>GLALIE = 362;</code>
+     * Generated from protobuf enum <code>GLALIE = 362;</code>
      */
     const GLALIE = 362;
     /**
-     * <code>SPHEAL = 363;</code>
+     * Generated from protobuf enum <code>SPHEAL = 363;</code>
      */
     const SPHEAL = 363;
     /**
-     * <code>SEALEO = 364;</code>
+     * Generated from protobuf enum <code>SEALEO = 364;</code>
      */
     const SEALEO = 364;
     /**
-     * <code>WALREIN = 365;</code>
+     * Generated from protobuf enum <code>WALREIN = 365;</code>
      */
     const WALREIN = 365;
     /**
-     * <code>CLAMPERL = 366;</code>
+     * Generated from protobuf enum <code>CLAMPERL = 366;</code>
      */
     const CLAMPERL = 366;
     /**
-     * <code>HUNTAIL = 367;</code>
+     * Generated from protobuf enum <code>HUNTAIL = 367;</code>
      */
     const HUNTAIL = 367;
     /**
-     * <code>GOREBYSS = 368;</code>
+     * Generated from protobuf enum <code>GOREBYSS = 368;</code>
      */
     const GOREBYSS = 368;
     /**
-     * <code>RELICANTH = 369;</code>
+     * Generated from protobuf enum <code>RELICANTH = 369;</code>
      */
     const RELICANTH = 369;
     /**
-     * <code>LUVDISC = 370;</code>
+     * Generated from protobuf enum <code>LUVDISC = 370;</code>
      */
     const LUVDISC = 370;
     /**
-     * <code>BAGON = 371;</code>
+     * Generated from protobuf enum <code>BAGON = 371;</code>
      */
     const BAGON = 371;
     /**
-     * <code>SHELGON = 372;</code>
+     * Generated from protobuf enum <code>SHELGON = 372;</code>
      */
     const SHELGON = 372;
     /**
-     * <code>SALAMENCE = 373;</code>
+     * Generated from protobuf enum <code>SALAMENCE = 373;</code>
      */
     const SALAMENCE = 373;
     /**
-     * <code>BELDUM = 374;</code>
+     * Generated from protobuf enum <code>BELDUM = 374;</code>
      */
     const BELDUM = 374;
     /**
-     * <code>METANG = 375;</code>
+     * Generated from protobuf enum <code>METANG = 375;</code>
      */
     const METANG = 375;
     /**
-     * <code>METAGROSS = 376;</code>
+     * Generated from protobuf enum <code>METAGROSS = 376;</code>
      */
     const METAGROSS = 376;
     /**
-     * <code>REGIROCK = 377;</code>
+     * Generated from protobuf enum <code>REGIROCK = 377;</code>
      */
     const REGIROCK = 377;
     /**
-     * <code>REGICE = 378;</code>
+     * Generated from protobuf enum <code>REGICE = 378;</code>
      */
     const REGICE = 378;
     /**
-     * <code>REGISTEEL = 379;</code>
+     * Generated from protobuf enum <code>REGISTEEL = 379;</code>
      */
     const REGISTEEL = 379;
     /**
-     * <code>LATIAS = 380;</code>
+     * Generated from protobuf enum <code>LATIAS = 380;</code>
      */
     const LATIAS = 380;
     /**
-     * <code>LATIOS = 381;</code>
+     * Generated from protobuf enum <code>LATIOS = 381;</code>
      */
     const LATIOS = 381;
     /**
-     * <code>KYOGRE = 382;</code>
+     * Generated from protobuf enum <code>KYOGRE = 382;</code>
      */
     const KYOGRE = 382;
     /**
-     * <code>GROUDON = 383;</code>
+     * Generated from protobuf enum <code>GROUDON = 383;</code>
      */
     const GROUDON = 383;
     /**
-     * <code>RAYQUAZA = 384;</code>
+     * Generated from protobuf enum <code>RAYQUAZA = 384;</code>
      */
     const RAYQUAZA = 384;
     /**
-     * <code>JIRACHI = 385;</code>
+     * Generated from protobuf enum <code>JIRACHI = 385;</code>
      */
     const JIRACHI = 385;
     /**
-     * <code>DEOXYS = 386;</code>
+     * Generated from protobuf enum <code>DEOXYS = 386;</code>
      */
     const DEOXYS = 386;
 }

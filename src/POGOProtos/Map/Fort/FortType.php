@@ -5,16 +5,16 @@
 namespace POGOProtos\Map\Fort;
 
 /**
- * Protobuf enum <code>POGOProtos.Map.Fort.FortType</code>
+ * Protobuf type <code>POGOProtos.Map.Fort.FortType</code>
  */
 class FortType
 {
     /**
-     * <code>GYM = 0;</code>
+     * Generated from protobuf enum <code>GYM = 0;</code>
      */
     const GYM = 0;
     /**
-     * <code>CHECKPOINT = 1;</code>
+     * Generated from protobuf enum <code>CHECKPOINT = 1;</code>
      */
     const CHECKPOINT = 1;
 }

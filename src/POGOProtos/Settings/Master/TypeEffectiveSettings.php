@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.TypeEffectiveSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.TypeEffectiveSettings</code>
  */
 class TypeEffectiveSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated float attack_scalar = 1;</code>
+     * Generated from protobuf field <code>repeated float attack_scalar = 1;</code>
      */
     private $attack_scalar;
     /**
-     * <code>.POGOProtos.Enums.PokemonType attack_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonType attack_type = 2;</code>
      */
     private $attack_type = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $attack_scalar
+     *     @type int $attack_type
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\TypeEffectiveSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated float attack_scalar = 1;</code>
+     * Generated from protobuf field <code>repeated float attack_scalar = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAttackScalar()
     {
@@ -36,16 +47,21 @@ class TypeEffectiveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float attack_scalar = 1;</code>
+     * Generated from protobuf field <code>repeated float attack_scalar = 1;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAttackScalar(&$var)
+    public function setAttackScalar($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->attack_scalar = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->attack_scalar = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonType attack_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonType attack_type = 2;</code>
+     * @return int
      */
     public function getAttackType()
     {
@@ -53,12 +69,16 @@ class TypeEffectiveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonType attack_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonType attack_type = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setAttackType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonType::class);
         $this->attack_type = $var;
+
+        return $this;
     }
 
 }

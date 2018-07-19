@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Platform.Responses.JoinEventResponse.Status</code>
- */
-class JoinEventResponse_Status
-{
+if (false) {
     /**
-     * <code>UNDEFINED = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Responses\JoinEventResponse\Status instead.
+     * @deprecated
      */
-    const UNDEFINED = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>INVALID = 2;</code>
-     */
-    const INVALID = 2;
+    class JoinEventResponse_Status {}
 }
+class_exists(JoinEventResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Platform\Responses\JoinEventResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Responses\JoinEventResponse\Status instead', E_USER_DEPRECATED);
 

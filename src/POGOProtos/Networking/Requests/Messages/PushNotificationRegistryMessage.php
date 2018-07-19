@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.PushNotificationRegistryMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.PushNotificationRegistryMessage</code>
  */
 class PushNotificationRegistryMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.ApnToken apn_token = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.ApnToken apn_token = 1;</code>
      */
     private $apn_token = null;
     /**
-     * <code>.POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.GcmToken gcm_token = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.GcmToken gcm_token = 2;</code>
      */
     private $gcm_token = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Networking\Requests\Messages\RegisterPushNotificationMessage\ApnToken $apn_token
+     *     @type \POGOProtos\Networking\Requests\Messages\RegisterPushNotificationMessage\GcmToken $gcm_token
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\PlatformClientActionsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.ApnToken apn_token = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.ApnToken apn_token = 1;</code>
+     * @return \POGOProtos\Networking\Requests\Messages\RegisterPushNotificationMessage\ApnToken
      */
     public function getApnToken()
     {
@@ -36,16 +47,21 @@ class PushNotificationRegistryMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.ApnToken apn_token = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.ApnToken apn_token = 1;</code>
+     * @param \POGOProtos\Networking\Requests\Messages\RegisterPushNotificationMessage\ApnToken $var
+     * @return $this
      */
-    public function setApnToken(&$var)
+    public function setApnToken($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Requests\Messages\RegisterPushNotificationMessage_ApnToken::class);
         $this->apn_token = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.GcmToken gcm_token = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.GcmToken gcm_token = 2;</code>
+     * @return \POGOProtos\Networking\Requests\Messages\RegisterPushNotificationMessage\GcmToken
      */
     public function getGcmToken()
     {
@@ -53,12 +69,16 @@ class PushNotificationRegistryMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.GcmToken gcm_token = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.Messages.RegisterPushNotificationMessage.GcmToken gcm_token = 2;</code>
+     * @param \POGOProtos\Networking\Requests\Messages\RegisterPushNotificationMessage\GcmToken $var
+     * @return $this
      */
-    public function setGcmToken(&$var)
+    public function setGcmToken($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Requests\Messages\RegisterPushNotificationMessage_GcmToken::class);
         $this->gcm_token = $var;
+
+        return $this;
     }
 
 }

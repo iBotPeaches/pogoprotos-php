@@ -5,32 +5,32 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.Platform</code>
+ * Protobuf type <code>POGOProtos.Enums.Platform</code>
  */
 class Platform
 {
     /**
-     * <code>UNSET = 0;</code>
+     * Generated from protobuf enum <code>UNSET = 0;</code>
      */
-    const UNSET = 0;
+    const PBUNSET = 0;
     /**
-     * <code>IOS = 1;</code>
+     * Generated from protobuf enum <code>IOS = 1;</code>
      */
     const IOS = 1;
     /**
-     * <code>ANDROID = 2;</code>
+     * Generated from protobuf enum <code>ANDROID = 2;</code>
      */
     const ANDROID = 2;
     /**
-     * <code>OSX = 3;</code>
+     * Generated from protobuf enum <code>OSX = 3;</code>
      */
     const OSX = 3;
     /**
-     * <code>WINDOWS = 4;</code>
+     * Generated from protobuf enum <code>WINDOWS = 4;</code>
      */
     const WINDOWS = 4;
     /**
-     * <code>APPLE_WATCH = 5;</code>
+     * Generated from protobuf enum <code>APPLE_WATCH = 5;</code>
      */
     const APPLE_WATCH = 5;
 }

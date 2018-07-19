@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Avatar.AvatarItem</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Avatar.AvatarItem</code>
  */
 class AvatarItem extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string avatar_template_id = 1;</code>
+     * Generated from protobuf field <code>string avatar_template_id = 1;</code>
      */
     private $avatar_template_id = '';
     /**
-     * <code>int64 new_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 new_timestamp_ms = 2;</code>
      */
     private $new_timestamp_ms = 0;
     /**
-     * <code>bool viewed = 3;</code>
+     * Generated from protobuf field <code>bool viewed = 3;</code>
      */
     private $viewed = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $avatar_template_id
+     *     @type int|string $new_timestamp_ms
+     *     @type bool $viewed
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Avatar\AvatarItem::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string avatar_template_id = 1;</code>
+     * Generated from protobuf field <code>string avatar_template_id = 1;</code>
+     * @return string
      */
     public function getAvatarTemplateId()
     {
@@ -40,16 +52,21 @@ class AvatarItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_template_id = 1;</code>
+     * Generated from protobuf field <code>string avatar_template_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarTemplateId($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_template_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 new_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 new_timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getNewTimestampMs()
     {
@@ -57,16 +74,21 @@ class AvatarItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 new_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 new_timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setNewTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->new_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool viewed = 3;</code>
+     * Generated from protobuf field <code>bool viewed = 3;</code>
+     * @return bool
      */
     public function getViewed()
     {
@@ -74,12 +96,16 @@ class AvatarItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool viewed = 3;</code>
+     * Generated from protobuf field <code>bool viewed = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setViewed($var)
     {
         GPBUtil::checkBool($var);
         $this->viewed = $var;
+
+        return $this;
     }
 
 }

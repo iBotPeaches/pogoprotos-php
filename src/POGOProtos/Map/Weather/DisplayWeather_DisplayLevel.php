@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Map\Weather;
 
-/**
- * Protobuf enum <code>POGOProtos.Map.Weather.DisplayWeather.DisplayLevel</code>
- */
-class DisplayWeather_DisplayLevel
-{
+if (false) {
     /**
-     * <code>LEVEL_0 = 0;</code>
+     * This class is deprecated. Use POGOProtos\Map\Weather\DisplayWeather\DisplayLevel instead.
+     * @deprecated
      */
-    const LEVEL_0 = 0;
-    /**
-     * <code>LEVEL_1 = 1;</code>
-     */
-    const LEVEL_1 = 1;
-    /**
-     * <code>LEVEL_2 = 2;</code>
-     */
-    const LEVEL_2 = 2;
-    /**
-     * <code>LEVEL_3 = 3;</code>
-     */
-    const LEVEL_3 = 3;
+    class DisplayWeather_DisplayLevel {}
 }
+class_exists(DisplayWeather\DisplayLevel::class);
+@trigger_error('POGOProtos\Map\Weather\DisplayWeather_DisplayLevel is deprecated and will be removed in the next major release. Use POGOProtos\Map\Weather\DisplayWeather\DisplayLevel instead', E_USER_DEPRECATED);
 

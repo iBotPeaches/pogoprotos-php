@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestStampCard</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Quests.QuestStampCard</code>
  */
 class QuestStampCard extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestStamp stamp = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestStamp stamp = 1;</code>
      */
     private $stamp;
     /**
-     * <code>int32 target = 2;</code>
+     * Generated from protobuf field <code>int32 target = 2;</code>
      */
     private $target = 0;
     /**
-     * <code>int32 remaining_daily_stamps = 3;</code>
+     * Generated from protobuf field <code>int32 remaining_daily_stamps = 3;</code>
      */
     private $remaining_daily_stamps = 0;
     /**
-     * <code>string id = 4;</code>
+     * Generated from protobuf field <code>string id = 4;</code>
      */
     private $id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Quests\QuestStamp[]|\Google\Protobuf\Internal\RepeatedField $stamp
+     *     @type int $target
+     *     @type int $remaining_daily_stamps
+     *     @type string $id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Quests\QuestStampCard::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestStamp stamp = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestStamp stamp = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getStamp()
     {
@@ -44,16 +57,21 @@ class QuestStampCard extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestStamp stamp = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestStamp stamp = 1;</code>
+     * @param \POGOProtos\Data\Quests\QuestStamp[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setStamp(&$var)
+    public function setStamp($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\QuestStamp::class);
-        $this->stamp = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\QuestStamp::class);
+        $this->stamp = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 target = 2;</code>
+     * Generated from protobuf field <code>int32 target = 2;</code>
+     * @return int
      */
     public function getTarget()
     {
@@ -61,16 +79,21 @@ class QuestStampCard extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 target = 2;</code>
+     * Generated from protobuf field <code>int32 target = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTarget($var)
     {
         GPBUtil::checkInt32($var);
         $this->target = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 remaining_daily_stamps = 3;</code>
+     * Generated from protobuf field <code>int32 remaining_daily_stamps = 3;</code>
+     * @return int
      */
     public function getRemainingDailyStamps()
     {
@@ -78,16 +101,21 @@ class QuestStampCard extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 remaining_daily_stamps = 3;</code>
+     * Generated from protobuf field <code>int32 remaining_daily_stamps = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRemainingDailyStamps($var)
     {
         GPBUtil::checkInt32($var);
         $this->remaining_daily_stamps = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string id = 4;</code>
+     * Generated from protobuf field <code>string id = 4;</code>
+     * @return string
      */
     public function getId()
     {
@@ -95,12 +123,16 @@ class QuestStampCard extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string id = 4;</code>
+     * Generated from protobuf field <code>string id = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setId($var)
     {
         GPBUtil::checkString($var, True);
         $this->id = $var;
+
+        return $this;
     }
 
 }

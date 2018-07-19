@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Data\Logs;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Logs.SendGiftLogEntry.Result</code>
- */
-class SendGiftLogEntry_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Logs\SendGiftLogEntry\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
+    class SendGiftLogEntry_Result {}
 }
+class_exists(SendGiftLogEntry\Result::class);
+@trigger_error('POGOProtos\Data\Logs\SendGiftLogEntry_Result is deprecated and will be removed in the next major release. Use POGOProtos\Data\Logs\SendGiftLogEntry\Result instead', E_USER_DEPRECATED);
 

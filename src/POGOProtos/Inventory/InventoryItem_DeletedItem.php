@@ -4,41 +4,13 @@
 
 namespace POGOProtos\Inventory;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Inventory.InventoryItem.DeletedItem</code>
- */
-class InventoryItem_DeletedItem extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * This class is deprecated. Use POGOProtos\Inventory\InventoryItem\DeletedItem instead.
+     * @deprecated
      */
-    private $pokemon_id = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Inventory\InventoryItem::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>fixed64 pokemon_id = 1;</code>
-     */
-    public function getPokemonId()
-    {
-        return $this->pokemon_id;
-    }
-
-    /**
-     * <code>fixed64 pokemon_id = 1;</code>
-     */
-    public function setPokemonId($var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->pokemon_id = $var;
-    }
-
+    class InventoryItem_DeletedItem {}
 }
+class_exists(InventoryItem\DeletedItem::class);
+@trigger_error('POGOProtos\Inventory\InventoryItem_DeletedItem is deprecated and will be removed in the next major release. Use POGOProtos\Inventory\InventoryItem\DeletedItem instead', E_USER_DEPRECATED);
 

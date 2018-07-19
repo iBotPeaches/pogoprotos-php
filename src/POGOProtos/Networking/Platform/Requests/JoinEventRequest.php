@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Requests.JoinEventRequest</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Requests.JoinEventRequest</code>
  */
 class JoinEventRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string qrcode = 1;</code>
+     * Generated from protobuf field <code>string qrcode = 1;</code>
      */
     private $qrcode = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $qrcode
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Requests\JoinEventRequest::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string qrcode = 1;</code>
+     * Generated from protobuf field <code>string qrcode = 1;</code>
+     * @return string
      */
     public function getQrcode()
     {
@@ -32,12 +42,16 @@ class JoinEventRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string qrcode = 1;</code>
+     * Generated from protobuf field <code>string qrcode = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setQrcode($var)
     {
         GPBUtil::checkString($var, True);
         $this->qrcode = $var;
+
+        return $this;
     }
 
 }

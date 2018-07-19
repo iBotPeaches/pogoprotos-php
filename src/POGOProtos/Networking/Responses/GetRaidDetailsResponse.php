@@ -9,62 +9,82 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetRaidDetailsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetRaidDetailsResponse</code>
  */
 class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Raid.Lobby lobby = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.Lobby lobby = 1;</code>
      */
     private $lobby = null;
     /**
-     * <code>.POGOProtos.Data.Battle.Battle raid_battle = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.Battle raid_battle = 2;</code>
      */
     private $raid_battle = null;
     /**
-     * <code>bool player_can_join_lobby = 3;</code>
+     * Generated from protobuf field <code>bool player_can_join_lobby = 3;</code>
      */
     private $player_can_join_lobby = false;
     /**
-     * <code>.POGOProtos.Networking.Responses.GetRaidDetailsResponse.Result result = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetRaidDetailsResponse.Result result = 4;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Data.Raid.RaidInfo raid_info = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo raid_info = 5;</code>
      */
     private $raid_info = null;
     /**
-     * <code>bool ticket_used = 6;</code>
+     * Generated from protobuf field <code>bool ticket_used = 6;</code>
      */
     private $ticket_used = false;
     /**
-     * <code>bool free_ticket_available = 7;</code>
+     * Generated from protobuf field <code>bool free_ticket_available = 7;</code>
      */
     private $free_ticket_available = false;
     /**
-     * <code>int32 throws_remaining = 8;</code>
+     * Generated from protobuf field <code>int32 throws_remaining = 8;</code>
      */
     private $throws_remaining = 0;
     /**
-     * <code>bool received_rewards = 9;</code>
+     * Generated from protobuf field <code>bool received_rewards = 9;</code>
      */
     private $received_rewards = false;
     /**
-     * <code>int32 num_players_in_lobby = 10;</code>
+     * Generated from protobuf field <code>int32 num_players_in_lobby = 10;</code>
      */
     private $num_players_in_lobby = 0;
     /**
-     * <code>int64 server_ms = 11;</code>
+     * Generated from protobuf field <code>int64 server_ms = 11;</code>
      */
     private $server_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Raid\Lobby $lobby
+     *     @type \POGOProtos\Data\Battle\Battle $raid_battle
+     *     @type bool $player_can_join_lobby
+     *     @type int $result
+     *     @type \POGOProtos\Data\Raid\RaidInfo $raid_info
+     *     @type bool $ticket_used
+     *     @type bool $free_ticket_available
+     *     @type int $throws_remaining
+     *     @type bool $received_rewards
+     *     @type int $num_players_in_lobby
+     *     @type int|string $server_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetRaidDetailsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.Lobby lobby = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.Lobby lobby = 1;</code>
+     * @return \POGOProtos\Data\Raid\Lobby
      */
     public function getLobby()
     {
@@ -72,16 +92,21 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.Lobby lobby = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.Lobby lobby = 1;</code>
+     * @param \POGOProtos\Data\Raid\Lobby $var
+     * @return $this
      */
-    public function setLobby(&$var)
+    public function setLobby($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Raid\Lobby::class);
         $this->lobby = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.Battle raid_battle = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.Battle raid_battle = 2;</code>
+     * @return \POGOProtos\Data\Battle\Battle
      */
     public function getRaidBattle()
     {
@@ -89,16 +114,21 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.Battle raid_battle = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.Battle raid_battle = 2;</code>
+     * @param \POGOProtos\Data\Battle\Battle $var
+     * @return $this
      */
-    public function setRaidBattle(&$var)
+    public function setRaidBattle($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\Battle::class);
         $this->raid_battle = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool player_can_join_lobby = 3;</code>
+     * Generated from protobuf field <code>bool player_can_join_lobby = 3;</code>
+     * @return bool
      */
     public function getPlayerCanJoinLobby()
     {
@@ -106,16 +136,21 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool player_can_join_lobby = 3;</code>
+     * Generated from protobuf field <code>bool player_can_join_lobby = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setPlayerCanJoinLobby($var)
     {
         GPBUtil::checkBool($var);
         $this->player_can_join_lobby = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetRaidDetailsResponse.Result result = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetRaidDetailsResponse.Result result = 4;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -123,16 +158,21 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetRaidDetailsResponse.Result result = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetRaidDetailsResponse.Result result = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\GetRaidDetailsResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.RaidInfo raid_info = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo raid_info = 5;</code>
+     * @return \POGOProtos\Data\Raid\RaidInfo
      */
     public function getRaidInfo()
     {
@@ -140,16 +180,21 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.RaidInfo raid_info = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo raid_info = 5;</code>
+     * @param \POGOProtos\Data\Raid\RaidInfo $var
+     * @return $this
      */
-    public function setRaidInfo(&$var)
+    public function setRaidInfo($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Raid\RaidInfo::class);
         $this->raid_info = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool ticket_used = 6;</code>
+     * Generated from protobuf field <code>bool ticket_used = 6;</code>
+     * @return bool
      */
     public function getTicketUsed()
     {
@@ -157,16 +202,21 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool ticket_used = 6;</code>
+     * Generated from protobuf field <code>bool ticket_used = 6;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setTicketUsed($var)
     {
         GPBUtil::checkBool($var);
         $this->ticket_used = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool free_ticket_available = 7;</code>
+     * Generated from protobuf field <code>bool free_ticket_available = 7;</code>
+     * @return bool
      */
     public function getFreeTicketAvailable()
     {
@@ -174,16 +224,21 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool free_ticket_available = 7;</code>
+     * Generated from protobuf field <code>bool free_ticket_available = 7;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setFreeTicketAvailable($var)
     {
         GPBUtil::checkBool($var);
         $this->free_ticket_available = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 throws_remaining = 8;</code>
+     * Generated from protobuf field <code>int32 throws_remaining = 8;</code>
+     * @return int
      */
     public function getThrowsRemaining()
     {
@@ -191,16 +246,21 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 throws_remaining = 8;</code>
+     * Generated from protobuf field <code>int32 throws_remaining = 8;</code>
+     * @param int $var
+     * @return $this
      */
     public function setThrowsRemaining($var)
     {
         GPBUtil::checkInt32($var);
         $this->throws_remaining = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool received_rewards = 9;</code>
+     * Generated from protobuf field <code>bool received_rewards = 9;</code>
+     * @return bool
      */
     public function getReceivedRewards()
     {
@@ -208,16 +268,21 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool received_rewards = 9;</code>
+     * Generated from protobuf field <code>bool received_rewards = 9;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setReceivedRewards($var)
     {
         GPBUtil::checkBool($var);
         $this->received_rewards = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 num_players_in_lobby = 10;</code>
+     * Generated from protobuf field <code>int32 num_players_in_lobby = 10;</code>
+     * @return int
      */
     public function getNumPlayersInLobby()
     {
@@ -225,16 +290,21 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 num_players_in_lobby = 10;</code>
+     * Generated from protobuf field <code>int32 num_players_in_lobby = 10;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumPlayersInLobby($var)
     {
         GPBUtil::checkInt32($var);
         $this->num_players_in_lobby = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 server_ms = 11;</code>
+     * Generated from protobuf field <code>int64 server_ms = 11;</code>
+     * @return int|string
      */
     public function getServerMs()
     {
@@ -242,12 +312,16 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 server_ms = 11;</code>
+     * Generated from protobuf field <code>int64 server_ms = 11;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setServerMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->server_ms = $var;
+
+        return $this;
     }
 
 }

@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Weather.ClientWeather</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Weather.ClientWeather</code>
  */
 class ClientWeather extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 s2_cell_id = 1;</code>
+     * Generated from protobuf field <code>int64 s2_cell_id = 1;</code>
      */
     private $s2_cell_id = 0;
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 2;</code>
      */
     private $display_weather = null;
     /**
-     * <code>.POGOProtos.Map.Weather.GameplayWeather gameplay_weather = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.GameplayWeather gameplay_weather = 3;</code>
      */
     private $gameplay_weather = null;
     /**
-     * <code>repeated .POGOProtos.Map.Weather.WeatherAlert alerts = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Weather.WeatherAlert alerts = 4;</code>
      */
     private $alerts;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $s2_cell_id
+     *     @type \POGOProtos\Map\Weather\DisplayWeather $display_weather
+     *     @type \POGOProtos\Map\Weather\GameplayWeather $gameplay_weather
+     *     @type \POGOProtos\Map\Weather\WeatherAlert[]|\Google\Protobuf\Internal\RepeatedField $alerts
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Weather\ClientWeather::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 s2_cell_id = 1;</code>
+     * Generated from protobuf field <code>int64 s2_cell_id = 1;</code>
+     * @return int|string
      */
     public function getS2CellId()
     {
@@ -44,16 +57,21 @@ class ClientWeather extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 s2_cell_id = 1;</code>
+     * Generated from protobuf field <code>int64 s2_cell_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setS2CellId($var)
     {
         GPBUtil::checkInt64($var);
         $this->s2_cell_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 2;</code>
+     * @return \POGOProtos\Map\Weather\DisplayWeather
      */
     public function getDisplayWeather()
     {
@@ -61,16 +79,21 @@ class ClientWeather extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 2;</code>
+     * @param \POGOProtos\Map\Weather\DisplayWeather $var
+     * @return $this
      */
-    public function setDisplayWeather(&$var)
+    public function setDisplayWeather($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Map\Weather\DisplayWeather::class);
         $this->display_weather = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.GameplayWeather gameplay_weather = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.GameplayWeather gameplay_weather = 3;</code>
+     * @return \POGOProtos\Map\Weather\GameplayWeather
      */
     public function getGameplayWeather()
     {
@@ -78,16 +101,21 @@ class ClientWeather extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.GameplayWeather gameplay_weather = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.GameplayWeather gameplay_weather = 3;</code>
+     * @param \POGOProtos\Map\Weather\GameplayWeather $var
+     * @return $this
      */
-    public function setGameplayWeather(&$var)
+    public function setGameplayWeather($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Map\Weather\GameplayWeather::class);
         $this->gameplay_weather = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.Weather.WeatherAlert alerts = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Weather.WeatherAlert alerts = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAlerts()
     {
@@ -95,12 +123,16 @@ class ClientWeather extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.Weather.WeatherAlert alerts = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Weather.WeatherAlert alerts = 4;</code>
+     * @param \POGOProtos\Map\Weather\WeatherAlert[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAlerts(&$var)
+    public function setAlerts($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Weather\WeatherAlert::class);
-        $this->alerts = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Weather\WeatherAlert::class);
+        $this->alerts = $arr;
+
+        return $this;
     }
 
 }

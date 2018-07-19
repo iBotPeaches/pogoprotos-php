@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Telemetry.PlatformEventData</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Telemetry.PlatformEventData</code>
  */
 class PlatformEventData extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryCommon common_telemetry = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryCommon common_telemetry = 1;</code>
      */
     private $common_telemetry = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Networking\Platform\Telemetry\TelemetryCommon $common_telemetry
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Telemetry\PlatformEventData::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryCommon common_telemetry = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryCommon common_telemetry = 1;</code>
+     * @return \POGOProtos\Networking\Platform\Telemetry\TelemetryCommon
      */
     public function getCommonTelemetry()
     {
@@ -32,12 +42,16 @@ class PlatformEventData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryCommon common_telemetry = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryCommon common_telemetry = 1;</code>
+     * @param \POGOProtos\Networking\Platform\Telemetry\TelemetryCommon $var
+     * @return $this
      */
-    public function setCommonTelemetry(&$var)
+    public function setCommonTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\TelemetryCommon::class);
         $this->common_telemetry = $var;
+
+        return $this;
     }
 
 }

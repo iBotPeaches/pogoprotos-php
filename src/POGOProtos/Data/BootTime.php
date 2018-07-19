@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.BootTime</code>
+ * Generated from protobuf message <code>POGOProtos.Data.BootTime</code>
  */
 class BootTime extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData duration = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData duration = 1;</code>
      */
     private $duration = null;
     /**
-     * <code>.POGOProtos.Data.BootTime.BootPhase boot_phase = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BootTime.BootPhase boot_phase = 2;</code>
      */
     private $boot_phase = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData $duration
+     *     @type int $boot_phase
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\BootTime::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData duration = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData duration = 1;</code>
+     * @return \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData
      */
     public function getDuration()
     {
@@ -36,16 +47,21 @@ class BootTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData duration = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData duration = 1;</code>
+     * @param \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData $var
+     * @return $this
      */
-    public function setDuration(&$var)
+    public function setDuration($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData::class);
         $this->duration = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.BootTime.BootPhase boot_phase = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BootTime.BootPhase boot_phase = 2;</code>
+     * @return int
      */
     public function getBootPhase()
     {
@@ -53,12 +69,16 @@ class BootTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.BootTime.BootPhase boot_phase = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BootTime.BootPhase boot_phase = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBootPhase($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\BootTime_BootPhase::class);
         $this->boot_phase = $var;
+
+        return $this;
     }
 
 }

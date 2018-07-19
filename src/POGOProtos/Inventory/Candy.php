@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.Candy</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.Candy</code>
  */
 class Candy extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.PokemonFamilyId family_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId family_id = 1;</code>
      */
     private $family_id = 0;
     /**
-     * <code>int32 candy = 2;</code>
+     * Generated from protobuf field <code>int32 candy = 2;</code>
      */
     private $candy = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $family_id
+     *     @type int $candy
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\Candy::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonFamilyId family_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId family_id = 1;</code>
+     * @return int
      */
     public function getFamilyId()
     {
@@ -36,16 +47,21 @@ class Candy extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonFamilyId family_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId family_id = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setFamilyId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonFamilyId::class);
         $this->family_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 candy = 2;</code>
+     * Generated from protobuf field <code>int32 candy = 2;</code>
+     * @return int
      */
     public function getCandy()
     {
@@ -53,12 +69,16 @@ class Candy extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 candy = 2;</code>
+     * Generated from protobuf field <code>int32 candy = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCandy($var)
     {
         GPBUtil::checkInt32($var);
         $this->candy = $var;
+
+        return $this;
     }
 
 }

@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Data\Friends;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Friends.OutgoingFriendInvite.Status</code>
- */
-class OutgoingFriendInvite_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Friends\OutgoingFriendInvite\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>PENDING = 1;</code>
-     */
-    const PENDING = 1;
-    /**
-     * <code>CANCELLED = 2;</code>
-     */
-    const CANCELLED = 2;
-    /**
-     * <code>DECLINED = 3;</code>
-     */
-    const DECLINED = 3;
+    class OutgoingFriendInvite_Status {}
 }
+class_exists(OutgoingFriendInvite\Status::class);
+@trigger_error('POGOProtos\Data\Friends\OutgoingFriendInvite_Status is deprecated and will be removed in the next major release. Use POGOProtos\Data\Friends\OutgoingFriendInvite\Status instead', E_USER_DEPRECATED);
 

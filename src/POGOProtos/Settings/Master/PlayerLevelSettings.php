@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.PlayerLevelSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.PlayerLevelSettings</code>
  */
 class PlayerLevelSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated int32 rank_num = 1;</code>
+     * Generated from protobuf field <code>repeated int32 rank_num = 1;</code>
      */
     private $rank_num;
     /**
-     * <code>repeated int32 required_experience = 2;</code>
+     * Generated from protobuf field <code>repeated int32 required_experience = 2;</code>
      */
     private $required_experience;
     /**
-     * <code>repeated float cp_multiplier = 3;</code>
+     * Generated from protobuf field <code>repeated float cp_multiplier = 3;</code>
      */
     private $cp_multiplier;
     /**
-     * <code>int32 max_egg_player_level = 4;</code>
+     * Generated from protobuf field <code>int32 max_egg_player_level = 4;</code>
      */
     private $max_egg_player_level = 0;
     /**
-     * <code>int32 max_encounter_player_level = 5;</code>
+     * Generated from protobuf field <code>int32 max_encounter_player_level = 5;</code>
      */
     private $max_encounter_player_level = 0;
     /**
-     * <code>int32 max_raid_encounter_player_level = 6;</code>
+     * Generated from protobuf field <code>int32 max_raid_encounter_player_level = 6;</code>
      */
     private $max_raid_encounter_player_level = 0;
     /**
-     * <code>int32 max_quest_encounter_player_level = 7;</code>
+     * Generated from protobuf field <code>int32 max_quest_encounter_player_level = 7;</code>
      */
     private $max_quest_encounter_player_level = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $rank_num
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $required_experience
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $cp_multiplier
+     *     @type int $max_egg_player_level
+     *     @type int $max_encounter_player_level
+     *     @type int $max_raid_encounter_player_level
+     *     @type int $max_quest_encounter_player_level
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\PlayerLevelSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated int32 rank_num = 1;</code>
+     * Generated from protobuf field <code>repeated int32 rank_num = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getRankNum()
     {
@@ -56,16 +72,21 @@ class PlayerLevelSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 rank_num = 1;</code>
+     * Generated from protobuf field <code>repeated int32 rank_num = 1;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setRankNum(&$var)
+    public function setRankNum($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->rank_num = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->rank_num = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 required_experience = 2;</code>
+     * Generated from protobuf field <code>repeated int32 required_experience = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getRequiredExperience()
     {
@@ -73,16 +94,21 @@ class PlayerLevelSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 required_experience = 2;</code>
+     * Generated from protobuf field <code>repeated int32 required_experience = 2;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setRequiredExperience(&$var)
+    public function setRequiredExperience($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->required_experience = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->required_experience = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float cp_multiplier = 3;</code>
+     * Generated from protobuf field <code>repeated float cp_multiplier = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCpMultiplier()
     {
@@ -90,16 +116,21 @@ class PlayerLevelSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float cp_multiplier = 3;</code>
+     * Generated from protobuf field <code>repeated float cp_multiplier = 3;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCpMultiplier(&$var)
+    public function setCpMultiplier($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->cp_multiplier = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->cp_multiplier = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_egg_player_level = 4;</code>
+     * Generated from protobuf field <code>int32 max_egg_player_level = 4;</code>
+     * @return int
      */
     public function getMaxEggPlayerLevel()
     {
@@ -107,16 +138,21 @@ class PlayerLevelSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_egg_player_level = 4;</code>
+     * Generated from protobuf field <code>int32 max_egg_player_level = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxEggPlayerLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_egg_player_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_encounter_player_level = 5;</code>
+     * Generated from protobuf field <code>int32 max_encounter_player_level = 5;</code>
+     * @return int
      */
     public function getMaxEncounterPlayerLevel()
     {
@@ -124,16 +160,21 @@ class PlayerLevelSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_encounter_player_level = 5;</code>
+     * Generated from protobuf field <code>int32 max_encounter_player_level = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxEncounterPlayerLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_encounter_player_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_raid_encounter_player_level = 6;</code>
+     * Generated from protobuf field <code>int32 max_raid_encounter_player_level = 6;</code>
+     * @return int
      */
     public function getMaxRaidEncounterPlayerLevel()
     {
@@ -141,16 +182,21 @@ class PlayerLevelSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_raid_encounter_player_level = 6;</code>
+     * Generated from protobuf field <code>int32 max_raid_encounter_player_level = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxRaidEncounterPlayerLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_raid_encounter_player_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_quest_encounter_player_level = 7;</code>
+     * Generated from protobuf field <code>int32 max_quest_encounter_player_level = 7;</code>
+     * @return int
      */
     public function getMaxQuestEncounterPlayerLevel()
     {
@@ -158,12 +204,16 @@ class PlayerLevelSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_quest_encounter_player_level = 7;</code>
+     * Generated from protobuf field <code>int32 max_quest_encounter_player_level = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxQuestEncounterPlayerLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_quest_encounter_player_level = $var;
+
+        return $this;
     }
 
 }

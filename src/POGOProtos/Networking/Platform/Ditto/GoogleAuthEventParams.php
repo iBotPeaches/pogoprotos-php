@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Ditto.GoogleAuthEventParams</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Ditto.GoogleAuthEventParams</code>
  */
 class GoogleAuthEventParams extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string payload = 1;</code>
+     * Generated from protobuf field <code>string payload = 1;</code>
      */
     private $payload = '';
     /**
-     * <code>string account_name = 2;</code>
+     * Generated from protobuf field <code>string account_name = 2;</code>
      */
     private $account_name = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $payload
+     *     @type string $account_name
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Ditto\GoogleAuthEventParams::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string payload = 1;</code>
+     * Generated from protobuf field <code>string payload = 1;</code>
+     * @return string
      */
     public function getPayload()
     {
@@ -36,16 +47,21 @@ class GoogleAuthEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string payload = 1;</code>
+     * Generated from protobuf field <code>string payload = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPayload($var)
     {
         GPBUtil::checkString($var, True);
         $this->payload = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string account_name = 2;</code>
+     * Generated from protobuf field <code>string account_name = 2;</code>
+     * @return string
      */
     public function getAccountName()
     {
@@ -53,12 +69,16 @@ class GoogleAuthEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string account_name = 2;</code>
+     * Generated from protobuf field <code>string account_name = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAccountName($var)
     {
         GPBUtil::checkString($var, True);
         $this->account_name = $var;
+
+        return $this;
     }
 
 }

@@ -4,42 +4,13 @@
 
 namespace POGOProtos\Map\Weather;
 
-/**
- * Protobuf enum <code>POGOProtos.Map.Weather.GameplayWeather.WeatherCondition</code>
- */
-class GameplayWeather_WeatherCondition
-{
+if (false) {
     /**
-     * <code>NONE = 0;</code>
+     * This class is deprecated. Use POGOProtos\Map\Weather\GameplayWeather\WeatherCondition instead.
+     * @deprecated
      */
-    const NONE = 0;
-    /**
-     * <code>CLEAR = 1;</code>
-     */
-    const CLEAR = 1;
-    /**
-     * <code>RAINY = 2;</code>
-     */
-    const RAINY = 2;
-    /**
-     * <code>PARTLY_CLOUDY = 3;</code>
-     */
-    const PARTLY_CLOUDY = 3;
-    /**
-     * <code>OVERCAST = 4;</code>
-     */
-    const OVERCAST = 4;
-    /**
-     * <code>WINDY = 5;</code>
-     */
-    const WINDY = 5;
-    /**
-     * <code>SNOW = 6;</code>
-     */
-    const SNOW = 6;
-    /**
-     * <code>FOG = 7;</code>
-     */
-    const FOG = 7;
+    class GameplayWeather_WeatherCondition {}
 }
+class_exists(GameplayWeather\WeatherCondition::class);
+@trigger_error('POGOProtos\Map\Weather\GameplayWeather_WeatherCondition is deprecated and will be removed in the next major release. Use POGOProtos\Map\Weather\GameplayWeather\WeatherCondition instead', E_USER_DEPRECATED);
 

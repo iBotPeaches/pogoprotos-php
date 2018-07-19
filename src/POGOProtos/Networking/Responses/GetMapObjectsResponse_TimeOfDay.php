@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.GetMapObjectsResponse.TimeOfDay</code>
- */
-class GetMapObjectsResponse_TimeOfDay
-{
+if (false) {
     /**
-     * <code>NONE = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GetMapObjectsResponse\TimeOfDay instead.
+     * @deprecated
      */
-    const NONE = 0;
-    /**
-     * <code>DAY = 1;</code>
-     */
-    const DAY = 1;
-    /**
-     * <code>NIGHT = 2;</code>
-     */
-    const NIGHT = 2;
+    class GetMapObjectsResponse_TimeOfDay {}
 }
+class_exists(GetMapObjectsResponse\TimeOfDay::class);
+@trigger_error('POGOProtos\Networking\Responses\GetMapObjectsResponse_TimeOfDay is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GetMapObjectsResponse\TimeOfDay instead', E_USER_DEPRECATED);
 

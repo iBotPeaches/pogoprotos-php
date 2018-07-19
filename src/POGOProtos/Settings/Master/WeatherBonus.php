@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.WeatherBonus</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.WeatherBonus</code>
  */
 class WeatherBonus extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 cp_base_level_bonus = 1;</code>
+     * Generated from protobuf field <code>int32 cp_base_level_bonus = 1;</code>
      */
     private $cp_base_level_bonus = 0;
     /**
-     * <code>int32 guaranteed_individual_values = 2;</code>
+     * Generated from protobuf field <code>int32 guaranteed_individual_values = 2;</code>
      */
     private $guaranteed_individual_values = 0;
     /**
-     * <code>double stardust_bonus_multiplier = 3;</code>
+     * Generated from protobuf field <code>double stardust_bonus_multiplier = 3;</code>
      */
     private $stardust_bonus_multiplier = 0.0;
     /**
-     * <code>double attack_bonus_multiplier = 4;</code>
+     * Generated from protobuf field <code>double attack_bonus_multiplier = 4;</code>
      */
     private $attack_bonus_multiplier = 0.0;
     /**
-     * <code>int32 raid_encounter_cp_base_level_bonus = 5;</code>
+     * Generated from protobuf field <code>int32 raid_encounter_cp_base_level_bonus = 5;</code>
      */
     private $raid_encounter_cp_base_level_bonus = 0;
     /**
-     * <code>int32 raid_encounter_guaranteed_individual_values = 6;</code>
+     * Generated from protobuf field <code>int32 raid_encounter_guaranteed_individual_values = 6;</code>
      */
     private $raid_encounter_guaranteed_individual_values = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $cp_base_level_bonus
+     *     @type int $guaranteed_individual_values
+     *     @type float $stardust_bonus_multiplier
+     *     @type float $attack_bonus_multiplier
+     *     @type int $raid_encounter_cp_base_level_bonus
+     *     @type int $raid_encounter_guaranteed_individual_values
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\WeatherBonus::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 cp_base_level_bonus = 1;</code>
+     * Generated from protobuf field <code>int32 cp_base_level_bonus = 1;</code>
+     * @return int
      */
     public function getCpBaseLevelBonus()
     {
@@ -52,16 +67,21 @@ class WeatherBonus extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 cp_base_level_bonus = 1;</code>
+     * Generated from protobuf field <code>int32 cp_base_level_bonus = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCpBaseLevelBonus($var)
     {
         GPBUtil::checkInt32($var);
         $this->cp_base_level_bonus = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 guaranteed_individual_values = 2;</code>
+     * Generated from protobuf field <code>int32 guaranteed_individual_values = 2;</code>
+     * @return int
      */
     public function getGuaranteedIndividualValues()
     {
@@ -69,16 +89,21 @@ class WeatherBonus extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 guaranteed_individual_values = 2;</code>
+     * Generated from protobuf field <code>int32 guaranteed_individual_values = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setGuaranteedIndividualValues($var)
     {
         GPBUtil::checkInt32($var);
         $this->guaranteed_individual_values = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double stardust_bonus_multiplier = 3;</code>
+     * Generated from protobuf field <code>double stardust_bonus_multiplier = 3;</code>
+     * @return float
      */
     public function getStardustBonusMultiplier()
     {
@@ -86,16 +111,21 @@ class WeatherBonus extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double stardust_bonus_multiplier = 3;</code>
+     * Generated from protobuf field <code>double stardust_bonus_multiplier = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setStardustBonusMultiplier($var)
     {
         GPBUtil::checkDouble($var);
         $this->stardust_bonus_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double attack_bonus_multiplier = 4;</code>
+     * Generated from protobuf field <code>double attack_bonus_multiplier = 4;</code>
+     * @return float
      */
     public function getAttackBonusMultiplier()
     {
@@ -103,16 +133,21 @@ class WeatherBonus extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double attack_bonus_multiplier = 4;</code>
+     * Generated from protobuf field <code>double attack_bonus_multiplier = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setAttackBonusMultiplier($var)
     {
         GPBUtil::checkDouble($var);
         $this->attack_bonus_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 raid_encounter_cp_base_level_bonus = 5;</code>
+     * Generated from protobuf field <code>int32 raid_encounter_cp_base_level_bonus = 5;</code>
+     * @return int
      */
     public function getRaidEncounterCpBaseLevelBonus()
     {
@@ -120,16 +155,21 @@ class WeatherBonus extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 raid_encounter_cp_base_level_bonus = 5;</code>
+     * Generated from protobuf field <code>int32 raid_encounter_cp_base_level_bonus = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRaidEncounterCpBaseLevelBonus($var)
     {
         GPBUtil::checkInt32($var);
         $this->raid_encounter_cp_base_level_bonus = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 raid_encounter_guaranteed_individual_values = 6;</code>
+     * Generated from protobuf field <code>int32 raid_encounter_guaranteed_individual_values = 6;</code>
+     * @return int
      */
     public function getRaidEncounterGuaranteedIndividualValues()
     {
@@ -137,12 +177,16 @@ class WeatherBonus extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 raid_encounter_guaranteed_individual_values = 6;</code>
+     * Generated from protobuf field <code>int32 raid_encounter_guaranteed_individual_values = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRaidEncounterGuaranteedIndividualValues($var)
     {
         GPBUtil::checkInt32($var);
         $this->raid_encounter_guaranteed_individual_values = $var;
+
+        return $this;
     }
 
 }

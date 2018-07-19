@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.GetNewQuestsResponse.Status</code>
- */
-class GetNewQuestsResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GetNewQuestsResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_INVALID_DISPLAY = 2;</code>
-     */
-    const ERROR_INVALID_DISPLAY = 2;
+    class GetNewQuestsResponse_Status {}
 }
+class_exists(GetNewQuestsResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\GetNewQuestsResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GetNewQuestsResponse\Status instead', E_USER_DEPRECATED);
 

@@ -5,76 +5,76 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.ItemEffect</code>
+ * Protobuf type <code>POGOProtos.Enums.ItemEffect</code>
  */
 class ItemEffect
 {
     /**
-     * <code>ITEM_EFFECT_NONE = 0;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_NONE = 0;</code>
      */
     const ITEM_EFFECT_NONE = 0;
     /**
-     * <code>ITEM_EFFECT_CAP_NO_FLEE = 1000;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_NO_FLEE = 1000;</code>
      */
     const ITEM_EFFECT_CAP_NO_FLEE = 1000;
     /**
-     * <code>ITEM_EFFECT_CAP_NO_MOVEMENT = 1002;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_NO_MOVEMENT = 1002;</code>
      */
     const ITEM_EFFECT_CAP_NO_MOVEMENT = 1002;
     /**
-     * <code>ITEM_EFFECT_CAP_NO_THREAT = 1003;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_NO_THREAT = 1003;</code>
      */
     const ITEM_EFFECT_CAP_NO_THREAT = 1003;
     /**
-     * <code>ITEM_EFFECT_CAP_TARGET_MAX = 1004;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_TARGET_MAX = 1004;</code>
      */
     const ITEM_EFFECT_CAP_TARGET_MAX = 1004;
     /**
-     * <code>ITEM_EFFECT_CAP_TARGET_SLOW = 1005;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_TARGET_SLOW = 1005;</code>
      */
     const ITEM_EFFECT_CAP_TARGET_SLOW = 1005;
     /**
-     * <code>ITEM_EFFECT_CAP_CHANCE_NIGHT = 1006;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_CHANCE_NIGHT = 1006;</code>
      */
     const ITEM_EFFECT_CAP_CHANCE_NIGHT = 1006;
     /**
-     * <code>ITEM_EFFECT_CAP_CHANCE_TRAINER = 1007;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_CHANCE_TRAINER = 1007;</code>
      */
     const ITEM_EFFECT_CAP_CHANCE_TRAINER = 1007;
     /**
-     * <code>ITEM_EFFECT_CAP_CHANCE_FIRST_THROW = 1008;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_CHANCE_FIRST_THROW = 1008;</code>
      */
     const ITEM_EFFECT_CAP_CHANCE_FIRST_THROW = 1008;
     /**
-     * <code>ITEM_EFFECT_CAP_CHANCE_LEGEND = 1009;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_CHANCE_LEGEND = 1009;</code>
      */
     const ITEM_EFFECT_CAP_CHANCE_LEGEND = 1009;
     /**
-     * <code>ITEM_EFFECT_CAP_CHANCE_HEAVY = 1010;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_CHANCE_HEAVY = 1010;</code>
      */
     const ITEM_EFFECT_CAP_CHANCE_HEAVY = 1010;
     /**
-     * <code>ITEM_EFFECT_CAP_CHANCE_REPEAT = 1011;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_CHANCE_REPEAT = 1011;</code>
      */
     const ITEM_EFFECT_CAP_CHANCE_REPEAT = 1011;
     /**
-     * <code>ITEM_EFFECT_CAP_CHANCE_MULTI_THROW = 1012;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_CHANCE_MULTI_THROW = 1012;</code>
      */
     const ITEM_EFFECT_CAP_CHANCE_MULTI_THROW = 1012;
     /**
-     * <code>ITEM_EFFECT_CAP_CHANCE_ALWAYS = 1013;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_CHANCE_ALWAYS = 1013;</code>
      */
     const ITEM_EFFECT_CAP_CHANCE_ALWAYS = 1013;
     /**
-     * <code>ITEM_EFFECT_CAP_CHANCE_SINGLE_THROW = 1014;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CAP_CHANCE_SINGLE_THROW = 1014;</code>
      */
     const ITEM_EFFECT_CAP_CHANCE_SINGLE_THROW = 1014;
     /**
-     * <code>ITEM_EFFECT_CANDY_AWARD = 1015;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_CANDY_AWARD = 1015;</code>
      */
     const ITEM_EFFECT_CANDY_AWARD = 1015;
     /**
-     * <code>ITEM_EFFECT_FULL_MOTIVATION = 1016;</code>
+     * Generated from protobuf enum <code>ITEM_EFFECT_FULL_MOTIVATION = 1016;</code>
      */
     const ITEM_EFFECT_FULL_MOTIVATION = 1016;
 }

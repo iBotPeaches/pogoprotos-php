@@ -4,104 +4,13 @@
 
 namespace POGOProtos\Data\Gym;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Gym.GymDefender.DeploymentTotals</code>
- */
-class GymDefender_DeploymentTotals extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>int32 times_fed = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Gym\GymDefender\DeploymentTotals instead.
+     * @deprecated
      */
-    private $times_fed = 0;
-    /**
-     * <code>int32 battles_won = 2;</code>
-     */
-    private $battles_won = 0;
-    /**
-     * <code>int32 battles_lost = 3;</code>
-     */
-    private $battles_lost = 0;
-    /**
-     * <code>int64 deployment_duration_ms = 4;</code>
-     */
-    private $deployment_duration_ms = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Gym\GymDefender::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>int32 times_fed = 1;</code>
-     */
-    public function getTimesFed()
-    {
-        return $this->times_fed;
-    }
-
-    /**
-     * <code>int32 times_fed = 1;</code>
-     */
-    public function setTimesFed($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->times_fed = $var;
-    }
-
-    /**
-     * <code>int32 battles_won = 2;</code>
-     */
-    public function getBattlesWon()
-    {
-        return $this->battles_won;
-    }
-
-    /**
-     * <code>int32 battles_won = 2;</code>
-     */
-    public function setBattlesWon($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->battles_won = $var;
-    }
-
-    /**
-     * <code>int32 battles_lost = 3;</code>
-     */
-    public function getBattlesLost()
-    {
-        return $this->battles_lost;
-    }
-
-    /**
-     * <code>int32 battles_lost = 3;</code>
-     */
-    public function setBattlesLost($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->battles_lost = $var;
-    }
-
-    /**
-     * <code>int64 deployment_duration_ms = 4;</code>
-     */
-    public function getDeploymentDurationMs()
-    {
-        return $this->deployment_duration_ms;
-    }
-
-    /**
-     * <code>int64 deployment_duration_ms = 4;</code>
-     */
-    public function setDeploymentDurationMs($var)
-    {
-        GPBUtil::checkInt64($var);
-        $this->deployment_duration_ms = $var;
-    }
-
+    class GymDefender_DeploymentTotals {}
 }
+class_exists(GymDefender\DeploymentTotals::class);
+@trigger_error('POGOProtos\Data\Gym\GymDefender_DeploymentTotals is deprecated and will be removed in the next major release. Use POGOProtos\Data\Gym\GymDefender\DeploymentTotals instead', E_USER_DEPRECATED);
 

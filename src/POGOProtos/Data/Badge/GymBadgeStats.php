@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Badge.GymBadgeStats</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Badge.GymBadgeStats</code>
  */
 class GymBadgeStats extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>uint64 total_time_defended_ms = 1;</code>
+     * Generated from protobuf field <code>uint64 total_time_defended_ms = 1;</code>
      */
     private $total_time_defended_ms = 0;
     /**
-     * <code>uint32 num_battles_won = 2;</code>
+     * Generated from protobuf field <code>uint32 num_battles_won = 2;</code>
      */
     private $num_battles_won = 0;
     /**
-     * <code>uint32 num_battles_lost = 5;</code>
+     * Generated from protobuf field <code>uint32 num_battles_lost = 5;</code>
      */
     private $num_battles_lost = 0;
     /**
-     * <code>uint32 num_berries_fed = 3;</code>
+     * Generated from protobuf field <code>uint32 num_berries_fed = 3;</code>
      */
     private $num_berries_fed = 0;
     /**
-     * <code>uint32 num_deploys = 4;</code>
+     * Generated from protobuf field <code>uint32 num_deploys = 4;</code>
      */
     private $num_deploys = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Gym.GymBattle gym_battles = 15;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gym.GymBattle gym_battles = 15;</code>
      */
     private $gym_battles;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $total_time_defended_ms
+     *     @type int $num_battles_won
+     *     @type int $num_battles_lost
+     *     @type int $num_berries_fed
+     *     @type int $num_deploys
+     *     @type \POGOProtos\Data\Gym\GymBattle[]|\Google\Protobuf\Internal\RepeatedField $gym_battles
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Badge\GymBadgeStats::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>uint64 total_time_defended_ms = 1;</code>
+     * Generated from protobuf field <code>uint64 total_time_defended_ms = 1;</code>
+     * @return int|string
      */
     public function getTotalTimeDefendedMs()
     {
@@ -52,16 +67,21 @@ class GymBadgeStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 total_time_defended_ms = 1;</code>
+     * Generated from protobuf field <code>uint64 total_time_defended_ms = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTotalTimeDefendedMs($var)
     {
         GPBUtil::checkUint64($var);
         $this->total_time_defended_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint32 num_battles_won = 2;</code>
+     * Generated from protobuf field <code>uint32 num_battles_won = 2;</code>
+     * @return int
      */
     public function getNumBattlesWon()
     {
@@ -69,16 +89,21 @@ class GymBadgeStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 num_battles_won = 2;</code>
+     * Generated from protobuf field <code>uint32 num_battles_won = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumBattlesWon($var)
     {
         GPBUtil::checkUint32($var);
         $this->num_battles_won = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint32 num_battles_lost = 5;</code>
+     * Generated from protobuf field <code>uint32 num_battles_lost = 5;</code>
+     * @return int
      */
     public function getNumBattlesLost()
     {
@@ -86,16 +111,21 @@ class GymBadgeStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 num_battles_lost = 5;</code>
+     * Generated from protobuf field <code>uint32 num_battles_lost = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumBattlesLost($var)
     {
         GPBUtil::checkUint32($var);
         $this->num_battles_lost = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint32 num_berries_fed = 3;</code>
+     * Generated from protobuf field <code>uint32 num_berries_fed = 3;</code>
+     * @return int
      */
     public function getNumBerriesFed()
     {
@@ -103,16 +133,21 @@ class GymBadgeStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 num_berries_fed = 3;</code>
+     * Generated from protobuf field <code>uint32 num_berries_fed = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumBerriesFed($var)
     {
         GPBUtil::checkUint32($var);
         $this->num_berries_fed = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint32 num_deploys = 4;</code>
+     * Generated from protobuf field <code>uint32 num_deploys = 4;</code>
+     * @return int
      */
     public function getNumDeploys()
     {
@@ -120,16 +155,21 @@ class GymBadgeStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 num_deploys = 4;</code>
+     * Generated from protobuf field <code>uint32 num_deploys = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumDeploys($var)
     {
         GPBUtil::checkUint32($var);
         $this->num_deploys = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gym.GymBattle gym_battles = 15;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gym.GymBattle gym_battles = 15;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getGymBattles()
     {
@@ -137,12 +177,16 @@ class GymBadgeStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gym.GymBattle gym_battles = 15;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gym.GymBattle gym_battles = 15;</code>
+     * @param \POGOProtos\Data\Gym\GymBattle[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGymBattles(&$var)
+    public function setGymBattles($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gym\GymBattle::class);
-        $this->gym_battles = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gym\GymBattle::class);
+        $this->gym_battles = $arr;
+
+        return $this;
     }
 
 }

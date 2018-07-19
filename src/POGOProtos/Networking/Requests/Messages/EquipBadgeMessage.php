@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.EquipBadgeMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.EquipBadgeMessage</code>
  */
 class EquipBadgeMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
      */
     private $badge_type = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $badge_type
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\EquipBadgeMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * @return int
      */
     public function getBadgeType()
     {
@@ -32,12 +42,16 @@ class EquipBadgeMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBadgeType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\BadgeType::class);
         $this->badge_type = $var;
+
+        return $this;
     }
 
 }

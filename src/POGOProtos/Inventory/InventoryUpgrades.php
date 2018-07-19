@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.InventoryUpgrades</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.InventoryUpgrades</code>
  */
 class InventoryUpgrades extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Inventory.InventoryUpgrade inventory_upgrades = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.InventoryUpgrade inventory_upgrades = 1;</code>
      */
     private $inventory_upgrades;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Inventory\InventoryUpgrade[]|\Google\Protobuf\Internal\RepeatedField $inventory_upgrades
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\InventoryUpgrades::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.InventoryUpgrade inventory_upgrades = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.InventoryUpgrade inventory_upgrades = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getInventoryUpgrades()
     {
@@ -32,12 +42,16 @@ class InventoryUpgrades extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.InventoryUpgrade inventory_upgrades = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.InventoryUpgrade inventory_upgrades = 1;</code>
+     * @param \POGOProtos\Inventory\InventoryUpgrade[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setInventoryUpgrades(&$var)
+    public function setInventoryUpgrades($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\InventoryUpgrade::class);
-        $this->inventory_upgrades = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\InventoryUpgrade::class);
+        $this->inventory_upgrades = $arr;
+
+        return $this;
     }
 
 }

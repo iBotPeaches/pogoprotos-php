@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetBuddyWalkedResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetBuddyWalkedResponse</code>
  */
 class GetBuddyWalkedResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
      */
     private $success = false;
     /**
-     * <code>.POGOProtos.Enums.PokemonFamilyId family_candy_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId family_candy_id = 2;</code>
      */
     private $family_candy_id = 0;
     /**
-     * <code>int32 candy_earned_count = 3;</code>
+     * Generated from protobuf field <code>int32 candy_earned_count = 3;</code>
      */
     private $candy_earned_count = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $success
+     *     @type int $family_candy_id
+     *     @type int $candy_earned_count
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetBuddyWalkedResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @return bool
      */
     public function getSuccess()
     {
@@ -40,16 +52,21 @@ class GetBuddyWalkedResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSuccess($var)
     {
         GPBUtil::checkBool($var);
         $this->success = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonFamilyId family_candy_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId family_candy_id = 2;</code>
+     * @return int
      */
     public function getFamilyCandyId()
     {
@@ -57,16 +74,21 @@ class GetBuddyWalkedResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonFamilyId family_candy_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId family_candy_id = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setFamilyCandyId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonFamilyId::class);
         $this->family_candy_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 candy_earned_count = 3;</code>
+     * Generated from protobuf field <code>int32 candy_earned_count = 3;</code>
+     * @return int
      */
     public function getCandyEarnedCount()
     {
@@ -74,12 +96,16 @@ class GetBuddyWalkedResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 candy_earned_count = 3;</code>
+     * Generated from protobuf field <code>int32 candy_earned_count = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCandyEarnedCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->candy_earned_count = $var;
+
+        return $this;
     }
 
 }

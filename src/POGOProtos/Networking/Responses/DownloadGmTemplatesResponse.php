@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.DownloadGmTemplatesResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.DownloadGmTemplatesResponse</code>
  */
 class DownloadGmTemplatesResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.ClientGameMasterTemplate template = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.ClientGameMasterTemplate template = 2;</code>
      */
     private $template;
     /**
-     * <code>repeated string deleted_template = 3;</code>
+     * Generated from protobuf field <code>repeated string deleted_template = 3;</code>
      */
     private $deleted_template;
     /**
-     * <code>fixed64 batch_id = 4;</code>
+     * Generated from protobuf field <code>fixed64 batch_id = 4;</code>
      */
     private $batch_id = 0;
     /**
-     * <code>int32 page_offset = 5;</code>
+     * Generated from protobuf field <code>int32 page_offset = 5;</code>
      */
     private $page_offset = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Networking\Responses\DownloadGmTemplatesResponse\ClientGameMasterTemplate[]|\Google\Protobuf\Internal\RepeatedField $template
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $deleted_template
+     *     @type int|string $batch_id
+     *     @type int $page_offset
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\DownloadGmTemplatesResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -48,16 +62,21 @@ class DownloadGmTemplatesResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\DownloadGmTemplatesResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.ClientGameMasterTemplate template = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.ClientGameMasterTemplate template = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getTemplate()
     {
@@ -65,16 +84,21 @@ class DownloadGmTemplatesResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.ClientGameMasterTemplate template = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.ClientGameMasterTemplate template = 2;</code>
+     * @param \POGOProtos\Networking\Responses\DownloadGmTemplatesResponse\ClientGameMasterTemplate[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTemplate(&$var)
+    public function setTemplate($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Responses\DownloadGmTemplatesResponse_ClientGameMasterTemplate::class);
-        $this->template = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Responses\DownloadGmTemplatesResponse\ClientGameMasterTemplate::class);
+        $this->template = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated string deleted_template = 3;</code>
+     * Generated from protobuf field <code>repeated string deleted_template = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getDeletedTemplate()
     {
@@ -82,16 +106,21 @@ class DownloadGmTemplatesResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string deleted_template = 3;</code>
+     * Generated from protobuf field <code>repeated string deleted_template = 3;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDeletedTemplate(&$var)
+    public function setDeletedTemplate($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->deleted_template = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->deleted_template = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>fixed64 batch_id = 4;</code>
+     * Generated from protobuf field <code>fixed64 batch_id = 4;</code>
+     * @return int|string
      */
     public function getBatchId()
     {
@@ -99,16 +128,21 @@ class DownloadGmTemplatesResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 batch_id = 4;</code>
+     * Generated from protobuf field <code>fixed64 batch_id = 4;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setBatchId($var)
     {
         GPBUtil::checkUint64($var);
         $this->batch_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 page_offset = 5;</code>
+     * Generated from protobuf field <code>int32 page_offset = 5;</code>
+     * @return int
      */
     public function getPageOffset()
     {
@@ -116,12 +150,16 @@ class DownloadGmTemplatesResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 page_offset = 5;</code>
+     * Generated from protobuf field <code>int32 page_offset = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPageOffset($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_offset = $var;
+
+        return $this;
     }
 
 }

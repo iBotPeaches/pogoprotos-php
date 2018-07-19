@@ -4,42 +4,13 @@
 
 namespace POGOProtos\Networking\Responses\Social;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.Social.AcceptFriendInviteResponse.Result</code>
- */
-class AcceptFriendInviteResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\Social\AcceptFriendInviteResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_UNKNOWN = 2;</code>
-     */
-    const ERROR_UNKNOWN = 2;
-    /**
-     * <code>ERROR_INVITE_DOES_NOT_EXIST = 3;</code>
-     */
-    const ERROR_INVITE_DOES_NOT_EXIST = 3;
-    /**
-     * <code>ERROR_MAX_FRIENDS_LIMIT_REACHED_DELETED = 4;</code>
-     */
-    const ERROR_MAX_FRIENDS_LIMIT_REACHED_DELETED = 4;
-    /**
-     * <code>ERROR_INVITE_HAS_BEEN_CANCELLED = 5;</code>
-     */
-    const ERROR_INVITE_HAS_BEEN_CANCELLED = 5;
-    /**
-     * <code>ERROR_SENDER_HAS_MAX_FRIENDS = 6;</code>
-     */
-    const ERROR_SENDER_HAS_MAX_FRIENDS = 6;
-    /**
-     * <code>ERROR_RECEIVER_HAS_MAX_FRIENDS = 7;</code>
-     */
-    const ERROR_RECEIVER_HAS_MAX_FRIENDS = 7;
+    class AcceptFriendInviteResponse_Result {}
 }
+class_exists(AcceptFriendInviteResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\Social\AcceptFriendInviteResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\Social\AcceptFriendInviteResponse\Result instead', E_USER_DEPRECATED);
 

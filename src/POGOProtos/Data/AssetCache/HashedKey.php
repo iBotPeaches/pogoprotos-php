@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.AssetCache.HashedKey</code>
+ * Generated from protobuf message <code>POGOProtos.Data.AssetCache.HashedKey</code>
  */
 class HashedKey extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string hashed_key_raw = 1;</code>
+     * Generated from protobuf field <code>string hashed_key_raw = 1;</code>
      */
     private $hashed_key_raw = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $hashed_key_raw
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\AssetCache\HashedKey::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string hashed_key_raw = 1;</code>
+     * Generated from protobuf field <code>string hashed_key_raw = 1;</code>
+     * @return string
      */
     public function getHashedKeyRaw()
     {
@@ -32,12 +42,16 @@ class HashedKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string hashed_key_raw = 1;</code>
+     * Generated from protobuf field <code>string hashed_key_raw = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setHashedKeyRaw($var)
     {
         GPBUtil::checkString($var, True);
         $this->hashed_key_raw = $var;
+
+        return $this;
     }
 
 }

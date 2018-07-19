@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Ditto.ChannelAuthEventParams</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Ditto.ChannelAuthEventParams</code>
  */
 class ChannelAuthEventParams extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>uint32 status = 1;</code>
+     * Generated from protobuf field <code>uint32 status = 1;</code>
      */
     private $status = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Ditto\ChannelAuthEventParams::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>uint32 status = 1;</code>
+     * Generated from protobuf field <code>uint32 status = 1;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -32,12 +42,16 @@ class ChannelAuthEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 status = 1;</code>
+     * Generated from protobuf field <code>uint32 status = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkUint32($var);
         $this->status = $var;
+
+        return $this;
     }
 
 }

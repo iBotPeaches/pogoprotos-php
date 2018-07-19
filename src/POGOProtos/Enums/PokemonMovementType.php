@@ -5,36 +5,36 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.PokemonMovementType</code>
+ * Protobuf type <code>POGOProtos.Enums.PokemonMovementType</code>
  */
 class PokemonMovementType
 {
     /**
-     * <code>MOVEMENT_STATIC = 0;</code>
+     * Generated from protobuf enum <code>MOVEMENT_STATIC = 0;</code>
      */
     const MOVEMENT_STATIC = 0;
     /**
-     * <code>MOVEMENT_JUMP = 1;</code>
+     * Generated from protobuf enum <code>MOVEMENT_JUMP = 1;</code>
      */
     const MOVEMENT_JUMP = 1;
     /**
-     * <code>MOVEMENT_VERTICAL = 2;</code>
+     * Generated from protobuf enum <code>MOVEMENT_VERTICAL = 2;</code>
      */
     const MOVEMENT_VERTICAL = 2;
     /**
-     * <code>MOVEMENT_PSYCHIC = 3;</code>
+     * Generated from protobuf enum <code>MOVEMENT_PSYCHIC = 3;</code>
      */
     const MOVEMENT_PSYCHIC = 3;
     /**
-     * <code>MOVEMENT_ELECTRIC = 4;</code>
+     * Generated from protobuf enum <code>MOVEMENT_ELECTRIC = 4;</code>
      */
     const MOVEMENT_ELECTRIC = 4;
     /**
-     * <code>MOVEMENT_FLYING = 5;</code>
+     * Generated from protobuf enum <code>MOVEMENT_FLYING = 5;</code>
      */
     const MOVEMENT_FLYING = 5;
     /**
-     * <code>MOVEMENT_HOVERING = 6;</code>
+     * Generated from protobuf enum <code>MOVEMENT_HOVERING = 6;</code>
      */
     const MOVEMENT_HOVERING = 6;
 }

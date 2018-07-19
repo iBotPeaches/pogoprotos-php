@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.AttackRaidBattleMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.AttackRaidBattleMessage</code>
  */
 class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string gym_id = 1;</code>
+     * Generated from protobuf field <code>string gym_id = 1;</code>
      */
     private $gym_id = '';
     /**
-     * <code>string battle_id = 2;</code>
+     * Generated from protobuf field <code>string battle_id = 2;</code>
      */
     private $battle_id = '';
     /**
-     * <code>repeated .POGOProtos.Data.Battle.BattleAction attacker_actions = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Battle.BattleAction attacker_actions = 3;</code>
      */
     private $attacker_actions;
     /**
-     * <code>.POGOProtos.Data.Battle.BattleAction last_retrieved_action = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleAction last_retrieved_action = 4;</code>
      */
     private $last_retrieved_action = null;
     /**
-     * <code>int64 timestamp_ms = 5;</code>
+     * Generated from protobuf field <code>int64 timestamp_ms = 5;</code>
      */
     private $timestamp_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $gym_id
+     *     @type string $battle_id
+     *     @type \POGOProtos\Data\Battle\BattleAction[]|\Google\Protobuf\Internal\RepeatedField $attacker_actions
+     *     @type \POGOProtos\Data\Battle\BattleAction $last_retrieved_action
+     *     @type int|string $timestamp_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\AttackRaidBattleMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string gym_id = 1;</code>
+     * Generated from protobuf field <code>string gym_id = 1;</code>
+     * @return string
      */
     public function getGymId()
     {
@@ -48,16 +62,21 @@ class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string gym_id = 1;</code>
+     * Generated from protobuf field <code>string gym_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setGymId($var)
     {
         GPBUtil::checkString($var, True);
         $this->gym_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string battle_id = 2;</code>
+     * Generated from protobuf field <code>string battle_id = 2;</code>
+     * @return string
      */
     public function getBattleId()
     {
@@ -65,16 +84,21 @@ class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string battle_id = 2;</code>
+     * Generated from protobuf field <code>string battle_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setBattleId($var)
     {
         GPBUtil::checkString($var, True);
         $this->battle_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Battle.BattleAction attacker_actions = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Battle.BattleAction attacker_actions = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAttackerActions()
     {
@@ -82,16 +106,21 @@ class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Battle.BattleAction attacker_actions = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Battle.BattleAction attacker_actions = 3;</code>
+     * @param \POGOProtos\Data\Battle\BattleAction[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAttackerActions(&$var)
+    public function setAttackerActions($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Battle\BattleAction::class);
-        $this->attacker_actions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Battle\BattleAction::class);
+        $this->attacker_actions = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleAction last_retrieved_action = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleAction last_retrieved_action = 4;</code>
+     * @return \POGOProtos\Data\Battle\BattleAction
      */
     public function getLastRetrievedAction()
     {
@@ -99,16 +128,21 @@ class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleAction last_retrieved_action = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleAction last_retrieved_action = 4;</code>
+     * @param \POGOProtos\Data\Battle\BattleAction $var
+     * @return $this
      */
-    public function setLastRetrievedAction(&$var)
+    public function setLastRetrievedAction($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleAction::class);
         $this->last_retrieved_action = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 timestamp_ms = 5;</code>
+     * Generated from protobuf field <code>int64 timestamp_ms = 5;</code>
+     * @return int|string
      */
     public function getTimestampMs()
     {
@@ -116,12 +150,16 @@ class AttackRaidBattleMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 timestamp_ms = 5;</code>
+     * Generated from protobuf field <code>int64 timestamp_ms = 5;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->timestamp_ms = $var;
+
+        return $this;
     }
 
 }

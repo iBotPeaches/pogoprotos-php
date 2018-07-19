@@ -4,50 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.JoinLobbyResponse.Result</code>
- */
-class JoinLobbyResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\JoinLobbyResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_NOT_IN_RANGE = 2;</code>
-     */
-    const ERROR_NOT_IN_RANGE = 2;
-    /**
-     * <code>ERROR_RAID_UNAVAILABLE = 3;</code>
-     */
-    const ERROR_RAID_UNAVAILABLE = 3;
-    /**
-     * <code>ERROR_RAID_COMPLETED = 4;</code>
-     */
-    const ERROR_RAID_COMPLETED = 4;
-    /**
-     * <code>ERROR_NO_AVAILABLE_LOBBIES = 5;</code>
-     */
-    const ERROR_NO_AVAILABLE_LOBBIES = 5;
-    /**
-     * <code>ERROR_PLAYER_BELOW_MINIMUM_LEVEL = 6;</code>
-     */
-    const ERROR_PLAYER_BELOW_MINIMUM_LEVEL = 6;
-    /**
-     * <code>ERROR_POI_INACCESSIBLE = 7;</code>
-     */
-    const ERROR_POI_INACCESSIBLE = 7;
-    /**
-     * <code>ERROR_GYM_LOCKOUT = 8;</code>
-     */
-    const ERROR_GYM_LOCKOUT = 8;
-    /**
-     * <code>ERROR_NO_TICKET = 9;</code>
-     */
-    const ERROR_NO_TICKET = 9;
+    class JoinLobbyResponse_Result {}
 }
+class_exists(JoinLobbyResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\JoinLobbyResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\JoinLobbyResponse\Result instead', E_USER_DEPRECATED);
 

@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.RemoveQuestResponse.Status</code>
- */
-class RemoveQuestResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\RemoveQuestResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_QUEST_NOT_FOUND = 2;</code>
-     */
-    const ERROR_QUEST_NOT_FOUND = 2;
-    /**
-     * <code>ERROR_STORY_QUEST_NOT_REMOVABLE = 3;</code>
-     */
-    const ERROR_STORY_QUEST_NOT_REMOVABLE = 3;
+    class RemoveQuestResponse_Status {}
 }
+class_exists(RemoveQuestResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\RemoveQuestResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\RemoveQuestResponse\Status instead', E_USER_DEPRECATED);
 

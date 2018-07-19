@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GymFeedPokemonMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GymFeedPokemonMessage</code>
  */
 class GymFeedPokemonMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
      */
     private $item = 0;
     /**
-     * <code>int32 starting_quantity = 2;</code>
+     * Generated from protobuf field <code>int32 starting_quantity = 2;</code>
      */
     private $starting_quantity = 0;
     /**
-     * <code>string gym_id = 3;</code>
+     * Generated from protobuf field <code>string gym_id = 3;</code>
      */
     private $gym_id = '';
     /**
-     * <code>fixed64 pokemon_id = 4;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 4;</code>
      */
     private $pokemon_id = 0;
     /**
-     * <code>double player_lat_degrees = 5;</code>
+     * Generated from protobuf field <code>double player_lat_degrees = 5;</code>
      */
     private $player_lat_degrees = 0.0;
     /**
-     * <code>double player_lng_degrees = 6;</code>
+     * Generated from protobuf field <code>double player_lng_degrees = 6;</code>
      */
     private $player_lng_degrees = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $item
+     *     @type int $starting_quantity
+     *     @type string $gym_id
+     *     @type int|string $pokemon_id
+     *     @type float $player_lat_degrees
+     *     @type float $player_lng_degrees
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GymFeedPokemonMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * @return int
      */
     public function getItem()
     {
@@ -52,16 +67,21 @@ class GymFeedPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItem($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 starting_quantity = 2;</code>
+     * Generated from protobuf field <code>int32 starting_quantity = 2;</code>
+     * @return int
      */
     public function getStartingQuantity()
     {
@@ -69,16 +89,21 @@ class GymFeedPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 starting_quantity = 2;</code>
+     * Generated from protobuf field <code>int32 starting_quantity = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStartingQuantity($var)
     {
         GPBUtil::checkInt32($var);
         $this->starting_quantity = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string gym_id = 3;</code>
+     * Generated from protobuf field <code>string gym_id = 3;</code>
+     * @return string
      */
     public function getGymId()
     {
@@ -86,16 +111,21 @@ class GymFeedPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string gym_id = 3;</code>
+     * Generated from protobuf field <code>string gym_id = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setGymId($var)
     {
         GPBUtil::checkString($var, True);
         $this->gym_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>fixed64 pokemon_id = 4;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 4;</code>
+     * @return int|string
      */
     public function getPokemonId()
     {
@@ -103,16 +133,21 @@ class GymFeedPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 pokemon_id = 4;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 4;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_lat_degrees = 5;</code>
+     * Generated from protobuf field <code>double player_lat_degrees = 5;</code>
+     * @return float
      */
     public function getPlayerLatDegrees()
     {
@@ -120,16 +155,21 @@ class GymFeedPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_lat_degrees = 5;</code>
+     * Generated from protobuf field <code>double player_lat_degrees = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLatDegrees($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_lat_degrees = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_lng_degrees = 6;</code>
+     * Generated from protobuf field <code>double player_lng_degrees = 6;</code>
+     * @return float
      */
     public function getPlayerLngDegrees()
     {
@@ -137,12 +177,16 @@ class GymFeedPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_lng_degrees = 6;</code>
+     * Generated from protobuf field <code>double player_lng_degrees = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLngDegrees($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_lng_degrees = $var;
+
+        return $this;
     }
 
 }

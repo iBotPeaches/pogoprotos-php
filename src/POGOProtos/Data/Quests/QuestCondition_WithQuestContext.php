@@ -4,41 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestCondition.WithQuestContext</code>
- */
-class QuestCondition_WithQuestContext extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithQuestContext.Context context = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestCondition\WithQuestContext instead.
+     * @deprecated
      */
-    private $context = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestCondition::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithQuestContext.Context context = 1;</code>
-     */
-    public function getContext()
-    {
-        return $this->context;
-    }
-
-    /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithQuestContext.Context context = 1;</code>
-     */
-    public function setContext($var)
-    {
-        GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\QuestCondition_WithQuestContext_Context::class);
-        $this->context = $var;
-    }
-
+    class QuestCondition_WithQuestContext {}
 }
+class_exists(QuestCondition\WithQuestContext::class);
+@trigger_error('POGOProtos\Data\Quests\QuestCondition_WithQuestContext is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestCondition\WithQuestContext instead', E_USER_DEPRECATED);
 

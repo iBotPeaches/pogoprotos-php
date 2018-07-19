@@ -5,16 +5,16 @@
 namespace POGOProtos\Map\Fort;
 
 /**
- * Protobuf enum <code>POGOProtos.Map.Fort.FortRenderingType</code>
+ * Protobuf type <code>POGOProtos.Map.Fort.FortRenderingType</code>
  */
 class FortRenderingType
 {
     /**
-     * <code>DEFAULT = 0;</code>
+     * Generated from protobuf enum <code>DEFAULT = 0;</code>
      */
-    const DEFAULT = 0;
+    const PBDEFAULT = 0;
     /**
-     * <code>INTERNAL_TEST = 1;</code>
+     * Generated from protobuf enum <code>INTERNAL_TEST = 1;</code>
      */
     const INTERNAL_TEST = 1;
 }

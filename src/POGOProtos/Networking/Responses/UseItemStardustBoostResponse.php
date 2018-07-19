@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.UseItemStardustBoostResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.UseItemStardustBoostResponse</code>
  */
 class UseItemStardustBoostResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.UseItemStardustBoostResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.UseItemStardustBoostResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Inventory.AppliedItems applied_items = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.AppliedItems applied_items = 2;</code>
      */
     private $applied_items = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Inventory\AppliedItems $applied_items
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\UseItemStardustBoostResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.UseItemStardustBoostResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.UseItemStardustBoostResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class UseItemStardustBoostResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.UseItemStardustBoostResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.UseItemStardustBoostResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\UseItemStardustBoostResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.AppliedItems applied_items = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.AppliedItems applied_items = 2;</code>
+     * @return \POGOProtos\Inventory\AppliedItems
      */
     public function getAppliedItems()
     {
@@ -53,12 +69,16 @@ class UseItemStardustBoostResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.AppliedItems applied_items = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.AppliedItems applied_items = 2;</code>
+     * @param \POGOProtos\Inventory\AppliedItems $var
+     * @return $this
      */
-    public function setAppliedItems(&$var)
+    public function setAppliedItems($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\AppliedItems::class);
         $this->applied_items = $var;
+
+        return $this;
     }
 
 }

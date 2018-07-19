@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Networking\Responses\Social;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Callee</code>
- */
-class GetFriendDetailsResponse_Callee extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>repeated int32 callee_id = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse\Callee instead.
+     * @deprecated
      */
-    private $callee_id;
-    /**
-     * <code>string player_id = 2;</code>
-     */
-    private $player_id = '';
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>repeated int32 callee_id = 1;</code>
-     */
-    public function getCalleeId()
-    {
-        return $this->callee_id;
-    }
-
-    /**
-     * <code>repeated int32 callee_id = 1;</code>
-     */
-    public function setCalleeId(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->callee_id = $var;
-    }
-
-    /**
-     * <code>string player_id = 2;</code>
-     */
-    public function getPlayerId()
-    {
-        return $this->player_id;
-    }
-
-    /**
-     * <code>string player_id = 2;</code>
-     */
-    public function setPlayerId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->player_id = $var;
-    }
-
+    class GetFriendDetailsResponse_Callee {}
 }
+class_exists(GetFriendDetailsResponse\Callee::class);
+@trigger_error('POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse_Callee is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse\Callee instead', E_USER_DEPRECATED);
 

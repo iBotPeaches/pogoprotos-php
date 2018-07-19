@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.MarkReadNewsArticleResponse.Result</code>
- */
-class MarkReadNewsArticleResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\MarkReadNewsArticleResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>NO_NEWS_FOUND = 2;</code>
-     */
-    const NO_NEWS_FOUND = 2;
+    class MarkReadNewsArticleResponse_Result {}
 }
+class_exists(MarkReadNewsArticleResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\MarkReadNewsArticleResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\MarkReadNewsArticleResponse\Result instead', E_USER_DEPRECATED);
 

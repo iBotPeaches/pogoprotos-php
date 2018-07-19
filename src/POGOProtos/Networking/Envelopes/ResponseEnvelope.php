@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Envelopes.ResponseEnvelope</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Envelopes.ResponseEnvelope</code>
  */
 class ResponseEnvelope extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Envelopes.ResponseEnvelope.StatusCode status_code = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.ResponseEnvelope.StatusCode status_code = 1;</code>
      */
     private $status_code = 0;
     /**
-     * <code>uint64 request_id = 2;</code>
+     * Generated from protobuf field <code>uint64 request_id = 2;</code>
      */
     private $request_id = 0;
     /**
-     * <code>string api_url = 3;</code>
+     * Generated from protobuf field <code>string api_url = 3;</code>
      */
     private $api_url = '';
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.ResponseEnvelope.PlatformResponse platform_returns = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.ResponseEnvelope.PlatformResponse platform_returns = 6;</code>
      */
     private $platform_returns;
     /**
-     * <code>.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 7;</code>
      */
     private $auth_ticket = null;
     /**
-     * <code>repeated bytes returns = 100;</code>
+     * Generated from protobuf field <code>repeated bytes returns = 100;</code>
      */
     private $returns;
     /**
-     * <code>string error = 101;</code>
+     * Generated from protobuf field <code>string error = 101;</code>
      */
     private $error = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status_code
+     *     @type int|string $request_id
+     *     @type string $api_url
+     *     @type \POGOProtos\Networking\Envelopes\ResponseEnvelope\PlatformResponse[]|\Google\Protobuf\Internal\RepeatedField $platform_returns
+     *     @type \POGOProtos\Networking\Envelopes\AuthTicket $auth_ticket
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $returns
+     *     @type string $error
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Envelopes\ResponseEnvelope::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Envelopes.ResponseEnvelope.StatusCode status_code = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.ResponseEnvelope.StatusCode status_code = 1;</code>
+     * @return int
      */
     public function getStatusCode()
     {
@@ -56,16 +72,21 @@ class ResponseEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Envelopes.ResponseEnvelope.StatusCode status_code = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.ResponseEnvelope.StatusCode status_code = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatusCode($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Envelopes\ResponseEnvelope_StatusCode::class);
         $this->status_code = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 request_id = 2;</code>
+     * Generated from protobuf field <code>uint64 request_id = 2;</code>
+     * @return int|string
      */
     public function getRequestId()
     {
@@ -73,16 +94,21 @@ class ResponseEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 request_id = 2;</code>
+     * Generated from protobuf field <code>uint64 request_id = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setRequestId($var)
     {
         GPBUtil::checkUint64($var);
         $this->request_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string api_url = 3;</code>
+     * Generated from protobuf field <code>string api_url = 3;</code>
+     * @return string
      */
     public function getApiUrl()
     {
@@ -90,16 +116,21 @@ class ResponseEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string api_url = 3;</code>
+     * Generated from protobuf field <code>string api_url = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setApiUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->api_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.ResponseEnvelope.PlatformResponse platform_returns = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.ResponseEnvelope.PlatformResponse platform_returns = 6;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPlatformReturns()
     {
@@ -107,16 +138,21 @@ class ResponseEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.ResponseEnvelope.PlatformResponse platform_returns = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.ResponseEnvelope.PlatformResponse platform_returns = 6;</code>
+     * @param \POGOProtos\Networking\Envelopes\ResponseEnvelope\PlatformResponse[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPlatformReturns(&$var)
+    public function setPlatformReturns($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\ResponseEnvelope_PlatformResponse::class);
-        $this->platform_returns = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\ResponseEnvelope\PlatformResponse::class);
+        $this->platform_returns = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 7;</code>
+     * @return \POGOProtos\Networking\Envelopes\AuthTicket
      */
     public function getAuthTicket()
     {
@@ -124,16 +160,21 @@ class ResponseEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 7;</code>
+     * @param \POGOProtos\Networking\Envelopes\AuthTicket $var
+     * @return $this
      */
-    public function setAuthTicket(&$var)
+    public function setAuthTicket($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Envelopes\AuthTicket::class);
         $this->auth_ticket = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated bytes returns = 100;</code>
+     * Generated from protobuf field <code>repeated bytes returns = 100;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getReturns()
     {
@@ -141,16 +182,21 @@ class ResponseEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated bytes returns = 100;</code>
+     * Generated from protobuf field <code>repeated bytes returns = 100;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setReturns(&$var)
+    public function setReturns($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::BYTES);
-        $this->returns = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::BYTES);
+        $this->returns = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>string error = 101;</code>
+     * Generated from protobuf field <code>string error = 101;</code>
+     * @return string
      */
     public function getError()
     {
@@ -158,12 +204,16 @@ class ResponseEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string error = 101;</code>
+     * Generated from protobuf field <code>string error = 101;</code>
+     * @param string $var
+     * @return $this
      */
     public function setError($var)
     {
         GPBUtil::checkString($var, True);
         $this->error = $var;
+
+        return $this;
     }
 
 }

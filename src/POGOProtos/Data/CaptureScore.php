@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.CaptureScore</code>
+ * Generated from protobuf message <code>POGOProtos.Data.CaptureScore</code>
  */
 class CaptureScore extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Enums.ActivityType activity_type = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.ActivityType activity_type = 1;</code>
      */
     private $activity_type;
     /**
-     * <code>repeated int32 exp = 2;</code>
+     * Generated from protobuf field <code>repeated int32 exp = 2;</code>
      */
     private $exp;
     /**
-     * <code>repeated int32 candy = 3;</code>
+     * Generated from protobuf field <code>repeated int32 candy = 3;</code>
      */
     private $candy;
     /**
-     * <code>repeated int32 stardust = 4;</code>
+     * Generated from protobuf field <code>repeated int32 stardust = 4;</code>
      */
     private $stardust;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $activity_type
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $exp
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $candy
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $stardust
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\CaptureScore::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.ActivityType activity_type = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.ActivityType activity_type = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getActivityType()
     {
@@ -44,16 +57,21 @@ class CaptureScore extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.ActivityType activity_type = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.ActivityType activity_type = 1;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setActivityType(&$var)
+    public function setActivityType($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\ActivityType::class);
-        $this->activity_type = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\ActivityType::class);
+        $this->activity_type = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 exp = 2;</code>
+     * Generated from protobuf field <code>repeated int32 exp = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getExp()
     {
@@ -61,16 +79,21 @@ class CaptureScore extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 exp = 2;</code>
+     * Generated from protobuf field <code>repeated int32 exp = 2;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setExp(&$var)
+    public function setExp($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->exp = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->exp = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 candy = 3;</code>
+     * Generated from protobuf field <code>repeated int32 candy = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCandy()
     {
@@ -78,16 +101,21 @@ class CaptureScore extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 candy = 3;</code>
+     * Generated from protobuf field <code>repeated int32 candy = 3;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCandy(&$var)
+    public function setCandy($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->candy = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->candy = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 stardust = 4;</code>
+     * Generated from protobuf field <code>repeated int32 stardust = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getStardust()
     {
@@ -95,12 +123,16 @@ class CaptureScore extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 stardust = 4;</code>
+     * Generated from protobuf field <code>repeated int32 stardust = 4;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setStardust(&$var)
+    public function setStardust($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->stardust = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->stardust = $arr;
+
+        return $this;
     }
 
 }

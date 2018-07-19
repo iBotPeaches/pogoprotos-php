@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestReward.ItemReward</code>
- */
-class QuestReward_ItemReward extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestReward\ItemReward instead.
+     * @deprecated
      */
-    private $item = 0;
-    /**
-     * <code>int32 amount = 2;</code>
-     */
-    private $amount = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestReward::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
-     */
-    public function getItem()
-    {
-        return $this->item;
-    }
-
-    /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
-     */
-    public function setItem($var)
-    {
-        GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
-        $this->item = $var;
-    }
-
-    /**
-     * <code>int32 amount = 2;</code>
-     */
-    public function getAmount()
-    {
-        return $this->amount;
-    }
-
-    /**
-     * <code>int32 amount = 2;</code>
-     */
-    public function setAmount($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->amount = $var;
-    }
-
+    class QuestReward_ItemReward {}
 }
+class_exists(QuestReward\ItemReward::class);
+@trigger_error('POGOProtos\Data\Quests\QuestReward_ItemReward is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestReward\ItemReward instead', E_USER_DEPRECATED);
 

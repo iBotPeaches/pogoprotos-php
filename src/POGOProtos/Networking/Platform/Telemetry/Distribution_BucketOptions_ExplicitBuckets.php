@@ -4,41 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Telemetry;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Platform.Telemetry.Distribution.BucketOptions.ExplicitBuckets</code>
- */
-class Distribution_BucketOptions_ExplicitBuckets extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>repeated int64 bounds = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Telemetry\Distribution\BucketOptions\ExplicitBuckets instead.
+     * @deprecated
      */
-    private $bounds;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Platform\Telemetry\Distribution::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>repeated int64 bounds = 1;</code>
-     */
-    public function getBounds()
-    {
-        return $this->bounds;
-    }
-
-    /**
-     * <code>repeated int64 bounds = 1;</code>
-     */
-    public function setBounds(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT64);
-        $this->bounds = $var;
-    }
-
+    class Distribution_BucketOptions_ExplicitBuckets {}
 }
+class_exists(Distribution\BucketOptions\ExplicitBuckets::class);
+@trigger_error('POGOProtos\Networking\Platform\Telemetry\Distribution_BucketOptions_ExplicitBuckets is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Telemetry\Distribution\BucketOptions\ExplicitBuckets instead', E_USER_DEPRECATED);
 

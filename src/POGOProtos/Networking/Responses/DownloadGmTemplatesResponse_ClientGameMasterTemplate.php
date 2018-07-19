@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.ClientGameMasterTemplate</code>
- */
-class DownloadGmTemplatesResponse_ClientGameMasterTemplate extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>string template_id = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\DownloadGmTemplatesResponse\ClientGameMasterTemplate instead.
+     * @deprecated
      */
-    private $template_id = '';
-    /**
-     * <code>bytes data = 2;</code>
-     */
-    private $data = '';
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Responses\DownloadGmTemplatesResponse::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>string template_id = 1;</code>
-     */
-    public function getTemplateId()
-    {
-        return $this->template_id;
-    }
-
-    /**
-     * <code>string template_id = 1;</code>
-     */
-    public function setTemplateId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->template_id = $var;
-    }
-
-    /**
-     * <code>bytes data = 2;</code>
-     */
-    public function getData()
-    {
-        return $this->data;
-    }
-
-    /**
-     * <code>bytes data = 2;</code>
-     */
-    public function setData($var)
-    {
-        GPBUtil::checkString($var, False);
-        $this->data = $var;
-    }
-
+    class DownloadGmTemplatesResponse_ClientGameMasterTemplate {}
 }
+class_exists(DownloadGmTemplatesResponse\ClientGameMasterTemplate::class);
+@trigger_error('POGOProtos\Networking\Responses\DownloadGmTemplatesResponse_ClientGameMasterTemplate is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\DownloadGmTemplatesResponse\ClientGameMasterTemplate instead', E_USER_DEPRECATED);
 

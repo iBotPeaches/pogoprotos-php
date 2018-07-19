@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.ClaimCodenameResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.ClaimCodenameResponse</code>
  */
 class ClaimCodenameResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string codename = 1;</code>
+     * Generated from protobuf field <code>string codename = 1;</code>
      */
     private $codename = '';
     /**
-     * <code>string user_message = 2;</code>
+     * Generated from protobuf field <code>string user_message = 2;</code>
      */
     private $user_message = '';
     /**
-     * <code>bool is_assignable = 3;</code>
+     * Generated from protobuf field <code>bool is_assignable = 3;</code>
      */
     private $is_assignable = false;
     /**
-     * <code>.POGOProtos.Networking.Responses.ClaimCodenameResponse.Status status = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.ClaimCodenameResponse.Status status = 4;</code>
      */
     private $status = 0;
     /**
-     * <code>.POGOProtos.Data.PlayerData updated_player = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PlayerData updated_player = 5;</code>
      */
     private $updated_player = null;
     /**
-     * <code>repeated string suggested_codenames = 6;</code>
+     * Generated from protobuf field <code>repeated string suggested_codenames = 6;</code>
      */
     private $suggested_codenames;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $codename
+     *     @type string $user_message
+     *     @type bool $is_assignable
+     *     @type int $status
+     *     @type \POGOProtos\Data\PlayerData $updated_player
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $suggested_codenames
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\ClaimCodenameResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string codename = 1;</code>
+     * Generated from protobuf field <code>string codename = 1;</code>
+     * @return string
      */
     public function getCodename()
     {
@@ -52,16 +67,21 @@ class ClaimCodenameResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string codename = 1;</code>
+     * Generated from protobuf field <code>string codename = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setCodename($var)
     {
         GPBUtil::checkString($var, True);
         $this->codename = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string user_message = 2;</code>
+     * Generated from protobuf field <code>string user_message = 2;</code>
+     * @return string
      */
     public function getUserMessage()
     {
@@ -69,16 +89,21 @@ class ClaimCodenameResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string user_message = 2;</code>
+     * Generated from protobuf field <code>string user_message = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setUserMessage($var)
     {
         GPBUtil::checkString($var, True);
         $this->user_message = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool is_assignable = 3;</code>
+     * Generated from protobuf field <code>bool is_assignable = 3;</code>
+     * @return bool
      */
     public function getIsAssignable()
     {
@@ -86,16 +111,21 @@ class ClaimCodenameResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool is_assignable = 3;</code>
+     * Generated from protobuf field <code>bool is_assignable = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsAssignable($var)
     {
         GPBUtil::checkBool($var);
         $this->is_assignable = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.ClaimCodenameResponse.Status status = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.ClaimCodenameResponse.Status status = 4;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -103,16 +133,21 @@ class ClaimCodenameResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.ClaimCodenameResponse.Status status = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.ClaimCodenameResponse.Status status = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\ClaimCodenameResponse_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PlayerData updated_player = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PlayerData updated_player = 5;</code>
+     * @return \POGOProtos\Data\PlayerData
      */
     public function getUpdatedPlayer()
     {
@@ -120,16 +155,21 @@ class ClaimCodenameResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PlayerData updated_player = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PlayerData updated_player = 5;</code>
+     * @param \POGOProtos\Data\PlayerData $var
+     * @return $this
      */
-    public function setUpdatedPlayer(&$var)
+    public function setUpdatedPlayer($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PlayerData::class);
         $this->updated_player = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated string suggested_codenames = 6;</code>
+     * Generated from protobuf field <code>repeated string suggested_codenames = 6;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getSuggestedCodenames()
     {
@@ -137,12 +177,16 @@ class ClaimCodenameResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string suggested_codenames = 6;</code>
+     * Generated from protobuf field <code>repeated string suggested_codenames = 6;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSuggestedCodenames(&$var)
+    public function setSuggestedCodenames($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->suggested_codenames = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->suggested_codenames = $arr;
+
+        return $this;
     }
 
 }

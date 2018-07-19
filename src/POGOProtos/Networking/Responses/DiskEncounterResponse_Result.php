@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.DiskEncounterResponse.Result</code>
- */
-class DiskEncounterResponse_Result
-{
+if (false) {
     /**
-     * <code>UNKNOWN = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\DiskEncounterResponse\Result instead.
+     * @deprecated
      */
-    const UNKNOWN = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>NOT_AVAILABLE = 2;</code>
-     */
-    const NOT_AVAILABLE = 2;
-    /**
-     * <code>NOT_IN_RANGE = 3;</code>
-     */
-    const NOT_IN_RANGE = 3;
-    /**
-     * <code>ENCOUNTER_ALREADY_FINISHED = 4;</code>
-     */
-    const ENCOUNTER_ALREADY_FINISHED = 4;
-    /**
-     * <code>POKEMON_INVENTORY_FULL = 5;</code>
-     */
-    const POKEMON_INVENTORY_FULL = 5;
+    class DiskEncounterResponse_Result {}
 }
+class_exists(DiskEncounterResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\DiskEncounterResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\DiskEncounterResponse\Result instead', E_USER_DEPRECATED);
 

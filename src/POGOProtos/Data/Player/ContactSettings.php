@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Player.ContactSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Player.ContactSettings</code>
  */
 class ContactSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool send_marketing_emails = 1;</code>
+     * Generated from protobuf field <code>bool send_marketing_emails = 1;</code>
      */
     private $send_marketing_emails = false;
     /**
-     * <code>bool send_push_notifications = 2;</code>
+     * Generated from protobuf field <code>bool send_push_notifications = 2;</code>
      */
     private $send_push_notifications = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $send_marketing_emails
+     *     @type bool $send_push_notifications
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Player\ContactSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool send_marketing_emails = 1;</code>
+     * Generated from protobuf field <code>bool send_marketing_emails = 1;</code>
+     * @return bool
      */
     public function getSendMarketingEmails()
     {
@@ -36,16 +47,21 @@ class ContactSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool send_marketing_emails = 1;</code>
+     * Generated from protobuf field <code>bool send_marketing_emails = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSendMarketingEmails($var)
     {
         GPBUtil::checkBool($var);
         $this->send_marketing_emails = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool send_push_notifications = 2;</code>
+     * Generated from protobuf field <code>bool send_push_notifications = 2;</code>
+     * @return bool
      */
     public function getSendPushNotifications()
     {
@@ -53,12 +69,16 @@ class ContactSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool send_push_notifications = 2;</code>
+     * Generated from protobuf field <code>bool send_push_notifications = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSendPushNotifications($var)
     {
         GPBUtil::checkBool($var);
         $this->send_push_notifications = $var;
+
+        return $this;
     }
 
 }

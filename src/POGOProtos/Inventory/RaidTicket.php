@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.RaidTicket</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.RaidTicket</code>
  */
 class RaidTicket extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string ticket_id = 1;</code>
+     * Generated from protobuf field <code>string ticket_id = 1;</code>
      */
     private $ticket_id = '';
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
      */
     private $item = 0;
     /**
-     * <code>.POGOProtos.Inventory.ExclusiveTicketInfo exclusive_info = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.ExclusiveTicketInfo exclusive_info = 4;</code>
      */
     private $exclusive_info = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $ticket_id
+     *     @type int $item
+     *     @type \POGOProtos\Inventory\ExclusiveTicketInfo $exclusive_info
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\RaidTicket::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string ticket_id = 1;</code>
+     * Generated from protobuf field <code>string ticket_id = 1;</code>
+     * @return string
      */
     public function getTicketId()
     {
@@ -40,16 +52,21 @@ class RaidTicket extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string ticket_id = 1;</code>
+     * Generated from protobuf field <code>string ticket_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setTicketId($var)
     {
         GPBUtil::checkString($var, True);
         $this->ticket_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
+     * @return int
      */
     public function getItem()
     {
@@ -57,16 +74,21 @@ class RaidTicket extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItem($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.ExclusiveTicketInfo exclusive_info = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.ExclusiveTicketInfo exclusive_info = 4;</code>
+     * @return \POGOProtos\Inventory\ExclusiveTicketInfo
      */
     public function getExclusiveInfo()
     {
@@ -74,12 +96,16 @@ class RaidTicket extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.ExclusiveTicketInfo exclusive_info = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.ExclusiveTicketInfo exclusive_info = 4;</code>
+     * @param \POGOProtos\Inventory\ExclusiveTicketInfo $var
+     * @return $this
      */
-    public function setExclusiveInfo(&$var)
+    public function setExclusiveInfo($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\ExclusiveTicketInfo::class);
         $this->exclusive_info = $var;
+
+        return $this;
     }
 
 }

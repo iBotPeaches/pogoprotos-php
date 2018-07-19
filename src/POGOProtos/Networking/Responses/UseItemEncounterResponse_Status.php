@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.UseItemEncounterResponse.Status</code>
- */
-class UseItemEncounterResponse_Status
-{
+if (false) {
     /**
-     * <code>SUCCESS = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\UseItemEncounterResponse\Status instead.
+     * @deprecated
      */
-    const SUCCESS = 0;
-    /**
-     * <code>ALREADY_COMPLETED = 1;</code>
-     */
-    const ALREADY_COMPLETED = 1;
-    /**
-     * <code>ACTIVE_ITEM_EXISTS = 2;</code>
-     */
-    const ACTIVE_ITEM_EXISTS = 2;
-    /**
-     * <code>NO_ITEM_IN_INVENTORY = 3;</code>
-     */
-    const NO_ITEM_IN_INVENTORY = 3;
-    /**
-     * <code>INVALID_ITEM_CATEGORY = 4;</code>
-     */
-    const INVALID_ITEM_CATEGORY = 4;
+    class UseItemEncounterResponse_Status {}
 }
+class_exists(UseItemEncounterResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\UseItemEncounterResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\UseItemEncounterResponse\Status instead', E_USER_DEPRECATED);
 

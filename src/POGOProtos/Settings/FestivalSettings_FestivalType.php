@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Settings;
 
-/**
- * Protobuf enum <code>POGOProtos.Settings.FestivalSettings.FestivalType</code>
- */
-class FestivalSettings_FestivalType
-{
+if (false) {
     /**
-     * <code>NONE = 0;</code>
+     * This class is deprecated. Use POGOProtos\Settings\FestivalSettings\FestivalType instead.
+     * @deprecated
      */
-    const NONE = 0;
-    /**
-     * <code>HALLOWEEN = 1;</code>
-     */
-    const HALLOWEEN = 1;
-    /**
-     * <code>HOLIDAY = 2;</code>
-     */
-    const HOLIDAY = 2;
+    class FestivalSettings_FestivalType {}
 }
+class_exists(FestivalSettings\FestivalType::class);
+@trigger_error('POGOProtos\Settings\FestivalSettings_FestivalType is deprecated and will be removed in the next major release. Use POGOProtos\Settings\FestivalSettings\FestivalType instead', E_USER_DEPRECATED);
 

@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.LevelSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.LevelSettings</code>
  */
 class LevelSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>double trainer_cp_modifier = 2;</code>
+     * Generated from protobuf field <code>double trainer_cp_modifier = 2;</code>
      */
     private $trainer_cp_modifier = 0.0;
     /**
-     * <code>double trainer_difficulty_modifier = 3;</code>
+     * Generated from protobuf field <code>double trainer_difficulty_modifier = 3;</code>
      */
     private $trainer_difficulty_modifier = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $trainer_cp_modifier
+     *     @type float $trainer_difficulty_modifier
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\LevelSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>double trainer_cp_modifier = 2;</code>
+     * Generated from protobuf field <code>double trainer_cp_modifier = 2;</code>
+     * @return float
      */
     public function getTrainerCpModifier()
     {
@@ -36,16 +47,21 @@ class LevelSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double trainer_cp_modifier = 2;</code>
+     * Generated from protobuf field <code>double trainer_cp_modifier = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setTrainerCpModifier($var)
     {
         GPBUtil::checkDouble($var);
         $this->trainer_cp_modifier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double trainer_difficulty_modifier = 3;</code>
+     * Generated from protobuf field <code>double trainer_difficulty_modifier = 3;</code>
+     * @return float
      */
     public function getTrainerDifficultyModifier()
     {
@@ -53,12 +69,16 @@ class LevelSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double trainer_difficulty_modifier = 3;</code>
+     * Generated from protobuf field <code>double trainer_difficulty_modifier = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setTrainerDifficultyModifier($var)
     {
         GPBUtil::checkDouble($var);
         $this->trainer_difficulty_modifier = $var;
+
+        return $this;
     }
 
 }

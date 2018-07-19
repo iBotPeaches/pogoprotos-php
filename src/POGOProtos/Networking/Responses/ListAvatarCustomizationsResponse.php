@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse</code>
  */
 class ListAvatarCustomizationsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization avatar_customizations = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization avatar_customizations = 2;</code>
      */
     private $avatar_customizations;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\Avatar\AvatarCustomization[]|\Google\Protobuf\Internal\RepeatedField $avatar_customizations
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\ListAvatarCustomizationsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class ListAvatarCustomizationsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.ListAvatarCustomizationsResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\ListAvatarCustomizationsResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization avatar_customizations = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization avatar_customizations = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAvatarCustomizations()
     {
@@ -53,12 +69,16 @@ class ListAvatarCustomizationsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization avatar_customizations = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization avatar_customizations = 2;</code>
+     * @param \POGOProtos\Data\Avatar\AvatarCustomization[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAvatarCustomizations(&$var)
+    public function setAvatarCustomizations($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Avatar\AvatarCustomization::class);
-        $this->avatar_customizations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Avatar\AvatarCustomization::class);
+        $this->avatar_customizations = $arr;
+
+        return $this;
     }
 
 }

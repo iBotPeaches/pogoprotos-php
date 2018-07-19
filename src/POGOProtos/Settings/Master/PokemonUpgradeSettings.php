@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.PokemonUpgradeSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.PokemonUpgradeSettings</code>
  */
 class PokemonUpgradeSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 upgrades_per_level = 1;</code>
+     * Generated from protobuf field <code>int32 upgrades_per_level = 1;</code>
      */
     private $upgrades_per_level = 0;
     /**
-     * <code>int32 allowed_levels_above_player = 2;</code>
+     * Generated from protobuf field <code>int32 allowed_levels_above_player = 2;</code>
      */
     private $allowed_levels_above_player = 0;
     /**
-     * <code>repeated int32 candy_cost = 3;</code>
+     * Generated from protobuf field <code>repeated int32 candy_cost = 3;</code>
      */
     private $candy_cost;
     /**
-     * <code>repeated int32 stardust_cost = 4;</code>
+     * Generated from protobuf field <code>repeated int32 stardust_cost = 4;</code>
      */
     private $stardust_cost;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $upgrades_per_level
+     *     @type int $allowed_levels_above_player
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $candy_cost
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $stardust_cost
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\PokemonUpgradeSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 upgrades_per_level = 1;</code>
+     * Generated from protobuf field <code>int32 upgrades_per_level = 1;</code>
+     * @return int
      */
     public function getUpgradesPerLevel()
     {
@@ -44,16 +57,21 @@ class PokemonUpgradeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 upgrades_per_level = 1;</code>
+     * Generated from protobuf field <code>int32 upgrades_per_level = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setUpgradesPerLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->upgrades_per_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 allowed_levels_above_player = 2;</code>
+     * Generated from protobuf field <code>int32 allowed_levels_above_player = 2;</code>
+     * @return int
      */
     public function getAllowedLevelsAbovePlayer()
     {
@@ -61,16 +79,21 @@ class PokemonUpgradeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 allowed_levels_above_player = 2;</code>
+     * Generated from protobuf field <code>int32 allowed_levels_above_player = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setAllowedLevelsAbovePlayer($var)
     {
         GPBUtil::checkInt32($var);
         $this->allowed_levels_above_player = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 candy_cost = 3;</code>
+     * Generated from protobuf field <code>repeated int32 candy_cost = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCandyCost()
     {
@@ -78,16 +101,21 @@ class PokemonUpgradeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 candy_cost = 3;</code>
+     * Generated from protobuf field <code>repeated int32 candy_cost = 3;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCandyCost(&$var)
+    public function setCandyCost($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->candy_cost = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->candy_cost = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 stardust_cost = 4;</code>
+     * Generated from protobuf field <code>repeated int32 stardust_cost = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getStardustCost()
     {
@@ -95,12 +123,16 @@ class PokemonUpgradeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 stardust_cost = 4;</code>
+     * Generated from protobuf field <code>repeated int32 stardust_cost = 4;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setStardustCost(&$var)
+    public function setStardustCost($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->stardust_cost = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->stardust_cost = $arr;
+
+        return $this;
     }
 
 }

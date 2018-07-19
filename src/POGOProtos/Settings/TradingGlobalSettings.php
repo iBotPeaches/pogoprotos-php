@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.TradingGlobalSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.TradingGlobalSettings</code>
  */
 class TradingGlobalSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool enable_trading = 1;</code>
+     * Generated from protobuf field <code>bool enable_trading = 1;</code>
      */
     private $enable_trading = false;
     /**
-     * <code>uint32 min_player_level = 2;</code>
+     * Generated from protobuf field <code>uint32 min_player_level = 2;</code>
      */
     private $min_player_level = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $enable_trading
+     *     @type int $min_player_level
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\TradingGlobalSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool enable_trading = 1;</code>
+     * Generated from protobuf field <code>bool enable_trading = 1;</code>
+     * @return bool
      */
     public function getEnableTrading()
     {
@@ -36,16 +47,21 @@ class TradingGlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool enable_trading = 1;</code>
+     * Generated from protobuf field <code>bool enable_trading = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEnableTrading($var)
     {
         GPBUtil::checkBool($var);
         $this->enable_trading = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint32 min_player_level = 2;</code>
+     * Generated from protobuf field <code>uint32 min_player_level = 2;</code>
+     * @return int
      */
     public function getMinPlayerLevel()
     {
@@ -53,12 +69,16 @@ class TradingGlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 min_player_level = 2;</code>
+     * Generated from protobuf field <code>uint32 min_player_level = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMinPlayerLevel($var)
     {
         GPBUtil::checkUint32($var);
         $this->min_player_level = $var;
+
+        return $this;
     }
 
 }

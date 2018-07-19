@@ -9,78 +9,102 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.InventoryItemData</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.InventoryItemData</code>
  */
 class InventoryItemData extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
      */
     private $pokemon_data = null;
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemData item = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemData item = 2;</code>
      */
     private $item = null;
     /**
-     * <code>.POGOProtos.Data.PokedexEntry pokedex_entry = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokedexEntry pokedex_entry = 3;</code>
      */
     private $pokedex_entry = null;
     /**
-     * <code>.POGOProtos.Data.Player.PlayerStats player_stats = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerStats player_stats = 4;</code>
      */
     private $player_stats = null;
     /**
-     * <code>.POGOProtos.Data.Player.PlayerCurrency player_currency = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerCurrency player_currency = 5;</code>
      */
     private $player_currency = null;
     /**
-     * <code>.POGOProtos.Data.Player.PlayerCamera player_camera = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerCamera player_camera = 6;</code>
      */
     private $player_camera = null;
     /**
-     * <code>.POGOProtos.Inventory.InventoryUpgrades inventory_upgrades = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryUpgrades inventory_upgrades = 7;</code>
      */
     private $inventory_upgrades = null;
     /**
-     * <code>.POGOProtos.Inventory.AppliedItems applied_items = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.AppliedItems applied_items = 8;</code>
      */
     private $applied_items = null;
     /**
-     * <code>.POGOProtos.Inventory.EggIncubators egg_incubators = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.EggIncubators egg_incubators = 9;</code>
      */
     private $egg_incubators = null;
     /**
-     * <code>.POGOProtos.Inventory.Candy candy = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Candy candy = 10;</code>
      */
     private $candy = null;
     /**
-     * <code>.POGOProtos.Data.Quests.Quest quest = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest quest = 11;</code>
      */
     private $quest = null;
     /**
-     * <code>.POGOProtos.Data.Avatar.AvatarItem avatar_item = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Avatar.AvatarItem avatar_item = 12;</code>
      */
     private $avatar_item = null;
     /**
-     * <code>.POGOProtos.Inventory.RaidTickets raid_tickets = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.RaidTickets raid_tickets = 13;</code>
      */
     private $raid_tickets = null;
     /**
-     * <code>.POGOProtos.Data.Quests.Quests quests = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quests quests = 14;</code>
      */
     private $quests = null;
     /**
-     * <code>.POGOProtos.Data.Gift.GiftBoxes gift_boxes = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gift.GiftBoxes gift_boxes = 15;</code>
      */
     private $gift_boxes = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\PokemonData $pokemon_data
+     *     @type \POGOProtos\Inventory\Item\ItemData $item
+     *     @type \POGOProtos\Data\PokedexEntry $pokedex_entry
+     *     @type \POGOProtos\Data\Player\PlayerStats $player_stats
+     *     @type \POGOProtos\Data\Player\PlayerCurrency $player_currency
+     *     @type \POGOProtos\Data\Player\PlayerCamera $player_camera
+     *     @type \POGOProtos\Inventory\InventoryUpgrades $inventory_upgrades
+     *     @type \POGOProtos\Inventory\AppliedItems $applied_items
+     *     @type \POGOProtos\Inventory\EggIncubators $egg_incubators
+     *     @type \POGOProtos\Inventory\Candy $candy
+     *     @type \POGOProtos\Data\Quests\Quest $quest
+     *     @type \POGOProtos\Data\Avatar\AvatarItem $avatar_item
+     *     @type \POGOProtos\Inventory\RaidTickets $raid_tickets
+     *     @type \POGOProtos\Data\Quests\Quests $quests
+     *     @type \POGOProtos\Data\Gift\GiftBoxes $gift_boxes
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\InventoryItemData::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getPokemonData()
     {
@@ -88,16 +112,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setPokemonData(&$var)
+    public function setPokemonData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->pokemon_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemData item = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemData item = 2;</code>
+     * @return \POGOProtos\Inventory\Item\ItemData
      */
     public function getItem()
     {
@@ -105,16 +134,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemData item = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemData item = 2;</code>
+     * @param \POGOProtos\Inventory\Item\ItemData $var
+     * @return $this
      */
-    public function setItem(&$var)
+    public function setItem($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\Item\ItemData::class);
         $this->item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokedexEntry pokedex_entry = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokedexEntry pokedex_entry = 3;</code>
+     * @return \POGOProtos\Data\PokedexEntry
      */
     public function getPokedexEntry()
     {
@@ -122,16 +156,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokedexEntry pokedex_entry = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokedexEntry pokedex_entry = 3;</code>
+     * @param \POGOProtos\Data\PokedexEntry $var
+     * @return $this
      */
-    public function setPokedexEntry(&$var)
+    public function setPokedexEntry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokedexEntry::class);
         $this->pokedex_entry = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerStats player_stats = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerStats player_stats = 4;</code>
+     * @return \POGOProtos\Data\Player\PlayerStats
      */
     public function getPlayerStats()
     {
@@ -139,16 +178,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerStats player_stats = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerStats player_stats = 4;</code>
+     * @param \POGOProtos\Data\Player\PlayerStats $var
+     * @return $this
      */
-    public function setPlayerStats(&$var)
+    public function setPlayerStats($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerStats::class);
         $this->player_stats = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerCurrency player_currency = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerCurrency player_currency = 5;</code>
+     * @return \POGOProtos\Data\Player\PlayerCurrency
      */
     public function getPlayerCurrency()
     {
@@ -156,16 +200,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerCurrency player_currency = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerCurrency player_currency = 5;</code>
+     * @param \POGOProtos\Data\Player\PlayerCurrency $var
+     * @return $this
      */
-    public function setPlayerCurrency(&$var)
+    public function setPlayerCurrency($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerCurrency::class);
         $this->player_currency = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerCamera player_camera = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerCamera player_camera = 6;</code>
+     * @return \POGOProtos\Data\Player\PlayerCamera
      */
     public function getPlayerCamera()
     {
@@ -173,16 +222,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerCamera player_camera = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerCamera player_camera = 6;</code>
+     * @param \POGOProtos\Data\Player\PlayerCamera $var
+     * @return $this
      */
-    public function setPlayerCamera(&$var)
+    public function setPlayerCamera($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerCamera::class);
         $this->player_camera = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.InventoryUpgrades inventory_upgrades = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryUpgrades inventory_upgrades = 7;</code>
+     * @return \POGOProtos\Inventory\InventoryUpgrades
      */
     public function getInventoryUpgrades()
     {
@@ -190,16 +244,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.InventoryUpgrades inventory_upgrades = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryUpgrades inventory_upgrades = 7;</code>
+     * @param \POGOProtos\Inventory\InventoryUpgrades $var
+     * @return $this
      */
-    public function setInventoryUpgrades(&$var)
+    public function setInventoryUpgrades($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\InventoryUpgrades::class);
         $this->inventory_upgrades = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.AppliedItems applied_items = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.AppliedItems applied_items = 8;</code>
+     * @return \POGOProtos\Inventory\AppliedItems
      */
     public function getAppliedItems()
     {
@@ -207,16 +266,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.AppliedItems applied_items = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.AppliedItems applied_items = 8;</code>
+     * @param \POGOProtos\Inventory\AppliedItems $var
+     * @return $this
      */
-    public function setAppliedItems(&$var)
+    public function setAppliedItems($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\AppliedItems::class);
         $this->applied_items = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.EggIncubators egg_incubators = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.EggIncubators egg_incubators = 9;</code>
+     * @return \POGOProtos\Inventory\EggIncubators
      */
     public function getEggIncubators()
     {
@@ -224,16 +288,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.EggIncubators egg_incubators = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.EggIncubators egg_incubators = 9;</code>
+     * @param \POGOProtos\Inventory\EggIncubators $var
+     * @return $this
      */
-    public function setEggIncubators(&$var)
+    public function setEggIncubators($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\EggIncubators::class);
         $this->egg_incubators = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Candy candy = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Candy candy = 10;</code>
+     * @return \POGOProtos\Inventory\Candy
      */
     public function getCandy()
     {
@@ -241,16 +310,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Candy candy = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Candy candy = 10;</code>
+     * @param \POGOProtos\Inventory\Candy $var
+     * @return $this
      */
-    public function setCandy(&$var)
+    public function setCandy($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\Candy::class);
         $this->candy = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.Quest quest = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest quest = 11;</code>
+     * @return \POGOProtos\Data\Quests\Quest
      */
     public function getQuest()
     {
@@ -258,16 +332,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.Quest quest = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest quest = 11;</code>
+     * @param \POGOProtos\Data\Quests\Quest $var
+     * @return $this
      */
-    public function setQuest(&$var)
+    public function setQuest($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\Quest::class);
         $this->quest = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Avatar.AvatarItem avatar_item = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Avatar.AvatarItem avatar_item = 12;</code>
+     * @return \POGOProtos\Data\Avatar\AvatarItem
      */
     public function getAvatarItem()
     {
@@ -275,16 +354,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Avatar.AvatarItem avatar_item = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Avatar.AvatarItem avatar_item = 12;</code>
+     * @param \POGOProtos\Data\Avatar\AvatarItem $var
+     * @return $this
      */
-    public function setAvatarItem(&$var)
+    public function setAvatarItem($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Avatar\AvatarItem::class);
         $this->avatar_item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.RaidTickets raid_tickets = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.RaidTickets raid_tickets = 13;</code>
+     * @return \POGOProtos\Inventory\RaidTickets
      */
     public function getRaidTickets()
     {
@@ -292,16 +376,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.RaidTickets raid_tickets = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.RaidTickets raid_tickets = 13;</code>
+     * @param \POGOProtos\Inventory\RaidTickets $var
+     * @return $this
      */
-    public function setRaidTickets(&$var)
+    public function setRaidTickets($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\RaidTickets::class);
         $this->raid_tickets = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.Quests quests = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quests quests = 14;</code>
+     * @return \POGOProtos\Data\Quests\Quests
      */
     public function getQuests()
     {
@@ -309,16 +398,21 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.Quests quests = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quests quests = 14;</code>
+     * @param \POGOProtos\Data\Quests\Quests $var
+     * @return $this
      */
-    public function setQuests(&$var)
+    public function setQuests($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\Quests::class);
         $this->quests = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Gift.GiftBoxes gift_boxes = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gift.GiftBoxes gift_boxes = 15;</code>
+     * @return \POGOProtos\Data\Gift\GiftBoxes
      */
     public function getGiftBoxes()
     {
@@ -326,12 +420,16 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Gift.GiftBoxes gift_boxes = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gift.GiftBoxes gift_boxes = 15;</code>
+     * @param \POGOProtos\Data\Gift\GiftBoxes $var
+     * @return $this
      */
-    public function setGiftBoxes(&$var)
+    public function setGiftBoxes($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Gift\GiftBoxes::class);
         $this->gift_boxes = $var;
+
+        return $this;
     }
 
 }

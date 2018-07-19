@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Raid.PlayerRaidInfo</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Raid.PlayerRaidInfo</code>
  */
 class PlayerRaidInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 total_completed_raids = 3;</code>
+     * Generated from protobuf field <code>int32 total_completed_raids = 3;</code>
      */
     private $total_completed_raids = 0;
     /**
-     * <code>int32 total_completed_legendary_raids = 4;</code>
+     * Generated from protobuf field <code>int32 total_completed_legendary_raids = 4;</code>
      */
     private $total_completed_legendary_raids = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Raid.Raid raids = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Raid.Raid raids = 5;</code>
      */
     private $raids;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $total_completed_raids
+     *     @type int $total_completed_legendary_raids
+     *     @type \POGOProtos\Data\Raid\Raid[]|\Google\Protobuf\Internal\RepeatedField $raids
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Raid\PlayerRaidInfo::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 total_completed_raids = 3;</code>
+     * Generated from protobuf field <code>int32 total_completed_raids = 3;</code>
+     * @return int
      */
     public function getTotalCompletedRaids()
     {
@@ -40,16 +52,21 @@ class PlayerRaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 total_completed_raids = 3;</code>
+     * Generated from protobuf field <code>int32 total_completed_raids = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTotalCompletedRaids($var)
     {
         GPBUtil::checkInt32($var);
         $this->total_completed_raids = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 total_completed_legendary_raids = 4;</code>
+     * Generated from protobuf field <code>int32 total_completed_legendary_raids = 4;</code>
+     * @return int
      */
     public function getTotalCompletedLegendaryRaids()
     {
@@ -57,16 +74,21 @@ class PlayerRaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 total_completed_legendary_raids = 4;</code>
+     * Generated from protobuf field <code>int32 total_completed_legendary_raids = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTotalCompletedLegendaryRaids($var)
     {
         GPBUtil::checkInt32($var);
         $this->total_completed_legendary_raids = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Raid.Raid raids = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Raid.Raid raids = 5;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getRaids()
     {
@@ -74,12 +96,16 @@ class PlayerRaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Raid.Raid raids = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Raid.Raid raids = 5;</code>
+     * @param \POGOProtos\Data\Raid\Raid[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setRaids(&$var)
+    public function setRaids($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Raid\Raid::class);
-        $this->raids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Raid\Raid::class);
+        $this->raids = $arr;
+
+        return $this;
     }
 
 }

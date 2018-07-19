@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse</code>
  */
 class EncounterTutorialCompleteResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 2;</code>
      */
     private $pokemon_data = null;
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureAward capture_award = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureAward capture_award = 3;</code>
      */
     private $capture_award = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\PokemonData $pokemon_data
+     *     @type \POGOProtos\Data\Capture\CaptureAward $capture_award
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\EncounterTutorialCompleteResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -40,16 +52,21 @@ class EncounterTutorialCompleteResponse extends \Google\Protobuf\Internal\Messag
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\EncounterTutorialCompleteResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 2;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getPokemonData()
     {
@@ -57,16 +74,21 @@ class EncounterTutorialCompleteResponse extends \Google\Protobuf\Internal\Messag
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 2;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setPokemonData(&$var)
+    public function setPokemonData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->pokemon_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureAward capture_award = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureAward capture_award = 3;</code>
+     * @return \POGOProtos\Data\Capture\CaptureAward
      */
     public function getCaptureAward()
     {
@@ -74,12 +96,16 @@ class EncounterTutorialCompleteResponse extends \Google\Protobuf\Internal\Messag
     }
 
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureAward capture_award = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureAward capture_award = 3;</code>
+     * @param \POGOProtos\Data\Capture\CaptureAward $var
+     * @return $this
      */
-    public function setCaptureAward(&$var)
+    public function setCaptureAward($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Capture\CaptureAward::class);
         $this->capture_award = $var;
+
+        return $this;
     }
 
 }

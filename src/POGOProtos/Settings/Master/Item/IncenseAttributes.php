@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Item.IncenseAttributes</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Item.IncenseAttributes</code>
  */
 class IncenseAttributes extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 incense_lifetime_seconds = 1;</code>
+     * Generated from protobuf field <code>int32 incense_lifetime_seconds = 1;</code>
      */
     private $incense_lifetime_seconds = 0;
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;</code>
      */
     private $pokemon_type;
     /**
-     * <code>float pokemon_incense_type_probability = 3;</code>
+     * Generated from protobuf field <code>float pokemon_incense_type_probability = 3;</code>
      */
     private $pokemon_incense_type_probability = 0.0;
     /**
-     * <code>int32 standing_time_between_encounters_seconds = 4;</code>
+     * Generated from protobuf field <code>int32 standing_time_between_encounters_seconds = 4;</code>
      */
     private $standing_time_between_encounters_seconds = 0;
     /**
-     * <code>int32 moving_time_between_encounter_seconds = 5;</code>
+     * Generated from protobuf field <code>int32 moving_time_between_encounter_seconds = 5;</code>
      */
     private $moving_time_between_encounter_seconds = 0;
     /**
-     * <code>int32 distance_required_for_shorter_interval_meters = 6;</code>
+     * Generated from protobuf field <code>int32 distance_required_for_shorter_interval_meters = 6;</code>
      */
     private $distance_required_for_shorter_interval_meters = 0;
     /**
-     * <code>int32 pokemon_attracted_length_sec = 7;</code>
+     * Generated from protobuf field <code>int32 pokemon_attracted_length_sec = 7;</code>
      */
     private $pokemon_attracted_length_sec = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $incense_lifetime_seconds
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $pokemon_type
+     *     @type float $pokemon_incense_type_probability
+     *     @type int $standing_time_between_encounters_seconds
+     *     @type int $moving_time_between_encounter_seconds
+     *     @type int $distance_required_for_shorter_interval_meters
+     *     @type int $pokemon_attracted_length_sec
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Item\IncenseAttributes::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 incense_lifetime_seconds = 1;</code>
+     * Generated from protobuf field <code>int32 incense_lifetime_seconds = 1;</code>
+     * @return int
      */
     public function getIncenseLifetimeSeconds()
     {
@@ -56,16 +72,21 @@ class IncenseAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 incense_lifetime_seconds = 1;</code>
+     * Generated from protobuf field <code>int32 incense_lifetime_seconds = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setIncenseLifetimeSeconds($var)
     {
         GPBUtil::checkInt32($var);
         $this->incense_lifetime_seconds = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPokemonType()
     {
@@ -73,16 +94,21 @@ class IncenseAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 2;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPokemonType(&$var)
+    public function setPokemonType($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\PokemonType::class);
-        $this->pokemon_type = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\PokemonType::class);
+        $this->pokemon_type = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>float pokemon_incense_type_probability = 3;</code>
+     * Generated from protobuf field <code>float pokemon_incense_type_probability = 3;</code>
+     * @return float
      */
     public function getPokemonIncenseTypeProbability()
     {
@@ -90,16 +116,21 @@ class IncenseAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float pokemon_incense_type_probability = 3;</code>
+     * Generated from protobuf field <code>float pokemon_incense_type_probability = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPokemonIncenseTypeProbability($var)
     {
         GPBUtil::checkFloat($var);
         $this->pokemon_incense_type_probability = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 standing_time_between_encounters_seconds = 4;</code>
+     * Generated from protobuf field <code>int32 standing_time_between_encounters_seconds = 4;</code>
+     * @return int
      */
     public function getStandingTimeBetweenEncountersSeconds()
     {
@@ -107,16 +138,21 @@ class IncenseAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 standing_time_between_encounters_seconds = 4;</code>
+     * Generated from protobuf field <code>int32 standing_time_between_encounters_seconds = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStandingTimeBetweenEncountersSeconds($var)
     {
         GPBUtil::checkInt32($var);
         $this->standing_time_between_encounters_seconds = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 moving_time_between_encounter_seconds = 5;</code>
+     * Generated from protobuf field <code>int32 moving_time_between_encounter_seconds = 5;</code>
+     * @return int
      */
     public function getMovingTimeBetweenEncounterSeconds()
     {
@@ -124,16 +160,21 @@ class IncenseAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 moving_time_between_encounter_seconds = 5;</code>
+     * Generated from protobuf field <code>int32 moving_time_between_encounter_seconds = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMovingTimeBetweenEncounterSeconds($var)
     {
         GPBUtil::checkInt32($var);
         $this->moving_time_between_encounter_seconds = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 distance_required_for_shorter_interval_meters = 6;</code>
+     * Generated from protobuf field <code>int32 distance_required_for_shorter_interval_meters = 6;</code>
+     * @return int
      */
     public function getDistanceRequiredForShorterIntervalMeters()
     {
@@ -141,16 +182,21 @@ class IncenseAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 distance_required_for_shorter_interval_meters = 6;</code>
+     * Generated from protobuf field <code>int32 distance_required_for_shorter_interval_meters = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setDistanceRequiredForShorterIntervalMeters($var)
     {
         GPBUtil::checkInt32($var);
         $this->distance_required_for_shorter_interval_meters = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 pokemon_attracted_length_sec = 7;</code>
+     * Generated from protobuf field <code>int32 pokemon_attracted_length_sec = 7;</code>
+     * @return int
      */
     public function getPokemonAttractedLengthSec()
     {
@@ -158,12 +204,16 @@ class IncenseAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 pokemon_attracted_length_sec = 7;</code>
+     * Generated from protobuf field <code>int32 pokemon_attracted_length_sec = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemonAttractedLengthSec($var)
     {
         GPBUtil::checkInt32($var);
         $this->pokemon_attracted_length_sec = $var;
+
+        return $this;
     }
 
 }

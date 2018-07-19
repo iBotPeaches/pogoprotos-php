@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.RegisterBackgroundDeviceMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.RegisterBackgroundDeviceMessage</code>
  */
 class RegisterBackgroundDeviceMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string device_type = 1;</code>
+     * Generated from protobuf field <code>string device_type = 1;</code>
      */
     private $device_type = '';
     /**
-     * <code>string device_id = 2;</code>
+     * Generated from protobuf field <code>string device_id = 2;</code>
      */
     private $device_id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $device_type
+     *     @type string $device_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\RegisterBackgroundDeviceMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string device_type = 1;</code>
+     * Generated from protobuf field <code>string device_type = 1;</code>
+     * @return string
      */
     public function getDeviceType()
     {
@@ -36,16 +47,21 @@ class RegisterBackgroundDeviceMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string device_type = 1;</code>
+     * Generated from protobuf field <code>string device_type = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setDeviceType($var)
     {
         GPBUtil::checkString($var, True);
         $this->device_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string device_id = 2;</code>
+     * Generated from protobuf field <code>string device_id = 2;</code>
+     * @return string
      */
     public function getDeviceId()
     {
@@ -53,12 +69,16 @@ class RegisterBackgroundDeviceMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string device_id = 2;</code>
+     * Generated from protobuf field <code>string device_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setDeviceId($var)
     {
         GPBUtil::checkString($var, True);
         $this->device_id = $var;
+
+        return $this;
     }
 
 }

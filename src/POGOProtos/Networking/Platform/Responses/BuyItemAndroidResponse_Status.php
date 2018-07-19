@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Responses;
 
-/**
- * <pre>
- * THESE ARE SOMEWHAT SPECULATED, failed may be 2
- * </pre>
- *
- * Protobuf enum <code>POGOProtos.Networking.Platform.Responses.BuyItemAndroidResponse.Status</code>
- */
-class BuyItemAndroidResponse_Status
-{
+if (false) {
     /**
-     * <code>UNKNOWN = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Responses\BuyItemAndroidResponse\Status instead.
+     * @deprecated
      */
-    const UNKNOWN = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
+    class BuyItemAndroidResponse_Status {}
 }
+class_exists(BuyItemAndroidResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Platform\Responses\BuyItemAndroidResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Responses\BuyItemAndroidResponse\Status instead', E_USER_DEPRECATED);
 

@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Trading.Trading</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Trading.Trading</code>
  */
 class Trading extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Trading.Trading.TradingState state = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Trading.Trading.TradingState state = 1;</code>
      */
     private $state = 0;
     /**
-     * <code>uint64 expiration_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 expiration_ms = 2;</code>
      */
     private $expiration_ms = 0;
     /**
-     * <code>.POGOProtos.Data.Trading.TradingPlayer player = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Trading.TradingPlayer player = 3;</code>
      */
     private $player = null;
     /**
-     * <code>.POGOProtos.Data.Trading.TradingPlayer friend = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Trading.TradingPlayer friend = 4;</code>
      */
     private $friend = null;
     /**
-     * <code>int64 trading_s2_cell_id = 5;</code>
+     * Generated from protobuf field <code>int64 trading_s2_cell_id = 5;</code>
      */
     private $trading_s2_cell_id = 0;
     /**
-     * <code>string transaction_log = 6;</code>
+     * Generated from protobuf field <code>string transaction_log = 6;</code>
      */
     private $transaction_log = '';
     /**
-     * <code>.POGOProtos.Data.Friends.FriendshipLevelData friendship_level_data = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.FriendshipLevelData friendship_level_data = 7;</code>
      */
     private $friendship_level_data = null;
     /**
-     * <code>bool is_special_trading = 8;</code>
+     * Generated from protobuf field <code>bool is_special_trading = 8;</code>
      */
     private $is_special_trading = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $state
+     *     @type int|string $expiration_ms
+     *     @type \POGOProtos\Data\Trading\TradingPlayer $player
+     *     @type \POGOProtos\Data\Trading\TradingPlayer $friend
+     *     @type int|string $trading_s2_cell_id
+     *     @type string $transaction_log
+     *     @type \POGOProtos\Data\Friends\FriendshipLevelData $friendship_level_data
+     *     @type bool $is_special_trading
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Trading\Trading::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Trading.Trading.TradingState state = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Trading.Trading.TradingState state = 1;</code>
+     * @return int
      */
     public function getState()
     {
@@ -60,16 +77,21 @@ class Trading extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Trading.Trading.TradingState state = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Trading.Trading.TradingState state = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setState($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Trading\Trading_TradingState::class);
         $this->state = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 expiration_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 expiration_ms = 2;</code>
+     * @return int|string
      */
     public function getExpirationMs()
     {
@@ -77,16 +99,21 @@ class Trading extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 expiration_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 expiration_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setExpirationMs($var)
     {
         GPBUtil::checkUint64($var);
         $this->expiration_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Trading.TradingPlayer player = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Trading.TradingPlayer player = 3;</code>
+     * @return \POGOProtos\Data\Trading\TradingPlayer
      */
     public function getPlayer()
     {
@@ -94,16 +121,21 @@ class Trading extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Trading.TradingPlayer player = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Trading.TradingPlayer player = 3;</code>
+     * @param \POGOProtos\Data\Trading\TradingPlayer $var
+     * @return $this
      */
-    public function setPlayer(&$var)
+    public function setPlayer($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Trading\TradingPlayer::class);
         $this->player = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Trading.TradingPlayer friend = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Trading.TradingPlayer friend = 4;</code>
+     * @return \POGOProtos\Data\Trading\TradingPlayer
      */
     public function getFriend()
     {
@@ -111,16 +143,21 @@ class Trading extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Trading.TradingPlayer friend = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Trading.TradingPlayer friend = 4;</code>
+     * @param \POGOProtos\Data\Trading\TradingPlayer $var
+     * @return $this
      */
-    public function setFriend(&$var)
+    public function setFriend($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Trading\TradingPlayer::class);
         $this->friend = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 trading_s2_cell_id = 5;</code>
+     * Generated from protobuf field <code>int64 trading_s2_cell_id = 5;</code>
+     * @return int|string
      */
     public function getTradingS2CellId()
     {
@@ -128,16 +165,21 @@ class Trading extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 trading_s2_cell_id = 5;</code>
+     * Generated from protobuf field <code>int64 trading_s2_cell_id = 5;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTradingS2CellId($var)
     {
         GPBUtil::checkInt64($var);
         $this->trading_s2_cell_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string transaction_log = 6;</code>
+     * Generated from protobuf field <code>string transaction_log = 6;</code>
+     * @return string
      */
     public function getTransactionLog()
     {
@@ -145,16 +187,21 @@ class Trading extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string transaction_log = 6;</code>
+     * Generated from protobuf field <code>string transaction_log = 6;</code>
+     * @param string $var
+     * @return $this
      */
     public function setTransactionLog($var)
     {
         GPBUtil::checkString($var, True);
         $this->transaction_log = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Friends.FriendshipLevelData friendship_level_data = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.FriendshipLevelData friendship_level_data = 7;</code>
+     * @return \POGOProtos\Data\Friends\FriendshipLevelData
      */
     public function getFriendshipLevelData()
     {
@@ -162,16 +209,21 @@ class Trading extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Friends.FriendshipLevelData friendship_level_data = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.FriendshipLevelData friendship_level_data = 7;</code>
+     * @param \POGOProtos\Data\Friends\FriendshipLevelData $var
+     * @return $this
      */
-    public function setFriendshipLevelData(&$var)
+    public function setFriendshipLevelData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Friends\FriendshipLevelData::class);
         $this->friendship_level_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool is_special_trading = 8;</code>
+     * Generated from protobuf field <code>bool is_special_trading = 8;</code>
+     * @return bool
      */
     public function getIsSpecialTrading()
     {
@@ -179,12 +231,16 @@ class Trading extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool is_special_trading = 8;</code>
+     * Generated from protobuf field <code>bool is_special_trading = 8;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsSpecialTrading($var)
     {
         GPBUtil::checkBool($var);
         $this->is_special_trading = $var;
+
+        return $this;
     }
 
 }

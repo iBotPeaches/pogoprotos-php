@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.CompleteQuestStampCardResponse.Status</code>
- */
-class CompleteQuestStampCardResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\CompleteQuestStampCardResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_STILL_IN_PROGRESS = 2;</code>
-     */
-    const ERROR_STILL_IN_PROGRESS = 2;
+    class CompleteQuestStampCardResponse_Status {}
 }
+class_exists(CompleteQuestStampCardResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\CompleteQuestStampCardResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\CompleteQuestStampCardResponse\Status instead', E_USER_DEPRECATED);
 

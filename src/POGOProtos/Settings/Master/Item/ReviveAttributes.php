@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Item.ReviveAttributes</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Item.ReviveAttributes</code>
  */
 class ReviveAttributes extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float sta_percent = 1;</code>
+     * Generated from protobuf field <code>float sta_percent = 1;</code>
      */
     private $sta_percent = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $sta_percent
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Item\ReviveAttributes::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float sta_percent = 1;</code>
+     * Generated from protobuf field <code>float sta_percent = 1;</code>
+     * @return float
      */
     public function getStaPercent()
     {
@@ -32,12 +42,16 @@ class ReviveAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float sta_percent = 1;</code>
+     * Generated from protobuf field <code>float sta_percent = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setStaPercent($var)
     {
         GPBUtil::checkFloat($var);
         $this->sta_percent = $var;
+
+        return $this;
     }
 
 }

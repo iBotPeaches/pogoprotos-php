@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Gym.GymState</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Gym.GymState</code>
  */
 class GymState extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Map.Fort.FortData fort_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortData fort_data = 1;</code>
      */
     private $fort_data = null;
     /**
-     * <code>repeated .POGOProtos.Data.Gym.GymMembership memberships = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gym.GymMembership memberships = 2;</code>
      */
     private $memberships;
     /**
-     * <code>bool deploy_lockout = 3;</code>
+     * Generated from protobuf field <code>bool deploy_lockout = 3;</code>
      */
     private $deploy_lockout = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Map\Fort\FortData $fort_data
+     *     @type \POGOProtos\Data\Gym\GymMembership[]|\Google\Protobuf\Internal\RepeatedField $memberships
+     *     @type bool $deploy_lockout
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Gym\GymState::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortData fort_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortData fort_data = 1;</code>
+     * @return \POGOProtos\Map\Fort\FortData
      */
     public function getFortData()
     {
@@ -40,16 +52,21 @@ class GymState extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortData fort_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortData fort_data = 1;</code>
+     * @param \POGOProtos\Map\Fort\FortData $var
+     * @return $this
      */
-    public function setFortData(&$var)
+    public function setFortData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Map\Fort\FortData::class);
         $this->fort_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gym.GymMembership memberships = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gym.GymMembership memberships = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getMemberships()
     {
@@ -57,16 +74,21 @@ class GymState extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gym.GymMembership memberships = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gym.GymMembership memberships = 2;</code>
+     * @param \POGOProtos\Data\Gym\GymMembership[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setMemberships(&$var)
+    public function setMemberships($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gym\GymMembership::class);
-        $this->memberships = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gym\GymMembership::class);
+        $this->memberships = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>bool deploy_lockout = 3;</code>
+     * Generated from protobuf field <code>bool deploy_lockout = 3;</code>
+     * @return bool
      */
     public function getDeployLockout()
     {
@@ -74,12 +96,16 @@ class GymState extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool deploy_lockout = 3;</code>
+     * Generated from protobuf field <code>bool deploy_lockout = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setDeployLockout($var)
     {
         GPBUtil::checkBool($var);
         $this->deploy_lockout = $var;
+
+        return $this;
     }
 
 }

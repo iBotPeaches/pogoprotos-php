@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.EvolvePokemonMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.EvolvePokemonMessage</code>
  */
 class EvolvePokemonMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
      */
     private $pokemon_id = 0;
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
      */
     private $evolution_item_requirement = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $pokemon_id
+     *     @type int $evolution_item_requirement
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\EvolvePokemonMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
+     * @return int|string
      */
     public function getPokemonId()
     {
@@ -36,16 +47,21 @@ class EvolvePokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
+     * @return int
      */
     public function getEvolutionItemRequirement()
     {
@@ -53,12 +69,16 @@ class EvolvePokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEvolutionItemRequirement($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->evolution_item_requirement = $var;
+
+        return $this;
     }
 
 }

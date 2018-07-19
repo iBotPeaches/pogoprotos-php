@@ -9,26 +9,34 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * <pre>
  * UNTESTED
- * </pre>
  *
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetDownloadUrlsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GetDownloadUrlsMessage</code>
  */
 class GetDownloadUrlsMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated string asset_id = 1;</code>
+     * Generated from protobuf field <code>repeated string asset_id = 1;</code>
      */
     private $asset_id;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $asset_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetDownloadUrlsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated string asset_id = 1;</code>
+     * Generated from protobuf field <code>repeated string asset_id = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAssetId()
     {
@@ -36,12 +44,16 @@ class GetDownloadUrlsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string asset_id = 1;</code>
+     * Generated from protobuf field <code>repeated string asset_id = 1;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAssetId(&$var)
+    public function setAssetId($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->asset_id = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->asset_id = $arr;
+
+        return $this;
     }
 
 }

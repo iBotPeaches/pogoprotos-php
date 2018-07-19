@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GiftDetailsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GiftDetailsResponse</code>
  */
 class GiftDetailsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.GiftDetailsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GiftDetailsResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Gift.GiftBoxDetails gift_boxes = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gift.GiftBoxDetails gift_boxes = 2;</code>
      */
     private $gift_boxes;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\Gift\GiftBoxDetails[]|\Google\Protobuf\Internal\RepeatedField $gift_boxes
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GiftDetailsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GiftDetailsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GiftDetailsResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class GiftDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GiftDetailsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GiftDetailsResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\GiftDetailsResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gift.GiftBoxDetails gift_boxes = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gift.GiftBoxDetails gift_boxes = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getGiftBoxes()
     {
@@ -53,12 +69,16 @@ class GiftDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gift.GiftBoxDetails gift_boxes = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gift.GiftBoxDetails gift_boxes = 2;</code>
+     * @param \POGOProtos\Data\Gift\GiftBoxDetails[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGiftBoxes(&$var)
+    public function setGiftBoxes($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gift\GiftBoxDetails::class);
-        $this->gift_boxes = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gift\GiftBoxDetails::class);
+        $this->gift_boxes = $arr;
+
+        return $this;
     }
 
 }

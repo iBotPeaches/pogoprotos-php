@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Networking\Envelopes;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Envelopes.RequestEnvelope.PlatformRequest</code>
- */
-class RequestEnvelope_PlatformRequest extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>.POGOProtos.Networking.Platform.PlatformRequestType type = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Envelopes\RequestEnvelope\PlatformRequest instead.
+     * @deprecated
      */
-    private $type = 0;
-    /**
-     * <code>bytes request_message = 2;</code>
-     */
-    private $request_message = '';
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Envelopes\RequestEnvelope::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>.POGOProtos.Networking.Platform.PlatformRequestType type = 1;</code>
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * <code>.POGOProtos.Networking.Platform.PlatformRequestType type = 1;</code>
-     */
-    public function setType($var)
-    {
-        GPBUtil::checkEnum($var, \POGOProtos\Networking\Platform\PlatformRequestType::class);
-        $this->type = $var;
-    }
-
-    /**
-     * <code>bytes request_message = 2;</code>
-     */
-    public function getRequestMessage()
-    {
-        return $this->request_message;
-    }
-
-    /**
-     * <code>bytes request_message = 2;</code>
-     */
-    public function setRequestMessage($var)
-    {
-        GPBUtil::checkString($var, False);
-        $this->request_message = $var;
-    }
-
+    class RequestEnvelope_PlatformRequest {}
 }
+class_exists(RequestEnvelope\PlatformRequest::class);
+@trigger_error('POGOProtos\Networking\Envelopes\RequestEnvelope_PlatformRequest is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Envelopes\RequestEnvelope\PlatformRequest instead', E_USER_DEPRECATED);
 

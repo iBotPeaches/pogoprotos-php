@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.CheckChallengeResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.CheckChallengeResponse</code>
  */
 class CheckChallengeResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool show_challenge = 1;</code>
+     * Generated from protobuf field <code>bool show_challenge = 1;</code>
      */
     private $show_challenge = false;
     /**
-     * <code>string challenge_url = 2;</code>
+     * Generated from protobuf field <code>string challenge_url = 2;</code>
      */
     private $challenge_url = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $show_challenge
+     *     @type string $challenge_url
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\CheckChallengeResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool show_challenge = 1;</code>
+     * Generated from protobuf field <code>bool show_challenge = 1;</code>
+     * @return bool
      */
     public function getShowChallenge()
     {
@@ -36,16 +47,21 @@ class CheckChallengeResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool show_challenge = 1;</code>
+     * Generated from protobuf field <code>bool show_challenge = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setShowChallenge($var)
     {
         GPBUtil::checkBool($var);
         $this->show_challenge = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string challenge_url = 2;</code>
+     * Generated from protobuf field <code>string challenge_url = 2;</code>
+     * @return string
      */
     public function getChallengeUrl()
     {
@@ -53,12 +69,16 @@ class CheckChallengeResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string challenge_url = 2;</code>
+     * Generated from protobuf field <code>string challenge_url = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setChallengeUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->challenge_url = $var;
+
+        return $this;
     }
 
 }

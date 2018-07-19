@@ -4,83 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestCondition.WithBadgeType</code>
- */
-class QuestCondition_WithBadgeType extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>repeated .POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestCondition\WithBadgeType instead.
+     * @deprecated
      */
-    private $badge_type;
-    /**
-     * <code>int32 badge_rank = 2;</code>
-     */
-    private $badge_rank = 0;
-    /**
-     * <code>int32 amount = 3;</code>
-     */
-    private $amount = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestCondition::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Enums.BadgeType badge_type = 1;</code>
-     */
-    public function getBadgeType()
-    {
-        return $this->badge_type;
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Enums.BadgeType badge_type = 1;</code>
-     */
-    public function setBadgeType(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\BadgeType::class);
-        $this->badge_type = $var;
-    }
-
-    /**
-     * <code>int32 badge_rank = 2;</code>
-     */
-    public function getBadgeRank()
-    {
-        return $this->badge_rank;
-    }
-
-    /**
-     * <code>int32 badge_rank = 2;</code>
-     */
-    public function setBadgeRank($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->badge_rank = $var;
-    }
-
-    /**
-     * <code>int32 amount = 3;</code>
-     */
-    public function getAmount()
-    {
-        return $this->amount;
-    }
-
-    /**
-     * <code>int32 amount = 3;</code>
-     */
-    public function setAmount($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->amount = $var;
-    }
-
+    class QuestCondition_WithBadgeType {}
 }
+class_exists(QuestCondition\WithBadgeType::class);
+@trigger_error('POGOProtos\Data\Quests\QuestCondition_WithBadgeType is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestCondition\WithBadgeType instead', E_USER_DEPRECATED);
 

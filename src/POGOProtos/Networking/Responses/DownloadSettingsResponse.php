@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.DownloadSettingsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.DownloadSettingsResponse</code>
  */
 class DownloadSettingsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string error = 1;</code>
+     * Generated from protobuf field <code>string error = 1;</code>
      */
     private $error = '';
     /**
-     * <code>string hash = 2;</code>
+     * Generated from protobuf field <code>string hash = 2;</code>
      */
     private $hash = '';
     /**
-     * <code>.POGOProtos.Settings.GlobalSettings settings = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.GlobalSettings settings = 3;</code>
      */
     private $settings = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $error
+     *     @type string $hash
+     *     @type \POGOProtos\Settings\GlobalSettings $settings
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\DownloadSettingsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string error = 1;</code>
+     * Generated from protobuf field <code>string error = 1;</code>
+     * @return string
      */
     public function getError()
     {
@@ -40,16 +52,21 @@ class DownloadSettingsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string error = 1;</code>
+     * Generated from protobuf field <code>string error = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setError($var)
     {
         GPBUtil::checkString($var, True);
         $this->error = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string hash = 2;</code>
+     * Generated from protobuf field <code>string hash = 2;</code>
+     * @return string
      */
     public function getHash()
     {
@@ -57,16 +74,21 @@ class DownloadSettingsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string hash = 2;</code>
+     * Generated from protobuf field <code>string hash = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setHash($var)
     {
         GPBUtil::checkString($var, True);
         $this->hash = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.GlobalSettings settings = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.GlobalSettings settings = 3;</code>
+     * @return \POGOProtos\Settings\GlobalSettings
      */
     public function getSettings()
     {
@@ -74,12 +96,16 @@ class DownloadSettingsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.GlobalSettings settings = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.GlobalSettings settings = 3;</code>
+     * @param \POGOProtos\Settings\GlobalSettings $var
+     * @return $this
      */
-    public function setSettings(&$var)
+    public function setSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\GlobalSettings::class);
         $this->settings = $var;
+
+        return $this;
     }
 
 }

@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Pokemon.PokemonGenderSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Pokemon.PokemonGenderSettings</code>
  */
 class PokemonGenderSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float male_percent = 1;</code>
+     * Generated from protobuf field <code>float male_percent = 1;</code>
      */
     private $male_percent = 0.0;
     /**
-     * <code>float female_percent = 2;</code>
+     * Generated from protobuf field <code>float female_percent = 2;</code>
      */
     private $female_percent = 0.0;
     /**
-     * <code>float genderless_percent = 3;</code>
+     * Generated from protobuf field <code>float genderless_percent = 3;</code>
      */
     private $genderless_percent = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $male_percent
+     *     @type float $female_percent
+     *     @type float $genderless_percent
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Pokemon\PokemonGenderSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float male_percent = 1;</code>
+     * Generated from protobuf field <code>float male_percent = 1;</code>
+     * @return float
      */
     public function getMalePercent()
     {
@@ -40,16 +52,21 @@ class PokemonGenderSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float male_percent = 1;</code>
+     * Generated from protobuf field <code>float male_percent = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setMalePercent($var)
     {
         GPBUtil::checkFloat($var);
         $this->male_percent = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float female_percent = 2;</code>
+     * Generated from protobuf field <code>float female_percent = 2;</code>
+     * @return float
      */
     public function getFemalePercent()
     {
@@ -57,16 +74,21 @@ class PokemonGenderSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float female_percent = 2;</code>
+     * Generated from protobuf field <code>float female_percent = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setFemalePercent($var)
     {
         GPBUtil::checkFloat($var);
         $this->female_percent = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float genderless_percent = 3;</code>
+     * Generated from protobuf field <code>float genderless_percent = 3;</code>
+     * @return float
      */
     public function getGenderlessPercent()
     {
@@ -74,12 +96,16 @@ class PokemonGenderSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float genderless_percent = 3;</code>
+     * Generated from protobuf field <code>float genderless_percent = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setGenderlessPercent($var)
     {
         GPBUtil::checkFloat($var);
         $this->genderless_percent = $var;
+
+        return $this;
     }
 
 }

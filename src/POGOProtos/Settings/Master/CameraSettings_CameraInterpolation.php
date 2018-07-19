@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Settings\Master;
 
-/**
- * Protobuf enum <code>POGOProtos.Settings.Master.CameraSettings.CameraInterpolation</code>
- */
-class CameraSettings_CameraInterpolation
-{
+if (false) {
     /**
-     * <code>CAM_INTERP_CUT = 0;</code>
+     * This class is deprecated. Use POGOProtos\Settings\Master\CameraSettings\CameraInterpolation instead.
+     * @deprecated
      */
-    const CAM_INTERP_CUT = 0;
-    /**
-     * <code>CAM_INTERP_LINEAR = 1;</code>
-     */
-    const CAM_INTERP_LINEAR = 1;
-    /**
-     * <code>CAM_INTERP_SMOOTH = 2;</code>
-     */
-    const CAM_INTERP_SMOOTH = 2;
-    /**
-     * <code>CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE = 3;</code>
-     */
-    const CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE = 3;
-    /**
-     * <code>CAM_INTERP_DEPENDS = 4;</code>
-     */
-    const CAM_INTERP_DEPENDS = 4;
+    class CameraSettings_CameraInterpolation {}
 }
+class_exists(CameraSettings\CameraInterpolation::class);
+@trigger_error('POGOProtos\Settings\Master\CameraSettings_CameraInterpolation is deprecated and will be removed in the next major release. Use POGOProtos\Settings\Master\CameraSettings\CameraInterpolation instead', E_USER_DEPRECATED);
 

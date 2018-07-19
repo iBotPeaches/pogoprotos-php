@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Friends.OutgoingFriendInviteDisplay</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Friends.OutgoingFriendInviteDisplay</code>
  */
 class OutgoingFriendInviteDisplay extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Friends.OutgoingFriendInvite invite = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.OutgoingFriendInvite invite = 1;</code>
      */
     private $invite = null;
     /**
-     * <code>.POGOProtos.Data.Player.PlayerSummary player = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerSummary player = 2;</code>
      */
     private $player = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Friends\OutgoingFriendInvite $invite
+     *     @type \POGOProtos\Data\Player\PlayerSummary $player
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Friends\OutgoingFriendInviteDisplay::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Friends.OutgoingFriendInvite invite = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.OutgoingFriendInvite invite = 1;</code>
+     * @return \POGOProtos\Data\Friends\OutgoingFriendInvite
      */
     public function getInvite()
     {
@@ -36,16 +47,21 @@ class OutgoingFriendInviteDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Friends.OutgoingFriendInvite invite = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.OutgoingFriendInvite invite = 1;</code>
+     * @param \POGOProtos\Data\Friends\OutgoingFriendInvite $var
+     * @return $this
      */
-    public function setInvite(&$var)
+    public function setInvite($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Friends\OutgoingFriendInvite::class);
         $this->invite = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerSummary player = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerSummary player = 2;</code>
+     * @return \POGOProtos\Data\Player\PlayerSummary
      */
     public function getPlayer()
     {
@@ -53,12 +69,16 @@ class OutgoingFriendInviteDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerSummary player = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerSummary player = 2;</code>
+     * @param \POGOProtos\Data\Player\PlayerSummary $var
+     * @return $this
      */
-    public function setPlayer(&$var)
+    public function setPlayer($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerSummary::class);
         $this->player = $var;
+
+        return $this;
     }
 
 }

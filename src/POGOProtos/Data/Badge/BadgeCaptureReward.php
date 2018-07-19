@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Badge.BadgeCaptureReward</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Badge.BadgeCaptureReward</code>
  */
 class BadgeCaptureReward extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float capture_reward_multiplier = 1;</code>
+     * Generated from protobuf field <code>float capture_reward_multiplier = 1;</code>
      */
     private $capture_reward_multiplier = 0.0;
     /**
-     * <code>repeated string avatar_template_ids = 2;</code>
+     * Generated from protobuf field <code>repeated string avatar_template_ids = 2;</code>
      */
     private $avatar_template_ids;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $capture_reward_multiplier
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $avatar_template_ids
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Badge\BadgeCaptureReward::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float capture_reward_multiplier = 1;</code>
+     * Generated from protobuf field <code>float capture_reward_multiplier = 1;</code>
+     * @return float
      */
     public function getCaptureRewardMultiplier()
     {
@@ -36,16 +47,21 @@ class BadgeCaptureReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float capture_reward_multiplier = 1;</code>
+     * Generated from protobuf field <code>float capture_reward_multiplier = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setCaptureRewardMultiplier($var)
     {
         GPBUtil::checkFloat($var);
         $this->capture_reward_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated string avatar_template_ids = 2;</code>
+     * Generated from protobuf field <code>repeated string avatar_template_ids = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAvatarTemplateIds()
     {
@@ -53,12 +69,16 @@ class BadgeCaptureReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string avatar_template_ids = 2;</code>
+     * Generated from protobuf field <code>repeated string avatar_template_ids = 2;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAvatarTemplateIds(&$var)
+    public function setAvatarTemplateIds($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->avatar_template_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->avatar_template_ids = $arr;
+
+        return $this;
     }
 
 }

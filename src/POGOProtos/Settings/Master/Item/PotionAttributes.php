@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Item.PotionAttributes</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Item.PotionAttributes</code>
  */
 class PotionAttributes extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float sta_percent = 1;</code>
+     * Generated from protobuf field <code>float sta_percent = 1;</code>
      */
     private $sta_percent = 0.0;
     /**
-     * <code>int32 sta_amount = 2;</code>
+     * Generated from protobuf field <code>int32 sta_amount = 2;</code>
      */
     private $sta_amount = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $sta_percent
+     *     @type int $sta_amount
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Item\PotionAttributes::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float sta_percent = 1;</code>
+     * Generated from protobuf field <code>float sta_percent = 1;</code>
+     * @return float
      */
     public function getStaPercent()
     {
@@ -36,16 +47,21 @@ class PotionAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float sta_percent = 1;</code>
+     * Generated from protobuf field <code>float sta_percent = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setStaPercent($var)
     {
         GPBUtil::checkFloat($var);
         $this->sta_percent = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 sta_amount = 2;</code>
+     * Generated from protobuf field <code>int32 sta_amount = 2;</code>
+     * @return int
      */
     public function getStaAmount()
     {
@@ -53,12 +69,16 @@ class PotionAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 sta_amount = 2;</code>
+     * Generated from protobuf field <code>int32 sta_amount = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStaAmount($var)
     {
         GPBUtil::checkInt32($var);
         $this->sta_amount = $var;
+
+        return $this;
     }
 
 }

@@ -5,28 +5,28 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.GymBadgeType</code>
+ * Protobuf type <code>POGOProtos.Enums.GymBadgeType</code>
  */
 class GymBadgeType
 {
     /**
-     * <code>GYM_BADGE_UNSET = 0;</code>
+     * Generated from protobuf enum <code>GYM_BADGE_UNSET = 0;</code>
      */
     const GYM_BADGE_UNSET = 0;
     /**
-     * <code>GYM_BADGE_VANILLA = 1;</code>
+     * Generated from protobuf enum <code>GYM_BADGE_VANILLA = 1;</code>
      */
     const GYM_BADGE_VANILLA = 1;
     /**
-     * <code>GYM_BADGE_BRONZE = 2;</code>
+     * Generated from protobuf enum <code>GYM_BADGE_BRONZE = 2;</code>
      */
     const GYM_BADGE_BRONZE = 2;
     /**
-     * <code>GYM_BADGE_SILVER = 3;</code>
+     * Generated from protobuf enum <code>GYM_BADGE_SILVER = 3;</code>
      */
     const GYM_BADGE_SILVER = 3;
     /**
-     * <code>GYM_BADGE_GOLD = 4;</code>
+     * Generated from protobuf enum <code>GYM_BADGE_GOLD = 4;</code>
      */
     const GYM_BADGE_GOLD = 4;
 }

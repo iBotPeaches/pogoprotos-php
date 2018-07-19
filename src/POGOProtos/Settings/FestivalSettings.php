@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.FestivalSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.FestivalSettings</code>
  */
 class FestivalSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Settings.FestivalSettings.FestivalType festival_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.FestivalSettings.FestivalType festival_type = 1;</code>
      */
     private $festival_type = 0;
     /**
-     * <code>string key = 2;</code>
+     * Generated from protobuf field <code>string key = 2;</code>
      */
     private $key = '';
     /**
-     * <code>string vector = 3;</code>
+     * Generated from protobuf field <code>string vector = 3;</code>
      */
     private $vector = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $festival_type
+     *     @type string $key
+     *     @type string $vector
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\FestivalSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Settings.FestivalSettings.FestivalType festival_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.FestivalSettings.FestivalType festival_type = 1;</code>
+     * @return int
      */
     public function getFestivalType()
     {
@@ -40,16 +52,21 @@ class FestivalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.FestivalSettings.FestivalType festival_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.FestivalSettings.FestivalType festival_type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setFestivalType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Settings\FestivalSettings_FestivalType::class);
         $this->festival_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string key = 2;</code>
+     * Generated from protobuf field <code>string key = 2;</code>
+     * @return string
      */
     public function getKey()
     {
@@ -57,16 +74,21 @@ class FestivalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string key = 2;</code>
+     * Generated from protobuf field <code>string key = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setKey($var)
     {
         GPBUtil::checkString($var, True);
         $this->key = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string vector = 3;</code>
+     * Generated from protobuf field <code>string vector = 3;</code>
+     * @return string
      */
     public function getVector()
     {
@@ -74,12 +96,16 @@ class FestivalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string vector = 3;</code>
+     * Generated from protobuf field <code>string vector = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setVector($var)
     {
         GPBUtil::checkString($var, True);
         $this->vector = $var;
+
+        return $this;
     }
 
 }

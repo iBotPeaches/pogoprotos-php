@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.FortDeployPokemonResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.FortDeployPokemonResponse</code>
  */
 class FortDeployPokemonResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.FortDeployPokemonResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FortDeployPokemonResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;</code>
      */
     private $fort_details = null;
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 3;</code>
      */
     private $pokemon_data = null;
     /**
-     * <code>.POGOProtos.Data.Gym.GymState gym_state = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymState gym_state = 4;</code>
      */
     private $gym_state = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Networking\Responses\FortDetailsResponse $fort_details
+     *     @type \POGOProtos\Data\PokemonData $pokemon_data
+     *     @type \POGOProtos\Data\Gym\GymState $gym_state
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\FortDeployPokemonResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.FortDeployPokemonResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FortDeployPokemonResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -44,16 +57,21 @@ class FortDeployPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.FortDeployPokemonResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FortDeployPokemonResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\FortDeployPokemonResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;</code>
+     * @return \POGOProtos\Networking\Responses\FortDetailsResponse
      */
     public function getFortDetails()
     {
@@ -61,16 +79,21 @@ class FortDeployPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;</code>
+     * @param \POGOProtos\Networking\Responses\FortDetailsResponse $var
+     * @return $this
      */
-    public function setFortDetails(&$var)
+    public function setFortDetails($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Responses\FortDetailsResponse::class);
         $this->fort_details = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 3;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getPokemonData()
     {
@@ -78,16 +101,21 @@ class FortDeployPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 3;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setPokemonData(&$var)
+    public function setPokemonData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->pokemon_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Gym.GymState gym_state = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymState gym_state = 4;</code>
+     * @return \POGOProtos\Data\Gym\GymState
      */
     public function getGymState()
     {
@@ -95,12 +123,16 @@ class FortDeployPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Gym.GymState gym_state = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymState gym_state = 4;</code>
+     * @param \POGOProtos\Data\Gym\GymState $var
+     * @return $this
      */
-    public function setGymState(&$var)
+    public function setGymState($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Gym\GymState::class);
         $this->gym_state = $var;
+
+        return $this;
     }
 
 }

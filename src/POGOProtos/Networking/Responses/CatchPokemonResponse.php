@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.CatchPokemonResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.CatchPokemonResponse</code>
  */
 class CatchPokemonResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.CatchPokemonResponse.CatchStatus status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.CatchPokemonResponse.CatchStatus status = 1;</code>
      */
     private $status = 0;
     /**
-     * <code>double miss_percent = 2;</code>
+     * Generated from protobuf field <code>double miss_percent = 2;</code>
      */
     private $miss_percent = 0.0;
     /**
-     * <code>fixed64 captured_pokemon_id = 3;</code>
+     * Generated from protobuf field <code>fixed64 captured_pokemon_id = 3;</code>
      */
     private $captured_pokemon_id = 0;
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureAward capture_award = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureAward capture_award = 4;</code>
      */
     private $capture_award = null;
     /**
-     * <code>.POGOProtos.Networking.Responses.CatchPokemonResponse.CaptureReason capture_reason = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.CatchPokemonResponse.CaptureReason capture_reason = 5;</code>
      */
     private $capture_reason = 0;
     /**
-     * <code>int32 display_pokedex_id = 6;</code>
+     * Generated from protobuf field <code>int32 display_pokedex_id = 6;</code>
      */
     private $display_pokedex_id = 0;
     /**
-     * <code>int32 throws_remaining = 7;</code>
+     * Generated from protobuf field <code>int32 throws_remaining = 7;</code>
      */
     private $throws_remaining = 0;
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
      */
     private $pokemon_display = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status
+     *     @type float $miss_percent
+     *     @type int|string $captured_pokemon_id
+     *     @type \POGOProtos\Data\Capture\CaptureAward $capture_award
+     *     @type int $capture_reason
+     *     @type int $display_pokedex_id
+     *     @type int $throws_remaining
+     *     @type \POGOProtos\Data\PokemonDisplay $pokemon_display
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\CatchPokemonResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.CatchPokemonResponse.CatchStatus status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.CatchPokemonResponse.CatchStatus status = 1;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -60,16 +77,21 @@ class CatchPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.CatchPokemonResponse.CatchStatus status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.CatchPokemonResponse.CatchStatus status = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\CatchPokemonResponse_CatchStatus::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double miss_percent = 2;</code>
+     * Generated from protobuf field <code>double miss_percent = 2;</code>
+     * @return float
      */
     public function getMissPercent()
     {
@@ -77,16 +99,21 @@ class CatchPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double miss_percent = 2;</code>
+     * Generated from protobuf field <code>double miss_percent = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setMissPercent($var)
     {
         GPBUtil::checkDouble($var);
         $this->miss_percent = $var;
+
+        return $this;
     }
 
     /**
-     * <code>fixed64 captured_pokemon_id = 3;</code>
+     * Generated from protobuf field <code>fixed64 captured_pokemon_id = 3;</code>
+     * @return int|string
      */
     public function getCapturedPokemonId()
     {
@@ -94,16 +121,21 @@ class CatchPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 captured_pokemon_id = 3;</code>
+     * Generated from protobuf field <code>fixed64 captured_pokemon_id = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setCapturedPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->captured_pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureAward capture_award = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureAward capture_award = 4;</code>
+     * @return \POGOProtos\Data\Capture\CaptureAward
      */
     public function getCaptureAward()
     {
@@ -111,16 +143,21 @@ class CatchPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureAward capture_award = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureAward capture_award = 4;</code>
+     * @param \POGOProtos\Data\Capture\CaptureAward $var
+     * @return $this
      */
-    public function setCaptureAward(&$var)
+    public function setCaptureAward($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Capture\CaptureAward::class);
         $this->capture_award = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.CatchPokemonResponse.CaptureReason capture_reason = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.CatchPokemonResponse.CaptureReason capture_reason = 5;</code>
+     * @return int
      */
     public function getCaptureReason()
     {
@@ -128,16 +165,21 @@ class CatchPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.CatchPokemonResponse.CaptureReason capture_reason = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.CatchPokemonResponse.CaptureReason capture_reason = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCaptureReason($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\CatchPokemonResponse_CaptureReason::class);
         $this->capture_reason = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 display_pokedex_id = 6;</code>
+     * Generated from protobuf field <code>int32 display_pokedex_id = 6;</code>
+     * @return int
      */
     public function getDisplayPokedexId()
     {
@@ -145,16 +187,21 @@ class CatchPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 display_pokedex_id = 6;</code>
+     * Generated from protobuf field <code>int32 display_pokedex_id = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setDisplayPokedexId($var)
     {
         GPBUtil::checkInt32($var);
         $this->display_pokedex_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 throws_remaining = 7;</code>
+     * Generated from protobuf field <code>int32 throws_remaining = 7;</code>
+     * @return int
      */
     public function getThrowsRemaining()
     {
@@ -162,16 +209,21 @@ class CatchPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 throws_remaining = 7;</code>
+     * Generated from protobuf field <code>int32 throws_remaining = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setThrowsRemaining($var)
     {
         GPBUtil::checkInt32($var);
         $this->throws_remaining = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     * @return \POGOProtos\Data\PokemonDisplay
      */
     public function getPokemonDisplay()
     {
@@ -179,12 +231,16 @@ class CatchPokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     * @param \POGOProtos\Data\PokemonDisplay $var
+     * @return $this
      */
-    public function setPokemonDisplay(&$var)
+    public function setPokemonDisplay($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonDisplay::class);
         $this->pokemon_display = $var;
+
+        return $this;
     }
 
 }

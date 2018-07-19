@@ -9,58 +9,77 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Player.PlayerPublicProfile</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Player.PlayerPublicProfile</code>
  */
 class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string name = 1;</code>
+     * Generated from protobuf field <code>string name = 1;</code>
      */
     private $name = '';
     /**
-     * <code>int32 level = 2;</code>
+     * Generated from protobuf field <code>int32 level = 2;</code>
      */
     private $level = 0;
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatar avatar = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatar avatar = 3;</code>
      */
     private $avatar = null;
     /**
-     * <code>.POGOProtos.Enums.TeamColor team_color = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team_color = 4;</code>
      */
     private $team_color = 0;
     /**
-     * <code>int32 battles_won = 5;</code>
+     * Generated from protobuf field <code>int32 battles_won = 5;</code>
      */
     private $battles_won = 0;
     /**
-     * <code>float km_walked = 6;</code>
+     * Generated from protobuf field <code>float km_walked = 6;</code>
      */
     private $km_walked = 0.0;
     /**
-     * <code>int32 caught_pokemon = 7;</code>
+     * Generated from protobuf field <code>int32 caught_pokemon = 7;</code>
      */
     private $caught_pokemon = 0;
     /**
-     * <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 8;</code>
      */
     private $gym_badge_type = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Player.PlayerBadge badges = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.PlayerBadge badges = 9;</code>
      */
     private $badges;
     /**
-     * <code>int64 experience = 10;</code>
+     * Generated from protobuf field <code>int64 experience = 10;</code>
      */
     private $experience = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $name
+     *     @type int $level
+     *     @type \POGOProtos\Data\Player\PlayerAvatar $avatar
+     *     @type int $team_color
+     *     @type int $battles_won
+     *     @type float $km_walked
+     *     @type int $caught_pokemon
+     *     @type int $gym_badge_type
+     *     @type \POGOProtos\Data\Player\PlayerBadge[]|\Google\Protobuf\Internal\RepeatedField $badges
+     *     @type int|string $experience
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Player\PlayerPublicProfile::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string name = 1;</code>
+     * Generated from protobuf field <code>string name = 1;</code>
+     * @return string
      */
     public function getName()
     {
@@ -68,16 +87,21 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string name = 1;</code>
+     * Generated from protobuf field <code>string name = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 level = 2;</code>
+     * Generated from protobuf field <code>int32 level = 2;</code>
+     * @return int
      */
     public function getLevel()
     {
@@ -85,16 +109,21 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 level = 2;</code>
+     * Generated from protobuf field <code>int32 level = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatar avatar = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatar avatar = 3;</code>
+     * @return \POGOProtos\Data\Player\PlayerAvatar
      */
     public function getAvatar()
     {
@@ -102,16 +131,21 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatar avatar = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatar avatar = 3;</code>
+     * @param \POGOProtos\Data\Player\PlayerAvatar $var
+     * @return $this
      */
-    public function setAvatar(&$var)
+    public function setAvatar($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerAvatar::class);
         $this->avatar = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.TeamColor team_color = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team_color = 4;</code>
+     * @return int
      */
     public function getTeamColor()
     {
@@ -119,16 +153,21 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.TeamColor team_color = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team_color = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTeamColor($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\TeamColor::class);
         $this->team_color = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 battles_won = 5;</code>
+     * Generated from protobuf field <code>int32 battles_won = 5;</code>
+     * @return int
      */
     public function getBattlesWon()
     {
@@ -136,16 +175,21 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 battles_won = 5;</code>
+     * Generated from protobuf field <code>int32 battles_won = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBattlesWon($var)
     {
         GPBUtil::checkInt32($var);
         $this->battles_won = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float km_walked = 6;</code>
+     * Generated from protobuf field <code>float km_walked = 6;</code>
+     * @return float
      */
     public function getKmWalked()
     {
@@ -153,16 +197,21 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float km_walked = 6;</code>
+     * Generated from protobuf field <code>float km_walked = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setKmWalked($var)
     {
         GPBUtil::checkFloat($var);
         $this->km_walked = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 caught_pokemon = 7;</code>
+     * Generated from protobuf field <code>int32 caught_pokemon = 7;</code>
+     * @return int
      */
     public function getCaughtPokemon()
     {
@@ -170,16 +219,21 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 caught_pokemon = 7;</code>
+     * Generated from protobuf field <code>int32 caught_pokemon = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCaughtPokemon($var)
     {
         GPBUtil::checkInt32($var);
         $this->caught_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 8;</code>
+     * @return int
      */
     public function getGymBadgeType()
     {
@@ -187,16 +241,21 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.GymBadgeType gym_badge_type = 8;</code>
+     * @param int $var
+     * @return $this
      */
     public function setGymBadgeType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\GymBadgeType::class);
         $this->gym_badge_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Player.PlayerBadge badges = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.PlayerBadge badges = 9;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getBadges()
     {
@@ -204,16 +263,21 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Player.PlayerBadge badges = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.PlayerBadge badges = 9;</code>
+     * @param \POGOProtos\Data\Player\PlayerBadge[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setBadges(&$var)
+    public function setBadges($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Player\PlayerBadge::class);
-        $this->badges = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Player\PlayerBadge::class);
+        $this->badges = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int64 experience = 10;</code>
+     * Generated from protobuf field <code>int64 experience = 10;</code>
+     * @return int|string
      */
     public function getExperience()
     {
@@ -221,12 +285,16 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 experience = 10;</code>
+     * Generated from protobuf field <code>int64 experience = 10;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setExperience($var)
     {
         GPBUtil::checkInt64($var);
         $this->experience = $var;
+
+        return $this;
     }
 
 }

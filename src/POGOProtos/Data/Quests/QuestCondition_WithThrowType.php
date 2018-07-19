@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestCondition.WithThrowType</code>
- */
-class QuestCondition_WithThrowType extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>.POGOProtos.Enums.ActivityType throw_type = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestCondition\WithThrowType instead.
+     * @deprecated
      */
-    private $throw_type = 0;
-    /**
-     * <code>bool hit = 2;</code>
-     */
-    private $hit = false;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestCondition::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>.POGOProtos.Enums.ActivityType throw_type = 1;</code>
-     */
-    public function getThrowType()
-    {
-        return $this->throw_type;
-    }
-
-    /**
-     * <code>.POGOProtos.Enums.ActivityType throw_type = 1;</code>
-     */
-    public function setThrowType($var)
-    {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\ActivityType::class);
-        $this->throw_type = $var;
-    }
-
-    /**
-     * <code>bool hit = 2;</code>
-     */
-    public function getHit()
-    {
-        return $this->hit;
-    }
-
-    /**
-     * <code>bool hit = 2;</code>
-     */
-    public function setHit($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->hit = $var;
-    }
-
+    class QuestCondition_WithThrowType {}
 }
+class_exists(QuestCondition\WithThrowType::class);
+@trigger_error('POGOProtos\Data\Quests\QuestCondition_WithThrowType is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestCondition\WithThrowType instead', E_USER_DEPRECATED);
 

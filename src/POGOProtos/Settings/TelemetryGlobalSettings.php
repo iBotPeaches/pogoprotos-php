@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.TelemetryGlobalSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.TelemetryGlobalSettings</code>
  */
 class TelemetryGlobalSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool enabled = 1;</code>
+     * Generated from protobuf field <code>bool enabled = 1;</code>
      */
     private $enabled = false;
     /**
-     * <code>double session_sampling_fraction = 2;</code>
+     * Generated from protobuf field <code>double session_sampling_fraction = 2;</code>
      */
     private $session_sampling_fraction = 0.0;
     /**
-     * <code>int32 max_buffer_size_kb = 3;</code>
+     * Generated from protobuf field <code>int32 max_buffer_size_kb = 3;</code>
      */
     private $max_buffer_size_kb = 0;
     /**
-     * <code>int32 batch_size = 4;</code>
+     * Generated from protobuf field <code>int32 batch_size = 4;</code>
      */
     private $batch_size = 0;
     /**
-     * <code>int64 update_interval_ms = 5;</code>
+     * Generated from protobuf field <code>int64 update_interval_ms = 5;</code>
      */
     private $update_interval_ms = 0;
     /**
-     * <code>int64 frame_rate_sample_interval_ms = 6;</code>
+     * Generated from protobuf field <code>int64 frame_rate_sample_interval_ms = 6;</code>
      */
     private $frame_rate_sample_interval_ms = 0;
     /**
-     * <code>int64 frame_rate_sample_period_ms = 7;</code>
+     * Generated from protobuf field <code>int64 frame_rate_sample_period_ms = 7;</code>
      */
     private $frame_rate_sample_period_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $enabled
+     *     @type float $session_sampling_fraction
+     *     @type int $max_buffer_size_kb
+     *     @type int $batch_size
+     *     @type int|string $update_interval_ms
+     *     @type int|string $frame_rate_sample_interval_ms
+     *     @type int|string $frame_rate_sample_period_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\TelemetryGlobalSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool enabled = 1;</code>
+     * Generated from protobuf field <code>bool enabled = 1;</code>
+     * @return bool
      */
     public function getEnabled()
     {
@@ -56,16 +72,21 @@ class TelemetryGlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool enabled = 1;</code>
+     * Generated from protobuf field <code>bool enabled = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEnabled($var)
     {
         GPBUtil::checkBool($var);
         $this->enabled = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double session_sampling_fraction = 2;</code>
+     * Generated from protobuf field <code>double session_sampling_fraction = 2;</code>
+     * @return float
      */
     public function getSessionSamplingFraction()
     {
@@ -73,16 +94,21 @@ class TelemetryGlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double session_sampling_fraction = 2;</code>
+     * Generated from protobuf field <code>double session_sampling_fraction = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setSessionSamplingFraction($var)
     {
         GPBUtil::checkDouble($var);
         $this->session_sampling_fraction = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_buffer_size_kb = 3;</code>
+     * Generated from protobuf field <code>int32 max_buffer_size_kb = 3;</code>
+     * @return int
      */
     public function getMaxBufferSizeKb()
     {
@@ -90,16 +116,21 @@ class TelemetryGlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_buffer_size_kb = 3;</code>
+     * Generated from protobuf field <code>int32 max_buffer_size_kb = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxBufferSizeKb($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_buffer_size_kb = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 batch_size = 4;</code>
+     * Generated from protobuf field <code>int32 batch_size = 4;</code>
+     * @return int
      */
     public function getBatchSize()
     {
@@ -107,16 +138,21 @@ class TelemetryGlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 batch_size = 4;</code>
+     * Generated from protobuf field <code>int32 batch_size = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBatchSize($var)
     {
         GPBUtil::checkInt32($var);
         $this->batch_size = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 update_interval_ms = 5;</code>
+     * Generated from protobuf field <code>int64 update_interval_ms = 5;</code>
+     * @return int|string
      */
     public function getUpdateIntervalMs()
     {
@@ -124,16 +160,21 @@ class TelemetryGlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 update_interval_ms = 5;</code>
+     * Generated from protobuf field <code>int64 update_interval_ms = 5;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setUpdateIntervalMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->update_interval_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 frame_rate_sample_interval_ms = 6;</code>
+     * Generated from protobuf field <code>int64 frame_rate_sample_interval_ms = 6;</code>
+     * @return int|string
      */
     public function getFrameRateSampleIntervalMs()
     {
@@ -141,16 +182,21 @@ class TelemetryGlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 frame_rate_sample_interval_ms = 6;</code>
+     * Generated from protobuf field <code>int64 frame_rate_sample_interval_ms = 6;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setFrameRateSampleIntervalMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->frame_rate_sample_interval_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 frame_rate_sample_period_ms = 7;</code>
+     * Generated from protobuf field <code>int64 frame_rate_sample_period_ms = 7;</code>
+     * @return int|string
      */
     public function getFrameRateSamplePeriodMs()
     {
@@ -158,12 +204,16 @@ class TelemetryGlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 frame_rate_sample_period_ms = 7;</code>
+     * Generated from protobuf field <code>int64 frame_rate_sample_period_ms = 7;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setFrameRateSamplePeriodMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->frame_rate_sample_period_ms = $var;
+
+        return $this;
     }
 
 }

@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.UseIncenseResponse.Result</code>
- */
-class UseIncenseResponse_Result
-{
+if (false) {
     /**
-     * <code>UNKNOWN = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\UseIncenseResponse\Result instead.
+     * @deprecated
      */
-    const UNKNOWN = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>INCENSE_ALREADY_ACTIVE = 2;</code>
-     */
-    const INCENSE_ALREADY_ACTIVE = 2;
-    /**
-     * <code>NONE_IN_INVENTORY = 3;</code>
-     */
-    const NONE_IN_INVENTORY = 3;
-    /**
-     * <code>LOCATION_UNSET = 4;</code>
-     */
-    const LOCATION_UNSET = 4;
+    class UseIncenseResponse_Result {}
 }
+class_exists(UseIncenseResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\UseIncenseResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\UseIncenseResponse\Result instead', E_USER_DEPRECATED);
 

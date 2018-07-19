@@ -4,42 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.UseItemEggIncubatorResponse.Result</code>
- */
-class UseItemEggIncubatorResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\UseItemEggIncubatorResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_INCUBATOR_NOT_FOUND = 2;</code>
-     */
-    const ERROR_INCUBATOR_NOT_FOUND = 2;
-    /**
-     * <code>ERROR_POKEMON_EGG_NOT_FOUND = 3;</code>
-     */
-    const ERROR_POKEMON_EGG_NOT_FOUND = 3;
-    /**
-     * <code>ERROR_POKEMON_ID_NOT_EGG = 4;</code>
-     */
-    const ERROR_POKEMON_ID_NOT_EGG = 4;
-    /**
-     * <code>ERROR_INCUBATOR_ALREADY_IN_USE = 5;</code>
-     */
-    const ERROR_INCUBATOR_ALREADY_IN_USE = 5;
-    /**
-     * <code>ERROR_POKEMON_ALREADY_INCUBATING = 6;</code>
-     */
-    const ERROR_POKEMON_ALREADY_INCUBATING = 6;
-    /**
-     * <code>ERROR_INCUBATOR_NO_USES_REMAINING = 7;</code>
-     */
-    const ERROR_INCUBATOR_NO_USES_REMAINING = 7;
+    class UseItemEggIncubatorResponse_Result {}
 }
+class_exists(UseItemEggIncubatorResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\UseItemEggIncubatorResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\UseItemEggIncubatorResponse\Result instead', E_USER_DEPRECATED);
 

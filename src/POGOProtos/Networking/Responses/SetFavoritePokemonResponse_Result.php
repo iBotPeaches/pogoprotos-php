@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.SetFavoritePokemonResponse.Result</code>
- */
-class SetFavoritePokemonResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\SetFavoritePokemonResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_POKEMON_NOT_FOUND = 2;</code>
-     */
-    const ERROR_POKEMON_NOT_FOUND = 2;
-    /**
-     * <code>ERROR_POKEMON_IS_EGG = 3;</code>
-     */
-    const ERROR_POKEMON_IS_EGG = 3;
+    class SetFavoritePokemonResponse_Result {}
 }
+class_exists(SetFavoritePokemonResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\SetFavoritePokemonResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\SetFavoritePokemonResponse\Result instead', E_USER_DEPRECATED);
 

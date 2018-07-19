@@ -4,38 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.DeleteGiftResponse.Result</code>
- */
-class DeleteGiftResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\DeleteGiftResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_UNKNOWN = 2;</code>
-     */
-    const ERROR_UNKNOWN = 2;
-    /**
-     * <code>ERROR_INVALID_PLAYER_ID = 3;</code>
-     */
-    const ERROR_INVALID_PLAYER_ID = 3;
-    /**
-     * <code>ERROR_FRIEND_NOT_FOUND = 4;</code>
-     */
-    const ERROR_FRIEND_NOT_FOUND = 4;
-    /**
-     * <code>ERROR_GIFT_DOES_NOT_EXIST = 5;</code>
-     */
-    const ERROR_GIFT_DOES_NOT_EXIST = 5;
-    /**
-     * <code>ERROR_FRIEND_UPDATE = 6;</code>
-     */
-    const ERROR_FRIEND_UPDATE = 6;
+    class DeleteGiftResponse_Result {}
 }
+class_exists(DeleteGiftResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\DeleteGiftResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\DeleteGiftResponse\Result instead', E_USER_DEPRECATED);
 

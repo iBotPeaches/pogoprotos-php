@@ -5,52 +5,52 @@
 namespace POGOProtos\Data\Battle;
 
 /**
- * Protobuf enum <code>POGOProtos.Data.Battle.BattleActionType</code>
+ * Protobuf type <code>POGOProtos.Data.Battle.BattleActionType</code>
  */
 class BattleActionType
 {
     /**
-     * <code>ACTION_UNSET = 0;</code>
+     * Generated from protobuf enum <code>ACTION_UNSET = 0;</code>
      */
     const ACTION_UNSET = 0;
     /**
-     * <code>ACTION_ATTACK = 1;</code>
+     * Generated from protobuf enum <code>ACTION_ATTACK = 1;</code>
      */
     const ACTION_ATTACK = 1;
     /**
-     * <code>ACTION_DODGE = 2;</code>
+     * Generated from protobuf enum <code>ACTION_DODGE = 2;</code>
      */
     const ACTION_DODGE = 2;
     /**
-     * <code>ACTION_SPECIAL_ATTACK = 3;</code>
+     * Generated from protobuf enum <code>ACTION_SPECIAL_ATTACK = 3;</code>
      */
     const ACTION_SPECIAL_ATTACK = 3;
     /**
-     * <code>ACTION_SWAP_POKEMON = 4;</code>
+     * Generated from protobuf enum <code>ACTION_SWAP_POKEMON = 4;</code>
      */
     const ACTION_SWAP_POKEMON = 4;
     /**
-     * <code>ACTION_FAINT = 5;</code>
+     * Generated from protobuf enum <code>ACTION_FAINT = 5;</code>
      */
     const ACTION_FAINT = 5;
     /**
-     * <code>ACTION_PLAYER_JOIN = 6;</code>
+     * Generated from protobuf enum <code>ACTION_PLAYER_JOIN = 6;</code>
      */
     const ACTION_PLAYER_JOIN = 6;
     /**
-     * <code>ACTION_PLAYER_QUIT = 7;</code>
+     * Generated from protobuf enum <code>ACTION_PLAYER_QUIT = 7;</code>
      */
     const ACTION_PLAYER_QUIT = 7;
     /**
-     * <code>ACTION_VICTORY = 8;</code>
+     * Generated from protobuf enum <code>ACTION_VICTORY = 8;</code>
      */
     const ACTION_VICTORY = 8;
     /**
-     * <code>ACTION_DEFEAT = 9;</code>
+     * Generated from protobuf enum <code>ACTION_DEFEAT = 9;</code>
      */
     const ACTION_DEFEAT = 9;
     /**
-     * <code>ACTION_TIMED_OUT = 10;</code>
+     * Generated from protobuf enum <code>ACTION_TIMED_OUT = 10;</code>
      */
     const ACTION_TIMED_OUT = 10;
 }

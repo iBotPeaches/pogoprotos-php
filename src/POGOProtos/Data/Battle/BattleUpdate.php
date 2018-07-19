@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Battle.BattleUpdate</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Battle.BattleUpdate</code>
  */
 class BattleUpdate extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Battle.BattleLog battle_log = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleLog battle_log = 1;</code>
      */
     private $battle_log = null;
     /**
-     * <code>string battle_id = 2;</code>
+     * Generated from protobuf field <code>string battle_id = 2;</code>
      */
     private $battle_id = '';
     /**
-     * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 3;</code>
      */
     private $active_defender = null;
     /**
-     * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 4;</code>
      */
     private $active_attacker = null;
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 5;</code>
      */
     private $highest_friendship_milestone = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Battle\BattleLog $battle_log
+     *     @type string $battle_id
+     *     @type \POGOProtos\Data\Battle\BattlePokemonInfo $active_defender
+     *     @type \POGOProtos\Data\Battle\BattlePokemonInfo $active_attacker
+     *     @type int $highest_friendship_milestone
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Battle\BattleUpdate::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleLog battle_log = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleLog battle_log = 1;</code>
+     * @return \POGOProtos\Data\Battle\BattleLog
      */
     public function getBattleLog()
     {
@@ -48,16 +62,21 @@ class BattleUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleLog battle_log = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleLog battle_log = 1;</code>
+     * @param \POGOProtos\Data\Battle\BattleLog $var
+     * @return $this
      */
-    public function setBattleLog(&$var)
+    public function setBattleLog($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleLog::class);
         $this->battle_log = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string battle_id = 2;</code>
+     * Generated from protobuf field <code>string battle_id = 2;</code>
+     * @return string
      */
     public function getBattleId()
     {
@@ -65,16 +84,21 @@ class BattleUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string battle_id = 2;</code>
+     * Generated from protobuf field <code>string battle_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setBattleId($var)
     {
         GPBUtil::checkString($var, True);
         $this->battle_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 3;</code>
+     * @return \POGOProtos\Data\Battle\BattlePokemonInfo
      */
     public function getActiveDefender()
     {
@@ -82,16 +106,21 @@ class BattleUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 3;</code>
+     * @param \POGOProtos\Data\Battle\BattlePokemonInfo $var
+     * @return $this
      */
-    public function setActiveDefender(&$var)
+    public function setActiveDefender($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattlePokemonInfo::class);
         $this->active_defender = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 4;</code>
+     * @return \POGOProtos\Data\Battle\BattlePokemonInfo
      */
     public function getActiveAttacker()
     {
@@ -99,16 +128,21 @@ class BattleUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 4;</code>
+     * @param \POGOProtos\Data\Battle\BattlePokemonInfo $var
+     * @return $this
      */
-    public function setActiveAttacker(&$var)
+    public function setActiveAttacker($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattlePokemonInfo::class);
         $this->active_attacker = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 5;</code>
+     * @return int
      */
     public function getHighestFriendshipMilestone()
     {
@@ -116,12 +150,16 @@ class BattleUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setHighestFriendshipMilestone($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\FriendshipLevelMilestone::class);
         $this->highest_friendship_milestone = $var;
+
+        return $this;
     }
 
 }

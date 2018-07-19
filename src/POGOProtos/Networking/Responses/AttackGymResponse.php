@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.AttackGymResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.AttackGymResponse</code>
  */
 class AttackGymResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.AttackGymResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.AttackGymResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Data.Battle.BattleLog battle_log = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleLog battle_log = 2;</code>
      */
     private $battle_log = null;
     /**
-     * <code>string battle_id = 3;</code>
+     * Generated from protobuf field <code>string battle_id = 3;</code>
      */
     private $battle_id = '';
     /**
-     * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 4;</code>
      */
     private $active_defender = null;
     /**
-     * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 5;</code>
      */
     private $active_attacker = null;
     /**
-     * <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 6;</code>
      */
     private $battle_update = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\Battle\BattleLog $battle_log
+     *     @type string $battle_id
+     *     @type \POGOProtos\Data\Battle\BattlePokemonInfo $active_defender
+     *     @type \POGOProtos\Data\Battle\BattlePokemonInfo $active_attacker
+     *     @type \POGOProtos\Data\Battle\BattleUpdate $battle_update
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\AttackGymResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.AttackGymResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.AttackGymResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -52,16 +67,21 @@ class AttackGymResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.AttackGymResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.AttackGymResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\AttackGymResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleLog battle_log = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleLog battle_log = 2;</code>
+     * @return \POGOProtos\Data\Battle\BattleLog
      */
     public function getBattleLog()
     {
@@ -69,16 +89,21 @@ class AttackGymResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleLog battle_log = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleLog battle_log = 2;</code>
+     * @param \POGOProtos\Data\Battle\BattleLog $var
+     * @return $this
      */
-    public function setBattleLog(&$var)
+    public function setBattleLog($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleLog::class);
         $this->battle_log = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string battle_id = 3;</code>
+     * Generated from protobuf field <code>string battle_id = 3;</code>
+     * @return string
      */
     public function getBattleId()
     {
@@ -86,16 +111,21 @@ class AttackGymResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string battle_id = 3;</code>
+     * Generated from protobuf field <code>string battle_id = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setBattleId($var)
     {
         GPBUtil::checkString($var, True);
         $this->battle_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 4;</code>
+     * @return \POGOProtos\Data\Battle\BattlePokemonInfo
      */
     public function getActiveDefender()
     {
@@ -103,16 +133,21 @@ class AttackGymResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_defender = 4;</code>
+     * @param \POGOProtos\Data\Battle\BattlePokemonInfo $var
+     * @return $this
      */
-    public function setActiveDefender(&$var)
+    public function setActiveDefender($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattlePokemonInfo::class);
         $this->active_defender = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 5;</code>
+     * @return \POGOProtos\Data\Battle\BattlePokemonInfo
      */
     public function getActiveAttacker()
     {
@@ -120,16 +155,21 @@ class AttackGymResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattlePokemonInfo active_attacker = 5;</code>
+     * @param \POGOProtos\Data\Battle\BattlePokemonInfo $var
+     * @return $this
      */
-    public function setActiveAttacker(&$var)
+    public function setActiveAttacker($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattlePokemonInfo::class);
         $this->active_attacker = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 6;</code>
+     * @return \POGOProtos\Data\Battle\BattleUpdate
      */
     public function getBattleUpdate()
     {
@@ -137,12 +177,16 @@ class AttackGymResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 6;</code>
+     * @param \POGOProtos\Data\Battle\BattleUpdate $var
+     * @return $this
      */
-    public function setBattleUpdate(&$var)
+    public function setBattleUpdate($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleUpdate::class);
         $this->battle_update = $var;
+
+        return $this;
     }
 
 }

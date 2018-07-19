@@ -9,27 +9,49 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Logs.ActionLogEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Logs.ActionLogEntry</code>
  */
 class ActionLogEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 timestamp_ms = 1;</code>
      */
     private $timestamp_ms = 0;
     /**
-     * <code>bool sfida = 2;</code>
+     * Generated from protobuf field <code>bool sfida = 2;</code>
      */
     private $sfida = false;
     protected $Action;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $timestamp_ms
+     *     @type bool $sfida
+     *     @type \POGOProtos\Data\Logs\CatchPokemonLogEntry $catch_pokemon
+     *     @type \POGOProtos\Data\Logs\FortSearchLogEntry $fort_search
+     *     @type \POGOProtos\Data\Logs\BuddyPokemonLogEntry $buddy_pokemon
+     *     @type \POGOProtos\Data\Logs\RaidRewardsLogEntry $raid_rewards
+     *     @type \POGOProtos\Data\Logs\PasscodeRewardsLogEntry $passcode_rewards
+     *     @type \POGOProtos\Data\Logs\CompleteQuestLogEntry $complete_quest
+     *     @type \POGOProtos\Data\Logs\CompleteQuestStampCardLogEntry $complete_quest_stamp_card
+     *     @type \POGOProtos\Data\Logs\CompleteQuestPokemonEncounterLogEntry $complete_quest_pokemon_encounter
+     *     @type \POGOProtos\Data\Logs\OpenGiftLogEntry $open_gift
+     *     @type \POGOProtos\Data\Logs\SendGiftLogEntry $send_gift
+     *     @type \POGOProtos\Data\Logs\TradingLogEntry $trading
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Logs\ActionLogEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 timestamp_ms = 1;</code>
+     * @return int|string
      */
     public function getTimestampMs()
     {
@@ -37,16 +59,21 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 timestamp_ms = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool sfida = 2;</code>
+     * Generated from protobuf field <code>bool sfida = 2;</code>
+     * @return bool
      */
     public function getSfida()
     {
@@ -54,16 +81,21 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool sfida = 2;</code>
+     * Generated from protobuf field <code>bool sfida = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSfida($var)
     {
         GPBUtil::checkBool($var);
         $this->sfida = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     * @return \POGOProtos\Data\Logs\CatchPokemonLogEntry
      */
     public function getCatchPokemon()
     {
@@ -71,16 +103,21 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     * @param \POGOProtos\Data\Logs\CatchPokemonLogEntry $var
+     * @return $this
      */
-    public function setCatchPokemon(&$var)
+    public function setCatchPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\CatchPokemonLogEntry::class);
         $this->writeOneof(3, $var);
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.FortSearchLogEntry fort_search = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.FortSearchLogEntry fort_search = 4;</code>
+     * @return \POGOProtos\Data\Logs\FortSearchLogEntry
      */
     public function getFortSearch()
     {
@@ -88,16 +125,21 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.FortSearchLogEntry fort_search = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.FortSearchLogEntry fort_search = 4;</code>
+     * @param \POGOProtos\Data\Logs\FortSearchLogEntry $var
+     * @return $this
      */
-    public function setFortSearch(&$var)
+    public function setFortSearch($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\FortSearchLogEntry::class);
         $this->writeOneof(4, $var);
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     * @return \POGOProtos\Data\Logs\BuddyPokemonLogEntry
      */
     public function getBuddyPokemon()
     {
@@ -105,16 +147,21 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     * @param \POGOProtos\Data\Logs\BuddyPokemonLogEntry $var
+     * @return $this
      */
-    public function setBuddyPokemon(&$var)
+    public function setBuddyPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\BuddyPokemonLogEntry::class);
         $this->writeOneof(5, $var);
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.RaidRewardsLogEntry raid_rewards = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.RaidRewardsLogEntry raid_rewards = 6;</code>
+     * @return \POGOProtos\Data\Logs\RaidRewardsLogEntry
      */
     public function getRaidRewards()
     {
@@ -122,16 +169,21 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.RaidRewardsLogEntry raid_rewards = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.RaidRewardsLogEntry raid_rewards = 6;</code>
+     * @param \POGOProtos\Data\Logs\RaidRewardsLogEntry $var
+     * @return $this
      */
-    public function setRaidRewards(&$var)
+    public function setRaidRewards($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\RaidRewardsLogEntry::class);
         $this->writeOneof(6, $var);
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     * @return \POGOProtos\Data\Logs\PasscodeRewardsLogEntry
      */
     public function getPasscodeRewards()
     {
@@ -139,16 +191,21 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     * @param \POGOProtos\Data\Logs\PasscodeRewardsLogEntry $var
+     * @return $this
      */
-    public function setPasscodeRewards(&$var)
+    public function setPasscodeRewards($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\PasscodeRewardsLogEntry::class);
         $this->writeOneof(7, $var);
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.CompleteQuestLogEntry complete_quest = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CompleteQuestLogEntry complete_quest = 8;</code>
+     * @return \POGOProtos\Data\Logs\CompleteQuestLogEntry
      */
     public function getCompleteQuest()
     {
@@ -156,16 +213,21 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.CompleteQuestLogEntry complete_quest = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CompleteQuestLogEntry complete_quest = 8;</code>
+     * @param \POGOProtos\Data\Logs\CompleteQuestLogEntry $var
+     * @return $this
      */
-    public function setCompleteQuest(&$var)
+    public function setCompleteQuest($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\CompleteQuestLogEntry::class);
         $this->writeOneof(8, $var);
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     * @return \POGOProtos\Data\Logs\CompleteQuestStampCardLogEntry
      */
     public function getCompleteQuestStampCard()
     {
@@ -173,16 +235,21 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     * @param \POGOProtos\Data\Logs\CompleteQuestStampCardLogEntry $var
+     * @return $this
      */
-    public function setCompleteQuestStampCard(&$var)
+    public function setCompleteQuestStampCard($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\CompleteQuestStampCardLogEntry::class);
         $this->writeOneof(9, $var);
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     * @return \POGOProtos\Data\Logs\CompleteQuestPokemonEncounterLogEntry
      */
     public function getCompleteQuestPokemonEncounter()
     {
@@ -190,16 +257,21 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     * @param \POGOProtos\Data\Logs\CompleteQuestPokemonEncounterLogEntry $var
+     * @return $this
      */
-    public function setCompleteQuestPokemonEncounter(&$var)
+    public function setCompleteQuestPokemonEncounter($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\CompleteQuestPokemonEncounterLogEntry::class);
         $this->writeOneof(10, $var);
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.OpenGiftLogEntry open_gift = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.OpenGiftLogEntry open_gift = 12;</code>
+     * @return \POGOProtos\Data\Logs\OpenGiftLogEntry
      */
     public function getOpenGift()
     {
@@ -207,16 +279,21 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.OpenGiftLogEntry open_gift = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.OpenGiftLogEntry open_gift = 12;</code>
+     * @param \POGOProtos\Data\Logs\OpenGiftLogEntry $var
+     * @return $this
      */
-    public function setOpenGift(&$var)
+    public function setOpenGift($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\OpenGiftLogEntry::class);
         $this->writeOneof(12, $var);
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.SendGiftLogEntry send_gift = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.SendGiftLogEntry send_gift = 13;</code>
+     * @return \POGOProtos\Data\Logs\SendGiftLogEntry
      */
     public function getSendGift()
     {
@@ -224,16 +301,21 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.SendGiftLogEntry send_gift = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.SendGiftLogEntry send_gift = 13;</code>
+     * @param \POGOProtos\Data\Logs\SendGiftLogEntry $var
+     * @return $this
      */
-    public function setSendGift(&$var)
+    public function setSendGift($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\SendGiftLogEntry::class);
         $this->writeOneof(13, $var);
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.TradingLogEntry trading = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.TradingLogEntry trading = 14;</code>
+     * @return \POGOProtos\Data\Logs\TradingLogEntry
      */
     public function getTrading()
     {
@@ -241,17 +323,24 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.TradingLogEntry trading = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.TradingLogEntry trading = 14;</code>
+     * @param \POGOProtos\Data\Logs\TradingLogEntry $var
+     * @return $this
      */
-    public function setTrading(&$var)
+    public function setTrading($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\TradingLogEntry::class);
         $this->writeOneof(14, $var);
+
+        return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getAction()
     {
-        return $this->Action;
+        return $this->whichOneof("Action");
     }
 
 }

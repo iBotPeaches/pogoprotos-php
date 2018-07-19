@@ -9,58 +9,77 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Logs.FortSearchLogEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Logs.FortSearchLogEntry</code>
  */
 class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Logs.FortSearchLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.FortSearchLogEntry.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>string fort_id = 2;</code>
+     * Generated from protobuf field <code>string fort_id = 2;</code>
      */
     private $fort_id = '';
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData items = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData items = 3;</code>
      */
     private $items;
     /**
-     * <code>int32 eggs = 4;</code>
+     * Generated from protobuf field <code>int32 eggs = 4;</code>
      */
     private $eggs = 0;
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData pokemon_eggs = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData pokemon_eggs = 5;</code>
      */
     private $pokemon_eggs;
     /**
-     * <code>.POGOProtos.Map.Fort.FortType fort_type = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortType fort_type = 6;</code>
      */
     private $fort_type = 0;
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData awarded_items = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData awarded_items = 7;</code>
      */
     private $awarded_items;
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData bonus_items = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData bonus_items = 8;</code>
      */
     private $bonus_items;
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData team_bonus_items = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData team_bonus_items = 9;</code>
      */
     private $team_bonus_items;
     /**
-     * <code>repeated .POGOProtos.Data.Gift.GiftBox gift_boxes = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gift.GiftBox gift_boxes = 10;</code>
      */
     private $gift_boxes;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type string $fort_id
+     *     @type \POGOProtos\Inventory\Item\ItemData[]|\Google\Protobuf\Internal\RepeatedField $items
+     *     @type int $eggs
+     *     @type \POGOProtos\Data\PokemonData[]|\Google\Protobuf\Internal\RepeatedField $pokemon_eggs
+     *     @type int $fort_type
+     *     @type \POGOProtos\Inventory\Item\ItemData[]|\Google\Protobuf\Internal\RepeatedField $awarded_items
+     *     @type \POGOProtos\Inventory\Item\ItemData[]|\Google\Protobuf\Internal\RepeatedField $bonus_items
+     *     @type \POGOProtos\Inventory\Item\ItemData[]|\Google\Protobuf\Internal\RepeatedField $team_bonus_items
+     *     @type \POGOProtos\Data\Gift\GiftBox[]|\Google\Protobuf\Internal\RepeatedField $gift_boxes
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Logs\FortSearchLogEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.FortSearchLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.FortSearchLogEntry.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -68,16 +87,21 @@ class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.FortSearchLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.FortSearchLogEntry.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Logs\FortSearchLogEntry_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string fort_id = 2;</code>
+     * Generated from protobuf field <code>string fort_id = 2;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -85,16 +109,21 @@ class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 2;</code>
+     * Generated from protobuf field <code>string fort_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData items = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData items = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getItems()
     {
@@ -102,16 +131,21 @@ class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData items = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData items = 3;</code>
+     * @param \POGOProtos\Inventory\Item\ItemData[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItems(&$var)
+    public function setItems($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
-        $this->items = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
+        $this->items = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 eggs = 4;</code>
+     * Generated from protobuf field <code>int32 eggs = 4;</code>
+     * @return int
      */
     public function getEggs()
     {
@@ -119,16 +153,21 @@ class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 eggs = 4;</code>
+     * Generated from protobuf field <code>int32 eggs = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEggs($var)
     {
         GPBUtil::checkInt32($var);
         $this->eggs = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData pokemon_eggs = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData pokemon_eggs = 5;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPokemonEggs()
     {
@@ -136,16 +175,21 @@ class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData pokemon_eggs = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData pokemon_eggs = 5;</code>
+     * @param \POGOProtos\Data\PokemonData[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPokemonEggs(&$var)
+    public function setPokemonEggs($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\PokemonData::class);
-        $this->pokemon_eggs = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\PokemonData::class);
+        $this->pokemon_eggs = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortType fort_type = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortType fort_type = 6;</code>
+     * @return int
      */
     public function getFortType()
     {
@@ -153,16 +197,21 @@ class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortType fort_type = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortType fort_type = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setFortType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Fort\FortType::class);
         $this->fort_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData awarded_items = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData awarded_items = 7;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAwardedItems()
     {
@@ -170,16 +219,21 @@ class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData awarded_items = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData awarded_items = 7;</code>
+     * @param \POGOProtos\Inventory\Item\ItemData[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAwardedItems(&$var)
+    public function setAwardedItems($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
-        $this->awarded_items = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
+        $this->awarded_items = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData bonus_items = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData bonus_items = 8;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getBonusItems()
     {
@@ -187,16 +241,21 @@ class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData bonus_items = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData bonus_items = 8;</code>
+     * @param \POGOProtos\Inventory\Item\ItemData[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setBonusItems(&$var)
+    public function setBonusItems($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
-        $this->bonus_items = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
+        $this->bonus_items = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData team_bonus_items = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData team_bonus_items = 9;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getTeamBonusItems()
     {
@@ -204,16 +263,21 @@ class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemData team_bonus_items = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemData team_bonus_items = 9;</code>
+     * @param \POGOProtos\Inventory\Item\ItemData[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTeamBonusItems(&$var)
+    public function setTeamBonusItems($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
-        $this->team_bonus_items = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemData::class);
+        $this->team_bonus_items = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gift.GiftBox gift_boxes = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gift.GiftBox gift_boxes = 10;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getGiftBoxes()
     {
@@ -221,12 +285,16 @@ class FortSearchLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gift.GiftBox gift_boxes = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gift.GiftBox gift_boxes = 10;</code>
+     * @param \POGOProtos\Data\Gift\GiftBox[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGiftBoxes(&$var)
+    public function setGiftBoxes($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gift\GiftBox::class);
-        $this->gift_boxes = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gift\GiftBox::class);
+        $this->gift_boxes = $arr;
+
+        return $this;
     }
 
 }

@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.RemoveQuestMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.RemoveQuestMessage</code>
  */
 class RemoveQuestMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string quest_id = 1;</code>
+     * Generated from protobuf field <code>string quest_id = 1;</code>
      */
     private $quest_id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $quest_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\RemoveQuestMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string quest_id = 1;</code>
+     * Generated from protobuf field <code>string quest_id = 1;</code>
+     * @return string
      */
     public function getQuestId()
     {
@@ -32,12 +42,16 @@ class RemoveQuestMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string quest_id = 1;</code>
+     * Generated from protobuf field <code>string quest_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setQuestId($var)
     {
         GPBUtil::checkString($var, True);
         $this->quest_id = $var;
+
+        return $this;
     }
 
 }

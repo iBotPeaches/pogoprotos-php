@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.CheckSendGiftMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.CheckSendGiftMessage</code>
  */
 class CheckSendGiftMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string player_id = 1;</code>
+     * Generated from protobuf field <code>string player_id = 1;</code>
      */
     private $player_id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $player_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\CheckSendGiftMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string player_id = 1;</code>
+     * Generated from protobuf field <code>string player_id = 1;</code>
+     * @return string
      */
     public function getPlayerId()
     {
@@ -32,12 +42,16 @@ class CheckSendGiftMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string player_id = 1;</code>
+     * Generated from protobuf field <code>string player_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPlayerId($var)
     {
         GPBUtil::checkString($var, True);
         $this->player_id = $var;
+
+        return $this;
     }
 
 }

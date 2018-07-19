@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Battle.BattlePokemonInfo</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Battle.BattlePokemonInfo</code>
  */
 class BattlePokemonInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
      */
     private $pokemon_data = null;
     /**
-     * <code>int32 current_health = 2;</code>
+     * Generated from protobuf field <code>int32 current_health = 2;</code>
      */
     private $current_health = 0;
     /**
-     * <code>int32 current_energy = 3;</code>
+     * Generated from protobuf field <code>int32 current_energy = 3;</code>
      */
     private $current_energy = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\PokemonData $pokemon_data
+     *     @type int $current_health
+     *     @type int $current_energy
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Battle\BattlePokemonInfo::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getPokemonData()
     {
@@ -40,16 +52,21 @@ class BattlePokemonInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setPokemonData(&$var)
+    public function setPokemonData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->pokemon_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 current_health = 2;</code>
+     * Generated from protobuf field <code>int32 current_health = 2;</code>
+     * @return int
      */
     public function getCurrentHealth()
     {
@@ -57,16 +74,21 @@ class BattlePokemonInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 current_health = 2;</code>
+     * Generated from protobuf field <code>int32 current_health = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCurrentHealth($var)
     {
         GPBUtil::checkInt32($var);
         $this->current_health = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 current_energy = 3;</code>
+     * Generated from protobuf field <code>int32 current_energy = 3;</code>
+     * @return int
      */
     public function getCurrentEnergy()
     {
@@ -74,12 +96,16 @@ class BattlePokemonInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 current_energy = 3;</code>
+     * Generated from protobuf field <code>int32 current_energy = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCurrentEnergy($var)
     {
         GPBUtil::checkInt32($var);
         $this->current_energy = $var;
+
+        return $this;
     }
 
 }

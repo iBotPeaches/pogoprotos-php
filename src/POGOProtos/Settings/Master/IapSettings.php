@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.IapSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.IapSettings</code>
  */
 class IapSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 daily_bonus_coins = 1;</code>
+     * Generated from protobuf field <code>int32 daily_bonus_coins = 1;</code>
      */
     private $daily_bonus_coins = 0;
     /**
-     * <code>repeated int32 daily_defender_bonus_per_pokemon = 2;</code>
+     * Generated from protobuf field <code>repeated int32 daily_defender_bonus_per_pokemon = 2;</code>
      */
     private $daily_defender_bonus_per_pokemon;
     /**
-     * <code>int32 daily_defender_bonus_max_defenders = 3;</code>
+     * Generated from protobuf field <code>int32 daily_defender_bonus_max_defenders = 3;</code>
      */
     private $daily_defender_bonus_max_defenders = 0;
     /**
-     * <code>repeated string daily_defender_bonus_currency = 4;</code>
+     * Generated from protobuf field <code>repeated string daily_defender_bonus_currency = 4;</code>
      */
     private $daily_defender_bonus_currency;
     /**
-     * <code>int64 min_time_between_claims_ms = 5;</code>
+     * Generated from protobuf field <code>int64 min_time_between_claims_ms = 5;</code>
      */
     private $min_time_between_claims_ms = 0;
     /**
-     * <code>bool daily_bonus_enabled = 6;</code>
+     * Generated from protobuf field <code>bool daily_bonus_enabled = 6;</code>
      */
     private $daily_bonus_enabled = false;
     /**
-     * <code>bool daily_defender_bonus_enabled = 7;</code>
+     * Generated from protobuf field <code>bool daily_defender_bonus_enabled = 7;</code>
      */
     private $daily_defender_bonus_enabled = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $daily_bonus_coins
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $daily_defender_bonus_per_pokemon
+     *     @type int $daily_defender_bonus_max_defenders
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $daily_defender_bonus_currency
+     *     @type int|string $min_time_between_claims_ms
+     *     @type bool $daily_bonus_enabled
+     *     @type bool $daily_defender_bonus_enabled
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\IapSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 daily_bonus_coins = 1;</code>
+     * Generated from protobuf field <code>int32 daily_bonus_coins = 1;</code>
+     * @return int
      */
     public function getDailyBonusCoins()
     {
@@ -56,16 +72,21 @@ class IapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 daily_bonus_coins = 1;</code>
+     * Generated from protobuf field <code>int32 daily_bonus_coins = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setDailyBonusCoins($var)
     {
         GPBUtil::checkInt32($var);
         $this->daily_bonus_coins = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 daily_defender_bonus_per_pokemon = 2;</code>
+     * Generated from protobuf field <code>repeated int32 daily_defender_bonus_per_pokemon = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getDailyDefenderBonusPerPokemon()
     {
@@ -73,16 +94,21 @@ class IapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 daily_defender_bonus_per_pokemon = 2;</code>
+     * Generated from protobuf field <code>repeated int32 daily_defender_bonus_per_pokemon = 2;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDailyDefenderBonusPerPokemon(&$var)
+    public function setDailyDefenderBonusPerPokemon($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->daily_defender_bonus_per_pokemon = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->daily_defender_bonus_per_pokemon = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 daily_defender_bonus_max_defenders = 3;</code>
+     * Generated from protobuf field <code>int32 daily_defender_bonus_max_defenders = 3;</code>
+     * @return int
      */
     public function getDailyDefenderBonusMaxDefenders()
     {
@@ -90,16 +116,21 @@ class IapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 daily_defender_bonus_max_defenders = 3;</code>
+     * Generated from protobuf field <code>int32 daily_defender_bonus_max_defenders = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setDailyDefenderBonusMaxDefenders($var)
     {
         GPBUtil::checkInt32($var);
         $this->daily_defender_bonus_max_defenders = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated string daily_defender_bonus_currency = 4;</code>
+     * Generated from protobuf field <code>repeated string daily_defender_bonus_currency = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getDailyDefenderBonusCurrency()
     {
@@ -107,16 +138,21 @@ class IapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string daily_defender_bonus_currency = 4;</code>
+     * Generated from protobuf field <code>repeated string daily_defender_bonus_currency = 4;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDailyDefenderBonusCurrency(&$var)
+    public function setDailyDefenderBonusCurrency($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->daily_defender_bonus_currency = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->daily_defender_bonus_currency = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int64 min_time_between_claims_ms = 5;</code>
+     * Generated from protobuf field <code>int64 min_time_between_claims_ms = 5;</code>
+     * @return int|string
      */
     public function getMinTimeBetweenClaimsMs()
     {
@@ -124,16 +160,21 @@ class IapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 min_time_between_claims_ms = 5;</code>
+     * Generated from protobuf field <code>int64 min_time_between_claims_ms = 5;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setMinTimeBetweenClaimsMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->min_time_between_claims_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool daily_bonus_enabled = 6;</code>
+     * Generated from protobuf field <code>bool daily_bonus_enabled = 6;</code>
+     * @return bool
      */
     public function getDailyBonusEnabled()
     {
@@ -141,16 +182,21 @@ class IapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool daily_bonus_enabled = 6;</code>
+     * Generated from protobuf field <code>bool daily_bonus_enabled = 6;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setDailyBonusEnabled($var)
     {
         GPBUtil::checkBool($var);
         $this->daily_bonus_enabled = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool daily_defender_bonus_enabled = 7;</code>
+     * Generated from protobuf field <code>bool daily_defender_bonus_enabled = 7;</code>
+     * @return bool
      */
     public function getDailyDefenderBonusEnabled()
     {
@@ -158,12 +204,16 @@ class IapSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool daily_defender_bonus_enabled = 7;</code>
+     * Generated from protobuf field <code>bool daily_defender_bonus_enabled = 7;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setDailyDefenderBonusEnabled($var)
     {
         GPBUtil::checkBool($var);
         $this->daily_defender_bonus_enabled = $var;
+
+        return $this;
     }
 
 }

@@ -4,41 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestCondition.WithItem</code>
- */
-class QuestCondition_WithItem extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestCondition\WithItem instead.
+     * @deprecated
      */
-    private $item = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestCondition::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
-     */
-    public function getItem()
-    {
-        return $this->item;
-    }
-
-    /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
-     */
-    public function setItem($var)
-    {
-        GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
-        $this->item = $var;
-    }
-
+    class QuestCondition_WithItem {}
 }
+class_exists(QuestCondition\WithItem::class);
+@trigger_error('POGOProtos\Data\Quests\QuestCondition_WithItem is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestCondition\WithItem instead', E_USER_DEPRECATED);
 

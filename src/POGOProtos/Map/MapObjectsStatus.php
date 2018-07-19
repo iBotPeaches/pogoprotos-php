@@ -5,20 +5,20 @@
 namespace POGOProtos\Map;
 
 /**
- * Protobuf enum <code>POGOProtos.Map.MapObjectsStatus</code>
+ * Protobuf type <code>POGOProtos.Map.MapObjectsStatus</code>
  */
 class MapObjectsStatus
 {
     /**
-     * <code>UNSET_STATUS = 0;</code>
+     * Generated from protobuf enum <code>UNSET_STATUS = 0;</code>
      */
     const UNSET_STATUS = 0;
     /**
-     * <code>SUCCESS = 1;</code>
+     * Generated from protobuf enum <code>SUCCESS = 1;</code>
      */
     const SUCCESS = 1;
     /**
-     * <code>LOCATION_UNSET = 2;</code>
+     * Generated from protobuf enum <code>LOCATION_UNSET = 2;</code>
      */
     const LOCATION_UNSET = 2;
 }

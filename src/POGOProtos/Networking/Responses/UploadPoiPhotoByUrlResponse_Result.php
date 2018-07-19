@@ -4,42 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.UploadPoiPhotoByUrlResponse.Result</code>
- */
-class UploadPoiPhotoByUrlResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\UploadPoiPhotoByUrlResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>FEATURE_DISABLED = 2;</code>
-     */
-    const FEATURE_DISABLED = 2;
-    /**
-     * <code>ALREADY_UPLOADED = 3;</code>
-     */
-    const ALREADY_UPLOADED = 3;
-    /**
-     * <code>IMAGE_NOT_FOUND = 4;</code>
-     */
-    const IMAGE_NOT_FOUND = 4;
-    /**
-     * <code>IMAGE_TOO_BIG = 5;</code>
-     */
-    const IMAGE_TOO_BIG = 5;
-    /**
-     * <code>IMAGE_NOT_SERVABLE = 6;</code>
-     */
-    const IMAGE_NOT_SERVABLE = 6;
-    /**
-     * <code>PORTAL_NOT_FOUND = 7;</code>
-     */
-    const PORTAL_NOT_FOUND = 7;
+    class UploadPoiPhotoByUrlResponse_Result {}
 }
+class_exists(UploadPoiPhotoByUrlResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\UploadPoiPhotoByUrlResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\UploadPoiPhotoByUrlResponse\Result instead', E_USER_DEPRECATED);
 

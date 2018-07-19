@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.NewsGlobalSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.NewsGlobalSettings</code>
  */
 class NewsGlobalSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool enable_news = 1;</code>
+     * Generated from protobuf field <code>bool enable_news = 1;</code>
      */
     private $enable_news = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $enable_news
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\NewsGlobalSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool enable_news = 1;</code>
+     * Generated from protobuf field <code>bool enable_news = 1;</code>
+     * @return bool
      */
     public function getEnableNews()
     {
@@ -32,12 +42,16 @@ class NewsGlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool enable_news = 1;</code>
+     * Generated from protobuf field <code>bool enable_news = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEnableNews($var)
     {
         GPBUtil::checkBool($var);
         $this->enable_news = $var;
+
+        return $this;
     }
 
 }

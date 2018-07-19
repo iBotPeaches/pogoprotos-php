@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.OnboardingSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.OnboardingSettings</code>
  */
 class OnboardingSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool skip_avatar_customization = 1;</code>
+     * Generated from protobuf field <code>bool skip_avatar_customization = 1;</code>
      */
     private $skip_avatar_customization = false;
     /**
-     * <code>bool disable_initial_ar_prompt = 2;</code>
+     * Generated from protobuf field <code>bool disable_initial_ar_prompt = 2;</code>
      */
     private $disable_initial_ar_prompt = false;
     /**
-     * <code>uint32 ar_prompt_player_level = 3;</code>
+     * Generated from protobuf field <code>uint32 ar_prompt_player_level = 3;</code>
      */
     private $ar_prompt_player_level = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $skip_avatar_customization
+     *     @type bool $disable_initial_ar_prompt
+     *     @type int $ar_prompt_player_level
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\OnboardingSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool skip_avatar_customization = 1;</code>
+     * Generated from protobuf field <code>bool skip_avatar_customization = 1;</code>
+     * @return bool
      */
     public function getSkipAvatarCustomization()
     {
@@ -40,16 +52,21 @@ class OnboardingSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool skip_avatar_customization = 1;</code>
+     * Generated from protobuf field <code>bool skip_avatar_customization = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSkipAvatarCustomization($var)
     {
         GPBUtil::checkBool($var);
         $this->skip_avatar_customization = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool disable_initial_ar_prompt = 2;</code>
+     * Generated from protobuf field <code>bool disable_initial_ar_prompt = 2;</code>
+     * @return bool
      */
     public function getDisableInitialArPrompt()
     {
@@ -57,16 +74,21 @@ class OnboardingSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool disable_initial_ar_prompt = 2;</code>
+     * Generated from protobuf field <code>bool disable_initial_ar_prompt = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setDisableInitialArPrompt($var)
     {
         GPBUtil::checkBool($var);
         $this->disable_initial_ar_prompt = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint32 ar_prompt_player_level = 3;</code>
+     * Generated from protobuf field <code>uint32 ar_prompt_player_level = 3;</code>
+     * @return int
      */
     public function getArPromptPlayerLevel()
     {
@@ -74,12 +96,16 @@ class OnboardingSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 ar_prompt_player_level = 3;</code>
+     * Generated from protobuf field <code>uint32 ar_prompt_player_level = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setArPromptPlayerLevel($var)
     {
         GPBUtil::checkUint32($var);
         $this->ar_prompt_player_level = $var;
+
+        return $this;
     }
 
 }

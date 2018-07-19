@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.DownloadGmTemplatesResponse.Result</code>
- */
-class DownloadGmTemplatesResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\DownloadGmTemplatesResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>COMPLETE = 1;</code>
-     */
-    const COMPLETE = 1;
-    /**
-     * <code>MORE_RESULTS = 2;</code>
-     */
-    const MORE_RESULTS = 2;
-    /**
-     * <code>BATCH_ID_NOT_LIVE = 3;</code>
-     */
-    const BATCH_ID_NOT_LIVE = 3;
-    /**
-     * <code>INVALID_BASIS_BATCH_ID = 4;</code>
-     */
-    const INVALID_BASIS_BATCH_ID = 4;
+    class DownloadGmTemplatesResponse_Result {}
 }
+class_exists(DownloadGmTemplatesResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\DownloadGmTemplatesResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\DownloadGmTemplatesResponse\Result instead', E_USER_DEPRECATED);
 

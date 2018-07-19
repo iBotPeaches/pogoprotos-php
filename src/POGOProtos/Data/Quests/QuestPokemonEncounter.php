@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestPokemonEncounter</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Quests.QuestPokemonEncounter</code>
  */
 class QuestPokemonEncounter extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string quest_id = 1;</code>
+     * Generated from protobuf field <code>string quest_id = 1;</code>
      */
     private $quest_id = '';
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon = 2;</code>
      */
     private $pokemon = 0;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType encounter_type = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType encounter_type = 3;</code>
      */
     private $encounter_type = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $quest_id
+     *     @type int $pokemon
+     *     @type int $encounter_type
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Quests\QuestPokemonEncounter::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string quest_id = 1;</code>
+     * Generated from protobuf field <code>string quest_id = 1;</code>
+     * @return string
      */
     public function getQuestId()
     {
@@ -40,16 +52,21 @@ class QuestPokemonEncounter extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string quest_id = 1;</code>
+     * Generated from protobuf field <code>string quest_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setQuestId($var)
     {
         GPBUtil::checkString($var, True);
         $this->quest_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon = 2;</code>
+     * @return int
      */
     public function getPokemon()
     {
@@ -57,16 +74,21 @@ class QuestPokemonEncounter extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemon($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType encounter_type = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType encounter_type = 3;</code>
+     * @return int
      */
     public function getEncounterType()
     {
@@ -74,12 +96,16 @@ class QuestPokemonEncounter extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType encounter_type = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType encounter_type = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEncounterType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\QuestPokemonEncounter_EncounterType::class);
         $this->encounter_type = $var;
+
+        return $this;
     }
 
 }

@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.ListGymBadgesResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.ListGymBadgesResponse</code>
  */
 class ListGymBadgesResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
      */
     private $gym_badge;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Badge\AwardedGymBadge[]|\Google\Protobuf\Internal\RepeatedField $gym_badge
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\ListGymBadgesResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getGymBadge()
     {
@@ -32,12 +42,16 @@ class ListGymBadgesResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
+     * @param \POGOProtos\Data\Badge\AwardedGymBadge[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGymBadge(&$var)
+    public function setGymBadge($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Badge\AwardedGymBadge::class);
-        $this->gym_badge = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Badge\AwardedGymBadge::class);
+        $this->gym_badge = $arr;
+
+        return $this;
     }
 
 }

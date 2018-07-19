@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Player.DailyBonus</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Player.DailyBonus</code>
  */
 class DailyBonus extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 next_collected_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 next_collected_timestamp_ms = 1;</code>
      */
     private $next_collected_timestamp_ms = 0;
     /**
-     * <code>int64 next_defender_bonus_collect_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 next_defender_bonus_collect_timestamp_ms = 2;</code>
      */
     private $next_defender_bonus_collect_timestamp_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $next_collected_timestamp_ms
+     *     @type int|string $next_defender_bonus_collect_timestamp_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Player\DailyBonus::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 next_collected_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 next_collected_timestamp_ms = 1;</code>
+     * @return int|string
      */
     public function getNextCollectedTimestampMs()
     {
@@ -36,16 +47,21 @@ class DailyBonus extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 next_collected_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 next_collected_timestamp_ms = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setNextCollectedTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->next_collected_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 next_defender_bonus_collect_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 next_defender_bonus_collect_timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getNextDefenderBonusCollectTimestampMs()
     {
@@ -53,12 +69,16 @@ class DailyBonus extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 next_defender_bonus_collect_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 next_defender_bonus_collect_timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setNextDefenderBonusCollectTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->next_defender_bonus_collect_timestamp_ms = $var;
+
+        return $this;
     }
 
 }

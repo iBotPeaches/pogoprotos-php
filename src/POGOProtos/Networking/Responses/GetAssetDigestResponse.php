@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetAssetDigestResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetAssetDigestResponse</code>
  */
 class GetAssetDigestResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Data.AssetDigestEntry digest = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.AssetDigestEntry digest = 1;</code>
      */
     private $digest;
     /**
-     * <code>uint64 timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 timestamp_ms = 2;</code>
      */
     private $timestamp_ms = 0;
     /**
-     * <code>.POGOProtos.Networking.Responses.GetAssetDigestResponse.Result result = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetAssetDigestResponse.Result result = 3;</code>
      */
     private $result = 0;
     /**
-     * <code>int32 page_offset = 4;</code>
+     * Generated from protobuf field <code>int32 page_offset = 4;</code>
      */
     private $page_offset = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\AssetDigestEntry[]|\Google\Protobuf\Internal\RepeatedField $digest
+     *     @type int|string $timestamp_ms
+     *     @type int $result
+     *     @type int $page_offset
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetAssetDigestResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.AssetDigestEntry digest = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.AssetDigestEntry digest = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getDigest()
     {
@@ -44,16 +57,21 @@ class GetAssetDigestResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.AssetDigestEntry digest = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.AssetDigestEntry digest = 1;</code>
+     * @param \POGOProtos\Data\AssetDigestEntry[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDigest(&$var)
+    public function setDigest($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\AssetDigestEntry::class);
-        $this->digest = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\AssetDigestEntry::class);
+        $this->digest = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getTimestampMs()
     {
@@ -61,16 +79,21 @@ class GetAssetDigestResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTimestampMs($var)
     {
         GPBUtil::checkUint64($var);
         $this->timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetAssetDigestResponse.Result result = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetAssetDigestResponse.Result result = 3;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -78,16 +101,21 @@ class GetAssetDigestResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetAssetDigestResponse.Result result = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetAssetDigestResponse.Result result = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\GetAssetDigestResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 page_offset = 4;</code>
+     * Generated from protobuf field <code>int32 page_offset = 4;</code>
+     * @return int
      */
     public function getPageOffset()
     {
@@ -95,12 +123,16 @@ class GetAssetDigestResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 page_offset = 4;</code>
+     * Generated from protobuf field <code>int32 page_offset = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPageOffset($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_offset = $var;
+
+        return $this;
     }
 
 }

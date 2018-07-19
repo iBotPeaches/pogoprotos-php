@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetAvailableSubmissionsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GetAvailableSubmissionsMessage</code>
  */
 class GetAvailableSubmissionsMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string user_id = 1;</code>
+     * Generated from protobuf field <code>string user_id = 1;</code>
      */
     private $user_id = '';
     /**
-     * <code>.POGOProtos.Data.Player.PlayerReputation player_reputation = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerReputation player_reputation = 2;</code>
      */
     private $player_reputation = null;
     /**
-     * <code>string game_unique_id = 3;</code>
+     * Generated from protobuf field <code>string game_unique_id = 3;</code>
      */
     private $game_unique_id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $user_id
+     *     @type \POGOProtos\Data\Player\PlayerReputation $player_reputation
+     *     @type string $game_unique_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\PlatformClientActionsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string user_id = 1;</code>
+     * Generated from protobuf field <code>string user_id = 1;</code>
+     * @return string
      */
     public function getUserId()
     {
@@ -40,16 +52,21 @@ class GetAvailableSubmissionsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string user_id = 1;</code>
+     * Generated from protobuf field <code>string user_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setUserId($var)
     {
         GPBUtil::checkString($var, True);
         $this->user_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerReputation player_reputation = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerReputation player_reputation = 2;</code>
+     * @return \POGOProtos\Data\Player\PlayerReputation
      */
     public function getPlayerReputation()
     {
@@ -57,16 +74,21 @@ class GetAvailableSubmissionsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerReputation player_reputation = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerReputation player_reputation = 2;</code>
+     * @param \POGOProtos\Data\Player\PlayerReputation $var
+     * @return $this
      */
-    public function setPlayerReputation(&$var)
+    public function setPlayerReputation($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerReputation::class);
         $this->player_reputation = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string game_unique_id = 3;</code>
+     * Generated from protobuf field <code>string game_unique_id = 3;</code>
+     * @return string
      */
     public function getGameUniqueId()
     {
@@ -74,12 +96,16 @@ class GetAvailableSubmissionsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string game_unique_id = 3;</code>
+     * Generated from protobuf field <code>string game_unique_id = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setGameUniqueId($var)
     {
         GPBUtil::checkString($var, True);
         $this->game_unique_id = $var;
+
+        return $this;
     }
 
 }

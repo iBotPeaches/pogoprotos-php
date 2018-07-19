@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.OptOutPushNotificationCategoryMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.OptOutPushNotificationCategoryMessage</code>
  */
 class OptOutPushNotificationCategoryMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated string categories = 1;</code>
+     * Generated from protobuf field <code>repeated string categories = 1;</code>
      */
     private $categories;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $categories
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\PlatformClientActionsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated string categories = 1;</code>
+     * Generated from protobuf field <code>repeated string categories = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCategories()
     {
@@ -32,12 +42,16 @@ class OptOutPushNotificationCategoryMessage extends \Google\Protobuf\Internal\Me
     }
 
     /**
-     * <code>repeated string categories = 1;</code>
+     * Generated from protobuf field <code>repeated string categories = 1;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCategories(&$var)
+    public function setCategories($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->categories = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->categories = $arr;
+
+        return $this;
     }
 
 }

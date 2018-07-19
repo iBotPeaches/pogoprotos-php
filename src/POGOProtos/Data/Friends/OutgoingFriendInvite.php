@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Friends.OutgoingFriendInvite</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Friends.OutgoingFriendInvite</code>
  */
 class OutgoingFriendInvite extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Friends.OutgoingFriendInvite.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.OutgoingFriendInvite.Status status = 1;</code>
      */
     private $status = 0;
     /**
-     * <code>string player_id = 2;</code>
+     * Generated from protobuf field <code>string player_id = 2;</code>
      */
     private $player_id = '';
     /**
-     * <code>int64 created_ms = 3;</code>
+     * Generated from protobuf field <code>int64 created_ms = 3;</code>
      */
     private $created_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status
+     *     @type string $player_id
+     *     @type int|string $created_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Friends\OutgoingFriendInvite::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Friends.OutgoingFriendInvite.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.OutgoingFriendInvite.Status status = 1;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -40,16 +52,21 @@ class OutgoingFriendInvite extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Friends.OutgoingFriendInvite.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.OutgoingFriendInvite.Status status = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Friends\OutgoingFriendInvite_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string player_id = 2;</code>
+     * Generated from protobuf field <code>string player_id = 2;</code>
+     * @return string
      */
     public function getPlayerId()
     {
@@ -57,16 +74,21 @@ class OutgoingFriendInvite extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string player_id = 2;</code>
+     * Generated from protobuf field <code>string player_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPlayerId($var)
     {
         GPBUtil::checkString($var, True);
         $this->player_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 created_ms = 3;</code>
+     * Generated from protobuf field <code>int64 created_ms = 3;</code>
+     * @return int|string
      */
     public function getCreatedMs()
     {
@@ -74,12 +96,16 @@ class OutgoingFriendInvite extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 created_ms = 3;</code>
+     * Generated from protobuf field <code>int64 created_ms = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setCreatedMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->created_ms = $var;
+
+        return $this;
     }
 
 }

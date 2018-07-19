@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse.Result</code>
- */
-class EncounterTutorialCompleteResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\EncounterTutorialCompleteResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_INVALID_POKEMON = 2;</code>
-     */
-    const ERROR_INVALID_POKEMON = 2;
+    class EncounterTutorialCompleteResponse_Result {}
 }
+class_exists(EncounterTutorialCompleteResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\EncounterTutorialCompleteResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\EncounterTutorialCompleteResponse\Result instead', E_USER_DEPRECATED);
 

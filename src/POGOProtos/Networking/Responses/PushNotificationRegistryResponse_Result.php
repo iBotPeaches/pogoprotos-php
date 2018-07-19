@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.PushNotificationRegistryResponse.Result</code>
- */
-class PushNotificationRegistryResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\PushNotificationRegistryResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>NO_CHANGE = 2;</code>
-     */
-    const NO_CHANGE = 2;
+    class PushNotificationRegistryResponse_Result {}
 }
+class_exists(PushNotificationRegistryResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\PushNotificationRegistryResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\PushNotificationRegistryResponse\Result instead', E_USER_DEPRECATED);
 

@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Quests.ClientQuest</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Quests.ClientQuest</code>
  */
 class ClientQuest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Quests.Quest quest = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest quest = 1;</code>
      */
     private $quest = null;
     /**
-     * <code>.POGOProtos.Data.Quests.ClientQuest.QuestDisplay quest_display = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.ClientQuest.QuestDisplay quest_display = 2;</code>
      */
     private $quest_display = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Quests\Quest $quest
+     *     @type \POGOProtos\Data\Quests\ClientQuest\QuestDisplay $quest_display
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Quests\ClientQuest::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.Quest quest = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest quest = 1;</code>
+     * @return \POGOProtos\Data\Quests\Quest
      */
     public function getQuest()
     {
@@ -36,16 +47,21 @@ class ClientQuest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.Quest quest = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest quest = 1;</code>
+     * @param \POGOProtos\Data\Quests\Quest $var
+     * @return $this
      */
-    public function setQuest(&$var)
+    public function setQuest($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\Quest::class);
         $this->quest = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.ClientQuest.QuestDisplay quest_display = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.ClientQuest.QuestDisplay quest_display = 2;</code>
+     * @return \POGOProtos\Data\Quests\ClientQuest\QuestDisplay
      */
     public function getQuestDisplay()
     {
@@ -53,12 +69,16 @@ class ClientQuest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.ClientQuest.QuestDisplay quest_display = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.ClientQuest.QuestDisplay quest_display = 2;</code>
+     * @param \POGOProtos\Data\Quests\ClientQuest\QuestDisplay $var
+     * @return $this
      */
-    public function setQuestDisplay(&$var)
+    public function setQuestDisplay($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\ClientQuest_QuestDisplay::class);
         $this->quest_display = $var;
+
+        return $this;
     }
 
 }

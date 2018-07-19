@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.LevelUpRewardsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.LevelUpRewardsMessage</code>
  */
 class LevelUpRewardsMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 level = 1;</code>
+     * Generated from protobuf field <code>int32 level = 1;</code>
      */
     private $level = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $level
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\LevelUpRewardsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 level = 1;</code>
+     * Generated from protobuf field <code>int32 level = 1;</code>
+     * @return int
      */
     public function getLevel()
     {
@@ -32,12 +42,16 @@ class LevelUpRewardsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 level = 1;</code>
+     * Generated from protobuf field <code>int32 level = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->level = $var;
+
+        return $this;
     }
 
 }

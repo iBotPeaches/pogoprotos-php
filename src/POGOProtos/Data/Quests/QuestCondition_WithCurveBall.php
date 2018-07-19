@@ -4,20 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestCondition.WithCurveBall</code>
- */
-class QuestCondition_WithCurveBall extends \Google\Protobuf\Internal\Message
-{
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestCondition::initOnce();
-        parent::__construct();
-    }
-
+if (false) {
+    /**
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestCondition\WithCurveBall instead.
+     * @deprecated
+     */
+    class QuestCondition_WithCurveBall {}
 }
+class_exists(QuestCondition\WithCurveBall::class);
+@trigger_error('POGOProtos\Data\Quests\QuestCondition_WithCurveBall is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestCondition\WithCurveBall instead', E_USER_DEPRECATED);
 

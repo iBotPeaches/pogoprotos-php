@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.EquippedBadgeSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.EquippedBadgeSettings</code>
  */
 class EquippedBadgeSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 equip_badge_cooldown_ms = 1;</code>
+     * Generated from protobuf field <code>int64 equip_badge_cooldown_ms = 1;</code>
      */
     private $equip_badge_cooldown_ms = 0;
     /**
-     * <code>repeated float catch_probability_bonus = 2;</code>
+     * Generated from protobuf field <code>repeated float catch_probability_bonus = 2;</code>
      */
     private $catch_probability_bonus;
     /**
-     * <code>repeated float flee_probability_bonus = 3;</code>
+     * Generated from protobuf field <code>repeated float flee_probability_bonus = 3;</code>
      */
     private $flee_probability_bonus;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $equip_badge_cooldown_ms
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $catch_probability_bonus
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $flee_probability_bonus
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\EquippedBadgeSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 equip_badge_cooldown_ms = 1;</code>
+     * Generated from protobuf field <code>int64 equip_badge_cooldown_ms = 1;</code>
+     * @return int|string
      */
     public function getEquipBadgeCooldownMs()
     {
@@ -40,16 +52,21 @@ class EquippedBadgeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 equip_badge_cooldown_ms = 1;</code>
+     * Generated from protobuf field <code>int64 equip_badge_cooldown_ms = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setEquipBadgeCooldownMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->equip_badge_cooldown_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float catch_probability_bonus = 2;</code>
+     * Generated from protobuf field <code>repeated float catch_probability_bonus = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCatchProbabilityBonus()
     {
@@ -57,16 +74,21 @@ class EquippedBadgeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float catch_probability_bonus = 2;</code>
+     * Generated from protobuf field <code>repeated float catch_probability_bonus = 2;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCatchProbabilityBonus(&$var)
+    public function setCatchProbabilityBonus($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->catch_probability_bonus = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->catch_probability_bonus = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float flee_probability_bonus = 3;</code>
+     * Generated from protobuf field <code>repeated float flee_probability_bonus = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getFleeProbabilityBonus()
     {
@@ -74,12 +96,16 @@ class EquippedBadgeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float flee_probability_bonus = 3;</code>
+     * Generated from protobuf field <code>repeated float flee_probability_bonus = 3;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setFleeProbabilityBonus(&$var)
+    public function setFleeProbabilityBonus($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->flee_probability_bonus = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->flee_probability_bonus = $arr;
+
+        return $this;
     }
 
 }

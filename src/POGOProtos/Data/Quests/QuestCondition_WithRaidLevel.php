@@ -4,41 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestCondition.WithRaidLevel</code>
- */
-class QuestCondition_WithRaidLevel extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>repeated .POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestCondition\WithRaidLevel instead.
+     * @deprecated
      */
-    private $raid_level;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestCondition::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 1;</code>
-     */
-    public function getRaidLevel()
-    {
-        return $this->raid_level;
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 1;</code>
-     */
-    public function setRaidLevel(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\Raid\RaidInfo_RaidLevel::class);
-        $this->raid_level = $var;
-    }
-
+    class QuestCondition_WithRaidLevel {}
 }
+class_exists(QuestCondition\WithRaidLevel::class);
+@trigger_error('POGOProtos\Data\Quests\QuestCondition_WithRaidLevel is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestCondition\WithRaidLevel instead', E_USER_DEPRECATED);
 

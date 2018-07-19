@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.GenderSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.GenderSettings</code>
  */
 class GenderSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon = 1;</code>
      */
     private $pokemon = 0;
     /**
-     * <code>.POGOProtos.Settings.Master.Pokemon.PokemonGenderSettings gender = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Pokemon.PokemonGenderSettings gender = 2;</code>
      */
     private $gender = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $pokemon
+     *     @type \POGOProtos\Settings\Master\Pokemon\PokemonGenderSettings $gender
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\GenderSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon = 1;</code>
+     * @return int
      */
     public function getPokemon()
     {
@@ -36,16 +47,21 @@ class GenderSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemon($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Pokemon.PokemonGenderSettings gender = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Pokemon.PokemonGenderSettings gender = 2;</code>
+     * @return \POGOProtos\Settings\Master\Pokemon\PokemonGenderSettings
      */
     public function getGender()
     {
@@ -53,12 +69,16 @@ class GenderSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Pokemon.PokemonGenderSettings gender = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Pokemon.PokemonGenderSettings gender = 2;</code>
+     * @param \POGOProtos\Settings\Master\Pokemon\PokemonGenderSettings $var
+     * @return $this
      */
-    public function setGender(&$var)
+    public function setGender($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Pokemon\PokemonGenderSettings::class);
         $this->gender = $var;
+
+        return $this;
     }
 
 }

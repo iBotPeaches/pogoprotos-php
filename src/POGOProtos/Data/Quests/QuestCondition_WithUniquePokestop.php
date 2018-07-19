@@ -4,20 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestCondition.WithUniquePokestop</code>
- */
-class QuestCondition_WithUniquePokestop extends \Google\Protobuf\Internal\Message
-{
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestCondition::initOnce();
-        parent::__construct();
-    }
-
+if (false) {
+    /**
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestCondition\WithUniquePokestop instead.
+     * @deprecated
+     */
+    class QuestCondition_WithUniquePokestop {}
 }
+class_exists(QuestCondition\WithUniquePokestop::class);
+@trigger_error('POGOProtos\Data\Quests\QuestCondition_WithUniquePokestop is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestCondition\WithUniquePokestop instead', E_USER_DEPRECATED);
 

@@ -9,82 +9,107 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.PlayerData</code>
+ * Generated from protobuf message <code>POGOProtos.Data.PlayerData</code>
  */
 class PlayerData extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 creation_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 creation_timestamp_ms = 1;</code>
      */
     private $creation_timestamp_ms = 0;
     /**
-     * <code>string username = 2;</code>
+     * Generated from protobuf field <code>string username = 2;</code>
      */
     private $username = '';
     /**
-     * <code>.POGOProtos.Enums.TeamColor team = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team = 5;</code>
      */
     private $team = 0;
     /**
-     * <code>repeated .POGOProtos.Enums.TutorialState tutorial_state = 7 [packed = true];</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.TutorialState tutorial_state = 7 [packed = true];</code>
      */
     private $tutorial_state;
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatar avatar = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatar avatar = 8;</code>
      */
     private $avatar = null;
     /**
-     * <code>int32 max_pokemon_storage = 9;</code>
+     * Generated from protobuf field <code>int32 max_pokemon_storage = 9;</code>
      */
     private $max_pokemon_storage = 0;
     /**
-     * <code>int32 max_item_storage = 10;</code>
+     * Generated from protobuf field <code>int32 max_item_storage = 10;</code>
      */
     private $max_item_storage = 0;
     /**
-     * <code>.POGOProtos.Data.Player.DailyBonus daily_bonus = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.DailyBonus daily_bonus = 11;</code>
      */
     private $daily_bonus = null;
     /**
-     * <code>.POGOProtos.Data.Player.EquippedBadge equipped_badge = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.EquippedBadge equipped_badge = 12;</code>
      */
     private $equipped_badge = null;
     /**
-     * <code>.POGOProtos.Data.Player.ContactSettings contact_settings = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.ContactSettings contact_settings = 13;</code>
      */
     private $contact_settings = null;
     /**
-     * <code>repeated .POGOProtos.Data.Player.Currency currencies = 14;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency currencies = 14;</code>
      */
     private $currencies;
     /**
-     * <code>int32 remaining_codename_claims = 15;</code>
+     * Generated from protobuf field <code>int32 remaining_codename_claims = 15;</code>
      */
     private $remaining_codename_claims = 0;
     /**
-     * <code>.POGOProtos.Data.BuddyPokemon buddy_pokemon = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BuddyPokemon buddy_pokemon = 16;</code>
      */
     private $buddy_pokemon = null;
     /**
-     * <code>int64 battle_lockout_end_ms = 17;</code>
+     * Generated from protobuf field <code>int64 battle_lockout_end_ms = 17;</code>
      */
     private $battle_lockout_end_ms = 0;
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatar secondary_player_avatar = 18;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatar secondary_player_avatar = 18;</code>
      */
     private $secondary_player_avatar = null;
     /**
-     * <code>bool name_is_blacklisted = 19;</code>
+     * Generated from protobuf field <code>bool name_is_blacklisted = 19;</code>
      */
     private $name_is_blacklisted = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $creation_timestamp_ms
+     *     @type string $username
+     *     @type int $team
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $tutorial_state
+     *     @type \POGOProtos\Data\Player\PlayerAvatar $avatar
+     *     @type int $max_pokemon_storage
+     *     @type int $max_item_storage
+     *     @type \POGOProtos\Data\Player\DailyBonus $daily_bonus
+     *     @type \POGOProtos\Data\Player\EquippedBadge $equipped_badge
+     *     @type \POGOProtos\Data\Player\ContactSettings $contact_settings
+     *     @type \POGOProtos\Data\Player\Currency[]|\Google\Protobuf\Internal\RepeatedField $currencies
+     *     @type int $remaining_codename_claims
+     *     @type \POGOProtos\Data\BuddyPokemon $buddy_pokemon
+     *     @type int|string $battle_lockout_end_ms
+     *     @type \POGOProtos\Data\Player\PlayerAvatar $secondary_player_avatar
+     *     @type bool $name_is_blacklisted
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\PlayerData::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 creation_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 creation_timestamp_ms = 1;</code>
+     * @return int|string
      */
     public function getCreationTimestampMs()
     {
@@ -92,16 +117,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 creation_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 creation_timestamp_ms = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setCreationTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->creation_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string username = 2;</code>
+     * Generated from protobuf field <code>string username = 2;</code>
+     * @return string
      */
     public function getUsername()
     {
@@ -109,16 +139,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string username = 2;</code>
+     * Generated from protobuf field <code>string username = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setUsername($var)
     {
         GPBUtil::checkString($var, True);
         $this->username = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.TeamColor team = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team = 5;</code>
+     * @return int
      */
     public function getTeam()
     {
@@ -126,16 +161,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.TeamColor team = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTeam($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\TeamColor::class);
         $this->team = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.TutorialState tutorial_state = 7 [packed = true];</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.TutorialState tutorial_state = 7 [packed = true];</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getTutorialState()
     {
@@ -143,16 +183,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.TutorialState tutorial_state = 7 [packed = true];</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.TutorialState tutorial_state = 7 [packed = true];</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTutorialState(&$var)
+    public function setTutorialState($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\TutorialState::class);
-        $this->tutorial_state = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\TutorialState::class);
+        $this->tutorial_state = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatar avatar = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatar avatar = 8;</code>
+     * @return \POGOProtos\Data\Player\PlayerAvatar
      */
     public function getAvatar()
     {
@@ -160,16 +205,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatar avatar = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatar avatar = 8;</code>
+     * @param \POGOProtos\Data\Player\PlayerAvatar $var
+     * @return $this
      */
-    public function setAvatar(&$var)
+    public function setAvatar($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerAvatar::class);
         $this->avatar = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_pokemon_storage = 9;</code>
+     * Generated from protobuf field <code>int32 max_pokemon_storage = 9;</code>
+     * @return int
      */
     public function getMaxPokemonStorage()
     {
@@ -177,16 +227,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_pokemon_storage = 9;</code>
+     * Generated from protobuf field <code>int32 max_pokemon_storage = 9;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxPokemonStorage($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_pokemon_storage = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_item_storage = 10;</code>
+     * Generated from protobuf field <code>int32 max_item_storage = 10;</code>
+     * @return int
      */
     public function getMaxItemStorage()
     {
@@ -194,16 +249,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_item_storage = 10;</code>
+     * Generated from protobuf field <code>int32 max_item_storage = 10;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxItemStorage($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_item_storage = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.DailyBonus daily_bonus = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.DailyBonus daily_bonus = 11;</code>
+     * @return \POGOProtos\Data\Player\DailyBonus
      */
     public function getDailyBonus()
     {
@@ -211,16 +271,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.DailyBonus daily_bonus = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.DailyBonus daily_bonus = 11;</code>
+     * @param \POGOProtos\Data\Player\DailyBonus $var
+     * @return $this
      */
-    public function setDailyBonus(&$var)
+    public function setDailyBonus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\DailyBonus::class);
         $this->daily_bonus = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.EquippedBadge equipped_badge = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.EquippedBadge equipped_badge = 12;</code>
+     * @return \POGOProtos\Data\Player\EquippedBadge
      */
     public function getEquippedBadge()
     {
@@ -228,16 +293,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.EquippedBadge equipped_badge = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.EquippedBadge equipped_badge = 12;</code>
+     * @param \POGOProtos\Data\Player\EquippedBadge $var
+     * @return $this
      */
-    public function setEquippedBadge(&$var)
+    public function setEquippedBadge($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\EquippedBadge::class);
         $this->equipped_badge = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.ContactSettings contact_settings = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.ContactSettings contact_settings = 13;</code>
+     * @return \POGOProtos\Data\Player\ContactSettings
      */
     public function getContactSettings()
     {
@@ -245,16 +315,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.ContactSettings contact_settings = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.ContactSettings contact_settings = 13;</code>
+     * @param \POGOProtos\Data\Player\ContactSettings $var
+     * @return $this
      */
-    public function setContactSettings(&$var)
+    public function setContactSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\ContactSettings::class);
         $this->contact_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Player.Currency currencies = 14;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency currencies = 14;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCurrencies()
     {
@@ -262,16 +337,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Player.Currency currencies = 14;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency currencies = 14;</code>
+     * @param \POGOProtos\Data\Player\Currency[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCurrencies(&$var)
+    public function setCurrencies($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Player\Currency::class);
-        $this->currencies = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Player\Currency::class);
+        $this->currencies = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 remaining_codename_claims = 15;</code>
+     * Generated from protobuf field <code>int32 remaining_codename_claims = 15;</code>
+     * @return int
      */
     public function getRemainingCodenameClaims()
     {
@@ -279,16 +359,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 remaining_codename_claims = 15;</code>
+     * Generated from protobuf field <code>int32 remaining_codename_claims = 15;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRemainingCodenameClaims($var)
     {
         GPBUtil::checkInt32($var);
         $this->remaining_codename_claims = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.BuddyPokemon buddy_pokemon = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BuddyPokemon buddy_pokemon = 16;</code>
+     * @return \POGOProtos\Data\BuddyPokemon
      */
     public function getBuddyPokemon()
     {
@@ -296,16 +381,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.BuddyPokemon buddy_pokemon = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BuddyPokemon buddy_pokemon = 16;</code>
+     * @param \POGOProtos\Data\BuddyPokemon $var
+     * @return $this
      */
-    public function setBuddyPokemon(&$var)
+    public function setBuddyPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\BuddyPokemon::class);
         $this->buddy_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 battle_lockout_end_ms = 17;</code>
+     * Generated from protobuf field <code>int64 battle_lockout_end_ms = 17;</code>
+     * @return int|string
      */
     public function getBattleLockoutEndMs()
     {
@@ -313,16 +403,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 battle_lockout_end_ms = 17;</code>
+     * Generated from protobuf field <code>int64 battle_lockout_end_ms = 17;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setBattleLockoutEndMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->battle_lockout_end_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatar secondary_player_avatar = 18;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatar secondary_player_avatar = 18;</code>
+     * @return \POGOProtos\Data\Player\PlayerAvatar
      */
     public function getSecondaryPlayerAvatar()
     {
@@ -330,16 +425,21 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatar secondary_player_avatar = 18;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatar secondary_player_avatar = 18;</code>
+     * @param \POGOProtos\Data\Player\PlayerAvatar $var
+     * @return $this
      */
-    public function setSecondaryPlayerAvatar(&$var)
+    public function setSecondaryPlayerAvatar($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerAvatar::class);
         $this->secondary_player_avatar = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool name_is_blacklisted = 19;</code>
+     * Generated from protobuf field <code>bool name_is_blacklisted = 19;</code>
+     * @return bool
      */
     public function getNameIsBlacklisted()
     {
@@ -347,12 +447,16 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool name_is_blacklisted = 19;</code>
+     * Generated from protobuf field <code>bool name_is_blacklisted = 19;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setNameIsBlacklisted($var)
     {
         GPBUtil::checkBool($var);
         $this->name_is_blacklisted = $var;
+
+        return $this;
     }
 
 }

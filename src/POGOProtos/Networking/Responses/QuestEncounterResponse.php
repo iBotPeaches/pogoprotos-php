@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.QuestEncounterResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.QuestEncounterResponse</code>
  */
 class QuestEncounterResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.QuestEncounterResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.QuestEncounterResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
      */
     private $pokemon = null;
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>
      */
     private $capture_probability = null;
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
      */
     private $active_item = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Map\Pokemon\WildPokemon $pokemon
+     *     @type \POGOProtos\Data\Capture\CaptureProbability $capture_probability
+     *     @type int $active_item
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\QuestEncounterResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.QuestEncounterResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.QuestEncounterResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -44,16 +57,21 @@ class QuestEncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.QuestEncounterResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.QuestEncounterResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\QuestEncounterResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * @return \POGOProtos\Map\Pokemon\WildPokemon
      */
     public function getPokemon()
     {
@@ -61,16 +79,21 @@ class QuestEncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Pokemon.WildPokemon pokemon = 2;</code>
+     * @param \POGOProtos\Map\Pokemon\WildPokemon $var
+     * @return $this
      */
-    public function setPokemon(&$var)
+    public function setPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Map\Pokemon\WildPokemon::class);
         $this->pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>
+     * @return \POGOProtos\Data\Capture\CaptureProbability
      */
     public function getCaptureProbability()
     {
@@ -78,16 +101,21 @@ class QuestEncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>
+     * @param \POGOProtos\Data\Capture\CaptureProbability $var
+     * @return $this
      */
-    public function setCaptureProbability(&$var)
+    public function setCaptureProbability($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Capture\CaptureProbability::class);
         $this->capture_probability = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
+     * @return int
      */
     public function getActiveItem()
     {
@@ -95,12 +123,16 @@ class QuestEncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setActiveItem($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->active_item = $var;
+
+        return $this;
     }
 
 }

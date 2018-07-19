@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Pokemon.EvolutionBranch</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Pokemon.EvolutionBranch</code>
  */
 class EvolutionBranch extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.PokemonId evolution = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId evolution = 1;</code>
      */
     private $evolution = 0;
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
      */
     private $evolution_item_requirement = 0;
     /**
-     * <code>int32 candy_cost = 3;</code>
+     * Generated from protobuf field <code>int32 candy_cost = 3;</code>
      */
     private $candy_cost = 0;
     /**
-     * <code>float km_buddy_distance_requirement = 4;</code>
+     * Generated from protobuf field <code>float km_buddy_distance_requirement = 4;</code>
      */
     private $km_buddy_distance_requirement = 0.0;
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form form = 5;</code>
      */
     private $form = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $evolution
+     *     @type int $evolution_item_requirement
+     *     @type int $candy_cost
+     *     @type float $km_buddy_distance_requirement
+     *     @type int $form
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Pokemon\EvolutionBranch::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId evolution = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId evolution = 1;</code>
+     * @return int
      */
     public function getEvolution()
     {
@@ -48,16 +62,21 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId evolution = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId evolution = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEvolution($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->evolution = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
+     * @return int
      */
     public function getEvolutionItemRequirement()
     {
@@ -65,16 +84,21 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEvolutionItemRequirement($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->evolution_item_requirement = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 candy_cost = 3;</code>
+     * Generated from protobuf field <code>int32 candy_cost = 3;</code>
+     * @return int
      */
     public function getCandyCost()
     {
@@ -82,16 +106,21 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 candy_cost = 3;</code>
+     * Generated from protobuf field <code>int32 candy_cost = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCandyCost($var)
     {
         GPBUtil::checkInt32($var);
         $this->candy_cost = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float km_buddy_distance_requirement = 4;</code>
+     * Generated from protobuf field <code>float km_buddy_distance_requirement = 4;</code>
+     * @return float
      */
     public function getKmBuddyDistanceRequirement()
     {
@@ -99,16 +128,21 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float km_buddy_distance_requirement = 4;</code>
+     * Generated from protobuf field <code>float km_buddy_distance_requirement = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setKmBuddyDistanceRequirement($var)
     {
         GPBUtil::checkFloat($var);
         $this->km_buddy_distance_requirement = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form form = 5;</code>
+     * @return int
      */
     public function getForm()
     {
@@ -116,12 +150,16 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form form = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setForm($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Form::class);
         $this->form = $var;
+
+        return $this;
     }
 
 }

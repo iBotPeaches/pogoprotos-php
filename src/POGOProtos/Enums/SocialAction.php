@@ -5,84 +5,84 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.SocialAction</code>
+ * Protobuf type <code>POGOProtos.Enums.SocialAction</code>
  */
 class SocialAction
 {
     /**
-     * <code>UNKNOWN_SOCIAL_ACTION = 0;</code>
+     * Generated from protobuf enum <code>UNKNOWN_SOCIAL_ACTION = 0;</code>
      */
     const UNKNOWN_SOCIAL_ACTION = 0;
     /**
-     * <code>SEARCH_PLAYER = 10000;</code>
+     * Generated from protobuf enum <code>SEARCH_PLAYER = 10000;</code>
      */
     const SEARCH_PLAYER = 10000;
     /**
-     * <code>SEND_FRIEND_INVITE = 10002;</code>
+     * Generated from protobuf enum <code>SEND_FRIEND_INVITE = 10002;</code>
      */
     const SEND_FRIEND_INVITE = 10002;
     /**
-     * <code>CANCEL_FRIEND_INVITE = 10003;</code>
+     * Generated from protobuf enum <code>CANCEL_FRIEND_INVITE = 10003;</code>
      */
     const CANCEL_FRIEND_INVITE = 10003;
     /**
-     * <code>ACCEPT_FRIEND_INVITE = 10004;</code>
+     * Generated from protobuf enum <code>ACCEPT_FRIEND_INVITE = 10004;</code>
      */
     const ACCEPT_FRIEND_INVITE = 10004;
     /**
-     * <code>DECLINE_FRIEND_INVITE = 10005;</code>
+     * Generated from protobuf enum <code>DECLINE_FRIEND_INVITE = 10005;</code>
      */
     const DECLINE_FRIEND_INVITE = 10005;
     /**
-     * <code>LIST_FRIENDS = 10006;</code>
+     * Generated from protobuf enum <code>LIST_FRIENDS = 10006;</code>
      */
     const LIST_FRIENDS = 10006;
     /**
-     * <code>LIST_OUTGOING_FRIEND_INVITES = 10007;</code>
+     * Generated from protobuf enum <code>LIST_OUTGOING_FRIEND_INVITES = 10007;</code>
      */
     const LIST_OUTGOING_FRIEND_INVITES = 10007;
     /**
-     * <code>LIST_INCOMING_FRIEND_INVITES = 10008;</code>
+     * Generated from protobuf enum <code>LIST_INCOMING_FRIEND_INVITES = 10008;</code>
      */
     const LIST_INCOMING_FRIEND_INVITES = 10008;
     /**
-     * <code>REMOVE_FRIEND = 10009;</code>
+     * Generated from protobuf enum <code>REMOVE_FRIEND = 10009;</code>
      */
     const REMOVE_FRIEND = 10009;
     /**
-     * <code>LIST_FRIEND_STATUS = 10010;</code>
+     * Generated from protobuf enum <code>LIST_FRIEND_STATUS = 10010;</code>
      */
     const LIST_FRIEND_STATUS = 10010;
     /**
-     * <code>INVITE_FACEBOOK_FRIEND = 10011;</code>
+     * Generated from protobuf enum <code>INVITE_FACEBOOK_FRIEND = 10011;</code>
      */
     const INVITE_FACEBOOK_FRIEND = 10011;
     /**
-     * <code>IS_MY_FRIEND = 10012;</code>
+     * Generated from protobuf enum <code>IS_MY_FRIEND = 10012;</code>
      */
     const IS_MY_FRIEND = 10012;
     /**
-     * <code>CREATE_INVITE_CODE = 10013;</code>
+     * Generated from protobuf enum <code>CREATE_INVITE_CODE = 10013;</code>
      */
     const CREATE_INVITE_CODE = 10013;
     /**
-     * <code>REGISTER_PUSH_NOTIFICATION = 10101;</code>
+     * Generated from protobuf enum <code>REGISTER_PUSH_NOTIFICATION = 10101;</code>
      */
     const REGISTER_PUSH_NOTIFICATION = 10101;
     /**
-     * <code>UNREGISTER_PUSH_NOTIFICATION = 10102;</code>
+     * Generated from protobuf enum <code>UNREGISTER_PUSH_NOTIFICATION = 10102;</code>
      */
     const UNREGISTER_PUSH_NOTIFICATION = 10102;
     /**
-     * <code>UPDATE_NOTIFICATION = 10103;</code>
+     * Generated from protobuf enum <code>UPDATE_NOTIFICATION = 10103;</code>
      */
     const UPDATE_NOTIFICATION = 10103;
     /**
-     * <code>OPT_OUT_PUSH_NOTIFICATION_CATEGORY = 10104;</code>
+     * Generated from protobuf enum <code>OPT_OUT_PUSH_NOTIFICATION_CATEGORY = 10104;</code>
      */
     const OPT_OUT_PUSH_NOTIFICATION_CATEGORY = 10104;
     /**
-     * <code>GET_INBOX = 10105;</code>
+     * Generated from protobuf enum <code>GET_INBOX = 10105;</code>
      */
     const GET_INBOX = 10105;
 }

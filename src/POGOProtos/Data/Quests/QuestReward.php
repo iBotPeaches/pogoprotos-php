@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestReward</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Quests.QuestReward</code>
  */
 class QuestReward extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Quests.QuestReward.Type type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.Type type = 1;</code>
      */
     private $type = 0;
     /**
-     * <code>int32 exp = 2;</code>
+     * Generated from protobuf field <code>int32 exp = 2;</code>
      */
     private $exp = 0;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestReward.ItemReward item = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.ItemReward item = 3;</code>
      */
     private $item = null;
     /**
-     * <code>int32 stardust = 4;</code>
+     * Generated from protobuf field <code>int32 stardust = 4;</code>
      */
     private $stardust = 0;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestReward.PokemonCandyReward candy = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.PokemonCandyReward candy = 5;</code>
      */
     private $candy = null;
     /**
-     * <code>string avatar_template_id = 6;</code>
+     * Generated from protobuf field <code>string avatar_template_id = 6;</code>
      */
     private $avatar_template_id = '';
     /**
-     * <code>string quest_template_id = 7;</code>
+     * Generated from protobuf field <code>string quest_template_id = 7;</code>
      */
     private $quest_template_id = '';
     /**
-     * <code>.POGOProtos.Data.Quests.QuestReward.PokemonEncounterReward pokemon_encounter = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.PokemonEncounterReward pokemon_encounter = 8;</code>
      */
     private $pokemon_encounter = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $type
+     *     @type int $exp
+     *     @type \POGOProtos\Data\Quests\QuestReward\ItemReward $item
+     *     @type int $stardust
+     *     @type \POGOProtos\Data\Quests\QuestReward\PokemonCandyReward $candy
+     *     @type string $avatar_template_id
+     *     @type string $quest_template_id
+     *     @type \POGOProtos\Data\Quests\QuestReward\PokemonEncounterReward $pokemon_encounter
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Quests\QuestReward::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestReward.Type type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.Type type = 1;</code>
+     * @return int
      */
     public function getType()
     {
@@ -60,16 +77,21 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestReward.Type type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.Type type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\QuestReward_Type::class);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 exp = 2;</code>
+     * Generated from protobuf field <code>int32 exp = 2;</code>
+     * @return int
      */
     public function getExp()
     {
@@ -77,16 +99,21 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 exp = 2;</code>
+     * Generated from protobuf field <code>int32 exp = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setExp($var)
     {
         GPBUtil::checkInt32($var);
         $this->exp = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestReward.ItemReward item = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.ItemReward item = 3;</code>
+     * @return \POGOProtos\Data\Quests\QuestReward\ItemReward
      */
     public function getItem()
     {
@@ -94,16 +121,21 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestReward.ItemReward item = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.ItemReward item = 3;</code>
+     * @param \POGOProtos\Data\Quests\QuestReward\ItemReward $var
+     * @return $this
      */
-    public function setItem(&$var)
+    public function setItem($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestReward_ItemReward::class);
         $this->item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 stardust = 4;</code>
+     * Generated from protobuf field <code>int32 stardust = 4;</code>
+     * @return int
      */
     public function getStardust()
     {
@@ -111,16 +143,21 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 stardust = 4;</code>
+     * Generated from protobuf field <code>int32 stardust = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStardust($var)
     {
         GPBUtil::checkInt32($var);
         $this->stardust = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestReward.PokemonCandyReward candy = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.PokemonCandyReward candy = 5;</code>
+     * @return \POGOProtos\Data\Quests\QuestReward\PokemonCandyReward
      */
     public function getCandy()
     {
@@ -128,16 +165,21 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestReward.PokemonCandyReward candy = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.PokemonCandyReward candy = 5;</code>
+     * @param \POGOProtos\Data\Quests\QuestReward\PokemonCandyReward $var
+     * @return $this
      */
-    public function setCandy(&$var)
+    public function setCandy($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestReward_PokemonCandyReward::class);
         $this->candy = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_template_id = 6;</code>
+     * Generated from protobuf field <code>string avatar_template_id = 6;</code>
+     * @return string
      */
     public function getAvatarTemplateId()
     {
@@ -145,16 +187,21 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_template_id = 6;</code>
+     * Generated from protobuf field <code>string avatar_template_id = 6;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarTemplateId($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_template_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string quest_template_id = 7;</code>
+     * Generated from protobuf field <code>string quest_template_id = 7;</code>
+     * @return string
      */
     public function getQuestTemplateId()
     {
@@ -162,16 +209,21 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string quest_template_id = 7;</code>
+     * Generated from protobuf field <code>string quest_template_id = 7;</code>
+     * @param string $var
+     * @return $this
      */
     public function setQuestTemplateId($var)
     {
         GPBUtil::checkString($var, True);
         $this->quest_template_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestReward.PokemonEncounterReward pokemon_encounter = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.PokemonEncounterReward pokemon_encounter = 8;</code>
+     * @return \POGOProtos\Data\Quests\QuestReward\PokemonEncounterReward
      */
     public function getPokemonEncounter()
     {
@@ -179,12 +231,16 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestReward.PokemonEncounterReward pokemon_encounter = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.PokemonEncounterReward pokemon_encounter = 8;</code>
+     * @param \POGOProtos\Data\Quests\QuestReward\PokemonEncounterReward $var
+     * @return $this
      */
-    public function setPokemonEncounter(&$var)
+    public function setPokemonEncounter($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestReward_PokemonEncounterReward::class);
         $this->pokemon_encounter = $var;
+
+        return $this;
     }
 
 }

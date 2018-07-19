@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.GetGymDetailsResponse.Result</code>
- */
-class GetGymDetailsResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GetGymDetailsResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_NOT_IN_RANGE = 2;</code>
-     */
-    const ERROR_NOT_IN_RANGE = 2;
+    class GetGymDetailsResponse_Result {}
 }
+class_exists(GetGymDetailsResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\GetGymDetailsResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GetGymDetailsResponse\Result instead', E_USER_DEPRECATED);
 

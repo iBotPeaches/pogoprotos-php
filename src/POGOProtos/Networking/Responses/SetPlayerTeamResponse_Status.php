@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.SetPlayerTeamResponse.Status</code>
- */
-class SetPlayerTeamResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\SetPlayerTeamResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>TEAM_ALREADY_SET = 2;</code>
-     */
-    const TEAM_ALREADY_SET = 2;
-    /**
-     * <code>FAILURE = 3;</code>
-     */
-    const FAILURE = 3;
+    class SetPlayerTeamResponse_Status {}
 }
+class_exists(SetPlayerTeamResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\SetPlayerTeamResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\SetPlayerTeamResponse\Status instead', E_USER_DEPRECATED);
 

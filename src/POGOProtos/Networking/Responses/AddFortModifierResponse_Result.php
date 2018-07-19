@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.AddFortModifierResponse.Result</code>
- */
-class AddFortModifierResponse_Result
-{
+if (false) {
     /**
-     * <code>NO_RESULT_SET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\AddFortModifierResponse\Result instead.
+     * @deprecated
      */
-    const NO_RESULT_SET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>FORT_ALREADY_HAS_MODIFIER = 2;</code>
-     */
-    const FORT_ALREADY_HAS_MODIFIER = 2;
-    /**
-     * <code>TOO_FAR_AWAY = 3;</code>
-     */
-    const TOO_FAR_AWAY = 3;
-    /**
-     * <code>NO_ITEM_IN_INVENTORY = 4;</code>
-     */
-    const NO_ITEM_IN_INVENTORY = 4;
-    /**
-     * <code>POI_INACCESSIBLE = 5;</code>
-     */
-    const POI_INACCESSIBLE = 5;
+    class AddFortModifierResponse_Result {}
 }
+class_exists(AddFortModifierResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\AddFortModifierResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\AddFortModifierResponse\Result instead', E_USER_DEPRECATED);
 

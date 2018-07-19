@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.SavePlayerSnapshotResponse.Result</code>
- */
-class SavePlayerSnapshotResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\SavePlayerSnapshotResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>TOO_SOON_TO_UPDATE = 2;</code>
-     */
-    const TOO_SOON_TO_UPDATE = 2;
-    /**
-     * <code>ERROR_FAILED_TO_UPDATE = 3;</code>
-     */
-    const ERROR_FAILED_TO_UPDATE = 3;
-    /**
-     * <code>ERROR_REQUEST_TIMED_OUT = 4;</code>
-     */
-    const ERROR_REQUEST_TIMED_OUT = 4;
+    class SavePlayerSnapshotResponse_Result {}
 }
+class_exists(SavePlayerSnapshotResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\SavePlayerSnapshotResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\SavePlayerSnapshotResponse\Result instead', E_USER_DEPRECATED);
 

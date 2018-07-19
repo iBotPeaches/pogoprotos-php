@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.EventSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.EventSettings</code>
  */
 class EventSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated string condolence_ribbon_country = 1;</code>
+     * Generated from protobuf field <code>repeated string condolence_ribbon_country = 1;</code>
      */
     private $condolence_ribbon_country;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $condolence_ribbon_country
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\EventSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated string condolence_ribbon_country = 1;</code>
+     * Generated from protobuf field <code>repeated string condolence_ribbon_country = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCondolenceRibbonCountry()
     {
@@ -32,12 +42,16 @@ class EventSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string condolence_ribbon_country = 1;</code>
+     * Generated from protobuf field <code>repeated string condolence_ribbon_country = 1;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCondolenceRibbonCountry(&$var)
+    public function setCondolenceRibbonCountry($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->condolence_ribbon_country = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->condolence_ribbon_country = $arr;
+
+        return $this;
     }
 
 }

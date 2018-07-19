@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Ditto.RpcResponseEventParams</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Ditto.RpcResponseEventParams</code>
  */
 class RpcResponseEventParams extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>uint32 rpc_id = 1;</code>
+     * Generated from protobuf field <code>uint32 rpc_id = 1;</code>
      */
     private $rpc_id = 0;
     /**
-     * <code>uint32 status = 2;</code>
+     * Generated from protobuf field <code>uint32 status = 2;</code>
      */
     private $status = 0;
     /**
-     * <code>repeated bytes payloads = 3;</code>
+     * Generated from protobuf field <code>repeated bytes payloads = 3;</code>
      */
     private $payloads;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $rpc_id
+     *     @type int $status
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $payloads
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Ditto\RpcResponseEventParams::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>uint32 rpc_id = 1;</code>
+     * Generated from protobuf field <code>uint32 rpc_id = 1;</code>
+     * @return int
      */
     public function getRpcId()
     {
@@ -40,16 +52,21 @@ class RpcResponseEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 rpc_id = 1;</code>
+     * Generated from protobuf field <code>uint32 rpc_id = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRpcId($var)
     {
         GPBUtil::checkUint32($var);
         $this->rpc_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint32 status = 2;</code>
+     * Generated from protobuf field <code>uint32 status = 2;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -57,16 +74,21 @@ class RpcResponseEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint32 status = 2;</code>
+     * Generated from protobuf field <code>uint32 status = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkUint32($var);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated bytes payloads = 3;</code>
+     * Generated from protobuf field <code>repeated bytes payloads = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPayloads()
     {
@@ -74,12 +96,16 @@ class RpcResponseEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated bytes payloads = 3;</code>
+     * Generated from protobuf field <code>repeated bytes payloads = 3;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPayloads(&$var)
+    public function setPayloads($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::BYTES);
-        $this->payloads = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::BYTES);
+        $this->payloads = $arr;
+
+        return $this;
     }
 
 }

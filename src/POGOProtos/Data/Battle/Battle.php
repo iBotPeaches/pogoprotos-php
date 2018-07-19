@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Battle.Battle</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Battle.Battle</code>
  */
 class Battle extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 battle_start_ms = 1;</code>
+     * Generated from protobuf field <code>int64 battle_start_ms = 1;</code>
      */
     private $battle_start_ms = 0;
     /**
-     * <code>int64 battle_end_ms = 2;</code>
+     * Generated from protobuf field <code>int64 battle_end_ms = 2;</code>
      */
     private $battle_end_ms = 0;
     /**
-     * <code>string battle_id = 3;</code>
+     * Generated from protobuf field <code>string battle_id = 3;</code>
      */
     private $battle_id = '';
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant defender = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant defender = 4;</code>
      */
     private $defender = null;
     /**
-     * <code>.POGOProtos.Data.Battle.BattleLog battle_log = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleLog battle_log = 5;</code>
      */
     private $battle_log = null;
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 6;</code>
      */
     private $attacker = null;
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 7;</code>
      */
     private $weather_condition = 0;
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 8;</code>
      */
     private $highest_friendship_milestone = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $battle_start_ms
+     *     @type int|string $battle_end_ms
+     *     @type string $battle_id
+     *     @type \POGOProtos\Data\Battle\BattleParticipant $defender
+     *     @type \POGOProtos\Data\Battle\BattleLog $battle_log
+     *     @type \POGOProtos\Data\Battle\BattleParticipant $attacker
+     *     @type int $weather_condition
+     *     @type int $highest_friendship_milestone
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Battle\Battle::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 battle_start_ms = 1;</code>
+     * Generated from protobuf field <code>int64 battle_start_ms = 1;</code>
+     * @return int|string
      */
     public function getBattleStartMs()
     {
@@ -60,16 +77,21 @@ class Battle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 battle_start_ms = 1;</code>
+     * Generated from protobuf field <code>int64 battle_start_ms = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setBattleStartMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->battle_start_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 battle_end_ms = 2;</code>
+     * Generated from protobuf field <code>int64 battle_end_ms = 2;</code>
+     * @return int|string
      */
     public function getBattleEndMs()
     {
@@ -77,16 +99,21 @@ class Battle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 battle_end_ms = 2;</code>
+     * Generated from protobuf field <code>int64 battle_end_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setBattleEndMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->battle_end_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string battle_id = 3;</code>
+     * Generated from protobuf field <code>string battle_id = 3;</code>
+     * @return string
      */
     public function getBattleId()
     {
@@ -94,16 +121,21 @@ class Battle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string battle_id = 3;</code>
+     * Generated from protobuf field <code>string battle_id = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setBattleId($var)
     {
         GPBUtil::checkString($var, True);
         $this->battle_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant defender = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant defender = 4;</code>
+     * @return \POGOProtos\Data\Battle\BattleParticipant
      */
     public function getDefender()
     {
@@ -111,16 +143,21 @@ class Battle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant defender = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant defender = 4;</code>
+     * @param \POGOProtos\Data\Battle\BattleParticipant $var
+     * @return $this
      */
-    public function setDefender(&$var)
+    public function setDefender($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleParticipant::class);
         $this->defender = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleLog battle_log = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleLog battle_log = 5;</code>
+     * @return \POGOProtos\Data\Battle\BattleLog
      */
     public function getBattleLog()
     {
@@ -128,16 +165,21 @@ class Battle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleLog battle_log = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleLog battle_log = 5;</code>
+     * @param \POGOProtos\Data\Battle\BattleLog $var
+     * @return $this
      */
-    public function setBattleLog(&$var)
+    public function setBattleLog($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleLog::class);
         $this->battle_log = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 6;</code>
+     * @return \POGOProtos\Data\Battle\BattleParticipant
      */
     public function getAttacker()
     {
@@ -145,16 +187,21 @@ class Battle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant attacker = 6;</code>
+     * @param \POGOProtos\Data\Battle\BattleParticipant $var
+     * @return $this
      */
-    public function setAttacker(&$var)
+    public function setAttacker($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleParticipant::class);
         $this->attacker = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 7;</code>
+     * @return int
      */
     public function getWeatherCondition()
     {
@@ -162,16 +209,21 @@ class Battle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setWeatherCondition($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_WeatherCondition::class);
         $this->weather_condition = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 8;</code>
+     * @return int
      */
     public function getHighestFriendshipMilestone()
     {
@@ -179,12 +231,16 @@ class Battle extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 8;</code>
+     * @param int $var
+     * @return $this
      */
     public function setHighestFriendshipMilestone($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\FriendshipLevelMilestone::class);
         $this->highest_friendship_milestone = $var;
+
+        return $this;
     }
 
 }

@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Data;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.BootTime.BootPhase</code>
- */
-class BootTime_BootPhase
-{
+if (false) {
     /**
-     * <code>UNDEFINED = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\BootTime\BootPhase instead.
+     * @deprecated
      */
-    const UNDEFINED = 0;
-    /**
-     * <code>TIME_TO_MAP = 1;</code>
-     */
-    const TIME_TO_MAP = 1;
-    /**
-     * <code>LOGO_SCREEN_TIME = 2;</code>
-     */
-    const LOGO_SCREEN_TIME = 2;
-    /**
-     * <code>MAIN_SCENE_LOAD_TIME = 3;</code>
-     */
-    const MAIN_SCENE_LOAD_TIME = 3;
-    /**
-     * <code>WAIT_FOR_AUTH = 4;</code>
-     */
-    const WAIT_FOR_AUTH = 4;
-    /**
-     * <code>INIT_REMOTE_CONFIG_VERSIONS = 5;</code>
-     */
-    const INIT_REMOTE_CONFIG_VERSIONS = 5;
-    /**
-     * <code>INIT_BUNDLE_DIGEST = 6;</code>
-     */
-    const INIT_BUNDLE_DIGEST = 6;
-    /**
-     * <code>INIT_GMT = 7;</code>
-     */
-    const INIT_GMT = 7;
-    /**
-     * <code>DOWNLOAD_I18N = 8;</code>
-     */
-    const DOWNLOAD_I18N = 8;
-    /**
-     * <code>DOWNLOAD_GLOBAL_ASSETS = 9;</code>
-     */
-    const DOWNLOAD_GLOBAL_ASSETS = 9;
-    /**
-     * <code>REGISTER_PUSH_NOTIFICATION = 10;</code>
-     */
-    const REGISTER_PUSH_NOTIFICATION = 10;
-    /**
-     * <code>INITIALIZE_UPSIGHT = 11;</code>
-     */
-    const INITIALIZE_UPSIGHT = 11;
-    /**
-     * <code>INITIALIZE_CRITTERCISM = 12;</code>
-     */
-    const INITIALIZE_CRITTERCISM = 12;
+    class BootTime_BootPhase {}
 }
+class_exists(BootTime\BootPhase::class);
+@trigger_error('POGOProtos\Data\BootTime_BootPhase is deprecated and will be removed in the next major release. Use POGOProtos\Data\BootTime\BootPhase instead', E_USER_DEPRECATED);
 

@@ -5,28 +5,28 @@
 namespace POGOProtos\Data\Battle;
 
 /**
- * Protobuf enum <code>POGOProtos.Data.Battle.BattleState</code>
+ * Protobuf type <code>POGOProtos.Data.Battle.BattleState</code>
  */
 class BattleState
 {
     /**
-     * <code>STATE_UNSET = 0;</code>
+     * Generated from protobuf enum <code>STATE_UNSET = 0;</code>
      */
     const STATE_UNSET = 0;
     /**
-     * <code>ACTIVE = 1;</code>
+     * Generated from protobuf enum <code>ACTIVE = 1;</code>
      */
     const ACTIVE = 1;
     /**
-     * <code>VICTORY = 2;</code>
+     * Generated from protobuf enum <code>VICTORY = 2;</code>
      */
     const VICTORY = 2;
     /**
-     * <code>DEFEATED = 3;</code>
+     * Generated from protobuf enum <code>DEFEATED = 3;</code>
      */
     const DEFEATED = 3;
     /**
-     * <code>TIMED_OUT = 4;</code>
+     * Generated from protobuf enum <code>TIMED_OUT = 4;</code>
      */
     const TIMED_OUT = 4;
 }

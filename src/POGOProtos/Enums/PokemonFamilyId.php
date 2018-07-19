@@ -5,832 +5,832 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.PokemonFamilyId</code>
+ * Protobuf type <code>POGOProtos.Enums.PokemonFamilyId</code>
  */
 class PokemonFamilyId
 {
     /**
-     * <code>FAMILY_UNSET = 0;</code>
+     * Generated from protobuf enum <code>FAMILY_UNSET = 0;</code>
      */
     const FAMILY_UNSET = 0;
     /**
-     * <code>FAMILY_BULBASAUR = 1;</code>
+     * Generated from protobuf enum <code>FAMILY_BULBASAUR = 1;</code>
      */
     const FAMILY_BULBASAUR = 1;
     /**
-     * <code>FAMILY_CHARMANDER = 4;</code>
+     * Generated from protobuf enum <code>FAMILY_CHARMANDER = 4;</code>
      */
     const FAMILY_CHARMANDER = 4;
     /**
-     * <code>FAMILY_SQUIRTLE = 7;</code>
+     * Generated from protobuf enum <code>FAMILY_SQUIRTLE = 7;</code>
      */
     const FAMILY_SQUIRTLE = 7;
     /**
-     * <code>FAMILY_CATERPIE = 10;</code>
+     * Generated from protobuf enum <code>FAMILY_CATERPIE = 10;</code>
      */
     const FAMILY_CATERPIE = 10;
     /**
-     * <code>FAMILY_WEEDLE = 13;</code>
+     * Generated from protobuf enum <code>FAMILY_WEEDLE = 13;</code>
      */
     const FAMILY_WEEDLE = 13;
     /**
-     * <code>FAMILY_PIDGEY = 16;</code>
+     * Generated from protobuf enum <code>FAMILY_PIDGEY = 16;</code>
      */
     const FAMILY_PIDGEY = 16;
     /**
-     * <code>FAMILY_RATTATA = 19;</code>
+     * Generated from protobuf enum <code>FAMILY_RATTATA = 19;</code>
      */
     const FAMILY_RATTATA = 19;
     /**
-     * <code>FAMILY_SPEAROW = 21;</code>
+     * Generated from protobuf enum <code>FAMILY_SPEAROW = 21;</code>
      */
     const FAMILY_SPEAROW = 21;
     /**
-     * <code>FAMILY_EKANS = 23;</code>
+     * Generated from protobuf enum <code>FAMILY_EKANS = 23;</code>
      */
     const FAMILY_EKANS = 23;
     /**
-     * <code>FAMILY_PIKACHU = 25;</code>
+     * Generated from protobuf enum <code>FAMILY_PIKACHU = 25;</code>
      */
     const FAMILY_PIKACHU = 25;
     /**
-     * <code>FAMILY_SANDSHREW = 27;</code>
+     * Generated from protobuf enum <code>FAMILY_SANDSHREW = 27;</code>
      */
     const FAMILY_SANDSHREW = 27;
     /**
-     * <code>FAMILY_NIDORAN_FEMALE = 29;</code>
+     * Generated from protobuf enum <code>FAMILY_NIDORAN_FEMALE = 29;</code>
      */
     const FAMILY_NIDORAN_FEMALE = 29;
     /**
-     * <code>FAMILY_NIDORAN_MALE = 32;</code>
+     * Generated from protobuf enum <code>FAMILY_NIDORAN_MALE = 32;</code>
      */
     const FAMILY_NIDORAN_MALE = 32;
     /**
-     * <code>FAMILY_CLEFAIRY = 35;</code>
+     * Generated from protobuf enum <code>FAMILY_CLEFAIRY = 35;</code>
      */
     const FAMILY_CLEFAIRY = 35;
     /**
-     * <code>FAMILY_VULPIX = 37;</code>
+     * Generated from protobuf enum <code>FAMILY_VULPIX = 37;</code>
      */
     const FAMILY_VULPIX = 37;
     /**
-     * <code>FAMILY_JIGGLYPUFF = 39;</code>
+     * Generated from protobuf enum <code>FAMILY_JIGGLYPUFF = 39;</code>
      */
     const FAMILY_JIGGLYPUFF = 39;
     /**
-     * <code>FAMILY_ZUBAT = 41;</code>
+     * Generated from protobuf enum <code>FAMILY_ZUBAT = 41;</code>
      */
     const FAMILY_ZUBAT = 41;
     /**
-     * <code>FAMILY_ODDISH = 43;</code>
+     * Generated from protobuf enum <code>FAMILY_ODDISH = 43;</code>
      */
     const FAMILY_ODDISH = 43;
     /**
-     * <code>FAMILY_PARAS = 46;</code>
+     * Generated from protobuf enum <code>FAMILY_PARAS = 46;</code>
      */
     const FAMILY_PARAS = 46;
     /**
-     * <code>FAMILY_VENONAT = 48;</code>
+     * Generated from protobuf enum <code>FAMILY_VENONAT = 48;</code>
      */
     const FAMILY_VENONAT = 48;
     /**
-     * <code>FAMILY_DIGLETT = 50;</code>
+     * Generated from protobuf enum <code>FAMILY_DIGLETT = 50;</code>
      */
     const FAMILY_DIGLETT = 50;
     /**
-     * <code>FAMILY_MEOWTH = 52;</code>
+     * Generated from protobuf enum <code>FAMILY_MEOWTH = 52;</code>
      */
     const FAMILY_MEOWTH = 52;
     /**
-     * <code>FAMILY_PSYDUCK = 54;</code>
+     * Generated from protobuf enum <code>FAMILY_PSYDUCK = 54;</code>
      */
     const FAMILY_PSYDUCK = 54;
     /**
-     * <code>FAMILY_MANKEY = 56;</code>
+     * Generated from protobuf enum <code>FAMILY_MANKEY = 56;</code>
      */
     const FAMILY_MANKEY = 56;
     /**
-     * <code>FAMILY_GROWLITHE = 58;</code>
+     * Generated from protobuf enum <code>FAMILY_GROWLITHE = 58;</code>
      */
     const FAMILY_GROWLITHE = 58;
     /**
-     * <code>FAMILY_POLIWAG = 60;</code>
+     * Generated from protobuf enum <code>FAMILY_POLIWAG = 60;</code>
      */
     const FAMILY_POLIWAG = 60;
     /**
-     * <code>FAMILY_ABRA = 63;</code>
+     * Generated from protobuf enum <code>FAMILY_ABRA = 63;</code>
      */
     const FAMILY_ABRA = 63;
     /**
-     * <code>FAMILY_MACHOP = 66;</code>
+     * Generated from protobuf enum <code>FAMILY_MACHOP = 66;</code>
      */
     const FAMILY_MACHOP = 66;
     /**
-     * <code>FAMILY_BELLSPROUT = 69;</code>
+     * Generated from protobuf enum <code>FAMILY_BELLSPROUT = 69;</code>
      */
     const FAMILY_BELLSPROUT = 69;
     /**
-     * <code>FAMILY_TENTACOOL = 72;</code>
+     * Generated from protobuf enum <code>FAMILY_TENTACOOL = 72;</code>
      */
     const FAMILY_TENTACOOL = 72;
     /**
-     * <code>FAMILY_GEODUDE = 74;</code>
+     * Generated from protobuf enum <code>FAMILY_GEODUDE = 74;</code>
      */
     const FAMILY_GEODUDE = 74;
     /**
-     * <code>FAMILY_PONYTA = 77;</code>
+     * Generated from protobuf enum <code>FAMILY_PONYTA = 77;</code>
      */
     const FAMILY_PONYTA = 77;
     /**
-     * <code>FAMILY_SLOWPOKE = 79;</code>
+     * Generated from protobuf enum <code>FAMILY_SLOWPOKE = 79;</code>
      */
     const FAMILY_SLOWPOKE = 79;
     /**
-     * <code>FAMILY_MAGNEMITE = 81;</code>
+     * Generated from protobuf enum <code>FAMILY_MAGNEMITE = 81;</code>
      */
     const FAMILY_MAGNEMITE = 81;
     /**
-     * <code>FAMILY_FARFETCHD = 83;</code>
+     * Generated from protobuf enum <code>FAMILY_FARFETCHD = 83;</code>
      */
     const FAMILY_FARFETCHD = 83;
     /**
-     * <code>FAMILY_DODUO = 84;</code>
+     * Generated from protobuf enum <code>FAMILY_DODUO = 84;</code>
      */
     const FAMILY_DODUO = 84;
     /**
-     * <code>FAMILY_SEEL = 86;</code>
+     * Generated from protobuf enum <code>FAMILY_SEEL = 86;</code>
      */
     const FAMILY_SEEL = 86;
     /**
-     * <code>FAMILY_GRIMER = 88;</code>
+     * Generated from protobuf enum <code>FAMILY_GRIMER = 88;</code>
      */
     const FAMILY_GRIMER = 88;
     /**
-     * <code>FAMILY_SHELLDER = 90;</code>
+     * Generated from protobuf enum <code>FAMILY_SHELLDER = 90;</code>
      */
     const FAMILY_SHELLDER = 90;
     /**
-     * <code>FAMILY_GASTLY = 92;</code>
+     * Generated from protobuf enum <code>FAMILY_GASTLY = 92;</code>
      */
     const FAMILY_GASTLY = 92;
     /**
-     * <code>FAMILY_ONIX = 95;</code>
+     * Generated from protobuf enum <code>FAMILY_ONIX = 95;</code>
      */
     const FAMILY_ONIX = 95;
     /**
-     * <code>FAMILY_DROWZEE = 96;</code>
+     * Generated from protobuf enum <code>FAMILY_DROWZEE = 96;</code>
      */
     const FAMILY_DROWZEE = 96;
     /**
-     * <code>FAMILY_HYPNO = 97;</code>
+     * Generated from protobuf enum <code>FAMILY_HYPNO = 97;</code>
      */
     const FAMILY_HYPNO = 97;
     /**
-     * <code>FAMILY_KRABBY = 98;</code>
+     * Generated from protobuf enum <code>FAMILY_KRABBY = 98;</code>
      */
     const FAMILY_KRABBY = 98;
     /**
-     * <code>FAMILY_VOLTORB = 100;</code>
+     * Generated from protobuf enum <code>FAMILY_VOLTORB = 100;</code>
      */
     const FAMILY_VOLTORB = 100;
     /**
-     * <code>FAMILY_EXEGGCUTE = 102;</code>
+     * Generated from protobuf enum <code>FAMILY_EXEGGCUTE = 102;</code>
      */
     const FAMILY_EXEGGCUTE = 102;
     /**
-     * <code>FAMILY_CUBONE = 104;</code>
+     * Generated from protobuf enum <code>FAMILY_CUBONE = 104;</code>
      */
     const FAMILY_CUBONE = 104;
     /**
-     * <code>FAMILY_HITMONLEE = 106;</code>
+     * Generated from protobuf enum <code>FAMILY_HITMONLEE = 106;</code>
      */
     const FAMILY_HITMONLEE = 106;
     /**
-     * <code>FAMILY_HITMONCHAN = 107;</code>
+     * Generated from protobuf enum <code>FAMILY_HITMONCHAN = 107;</code>
      */
     const FAMILY_HITMONCHAN = 107;
     /**
-     * <code>FAMILY_LICKITUNG = 108;</code>
+     * Generated from protobuf enum <code>FAMILY_LICKITUNG = 108;</code>
      */
     const FAMILY_LICKITUNG = 108;
     /**
-     * <code>FAMILY_KOFFING = 109;</code>
+     * Generated from protobuf enum <code>FAMILY_KOFFING = 109;</code>
      */
     const FAMILY_KOFFING = 109;
     /**
-     * <code>FAMILY_RHYHORN = 111;</code>
+     * Generated from protobuf enum <code>FAMILY_RHYHORN = 111;</code>
      */
     const FAMILY_RHYHORN = 111;
     /**
-     * <code>FAMILY_CHANSEY = 113;</code>
+     * Generated from protobuf enum <code>FAMILY_CHANSEY = 113;</code>
      */
     const FAMILY_CHANSEY = 113;
     /**
-     * <code>FAMILY_TANGELA = 114;</code>
+     * Generated from protobuf enum <code>FAMILY_TANGELA = 114;</code>
      */
     const FAMILY_TANGELA = 114;
     /**
-     * <code>FAMILY_KANGASKHAN = 115;</code>
+     * Generated from protobuf enum <code>FAMILY_KANGASKHAN = 115;</code>
      */
     const FAMILY_KANGASKHAN = 115;
     /**
-     * <code>FAMILY_HORSEA = 116;</code>
+     * Generated from protobuf enum <code>FAMILY_HORSEA = 116;</code>
      */
     const FAMILY_HORSEA = 116;
     /**
-     * <code>FAMILY_GOLDEEN = 118;</code>
+     * Generated from protobuf enum <code>FAMILY_GOLDEEN = 118;</code>
      */
     const FAMILY_GOLDEEN = 118;
     /**
-     * <code>FAMILY_STARYU = 120;</code>
+     * Generated from protobuf enum <code>FAMILY_STARYU = 120;</code>
      */
     const FAMILY_STARYU = 120;
     /**
-     * <code>FAMILY_MR_MIME = 122;</code>
+     * Generated from protobuf enum <code>FAMILY_MR_MIME = 122;</code>
      */
     const FAMILY_MR_MIME = 122;
     /**
-     * <code>FAMILY_SCYTHER = 123;</code>
+     * Generated from protobuf enum <code>FAMILY_SCYTHER = 123;</code>
      */
     const FAMILY_SCYTHER = 123;
     /**
-     * <code>FAMILY_JYNX = 124;</code>
+     * Generated from protobuf enum <code>FAMILY_JYNX = 124;</code>
      */
     const FAMILY_JYNX = 124;
     /**
-     * <code>FAMILY_ELECTABUZZ = 125;</code>
+     * Generated from protobuf enum <code>FAMILY_ELECTABUZZ = 125;</code>
      */
     const FAMILY_ELECTABUZZ = 125;
     /**
-     * <code>FAMILY_MAGMAR = 126;</code>
+     * Generated from protobuf enum <code>FAMILY_MAGMAR = 126;</code>
      */
     const FAMILY_MAGMAR = 126;
     /**
-     * <code>FAMILY_PINSIR = 127;</code>
+     * Generated from protobuf enum <code>FAMILY_PINSIR = 127;</code>
      */
     const FAMILY_PINSIR = 127;
     /**
-     * <code>FAMILY_TAUROS = 128;</code>
+     * Generated from protobuf enum <code>FAMILY_TAUROS = 128;</code>
      */
     const FAMILY_TAUROS = 128;
     /**
-     * <code>FAMILY_MAGIKARP = 129;</code>
+     * Generated from protobuf enum <code>FAMILY_MAGIKARP = 129;</code>
      */
     const FAMILY_MAGIKARP = 129;
     /**
-     * <code>FAMILY_LAPRAS = 131;</code>
+     * Generated from protobuf enum <code>FAMILY_LAPRAS = 131;</code>
      */
     const FAMILY_LAPRAS = 131;
     /**
-     * <code>FAMILY_DITTO = 132;</code>
+     * Generated from protobuf enum <code>FAMILY_DITTO = 132;</code>
      */
     const FAMILY_DITTO = 132;
     /**
-     * <code>FAMILY_EEVEE = 133;</code>
+     * Generated from protobuf enum <code>FAMILY_EEVEE = 133;</code>
      */
     const FAMILY_EEVEE = 133;
     /**
-     * <code>FAMILY_PORYGON = 137;</code>
+     * Generated from protobuf enum <code>FAMILY_PORYGON = 137;</code>
      */
     const FAMILY_PORYGON = 137;
     /**
-     * <code>FAMILY_OMANYTE = 138;</code>
+     * Generated from protobuf enum <code>FAMILY_OMANYTE = 138;</code>
      */
     const FAMILY_OMANYTE = 138;
     /**
-     * <code>FAMILY_KABUTO = 140;</code>
+     * Generated from protobuf enum <code>FAMILY_KABUTO = 140;</code>
      */
     const FAMILY_KABUTO = 140;
     /**
-     * <code>FAMILY_AERODACTYL = 142;</code>
+     * Generated from protobuf enum <code>FAMILY_AERODACTYL = 142;</code>
      */
     const FAMILY_AERODACTYL = 142;
     /**
-     * <code>FAMILY_SNORLAX = 143;</code>
+     * Generated from protobuf enum <code>FAMILY_SNORLAX = 143;</code>
      */
     const FAMILY_SNORLAX = 143;
     /**
-     * <code>FAMILY_ARTICUNO = 144;</code>
+     * Generated from protobuf enum <code>FAMILY_ARTICUNO = 144;</code>
      */
     const FAMILY_ARTICUNO = 144;
     /**
-     * <code>FAMILY_ZAPDOS = 145;</code>
+     * Generated from protobuf enum <code>FAMILY_ZAPDOS = 145;</code>
      */
     const FAMILY_ZAPDOS = 145;
     /**
-     * <code>FAMILY_MOLTRES = 146;</code>
+     * Generated from protobuf enum <code>FAMILY_MOLTRES = 146;</code>
      */
     const FAMILY_MOLTRES = 146;
     /**
-     * <code>FAMILY_DRATINI = 147;</code>
+     * Generated from protobuf enum <code>FAMILY_DRATINI = 147;</code>
      */
     const FAMILY_DRATINI = 147;
     /**
-     * <code>FAMILY_MEWTWO = 150;</code>
+     * Generated from protobuf enum <code>FAMILY_MEWTWO = 150;</code>
      */
     const FAMILY_MEWTWO = 150;
     /**
-     * <code>FAMILY_MEW = 151;</code>
+     * Generated from protobuf enum <code>FAMILY_MEW = 151;</code>
      */
     const FAMILY_MEW = 151;
     /**
-     * <code>FAMILY_CHIKORITA = 152;</code>
+     * Generated from protobuf enum <code>FAMILY_CHIKORITA = 152;</code>
      */
     const FAMILY_CHIKORITA = 152;
     /**
-     * <code>FAMILY_CYNDAQUIL = 155;</code>
+     * Generated from protobuf enum <code>FAMILY_CYNDAQUIL = 155;</code>
      */
     const FAMILY_CYNDAQUIL = 155;
     /**
-     * <code>FAMILY_TOTODILE = 158;</code>
+     * Generated from protobuf enum <code>FAMILY_TOTODILE = 158;</code>
      */
     const FAMILY_TOTODILE = 158;
     /**
-     * <code>FAMILY_SENTRET = 161;</code>
+     * Generated from protobuf enum <code>FAMILY_SENTRET = 161;</code>
      */
     const FAMILY_SENTRET = 161;
     /**
-     * <code>FAMILY_HOOTHOOT = 163;</code>
+     * Generated from protobuf enum <code>FAMILY_HOOTHOOT = 163;</code>
      */
     const FAMILY_HOOTHOOT = 163;
     /**
-     * <code>FAMILY_LEDYBA = 165;</code>
+     * Generated from protobuf enum <code>FAMILY_LEDYBA = 165;</code>
      */
     const FAMILY_LEDYBA = 165;
     /**
-     * <code>FAMILY_SPINARAK = 167;</code>
+     * Generated from protobuf enum <code>FAMILY_SPINARAK = 167;</code>
      */
     const FAMILY_SPINARAK = 167;
     /**
-     * <code>FAMILY_CHINCHOU = 170;</code>
+     * Generated from protobuf enum <code>FAMILY_CHINCHOU = 170;</code>
      */
     const FAMILY_CHINCHOU = 170;
     /**
-     * <code>FAMILY_TOGEPI = 175;</code>
+     * Generated from protobuf enum <code>FAMILY_TOGEPI = 175;</code>
      */
     const FAMILY_TOGEPI = 175;
     /**
-     * <code>FAMILY_NATU = 177;</code>
+     * Generated from protobuf enum <code>FAMILY_NATU = 177;</code>
      */
     const FAMILY_NATU = 177;
     /**
-     * <code>FAMILY_MAREEP = 179;</code>
+     * Generated from protobuf enum <code>FAMILY_MAREEP = 179;</code>
      */
     const FAMILY_MAREEP = 179;
     /**
-     * <code>FAMILY_MARILL = 183;</code>
+     * Generated from protobuf enum <code>FAMILY_MARILL = 183;</code>
      */
     const FAMILY_MARILL = 183;
     /**
-     * <code>FAMILY_SUDOWOODO = 185;</code>
+     * Generated from protobuf enum <code>FAMILY_SUDOWOODO = 185;</code>
      */
     const FAMILY_SUDOWOODO = 185;
     /**
-     * <code>FAMILY_HOPPIP = 187;</code>
+     * Generated from protobuf enum <code>FAMILY_HOPPIP = 187;</code>
      */
     const FAMILY_HOPPIP = 187;
     /**
-     * <code>FAMILY_AIPOM = 190;</code>
+     * Generated from protobuf enum <code>FAMILY_AIPOM = 190;</code>
      */
     const FAMILY_AIPOM = 190;
     /**
-     * <code>FAMILY_SUNKERN = 191;</code>
+     * Generated from protobuf enum <code>FAMILY_SUNKERN = 191;</code>
      */
     const FAMILY_SUNKERN = 191;
     /**
-     * <code>FAMILY_YANMA = 193;</code>
+     * Generated from protobuf enum <code>FAMILY_YANMA = 193;</code>
      */
     const FAMILY_YANMA = 193;
     /**
-     * <code>FAMILY_WOOPER = 194;</code>
+     * Generated from protobuf enum <code>FAMILY_WOOPER = 194;</code>
      */
     const FAMILY_WOOPER = 194;
     /**
-     * <code>FAMILY_MURKROW = 198;</code>
+     * Generated from protobuf enum <code>FAMILY_MURKROW = 198;</code>
      */
     const FAMILY_MURKROW = 198;
     /**
-     * <code>FAMILY_MISDREAVUS = 200;</code>
+     * Generated from protobuf enum <code>FAMILY_MISDREAVUS = 200;</code>
      */
     const FAMILY_MISDREAVUS = 200;
     /**
-     * <code>FAMILY_UNOWN = 201;</code>
+     * Generated from protobuf enum <code>FAMILY_UNOWN = 201;</code>
      */
     const FAMILY_UNOWN = 201;
     /**
-     * <code>FAMILY_WOBBUFFET = 202;</code>
+     * Generated from protobuf enum <code>FAMILY_WOBBUFFET = 202;</code>
      */
     const FAMILY_WOBBUFFET = 202;
     /**
-     * <code>FAMILY_GIRAFARIG = 203;</code>
+     * Generated from protobuf enum <code>FAMILY_GIRAFARIG = 203;</code>
      */
     const FAMILY_GIRAFARIG = 203;
     /**
-     * <code>FAMILY_PINECO = 204;</code>
+     * Generated from protobuf enum <code>FAMILY_PINECO = 204;</code>
      */
     const FAMILY_PINECO = 204;
     /**
-     * <code>FAMILY_DUNSPARCE = 206;</code>
+     * Generated from protobuf enum <code>FAMILY_DUNSPARCE = 206;</code>
      */
     const FAMILY_DUNSPARCE = 206;
     /**
-     * <code>FAMILY_GLIGAR = 207;</code>
+     * Generated from protobuf enum <code>FAMILY_GLIGAR = 207;</code>
      */
     const FAMILY_GLIGAR = 207;
     /**
-     * <code>FAMILY_SNUBBULL = 209;</code>
+     * Generated from protobuf enum <code>FAMILY_SNUBBULL = 209;</code>
      */
     const FAMILY_SNUBBULL = 209;
     /**
-     * <code>FAMILY_QWILFISH = 211;</code>
+     * Generated from protobuf enum <code>FAMILY_QWILFISH = 211;</code>
      */
     const FAMILY_QWILFISH = 211;
     /**
-     * <code>FAMILY_SHUCKLE = 213;</code>
+     * Generated from protobuf enum <code>FAMILY_SHUCKLE = 213;</code>
      */
     const FAMILY_SHUCKLE = 213;
     /**
-     * <code>FAMILY_HERACROSS = 214;</code>
+     * Generated from protobuf enum <code>FAMILY_HERACROSS = 214;</code>
      */
     const FAMILY_HERACROSS = 214;
     /**
-     * <code>FAMILY_SNEASEL = 215;</code>
+     * Generated from protobuf enum <code>FAMILY_SNEASEL = 215;</code>
      */
     const FAMILY_SNEASEL = 215;
     /**
-     * <code>FAMILY_TEDDIURSA = 216;</code>
+     * Generated from protobuf enum <code>FAMILY_TEDDIURSA = 216;</code>
      */
     const FAMILY_TEDDIURSA = 216;
     /**
-     * <code>FAMILY_SLUGMA = 218;</code>
+     * Generated from protobuf enum <code>FAMILY_SLUGMA = 218;</code>
      */
     const FAMILY_SLUGMA = 218;
     /**
-     * <code>FAMILY_SWINUB = 220;</code>
+     * Generated from protobuf enum <code>FAMILY_SWINUB = 220;</code>
      */
     const FAMILY_SWINUB = 220;
     /**
-     * <code>FAMILY_CORSOLA = 222;</code>
+     * Generated from protobuf enum <code>FAMILY_CORSOLA = 222;</code>
      */
     const FAMILY_CORSOLA = 222;
     /**
-     * <code>FAMILY_REMORAID = 223;</code>
+     * Generated from protobuf enum <code>FAMILY_REMORAID = 223;</code>
      */
     const FAMILY_REMORAID = 223;
     /**
-     * <code>FAMILY_DELIBIRD = 225;</code>
+     * Generated from protobuf enum <code>FAMILY_DELIBIRD = 225;</code>
      */
     const FAMILY_DELIBIRD = 225;
     /**
-     * <code>FAMILY_MANTINE = 226;</code>
+     * Generated from protobuf enum <code>FAMILY_MANTINE = 226;</code>
      */
     const FAMILY_MANTINE = 226;
     /**
-     * <code>FAMILY_SKARMORY = 227;</code>
+     * Generated from protobuf enum <code>FAMILY_SKARMORY = 227;</code>
      */
     const FAMILY_SKARMORY = 227;
     /**
-     * <code>FAMILY_HOUNDOUR = 228;</code>
+     * Generated from protobuf enum <code>FAMILY_HOUNDOUR = 228;</code>
      */
     const FAMILY_HOUNDOUR = 228;
     /**
-     * <code>FAMILY_PHANPY = 231;</code>
+     * Generated from protobuf enum <code>FAMILY_PHANPY = 231;</code>
      */
     const FAMILY_PHANPY = 231;
     /**
-     * <code>FAMILY_STANTLER = 234;</code>
+     * Generated from protobuf enum <code>FAMILY_STANTLER = 234;</code>
      */
     const FAMILY_STANTLER = 234;
     /**
-     * <code>FAMILY_SMEARGLE = 235;</code>
+     * Generated from protobuf enum <code>FAMILY_SMEARGLE = 235;</code>
      */
     const FAMILY_SMEARGLE = 235;
     /**
-     * <code>FAMILY_TYROGUE = 236;</code>
+     * Generated from protobuf enum <code>FAMILY_TYROGUE = 236;</code>
      */
     const FAMILY_TYROGUE = 236;
     /**
-     * <code>FAMILY_MILTANK = 241;</code>
+     * Generated from protobuf enum <code>FAMILY_MILTANK = 241;</code>
      */
     const FAMILY_MILTANK = 241;
     /**
-     * <code>FAMILY_RAIKOU = 243;</code>
+     * Generated from protobuf enum <code>FAMILY_RAIKOU = 243;</code>
      */
     const FAMILY_RAIKOU = 243;
     /**
-     * <code>FAMILY_ENTEI = 244;</code>
+     * Generated from protobuf enum <code>FAMILY_ENTEI = 244;</code>
      */
     const FAMILY_ENTEI = 244;
     /**
-     * <code>FAMILY_SUICUNE = 245;</code>
+     * Generated from protobuf enum <code>FAMILY_SUICUNE = 245;</code>
      */
     const FAMILY_SUICUNE = 245;
     /**
-     * <code>FAMILY_LARVITAR = 246;</code>
+     * Generated from protobuf enum <code>FAMILY_LARVITAR = 246;</code>
      */
     const FAMILY_LARVITAR = 246;
     /**
-     * <code>FAMILY_LUGIA = 249;</code>
+     * Generated from protobuf enum <code>FAMILY_LUGIA = 249;</code>
      */
     const FAMILY_LUGIA = 249;
     /**
-     * <code>FAMILY_HO_OH = 250;</code>
+     * Generated from protobuf enum <code>FAMILY_HO_OH = 250;</code>
      */
     const FAMILY_HO_OH = 250;
     /**
-     * <code>FAMILY_CELEBI = 251;</code>
+     * Generated from protobuf enum <code>FAMILY_CELEBI = 251;</code>
      */
     const FAMILY_CELEBI = 251;
     /**
-     * <code>FAMILY_TREECKO = 252;</code>
+     * Generated from protobuf enum <code>FAMILY_TREECKO = 252;</code>
      */
     const FAMILY_TREECKO = 252;
     /**
-     * <code>FAMILY_TORCHIC = 255;</code>
+     * Generated from protobuf enum <code>FAMILY_TORCHIC = 255;</code>
      */
     const FAMILY_TORCHIC = 255;
     /**
-     * <code>FAMILY_MUDKIP = 258;</code>
+     * Generated from protobuf enum <code>FAMILY_MUDKIP = 258;</code>
      */
     const FAMILY_MUDKIP = 258;
     /**
-     * <code>FAMILY_POOCHYENA = 261;</code>
+     * Generated from protobuf enum <code>FAMILY_POOCHYENA = 261;</code>
      */
     const FAMILY_POOCHYENA = 261;
     /**
-     * <code>FAMILY_ZIGZAGOON = 263;</code>
+     * Generated from protobuf enum <code>FAMILY_ZIGZAGOON = 263;</code>
      */
     const FAMILY_ZIGZAGOON = 263;
     /**
-     * <code>FAMILY_WURMPLE = 265;</code>
+     * Generated from protobuf enum <code>FAMILY_WURMPLE = 265;</code>
      */
     const FAMILY_WURMPLE = 265;
     /**
-     * <code>FAMILY_LOTAD = 270;</code>
+     * Generated from protobuf enum <code>FAMILY_LOTAD = 270;</code>
      */
     const FAMILY_LOTAD = 270;
     /**
-     * <code>FAMILY_SEEDOT = 273;</code>
+     * Generated from protobuf enum <code>FAMILY_SEEDOT = 273;</code>
      */
     const FAMILY_SEEDOT = 273;
     /**
-     * <code>FAMILY_TAILLOW = 276;</code>
+     * Generated from protobuf enum <code>FAMILY_TAILLOW = 276;</code>
      */
     const FAMILY_TAILLOW = 276;
     /**
-     * <code>FAMILY_WINGULL = 278;</code>
+     * Generated from protobuf enum <code>FAMILY_WINGULL = 278;</code>
      */
     const FAMILY_WINGULL = 278;
     /**
-     * <code>FAMILY_RALTS = 280;</code>
+     * Generated from protobuf enum <code>FAMILY_RALTS = 280;</code>
      */
     const FAMILY_RALTS = 280;
     /**
-     * <code>FAMILY_SURSKIT = 283;</code>
+     * Generated from protobuf enum <code>FAMILY_SURSKIT = 283;</code>
      */
     const FAMILY_SURSKIT = 283;
     /**
-     * <code>FAMILY_SHROOMISH = 285;</code>
+     * Generated from protobuf enum <code>FAMILY_SHROOMISH = 285;</code>
      */
     const FAMILY_SHROOMISH = 285;
     /**
-     * <code>FAMILY_SLAKOTH = 287;</code>
+     * Generated from protobuf enum <code>FAMILY_SLAKOTH = 287;</code>
      */
     const FAMILY_SLAKOTH = 287;
     /**
-     * <code>FAMILY_NINCADA = 290;</code>
+     * Generated from protobuf enum <code>FAMILY_NINCADA = 290;</code>
      */
     const FAMILY_NINCADA = 290;
     /**
-     * <code>FAMILY_WHISMUR = 293;</code>
+     * Generated from protobuf enum <code>FAMILY_WHISMUR = 293;</code>
      */
     const FAMILY_WHISMUR = 293;
     /**
-     * <code>FAMILY_MAKUHITA = 296;</code>
+     * Generated from protobuf enum <code>FAMILY_MAKUHITA = 296;</code>
      */
     const FAMILY_MAKUHITA = 296;
     /**
-     * <code>FAMILY_NOSEPASS = 299;</code>
+     * Generated from protobuf enum <code>FAMILY_NOSEPASS = 299;</code>
      */
     const FAMILY_NOSEPASS = 299;
     /**
-     * <code>FAMILY_SKITTY = 300;</code>
+     * Generated from protobuf enum <code>FAMILY_SKITTY = 300;</code>
      */
     const FAMILY_SKITTY = 300;
     /**
-     * <code>FAMILY_SABLEYE = 302;</code>
+     * Generated from protobuf enum <code>FAMILY_SABLEYE = 302;</code>
      */
     const FAMILY_SABLEYE = 302;
     /**
-     * <code>FAMILY_MAWILE = 303;</code>
+     * Generated from protobuf enum <code>FAMILY_MAWILE = 303;</code>
      */
     const FAMILY_MAWILE = 303;
     /**
-     * <code>FAMILY_ARON = 304;</code>
+     * Generated from protobuf enum <code>FAMILY_ARON = 304;</code>
      */
     const FAMILY_ARON = 304;
     /**
-     * <code>FAMILY_MEDITITE = 307;</code>
+     * Generated from protobuf enum <code>FAMILY_MEDITITE = 307;</code>
      */
     const FAMILY_MEDITITE = 307;
     /**
-     * <code>FAMILY_ELECTRIKE = 309;</code>
+     * Generated from protobuf enum <code>FAMILY_ELECTRIKE = 309;</code>
      */
     const FAMILY_ELECTRIKE = 309;
     /**
-     * <code>FAMILY_PLUSLE = 311;</code>
+     * Generated from protobuf enum <code>FAMILY_PLUSLE = 311;</code>
      */
     const FAMILY_PLUSLE = 311;
     /**
-     * <code>FAMILY_MINUN = 312;</code>
+     * Generated from protobuf enum <code>FAMILY_MINUN = 312;</code>
      */
     const FAMILY_MINUN = 312;
     /**
-     * <code>FAMILY_VOLBEAT = 313;</code>
+     * Generated from protobuf enum <code>FAMILY_VOLBEAT = 313;</code>
      */
     const FAMILY_VOLBEAT = 313;
     /**
-     * <code>FAMILY_ILLUMISE = 314;</code>
+     * Generated from protobuf enum <code>FAMILY_ILLUMISE = 314;</code>
      */
     const FAMILY_ILLUMISE = 314;
     /**
-     * <code>FAMILY_ROSELIA = 315;</code>
+     * Generated from protobuf enum <code>FAMILY_ROSELIA = 315;</code>
      */
     const FAMILY_ROSELIA = 315;
     /**
-     * <code>FAMILY_GULPIN = 316;</code>
+     * Generated from protobuf enum <code>FAMILY_GULPIN = 316;</code>
      */
     const FAMILY_GULPIN = 316;
     /**
-     * <code>FAMILY_CARVANHA = 318;</code>
+     * Generated from protobuf enum <code>FAMILY_CARVANHA = 318;</code>
      */
     const FAMILY_CARVANHA = 318;
     /**
-     * <code>FAMILY_WAILMER = 320;</code>
+     * Generated from protobuf enum <code>FAMILY_WAILMER = 320;</code>
      */
     const FAMILY_WAILMER = 320;
     /**
-     * <code>FAMILY_NUMEL = 322;</code>
+     * Generated from protobuf enum <code>FAMILY_NUMEL = 322;</code>
      */
     const FAMILY_NUMEL = 322;
     /**
-     * <code>FAMILY_TORKOAL = 324;</code>
+     * Generated from protobuf enum <code>FAMILY_TORKOAL = 324;</code>
      */
     const FAMILY_TORKOAL = 324;
     /**
-     * <code>FAMILY_SPOINK = 325;</code>
+     * Generated from protobuf enum <code>FAMILY_SPOINK = 325;</code>
      */
     const FAMILY_SPOINK = 325;
     /**
-     * <code>FAMILY_SPINDA = 327;</code>
+     * Generated from protobuf enum <code>FAMILY_SPINDA = 327;</code>
      */
     const FAMILY_SPINDA = 327;
     /**
-     * <code>FAMILY_TRAPINCH = 328;</code>
+     * Generated from protobuf enum <code>FAMILY_TRAPINCH = 328;</code>
      */
     const FAMILY_TRAPINCH = 328;
     /**
-     * <code>FAMILY_CACNEA = 331;</code>
+     * Generated from protobuf enum <code>FAMILY_CACNEA = 331;</code>
      */
     const FAMILY_CACNEA = 331;
     /**
-     * <code>FAMILY_SWABLU = 333;</code>
+     * Generated from protobuf enum <code>FAMILY_SWABLU = 333;</code>
      */
     const FAMILY_SWABLU = 333;
     /**
-     * <code>FAMILY_ZANGOOSE = 335;</code>
+     * Generated from protobuf enum <code>FAMILY_ZANGOOSE = 335;</code>
      */
     const FAMILY_ZANGOOSE = 335;
     /**
-     * <code>FAMILY_SEVIPER = 336;</code>
+     * Generated from protobuf enum <code>FAMILY_SEVIPER = 336;</code>
      */
     const FAMILY_SEVIPER = 336;
     /**
-     * <code>FAMILY_LUNATONE = 337;</code>
+     * Generated from protobuf enum <code>FAMILY_LUNATONE = 337;</code>
      */
     const FAMILY_LUNATONE = 337;
     /**
-     * <code>FAMILY_SOLROCK = 338;</code>
+     * Generated from protobuf enum <code>FAMILY_SOLROCK = 338;</code>
      */
     const FAMILY_SOLROCK = 338;
     /**
-     * <code>FAMILY_BARBOACH = 339;</code>
+     * Generated from protobuf enum <code>FAMILY_BARBOACH = 339;</code>
      */
     const FAMILY_BARBOACH = 339;
     /**
-     * <code>FAMILY_CORPHISH = 341;</code>
+     * Generated from protobuf enum <code>FAMILY_CORPHISH = 341;</code>
      */
     const FAMILY_CORPHISH = 341;
     /**
-     * <code>FAMILY_BALTOY = 343;</code>
+     * Generated from protobuf enum <code>FAMILY_BALTOY = 343;</code>
      */
     const FAMILY_BALTOY = 343;
     /**
-     * <code>FAMILY_LILEEP = 345;</code>
+     * Generated from protobuf enum <code>FAMILY_LILEEP = 345;</code>
      */
     const FAMILY_LILEEP = 345;
     /**
-     * <code>FAMILY_ANORITH = 347;</code>
+     * Generated from protobuf enum <code>FAMILY_ANORITH = 347;</code>
      */
     const FAMILY_ANORITH = 347;
     /**
-     * <code>FAMILY_FEEBAS = 349;</code>
+     * Generated from protobuf enum <code>FAMILY_FEEBAS = 349;</code>
      */
     const FAMILY_FEEBAS = 349;
     /**
-     * <code>FAMILY_CASTFORM = 351;</code>
+     * Generated from protobuf enum <code>FAMILY_CASTFORM = 351;</code>
      */
     const FAMILY_CASTFORM = 351;
     /**
-     * <code>FAMILY_KECLEON = 352;</code>
+     * Generated from protobuf enum <code>FAMILY_KECLEON = 352;</code>
      */
     const FAMILY_KECLEON = 352;
     /**
-     * <code>FAMILY_SHUPPET = 353;</code>
+     * Generated from protobuf enum <code>FAMILY_SHUPPET = 353;</code>
      */
     const FAMILY_SHUPPET = 353;
     /**
-     * <code>FAMILY_DUSKULL = 355;</code>
+     * Generated from protobuf enum <code>FAMILY_DUSKULL = 355;</code>
      */
     const FAMILY_DUSKULL = 355;
     /**
-     * <code>FAMILY_TROPIUS = 357;</code>
+     * Generated from protobuf enum <code>FAMILY_TROPIUS = 357;</code>
      */
     const FAMILY_TROPIUS = 357;
     /**
-     * <code>FAMILY_CHIMECHO = 358;</code>
+     * Generated from protobuf enum <code>FAMILY_CHIMECHO = 358;</code>
      */
     const FAMILY_CHIMECHO = 358;
     /**
-     * <code>FAMILY_ABSOL = 359;</code>
+     * Generated from protobuf enum <code>FAMILY_ABSOL = 359;</code>
      */
     const FAMILY_ABSOL = 359;
     /**
-     * <code>FAMILY_SNORUNT = 361;</code>
+     * Generated from protobuf enum <code>FAMILY_SNORUNT = 361;</code>
      */
     const FAMILY_SNORUNT = 361;
     /**
-     * <code>FAMILY_SPHEAL = 363;</code>
+     * Generated from protobuf enum <code>FAMILY_SPHEAL = 363;</code>
      */
     const FAMILY_SPHEAL = 363;
     /**
-     * <code>FAMILY_CLAMPERL = 366;</code>
+     * Generated from protobuf enum <code>FAMILY_CLAMPERL = 366;</code>
      */
     const FAMILY_CLAMPERL = 366;
     /**
-     * <code>FAMILY_RELICANTH = 369;</code>
+     * Generated from protobuf enum <code>FAMILY_RELICANTH = 369;</code>
      */
     const FAMILY_RELICANTH = 369;
     /**
-     * <code>FAMILY_LUVDISC = 370;</code>
+     * Generated from protobuf enum <code>FAMILY_LUVDISC = 370;</code>
      */
     const FAMILY_LUVDISC = 370;
     /**
-     * <code>FAMILY_BAGON = 371;</code>
+     * Generated from protobuf enum <code>FAMILY_BAGON = 371;</code>
      */
     const FAMILY_BAGON = 371;
     /**
-     * <code>FAMILY_BELDUM = 374;</code>
+     * Generated from protobuf enum <code>FAMILY_BELDUM = 374;</code>
      */
     const FAMILY_BELDUM = 374;
     /**
-     * <code>FAMILY_REGIROCK = 377;</code>
+     * Generated from protobuf enum <code>FAMILY_REGIROCK = 377;</code>
      */
     const FAMILY_REGIROCK = 377;
     /**
-     * <code>FAMILY_REGICE = 378;</code>
+     * Generated from protobuf enum <code>FAMILY_REGICE = 378;</code>
      */
     const FAMILY_REGICE = 378;
     /**
-     * <code>FAMILY_REGISTEEL = 379;</code>
+     * Generated from protobuf enum <code>FAMILY_REGISTEEL = 379;</code>
      */
     const FAMILY_REGISTEEL = 379;
     /**
-     * <code>FAMILY_LATIAS = 380;</code>
+     * Generated from protobuf enum <code>FAMILY_LATIAS = 380;</code>
      */
     const FAMILY_LATIAS = 380;
     /**
-     * <code>FAMILY_LATIOS = 381;</code>
+     * Generated from protobuf enum <code>FAMILY_LATIOS = 381;</code>
      */
     const FAMILY_LATIOS = 381;
     /**
-     * <code>FAMILY_KYOGRE = 382;</code>
+     * Generated from protobuf enum <code>FAMILY_KYOGRE = 382;</code>
      */
     const FAMILY_KYOGRE = 382;
     /**
-     * <code>FAMILY_GROUDON = 383;</code>
+     * Generated from protobuf enum <code>FAMILY_GROUDON = 383;</code>
      */
     const FAMILY_GROUDON = 383;
     /**
-     * <code>FAMILY_RAYQUAZA = 384;</code>
+     * Generated from protobuf enum <code>FAMILY_RAYQUAZA = 384;</code>
      */
     const FAMILY_RAYQUAZA = 384;
     /**
-     * <code>FAMILY_JIRACHI = 385;</code>
+     * Generated from protobuf enum <code>FAMILY_JIRACHI = 385;</code>
      */
     const FAMILY_JIRACHI = 385;
     /**
-     * <code>FAMILY_DEOXYS = 386;</code>
+     * Generated from protobuf enum <code>FAMILY_DEOXYS = 386;</code>
      */
     const FAMILY_DEOXYS = 386;
 }

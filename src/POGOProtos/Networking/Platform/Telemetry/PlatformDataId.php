@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Telemetry.PlatformDataId</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Telemetry.PlatformDataId</code>
  */
 class PlatformDataId extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 telemetry_id = 1;</code>
+     * Generated from protobuf field <code>int32 telemetry_id = 1;</code>
      */
     private $telemetry_id = 0;
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryDomainId telemetry_domain_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryDomainId telemetry_domain_id = 2;</code>
      */
     private $telemetry_domain_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $telemetry_id
+     *     @type int $telemetry_domain_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Telemetry\PlatformDataId::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 telemetry_id = 1;</code>
+     * Generated from protobuf field <code>int32 telemetry_id = 1;</code>
+     * @return int
      */
     public function getTelemetryId()
     {
@@ -36,16 +47,21 @@ class PlatformDataId extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 telemetry_id = 1;</code>
+     * Generated from protobuf field <code>int32 telemetry_id = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTelemetryId($var)
     {
         GPBUtil::checkInt32($var);
         $this->telemetry_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryDomainId telemetry_domain_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryDomainId telemetry_domain_id = 2;</code>
+     * @return int
      */
     public function getTelemetryDomainId()
     {
@@ -53,12 +69,16 @@ class PlatformDataId extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryDomainId telemetry_domain_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.TelemetryDomainId telemetry_domain_id = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTelemetryDomainId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Platform\Telemetry\TelemetryDomainId::class);
         $this->telemetry_domain_id = $var;
+
+        return $this;
     }
 
 }

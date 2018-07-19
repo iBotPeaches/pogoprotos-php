@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.UseItemCaptureResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.UseItemCaptureResponse</code>
  */
 class UseItemCaptureResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
      */
     private $success = false;
     /**
-     * <code>double item_capture_mult = 2;</code>
+     * Generated from protobuf field <code>double item_capture_mult = 2;</code>
      */
     private $item_capture_mult = 0.0;
     /**
-     * <code>double item_flee_mult = 3;</code>
+     * Generated from protobuf field <code>double item_flee_mult = 3;</code>
      */
     private $item_flee_mult = 0.0;
     /**
-     * <code>bool stop_movement = 4;</code>
+     * Generated from protobuf field <code>bool stop_movement = 4;</code>
      */
     private $stop_movement = false;
     /**
-     * <code>bool stop_attack = 5;</code>
+     * Generated from protobuf field <code>bool stop_attack = 5;</code>
      */
     private $stop_attack = false;
     /**
-     * <code>bool target_max = 6;</code>
+     * Generated from protobuf field <code>bool target_max = 6;</code>
      */
     private $target_max = false;
     /**
-     * <code>bool target_slow = 7;</code>
+     * Generated from protobuf field <code>bool target_slow = 7;</code>
      */
     private $target_slow = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $success
+     *     @type float $item_capture_mult
+     *     @type float $item_flee_mult
+     *     @type bool $stop_movement
+     *     @type bool $stop_attack
+     *     @type bool $target_max
+     *     @type bool $target_slow
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\UseItemCaptureResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @return bool
      */
     public function getSuccess()
     {
@@ -56,16 +72,21 @@ class UseItemCaptureResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSuccess($var)
     {
         GPBUtil::checkBool($var);
         $this->success = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double item_capture_mult = 2;</code>
+     * Generated from protobuf field <code>double item_capture_mult = 2;</code>
+     * @return float
      */
     public function getItemCaptureMult()
     {
@@ -73,16 +94,21 @@ class UseItemCaptureResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double item_capture_mult = 2;</code>
+     * Generated from protobuf field <code>double item_capture_mult = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setItemCaptureMult($var)
     {
         GPBUtil::checkDouble($var);
         $this->item_capture_mult = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double item_flee_mult = 3;</code>
+     * Generated from protobuf field <code>double item_flee_mult = 3;</code>
+     * @return float
      */
     public function getItemFleeMult()
     {
@@ -90,16 +116,21 @@ class UseItemCaptureResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double item_flee_mult = 3;</code>
+     * Generated from protobuf field <code>double item_flee_mult = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setItemFleeMult($var)
     {
         GPBUtil::checkDouble($var);
         $this->item_flee_mult = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool stop_movement = 4;</code>
+     * Generated from protobuf field <code>bool stop_movement = 4;</code>
+     * @return bool
      */
     public function getStopMovement()
     {
@@ -107,16 +138,21 @@ class UseItemCaptureResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool stop_movement = 4;</code>
+     * Generated from protobuf field <code>bool stop_movement = 4;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setStopMovement($var)
     {
         GPBUtil::checkBool($var);
         $this->stop_movement = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool stop_attack = 5;</code>
+     * Generated from protobuf field <code>bool stop_attack = 5;</code>
+     * @return bool
      */
     public function getStopAttack()
     {
@@ -124,16 +160,21 @@ class UseItemCaptureResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool stop_attack = 5;</code>
+     * Generated from protobuf field <code>bool stop_attack = 5;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setStopAttack($var)
     {
         GPBUtil::checkBool($var);
         $this->stop_attack = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool target_max = 6;</code>
+     * Generated from protobuf field <code>bool target_max = 6;</code>
+     * @return bool
      */
     public function getTargetMax()
     {
@@ -141,16 +182,21 @@ class UseItemCaptureResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool target_max = 6;</code>
+     * Generated from protobuf field <code>bool target_max = 6;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setTargetMax($var)
     {
         GPBUtil::checkBool($var);
         $this->target_max = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool target_slow = 7;</code>
+     * Generated from protobuf field <code>bool target_slow = 7;</code>
+     * @return bool
      */
     public function getTargetSlow()
     {
@@ -158,12 +204,16 @@ class UseItemCaptureResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool target_slow = 7;</code>
+     * Generated from protobuf field <code>bool target_slow = 7;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setTargetSlow($var)
     {
         GPBUtil::checkBool($var);
         $this->target_slow = $var;
+
+        return $this;
     }
 
 }

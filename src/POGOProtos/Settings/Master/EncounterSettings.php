@@ -9,90 +9,117 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.EncounterSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.EncounterSettings</code>
  */
 class EncounterSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float spin_bonus_threshold = 1;</code>
+     * Generated from protobuf field <code>float spin_bonus_threshold = 1;</code>
      */
     private $spin_bonus_threshold = 0.0;
     /**
-     * <code>float excellent_throw_threshold = 2;</code>
+     * Generated from protobuf field <code>float excellent_throw_threshold = 2;</code>
      */
     private $excellent_throw_threshold = 0.0;
     /**
-     * <code>float great_throw_threshold = 3;</code>
+     * Generated from protobuf field <code>float great_throw_threshold = 3;</code>
      */
     private $great_throw_threshold = 0.0;
     /**
-     * <code>float nice_throw_threshold = 4;</code>
+     * Generated from protobuf field <code>float nice_throw_threshold = 4;</code>
      */
     private $nice_throw_threshold = 0.0;
     /**
-     * <code>int32 milestone_threshold = 5;</code>
+     * Generated from protobuf field <code>int32 milestone_threshold = 5;</code>
      */
     private $milestone_threshold = 0;
     /**
-     * <code>bool ar_plus_mode_enabled = 6;</code>
+     * Generated from protobuf field <code>bool ar_plus_mode_enabled = 6;</code>
      */
     private $ar_plus_mode_enabled = false;
     /**
-     * <code>float ar_close_proximity_threshold = 7;</code>
+     * Generated from protobuf field <code>float ar_close_proximity_threshold = 7;</code>
      */
     private $ar_close_proximity_threshold = 0.0;
     /**
-     * <code>float ar_low_awareness_threshold = 8;</code>
+     * Generated from protobuf field <code>float ar_low_awareness_threshold = 8;</code>
      */
     private $ar_low_awareness_threshold = 0.0;
     /**
-     * <code>float ar_close_proximity_multiplier = 9;</code>
+     * Generated from protobuf field <code>float ar_close_proximity_multiplier = 9;</code>
      */
     private $ar_close_proximity_multiplier = 0.0;
     /**
-     * <code>float ar_awareness_penalty_threshold = 10;</code>
+     * Generated from protobuf field <code>float ar_awareness_penalty_threshold = 10;</code>
      */
     private $ar_awareness_penalty_threshold = 0.0;
     /**
-     * <code>float ar_low_awareness_max_multiplier = 11;</code>
+     * Generated from protobuf field <code>float ar_low_awareness_max_multiplier = 11;</code>
      */
     private $ar_low_awareness_max_multiplier = 0.0;
     /**
-     * <code>float ar_high_awareness_min_penalty_multiplier = 12;</code>
+     * Generated from protobuf field <code>float ar_high_awareness_min_penalty_multiplier = 12;</code>
      */
     private $ar_high_awareness_min_penalty_multiplier = 0.0;
     /**
-     * <code>int32 ar_plus_attempts_until_flee_max = 13;</code>
+     * Generated from protobuf field <code>int32 ar_plus_attempts_until_flee_max = 13;</code>
      */
     private $ar_plus_attempts_until_flee_max = 0;
     /**
-     * <code>int32 ar_plus_attempts_until_flee_infinite = 14;</code>
+     * Generated from protobuf field <code>int32 ar_plus_attempts_until_flee_infinite = 14;</code>
      */
     private $ar_plus_attempts_until_flee_infinite = 0;
     /**
-     * <code>float escaped_bonus_multiplier_max = 15;</code>
+     * Generated from protobuf field <code>float escaped_bonus_multiplier_max = 15;</code>
      */
     private $escaped_bonus_multiplier_max = 0.0;
     /**
-     * <code>float escaped_bonus_multiplier_by_excellent_throw = 16;</code>
+     * Generated from protobuf field <code>float escaped_bonus_multiplier_by_excellent_throw = 16;</code>
      */
     private $escaped_bonus_multiplier_by_excellent_throw = 0.0;
     /**
-     * <code>float escaped_bonus_multiplier_by_great_throw = 17;</code>
+     * Generated from protobuf field <code>float escaped_bonus_multiplier_by_great_throw = 17;</code>
      */
     private $escaped_bonus_multiplier_by_great_throw = 0.0;
     /**
-     * <code>float escaped_bonus_multiplier_by_nice_throw = 18;</code>
+     * Generated from protobuf field <code>float escaped_bonus_multiplier_by_nice_throw = 18;</code>
      */
     private $escaped_bonus_multiplier_by_nice_throw = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $spin_bonus_threshold
+     *     @type float $excellent_throw_threshold
+     *     @type float $great_throw_threshold
+     *     @type float $nice_throw_threshold
+     *     @type int $milestone_threshold
+     *     @type bool $ar_plus_mode_enabled
+     *     @type float $ar_close_proximity_threshold
+     *     @type float $ar_low_awareness_threshold
+     *     @type float $ar_close_proximity_multiplier
+     *     @type float $ar_awareness_penalty_threshold
+     *     @type float $ar_low_awareness_max_multiplier
+     *     @type float $ar_high_awareness_min_penalty_multiplier
+     *     @type int $ar_plus_attempts_until_flee_max
+     *     @type int $ar_plus_attempts_until_flee_infinite
+     *     @type float $escaped_bonus_multiplier_max
+     *     @type float $escaped_bonus_multiplier_by_excellent_throw
+     *     @type float $escaped_bonus_multiplier_by_great_throw
+     *     @type float $escaped_bonus_multiplier_by_nice_throw
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\EncounterSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float spin_bonus_threshold = 1;</code>
+     * Generated from protobuf field <code>float spin_bonus_threshold = 1;</code>
+     * @return float
      */
     public function getSpinBonusThreshold()
     {
@@ -100,16 +127,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float spin_bonus_threshold = 1;</code>
+     * Generated from protobuf field <code>float spin_bonus_threshold = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setSpinBonusThreshold($var)
     {
         GPBUtil::checkFloat($var);
         $this->spin_bonus_threshold = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float excellent_throw_threshold = 2;</code>
+     * Generated from protobuf field <code>float excellent_throw_threshold = 2;</code>
+     * @return float
      */
     public function getExcellentThrowThreshold()
     {
@@ -117,16 +149,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float excellent_throw_threshold = 2;</code>
+     * Generated from protobuf field <code>float excellent_throw_threshold = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setExcellentThrowThreshold($var)
     {
         GPBUtil::checkFloat($var);
         $this->excellent_throw_threshold = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float great_throw_threshold = 3;</code>
+     * Generated from protobuf field <code>float great_throw_threshold = 3;</code>
+     * @return float
      */
     public function getGreatThrowThreshold()
     {
@@ -134,16 +171,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float great_throw_threshold = 3;</code>
+     * Generated from protobuf field <code>float great_throw_threshold = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setGreatThrowThreshold($var)
     {
         GPBUtil::checkFloat($var);
         $this->great_throw_threshold = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float nice_throw_threshold = 4;</code>
+     * Generated from protobuf field <code>float nice_throw_threshold = 4;</code>
+     * @return float
      */
     public function getNiceThrowThreshold()
     {
@@ -151,16 +193,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float nice_throw_threshold = 4;</code>
+     * Generated from protobuf field <code>float nice_throw_threshold = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setNiceThrowThreshold($var)
     {
         GPBUtil::checkFloat($var);
         $this->nice_throw_threshold = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 milestone_threshold = 5;</code>
+     * Generated from protobuf field <code>int32 milestone_threshold = 5;</code>
+     * @return int
      */
     public function getMilestoneThreshold()
     {
@@ -168,16 +215,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 milestone_threshold = 5;</code>
+     * Generated from protobuf field <code>int32 milestone_threshold = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMilestoneThreshold($var)
     {
         GPBUtil::checkInt32($var);
         $this->milestone_threshold = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool ar_plus_mode_enabled = 6;</code>
+     * Generated from protobuf field <code>bool ar_plus_mode_enabled = 6;</code>
+     * @return bool
      */
     public function getArPlusModeEnabled()
     {
@@ -185,16 +237,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool ar_plus_mode_enabled = 6;</code>
+     * Generated from protobuf field <code>bool ar_plus_mode_enabled = 6;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setArPlusModeEnabled($var)
     {
         GPBUtil::checkBool($var);
         $this->ar_plus_mode_enabled = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float ar_close_proximity_threshold = 7;</code>
+     * Generated from protobuf field <code>float ar_close_proximity_threshold = 7;</code>
+     * @return float
      */
     public function getArCloseProximityThreshold()
     {
@@ -202,16 +259,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float ar_close_proximity_threshold = 7;</code>
+     * Generated from protobuf field <code>float ar_close_proximity_threshold = 7;</code>
+     * @param float $var
+     * @return $this
      */
     public function setArCloseProximityThreshold($var)
     {
         GPBUtil::checkFloat($var);
         $this->ar_close_proximity_threshold = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float ar_low_awareness_threshold = 8;</code>
+     * Generated from protobuf field <code>float ar_low_awareness_threshold = 8;</code>
+     * @return float
      */
     public function getArLowAwarenessThreshold()
     {
@@ -219,16 +281,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float ar_low_awareness_threshold = 8;</code>
+     * Generated from protobuf field <code>float ar_low_awareness_threshold = 8;</code>
+     * @param float $var
+     * @return $this
      */
     public function setArLowAwarenessThreshold($var)
     {
         GPBUtil::checkFloat($var);
         $this->ar_low_awareness_threshold = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float ar_close_proximity_multiplier = 9;</code>
+     * Generated from protobuf field <code>float ar_close_proximity_multiplier = 9;</code>
+     * @return float
      */
     public function getArCloseProximityMultiplier()
     {
@@ -236,16 +303,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float ar_close_proximity_multiplier = 9;</code>
+     * Generated from protobuf field <code>float ar_close_proximity_multiplier = 9;</code>
+     * @param float $var
+     * @return $this
      */
     public function setArCloseProximityMultiplier($var)
     {
         GPBUtil::checkFloat($var);
         $this->ar_close_proximity_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float ar_awareness_penalty_threshold = 10;</code>
+     * Generated from protobuf field <code>float ar_awareness_penalty_threshold = 10;</code>
+     * @return float
      */
     public function getArAwarenessPenaltyThreshold()
     {
@@ -253,16 +325,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float ar_awareness_penalty_threshold = 10;</code>
+     * Generated from protobuf field <code>float ar_awareness_penalty_threshold = 10;</code>
+     * @param float $var
+     * @return $this
      */
     public function setArAwarenessPenaltyThreshold($var)
     {
         GPBUtil::checkFloat($var);
         $this->ar_awareness_penalty_threshold = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float ar_low_awareness_max_multiplier = 11;</code>
+     * Generated from protobuf field <code>float ar_low_awareness_max_multiplier = 11;</code>
+     * @return float
      */
     public function getArLowAwarenessMaxMultiplier()
     {
@@ -270,16 +347,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float ar_low_awareness_max_multiplier = 11;</code>
+     * Generated from protobuf field <code>float ar_low_awareness_max_multiplier = 11;</code>
+     * @param float $var
+     * @return $this
      */
     public function setArLowAwarenessMaxMultiplier($var)
     {
         GPBUtil::checkFloat($var);
         $this->ar_low_awareness_max_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float ar_high_awareness_min_penalty_multiplier = 12;</code>
+     * Generated from protobuf field <code>float ar_high_awareness_min_penalty_multiplier = 12;</code>
+     * @return float
      */
     public function getArHighAwarenessMinPenaltyMultiplier()
     {
@@ -287,16 +369,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float ar_high_awareness_min_penalty_multiplier = 12;</code>
+     * Generated from protobuf field <code>float ar_high_awareness_min_penalty_multiplier = 12;</code>
+     * @param float $var
+     * @return $this
      */
     public function setArHighAwarenessMinPenaltyMultiplier($var)
     {
         GPBUtil::checkFloat($var);
         $this->ar_high_awareness_min_penalty_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 ar_plus_attempts_until_flee_max = 13;</code>
+     * Generated from protobuf field <code>int32 ar_plus_attempts_until_flee_max = 13;</code>
+     * @return int
      */
     public function getArPlusAttemptsUntilFleeMax()
     {
@@ -304,16 +391,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 ar_plus_attempts_until_flee_max = 13;</code>
+     * Generated from protobuf field <code>int32 ar_plus_attempts_until_flee_max = 13;</code>
+     * @param int $var
+     * @return $this
      */
     public function setArPlusAttemptsUntilFleeMax($var)
     {
         GPBUtil::checkInt32($var);
         $this->ar_plus_attempts_until_flee_max = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 ar_plus_attempts_until_flee_infinite = 14;</code>
+     * Generated from protobuf field <code>int32 ar_plus_attempts_until_flee_infinite = 14;</code>
+     * @return int
      */
     public function getArPlusAttemptsUntilFleeInfinite()
     {
@@ -321,16 +413,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 ar_plus_attempts_until_flee_infinite = 14;</code>
+     * Generated from protobuf field <code>int32 ar_plus_attempts_until_flee_infinite = 14;</code>
+     * @param int $var
+     * @return $this
      */
     public function setArPlusAttemptsUntilFleeInfinite($var)
     {
         GPBUtil::checkInt32($var);
         $this->ar_plus_attempts_until_flee_infinite = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float escaped_bonus_multiplier_max = 15;</code>
+     * Generated from protobuf field <code>float escaped_bonus_multiplier_max = 15;</code>
+     * @return float
      */
     public function getEscapedBonusMultiplierMax()
     {
@@ -338,16 +435,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float escaped_bonus_multiplier_max = 15;</code>
+     * Generated from protobuf field <code>float escaped_bonus_multiplier_max = 15;</code>
+     * @param float $var
+     * @return $this
      */
     public function setEscapedBonusMultiplierMax($var)
     {
         GPBUtil::checkFloat($var);
         $this->escaped_bonus_multiplier_max = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float escaped_bonus_multiplier_by_excellent_throw = 16;</code>
+     * Generated from protobuf field <code>float escaped_bonus_multiplier_by_excellent_throw = 16;</code>
+     * @return float
      */
     public function getEscapedBonusMultiplierByExcellentThrow()
     {
@@ -355,16 +457,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float escaped_bonus_multiplier_by_excellent_throw = 16;</code>
+     * Generated from protobuf field <code>float escaped_bonus_multiplier_by_excellent_throw = 16;</code>
+     * @param float $var
+     * @return $this
      */
     public function setEscapedBonusMultiplierByExcellentThrow($var)
     {
         GPBUtil::checkFloat($var);
         $this->escaped_bonus_multiplier_by_excellent_throw = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float escaped_bonus_multiplier_by_great_throw = 17;</code>
+     * Generated from protobuf field <code>float escaped_bonus_multiplier_by_great_throw = 17;</code>
+     * @return float
      */
     public function getEscapedBonusMultiplierByGreatThrow()
     {
@@ -372,16 +479,21 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float escaped_bonus_multiplier_by_great_throw = 17;</code>
+     * Generated from protobuf field <code>float escaped_bonus_multiplier_by_great_throw = 17;</code>
+     * @param float $var
+     * @return $this
      */
     public function setEscapedBonusMultiplierByGreatThrow($var)
     {
         GPBUtil::checkFloat($var);
         $this->escaped_bonus_multiplier_by_great_throw = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float escaped_bonus_multiplier_by_nice_throw = 18;</code>
+     * Generated from protobuf field <code>float escaped_bonus_multiplier_by_nice_throw = 18;</code>
+     * @return float
      */
     public function getEscapedBonusMultiplierByNiceThrow()
     {
@@ -389,12 +501,16 @@ class EncounterSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float escaped_bonus_multiplier_by_nice_throw = 18;</code>
+     * Generated from protobuf field <code>float escaped_bonus_multiplier_by_nice_throw = 18;</code>
+     * @param float $var
+     * @return $this
      */
     public function setEscapedBonusMultiplierByNiceThrow($var)
     {
         GPBUtil::checkFloat($var);
         $this->escaped_bonus_multiplier_by_nice_throw = $var;
+
+        return $this;
     }
 
 }

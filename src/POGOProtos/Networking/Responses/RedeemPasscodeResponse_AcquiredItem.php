@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Responses.RedeemPasscodeResponse.AcquiredItem</code>
- */
-class RedeemPasscodeResponse_AcquiredItem extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>string item = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\RedeemPasscodeResponse\AcquiredItem instead.
+     * @deprecated
      */
-    private $item = '';
-    /**
-     * <code>int64 count = 2;</code>
-     */
-    private $count = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Responses\PlatformClientActionsResponse::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>string item = 1;</code>
-     */
-    public function getItem()
-    {
-        return $this->item;
-    }
-
-    /**
-     * <code>string item = 1;</code>
-     */
-    public function setItem($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->item = $var;
-    }
-
-    /**
-     * <code>int64 count = 2;</code>
-     */
-    public function getCount()
-    {
-        return $this->count;
-    }
-
-    /**
-     * <code>int64 count = 2;</code>
-     */
-    public function setCount($var)
-    {
-        GPBUtil::checkInt64($var);
-        $this->count = $var;
-    }
-
+    class RedeemPasscodeResponse_AcquiredItem {}
 }
+class_exists(RedeemPasscodeResponse\AcquiredItem::class);
+@trigger_error('POGOProtos\Networking\Responses\RedeemPasscodeResponse_AcquiredItem is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\RedeemPasscodeResponse\AcquiredItem instead', E_USER_DEPRECATED);
 

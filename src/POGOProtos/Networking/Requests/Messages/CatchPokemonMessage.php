@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.CatchPokemonMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.CatchPokemonMessage</code>
  */
 class CatchPokemonMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>fixed64 encounter_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 1;</code>
      */
     private $encounter_id = 0;
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId pokeball = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId pokeball = 2;</code>
      */
     private $pokeball = 0;
     /**
-     * <code>double normalized_reticle_size = 3;</code>
+     * Generated from protobuf field <code>double normalized_reticle_size = 3;</code>
      */
     private $normalized_reticle_size = 0.0;
     /**
-     * <code>string spawn_point_id = 4;</code>
+     * Generated from protobuf field <code>string spawn_point_id = 4;</code>
      */
     private $spawn_point_id = '';
     /**
-     * <code>bool hit_pokemon = 5;</code>
+     * Generated from protobuf field <code>bool hit_pokemon = 5;</code>
      */
     private $hit_pokemon = false;
     /**
-     * <code>double spin_modifier = 6;</code>
+     * Generated from protobuf field <code>double spin_modifier = 6;</code>
      */
     private $spin_modifier = 0.0;
     /**
-     * <code>double normalized_hit_position = 7;</code>
+     * Generated from protobuf field <code>double normalized_hit_position = 7;</code>
      */
     private $normalized_hit_position = 0.0;
     /**
-     * <code>.POGOProtos.Data.ARPlusEncounterValues ar_plus_values = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.ARPlusEncounterValues ar_plus_values = 8;</code>
      */
     private $ar_plus_values = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $encounter_id
+     *     @type int $pokeball
+     *     @type float $normalized_reticle_size
+     *     @type string $spawn_point_id
+     *     @type bool $hit_pokemon
+     *     @type float $spin_modifier
+     *     @type float $normalized_hit_position
+     *     @type \POGOProtos\Data\ARPlusEncounterValues $ar_plus_values
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\CatchPokemonMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>fixed64 encounter_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 1;</code>
+     * @return int|string
      */
     public function getEncounterId()
     {
@@ -60,16 +77,21 @@ class CatchPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 encounter_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setEncounterId($var)
     {
         GPBUtil::checkUint64($var);
         $this->encounter_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId pokeball = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId pokeball = 2;</code>
+     * @return int
      */
     public function getPokeball()
     {
@@ -77,16 +99,21 @@ class CatchPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId pokeball = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId pokeball = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokeball($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->pokeball = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double normalized_reticle_size = 3;</code>
+     * Generated from protobuf field <code>double normalized_reticle_size = 3;</code>
+     * @return float
      */
     public function getNormalizedReticleSize()
     {
@@ -94,16 +121,21 @@ class CatchPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double normalized_reticle_size = 3;</code>
+     * Generated from protobuf field <code>double normalized_reticle_size = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setNormalizedReticleSize($var)
     {
         GPBUtil::checkDouble($var);
         $this->normalized_reticle_size = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string spawn_point_id = 4;</code>
+     * Generated from protobuf field <code>string spawn_point_id = 4;</code>
+     * @return string
      */
     public function getSpawnPointId()
     {
@@ -111,16 +143,21 @@ class CatchPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string spawn_point_id = 4;</code>
+     * Generated from protobuf field <code>string spawn_point_id = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSpawnPointId($var)
     {
         GPBUtil::checkString($var, True);
         $this->spawn_point_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool hit_pokemon = 5;</code>
+     * Generated from protobuf field <code>bool hit_pokemon = 5;</code>
+     * @return bool
      */
     public function getHitPokemon()
     {
@@ -128,16 +165,21 @@ class CatchPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool hit_pokemon = 5;</code>
+     * Generated from protobuf field <code>bool hit_pokemon = 5;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setHitPokemon($var)
     {
         GPBUtil::checkBool($var);
         $this->hit_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double spin_modifier = 6;</code>
+     * Generated from protobuf field <code>double spin_modifier = 6;</code>
+     * @return float
      */
     public function getSpinModifier()
     {
@@ -145,16 +187,21 @@ class CatchPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double spin_modifier = 6;</code>
+     * Generated from protobuf field <code>double spin_modifier = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setSpinModifier($var)
     {
         GPBUtil::checkDouble($var);
         $this->spin_modifier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double normalized_hit_position = 7;</code>
+     * Generated from protobuf field <code>double normalized_hit_position = 7;</code>
+     * @return float
      */
     public function getNormalizedHitPosition()
     {
@@ -162,16 +209,21 @@ class CatchPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double normalized_hit_position = 7;</code>
+     * Generated from protobuf field <code>double normalized_hit_position = 7;</code>
+     * @param float $var
+     * @return $this
      */
     public function setNormalizedHitPosition($var)
     {
         GPBUtil::checkDouble($var);
         $this->normalized_hit_position = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.ARPlusEncounterValues ar_plus_values = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.ARPlusEncounterValues ar_plus_values = 8;</code>
+     * @return \POGOProtos\Data\ARPlusEncounterValues
      */
     public function getArPlusValues()
     {
@@ -179,12 +231,16 @@ class CatchPokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.ARPlusEncounterValues ar_plus_values = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.ARPlusEncounterValues ar_plus_values = 8;</code>
+     * @param \POGOProtos\Data\ARPlusEncounterValues $var
+     * @return $this
      */
-    public function setArPlusValues(&$var)
+    public function setArPlusValues($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\ARPlusEncounterValues::class);
         $this->ar_plus_values = $var;
+
+        return $this;
     }
 
 }

@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.AppliedItem</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.AppliedItem</code>
  */
 class AppliedItem extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
      */
     private $item_id = 0;
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemType item_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemType item_type = 2;</code>
      */
     private $item_type = 0;
     /**
-     * <code>int64 expire_ms = 3;</code>
+     * Generated from protobuf field <code>int64 expire_ms = 3;</code>
      */
     private $expire_ms = 0;
     /**
-     * <code>int64 applied_ms = 4;</code>
+     * Generated from protobuf field <code>int64 applied_ms = 4;</code>
      */
     private $applied_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $item_id
+     *     @type int $item_type
+     *     @type int|string $expire_ms
+     *     @type int|string $applied_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\AppliedItem::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * @return int
      */
     public function getItemId()
     {
@@ -44,16 +57,21 @@ class AppliedItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemType item_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemType item_type = 2;</code>
+     * @return int
      */
     public function getItemType()
     {
@@ -61,16 +79,21 @@ class AppliedItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemType item_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemType item_type = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemType::class);
         $this->item_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 expire_ms = 3;</code>
+     * Generated from protobuf field <code>int64 expire_ms = 3;</code>
+     * @return int|string
      */
     public function getExpireMs()
     {
@@ -78,16 +101,21 @@ class AppliedItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 expire_ms = 3;</code>
+     * Generated from protobuf field <code>int64 expire_ms = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setExpireMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->expire_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 applied_ms = 4;</code>
+     * Generated from protobuf field <code>int64 applied_ms = 4;</code>
+     * @return int|string
      */
     public function getAppliedMs()
     {
@@ -95,12 +123,16 @@ class AppliedItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 applied_ms = 4;</code>
+     * Generated from protobuf field <code>int64 applied_ms = 4;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setAppliedMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->applied_ms = $var;
+
+        return $this;
     }
 
 }

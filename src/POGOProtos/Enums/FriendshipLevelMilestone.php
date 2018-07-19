@@ -5,32 +5,32 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.FriendshipLevelMilestone</code>
+ * Protobuf type <code>POGOProtos.Enums.FriendshipLevelMilestone</code>
  */
 class FriendshipLevelMilestone
 {
     /**
-     * <code>FRIENDSHIP_LEVEL_UNSET = 0;</code>
+     * Generated from protobuf enum <code>FRIENDSHIP_LEVEL_UNSET = 0;</code>
      */
     const FRIENDSHIP_LEVEL_UNSET = 0;
     /**
-     * <code>FRIENDSHIP_LEVEL_0 = 1;</code>
+     * Generated from protobuf enum <code>FRIENDSHIP_LEVEL_0 = 1;</code>
      */
     const FRIENDSHIP_LEVEL_0 = 1;
     /**
-     * <code>FRIENDSHIP_LEVEL_1 = 2;</code>
+     * Generated from protobuf enum <code>FRIENDSHIP_LEVEL_1 = 2;</code>
      */
     const FRIENDSHIP_LEVEL_1 = 2;
     /**
-     * <code>FRIENDSHIP_LEVEL_2 = 3;</code>
+     * Generated from protobuf enum <code>FRIENDSHIP_LEVEL_2 = 3;</code>
      */
     const FRIENDSHIP_LEVEL_2 = 3;
     /**
-     * <code>FRIENDSHIP_LEVEL_3 = 4;</code>
+     * Generated from protobuf enum <code>FRIENDSHIP_LEVEL_3 = 4;</code>
      */
     const FRIENDSHIP_LEVEL_3 = 4;
     /**
-     * <code>FRIENDSHIP_LEVEL_4 = 5;</code>
+     * Generated from protobuf enum <code>FRIENDSHIP_LEVEL_4 = 5;</code>
      */
     const FRIENDSHIP_LEVEL_4 = 5;
 }

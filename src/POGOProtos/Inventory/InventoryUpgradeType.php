@@ -5,20 +5,20 @@
 namespace POGOProtos\Inventory;
 
 /**
- * Protobuf enum <code>POGOProtos.Inventory.InventoryUpgradeType</code>
+ * Protobuf type <code>POGOProtos.Inventory.InventoryUpgradeType</code>
  */
 class InventoryUpgradeType
 {
     /**
-     * <code>UPGRADE_UNSET = 0;</code>
+     * Generated from protobuf enum <code>UPGRADE_UNSET = 0;</code>
      */
     const UPGRADE_UNSET = 0;
     /**
-     * <code>INCREASE_ITEM_STORAGE = 1;</code>
+     * Generated from protobuf enum <code>INCREASE_ITEM_STORAGE = 1;</code>
      */
     const INCREASE_ITEM_STORAGE = 1;
     /**
-     * <code>INCREASE_POKEMON_STORAGE = 2;</code>
+     * Generated from protobuf enum <code>INCREASE_POKEMON_STORAGE = 2;</code>
      */
     const INCREASE_POKEMON_STORAGE = 2;
 }

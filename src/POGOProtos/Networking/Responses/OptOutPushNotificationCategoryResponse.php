@@ -9,17 +9,23 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * <pre>
- * </pre>
  *
- * Protobuf type <code>POGOProtos.Networking.Responses.OptOutPushNotificationCategoryResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.OptOutPushNotificationCategoryResponse</code>
  */
 class OptOutPushNotificationCategoryResponse extends \Google\Protobuf\Internal\Message
 {
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\PlatformClientActionsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
 }

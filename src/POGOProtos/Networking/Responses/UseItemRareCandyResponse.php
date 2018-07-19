@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.UseItemRareCandyResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.UseItemRareCandyResponse</code>
  */
 class UseItemRareCandyResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.UseItemRareCandyResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.UseItemRareCandyResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
      */
     private $pokemon_id = 0;
     /**
-     * <code>int32 updated_candy_count = 3;</code>
+     * Generated from protobuf field <code>int32 updated_candy_count = 3;</code>
      */
     private $updated_candy_count = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type int $pokemon_id
+     *     @type int $updated_candy_count
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\UseItemRareCandyResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.UseItemRareCandyResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.UseItemRareCandyResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -40,16 +52,21 @@ class UseItemRareCandyResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.UseItemRareCandyResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.UseItemRareCandyResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\UseItemRareCandyResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * @return int
      */
     public function getPokemonId()
     {
@@ -57,16 +74,21 @@ class UseItemRareCandyResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 updated_candy_count = 3;</code>
+     * Generated from protobuf field <code>int32 updated_candy_count = 3;</code>
+     * @return int
      */
     public function getUpdatedCandyCount()
     {
@@ -74,12 +96,16 @@ class UseItemRareCandyResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 updated_candy_count = 3;</code>
+     * Generated from protobuf field <code>int32 updated_candy_count = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setUpdatedCandyCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->updated_candy_count = $var;
+
+        return $this;
     }
 
 }

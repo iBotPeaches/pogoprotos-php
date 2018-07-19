@@ -5,36 +5,36 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.HoloIapItemCategory</code>
+ * Protobuf type <code>POGOProtos.Enums.HoloIapItemCategory</code>
  */
 class HoloIapItemCategory
 {
     /**
-     * <code>IAP_CATEGORY_NONE = 0;</code>
+     * Generated from protobuf enum <code>IAP_CATEGORY_NONE = 0;</code>
      */
     const IAP_CATEGORY_NONE = 0;
     /**
-     * <code>IAP_CATEGORY_BUNDLE = 1;</code>
+     * Generated from protobuf enum <code>IAP_CATEGORY_BUNDLE = 1;</code>
      */
     const IAP_CATEGORY_BUNDLE = 1;
     /**
-     * <code>IAP_CATEGORY_ITEMS = 2;</code>
+     * Generated from protobuf enum <code>IAP_CATEGORY_ITEMS = 2;</code>
      */
     const IAP_CATEGORY_ITEMS = 2;
     /**
-     * <code>IAP_CATEGORY_UPGRADES = 3;</code>
+     * Generated from protobuf enum <code>IAP_CATEGORY_UPGRADES = 3;</code>
      */
     const IAP_CATEGORY_UPGRADES = 3;
     /**
-     * <code>IAP_CATEGORY_POKECOINS = 4;</code>
+     * Generated from protobuf enum <code>IAP_CATEGORY_POKECOINS = 4;</code>
      */
     const IAP_CATEGORY_POKECOINS = 4;
     /**
-     * <code>IAP_CATEGORY_AVATAR = 5;</code>
+     * Generated from protobuf enum <code>IAP_CATEGORY_AVATAR = 5;</code>
      */
     const IAP_CATEGORY_AVATAR = 5;
     /**
-     * <code>IAP_CATEGORY_AVATAR_STORE_LINK = 6;</code>
+     * Generated from protobuf enum <code>IAP_CATEGORY_AVATAR_STORE_LINK = 6;</code>
      */
     const IAP_CATEGORY_AVATAR_STORE_LINK = 6;
 }

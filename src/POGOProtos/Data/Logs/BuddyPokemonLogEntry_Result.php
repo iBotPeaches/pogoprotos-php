@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Data\Logs;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Logs.BuddyPokemonLogEntry.Result</code>
- */
-class BuddyPokemonLogEntry_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Logs\BuddyPokemonLogEntry\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>CANDY_FOUND = 1;</code>
-     */
-    const CANDY_FOUND = 1;
+    class BuddyPokemonLogEntry_Result {}
 }
+class_exists(BuddyPokemonLogEntry\Result::class);
+@trigger_error('POGOProtos\Data\Logs\BuddyPokemonLogEntry_Result is deprecated and will be removed in the next major release. Use POGOProtos\Data\Logs\BuddyPokemonLogEntry\Result instead', E_USER_DEPRECATED);
 

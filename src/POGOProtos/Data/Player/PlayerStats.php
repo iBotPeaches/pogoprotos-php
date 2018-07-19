@@ -9,166 +9,212 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Player.PlayerStats</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Player.PlayerStats</code>
  */
 class PlayerStats extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 level = 1;</code>
+     * Generated from protobuf field <code>int32 level = 1;</code>
      */
     private $level = 0;
     /**
-     * <code>int64 experience = 2;</code>
+     * Generated from protobuf field <code>int64 experience = 2;</code>
      */
     private $experience = 0;
     /**
-     * <code>int64 prev_level_xp = 3;</code>
+     * Generated from protobuf field <code>int64 prev_level_xp = 3;</code>
      */
     private $prev_level_xp = 0;
     /**
-     * <code>int64 next_level_xp = 4;</code>
+     * Generated from protobuf field <code>int64 next_level_xp = 4;</code>
      */
     private $next_level_xp = 0;
     /**
-     * <code>float km_walked = 5;</code>
+     * Generated from protobuf field <code>float km_walked = 5;</code>
      */
     private $km_walked = 0.0;
     /**
-     * <code>int32 pokemons_encountered = 6;</code>
+     * Generated from protobuf field <code>int32 pokemons_encountered = 6;</code>
      */
     private $pokemons_encountered = 0;
     /**
-     * <code>int32 unique_pokedex_entries = 7;</code>
+     * Generated from protobuf field <code>int32 unique_pokedex_entries = 7;</code>
      */
     private $unique_pokedex_entries = 0;
     /**
-     * <code>int32 pokemons_captured = 8;</code>
+     * Generated from protobuf field <code>int32 pokemons_captured = 8;</code>
      */
     private $pokemons_captured = 0;
     /**
-     * <code>int32 evolutions = 9;</code>
+     * Generated from protobuf field <code>int32 evolutions = 9;</code>
      */
     private $evolutions = 0;
     /**
-     * <code>int32 poke_stop_visits = 10;</code>
+     * Generated from protobuf field <code>int32 poke_stop_visits = 10;</code>
      */
     private $poke_stop_visits = 0;
     /**
-     * <code>int32 pokeballs_thrown = 11;</code>
+     * Generated from protobuf field <code>int32 pokeballs_thrown = 11;</code>
      */
     private $pokeballs_thrown = 0;
     /**
-     * <code>int32 eggs_hatched = 12;</code>
+     * Generated from protobuf field <code>int32 eggs_hatched = 12;</code>
      */
     private $eggs_hatched = 0;
     /**
-     * <code>int32 big_magikarp_caught = 13;</code>
+     * Generated from protobuf field <code>int32 big_magikarp_caught = 13;</code>
      */
     private $big_magikarp_caught = 0;
     /**
-     * <code>int32 battle_attack_won = 14;</code>
+     * Generated from protobuf field <code>int32 battle_attack_won = 14;</code>
      */
     private $battle_attack_won = 0;
     /**
-     * <code>int32 battle_attack_total = 15;</code>
+     * Generated from protobuf field <code>int32 battle_attack_total = 15;</code>
      */
     private $battle_attack_total = 0;
     /**
-     * <code>int32 battle_defended_won = 16;</code>
+     * Generated from protobuf field <code>int32 battle_defended_won = 16;</code>
      */
     private $battle_defended_won = 0;
     /**
-     * <code>int32 battle_training_won = 17;</code>
+     * Generated from protobuf field <code>int32 battle_training_won = 17;</code>
      */
     private $battle_training_won = 0;
     /**
-     * <code>int32 battle_training_total = 18;</code>
+     * Generated from protobuf field <code>int32 battle_training_total = 18;</code>
      */
     private $battle_training_total = 0;
     /**
-     * <code>int32 prestige_raised_total = 19;</code>
+     * Generated from protobuf field <code>int32 prestige_raised_total = 19;</code>
      */
     private $prestige_raised_total = 0;
     /**
-     * <code>int32 prestige_dropped_total = 20;</code>
+     * Generated from protobuf field <code>int32 prestige_dropped_total = 20;</code>
      */
     private $prestige_dropped_total = 0;
     /**
-     * <code>int32 pokemon_deployed = 21;</code>
+     * Generated from protobuf field <code>int32 pokemon_deployed = 21;</code>
      */
     private $pokemon_deployed = 0;
     /**
-     * <code>repeated int32 pokemon_caught_by_type = 22;</code>
+     * Generated from protobuf field <code>repeated int32 pokemon_caught_by_type = 22;</code>
      */
     private $pokemon_caught_by_type;
     /**
-     * <code>int32 small_rattata_caught = 23;</code>
+     * Generated from protobuf field <code>int32 small_rattata_caught = 23;</code>
      */
     private $small_rattata_caught = 0;
     /**
-     * <code>double used_km_pool = 24;</code>
+     * Generated from protobuf field <code>double used_km_pool = 24;</code>
      */
     private $used_km_pool = 0.0;
     /**
-     * <code>int64 last_km_refill_ms = 25;</code>
+     * Generated from protobuf field <code>int64 last_km_refill_ms = 25;</code>
      */
     private $last_km_refill_ms = 0;
     /**
-     * <code>int32 num_raid_battle_won = 26;</code>
+     * Generated from protobuf field <code>int32 num_raid_battle_won = 26;</code>
      */
     private $num_raid_battle_won = 0;
     /**
-     * <code>int32 num_raid_battle_total = 27;</code>
+     * Generated from protobuf field <code>int32 num_raid_battle_total = 27;</code>
      */
     private $num_raid_battle_total = 0;
     /**
-     * <code>int32 num_legendary_battle_won = 28;</code>
+     * Generated from protobuf field <code>int32 num_legendary_battle_won = 28;</code>
      */
     private $num_legendary_battle_won = 0;
     /**
-     * <code>int32 num_legendary_battle_total = 29;</code>
+     * Generated from protobuf field <code>int32 num_legendary_battle_total = 29;</code>
      */
     private $num_legendary_battle_total = 0;
     /**
-     * <code>int32 num_berries_fed = 30;</code>
+     * Generated from protobuf field <code>int32 num_berries_fed = 30;</code>
      */
     private $num_berries_fed = 0;
     /**
-     * <code>int64 total_defended_ms = 31;</code>
+     * Generated from protobuf field <code>int64 total_defended_ms = 31;</code>
      */
     private $total_defended_ms = 0;
     /**
-     * <code>repeated .POGOProtos.Enums.GymBadgeType event_badges = 32;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.GymBadgeType event_badges = 32;</code>
      */
     private $event_badges;
     /**
-     * <code>float km_walked_past_active_day = 33;</code>
+     * Generated from protobuf field <code>float km_walked_past_active_day = 33;</code>
      */
     private $km_walked_past_active_day = 0.0;
     /**
-     * <code>int32 num_challenge_quests_completed = 34;</code>
+     * Generated from protobuf field <code>int32 num_challenge_quests_completed = 34;</code>
      */
     private $num_challenge_quests_completed = 0;
     /**
-     * <code>int32 num_trades = 35;</code>
+     * Generated from protobuf field <code>int32 num_trades = 35;</code>
      */
     private $num_trades = 0;
     /**
-     * <code>int32 num_max_level_friends = 36;</code>
+     * Generated from protobuf field <code>int32 num_max_level_friends = 36;</code>
      */
     private $num_max_level_friends = 0;
     /**
-     * <code>int64 trade_accumulated_distance_km = 37;</code>
+     * Generated from protobuf field <code>int64 trade_accumulated_distance_km = 37;</code>
      */
     private $trade_accumulated_distance_km = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $level
+     *     @type int|string $experience
+     *     @type int|string $prev_level_xp
+     *     @type int|string $next_level_xp
+     *     @type float $km_walked
+     *     @type int $pokemons_encountered
+     *     @type int $unique_pokedex_entries
+     *     @type int $pokemons_captured
+     *     @type int $evolutions
+     *     @type int $poke_stop_visits
+     *     @type int $pokeballs_thrown
+     *     @type int $eggs_hatched
+     *     @type int $big_magikarp_caught
+     *     @type int $battle_attack_won
+     *     @type int $battle_attack_total
+     *     @type int $battle_defended_won
+     *     @type int $battle_training_won
+     *     @type int $battle_training_total
+     *     @type int $prestige_raised_total
+     *     @type int $prestige_dropped_total
+     *     @type int $pokemon_deployed
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $pokemon_caught_by_type
+     *     @type int $small_rattata_caught
+     *     @type float $used_km_pool
+     *     @type int|string $last_km_refill_ms
+     *     @type int $num_raid_battle_won
+     *     @type int $num_raid_battle_total
+     *     @type int $num_legendary_battle_won
+     *     @type int $num_legendary_battle_total
+     *     @type int $num_berries_fed
+     *     @type int|string $total_defended_ms
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $event_badges
+     *     @type float $km_walked_past_active_day
+     *     @type int $num_challenge_quests_completed
+     *     @type int $num_trades
+     *     @type int $num_max_level_friends
+     *     @type int|string $trade_accumulated_distance_km
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Player\PlayerStats::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 level = 1;</code>
+     * Generated from protobuf field <code>int32 level = 1;</code>
+     * @return int
      */
     public function getLevel()
     {
@@ -176,16 +222,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 level = 1;</code>
+     * Generated from protobuf field <code>int32 level = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 experience = 2;</code>
+     * Generated from protobuf field <code>int64 experience = 2;</code>
+     * @return int|string
      */
     public function getExperience()
     {
@@ -193,16 +244,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 experience = 2;</code>
+     * Generated from protobuf field <code>int64 experience = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setExperience($var)
     {
         GPBUtil::checkInt64($var);
         $this->experience = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 prev_level_xp = 3;</code>
+     * Generated from protobuf field <code>int64 prev_level_xp = 3;</code>
+     * @return int|string
      */
     public function getPrevLevelXp()
     {
@@ -210,16 +266,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 prev_level_xp = 3;</code>
+     * Generated from protobuf field <code>int64 prev_level_xp = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPrevLevelXp($var)
     {
         GPBUtil::checkInt64($var);
         $this->prev_level_xp = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 next_level_xp = 4;</code>
+     * Generated from protobuf field <code>int64 next_level_xp = 4;</code>
+     * @return int|string
      */
     public function getNextLevelXp()
     {
@@ -227,16 +288,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 next_level_xp = 4;</code>
+     * Generated from protobuf field <code>int64 next_level_xp = 4;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setNextLevelXp($var)
     {
         GPBUtil::checkInt64($var);
         $this->next_level_xp = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float km_walked = 5;</code>
+     * Generated from protobuf field <code>float km_walked = 5;</code>
+     * @return float
      */
     public function getKmWalked()
     {
@@ -244,16 +310,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float km_walked = 5;</code>
+     * Generated from protobuf field <code>float km_walked = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setKmWalked($var)
     {
         GPBUtil::checkFloat($var);
         $this->km_walked = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 pokemons_encountered = 6;</code>
+     * Generated from protobuf field <code>int32 pokemons_encountered = 6;</code>
+     * @return int
      */
     public function getPokemonsEncountered()
     {
@@ -261,16 +332,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 pokemons_encountered = 6;</code>
+     * Generated from protobuf field <code>int32 pokemons_encountered = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemonsEncountered($var)
     {
         GPBUtil::checkInt32($var);
         $this->pokemons_encountered = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 unique_pokedex_entries = 7;</code>
+     * Generated from protobuf field <code>int32 unique_pokedex_entries = 7;</code>
+     * @return int
      */
     public function getUniquePokedexEntries()
     {
@@ -278,16 +354,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 unique_pokedex_entries = 7;</code>
+     * Generated from protobuf field <code>int32 unique_pokedex_entries = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setUniquePokedexEntries($var)
     {
         GPBUtil::checkInt32($var);
         $this->unique_pokedex_entries = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 pokemons_captured = 8;</code>
+     * Generated from protobuf field <code>int32 pokemons_captured = 8;</code>
+     * @return int
      */
     public function getPokemonsCaptured()
     {
@@ -295,16 +376,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 pokemons_captured = 8;</code>
+     * Generated from protobuf field <code>int32 pokemons_captured = 8;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemonsCaptured($var)
     {
         GPBUtil::checkInt32($var);
         $this->pokemons_captured = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 evolutions = 9;</code>
+     * Generated from protobuf field <code>int32 evolutions = 9;</code>
+     * @return int
      */
     public function getEvolutions()
     {
@@ -312,16 +398,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 evolutions = 9;</code>
+     * Generated from protobuf field <code>int32 evolutions = 9;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEvolutions($var)
     {
         GPBUtil::checkInt32($var);
         $this->evolutions = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 poke_stop_visits = 10;</code>
+     * Generated from protobuf field <code>int32 poke_stop_visits = 10;</code>
+     * @return int
      */
     public function getPokeStopVisits()
     {
@@ -329,16 +420,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 poke_stop_visits = 10;</code>
+     * Generated from protobuf field <code>int32 poke_stop_visits = 10;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokeStopVisits($var)
     {
         GPBUtil::checkInt32($var);
         $this->poke_stop_visits = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 pokeballs_thrown = 11;</code>
+     * Generated from protobuf field <code>int32 pokeballs_thrown = 11;</code>
+     * @return int
      */
     public function getPokeballsThrown()
     {
@@ -346,16 +442,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 pokeballs_thrown = 11;</code>
+     * Generated from protobuf field <code>int32 pokeballs_thrown = 11;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokeballsThrown($var)
     {
         GPBUtil::checkInt32($var);
         $this->pokeballs_thrown = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 eggs_hatched = 12;</code>
+     * Generated from protobuf field <code>int32 eggs_hatched = 12;</code>
+     * @return int
      */
     public function getEggsHatched()
     {
@@ -363,16 +464,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 eggs_hatched = 12;</code>
+     * Generated from protobuf field <code>int32 eggs_hatched = 12;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEggsHatched($var)
     {
         GPBUtil::checkInt32($var);
         $this->eggs_hatched = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 big_magikarp_caught = 13;</code>
+     * Generated from protobuf field <code>int32 big_magikarp_caught = 13;</code>
+     * @return int
      */
     public function getBigMagikarpCaught()
     {
@@ -380,16 +486,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 big_magikarp_caught = 13;</code>
+     * Generated from protobuf field <code>int32 big_magikarp_caught = 13;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBigMagikarpCaught($var)
     {
         GPBUtil::checkInt32($var);
         $this->big_magikarp_caught = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 battle_attack_won = 14;</code>
+     * Generated from protobuf field <code>int32 battle_attack_won = 14;</code>
+     * @return int
      */
     public function getBattleAttackWon()
     {
@@ -397,16 +508,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 battle_attack_won = 14;</code>
+     * Generated from protobuf field <code>int32 battle_attack_won = 14;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBattleAttackWon($var)
     {
         GPBUtil::checkInt32($var);
         $this->battle_attack_won = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 battle_attack_total = 15;</code>
+     * Generated from protobuf field <code>int32 battle_attack_total = 15;</code>
+     * @return int
      */
     public function getBattleAttackTotal()
     {
@@ -414,16 +530,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 battle_attack_total = 15;</code>
+     * Generated from protobuf field <code>int32 battle_attack_total = 15;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBattleAttackTotal($var)
     {
         GPBUtil::checkInt32($var);
         $this->battle_attack_total = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 battle_defended_won = 16;</code>
+     * Generated from protobuf field <code>int32 battle_defended_won = 16;</code>
+     * @return int
      */
     public function getBattleDefendedWon()
     {
@@ -431,16 +552,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 battle_defended_won = 16;</code>
+     * Generated from protobuf field <code>int32 battle_defended_won = 16;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBattleDefendedWon($var)
     {
         GPBUtil::checkInt32($var);
         $this->battle_defended_won = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 battle_training_won = 17;</code>
+     * Generated from protobuf field <code>int32 battle_training_won = 17;</code>
+     * @return int
      */
     public function getBattleTrainingWon()
     {
@@ -448,16 +574,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 battle_training_won = 17;</code>
+     * Generated from protobuf field <code>int32 battle_training_won = 17;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBattleTrainingWon($var)
     {
         GPBUtil::checkInt32($var);
         $this->battle_training_won = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 battle_training_total = 18;</code>
+     * Generated from protobuf field <code>int32 battle_training_total = 18;</code>
+     * @return int
      */
     public function getBattleTrainingTotal()
     {
@@ -465,16 +596,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 battle_training_total = 18;</code>
+     * Generated from protobuf field <code>int32 battle_training_total = 18;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBattleTrainingTotal($var)
     {
         GPBUtil::checkInt32($var);
         $this->battle_training_total = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 prestige_raised_total = 19;</code>
+     * Generated from protobuf field <code>int32 prestige_raised_total = 19;</code>
+     * @return int
      */
     public function getPrestigeRaisedTotal()
     {
@@ -482,16 +618,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 prestige_raised_total = 19;</code>
+     * Generated from protobuf field <code>int32 prestige_raised_total = 19;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPrestigeRaisedTotal($var)
     {
         GPBUtil::checkInt32($var);
         $this->prestige_raised_total = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 prestige_dropped_total = 20;</code>
+     * Generated from protobuf field <code>int32 prestige_dropped_total = 20;</code>
+     * @return int
      */
     public function getPrestigeDroppedTotal()
     {
@@ -499,16 +640,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 prestige_dropped_total = 20;</code>
+     * Generated from protobuf field <code>int32 prestige_dropped_total = 20;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPrestigeDroppedTotal($var)
     {
         GPBUtil::checkInt32($var);
         $this->prestige_dropped_total = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 pokemon_deployed = 21;</code>
+     * Generated from protobuf field <code>int32 pokemon_deployed = 21;</code>
+     * @return int
      */
     public function getPokemonDeployed()
     {
@@ -516,16 +662,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 pokemon_deployed = 21;</code>
+     * Generated from protobuf field <code>int32 pokemon_deployed = 21;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemonDeployed($var)
     {
         GPBUtil::checkInt32($var);
         $this->pokemon_deployed = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 pokemon_caught_by_type = 22;</code>
+     * Generated from protobuf field <code>repeated int32 pokemon_caught_by_type = 22;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPokemonCaughtByType()
     {
@@ -533,16 +684,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 pokemon_caught_by_type = 22;</code>
+     * Generated from protobuf field <code>repeated int32 pokemon_caught_by_type = 22;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPokemonCaughtByType(&$var)
+    public function setPokemonCaughtByType($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->pokemon_caught_by_type = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->pokemon_caught_by_type = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 small_rattata_caught = 23;</code>
+     * Generated from protobuf field <code>int32 small_rattata_caught = 23;</code>
+     * @return int
      */
     public function getSmallRattataCaught()
     {
@@ -550,16 +706,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 small_rattata_caught = 23;</code>
+     * Generated from protobuf field <code>int32 small_rattata_caught = 23;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSmallRattataCaught($var)
     {
         GPBUtil::checkInt32($var);
         $this->small_rattata_caught = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double used_km_pool = 24;</code>
+     * Generated from protobuf field <code>double used_km_pool = 24;</code>
+     * @return float
      */
     public function getUsedKmPool()
     {
@@ -567,16 +728,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double used_km_pool = 24;</code>
+     * Generated from protobuf field <code>double used_km_pool = 24;</code>
+     * @param float $var
+     * @return $this
      */
     public function setUsedKmPool($var)
     {
         GPBUtil::checkDouble($var);
         $this->used_km_pool = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 last_km_refill_ms = 25;</code>
+     * Generated from protobuf field <code>int64 last_km_refill_ms = 25;</code>
+     * @return int|string
      */
     public function getLastKmRefillMs()
     {
@@ -584,16 +750,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 last_km_refill_ms = 25;</code>
+     * Generated from protobuf field <code>int64 last_km_refill_ms = 25;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLastKmRefillMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->last_km_refill_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 num_raid_battle_won = 26;</code>
+     * Generated from protobuf field <code>int32 num_raid_battle_won = 26;</code>
+     * @return int
      */
     public function getNumRaidBattleWon()
     {
@@ -601,16 +772,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 num_raid_battle_won = 26;</code>
+     * Generated from protobuf field <code>int32 num_raid_battle_won = 26;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumRaidBattleWon($var)
     {
         GPBUtil::checkInt32($var);
         $this->num_raid_battle_won = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 num_raid_battle_total = 27;</code>
+     * Generated from protobuf field <code>int32 num_raid_battle_total = 27;</code>
+     * @return int
      */
     public function getNumRaidBattleTotal()
     {
@@ -618,16 +794,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 num_raid_battle_total = 27;</code>
+     * Generated from protobuf field <code>int32 num_raid_battle_total = 27;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumRaidBattleTotal($var)
     {
         GPBUtil::checkInt32($var);
         $this->num_raid_battle_total = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 num_legendary_battle_won = 28;</code>
+     * Generated from protobuf field <code>int32 num_legendary_battle_won = 28;</code>
+     * @return int
      */
     public function getNumLegendaryBattleWon()
     {
@@ -635,16 +816,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 num_legendary_battle_won = 28;</code>
+     * Generated from protobuf field <code>int32 num_legendary_battle_won = 28;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumLegendaryBattleWon($var)
     {
         GPBUtil::checkInt32($var);
         $this->num_legendary_battle_won = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 num_legendary_battle_total = 29;</code>
+     * Generated from protobuf field <code>int32 num_legendary_battle_total = 29;</code>
+     * @return int
      */
     public function getNumLegendaryBattleTotal()
     {
@@ -652,16 +838,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 num_legendary_battle_total = 29;</code>
+     * Generated from protobuf field <code>int32 num_legendary_battle_total = 29;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumLegendaryBattleTotal($var)
     {
         GPBUtil::checkInt32($var);
         $this->num_legendary_battle_total = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 num_berries_fed = 30;</code>
+     * Generated from protobuf field <code>int32 num_berries_fed = 30;</code>
+     * @return int
      */
     public function getNumBerriesFed()
     {
@@ -669,16 +860,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 num_berries_fed = 30;</code>
+     * Generated from protobuf field <code>int32 num_berries_fed = 30;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumBerriesFed($var)
     {
         GPBUtil::checkInt32($var);
         $this->num_berries_fed = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 total_defended_ms = 31;</code>
+     * Generated from protobuf field <code>int64 total_defended_ms = 31;</code>
+     * @return int|string
      */
     public function getTotalDefendedMs()
     {
@@ -686,16 +882,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 total_defended_ms = 31;</code>
+     * Generated from protobuf field <code>int64 total_defended_ms = 31;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTotalDefendedMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->total_defended_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.GymBadgeType event_badges = 32;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.GymBadgeType event_badges = 32;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getEventBadges()
     {
@@ -703,16 +904,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.GymBadgeType event_badges = 32;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.GymBadgeType event_badges = 32;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setEventBadges(&$var)
+    public function setEventBadges($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\GymBadgeType::class);
-        $this->event_badges = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\GymBadgeType::class);
+        $this->event_badges = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>float km_walked_past_active_day = 33;</code>
+     * Generated from protobuf field <code>float km_walked_past_active_day = 33;</code>
+     * @return float
      */
     public function getKmWalkedPastActiveDay()
     {
@@ -720,16 +926,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float km_walked_past_active_day = 33;</code>
+     * Generated from protobuf field <code>float km_walked_past_active_day = 33;</code>
+     * @param float $var
+     * @return $this
      */
     public function setKmWalkedPastActiveDay($var)
     {
         GPBUtil::checkFloat($var);
         $this->km_walked_past_active_day = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 num_challenge_quests_completed = 34;</code>
+     * Generated from protobuf field <code>int32 num_challenge_quests_completed = 34;</code>
+     * @return int
      */
     public function getNumChallengeQuestsCompleted()
     {
@@ -737,16 +948,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 num_challenge_quests_completed = 34;</code>
+     * Generated from protobuf field <code>int32 num_challenge_quests_completed = 34;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumChallengeQuestsCompleted($var)
     {
         GPBUtil::checkInt32($var);
         $this->num_challenge_quests_completed = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 num_trades = 35;</code>
+     * Generated from protobuf field <code>int32 num_trades = 35;</code>
+     * @return int
      */
     public function getNumTrades()
     {
@@ -754,16 +970,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 num_trades = 35;</code>
+     * Generated from protobuf field <code>int32 num_trades = 35;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumTrades($var)
     {
         GPBUtil::checkInt32($var);
         $this->num_trades = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 num_max_level_friends = 36;</code>
+     * Generated from protobuf field <code>int32 num_max_level_friends = 36;</code>
+     * @return int
      */
     public function getNumMaxLevelFriends()
     {
@@ -771,16 +992,21 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 num_max_level_friends = 36;</code>
+     * Generated from protobuf field <code>int32 num_max_level_friends = 36;</code>
+     * @param int $var
+     * @return $this
      */
     public function setNumMaxLevelFriends($var)
     {
         GPBUtil::checkInt32($var);
         $this->num_max_level_friends = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 trade_accumulated_distance_km = 37;</code>
+     * Generated from protobuf field <code>int64 trade_accumulated_distance_km = 37;</code>
+     * @return int|string
      */
     public function getTradeAccumulatedDistanceKm()
     {
@@ -788,12 +1014,16 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 trade_accumulated_distance_km = 37;</code>
+     * Generated from protobuf field <code>int64 trade_accumulated_distance_km = 37;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTradeAccumulatedDistanceKm($var)
     {
         GPBUtil::checkInt64($var);
         $this->trade_accumulated_distance_km = $var;
+
+        return $this;
     }
 
 }

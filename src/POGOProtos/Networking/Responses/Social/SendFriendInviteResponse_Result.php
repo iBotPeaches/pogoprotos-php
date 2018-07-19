@@ -4,58 +4,13 @@
 
 namespace POGOProtos\Networking\Responses\Social;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.Social.SendFriendInviteResponse.Result</code>
- */
-class SendFriendInviteResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\Social\SendFriendInviteResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_UNKNOWN = 2;</code>
-     */
-    const ERROR_UNKNOWN = 2;
-    /**
-     * <code>ERROR_ALREADY_A_FRIEND = 3;</code>
-     */
-    const ERROR_ALREADY_A_FRIEND = 3;
-    /**
-     * <code>ERROR_PLAYER_DOES_NOT_EXIST_DELETED = 4;</code>
-     */
-    const ERROR_PLAYER_DOES_NOT_EXIST_DELETED = 4;
-    /**
-     * <code>ERROR_PLAYER_INBOX_FULL = 5;</code>
-     */
-    const ERROR_PLAYER_INBOX_FULL = 5;
-    /**
-     * <code>ERROR_PLAYER_OUTBOX_FULL = 6;</code>
-     */
-    const ERROR_PLAYER_OUTBOX_FULL = 6;
-    /**
-     * <code>ERROR_SENDER_HAS_MAX_FRIENDS = 7;</code>
-     */
-    const ERROR_SENDER_HAS_MAX_FRIENDS = 7;
-    /**
-     * <code>ERROR_INVITE_ALREADY_SENT = 8;</code>
-     */
-    const ERROR_INVITE_ALREADY_SENT = 8;
-    /**
-     * <code>ERROR_CANNOT_SEND_INVITES_TO_YOURSELF = 9;</code>
-     */
-    const ERROR_CANNOT_SEND_INVITES_TO_YOURSELF = 9;
-    /**
-     * <code>ERROR_INVITE_ALREADY_RECEIVED = 10;</code>
-     */
-    const ERROR_INVITE_ALREADY_RECEIVED = 10;
-    /**
-     * <code>ERROR_RECEIVER_HAS_MAX_FRIENDS = 11;</code>
-     */
-    const ERROR_RECEIVER_HAS_MAX_FRIENDS = 11;
+    class SendFriendInviteResponse_Result {}
 }
+class_exists(SendFriendInviteResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\Social\SendFriendInviteResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\Social\SendFriendInviteResponse\Result instead', E_USER_DEPRECATED);
 

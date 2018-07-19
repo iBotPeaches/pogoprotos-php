@@ -4,41 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestCondition.WithPokemonType</code>
- */
-class QuestCondition_WithPokemonType extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestCondition\WithPokemonType instead.
+     * @deprecated
      */
-    private $pokemon_type;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestCondition::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 1;</code>
-     */
-    public function getPokemonType()
-    {
-        return $this->pokemon_type;
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Enums.PokemonType pokemon_type = 1;</code>
-     */
-    public function setPokemonType(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\PokemonType::class);
-        $this->pokemon_type = $var;
-    }
-
+    class QuestCondition_WithPokemonType {}
 }
+class_exists(QuestCondition\WithPokemonType::class);
+@trigger_error('POGOProtos\Data\Quests\QuestCondition_WithPokemonType is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestCondition\WithPokemonType instead', E_USER_DEPRECATED);
 

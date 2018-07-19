@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestStamp</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Quests.QuestStamp</code>
  */
 class QuestStamp extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Quests.QuestStamp.Context context = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestStamp.Context context = 1;</code>
      */
     private $context = 0;
     /**
-     * <code>uint64 timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 timestamp_ms = 2;</code>
      */
     private $timestamp_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $context
+     *     @type int|string $timestamp_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Quests\QuestStamp::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestStamp.Context context = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestStamp.Context context = 1;</code>
+     * @return int
      */
     public function getContext()
     {
@@ -36,16 +47,21 @@ class QuestStamp extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestStamp.Context context = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestStamp.Context context = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setContext($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\QuestStamp_Context::class);
         $this->context = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getTimestampMs()
     {
@@ -53,12 +69,16 @@ class QuestStamp extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>uint64 timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTimestampMs($var)
     {
         GPBUtil::checkUint64($var);
         $this->timestamp_ms = $var;
+
+        return $this;
     }
 
 }

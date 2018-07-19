@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.SetContactSettingsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.SetContactSettingsMessage</code>
  */
 class SetContactSettingsMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Player.ContactSettings contact_settings = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.ContactSettings contact_settings = 1;</code>
      */
     private $contact_settings = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Player\ContactSettings $contact_settings
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\SetContactSettingsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.ContactSettings contact_settings = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.ContactSettings contact_settings = 1;</code>
+     * @return \POGOProtos\Data\Player\ContactSettings
      */
     public function getContactSettings()
     {
@@ -32,12 +42,16 @@ class SetContactSettingsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.ContactSettings contact_settings = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.ContactSettings contact_settings = 1;</code>
+     * @param \POGOProtos\Data\Player\ContactSettings $var
+     * @return $this
      */
-    public function setContactSettings(&$var)
+    public function setContactSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\ContactSettings::class);
         $this->contact_settings = $var;
+
+        return $this;
     }
 
 }

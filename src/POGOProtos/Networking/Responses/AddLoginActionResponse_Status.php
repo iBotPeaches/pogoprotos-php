@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.AddLoginActionResponse.Status</code>
- */
-class AddLoginActionResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\AddLoginActionResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>AUTH_FAILURE = 1;</code>
-     */
-    const AUTH_FAILURE = 1;
-    /**
-     * <code>LOGIN_TAKEN = 2;</code>
-     */
-    const LOGIN_TAKEN = 2;
+    class AddLoginActionResponse_Status {}
 }
+class_exists(AddLoginActionResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\AddLoginActionResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\AddLoginActionResponse\Status instead', E_USER_DEPRECATED);
 

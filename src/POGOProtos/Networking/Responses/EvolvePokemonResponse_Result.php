@@ -4,38 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.EvolvePokemonResponse.Result</code>
- */
-class EvolvePokemonResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\EvolvePokemonResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>FAILED_POKEMON_MISSING = 2;</code>
-     */
-    const FAILED_POKEMON_MISSING = 2;
-    /**
-     * <code>FAILED_INSUFFICIENT_RESOURCES = 3;</code>
-     */
-    const FAILED_INSUFFICIENT_RESOURCES = 3;
-    /**
-     * <code>FAILED_POKEMON_CANNOT_EVOLVE = 4;</code>
-     */
-    const FAILED_POKEMON_CANNOT_EVOLVE = 4;
-    /**
-     * <code>FAILED_POKEMON_IS_DEPLOYED = 5;</code>
-     */
-    const FAILED_POKEMON_IS_DEPLOYED = 5;
-    /**
-     * <code>FAILED_INVALID_ITEM_REQUIREMENT = 6;</code>
-     */
-    const FAILED_INVALID_ITEM_REQUIREMENT = 6;
+    class EvolvePokemonResponse_Result {}
 }
+class_exists(EvolvePokemonResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\EvolvePokemonResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\EvolvePokemonResponse\Result instead', E_USER_DEPRECATED);
 

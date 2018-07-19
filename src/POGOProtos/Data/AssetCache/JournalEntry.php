@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.AssetCache.JournalEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.AssetCache.JournalEntry</code>
  */
 class JournalEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.AssetCache.JournalAddEntry add_entry = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.JournalAddEntry add_entry = 1;</code>
      */
     private $add_entry = null;
     /**
-     * <code>.POGOProtos.Data.AssetCache.JournalReadEntry read_entry = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.JournalReadEntry read_entry = 2;</code>
      */
     private $read_entry = null;
     /**
-     * <code>.POGOProtos.Data.AssetCache.JournalRemoveEntry remove_entry = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.JournalRemoveEntry remove_entry = 3;</code>
      */
     private $remove_entry = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\AssetCache\JournalAddEntry $add_entry
+     *     @type \POGOProtos\Data\AssetCache\JournalReadEntry $read_entry
+     *     @type \POGOProtos\Data\AssetCache\JournalRemoveEntry $remove_entry
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\AssetCache\JournalEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.AssetCache.JournalAddEntry add_entry = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.JournalAddEntry add_entry = 1;</code>
+     * @return \POGOProtos\Data\AssetCache\JournalAddEntry
      */
     public function getAddEntry()
     {
@@ -40,16 +52,21 @@ class JournalEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.AssetCache.JournalAddEntry add_entry = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.JournalAddEntry add_entry = 1;</code>
+     * @param \POGOProtos\Data\AssetCache\JournalAddEntry $var
+     * @return $this
      */
-    public function setAddEntry(&$var)
+    public function setAddEntry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\AssetCache\JournalAddEntry::class);
         $this->add_entry = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.AssetCache.JournalReadEntry read_entry = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.JournalReadEntry read_entry = 2;</code>
+     * @return \POGOProtos\Data\AssetCache\JournalReadEntry
      */
     public function getReadEntry()
     {
@@ -57,16 +74,21 @@ class JournalEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.AssetCache.JournalReadEntry read_entry = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.JournalReadEntry read_entry = 2;</code>
+     * @param \POGOProtos\Data\AssetCache\JournalReadEntry $var
+     * @return $this
      */
-    public function setReadEntry(&$var)
+    public function setReadEntry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\AssetCache\JournalReadEntry::class);
         $this->read_entry = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.AssetCache.JournalRemoveEntry remove_entry = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.JournalRemoveEntry remove_entry = 3;</code>
+     * @return \POGOProtos\Data\AssetCache\JournalRemoveEntry
      */
     public function getRemoveEntry()
     {
@@ -74,12 +96,16 @@ class JournalEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.AssetCache.JournalRemoveEntry remove_entry = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.JournalRemoveEntry remove_entry = 3;</code>
+     * @param \POGOProtos\Data\AssetCache\JournalRemoveEntry $var
+     * @return $this
      */
-    public function setRemoveEntry(&$var)
+    public function setRemoveEntry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\AssetCache\JournalRemoveEntry::class);
         $this->remove_entry = $var;
+
+        return $this;
     }
 
 }

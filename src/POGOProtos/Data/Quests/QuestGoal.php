@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestGoal</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Quests.QuestGoal</code>
  */
 class QuestGoal extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestCondition condition = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestCondition condition = 1;</code>
      */
     private $condition;
     /**
-     * <code>int32 target = 2;</code>
+     * Generated from protobuf field <code>int32 target = 2;</code>
      */
     private $target = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Quests\QuestCondition[]|\Google\Protobuf\Internal\RepeatedField $condition
+     *     @type int $target
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Quests\QuestGoal::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestCondition condition = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestCondition condition = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCondition()
     {
@@ -36,16 +47,21 @@ class QuestGoal extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestCondition condition = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestCondition condition = 1;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCondition(&$var)
+    public function setCondition($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\QuestCondition::class);
-        $this->condition = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\QuestCondition::class);
+        $this->condition = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 target = 2;</code>
+     * Generated from protobuf field <code>int32 target = 2;</code>
+     * @return int
      */
     public function getTarget()
     {
@@ -53,12 +69,16 @@ class QuestGoal extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 target = 2;</code>
+     * Generated from protobuf field <code>int32 target = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTarget($var)
     {
         GPBUtil::checkInt32($var);
         $this->target = $var;
+
+        return $this;
     }
 
 }

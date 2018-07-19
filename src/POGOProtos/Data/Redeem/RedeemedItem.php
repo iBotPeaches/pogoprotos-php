@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Redeem.RedeemedItem</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Redeem.RedeemedItem</code>
  */
 class RedeemedItem extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
      */
     private $item = 0;
     /**
-     * <code>int32 item_count = 2;</code>
+     * Generated from protobuf field <code>int32 item_count = 2;</code>
      */
     private $item_count = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $item
+     *     @type int $item_count
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Redeem\RedeemedItem::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * @return int
      */
     public function getItem()
     {
@@ -36,16 +47,21 @@ class RedeemedItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItem($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 item_count = 2;</code>
+     * Generated from protobuf field <code>int32 item_count = 2;</code>
+     * @return int
      */
     public function getItemCount()
     {
@@ -53,12 +69,16 @@ class RedeemedItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 item_count = 2;</code>
+     * Generated from protobuf field <code>int32 item_count = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->item_count = $var;
+
+        return $this;
     }
 
 }

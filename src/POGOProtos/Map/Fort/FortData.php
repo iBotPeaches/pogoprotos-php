@@ -9,166 +9,196 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Fort.FortData</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Fort.FortData</code>
  */
 class FortData extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string id = 1;</code>
+     * Generated from protobuf field <code>string id = 1;</code>
      */
     private $id = '';
     /**
-     * <code>int64 last_modified_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 last_modified_timestamp_ms = 2;</code>
      */
     private $last_modified_timestamp_ms = 0;
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
      */
     private $latitude = 0.0;
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
      */
     private $longitude = 0.0;
     /**
-     * <pre>
      * (Gym only) Team that owns the gym.
-     * </pre>
      *
-     * <code>.POGOProtos.Enums.TeamColor owned_by_team = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor owned_by_team = 5;</code>
      */
     private $owned_by_team = 0;
     /**
-     * <pre>
      * (Gym only) Highest CP Pokemon ID at the gym.
-     * </pre>
      *
-     * <code>.POGOProtos.Enums.PokemonId guard_pokemon_id = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId guard_pokemon_id = 6;</code>
      */
     private $guard_pokemon_id = 0;
     /**
-     * <pre>
      * (Gym only) Highest CP Pokemon at the gym.
-     * </pre>
      *
-     * <code>int32 guard_pokemon_cp = 7;</code>
+     * Generated from protobuf field <code>int32 guard_pokemon_cp = 7;</code>
      */
     private $guard_pokemon_cp = 0;
     /**
-     * <code>bool enabled = 8;</code>
+     * Generated from protobuf field <code>bool enabled = 8;</code>
      */
     private $enabled = false;
     /**
-     * <code>.POGOProtos.Map.Fort.FortType type = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortType type = 9;</code>
      */
     private $type = 0;
     /**
-     * <pre>
      * (Gym only) Prestigate / experience of the gym.
-     * </pre>
      *
-     * <code>int64 gym_points = 10;</code>
+     * Generated from protobuf field <code>int64 gym_points = 10;</code>
      */
     private $gym_points = 0;
     /**
-     * <pre>
      * (Gym only) Whether someone is battling at the gym currently.
-     * </pre>
      *
-     * <code>bool is_in_battle = 11;</code>
+     * Generated from protobuf field <code>bool is_in_battle = 11;</code>
      */
     private $is_in_battle = false;
     /**
-     * <pre>
      * (Pokestop only)
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Inventory.Item.ItemId active_fort_modifier = 12;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemId active_fort_modifier = 12;</code>
      */
     private $active_fort_modifier;
     /**
-     * <pre>
      * (Pokestop only)
-     * </pre>
      *
-     * <code>.POGOProtos.Map.Fort.FortLureInfo lure_info = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortLureInfo lure_info = 13;</code>
      */
     private $lure_info = null;
     /**
-     * <pre>
      * (Pokestop only) Timestamp when the pokestop can be activated again to get items / xp.
-     * </pre>
      *
-     * <code>int64 cooldown_complete_timestamp_ms = 14;</code>
+     * Generated from protobuf field <code>int64 cooldown_complete_timestamp_ms = 14;</code>
      */
     private $cooldown_complete_timestamp_ms = 0;
     /**
-     * <code>.POGOProtos.Map.Fort.FortSponsor sponsor = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortSponsor sponsor = 15;</code>
      */
     private $sponsor = 0;
     /**
-     * <code>.POGOProtos.Map.Fort.FortRenderingType rendering_type = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortRenderingType rendering_type = 16;</code>
      */
     private $rendering_type = 0;
     /**
-     * <code>int64 deploy_lockout_end_ms = 17;</code>
+     * Generated from protobuf field <code>int64 deploy_lockout_end_ms = 17;</code>
      */
     private $deploy_lockout_end_ms = 0;
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay guard_pokemon_display = 18;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay guard_pokemon_display = 18;</code>
      */
     private $guard_pokemon_display = null;
     /**
-     * <code>bool closed = 19;</code>
+     * Generated from protobuf field <code>bool closed = 19;</code>
      */
     private $closed = false;
     /**
-     * <code>.POGOProtos.Data.Raid.RaidInfo raid_info = 20;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo raid_info = 20;</code>
      */
     private $raid_info = null;
     /**
-     * <code>.POGOProtos.Map.Fort.GymDisplay gym_display = 21;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.GymDisplay gym_display = 21;</code>
      */
     private $gym_display = null;
     /**
-     * <code>bool visited = 22;</code>
+     * Generated from protobuf field <code>bool visited = 22;</code>
      */
     private $visited = false;
     /**
-     * <code>int64 same_team_deploy_lockout_end_ms = 23;</code>
+     * Generated from protobuf field <code>int64 same_team_deploy_lockout_end_ms = 23;</code>
      */
     private $same_team_deploy_lockout_end_ms = 0;
     /**
-     * <code>bool allow_checkin = 24;</code>
+     * Generated from protobuf field <code>bool allow_checkin = 24;</code>
      */
     private $allow_checkin = false;
     /**
-     * <code>string image_url = 25;</code>
+     * Generated from protobuf field <code>string image_url = 25;</code>
      */
     private $image_url = '';
     /**
-     * <code>bool in_event = 26;</code>
+     * Generated from protobuf field <code>bool in_event = 26;</code>
      */
     private $in_event = false;
     /**
-     * <code>string banner_url = 27;</code>
+     * Generated from protobuf field <code>string banner_url = 27;</code>
      */
     private $banner_url = '';
     /**
-     * <code>string partner_id = 28;</code>
+     * Generated from protobuf field <code>string partner_id = 28;</code>
      */
     private $partner_id = '';
     /**
-     * <code>bool challenge_quest_completed = 30;</code>
+     * Generated from protobuf field <code>bool challenge_quest_completed = 30;</code>
      */
     private $challenge_quest_completed = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $id
+     *     @type int|string $last_modified_timestamp_ms
+     *     @type float $latitude
+     *     @type float $longitude
+     *     @type int $owned_by_team
+     *           (Gym only) Team that owns the gym.
+     *     @type int $guard_pokemon_id
+     *           (Gym only) Highest CP Pokemon ID at the gym.
+     *     @type int $guard_pokemon_cp
+     *           (Gym only) Highest CP Pokemon at the gym.
+     *     @type bool $enabled
+     *     @type int $type
+     *     @type int|string $gym_points
+     *           (Gym only) Prestigate / experience of the gym.
+     *     @type bool $is_in_battle
+     *           (Gym only) Whether someone is battling at the gym currently.
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $active_fort_modifier
+     *           (Pokestop only)
+     *     @type \POGOProtos\Map\Fort\FortLureInfo $lure_info
+     *           (Pokestop only)
+     *     @type int|string $cooldown_complete_timestamp_ms
+     *           (Pokestop only) Timestamp when the pokestop can be activated again to get items / xp.
+     *     @type int $sponsor
+     *     @type int $rendering_type
+     *     @type int|string $deploy_lockout_end_ms
+     *     @type \POGOProtos\Data\PokemonDisplay $guard_pokemon_display
+     *     @type bool $closed
+     *     @type \POGOProtos\Data\Raid\RaidInfo $raid_info
+     *     @type \POGOProtos\Map\Fort\GymDisplay $gym_display
+     *     @type bool $visited
+     *     @type int|string $same_team_deploy_lockout_end_ms
+     *     @type bool $allow_checkin
+     *     @type string $image_url
+     *     @type bool $in_event
+     *     @type string $banner_url
+     *     @type string $partner_id
+     *     @type bool $challenge_quest_completed
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Fort\FortData::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string id = 1;</code>
+     * Generated from protobuf field <code>string id = 1;</code>
+     * @return string
      */
     public function getId()
     {
@@ -176,16 +206,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string id = 1;</code>
+     * Generated from protobuf field <code>string id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setId($var)
     {
         GPBUtil::checkString($var, True);
         $this->id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 last_modified_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 last_modified_timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getLastModifiedTimestampMs()
     {
@@ -193,16 +228,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 last_modified_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 last_modified_timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLastModifiedTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->last_modified_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
+     * @return float
      */
     public function getLatitude()
     {
@@ -210,16 +250,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
+     * @return float
      */
     public function getLongitude()
     {
@@ -227,20 +272,23 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->longitude = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * (Gym only) Team that owns the gym.
-     * </pre>
      *
-     * <code>.POGOProtos.Enums.TeamColor owned_by_team = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor owned_by_team = 5;</code>
+     * @return int
      */
     public function getOwnedByTeam()
     {
@@ -248,24 +296,25 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * (Gym only) Team that owns the gym.
-     * </pre>
      *
-     * <code>.POGOProtos.Enums.TeamColor owned_by_team = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor owned_by_team = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setOwnedByTeam($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\TeamColor::class);
         $this->owned_by_team = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * (Gym only) Highest CP Pokemon ID at the gym.
-     * </pre>
      *
-     * <code>.POGOProtos.Enums.PokemonId guard_pokemon_id = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId guard_pokemon_id = 6;</code>
+     * @return int
      */
     public function getGuardPokemonId()
     {
@@ -273,24 +322,25 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * (Gym only) Highest CP Pokemon ID at the gym.
-     * </pre>
      *
-     * <code>.POGOProtos.Enums.PokemonId guard_pokemon_id = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId guard_pokemon_id = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setGuardPokemonId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->guard_pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * (Gym only) Highest CP Pokemon at the gym.
-     * </pre>
      *
-     * <code>int32 guard_pokemon_cp = 7;</code>
+     * Generated from protobuf field <code>int32 guard_pokemon_cp = 7;</code>
+     * @return int
      */
     public function getGuardPokemonCp()
     {
@@ -298,20 +348,23 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * (Gym only) Highest CP Pokemon at the gym.
-     * </pre>
      *
-     * <code>int32 guard_pokemon_cp = 7;</code>
+     * Generated from protobuf field <code>int32 guard_pokemon_cp = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setGuardPokemonCp($var)
     {
         GPBUtil::checkInt32($var);
         $this->guard_pokemon_cp = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool enabled = 8;</code>
+     * Generated from protobuf field <code>bool enabled = 8;</code>
+     * @return bool
      */
     public function getEnabled()
     {
@@ -319,16 +372,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool enabled = 8;</code>
+     * Generated from protobuf field <code>bool enabled = 8;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEnabled($var)
     {
         GPBUtil::checkBool($var);
         $this->enabled = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortType type = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortType type = 9;</code>
+     * @return int
      */
     public function getType()
     {
@@ -336,20 +394,23 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortType type = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortType type = 9;</code>
+     * @param int $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Fort\FortType::class);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * (Gym only) Prestigate / experience of the gym.
-     * </pre>
      *
-     * <code>int64 gym_points = 10;</code>
+     * Generated from protobuf field <code>int64 gym_points = 10;</code>
+     * @return int|string
      */
     public function getGymPoints()
     {
@@ -357,24 +418,25 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * (Gym only) Prestigate / experience of the gym.
-     * </pre>
      *
-     * <code>int64 gym_points = 10;</code>
+     * Generated from protobuf field <code>int64 gym_points = 10;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setGymPoints($var)
     {
         GPBUtil::checkInt64($var);
         $this->gym_points = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * (Gym only) Whether someone is battling at the gym currently.
-     * </pre>
      *
-     * <code>bool is_in_battle = 11;</code>
+     * Generated from protobuf field <code>bool is_in_battle = 11;</code>
+     * @return bool
      */
     public function getIsInBattle()
     {
@@ -382,24 +444,25 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * (Gym only) Whether someone is battling at the gym currently.
-     * </pre>
      *
-     * <code>bool is_in_battle = 11;</code>
+     * Generated from protobuf field <code>bool is_in_battle = 11;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsInBattle($var)
     {
         GPBUtil::checkBool($var);
         $this->is_in_battle = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * (Pokestop only)
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Inventory.Item.ItemId active_fort_modifier = 12;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemId active_fort_modifier = 12;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getActiveFortModifier()
     {
@@ -407,24 +470,25 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * (Pokestop only)
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Inventory.Item.ItemId active_fort_modifier = 12;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemId active_fort_modifier = 12;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setActiveFortModifier(&$var)
+    public function setActiveFortModifier($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Inventory\Item\ItemId::class);
-        $this->active_fort_modifier = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Inventory\Item\ItemId::class);
+        $this->active_fort_modifier = $arr;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * (Pokestop only)
-     * </pre>
      *
-     * <code>.POGOProtos.Map.Fort.FortLureInfo lure_info = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortLureInfo lure_info = 13;</code>
+     * @return \POGOProtos\Map\Fort\FortLureInfo
      */
     public function getLureInfo()
     {
@@ -432,24 +496,25 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * (Pokestop only)
-     * </pre>
      *
-     * <code>.POGOProtos.Map.Fort.FortLureInfo lure_info = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortLureInfo lure_info = 13;</code>
+     * @param \POGOProtos\Map\Fort\FortLureInfo $var
+     * @return $this
      */
-    public function setLureInfo(&$var)
+    public function setLureInfo($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Map\Fort\FortLureInfo::class);
         $this->lure_info = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * (Pokestop only) Timestamp when the pokestop can be activated again to get items / xp.
-     * </pre>
      *
-     * <code>int64 cooldown_complete_timestamp_ms = 14;</code>
+     * Generated from protobuf field <code>int64 cooldown_complete_timestamp_ms = 14;</code>
+     * @return int|string
      */
     public function getCooldownCompleteTimestampMs()
     {
@@ -457,20 +522,23 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * (Pokestop only) Timestamp when the pokestop can be activated again to get items / xp.
-     * </pre>
      *
-     * <code>int64 cooldown_complete_timestamp_ms = 14;</code>
+     * Generated from protobuf field <code>int64 cooldown_complete_timestamp_ms = 14;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setCooldownCompleteTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->cooldown_complete_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortSponsor sponsor = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortSponsor sponsor = 15;</code>
+     * @return int
      */
     public function getSponsor()
     {
@@ -478,16 +546,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortSponsor sponsor = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortSponsor sponsor = 15;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSponsor($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Fort\FortSponsor::class);
         $this->sponsor = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortRenderingType rendering_type = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortRenderingType rendering_type = 16;</code>
+     * @return int
      */
     public function getRenderingType()
     {
@@ -495,16 +568,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortRenderingType rendering_type = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortRenderingType rendering_type = 16;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRenderingType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Fort\FortRenderingType::class);
         $this->rendering_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 deploy_lockout_end_ms = 17;</code>
+     * Generated from protobuf field <code>int64 deploy_lockout_end_ms = 17;</code>
+     * @return int|string
      */
     public function getDeployLockoutEndMs()
     {
@@ -512,16 +590,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 deploy_lockout_end_ms = 17;</code>
+     * Generated from protobuf field <code>int64 deploy_lockout_end_ms = 17;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setDeployLockoutEndMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->deploy_lockout_end_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay guard_pokemon_display = 18;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay guard_pokemon_display = 18;</code>
+     * @return \POGOProtos\Data\PokemonDisplay
      */
     public function getGuardPokemonDisplay()
     {
@@ -529,16 +612,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay guard_pokemon_display = 18;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay guard_pokemon_display = 18;</code>
+     * @param \POGOProtos\Data\PokemonDisplay $var
+     * @return $this
      */
-    public function setGuardPokemonDisplay(&$var)
+    public function setGuardPokemonDisplay($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonDisplay::class);
         $this->guard_pokemon_display = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool closed = 19;</code>
+     * Generated from protobuf field <code>bool closed = 19;</code>
+     * @return bool
      */
     public function getClosed()
     {
@@ -546,16 +634,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool closed = 19;</code>
+     * Generated from protobuf field <code>bool closed = 19;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setClosed($var)
     {
         GPBUtil::checkBool($var);
         $this->closed = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.RaidInfo raid_info = 20;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo raid_info = 20;</code>
+     * @return \POGOProtos\Data\Raid\RaidInfo
      */
     public function getRaidInfo()
     {
@@ -563,16 +656,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.RaidInfo raid_info = 20;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo raid_info = 20;</code>
+     * @param \POGOProtos\Data\Raid\RaidInfo $var
+     * @return $this
      */
-    public function setRaidInfo(&$var)
+    public function setRaidInfo($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Raid\RaidInfo::class);
         $this->raid_info = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.GymDisplay gym_display = 21;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.GymDisplay gym_display = 21;</code>
+     * @return \POGOProtos\Map\Fort\GymDisplay
      */
     public function getGymDisplay()
     {
@@ -580,16 +678,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.GymDisplay gym_display = 21;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.GymDisplay gym_display = 21;</code>
+     * @param \POGOProtos\Map\Fort\GymDisplay $var
+     * @return $this
      */
-    public function setGymDisplay(&$var)
+    public function setGymDisplay($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Map\Fort\GymDisplay::class);
         $this->gym_display = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool visited = 22;</code>
+     * Generated from protobuf field <code>bool visited = 22;</code>
+     * @return bool
      */
     public function getVisited()
     {
@@ -597,16 +700,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool visited = 22;</code>
+     * Generated from protobuf field <code>bool visited = 22;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setVisited($var)
     {
         GPBUtil::checkBool($var);
         $this->visited = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 same_team_deploy_lockout_end_ms = 23;</code>
+     * Generated from protobuf field <code>int64 same_team_deploy_lockout_end_ms = 23;</code>
+     * @return int|string
      */
     public function getSameTeamDeployLockoutEndMs()
     {
@@ -614,16 +722,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 same_team_deploy_lockout_end_ms = 23;</code>
+     * Generated from protobuf field <code>int64 same_team_deploy_lockout_end_ms = 23;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setSameTeamDeployLockoutEndMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->same_team_deploy_lockout_end_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool allow_checkin = 24;</code>
+     * Generated from protobuf field <code>bool allow_checkin = 24;</code>
+     * @return bool
      */
     public function getAllowCheckin()
     {
@@ -631,16 +744,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool allow_checkin = 24;</code>
+     * Generated from protobuf field <code>bool allow_checkin = 24;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setAllowCheckin($var)
     {
         GPBUtil::checkBool($var);
         $this->allow_checkin = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string image_url = 25;</code>
+     * Generated from protobuf field <code>string image_url = 25;</code>
+     * @return string
      */
     public function getImageUrl()
     {
@@ -648,16 +766,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string image_url = 25;</code>
+     * Generated from protobuf field <code>string image_url = 25;</code>
+     * @param string $var
+     * @return $this
      */
     public function setImageUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->image_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool in_event = 26;</code>
+     * Generated from protobuf field <code>bool in_event = 26;</code>
+     * @return bool
      */
     public function getInEvent()
     {
@@ -665,16 +788,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool in_event = 26;</code>
+     * Generated from protobuf field <code>bool in_event = 26;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setInEvent($var)
     {
         GPBUtil::checkBool($var);
         $this->in_event = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string banner_url = 27;</code>
+     * Generated from protobuf field <code>string banner_url = 27;</code>
+     * @return string
      */
     public function getBannerUrl()
     {
@@ -682,16 +810,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string banner_url = 27;</code>
+     * Generated from protobuf field <code>string banner_url = 27;</code>
+     * @param string $var
+     * @return $this
      */
     public function setBannerUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->banner_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string partner_id = 28;</code>
+     * Generated from protobuf field <code>string partner_id = 28;</code>
+     * @return string
      */
     public function getPartnerId()
     {
@@ -699,16 +832,21 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string partner_id = 28;</code>
+     * Generated from protobuf field <code>string partner_id = 28;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPartnerId($var)
     {
         GPBUtil::checkString($var, True);
         $this->partner_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool challenge_quest_completed = 30;</code>
+     * Generated from protobuf field <code>bool challenge_quest_completed = 30;</code>
+     * @return bool
      */
     public function getChallengeQuestCompleted()
     {
@@ -716,12 +854,16 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool challenge_quest_completed = 30;</code>
+     * Generated from protobuf field <code>bool challenge_quest_completed = 30;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setChallengeQuestCompleted($var)
     {
         GPBUtil::checkBool($var);
         $this->challenge_quest_completed = $var;
+
+        return $this;
     }
 
 }

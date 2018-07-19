@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.RedeemPasscodeResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.RedeemPasscodeResponse</code>
  */
 class RedeemPasscodeResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.RedeemPasscodeResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.RedeemPasscodeResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.RedeemPasscodeResponse.AcquiredItem acquired_item = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.RedeemPasscodeResponse.AcquiredItem acquired_item = 2;</code>
      */
     private $acquired_item;
     /**
-     * <code>bytes acquired_items_proto = 3;</code>
+     * Generated from protobuf field <code>bytes acquired_items_proto = 3;</code>
      */
     private $acquired_items_proto = '';
     /**
-     * <code>string passcode = 4;</code>
+     * Generated from protobuf field <code>string passcode = 4;</code>
      */
     private $passcode = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Networking\Responses\RedeemPasscodeResponse\AcquiredItem[]|\Google\Protobuf\Internal\RepeatedField $acquired_item
+     *     @type string $acquired_items_proto
+     *     @type string $passcode
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\PlatformClientActionsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.RedeemPasscodeResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.RedeemPasscodeResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -44,16 +57,21 @@ class RedeemPasscodeResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.RedeemPasscodeResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.RedeemPasscodeResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\RedeemPasscodeResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.RedeemPasscodeResponse.AcquiredItem acquired_item = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.RedeemPasscodeResponse.AcquiredItem acquired_item = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAcquiredItem()
     {
@@ -61,16 +79,21 @@ class RedeemPasscodeResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.RedeemPasscodeResponse.AcquiredItem acquired_item = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.RedeemPasscodeResponse.AcquiredItem acquired_item = 2;</code>
+     * @param \POGOProtos\Networking\Responses\RedeemPasscodeResponse\AcquiredItem[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAcquiredItem(&$var)
+    public function setAcquiredItem($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Responses\RedeemPasscodeResponse_AcquiredItem::class);
-        $this->acquired_item = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Responses\RedeemPasscodeResponse\AcquiredItem::class);
+        $this->acquired_item = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>bytes acquired_items_proto = 3;</code>
+     * Generated from protobuf field <code>bytes acquired_items_proto = 3;</code>
+     * @return string
      */
     public function getAcquiredItemsProto()
     {
@@ -78,16 +101,21 @@ class RedeemPasscodeResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes acquired_items_proto = 3;</code>
+     * Generated from protobuf field <code>bytes acquired_items_proto = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAcquiredItemsProto($var)
     {
         GPBUtil::checkString($var, False);
         $this->acquired_items_proto = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string passcode = 4;</code>
+     * Generated from protobuf field <code>string passcode = 4;</code>
+     * @return string
      */
     public function getPasscode()
     {
@@ -95,12 +123,16 @@ class RedeemPasscodeResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string passcode = 4;</code>
+     * Generated from protobuf field <code>string passcode = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPasscode($var)
     {
         GPBUtil::checkString($var, True);
         $this->passcode = $var;
+
+        return $this;
     }
 
 }

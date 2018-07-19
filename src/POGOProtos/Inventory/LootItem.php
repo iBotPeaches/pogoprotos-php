@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.LootItem</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.LootItem</code>
  */
 class LootItem extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
      */
     private $item = 0;
     /**
-     * <code>bool stardust = 2;</code>
+     * Generated from protobuf field <code>bool stardust = 2;</code>
      */
     private $stardust = false;
     /**
-     * <code>bool pokecoin = 3;</code>
+     * Generated from protobuf field <code>bool pokecoin = 3;</code>
      */
     private $pokecoin = false;
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_candy = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_candy = 4;</code>
      */
     private $pokemon_candy = 0;
     /**
-     * <code>int32 count = 5;</code>
+     * Generated from protobuf field <code>int32 count = 5;</code>
      */
     private $count = 0;
     /**
-     * <code>bool experience = 6;</code>
+     * Generated from protobuf field <code>bool experience = 6;</code>
      */
     private $experience = false;
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_egg = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_egg = 7;</code>
      */
     private $pokemon_egg = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $item
+     *     @type bool $stardust
+     *     @type bool $pokecoin
+     *     @type int $pokemon_candy
+     *     @type int $count
+     *     @type bool $experience
+     *     @type \POGOProtos\Data\PokemonData $pokemon_egg
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\LootItem::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * @return int
      */
     public function getItem()
     {
@@ -56,16 +72,21 @@ class LootItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItem($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool stardust = 2;</code>
+     * Generated from protobuf field <code>bool stardust = 2;</code>
+     * @return bool
      */
     public function getStardust()
     {
@@ -73,16 +94,21 @@ class LootItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool stardust = 2;</code>
+     * Generated from protobuf field <code>bool stardust = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setStardust($var)
     {
         GPBUtil::checkBool($var);
         $this->stardust = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool pokecoin = 3;</code>
+     * Generated from protobuf field <code>bool pokecoin = 3;</code>
+     * @return bool
      */
     public function getPokecoin()
     {
@@ -90,16 +116,21 @@ class LootItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool pokecoin = 3;</code>
+     * Generated from protobuf field <code>bool pokecoin = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setPokecoin($var)
     {
         GPBUtil::checkBool($var);
         $this->pokecoin = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_candy = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_candy = 4;</code>
+     * @return int
      */
     public function getPokemonCandy()
     {
@@ -107,16 +138,21 @@ class LootItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_candy = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_candy = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemonCandy($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->pokemon_candy = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 count = 5;</code>
+     * Generated from protobuf field <code>int32 count = 5;</code>
+     * @return int
      */
     public function getCount()
     {
@@ -124,16 +160,21 @@ class LootItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 count = 5;</code>
+     * Generated from protobuf field <code>int32 count = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->count = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool experience = 6;</code>
+     * Generated from protobuf field <code>bool experience = 6;</code>
+     * @return bool
      */
     public function getExperience()
     {
@@ -141,16 +182,21 @@ class LootItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool experience = 6;</code>
+     * Generated from protobuf field <code>bool experience = 6;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setExperience($var)
     {
         GPBUtil::checkBool($var);
         $this->experience = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_egg = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_egg = 7;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getPokemonEgg()
     {
@@ -158,12 +204,16 @@ class LootItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_egg = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_egg = 7;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setPokemonEgg(&$var)
+    public function setPokemonEgg($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->pokemon_egg = $var;
+
+        return $this;
     }
 
 }

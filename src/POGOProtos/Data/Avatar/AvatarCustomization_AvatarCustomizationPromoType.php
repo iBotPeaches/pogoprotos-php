@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Data\Avatar;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationPromoType</code>
- */
-class AvatarCustomization_AvatarCustomizationPromoType
-{
+if (false) {
     /**
-     * <code>UNSET_PROMO_TYPE = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Avatar\AvatarCustomization\AvatarCustomizationPromoType instead.
+     * @deprecated
      */
-    const UNSET_PROMO_TYPE = 0;
-    /**
-     * <code>SALE = 1;</code>
-     */
-    const SALE = 1;
-    /**
-     * <code>FEATURED = 2;</code>
-     */
-    const FEATURED = 2;
+    class AvatarCustomization_AvatarCustomizationPromoType {}
 }
+class_exists(AvatarCustomization\AvatarCustomizationPromoType::class);
+@trigger_error('POGOProtos\Data\Avatar\AvatarCustomization_AvatarCustomizationPromoType is deprecated and will be removed in the next major release. Use POGOProtos\Data\Avatar\AvatarCustomization\AvatarCustomizationPromoType instead', E_USER_DEPRECATED);
 

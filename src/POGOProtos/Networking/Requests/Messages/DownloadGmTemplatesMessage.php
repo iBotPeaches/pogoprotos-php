@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.DownloadGmTemplatesMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.DownloadGmTemplatesMessage</code>
  */
 class DownloadGmTemplatesMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 basis_batch_id = 1;</code>
+     * Generated from protobuf field <code>int64 basis_batch_id = 1;</code>
      */
     private $basis_batch_id = 0;
     /**
-     * <code>int64 batch_id = 2;</code>
+     * Generated from protobuf field <code>int64 batch_id = 2;</code>
      */
     private $batch_id = 0;
     /**
-     * <code>int32 page_offset = 3;</code>
+     * Generated from protobuf field <code>int32 page_offset = 3;</code>
      */
     private $page_offset = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $basis_batch_id
+     *     @type int|string $batch_id
+     *     @type int $page_offset
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\DownloadGmTemplatesMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 basis_batch_id = 1;</code>
+     * Generated from protobuf field <code>int64 basis_batch_id = 1;</code>
+     * @return int|string
      */
     public function getBasisBatchId()
     {
@@ -40,16 +52,21 @@ class DownloadGmTemplatesMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 basis_batch_id = 1;</code>
+     * Generated from protobuf field <code>int64 basis_batch_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setBasisBatchId($var)
     {
         GPBUtil::checkInt64($var);
         $this->basis_batch_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 batch_id = 2;</code>
+     * Generated from protobuf field <code>int64 batch_id = 2;</code>
+     * @return int|string
      */
     public function getBatchId()
     {
@@ -57,16 +74,21 @@ class DownloadGmTemplatesMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 batch_id = 2;</code>
+     * Generated from protobuf field <code>int64 batch_id = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setBatchId($var)
     {
         GPBUtil::checkInt64($var);
         $this->batch_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 page_offset = 3;</code>
+     * Generated from protobuf field <code>int32 page_offset = 3;</code>
+     * @return int
      */
     public function getPageOffset()
     {
@@ -74,12 +96,16 @@ class DownloadGmTemplatesMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 page_offset = 3;</code>
+     * Generated from protobuf field <code>int32 page_offset = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPageOffset($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_offset = $var;
+
+        return $this;
     }
 
 }

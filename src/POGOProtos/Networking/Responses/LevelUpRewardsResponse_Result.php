@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.LevelUpRewardsResponse.Result</code>
- */
-class LevelUpRewardsResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\LevelUpRewardsResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>AWARDED_ALREADY = 2;</code>
-     */
-    const AWARDED_ALREADY = 2;
+    class LevelUpRewardsResponse_Result {}
 }
+class_exists(LevelUpRewardsResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\LevelUpRewardsResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\LevelUpRewardsResponse\Result instead', E_USER_DEPRECATED);
 

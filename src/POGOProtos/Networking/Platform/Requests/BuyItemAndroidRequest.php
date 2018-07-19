@@ -9,30 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Requests.BuyItemAndroidRequest</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Requests.BuyItemAndroidRequest</code>
  */
 class BuyItemAndroidRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <pre>
      * see https://developer.android.com/google/play/billing/billing_reference.html table 4
-     * </pre>
      *
-     * <code>string buy_item_intent = 1;</code>
+     * Generated from protobuf field <code>string buy_item_intent = 1;</code>
      */
     private $buy_item_intent = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $buy_item_intent
+     *           see https://developer.android.com/google/play/billing/billing_reference.html table 4
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Requests\BuyItemAndroidRequest::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <pre>
      * see https://developer.android.com/google/play/billing/billing_reference.html table 4
-     * </pre>
      *
-     * <code>string buy_item_intent = 1;</code>
+     * Generated from protobuf field <code>string buy_item_intent = 1;</code>
+     * @return string
      */
     public function getBuyItemIntent()
     {
@@ -40,16 +47,18 @@ class BuyItemAndroidRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * see https://developer.android.com/google/play/billing/billing_reference.html table 4
-     * </pre>
      *
-     * <code>string buy_item_intent = 1;</code>
+     * Generated from protobuf field <code>string buy_item_intent = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setBuyItemIntent($var)
     {
         GPBUtil::checkString($var, True);
         $this->buy_item_intent = $var;
+
+        return $this;
     }
 
 }

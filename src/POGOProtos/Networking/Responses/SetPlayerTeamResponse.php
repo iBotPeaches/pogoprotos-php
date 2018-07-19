@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.SetPlayerTeamResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.SetPlayerTeamResponse</code>
  */
 class SetPlayerTeamResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.SetPlayerTeamResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SetPlayerTeamResponse.Status status = 1;</code>
      */
     private $status = 0;
     /**
-     * <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
      */
     private $player_data = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status
+     *     @type \POGOProtos\Data\PlayerData $player_data
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\SetPlayerTeamResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.SetPlayerTeamResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SetPlayerTeamResponse.Status status = 1;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -36,16 +47,21 @@ class SetPlayerTeamResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.SetPlayerTeamResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SetPlayerTeamResponse.Status status = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\SetPlayerTeamResponse_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * @return \POGOProtos\Data\PlayerData
      */
     public function getPlayerData()
     {
@@ -53,12 +69,16 @@ class SetPlayerTeamResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * @param \POGOProtos\Data\PlayerData $var
+     * @return $this
      */
-    public function setPlayerData(&$var)
+    public function setPlayerData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PlayerData::class);
         $this->player_data = $var;
+
+        return $this;
     }
 
 }

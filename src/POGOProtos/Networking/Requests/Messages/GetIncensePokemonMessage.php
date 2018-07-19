@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetIncensePokemonMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GetIncensePokemonMessage</code>
  */
 class GetIncensePokemonMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>double player_latitude = 1;</code>
+     * Generated from protobuf field <code>double player_latitude = 1;</code>
      */
     private $player_latitude = 0.0;
     /**
-     * <code>double player_longitude = 2;</code>
+     * Generated from protobuf field <code>double player_longitude = 2;</code>
      */
     private $player_longitude = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $player_latitude
+     *     @type float $player_longitude
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetIncensePokemonMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>double player_latitude = 1;</code>
+     * Generated from protobuf field <code>double player_latitude = 1;</code>
+     * @return float
      */
     public function getPlayerLatitude()
     {
@@ -36,16 +47,21 @@ class GetIncensePokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_latitude = 1;</code>
+     * Generated from protobuf field <code>double player_latitude = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_longitude = 2;</code>
+     * Generated from protobuf field <code>double player_longitude = 2;</code>
+     * @return float
      */
     public function getPlayerLongitude()
     {
@@ -53,12 +69,16 @@ class GetIncensePokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_longitude = 2;</code>
+     * Generated from protobuf field <code>double player_longitude = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_longitude = $var;
+
+        return $this;
     }
 
 }

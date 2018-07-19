@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.SfidaRegistrationResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.SfidaRegistrationResponse</code>
  */
 class SfidaRegistrationResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bytes access_token = 1;</code>
+     * Generated from protobuf field <code>bytes access_token = 1;</code>
      */
     private $access_token = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $access_token
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\SfidaRegistrationResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bytes access_token = 1;</code>
+     * Generated from protobuf field <code>bytes access_token = 1;</code>
+     * @return string
      */
     public function getAccessToken()
     {
@@ -32,12 +42,16 @@ class SfidaRegistrationResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes access_token = 1;</code>
+     * Generated from protobuf field <code>bytes access_token = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAccessToken($var)
     {
         GPBUtil::checkString($var, False);
         $this->access_token = $var;
+
+        return $this;
     }
 
 }

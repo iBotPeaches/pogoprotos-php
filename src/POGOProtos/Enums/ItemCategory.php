@@ -5,80 +5,80 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.ItemCategory</code>
+ * Protobuf type <code>POGOProtos.Enums.ItemCategory</code>
  */
 class ItemCategory
 {
     /**
-     * <code>ITEM_CATEGORY_NONE = 0;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_NONE = 0;</code>
      */
     const ITEM_CATEGORY_NONE = 0;
     /**
-     * <code>ITEM_CATEGORY_POKEBALL = 1;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_POKEBALL = 1;</code>
      */
     const ITEM_CATEGORY_POKEBALL = 1;
     /**
-     * <code>ITEM_CATEGORY_FOOD = 2;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_FOOD = 2;</code>
      */
     const ITEM_CATEGORY_FOOD = 2;
     /**
-     * <code>ITEM_CATEGORY_MEDICINE = 3;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_MEDICINE = 3;</code>
      */
     const ITEM_CATEGORY_MEDICINE = 3;
     /**
-     * <code>ITEM_CATEGORY_BOOST = 4;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_BOOST = 4;</code>
      */
     const ITEM_CATEGORY_BOOST = 4;
     /**
-     * <code>ITEM_CATEGORY_UTILITES = 5;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_UTILITES = 5;</code>
      */
     const ITEM_CATEGORY_UTILITES = 5;
     /**
-     * <code>ITEM_CATEGORY_CAMERA = 6;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_CAMERA = 6;</code>
      */
     const ITEM_CATEGORY_CAMERA = 6;
     /**
-     * <code>ITEM_CATEGORY_DISK = 7;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_DISK = 7;</code>
      */
     const ITEM_CATEGORY_DISK = 7;
     /**
-     * <code>ITEM_CATEGORY_INCUBATOR = 8;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_INCUBATOR = 8;</code>
      */
     const ITEM_CATEGORY_INCUBATOR = 8;
     /**
-     * <code>ITEM_CATEGORY_INCENSE = 9;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_INCENSE = 9;</code>
      */
     const ITEM_CATEGORY_INCENSE = 9;
     /**
-     * <code>ITEM_CATEGORY_XP_BOOST = 10;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_XP_BOOST = 10;</code>
      */
     const ITEM_CATEGORY_XP_BOOST = 10;
     /**
-     * <code>ITEM_CATEGORY_INVENTORY_UPGRADE = 11;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_INVENTORY_UPGRADE = 11;</code>
      */
     const ITEM_CATEGORY_INVENTORY_UPGRADE = 11;
     /**
-     * <code>ITEM_CATEGORY_EVOLUTION_REQUIREMENT = 12;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_EVOLUTION_REQUIREMENT = 12;</code>
      */
     const ITEM_CATEGORY_EVOLUTION_REQUIREMENT = 12;
     /**
-     * <code>ITEM_CATEGORY_MOVE_REROLL = 13;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_MOVE_REROLL = 13;</code>
      */
     const ITEM_CATEGORY_MOVE_REROLL = 13;
     /**
-     * <code>ITEM_CATEGORY_CANDY = 14;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_CANDY = 14;</code>
      */
     const ITEM_CATEGORY_CANDY = 14;
     /**
-     * <code>ITEM_CATEGORY_RAID_TICKET = 15;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_RAID_TICKET = 15;</code>
      */
     const ITEM_CATEGORY_RAID_TICKET = 15;
     /**
-     * <code>ITEM_CATEGORY_STARDUST_BOOST = 16;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_STARDUST_BOOST = 16;</code>
      */
     const ITEM_CATEGORY_STARDUST_BOOST = 16;
     /**
-     * <code>ITEM_CATEGORY_FRIEND_GIFT_BOX = 17;</code>
+     * Generated from protobuf enum <code>ITEM_CATEGORY_FRIEND_GIFT_BOX = 17;</code>
      */
     const ITEM_CATEGORY_FRIEND_GIFT_BOX = 17;
 }

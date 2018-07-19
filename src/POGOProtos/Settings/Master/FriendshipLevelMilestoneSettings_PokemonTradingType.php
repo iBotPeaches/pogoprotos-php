@@ -4,42 +4,13 @@
 
 namespace POGOProtos\Settings\Master;
 
-/**
- * Protobuf enum <code>POGOProtos.Settings.Master.FriendshipLevelMilestoneSettings.PokemonTradingType</code>
- */
-class FriendshipLevelMilestoneSettings_PokemonTradingType
-{
+if (false) {
     /**
-     * <code>UNSET_TRADING_TYPE = 0;</code>
+     * This class is deprecated. Use POGOProtos\Settings\Master\FriendshipLevelMilestoneSettings\PokemonTradingType instead.
+     * @deprecated
      */
-    const UNSET_TRADING_TYPE = 0;
-    /**
-     * <code>REGULAR_IN_POKEDEX = 1;</code>
-     */
-    const REGULAR_IN_POKEDEX = 1;
-    /**
-     * <code>SPECIAL_IN_POKEDEX = 2;</code>
-     */
-    const SPECIAL_IN_POKEDEX = 2;
-    /**
-     * <code>REGULAR_NON_POKEDEX = 3;</code>
-     */
-    const REGULAR_NON_POKEDEX = 3;
-    /**
-     * <code>REGIONAL_NON_POKEDEX = 4;</code>
-     */
-    const REGIONAL_NON_POKEDEX = 4;
-    /**
-     * <code>FORM_NON_POKEDEX = 5;</code>
-     */
-    const FORM_NON_POKEDEX = 5;
-    /**
-     * <code>LEGENDARY_NON_POKEDEX = 6;</code>
-     */
-    const LEGENDARY_NON_POKEDEX = 6;
-    /**
-     * <code>SHINY_NON_POKEDEX = 7;</code>
-     */
-    const SHINY_NON_POKEDEX = 7;
+    class FriendshipLevelMilestoneSettings_PokemonTradingType {}
 }
+class_exists(FriendshipLevelMilestoneSettings\PokemonTradingType::class);
+@trigger_error('POGOProtos\Settings\Master\FriendshipLevelMilestoneSettings_PokemonTradingType is deprecated and will be removed in the next major release. Use POGOProtos\Settings\Master\FriendshipLevelMilestoneSettings\PokemonTradingType instead', E_USER_DEPRECATED);
 

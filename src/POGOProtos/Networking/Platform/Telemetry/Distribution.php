@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Telemetry.Distribution</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Telemetry.Distribution</code>
  */
 class Distribution extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 count = 1;</code>
+     * Generated from protobuf field <code>int64 count = 1;</code>
      */
     private $count = 0;
     /**
-     * <code>float mean = 2;</code>
+     * Generated from protobuf field <code>float mean = 2;</code>
      */
     private $mean = 0.0;
     /**
-     * <code>double sum_of_squared_deviation = 3;</code>
+     * Generated from protobuf field <code>double sum_of_squared_deviation = 3;</code>
      */
     private $sum_of_squared_deviation = 0.0;
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.Range range = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.Range range = 4;</code>
      */
     private $range = null;
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.BucketOptions bucket_options = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.BucketOptions bucket_options = 5;</code>
      */
     private $bucket_options = null;
     /**
-     * <code>repeated int64 bucket_counts = 6;</code>
+     * Generated from protobuf field <code>repeated int64 bucket_counts = 6;</code>
      */
     private $bucket_counts;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $count
+     *     @type float $mean
+     *     @type float $sum_of_squared_deviation
+     *     @type \POGOProtos\Networking\Platform\Telemetry\Distribution\Range $range
+     *     @type \POGOProtos\Networking\Platform\Telemetry\Distribution\BucketOptions $bucket_options
+     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $bucket_counts
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Telemetry\Distribution::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 count = 1;</code>
+     * Generated from protobuf field <code>int64 count = 1;</code>
+     * @return int|string
      */
     public function getCount()
     {
@@ -52,16 +67,21 @@ class Distribution extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 count = 1;</code>
+     * Generated from protobuf field <code>int64 count = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setCount($var)
     {
         GPBUtil::checkInt64($var);
         $this->count = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float mean = 2;</code>
+     * Generated from protobuf field <code>float mean = 2;</code>
+     * @return float
      */
     public function getMean()
     {
@@ -69,16 +89,21 @@ class Distribution extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float mean = 2;</code>
+     * Generated from protobuf field <code>float mean = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setMean($var)
     {
         GPBUtil::checkFloat($var);
         $this->mean = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double sum_of_squared_deviation = 3;</code>
+     * Generated from protobuf field <code>double sum_of_squared_deviation = 3;</code>
+     * @return float
      */
     public function getSumOfSquaredDeviation()
     {
@@ -86,16 +111,21 @@ class Distribution extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double sum_of_squared_deviation = 3;</code>
+     * Generated from protobuf field <code>double sum_of_squared_deviation = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setSumOfSquaredDeviation($var)
     {
         GPBUtil::checkDouble($var);
         $this->sum_of_squared_deviation = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.Range range = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.Range range = 4;</code>
+     * @return \POGOProtos\Networking\Platform\Telemetry\Distribution\Range
      */
     public function getRange()
     {
@@ -103,16 +133,21 @@ class Distribution extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.Range range = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.Range range = 4;</code>
+     * @param \POGOProtos\Networking\Platform\Telemetry\Distribution\Range $var
+     * @return $this
      */
-    public function setRange(&$var)
+    public function setRange($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\Distribution_Range::class);
         $this->range = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.BucketOptions bucket_options = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.BucketOptions bucket_options = 5;</code>
+     * @return \POGOProtos\Networking\Platform\Telemetry\Distribution\BucketOptions
      */
     public function getBucketOptions()
     {
@@ -120,16 +155,21 @@ class Distribution extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.BucketOptions bucket_options = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.BucketOptions bucket_options = 5;</code>
+     * @param \POGOProtos\Networking\Platform\Telemetry\Distribution\BucketOptions $var
+     * @return $this
      */
-    public function setBucketOptions(&$var)
+    public function setBucketOptions($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\Distribution_BucketOptions::class);
         $this->bucket_options = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int64 bucket_counts = 6;</code>
+     * Generated from protobuf field <code>repeated int64 bucket_counts = 6;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getBucketCounts()
     {
@@ -137,12 +177,16 @@ class Distribution extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int64 bucket_counts = 6;</code>
+     * Generated from protobuf field <code>repeated int64 bucket_counts = 6;</code>
+     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setBucketCounts(&$var)
+    public function setBucketCounts($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT64);
-        $this->bucket_counts = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT64);
+        $this->bucket_counts = $arr;
+
+        return $this;
     }
 
 }

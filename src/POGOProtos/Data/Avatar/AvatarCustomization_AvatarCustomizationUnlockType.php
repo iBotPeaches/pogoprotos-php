@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Data\Avatar;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Avatar.AvatarCustomization.AvatarCustomizationUnlockType</code>
- */
-class AvatarCustomization_AvatarCustomizationUnlockType
-{
+if (false) {
     /**
-     * <code>UNSET_UNLOCK_TYPE = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Avatar\AvatarCustomization\AvatarCustomizationUnlockType instead.
+     * @deprecated
      */
-    const UNSET_UNLOCK_TYPE = 0;
-    /**
-     * <code>DEFAULT = 1;</code>
-     */
-    const DEFAULT = 1;
-    /**
-     * <code>MEDAL_REWARD = 2;</code>
-     */
-    const MEDAL_REWARD = 2;
-    /**
-     * <code>IAP_CLOTHING = 3;</code>
-     */
-    const IAP_CLOTHING = 3;
-    /**
-     * <code>LEVEL_REWARD = 4;</code>
-     */
-    const LEVEL_REWARD = 4;
+    class AvatarCustomization_AvatarCustomizationUnlockType {}
 }
+class_exists(AvatarCustomization\AvatarCustomizationUnlockType::class);
+@trigger_error('POGOProtos\Data\Avatar\AvatarCustomization_AvatarCustomizationUnlockType is deprecated and will be removed in the next major release. Use POGOProtos\Data\Avatar\AvatarCustomization\AvatarCustomizationUnlockType instead', E_USER_DEPRECATED);
 

@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Data;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.PokemonData.PokemonCreateContext</code>
- */
-class PokemonData_PokemonCreateContext
-{
+if (false) {
     /**
-     * <code>CREATE_CONTEXT_WILD = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\PokemonData\PokemonCreateContext instead.
+     * @deprecated
      */
-    const CREATE_CONTEXT_WILD = 0;
-    /**
-     * <code>CREATE_CONTEXT_EGG = 1;</code>
-     */
-    const CREATE_CONTEXT_EGG = 1;
-    /**
-     * <code>CREATE_CONTEXT_EVOLVE = 2;</code>
-     */
-    const CREATE_CONTEXT_EVOLVE = 2;
+    class PokemonData_PokemonCreateContext {}
 }
+class_exists(PokemonData\PokemonCreateContext::class);
+@trigger_error('POGOProtos\Data\PokemonData_PokemonCreateContext is deprecated and will be removed in the next major release. Use POGOProtos\Data\PokemonData\PokemonCreateContext instead', E_USER_DEPRECATED);
 

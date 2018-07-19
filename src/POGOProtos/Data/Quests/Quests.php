@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Quests.Quests</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Quests.Quests</code>
  */
 class Quests extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Data.Quests.Quest quest = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.Quest quest = 1;</code>
      */
     private $quest;
     /**
-     * <code>repeated string completed_story_quest = 2;</code>
+     * Generated from protobuf field <code>repeated string completed_story_quest = 2;</code>
      */
     private $completed_story_quest;
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestPokemonEncounter quest_pokemon_encounter = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestPokemonEncounter quest_pokemon_encounter = 3;</code>
      */
     private $quest_pokemon_encounter;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestStampCard stamp_card = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestStampCard stamp_card = 4;</code>
      */
     private $stamp_card = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Quests\Quest[]|\Google\Protobuf\Internal\RepeatedField $quest
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $completed_story_quest
+     *     @type \POGOProtos\Data\Quests\QuestPokemonEncounter[]|\Google\Protobuf\Internal\RepeatedField $quest_pokemon_encounter
+     *     @type \POGOProtos\Data\Quests\QuestStampCard $stamp_card
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Quests\Quests::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.Quest quest = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.Quest quest = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getQuest()
     {
@@ -44,16 +57,21 @@ class Quests extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.Quest quest = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.Quest quest = 1;</code>
+     * @param \POGOProtos\Data\Quests\Quest[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setQuest(&$var)
+    public function setQuest($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\Quest::class);
-        $this->quest = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\Quest::class);
+        $this->quest = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated string completed_story_quest = 2;</code>
+     * Generated from protobuf field <code>repeated string completed_story_quest = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCompletedStoryQuest()
     {
@@ -61,16 +79,21 @@ class Quests extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string completed_story_quest = 2;</code>
+     * Generated from protobuf field <code>repeated string completed_story_quest = 2;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCompletedStoryQuest(&$var)
+    public function setCompletedStoryQuest($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->completed_story_quest = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->completed_story_quest = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestPokemonEncounter quest_pokemon_encounter = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestPokemonEncounter quest_pokemon_encounter = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getQuestPokemonEncounter()
     {
@@ -78,16 +101,21 @@ class Quests extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestPokemonEncounter quest_pokemon_encounter = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestPokemonEncounter quest_pokemon_encounter = 3;</code>
+     * @param \POGOProtos\Data\Quests\QuestPokemonEncounter[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setQuestPokemonEncounter(&$var)
+    public function setQuestPokemonEncounter($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\QuestPokemonEncounter::class);
-        $this->quest_pokemon_encounter = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\QuestPokemonEncounter::class);
+        $this->quest_pokemon_encounter = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestStampCard stamp_card = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestStampCard stamp_card = 4;</code>
+     * @return \POGOProtos\Data\Quests\QuestStampCard
      */
     public function getStampCard()
     {
@@ -95,12 +123,16 @@ class Quests extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestStampCard stamp_card = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestStampCard stamp_card = 4;</code>
+     * @param \POGOProtos\Data\Quests\QuestStampCard $var
+     * @return $this
      */
-    public function setStampCard(&$var)
+    public function setStampCard($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestStampCard::class);
         $this->stamp_card = $var;
+
+        return $this;
     }
 
 }

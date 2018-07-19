@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Fort.FortLureInfo</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Fort.FortLureInfo</code>
  */
 class FortLureInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
      */
     private $fort_id = '';
     /**
-     * <code>fixed64 encounter_id = 2;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 2;</code>
      */
     private $encounter_id = 0;
     /**
-     * <code>.POGOProtos.Enums.PokemonId active_pokemon_id = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId active_pokemon_id = 3;</code>
      */
     private $active_pokemon_id = 0;
     /**
-     * <code>int64 lure_expires_timestamp_ms = 4;</code>
+     * Generated from protobuf field <code>int64 lure_expires_timestamp_ms = 4;</code>
      */
     private $lure_expires_timestamp_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $fort_id
+     *     @type int|string $encounter_id
+     *     @type int $active_pokemon_id
+     *     @type int|string $lure_expires_timestamp_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Fort\FortLureInfo::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -44,16 +57,21 @@ class FortLureInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>fixed64 encounter_id = 2;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 2;</code>
+     * @return int|string
      */
     public function getEncounterId()
     {
@@ -61,16 +79,21 @@ class FortLureInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 encounter_id = 2;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setEncounterId($var)
     {
         GPBUtil::checkUint64($var);
         $this->encounter_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId active_pokemon_id = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId active_pokemon_id = 3;</code>
+     * @return int
      */
     public function getActivePokemonId()
     {
@@ -78,16 +101,21 @@ class FortLureInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId active_pokemon_id = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId active_pokemon_id = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setActivePokemonId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->active_pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 lure_expires_timestamp_ms = 4;</code>
+     * Generated from protobuf field <code>int64 lure_expires_timestamp_ms = 4;</code>
+     * @return int|string
      */
     public function getLureExpiresTimestampMs()
     {
@@ -95,12 +123,16 @@ class FortLureInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 lure_expires_timestamp_ms = 4;</code>
+     * Generated from protobuf field <code>int64 lure_expires_timestamp_ms = 4;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLureExpiresTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->lure_expires_timestamp_ms = $var;
+
+        return $this;
     }
 
 }

@@ -4,42 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Quests.QuestReward.Type</code>
- */
-class QuestReward_Type
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestReward\Type instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>EXPERIENCE = 1;</code>
-     */
-    const EXPERIENCE = 1;
-    /**
-     * <code>ITEM = 2;</code>
-     */
-    const ITEM = 2;
-    /**
-     * <code>STARDUST = 3;</code>
-     */
-    const STARDUST = 3;
-    /**
-     * <code>CANDY = 4;</code>
-     */
-    const CANDY = 4;
-    /**
-     * <code>AVATAR_CLOTHING = 5;</code>
-     */
-    const AVATAR_CLOTHING = 5;
-    /**
-     * <code>QUEST = 6;</code>
-     */
-    const QUEST = 6;
-    /**
-     * <code>POKEMON_ENCOUNTER = 7;</code>
-     */
-    const POKEMON_ENCOUNTER = 7;
+    class QuestReward_Type {}
 }
+class_exists(QuestReward\Type::class);
+@trigger_error('POGOProtos\Data\Quests\QuestReward_Type is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestReward\Type instead', E_USER_DEPRECATED);
 

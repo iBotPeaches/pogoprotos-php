@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses\Social;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.Social.CancelFriendInviteResponse.Result</code>
- */
-class CancelFriendInviteResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\Social\CancelFriendInviteResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_UNKNOWN = 2;</code>
-     */
-    const ERROR_UNKNOWN = 2;
-    /**
-     * <code>ERROR_INVITE_DOES_NOT_EXIST = 3;</code>
-     */
-    const ERROR_INVITE_DOES_NOT_EXIST = 3;
-    /**
-     * <code>ERROR_ALREADY_CANCELLED = 4;</code>
-     */
-    const ERROR_ALREADY_CANCELLED = 4;
+    class CancelFriendInviteResponse_Result {}
 }
+class_exists(CancelFriendInviteResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\Social\CancelFriendInviteResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\Social\CancelFriendInviteResponse\Result instead', E_USER_DEPRECATED);
 

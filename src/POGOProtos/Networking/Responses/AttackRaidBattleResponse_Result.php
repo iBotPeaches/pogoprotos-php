@@ -4,38 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.AttackRaidBattleResponse.Result</code>
- */
-class AttackRaidBattleResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\AttackRaidBattleResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_GYM_NOT_FOUND = 2;</code>
-     */
-    const ERROR_GYM_NOT_FOUND = 2;
-    /**
-     * <code>ERROR_BATTLE_NOT_FOUND = 3;</code>
-     */
-    const ERROR_BATTLE_NOT_FOUND = 3;
-    /**
-     * <code>ERROR_INVALID_ATTACK_ACTIONS = 4;</code>
-     */
-    const ERROR_INVALID_ATTACK_ACTIONS = 4;
-    /**
-     * <code>ERROR_NOT_PART_OF_BATTLE = 5;</code>
-     */
-    const ERROR_NOT_PART_OF_BATTLE = 5;
-    /**
-     * <code>ERROR_BATTLE_ID_NOT_RAID = 6;</code>
-     */
-    const ERROR_BATTLE_ID_NOT_RAID = 6;
+    class AttackRaidBattleResponse_Result {}
 }
+class_exists(AttackRaidBattleResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\AttackRaidBattleResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\AttackRaidBattleResponse\Result instead', E_USER_DEPRECATED);
 

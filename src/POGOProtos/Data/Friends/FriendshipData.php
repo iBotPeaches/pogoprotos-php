@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Friends.FriendshipData</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Friends.FriendshipData</code>
  */
 class FriendshipData extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Friends.FriendshipLevelData friendship_level_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.FriendshipLevelData friendship_level_data = 1;</code>
      */
     private $friendship_level_data = null;
     /**
-     * <code>repeated .POGOProtos.Data.Gift.GiftBoxDetails giftbox_details = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gift.GiftBoxDetails giftbox_details = 2;</code>
      */
     private $giftbox_details;
     /**
-     * <code>string codename = 3;</code>
+     * Generated from protobuf field <code>string codename = 3;</code>
      */
     private $codename = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Friends\FriendshipLevelData $friendship_level_data
+     *     @type \POGOProtos\Data\Gift\GiftBoxDetails[]|\Google\Protobuf\Internal\RepeatedField $giftbox_details
+     *     @type string $codename
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Friends\FriendshipData::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Friends.FriendshipLevelData friendship_level_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.FriendshipLevelData friendship_level_data = 1;</code>
+     * @return \POGOProtos\Data\Friends\FriendshipLevelData
      */
     public function getFriendshipLevelData()
     {
@@ -40,16 +52,21 @@ class FriendshipData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Friends.FriendshipLevelData friendship_level_data = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.FriendshipLevelData friendship_level_data = 1;</code>
+     * @param \POGOProtos\Data\Friends\FriendshipLevelData $var
+     * @return $this
      */
-    public function setFriendshipLevelData(&$var)
+    public function setFriendshipLevelData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Friends\FriendshipLevelData::class);
         $this->friendship_level_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gift.GiftBoxDetails giftbox_details = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gift.GiftBoxDetails giftbox_details = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getGiftboxDetails()
     {
@@ -57,16 +74,21 @@ class FriendshipData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gift.GiftBoxDetails giftbox_details = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gift.GiftBoxDetails giftbox_details = 2;</code>
+     * @param \POGOProtos\Data\Gift\GiftBoxDetails[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGiftboxDetails(&$var)
+    public function setGiftboxDetails($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gift\GiftBoxDetails::class);
-        $this->giftbox_details = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gift\GiftBoxDetails::class);
+        $this->giftbox_details = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>string codename = 3;</code>
+     * Generated from protobuf field <code>string codename = 3;</code>
+     * @return string
      */
     public function getCodename()
     {
@@ -74,12 +96,16 @@ class FriendshipData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string codename = 3;</code>
+     * Generated from protobuf field <code>string codename = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setCodename($var)
     {
         GPBUtil::checkString($var, True);
         $this->codename = $var;
+
+        return $this;
     }
 
 }

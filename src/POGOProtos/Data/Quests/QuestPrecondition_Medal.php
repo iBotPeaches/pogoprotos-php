@@ -4,83 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestPrecondition.Medal</code>
- */
-class QuestPrecondition_Medal extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>.POGOProtos.Enums.BadgeType type = 1;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestPrecondition\Medal instead.
+     * @deprecated
      */
-    private $type = 0;
-    /**
-     * <code>.POGOProtos.Data.Quests.QuestPrecondition.Operator operator = 2;</code>
-     */
-    private $operator = 0;
-    /**
-     * <code>int32 badge_rank = 3;</code>
-     */
-    private $badge_rank = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Data\Quests\QuestPrecondition::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>.POGOProtos.Enums.BadgeType type = 1;</code>
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * <code>.POGOProtos.Enums.BadgeType type = 1;</code>
-     */
-    public function setType($var)
-    {
-        GPBUtil::checkEnum($var, \POGOProtos\Enums\BadgeType::class);
-        $this->type = $var;
-    }
-
-    /**
-     * <code>.POGOProtos.Data.Quests.QuestPrecondition.Operator operator = 2;</code>
-     */
-    public function getOperator()
-    {
-        return $this->operator;
-    }
-
-    /**
-     * <code>.POGOProtos.Data.Quests.QuestPrecondition.Operator operator = 2;</code>
-     */
-    public function setOperator($var)
-    {
-        GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\QuestPrecondition_Operator::class);
-        $this->operator = $var;
-    }
-
-    /**
-     * <code>int32 badge_rank = 3;</code>
-     */
-    public function getBadgeRank()
-    {
-        return $this->badge_rank;
-    }
-
-    /**
-     * <code>int32 badge_rank = 3;</code>
-     */
-    public function setBadgeRank($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->badge_rank = $var;
-    }
-
+    class QuestPrecondition_Medal {}
 }
+class_exists(QuestPrecondition\Medal::class);
+@trigger_error('POGOProtos\Data\Quests\QuestPrecondition_Medal is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestPrecondition\Medal instead', E_USER_DEPRECATED);
 

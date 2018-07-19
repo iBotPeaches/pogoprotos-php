@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetNewQuestsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetNewQuestsResponse</code>
  */
 class GetNewQuestsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.GetNewQuestsResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetNewQuestsResponse.Status status = 1;</code>
      */
     private $status = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Quests.ClientQuest quests = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.ClientQuest quests = 2;</code>
      */
     private $quests;
     /**
-     * <code>repeated .POGOProtos.Data.Quests.ClientQuest version_changed_quests = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.ClientQuest version_changed_quests = 3;</code>
      */
     private $version_changed_quests;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status
+     *     @type \POGOProtos\Data\Quests\ClientQuest[]|\Google\Protobuf\Internal\RepeatedField $quests
+     *     @type \POGOProtos\Data\Quests\ClientQuest[]|\Google\Protobuf\Internal\RepeatedField $version_changed_quests
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetNewQuestsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetNewQuestsResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetNewQuestsResponse.Status status = 1;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -40,16 +52,21 @@ class GetNewQuestsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetNewQuestsResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetNewQuestsResponse.Status status = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\GetNewQuestsResponse_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.ClientQuest quests = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.ClientQuest quests = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getQuests()
     {
@@ -57,16 +74,21 @@ class GetNewQuestsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.ClientQuest quests = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.ClientQuest quests = 2;</code>
+     * @param \POGOProtos\Data\Quests\ClientQuest[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setQuests(&$var)
+    public function setQuests($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\ClientQuest::class);
-        $this->quests = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\ClientQuest::class);
+        $this->quests = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.ClientQuest version_changed_quests = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.ClientQuest version_changed_quests = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getVersionChangedQuests()
     {
@@ -74,12 +96,16 @@ class GetNewQuestsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.ClientQuest version_changed_quests = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.ClientQuest version_changed_quests = 3;</code>
+     * @param \POGOProtos\Data\Quests\ClientQuest[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setVersionChangedQuests(&$var)
+    public function setVersionChangedQuests($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\ClientQuest::class);
-        $this->version_changed_quests = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\ClientQuest::class);
+        $this->version_changed_quests = $arr;
+
+        return $this;
     }
 
 }

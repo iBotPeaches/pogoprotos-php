@@ -4,83 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Telemetry;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Platform.Telemetry.Distribution.BucketOptions</code>
- */
-class Distribution_BucketOptions extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.LinearBuckets linear_buckets = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Telemetry\Distribution\BucketOptions instead.
+     * @deprecated
      */
-    private $linear_buckets = null;
-    /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.ExponentialBuckets exponential_buckets = 2;</code>
-     */
-    private $exponential_buckets = null;
-    /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.ExplicitBuckets explicit_buckets = 3;</code>
-     */
-    private $explicit_buckets = null;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Platform\Telemetry\Distribution::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.LinearBuckets linear_buckets = 1;</code>
-     */
-    public function getLinearBuckets()
-    {
-        return $this->linear_buckets;
-    }
-
-    /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.LinearBuckets linear_buckets = 1;</code>
-     */
-    public function setLinearBuckets(&$var)
-    {
-        GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\Distribution_LinearBuckets::class);
-        $this->linear_buckets = $var;
-    }
-
-    /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.ExponentialBuckets exponential_buckets = 2;</code>
-     */
-    public function getExponentialBuckets()
-    {
-        return $this->exponential_buckets;
-    }
-
-    /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.ExponentialBuckets exponential_buckets = 2;</code>
-     */
-    public function setExponentialBuckets(&$var)
-    {
-        GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\Distribution_ExponentialBuckets::class);
-        $this->exponential_buckets = $var;
-    }
-
-    /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.ExplicitBuckets explicit_buckets = 3;</code>
-     */
-    public function getExplicitBuckets()
-    {
-        return $this->explicit_buckets;
-    }
-
-    /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.ExplicitBuckets explicit_buckets = 3;</code>
-     */
-    public function setExplicitBuckets(&$var)
-    {
-        GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\Distribution_ExplicitBuckets::class);
-        $this->explicit_buckets = $var;
-    }
-
+    class Distribution_BucketOptions {}
 }
+class_exists(Distribution\BucketOptions::class);
+@trigger_error('POGOProtos\Networking\Platform\Telemetry\Distribution_BucketOptions is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Telemetry\Distribution\BucketOptions instead', E_USER_DEPRECATED);
 

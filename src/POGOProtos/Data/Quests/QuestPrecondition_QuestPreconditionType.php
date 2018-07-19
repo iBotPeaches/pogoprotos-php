@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Quests.QuestPrecondition.QuestPreconditionType</code>
- */
-class QuestPrecondition_QuestPreconditionType
-{
+if (false) {
     /**
-     * <code>QUEST_PRECONDITION_UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestPrecondition\QuestPreconditionType instead.
+     * @deprecated
      */
-    const QUEST_PRECONDITION_UNSET = 0;
-    /**
-     * <code>QUEST_PRECONDITION_QUEST = 1;</code>
-     */
-    const QUEST_PRECONDITION_QUEST = 1;
-    /**
-     * <code>QUEST_PRECONDITION_LEVEL = 2;</code>
-     */
-    const QUEST_PRECONDITION_LEVEL = 2;
-    /**
-     * <code>QUEST_PRECONDITION_MEDAL = 3;</code>
-     */
-    const QUEST_PRECONDITION_MEDAL = 3;
+    class QuestPrecondition_QuestPreconditionType {}
 }
+class_exists(QuestPrecondition\QuestPreconditionType::class);
+@trigger_error('POGOProtos\Data\Quests\QuestPrecondition_QuestPreconditionType is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestPrecondition\QuestPreconditionType instead', E_USER_DEPRECATED);
 

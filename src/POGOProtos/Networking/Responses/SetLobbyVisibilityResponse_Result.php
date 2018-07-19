@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.SetLobbyVisibilityResponse.Result</code>
- */
-class SetLobbyVisibilityResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\SetLobbyVisibilityResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_NOT_LOBBY_CREATOR = 2;</code>
-     */
-    const ERROR_NOT_LOBBY_CREATOR = 2;
-    /**
-     * <code>ERROR_LOBBY_NOT_FOUND = 3;</code>
-     */
-    const ERROR_LOBBY_NOT_FOUND = 3;
-    /**
-     * <code>ERROR_RAID_UNAVAILABLE = 4;</code>
-     */
-    const ERROR_RAID_UNAVAILABLE = 4;
+    class SetLobbyVisibilityResponse_Result {}
 }
+class_exists(SetLobbyVisibilityResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\SetLobbyVisibilityResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\SetLobbyVisibilityResponse\Result instead', E_USER_DEPRECATED);
 

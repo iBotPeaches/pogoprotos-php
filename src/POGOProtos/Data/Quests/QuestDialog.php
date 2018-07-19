@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestDialog</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Quests.QuestDialog</code>
  */
 class QuestDialog extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string text = 1;</code>
+     * Generated from protobuf field <code>string text = 1;</code>
      */
     private $text = '';
     /**
-     * <code>.POGOProtos.Data.Quests.QuestDialog.CharacterExpression expression = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestDialog.CharacterExpression expression = 2;</code>
      */
     private $expression = 0;
     /**
-     * <code>string image_uri = 3;</code>
+     * Generated from protobuf field <code>string image_uri = 3;</code>
      */
     private $image_uri = '';
     /**
-     * <code>.POGOProtos.Data.Quests.QuestDialog.Character character = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestDialog.Character character = 4;</code>
      */
     private $character = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $text
+     *     @type int $expression
+     *     @type string $image_uri
+     *     @type int $character
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Quests\QuestDialog::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string text = 1;</code>
+     * Generated from protobuf field <code>string text = 1;</code>
+     * @return string
      */
     public function getText()
     {
@@ -44,16 +57,21 @@ class QuestDialog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string text = 1;</code>
+     * Generated from protobuf field <code>string text = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setText($var)
     {
         GPBUtil::checkString($var, True);
         $this->text = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestDialog.CharacterExpression expression = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestDialog.CharacterExpression expression = 2;</code>
+     * @return int
      */
     public function getExpression()
     {
@@ -61,16 +79,21 @@ class QuestDialog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestDialog.CharacterExpression expression = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestDialog.CharacterExpression expression = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setExpression($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\QuestDialog_CharacterExpression::class);
         $this->expression = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string image_uri = 3;</code>
+     * Generated from protobuf field <code>string image_uri = 3;</code>
+     * @return string
      */
     public function getImageUri()
     {
@@ -78,16 +101,21 @@ class QuestDialog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string image_uri = 3;</code>
+     * Generated from protobuf field <code>string image_uri = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setImageUri($var)
     {
         GPBUtil::checkString($var, True);
         $this->image_uri = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestDialog.Character character = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestDialog.Character character = 4;</code>
+     * @return int
      */
     public function getCharacter()
     {
@@ -95,12 +123,16 @@ class QuestDialog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestDialog.Character character = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestDialog.Character character = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCharacter($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\QuestDialog_Character::class);
         $this->character = $var;
+
+        return $this;
     }
 
 }

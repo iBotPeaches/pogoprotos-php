@@ -9,58 +9,77 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GymGetInfoResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GymGetInfoResponse</code>
  */
 class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status_and_defenders = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status_and_defenders = 1;</code>
      */
     private $gym_status_and_defenders = null;
     /**
-     * <code>string name = 2;</code>
+     * Generated from protobuf field <code>string name = 2;</code>
      */
     private $name = '';
     /**
-     * <code>string url = 3;</code>
+     * Generated from protobuf field <code>string url = 3;</code>
      */
     private $url = '';
     /**
-     * <code>.POGOProtos.Networking.Responses.GymGetInfoResponse.Result result = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GymGetInfoResponse.Result result = 4;</code>
      */
     private $result = 0;
     /**
-     * <code>string description = 5;</code>
+     * Generated from protobuf field <code>string description = 5;</code>
      */
     private $description = '';
     /**
-     * <code>string secondary_url = 6;</code>
+     * Generated from protobuf field <code>string secondary_url = 6;</code>
      */
     private $secondary_url = '';
     /**
-     * <code>.POGOProtos.Data.Badge.AwardedGymBadge awarded_gym_badge = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Badge.AwardedGymBadge awarded_gym_badge = 7;</code>
      */
     private $awarded_gym_badge = null;
     /**
-     * <code>string checkin_image_url = 8;</code>
+     * Generated from protobuf field <code>string checkin_image_url = 8;</code>
      */
     private $checkin_image_url = '';
     /**
-     * <code>.POGOProtos.Data.Raid.EventInfo event_info = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.EventInfo event_info = 9;</code>
      */
     private $event_info = null;
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 10;</code>
      */
     private $display_weather = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Gym\GymStatusAndDefenders $gym_status_and_defenders
+     *     @type string $name
+     *     @type string $url
+     *     @type int $result
+     *     @type string $description
+     *     @type string $secondary_url
+     *     @type \POGOProtos\Data\Badge\AwardedGymBadge $awarded_gym_badge
+     *     @type string $checkin_image_url
+     *     @type \POGOProtos\Data\Raid\EventInfo $event_info
+     *     @type \POGOProtos\Map\Weather\DisplayWeather $display_weather
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GymGetInfoResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status_and_defenders = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status_and_defenders = 1;</code>
+     * @return \POGOProtos\Data\Gym\GymStatusAndDefenders
      */
     public function getGymStatusAndDefenders()
     {
@@ -68,16 +87,21 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status_and_defenders = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status_and_defenders = 1;</code>
+     * @param \POGOProtos\Data\Gym\GymStatusAndDefenders $var
+     * @return $this
      */
-    public function setGymStatusAndDefenders(&$var)
+    public function setGymStatusAndDefenders($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Gym\GymStatusAndDefenders::class);
         $this->gym_status_and_defenders = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string name = 2;</code>
+     * Generated from protobuf field <code>string name = 2;</code>
+     * @return string
      */
     public function getName()
     {
@@ -85,16 +109,21 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string name = 2;</code>
+     * Generated from protobuf field <code>string name = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string url = 3;</code>
+     * Generated from protobuf field <code>string url = 3;</code>
+     * @return string
      */
     public function getUrl()
     {
@@ -102,16 +131,21 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string url = 3;</code>
+     * Generated from protobuf field <code>string url = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GymGetInfoResponse.Result result = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GymGetInfoResponse.Result result = 4;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -119,16 +153,21 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GymGetInfoResponse.Result result = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GymGetInfoResponse.Result result = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\GymGetInfoResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string description = 5;</code>
+     * Generated from protobuf field <code>string description = 5;</code>
+     * @return string
      */
     public function getDescription()
     {
@@ -136,16 +175,21 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string description = 5;</code>
+     * Generated from protobuf field <code>string description = 5;</code>
+     * @param string $var
+     * @return $this
      */
     public function setDescription($var)
     {
         GPBUtil::checkString($var, True);
         $this->description = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string secondary_url = 6;</code>
+     * Generated from protobuf field <code>string secondary_url = 6;</code>
+     * @return string
      */
     public function getSecondaryUrl()
     {
@@ -153,16 +197,21 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string secondary_url = 6;</code>
+     * Generated from protobuf field <code>string secondary_url = 6;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSecondaryUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->secondary_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Badge.AwardedGymBadge awarded_gym_badge = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Badge.AwardedGymBadge awarded_gym_badge = 7;</code>
+     * @return \POGOProtos\Data\Badge\AwardedGymBadge
      */
     public function getAwardedGymBadge()
     {
@@ -170,16 +219,21 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Badge.AwardedGymBadge awarded_gym_badge = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Badge.AwardedGymBadge awarded_gym_badge = 7;</code>
+     * @param \POGOProtos\Data\Badge\AwardedGymBadge $var
+     * @return $this
      */
-    public function setAwardedGymBadge(&$var)
+    public function setAwardedGymBadge($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Badge\AwardedGymBadge::class);
         $this->awarded_gym_badge = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string checkin_image_url = 8;</code>
+     * Generated from protobuf field <code>string checkin_image_url = 8;</code>
+     * @return string
      */
     public function getCheckinImageUrl()
     {
@@ -187,16 +241,21 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string checkin_image_url = 8;</code>
+     * Generated from protobuf field <code>string checkin_image_url = 8;</code>
+     * @param string $var
+     * @return $this
      */
     public function setCheckinImageUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->checkin_image_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.EventInfo event_info = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.EventInfo event_info = 9;</code>
+     * @return \POGOProtos\Data\Raid\EventInfo
      */
     public function getEventInfo()
     {
@@ -204,16 +263,21 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.EventInfo event_info = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.EventInfo event_info = 9;</code>
+     * @param \POGOProtos\Data\Raid\EventInfo $var
+     * @return $this
      */
-    public function setEventInfo(&$var)
+    public function setEventInfo($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Raid\EventInfo::class);
         $this->event_info = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 10;</code>
+     * @return \POGOProtos\Map\Weather\DisplayWeather
      */
     public function getDisplayWeather()
     {
@@ -221,12 +285,16 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 10;</code>
+     * @param \POGOProtos\Map\Weather\DisplayWeather $var
+     * @return $this
      */
-    public function setDisplayWeather(&$var)
+    public function setDisplayWeather($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Map\Weather\DisplayWeather::class);
         $this->display_weather = $var;
+
+        return $this;
     }
 
 }

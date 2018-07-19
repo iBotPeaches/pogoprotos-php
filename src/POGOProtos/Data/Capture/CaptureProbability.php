@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Capture.CaptureProbability</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Capture.CaptureProbability</code>
  */
 class CaptureProbability extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemId pokeball_type = 1 [packed = true];</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemId pokeball_type = 1 [packed = true];</code>
      */
     private $pokeball_type;
     /**
-     * <code>repeated float capture_probability = 2 [packed = true];</code>
+     * Generated from protobuf field <code>repeated float capture_probability = 2 [packed = true];</code>
      */
     private $capture_probability;
     /**
-     * <code>double reticle_difficulty_scale = 12;</code>
+     * Generated from protobuf field <code>double reticle_difficulty_scale = 12;</code>
      */
     private $reticle_difficulty_scale = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $pokeball_type
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $capture_probability
+     *     @type float $reticle_difficulty_scale
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Capture\CaptureProbability::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemId pokeball_type = 1 [packed = true];</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemId pokeball_type = 1 [packed = true];</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPokeballType()
     {
@@ -40,16 +52,21 @@ class CaptureProbability extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemId pokeball_type = 1 [packed = true];</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemId pokeball_type = 1 [packed = true];</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPokeballType(&$var)
+    public function setPokeballType($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Inventory\Item\ItemId::class);
-        $this->pokeball_type = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Inventory\Item\ItemId::class);
+        $this->pokeball_type = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float capture_probability = 2 [packed = true];</code>
+     * Generated from protobuf field <code>repeated float capture_probability = 2 [packed = true];</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCaptureProbability()
     {
@@ -57,16 +74,21 @@ class CaptureProbability extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float capture_probability = 2 [packed = true];</code>
+     * Generated from protobuf field <code>repeated float capture_probability = 2 [packed = true];</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCaptureProbability(&$var)
+    public function setCaptureProbability($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->capture_probability = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->capture_probability = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>double reticle_difficulty_scale = 12;</code>
+     * Generated from protobuf field <code>double reticle_difficulty_scale = 12;</code>
+     * @return float
      */
     public function getReticleDifficultyScale()
     {
@@ -74,12 +96,16 @@ class CaptureProbability extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double reticle_difficulty_scale = 12;</code>
+     * Generated from protobuf field <code>double reticle_difficulty_scale = 12;</code>
+     * @param float $var
+     * @return $this
      */
     public function setReticleDifficultyScale($var)
     {
         GPBUtil::checkDouble($var);
         $this->reticle_difficulty_scale = $var;
+
+        return $this;
     }
 
 }

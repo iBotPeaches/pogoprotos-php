@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.Social.OpenGiftResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.Social.OpenGiftResponse</code>
  */
 class OpenGiftResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.OpenGiftResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.OpenGiftResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Inventory.Loot items = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot items = 2;</code>
      */
     private $items = null;
     /**
-     * <code>.POGOProtos.Data.PokemonData egg_pokemon = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData egg_pokemon = 3;</code>
      */
     private $egg_pokemon = null;
     /**
-     * <code>.POGOProtos.Data.Friends.FriendshipLevelData updated_friendship_data = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.FriendshipLevelData updated_friendship_data = 4;</code>
      */
     private $updated_friendship_data = null;
     /**
-     * <code>.POGOProtos.Data.Player.PlayerPublicProfile friend_profile = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerPublicProfile friend_profile = 5;</code>
      */
     private $friend_profile = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Inventory\Loot $items
+     *     @type \POGOProtos\Data\PokemonData $egg_pokemon
+     *     @type \POGOProtos\Data\Friends\FriendshipLevelData $updated_friendship_data
+     *     @type \POGOProtos\Data\Player\PlayerPublicProfile $friend_profile
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\Social\OpenGiftResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.OpenGiftResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.OpenGiftResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -48,16 +62,21 @@ class OpenGiftResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.Social.OpenGiftResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.Social.OpenGiftResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\Social\OpenGiftResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot items = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot items = 2;</code>
+     * @return \POGOProtos\Inventory\Loot
      */
     public function getItems()
     {
@@ -65,16 +84,21 @@ class OpenGiftResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot items = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot items = 2;</code>
+     * @param \POGOProtos\Inventory\Loot $var
+     * @return $this
      */
-    public function setItems(&$var)
+    public function setItems($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\Loot::class);
         $this->items = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData egg_pokemon = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData egg_pokemon = 3;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getEggPokemon()
     {
@@ -82,16 +106,21 @@ class OpenGiftResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData egg_pokemon = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData egg_pokemon = 3;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setEggPokemon(&$var)
+    public function setEggPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->egg_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Friends.FriendshipLevelData updated_friendship_data = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.FriendshipLevelData updated_friendship_data = 4;</code>
+     * @return \POGOProtos\Data\Friends\FriendshipLevelData
      */
     public function getUpdatedFriendshipData()
     {
@@ -99,16 +128,21 @@ class OpenGiftResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Friends.FriendshipLevelData updated_friendship_data = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.FriendshipLevelData updated_friendship_data = 4;</code>
+     * @param \POGOProtos\Data\Friends\FriendshipLevelData $var
+     * @return $this
      */
-    public function setUpdatedFriendshipData(&$var)
+    public function setUpdatedFriendshipData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Friends\FriendshipLevelData::class);
         $this->updated_friendship_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerPublicProfile friend_profile = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerPublicProfile friend_profile = 5;</code>
+     * @return \POGOProtos\Data\Player\PlayerPublicProfile
      */
     public function getFriendProfile()
     {
@@ -116,12 +150,16 @@ class OpenGiftResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerPublicProfile friend_profile = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerPublicProfile friend_profile = 5;</code>
+     * @param \POGOProtos\Data\Player\PlayerPublicProfile $var
+     * @return $this
      */
-    public function setFriendProfile(&$var)
+    public function setFriendProfile($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerPublicProfile::class);
         $this->friend_profile = $var;
+
+        return $this;
     }
 
 }

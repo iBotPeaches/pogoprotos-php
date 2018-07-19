@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.DiskEncounterMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.DiskEncounterMessage</code>
  */
 class DiskEncounterMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>uint64 encounter_id = 1;</code>
+     * Generated from protobuf field <code>uint64 encounter_id = 1;</code>
      */
     private $encounter_id = 0;
     /**
-     * <code>string fort_id = 2;</code>
+     * Generated from protobuf field <code>string fort_id = 2;</code>
      */
     private $fort_id = '';
     /**
-     * <code>double player_latitude = 3;</code>
+     * Generated from protobuf field <code>double player_latitude = 3;</code>
      */
     private $player_latitude = 0.0;
     /**
-     * <code>double player_longitude = 4;</code>
+     * Generated from protobuf field <code>double player_longitude = 4;</code>
      */
     private $player_longitude = 0.0;
     /**
-     * <code>double gym_lat_degrees = 5;</code>
+     * Generated from protobuf field <code>double gym_lat_degrees = 5;</code>
      */
     private $gym_lat_degrees = 0.0;
     /**
-     * <code>double gym_lng_degrees = 6;</code>
+     * Generated from protobuf field <code>double gym_lng_degrees = 6;</code>
      */
     private $gym_lng_degrees = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $encounter_id
+     *     @type string $fort_id
+     *     @type float $player_latitude
+     *     @type float $player_longitude
+     *     @type float $gym_lat_degrees
+     *     @type float $gym_lng_degrees
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\DiskEncounterMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>uint64 encounter_id = 1;</code>
+     * Generated from protobuf field <code>uint64 encounter_id = 1;</code>
+     * @return int|string
      */
     public function getEncounterId()
     {
@@ -52,16 +67,21 @@ class DiskEncounterMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 encounter_id = 1;</code>
+     * Generated from protobuf field <code>uint64 encounter_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setEncounterId($var)
     {
         GPBUtil::checkUint64($var);
         $this->encounter_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string fort_id = 2;</code>
+     * Generated from protobuf field <code>string fort_id = 2;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -69,16 +89,21 @@ class DiskEncounterMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 2;</code>
+     * Generated from protobuf field <code>string fort_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_latitude = 3;</code>
+     * Generated from protobuf field <code>double player_latitude = 3;</code>
+     * @return float
      */
     public function getPlayerLatitude()
     {
@@ -86,16 +111,21 @@ class DiskEncounterMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_latitude = 3;</code>
+     * Generated from protobuf field <code>double player_latitude = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_longitude = 4;</code>
+     * Generated from protobuf field <code>double player_longitude = 4;</code>
+     * @return float
      */
     public function getPlayerLongitude()
     {
@@ -103,16 +133,21 @@ class DiskEncounterMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_longitude = 4;</code>
+     * Generated from protobuf field <code>double player_longitude = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_longitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double gym_lat_degrees = 5;</code>
+     * Generated from protobuf field <code>double gym_lat_degrees = 5;</code>
+     * @return float
      */
     public function getGymLatDegrees()
     {
@@ -120,16 +155,21 @@ class DiskEncounterMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double gym_lat_degrees = 5;</code>
+     * Generated from protobuf field <code>double gym_lat_degrees = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setGymLatDegrees($var)
     {
         GPBUtil::checkDouble($var);
         $this->gym_lat_degrees = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double gym_lng_degrees = 6;</code>
+     * Generated from protobuf field <code>double gym_lng_degrees = 6;</code>
+     * @return float
      */
     public function getGymLngDegrees()
     {
@@ -137,12 +177,16 @@ class DiskEncounterMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double gym_lng_degrees = 6;</code>
+     * Generated from protobuf field <code>double gym_lng_degrees = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setGymLngDegrees($var)
     {
         GPBUtil::checkDouble($var);
         $this->gym_lng_degrees = $var;
+
+        return $this;
     }
 
 }

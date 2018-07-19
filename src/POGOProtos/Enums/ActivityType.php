@@ -5,144 +5,144 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.ActivityType</code>
+ * Protobuf type <code>POGOProtos.Enums.ActivityType</code>
  */
 class ActivityType
 {
     /**
-     * <code>ACTIVITY_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>ACTIVITY_UNKNOWN = 0;</code>
      */
     const ACTIVITY_UNKNOWN = 0;
     /**
-     * <code>ACTIVITY_CATCH_POKEMON = 1;</code>
+     * Generated from protobuf enum <code>ACTIVITY_CATCH_POKEMON = 1;</code>
      */
     const ACTIVITY_CATCH_POKEMON = 1;
     /**
-     * <code>ACTIVITY_CATCH_LEGEND_POKEMON = 2;</code>
+     * Generated from protobuf enum <code>ACTIVITY_CATCH_LEGEND_POKEMON = 2;</code>
      */
     const ACTIVITY_CATCH_LEGEND_POKEMON = 2;
     /**
-     * <code>ACTIVITY_FLEE_POKEMON = 3;</code>
+     * Generated from protobuf enum <code>ACTIVITY_FLEE_POKEMON = 3;</code>
      */
     const ACTIVITY_FLEE_POKEMON = 3;
     /**
-     * <code>ACTIVITY_DEFEAT_FORT = 4;</code>
+     * Generated from protobuf enum <code>ACTIVITY_DEFEAT_FORT = 4;</code>
      */
     const ACTIVITY_DEFEAT_FORT = 4;
     /**
-     * <code>ACTIVITY_EVOLVE_POKEMON = 5;</code>
+     * Generated from protobuf enum <code>ACTIVITY_EVOLVE_POKEMON = 5;</code>
      */
     const ACTIVITY_EVOLVE_POKEMON = 5;
     /**
-     * <code>ACTIVITY_HATCH_EGG = 6;</code>
+     * Generated from protobuf enum <code>ACTIVITY_HATCH_EGG = 6;</code>
      */
     const ACTIVITY_HATCH_EGG = 6;
     /**
-     * <code>ACTIVITY_WALK_KM = 7;</code>
+     * Generated from protobuf enum <code>ACTIVITY_WALK_KM = 7;</code>
      */
     const ACTIVITY_WALK_KM = 7;
     /**
-     * <code>ACTIVITY_POKEDEX_ENTRY_NEW = 8;</code>
+     * Generated from protobuf enum <code>ACTIVITY_POKEDEX_ENTRY_NEW = 8;</code>
      */
     const ACTIVITY_POKEDEX_ENTRY_NEW = 8;
     /**
-     * <code>ACTIVITY_CATCH_FIRST_THROW = 9;</code>
+     * Generated from protobuf enum <code>ACTIVITY_CATCH_FIRST_THROW = 9;</code>
      */
     const ACTIVITY_CATCH_FIRST_THROW = 9;
     /**
-     * <code>ACTIVITY_CATCH_NICE_THROW = 10;</code>
+     * Generated from protobuf enum <code>ACTIVITY_CATCH_NICE_THROW = 10;</code>
      */
     const ACTIVITY_CATCH_NICE_THROW = 10;
     /**
-     * <code>ACTIVITY_CATCH_GREAT_THROW = 11;</code>
+     * Generated from protobuf enum <code>ACTIVITY_CATCH_GREAT_THROW = 11;</code>
      */
     const ACTIVITY_CATCH_GREAT_THROW = 11;
     /**
-     * <code>ACTIVITY_CATCH_EXCELLENT_THROW = 12;</code>
+     * Generated from protobuf enum <code>ACTIVITY_CATCH_EXCELLENT_THROW = 12;</code>
      */
     const ACTIVITY_CATCH_EXCELLENT_THROW = 12;
     /**
-     * <code>ACTIVITY_CATCH_CURVEBALL = 13;</code>
+     * Generated from protobuf enum <code>ACTIVITY_CATCH_CURVEBALL = 13;</code>
      */
     const ACTIVITY_CATCH_CURVEBALL = 13;
     /**
-     * <code>ACTIVITY_CATCH_FIRST_CATCH_OF_DAY = 14;</code>
+     * Generated from protobuf enum <code>ACTIVITY_CATCH_FIRST_CATCH_OF_DAY = 14;</code>
      */
     const ACTIVITY_CATCH_FIRST_CATCH_OF_DAY = 14;
     /**
-     * <code>ACTIVITY_CATCH_MILESTONE = 15;</code>
+     * Generated from protobuf enum <code>ACTIVITY_CATCH_MILESTONE = 15;</code>
      */
     const ACTIVITY_CATCH_MILESTONE = 15;
     /**
-     * <code>ACTIVITY_TRAIN_POKEMON = 16;</code>
+     * Generated from protobuf enum <code>ACTIVITY_TRAIN_POKEMON = 16;</code>
      */
     const ACTIVITY_TRAIN_POKEMON = 16;
     /**
-     * <code>ACTIVITY_SEARCH_FORT = 17;</code>
+     * Generated from protobuf enum <code>ACTIVITY_SEARCH_FORT = 17;</code>
      */
     const ACTIVITY_SEARCH_FORT = 17;
     /**
-     * <code>ACTIVITY_RELEASE_POKEMON = 18;</code>
+     * Generated from protobuf enum <code>ACTIVITY_RELEASE_POKEMON = 18;</code>
      */
     const ACTIVITY_RELEASE_POKEMON = 18;
     /**
-     * <code>ACTIVITY_HATCH_EGG_SMALL_BONUS = 19;</code>
+     * Generated from protobuf enum <code>ACTIVITY_HATCH_EGG_SMALL_BONUS = 19;</code>
      */
     const ACTIVITY_HATCH_EGG_SMALL_BONUS = 19;
     /**
-     * <code>ACTIVITY_HATCH_EGG_MEDIUM_BONUS = 20;</code>
+     * Generated from protobuf enum <code>ACTIVITY_HATCH_EGG_MEDIUM_BONUS = 20;</code>
      */
     const ACTIVITY_HATCH_EGG_MEDIUM_BONUS = 20;
     /**
-     * <code>ACTIVITY_HATCH_EGG_LARGE_BONUS = 21;</code>
+     * Generated from protobuf enum <code>ACTIVITY_HATCH_EGG_LARGE_BONUS = 21;</code>
      */
     const ACTIVITY_HATCH_EGG_LARGE_BONUS = 21;
     /**
-     * <code>ACTIVITY_DEFEAT_GYM_DEFENDER = 22;</code>
+     * Generated from protobuf enum <code>ACTIVITY_DEFEAT_GYM_DEFENDER = 22;</code>
      */
     const ACTIVITY_DEFEAT_GYM_DEFENDER = 22;
     /**
-     * <code>ACTIVITY_DEFEAT_GYM_LEADER = 23;</code>
+     * Generated from protobuf enum <code>ACTIVITY_DEFEAT_GYM_LEADER = 23;</code>
      */
     const ACTIVITY_DEFEAT_GYM_LEADER = 23;
     /**
-     * <code>ACTIVITY_CATCH_FIRST_CATCH_STREAK_BONUS = 24;</code>
+     * Generated from protobuf enum <code>ACTIVITY_CATCH_FIRST_CATCH_STREAK_BONUS = 24;</code>
      */
     const ACTIVITY_CATCH_FIRST_CATCH_STREAK_BONUS = 24;
     /**
-     * <code>ACTIVITY_SEARCH_FORT_FIRST_OF_THE_DAY = 25;</code>
+     * Generated from protobuf enum <code>ACTIVITY_SEARCH_FORT_FIRST_OF_THE_DAY = 25;</code>
      */
     const ACTIVITY_SEARCH_FORT_FIRST_OF_THE_DAY = 25;
     /**
-     * <code>ACTIVITY_SEARCH_FORT_STREAK_BONUS = 26;</code>
+     * Generated from protobuf enum <code>ACTIVITY_SEARCH_FORT_STREAK_BONUS = 26;</code>
      */
     const ACTIVITY_SEARCH_FORT_STREAK_BONUS = 26;
     /**
-     * <code>ACTIVITY_DEFEAT_RAID_POKEMON = 27;</code>
+     * Generated from protobuf enum <code>ACTIVITY_DEFEAT_RAID_POKEMON = 27;</code>
      */
     const ACTIVITY_DEFEAT_RAID_POKEMON = 27;
     /**
-     * <code>ACTIVITY_FEED_BERRY = 28;</code>
+     * Generated from protobuf enum <code>ACTIVITY_FEED_BERRY = 28;</code>
      */
     const ACTIVITY_FEED_BERRY = 28;
     /**
-     * <code>ACTIVITY_SEARCH_GYM = 29;</code>
+     * Generated from protobuf enum <code>ACTIVITY_SEARCH_GYM = 29;</code>
      */
     const ACTIVITY_SEARCH_GYM = 29;
     /**
-     * <code>ACTIVITY_NEW_POKESTOP = 30;</code>
+     * Generated from protobuf enum <code>ACTIVITY_NEW_POKESTOP = 30;</code>
      */
     const ACTIVITY_NEW_POKESTOP = 30;
     /**
-     * <code>ACTIVITY_GYM_BATTLE_LOSS = 31;</code>
+     * Generated from protobuf enum <code>ACTIVITY_GYM_BATTLE_LOSS = 31;</code>
      */
     const ACTIVITY_GYM_BATTLE_LOSS = 31;
     /**
-     * <code>ACTIVITY_CATCH_AR_PLUS_BONUS = 32;</code>
+     * Generated from protobuf enum <code>ACTIVITY_CATCH_AR_PLUS_BONUS = 32;</code>
      */
     const ACTIVITY_CATCH_AR_PLUS_BONUS = 32;
     /**
-     * <code>ACTIVITY_CATCH_QUEST_POKEMON_ENCOUNTER = 33;</code>
+     * Generated from protobuf enum <code>ACTIVITY_CATCH_QUEST_POKEMON_ENCOUNTER = 33;</code>
      */
     const ACTIVITY_CATCH_QUEST_POKEMON_ENCOUNTER = 33;
 }

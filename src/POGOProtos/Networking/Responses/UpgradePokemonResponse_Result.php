@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.UpgradePokemonResponse.Result</code>
- */
-class UpgradePokemonResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\UpgradePokemonResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_POKEMON_NOT_FOUND = 2;</code>
-     */
-    const ERROR_POKEMON_NOT_FOUND = 2;
-    /**
-     * <code>ERROR_INSUFFICIENT_RESOURCES = 3;</code>
-     */
-    const ERROR_INSUFFICIENT_RESOURCES = 3;
-    /**
-     * <code>ERROR_UPGRADE_NOT_AVAILABLE = 4;</code>
-     */
-    const ERROR_UPGRADE_NOT_AVAILABLE = 4;
-    /**
-     * <code>ERROR_POKEMON_IS_DEPLOYED = 5;</code>
-     */
-    const ERROR_POKEMON_IS_DEPLOYED = 5;
+    class UpgradePokemonResponse_Result {}
 }
+class_exists(UpgradePokemonResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\UpgradePokemonResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\UpgradePokemonResponse\Result instead', E_USER_DEPRECATED);
 

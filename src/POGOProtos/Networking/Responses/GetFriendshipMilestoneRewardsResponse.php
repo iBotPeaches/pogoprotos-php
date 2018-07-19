@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetFriendshipMilestoneRewardsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetFriendshipMilestoneRewardsResponse</code>
  */
 class GetFriendshipMilestoneRewardsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.GetFriendshipMilestoneRewardsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetFriendshipMilestoneRewardsResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>int64 xp_reward = 2;</code>
+     * Generated from protobuf field <code>int64 xp_reward = 2;</code>
      */
     private $xp_reward = 0;
     /**
-     * <code>string friend_id = 3;</code>
+     * Generated from protobuf field <code>string friend_id = 3;</code>
      */
     private $friend_id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type int|string $xp_reward
+     *     @type string $friend_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetFriendshipMilestoneRewardsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetFriendshipMilestoneRewardsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetFriendshipMilestoneRewardsResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -40,16 +52,21 @@ class GetFriendshipMilestoneRewardsResponse extends \Google\Protobuf\Internal\Me
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetFriendshipMilestoneRewardsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetFriendshipMilestoneRewardsResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\GetFriendshipMilestoneRewardsResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 xp_reward = 2;</code>
+     * Generated from protobuf field <code>int64 xp_reward = 2;</code>
+     * @return int|string
      */
     public function getXpReward()
     {
@@ -57,16 +74,21 @@ class GetFriendshipMilestoneRewardsResponse extends \Google\Protobuf\Internal\Me
     }
 
     /**
-     * <code>int64 xp_reward = 2;</code>
+     * Generated from protobuf field <code>int64 xp_reward = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setXpReward($var)
     {
         GPBUtil::checkInt64($var);
         $this->xp_reward = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string friend_id = 3;</code>
+     * Generated from protobuf field <code>string friend_id = 3;</code>
+     * @return string
      */
     public function getFriendId()
     {
@@ -74,12 +96,16 @@ class GetFriendshipMilestoneRewardsResponse extends \Google\Protobuf\Internal\Me
     }
 
     /**
-     * <code>string friend_id = 3;</code>
+     * Generated from protobuf field <code>string friend_id = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFriendId($var)
     {
         GPBUtil::checkString($var, True);
         $this->friend_id = $var;
+
+        return $this;
     }
 
 }

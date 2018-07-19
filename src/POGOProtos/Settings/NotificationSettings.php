@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.NotificationSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.NotificationSettings</code>
  */
 class NotificationSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool pull_notifications = 1;</code>
+     * Generated from protobuf field <code>bool pull_notifications = 1;</code>
      */
     private $pull_notifications = false;
     /**
-     * <code>bool show_notifications = 2;</code>
+     * Generated from protobuf field <code>bool show_notifications = 2;</code>
      */
     private $show_notifications = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $pull_notifications
+     *     @type bool $show_notifications
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\NotificationSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool pull_notifications = 1;</code>
+     * Generated from protobuf field <code>bool pull_notifications = 1;</code>
+     * @return bool
      */
     public function getPullNotifications()
     {
@@ -36,16 +47,21 @@ class NotificationSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool pull_notifications = 1;</code>
+     * Generated from protobuf field <code>bool pull_notifications = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setPullNotifications($var)
     {
         GPBUtil::checkBool($var);
         $this->pull_notifications = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool show_notifications = 2;</code>
+     * Generated from protobuf field <code>bool show_notifications = 2;</code>
+     * @return bool
      */
     public function getShowNotifications()
     {
@@ -53,12 +69,16 @@ class NotificationSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool show_notifications = 2;</code>
+     * Generated from protobuf field <code>bool show_notifications = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setShowNotifications($var)
     {
         GPBUtil::checkBool($var);
         $this->show_notifications = $var;
+
+        return $this;
     }
 
 }

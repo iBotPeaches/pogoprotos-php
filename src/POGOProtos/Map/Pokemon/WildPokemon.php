@@ -9,46 +9,62 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Pokemon.WildPokemon</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Pokemon.WildPokemon</code>
  */
 class WildPokemon extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>fixed64 encounter_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 1;</code>
      */
     private $encounter_id = 0;
     /**
-     * <code>int64 last_modified_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 last_modified_timestamp_ms = 2;</code>
      */
     private $last_modified_timestamp_ms = 0;
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
      */
     private $latitude = 0.0;
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
      */
     private $longitude = 0.0;
     /**
-     * <code>string spawn_point_id = 5;</code>
+     * Generated from protobuf field <code>string spawn_point_id = 5;</code>
      */
     private $spawn_point_id = '';
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 7;</code>
      */
     private $pokemon_data = null;
     /**
-     * <code>int32 time_till_hidden_ms = 11;</code>
+     * Generated from protobuf field <code>int32 time_till_hidden_ms = 11;</code>
      */
     private $time_till_hidden_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $encounter_id
+     *     @type int|string $last_modified_timestamp_ms
+     *     @type float $latitude
+     *     @type float $longitude
+     *     @type string $spawn_point_id
+     *     @type \POGOProtos\Data\PokemonData $pokemon_data
+     *     @type int $time_till_hidden_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Pokemon\WildPokemon::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>fixed64 encounter_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 1;</code>
+     * @return int|string
      */
     public function getEncounterId()
     {
@@ -56,16 +72,21 @@ class WildPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 encounter_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setEncounterId($var)
     {
         GPBUtil::checkUint64($var);
         $this->encounter_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 last_modified_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 last_modified_timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getLastModifiedTimestampMs()
     {
@@ -73,16 +94,21 @@ class WildPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 last_modified_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 last_modified_timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLastModifiedTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->last_modified_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
+     * @return float
      */
     public function getLatitude()
     {
@@ -90,16 +116,21 @@ class WildPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
+     * @return float
      */
     public function getLongitude()
     {
@@ -107,16 +138,21 @@ class WildPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->longitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string spawn_point_id = 5;</code>
+     * Generated from protobuf field <code>string spawn_point_id = 5;</code>
+     * @return string
      */
     public function getSpawnPointId()
     {
@@ -124,16 +160,21 @@ class WildPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string spawn_point_id = 5;</code>
+     * Generated from protobuf field <code>string spawn_point_id = 5;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSpawnPointId($var)
     {
         GPBUtil::checkString($var, True);
         $this->spawn_point_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 7;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getPokemonData()
     {
@@ -141,16 +182,21 @@ class WildPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 7;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setPokemonData(&$var)
+    public function setPokemonData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->pokemon_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 time_till_hidden_ms = 11;</code>
+     * Generated from protobuf field <code>int32 time_till_hidden_ms = 11;</code>
+     * @return int
      */
     public function getTimeTillHiddenMs()
     {
@@ -158,12 +204,16 @@ class WildPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 time_till_hidden_ms = 11;</code>
+     * Generated from protobuf field <code>int32 time_till_hidden_ms = 11;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTimeTillHiddenMs($var)
     {
         GPBUtil::checkInt32($var);
         $this->time_till_hidden_ms = $var;
+
+        return $this;
     }
 
 }

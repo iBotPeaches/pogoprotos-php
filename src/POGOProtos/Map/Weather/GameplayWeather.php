@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Weather.GameplayWeather</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Weather.GameplayWeather</code>
  */
 class GameplayWeather extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Map.Weather.GameplayWeather.WeatherCondition gameplay_condition = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.GameplayWeather.WeatherCondition gameplay_condition = 1;</code>
      */
     private $gameplay_condition = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $gameplay_condition
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Weather\GameplayWeather::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.GameplayWeather.WeatherCondition gameplay_condition = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.GameplayWeather.WeatherCondition gameplay_condition = 1;</code>
+     * @return int
      */
     public function getGameplayCondition()
     {
@@ -32,12 +42,16 @@ class GameplayWeather extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Weather.GameplayWeather.WeatherCondition gameplay_condition = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Weather.GameplayWeather.WeatherCondition gameplay_condition = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setGameplayCondition($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Weather\GameplayWeather_WeatherCondition::class);
         $this->gameplay_condition = $var;
+
+        return $this;
     }
 
 }

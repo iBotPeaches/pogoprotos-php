@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Player.PlayerCamera</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Player.PlayerCamera</code>
  */
 class PlayerCamera extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool is_default_camera = 1;</code>
+     * Generated from protobuf field <code>bool is_default_camera = 1;</code>
      */
     private $is_default_camera = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $is_default_camera
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Player\PlayerCamera::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool is_default_camera = 1;</code>
+     * Generated from protobuf field <code>bool is_default_camera = 1;</code>
+     * @return bool
      */
     public function getIsDefaultCamera()
     {
@@ -32,12 +42,16 @@ class PlayerCamera extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool is_default_camera = 1;</code>
+     * Generated from protobuf field <code>bool is_default_camera = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsDefaultCamera($var)
     {
         GPBUtil::checkBool($var);
         $this->is_default_camera = $var;
+
+        return $this;
     }
 
 }

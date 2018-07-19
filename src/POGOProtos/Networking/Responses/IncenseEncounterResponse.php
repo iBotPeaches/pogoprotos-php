@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.IncenseEncounterResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.IncenseEncounterResponse</code>
  */
 class IncenseEncounterResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.IncenseEncounterResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.IncenseEncounterResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 2;</code>
      */
     private $pokemon_data = null;
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>
      */
     private $capture_probability = null;
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
      */
     private $active_item = 0;
     /**
-     * <code>int32 arplus_attempts_until_flee = 5;</code>
+     * Generated from protobuf field <code>int32 arplus_attempts_until_flee = 5;</code>
      */
     private $arplus_attempts_until_flee = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\PokemonData $pokemon_data
+     *     @type \POGOProtos\Data\Capture\CaptureProbability $capture_probability
+     *     @type int $active_item
+     *     @type int $arplus_attempts_until_flee
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\IncenseEncounterResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.IncenseEncounterResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.IncenseEncounterResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -48,16 +62,21 @@ class IncenseEncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.IncenseEncounterResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.IncenseEncounterResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\IncenseEncounterResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 2;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getPokemonData()
     {
@@ -65,16 +84,21 @@ class IncenseEncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 2;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setPokemonData(&$var)
+    public function setPokemonData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->pokemon_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>
+     * @return \POGOProtos\Data\Capture\CaptureProbability
      */
     public function getCaptureProbability()
     {
@@ -82,16 +106,21 @@ class IncenseEncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;</code>
+     * @param \POGOProtos\Data\Capture\CaptureProbability $var
+     * @return $this
      */
-    public function setCaptureProbability(&$var)
+    public function setCaptureProbability($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Capture\CaptureProbability::class);
         $this->capture_probability = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
+     * @return int
      */
     public function getActiveItem()
     {
@@ -99,16 +128,21 @@ class IncenseEncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId active_item = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setActiveItem($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->active_item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 arplus_attempts_until_flee = 5;</code>
+     * Generated from protobuf field <code>int32 arplus_attempts_until_flee = 5;</code>
+     * @return int
      */
     public function getArplusAttemptsUntilFlee()
     {
@@ -116,12 +150,16 @@ class IncenseEncounterResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 arplus_attempts_until_flee = 5;</code>
+     * Generated from protobuf field <code>int32 arplus_attempts_until_flee = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setArplusAttemptsUntilFlee($var)
     {
         GPBUtil::checkInt32($var);
         $this->arplus_attempts_until_flee = $var;
+
+        return $this;
     }
 
 }

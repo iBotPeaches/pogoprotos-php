@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Friends.FriendshipMilestoneReward</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Friends.FriendshipMilestoneReward</code>
  */
 class FriendshipMilestoneReward extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string friend_id = 1;</code>
+     * Generated from protobuf field <code>string friend_id = 1;</code>
      */
     private $friend_id = '';
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone friendship_milestone = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone friendship_milestone = 2;</code>
      */
     private $friendship_milestone = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $friend_id
+     *     @type int $friendship_milestone
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Friends\FriendshipMilestoneReward::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string friend_id = 1;</code>
+     * Generated from protobuf field <code>string friend_id = 1;</code>
+     * @return string
      */
     public function getFriendId()
     {
@@ -36,16 +47,21 @@ class FriendshipMilestoneReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string friend_id = 1;</code>
+     * Generated from protobuf field <code>string friend_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFriendId($var)
     {
         GPBUtil::checkString($var, True);
         $this->friend_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone friendship_milestone = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone friendship_milestone = 2;</code>
+     * @return int
      */
     public function getFriendshipMilestone()
     {
@@ -53,12 +69,16 @@ class FriendshipMilestoneReward extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone friendship_milestone = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone friendship_milestone = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setFriendshipMilestone($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\FriendshipLevelMilestone::class);
         $this->friendship_milestone = $var;
+
+        return $this;
     }
 
 }

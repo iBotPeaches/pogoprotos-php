@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Data;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.PokemonDisplay.Costume</code>
- */
-class PokemonDisplay_Costume
-{
+if (false) {
     /**
-     * <code>COSTUME_UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\PokemonDisplay\Costume instead.
+     * @deprecated
      */
-    const COSTUME_UNSET = 0;
-    /**
-     * <code>HOLIDAY_2016 = 1;</code>
-     */
-    const HOLIDAY_2016 = 1;
-    /**
-     * <code>ANNIVERSARY = 2;</code>
-     */
-    const ANNIVERSARY = 2;
-    /**
-     * <code>ONE_YEAR_ANNIVERSARY = 3;</code>
-     */
-    const ONE_YEAR_ANNIVERSARY = 3;
-    /**
-     * <code>HALLOWEEN_2017 = 4;</code>
-     */
-    const HALLOWEEN_2017 = 4;
-    /**
-     * <code>SUMMER_2018 = 5;</code>
-     */
-    const SUMMER_2018 = 5;
+    class PokemonDisplay_Costume {}
 }
+class_exists(PokemonDisplay\Costume::class);
+@trigger_error('POGOProtos\Data\PokemonDisplay_Costume is deprecated and will be removed in the next major release. Use POGOProtos\Data\PokemonDisplay\Costume instead', E_USER_DEPRECATED);
 

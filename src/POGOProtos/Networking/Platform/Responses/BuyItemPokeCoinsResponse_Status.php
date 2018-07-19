@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Responses;
 
-/**
- * <pre>
- * THESE ARE SOMEWHAT SPECULATED, should be a NOT ENOUGH ROOM status too for bag being full somewhere.
- * </pre>
- *
- * Protobuf enum <code>POGOProtos.Networking.Platform.Responses.BuyItemPokeCoinsResponse.Status</code>
- */
-class BuyItemPokeCoinsResponse_Status
-{
+if (false) {
     /**
-     * <code>UNKNOWN = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Responses\BuyItemPokeCoinsResponse\Status instead.
+     * @deprecated
      */
-    const UNKNOWN = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>NOT_ENOUGH_POKECOINS = 3;</code>
-     */
-    const NOT_ENOUGH_POKECOINS = 3;
+    class BuyItemPokeCoinsResponse_Status {}
 }
+class_exists(BuyItemPokeCoinsResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Platform\Responses\BuyItemPokeCoinsResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Responses\BuyItemPokeCoinsResponse\Status instead', E_USER_DEPRECATED);
 

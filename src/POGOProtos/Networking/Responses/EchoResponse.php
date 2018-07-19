@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.EchoResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.EchoResponse</code>
  */
 class EchoResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string context = 1;</code>
+     * Generated from protobuf field <code>string context = 1;</code>
      */
     private $context = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $context
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\EchoResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string context = 1;</code>
+     * Generated from protobuf field <code>string context = 1;</code>
+     * @return string
      */
     public function getContext()
     {
@@ -32,12 +42,16 @@ class EchoResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string context = 1;</code>
+     * Generated from protobuf field <code>string context = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setContext($var)
     {
         GPBUtil::checkString($var, True);
         $this->context = $var;
+
+        return $this;
     }
 
 }

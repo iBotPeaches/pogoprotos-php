@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.GymBattleAttackResponse.Result</code>
- */
-class GymBattleAttackResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GymBattleAttackResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_INVALID_ATTACK_ACTIONS = 2;</code>
-     */
-    const ERROR_INVALID_ATTACK_ACTIONS = 2;
-    /**
-     * <code>ERROR_NOT_IN_RANGE = 3;</code>
-     */
-    const ERROR_NOT_IN_RANGE = 3;
-    /**
-     * <code>ERROR_WRONG_BATTLE_TYPE = 4;</code>
-     */
-    const ERROR_WRONG_BATTLE_TYPE = 4;
-    /**
-     * <code>ERROR_RAID_ACTIVE = 5;</code>
-     */
-    const ERROR_RAID_ACTIVE = 5;
+    class GymBattleAttackResponse_Result {}
 }
+class_exists(GymBattleAttackResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\GymBattleAttackResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GymBattleAttackResponse\Result instead', E_USER_DEPRECATED);
 

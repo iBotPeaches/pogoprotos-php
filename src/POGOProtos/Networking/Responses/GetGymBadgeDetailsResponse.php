@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetGymBadgeDetailsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetGymBadgeDetailsResponse</code>
  */
 class GetGymBadgeDetailsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
      */
     private $gym_badge = null;
     /**
-     * <code>.POGOProtos.Data.Gym.GymDefender gym_defender = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymDefender gym_defender = 2;</code>
      */
     private $gym_defender = null;
     /**
-     * <code>bool success = 3;</code>
+     * Generated from protobuf field <code>bool success = 3;</code>
      */
     private $success = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Badge\AwardedGymBadge $gym_badge
+     *     @type \POGOProtos\Data\Gym\GymDefender $gym_defender
+     *     @type bool $success
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetGymBadgeDetailsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
+     * @return \POGOProtos\Data\Badge\AwardedGymBadge
      */
     public function getGymBadge()
     {
@@ -40,16 +52,21 @@ class GetGymBadgeDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
+     * @param \POGOProtos\Data\Badge\AwardedGymBadge $var
+     * @return $this
      */
-    public function setGymBadge(&$var)
+    public function setGymBadge($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Badge\AwardedGymBadge::class);
         $this->gym_badge = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Gym.GymDefender gym_defender = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymDefender gym_defender = 2;</code>
+     * @return \POGOProtos\Data\Gym\GymDefender
      */
     public function getGymDefender()
     {
@@ -57,16 +74,21 @@ class GetGymBadgeDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Gym.GymDefender gym_defender = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymDefender gym_defender = 2;</code>
+     * @param \POGOProtos\Data\Gym\GymDefender $var
+     * @return $this
      */
-    public function setGymDefender(&$var)
+    public function setGymDefender($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Gym\GymDefender::class);
         $this->gym_defender = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool success = 3;</code>
+     * Generated from protobuf field <code>bool success = 3;</code>
+     * @return bool
      */
     public function getSuccess()
     {
@@ -74,12 +96,16 @@ class GetGymBadgeDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool success = 3;</code>
+     * Generated from protobuf field <code>bool success = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSuccess($var)
     {
         GPBUtil::checkBool($var);
         $this->success = $var;
+
+        return $this;
     }
 
 }

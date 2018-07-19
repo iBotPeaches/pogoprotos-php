@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.AttackRaidBattleResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.AttackRaidBattleResponse</code>
  */
 class AttackRaidBattleResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.AttackRaidBattleResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.AttackRaidBattleResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 2;</code>
      */
     private $battle_update = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\Battle\BattleUpdate $battle_update
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\AttackRaidBattleResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.AttackRaidBattleResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.AttackRaidBattleResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class AttackRaidBattleResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.AttackRaidBattleResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.AttackRaidBattleResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\AttackRaidBattleResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 2;</code>
+     * @return \POGOProtos\Data\Battle\BattleUpdate
      */
     public function getBattleUpdate()
     {
@@ -53,12 +69,16 @@ class AttackRaidBattleResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 2;</code>
+     * @param \POGOProtos\Data\Battle\BattleUpdate $var
+     * @return $this
      */
-    public function setBattleUpdate(&$var)
+    public function setBattleUpdate($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleUpdate::class);
         $this->battle_update = $var;
+
+        return $this;
     }
 
 }

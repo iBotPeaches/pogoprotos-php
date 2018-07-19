@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.ReleasePokemonMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.ReleasePokemonMessage</code>
  */
 class ReleasePokemonMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
      */
     private $pokemon_id = 0;
     /**
-     * <code>repeated fixed64 pokemon_ids = 2;</code>
+     * Generated from protobuf field <code>repeated fixed64 pokemon_ids = 2;</code>
      */
     private $pokemon_ids;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $pokemon_id
+     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $pokemon_ids
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\ReleasePokemonMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
+     * @return int|string
      */
     public function getPokemonId()
     {
@@ -36,16 +47,21 @@ class ReleasePokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated fixed64 pokemon_ids = 2;</code>
+     * Generated from protobuf field <code>repeated fixed64 pokemon_ids = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPokemonIds()
     {
@@ -53,12 +69,16 @@ class ReleasePokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated fixed64 pokemon_ids = 2;</code>
+     * Generated from protobuf field <code>repeated fixed64 pokemon_ids = 2;</code>
+     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPokemonIds(&$var)
+    public function setPokemonIds($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FIXED64);
-        $this->pokemon_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FIXED64);
+        $this->pokemon_ids = $arr;
+
+        return $this;
     }
 
 }

@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.UseItemReviveResponse.Result</code>
- */
-class UseItemReviveResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\UseItemReviveResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_NO_POKEMON = 2;</code>
-     */
-    const ERROR_NO_POKEMON = 2;
-    /**
-     * <code>ERROR_CANNOT_USE = 3;</code>
-     */
-    const ERROR_CANNOT_USE = 3;
-    /**
-     * <code>ERROR_DEPLOYED_TO_FORT = 4;</code>
-     */
-    const ERROR_DEPLOYED_TO_FORT = 4;
+    class UseItemReviveResponse_Result {}
 }
+class_exists(UseItemReviveResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\UseItemReviveResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\UseItemReviveResponse\Result instead', E_USER_DEPRECATED);
 

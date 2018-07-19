@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetIncensePokemonResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetIncensePokemonResponse</code>
  */
 class GetIncensePokemonResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.GetIncensePokemonResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetIncensePokemonResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
      */
     private $pokemon_id = 0;
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
      */
     private $latitude = 0.0;
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
      */
     private $longitude = 0.0;
     /**
-     * <code>string encounter_location = 5;</code>
+     * Generated from protobuf field <code>string encounter_location = 5;</code>
      */
     private $encounter_location = '';
     /**
-     * <code>fixed64 encounter_id = 6;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 6;</code>
      */
     private $encounter_id = 0;
     /**
-     * <code>int64 disappear_timestamp_ms = 7;</code>
+     * Generated from protobuf field <code>int64 disappear_timestamp_ms = 7;</code>
      */
     private $disappear_timestamp_ms = 0;
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
      */
     private $pokemon_display = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type int $pokemon_id
+     *     @type float $latitude
+     *     @type float $longitude
+     *     @type string $encounter_location
+     *     @type int|string $encounter_id
+     *     @type int|string $disappear_timestamp_ms
+     *     @type \POGOProtos\Data\PokemonDisplay $pokemon_display
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetIncensePokemonResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetIncensePokemonResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetIncensePokemonResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -60,16 +77,21 @@ class GetIncensePokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetIncensePokemonResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetIncensePokemonResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\GetIncensePokemonResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * @return int
      */
     public function getPokemonId()
     {
@@ -77,16 +99,21 @@ class GetIncensePokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
+     * @return float
      */
     public function getLatitude()
     {
@@ -94,16 +121,21 @@ class GetIncensePokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
+     * @return float
      */
     public function getLongitude()
     {
@@ -111,16 +143,21 @@ class GetIncensePokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->longitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string encounter_location = 5;</code>
+     * Generated from protobuf field <code>string encounter_location = 5;</code>
+     * @return string
      */
     public function getEncounterLocation()
     {
@@ -128,16 +165,21 @@ class GetIncensePokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string encounter_location = 5;</code>
+     * Generated from protobuf field <code>string encounter_location = 5;</code>
+     * @param string $var
+     * @return $this
      */
     public function setEncounterLocation($var)
     {
         GPBUtil::checkString($var, True);
         $this->encounter_location = $var;
+
+        return $this;
     }
 
     /**
-     * <code>fixed64 encounter_id = 6;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 6;</code>
+     * @return int|string
      */
     public function getEncounterId()
     {
@@ -145,16 +187,21 @@ class GetIncensePokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 encounter_id = 6;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 6;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setEncounterId($var)
     {
         GPBUtil::checkUint64($var);
         $this->encounter_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 disappear_timestamp_ms = 7;</code>
+     * Generated from protobuf field <code>int64 disappear_timestamp_ms = 7;</code>
+     * @return int|string
      */
     public function getDisappearTimestampMs()
     {
@@ -162,16 +209,21 @@ class GetIncensePokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 disappear_timestamp_ms = 7;</code>
+     * Generated from protobuf field <code>int64 disappear_timestamp_ms = 7;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setDisappearTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->disappear_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     * @return \POGOProtos\Data\PokemonDisplay
      */
     public function getPokemonDisplay()
     {
@@ -179,12 +231,16 @@ class GetIncensePokemonResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 8;</code>
+     * @param \POGOProtos\Data\PokemonDisplay $var
+     * @return $this
      */
-    public function setPokemonDisplay(&$var)
+    public function setPokemonDisplay($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonDisplay::class);
         $this->pokemon_display = $var;
+
+        return $this;
     }
 
 }

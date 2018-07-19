@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Friends.FriendDetails</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Friends.FriendDetails</code>
  */
 class FriendDetails extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Player.PlayerSummary player = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerSummary player = 1;</code>
      */
     private $player = null;
     /**
-     * <code>bytes friend_visible_data = 2;</code>
+     * Generated from protobuf field <code>bytes friend_visible_data = 2;</code>
      */
     private $friend_visible_data = '';
     /**
-     * <code>int32 score = 3;</code>
+     * Generated from protobuf field <code>int32 score = 3;</code>
      */
     private $score = 0;
     /**
-     * <code>bytes data_with_me = 4;</code>
+     * Generated from protobuf field <code>bytes data_with_me = 4;</code>
      */
     private $data_with_me = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Player\PlayerSummary $player
+     *     @type string $friend_visible_data
+     *     @type int $score
+     *     @type string $data_with_me
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Friends\FriendDetails::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerSummary player = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerSummary player = 1;</code>
+     * @return \POGOProtos\Data\Player\PlayerSummary
      */
     public function getPlayer()
     {
@@ -44,16 +57,21 @@ class FriendDetails extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerSummary player = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerSummary player = 1;</code>
+     * @param \POGOProtos\Data\Player\PlayerSummary $var
+     * @return $this
      */
-    public function setPlayer(&$var)
+    public function setPlayer($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerSummary::class);
         $this->player = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bytes friend_visible_data = 2;</code>
+     * Generated from protobuf field <code>bytes friend_visible_data = 2;</code>
+     * @return string
      */
     public function getFriendVisibleData()
     {
@@ -61,16 +79,21 @@ class FriendDetails extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes friend_visible_data = 2;</code>
+     * Generated from protobuf field <code>bytes friend_visible_data = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFriendVisibleData($var)
     {
         GPBUtil::checkString($var, False);
         $this->friend_visible_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 score = 3;</code>
+     * Generated from protobuf field <code>int32 score = 3;</code>
+     * @return int
      */
     public function getScore()
     {
@@ -78,16 +101,21 @@ class FriendDetails extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 score = 3;</code>
+     * Generated from protobuf field <code>int32 score = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setScore($var)
     {
         GPBUtil::checkInt32($var);
         $this->score = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bytes data_with_me = 4;</code>
+     * Generated from protobuf field <code>bytes data_with_me = 4;</code>
+     * @return string
      */
     public function getDataWithMe()
     {
@@ -95,12 +123,16 @@ class FriendDetails extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes data_with_me = 4;</code>
+     * Generated from protobuf field <code>bytes data_with_me = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setDataWithMe($var)
     {
         GPBUtil::checkString($var, False);
         $this->data_with_me = $var;
+
+        return $this;
     }
 
 }

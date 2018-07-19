@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.ClientTelemetryOmni</code>
+ * Generated from protobuf message <code>POGOProtos.Data.ClientTelemetryOmni</code>
  */
 class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.BootTime boot_time = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BootTime boot_time = 1;</code>
      */
     private $boot_time = null;
     /**
-     * <code>.POGOProtos.Data.FrameRate frame_rate = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.FrameRate frame_rate = 2;</code>
      */
     private $frame_rate = null;
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.PlatformServerData server_data = 1001;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformServerData server_data = 1001;</code>
      */
     private $server_data = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\BootTime $boot_time
+     *     @type \POGOProtos\Data\FrameRate $frame_rate
+     *     @type \POGOProtos\Networking\Platform\Telemetry\PlatformServerData $server_data
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\ClientTelemetryOmni::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.BootTime boot_time = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BootTime boot_time = 1;</code>
+     * @return \POGOProtos\Data\BootTime
      */
     public function getBootTime()
     {
@@ -40,16 +52,21 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.BootTime boot_time = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.BootTime boot_time = 1;</code>
+     * @param \POGOProtos\Data\BootTime $var
+     * @return $this
      */
-    public function setBootTime(&$var)
+    public function setBootTime($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\BootTime::class);
         $this->boot_time = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.FrameRate frame_rate = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.FrameRate frame_rate = 2;</code>
+     * @return \POGOProtos\Data\FrameRate
      */
     public function getFrameRate()
     {
@@ -57,16 +74,21 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.FrameRate frame_rate = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.FrameRate frame_rate = 2;</code>
+     * @param \POGOProtos\Data\FrameRate $var
+     * @return $this
      */
-    public function setFrameRate(&$var)
+    public function setFrameRate($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\FrameRate::class);
         $this->frame_rate = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.PlatformServerData server_data = 1001;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformServerData server_data = 1001;</code>
+     * @return \POGOProtos\Networking\Platform\Telemetry\PlatformServerData
      */
     public function getServerData()
     {
@@ -74,12 +96,16 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Platform.Telemetry.PlatformServerData server_data = 1001;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformServerData server_data = 1001;</code>
+     * @param \POGOProtos\Networking\Platform\Telemetry\PlatformServerData $var
+     * @return $this
      */
-    public function setServerData(&$var)
+    public function setServerData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\PlatformServerData::class);
         $this->server_data = $var;
+
+        return $this;
     }
 
 }

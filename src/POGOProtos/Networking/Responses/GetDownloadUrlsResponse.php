@@ -9,26 +9,34 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * <pre>
  * UNTESTED
- * </pre>
  *
- * Protobuf type <code>POGOProtos.Networking.Responses.GetDownloadUrlsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetDownloadUrlsResponse</code>
  */
 class GetDownloadUrlsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Data.DownloadUrlEntry download_urls = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.DownloadUrlEntry download_urls = 1;</code>
      */
     private $download_urls;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\DownloadUrlEntry[]|\Google\Protobuf\Internal\RepeatedField $download_urls
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetDownloadUrlsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.DownloadUrlEntry download_urls = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.DownloadUrlEntry download_urls = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getDownloadUrls()
     {
@@ -36,12 +44,16 @@ class GetDownloadUrlsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.DownloadUrlEntry download_urls = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.DownloadUrlEntry download_urls = 1;</code>
+     * @param \POGOProtos\Data\DownloadUrlEntry[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDownloadUrls(&$var)
+    public function setDownloadUrls($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\DownloadUrlEntry::class);
-        $this->download_urls = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\DownloadUrlEntry::class);
+        $this->download_urls = $arr;
+
+        return $this;
     }
 
 }

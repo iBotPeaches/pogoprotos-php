@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Gift.GiftBoxes</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Gift.GiftBoxes</code>
  */
 class GiftBoxes extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Data.Gift.GiftBox gifts = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gift.GiftBox gifts = 1;</code>
      */
     private $gifts;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Gift\GiftBox[]|\Google\Protobuf\Internal\RepeatedField $gifts
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Gift\GiftBoxes::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gift.GiftBox gifts = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gift.GiftBox gifts = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getGifts()
     {
@@ -32,12 +42,16 @@ class GiftBoxes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Gift.GiftBox gifts = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Gift.GiftBox gifts = 1;</code>
+     * @param \POGOProtos\Data\Gift\GiftBox[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGifts(&$var)
+    public function setGifts($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gift\GiftBox::class);
-        $this->gifts = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Gift\GiftBox::class);
+        $this->gifts = $arr;
+
+        return $this;
     }
 
 }

@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.QuestSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.QuestSettings</code>
  */
 class QuestSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.QuestType quest_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.QuestType quest_type = 1;</code>
      */
     private $quest_type = 0;
     /**
-     * <code>.POGOProtos.Settings.Master.Quest.DailyQuestSettings daily_quest = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Quest.DailyQuestSettings daily_quest = 2;</code>
      */
     private $daily_quest = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $quest_type
+     *     @type \POGOProtos\Settings\Master\Quest\DailyQuestSettings $daily_quest
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\QuestSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.QuestType quest_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.QuestType quest_type = 1;</code>
+     * @return int
      */
     public function getQuestType()
     {
@@ -36,16 +47,21 @@ class QuestSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.QuestType quest_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.QuestType quest_type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setQuestType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\QuestType::class);
         $this->quest_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Quest.DailyQuestSettings daily_quest = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Quest.DailyQuestSettings daily_quest = 2;</code>
+     * @return \POGOProtos\Settings\Master\Quest\DailyQuestSettings
      */
     public function getDailyQuest()
     {
@@ -53,12 +69,16 @@ class QuestSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Quest.DailyQuestSettings daily_quest = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Quest.DailyQuestSettings daily_quest = 2;</code>
+     * @param \POGOProtos\Settings\Master\Quest\DailyQuestSettings $var
+     * @return $this
      */
-    public function setDailyQuest(&$var)
+    public function setDailyQuest($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Quest\DailyQuestSettings::class);
         $this->daily_quest = $var;
+
+        return $this;
     }
 
 }

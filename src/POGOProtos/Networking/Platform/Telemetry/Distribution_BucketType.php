@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Telemetry;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Platform.Telemetry.Distribution.BucketType</code>
- */
-class Distribution_BucketType
-{
+if (false) {
     /**
-     * <code>none = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Telemetry\Distribution\BucketType instead.
+     * @deprecated
      */
-    const none = 0;
-    /**
-     * <code>linear_buckets = 1;</code>
-     */
-    const linear_buckets = 1;
-    /**
-     * <code>exponential_buckets = 2;</code>
-     */
-    const exponential_buckets = 2;
-    /**
-     * <code>explicit_buckets = 3;</code>
-     */
-    const explicit_buckets = 3;
+    class Distribution_BucketType {}
 }
+class_exists(Distribution\BucketType::class);
+@trigger_error('POGOProtos\Networking\Platform\Telemetry\Distribution_BucketType is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Telemetry\Distribution\BucketType instead', E_USER_DEPRECATED);
 

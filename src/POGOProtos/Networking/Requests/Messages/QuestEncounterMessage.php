@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.QuestEncounterMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.QuestEncounterMessage</code>
  */
 class QuestEncounterMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>fixed64 encounter_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 1;</code>
      */
     private $encounter_id = 0;
     /**
-     * <code>string spawn_point_id = 2;</code>
+     * Generated from protobuf field <code>string spawn_point_id = 2;</code>
      */
     private $spawn_point_id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $encounter_id
+     *     @type string $spawn_point_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\QuestEncounterMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>fixed64 encounter_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 1;</code>
+     * @return int|string
      */
     public function getEncounterId()
     {
@@ -36,16 +47,21 @@ class QuestEncounterMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 encounter_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setEncounterId($var)
     {
         GPBUtil::checkUint64($var);
         $this->encounter_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string spawn_point_id = 2;</code>
+     * Generated from protobuf field <code>string spawn_point_id = 2;</code>
+     * @return string
      */
     public function getSpawnPointId()
     {
@@ -53,12 +69,16 @@ class QuestEncounterMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string spawn_point_id = 2;</code>
+     * Generated from protobuf field <code>string spawn_point_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSpawnPointId($var)
     {
         GPBUtil::checkString($var, True);
         $this->spawn_point_id = $var;
+
+        return $this;
     }
 
 }

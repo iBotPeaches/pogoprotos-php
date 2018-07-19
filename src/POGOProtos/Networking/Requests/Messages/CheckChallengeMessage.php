@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.CheckChallengeMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.CheckChallengeMessage</code>
  */
 class CheckChallengeMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool debug_request = 1;</code>
+     * Generated from protobuf field <code>bool debug_request = 1;</code>
      */
     private $debug_request = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $debug_request
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\CheckChallengeMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool debug_request = 1;</code>
+     * Generated from protobuf field <code>bool debug_request = 1;</code>
+     * @return bool
      */
     public function getDebugRequest()
     {
@@ -32,12 +42,16 @@ class CheckChallengeMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool debug_request = 1;</code>
+     * Generated from protobuf field <code>bool debug_request = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setDebugRequest($var)
     {
         GPBUtil::checkBool($var);
         $this->debug_request = $var;
+
+        return $this;
     }
 
 }

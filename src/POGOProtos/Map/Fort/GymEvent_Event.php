@@ -4,46 +4,13 @@
 
 namespace POGOProtos\Map\Fort;
 
-/**
- * Protobuf enum <code>POGOProtos.Map.Fort.GymEvent.Event</code>
- */
-class GymEvent_Event
-{
+if (false) {
     /**
-     * <code>UNKNOWN = 0;</code>
+     * This class is deprecated. Use POGOProtos\Map\Fort\GymEvent\Event instead.
+     * @deprecated
      */
-    const UNKNOWN = 0;
-    /**
-     * <code>POKEMON_FED = 1;</code>
-     */
-    const POKEMON_FED = 1;
-    /**
-     * <code>POKEMON_DEPLOYED = 2;</code>
-     */
-    const POKEMON_DEPLOYED = 2;
-    /**
-     * <code>POKEMON_RETURNED = 3;</code>
-     */
-    const POKEMON_RETURNED = 3;
-    /**
-     * <code>BATTLE_WON = 4;</code>
-     */
-    const BATTLE_WON = 4;
-    /**
-     * <code>BATTLE_LOSS = 5;</code>
-     */
-    const BATTLE_LOSS = 5;
-    /**
-     * <code>RAID_STARTED = 6;</code>
-     */
-    const RAID_STARTED = 6;
-    /**
-     * <code>RAID_ENDED = 7;</code>
-     */
-    const RAID_ENDED = 7;
-    /**
-     * <code>GYM_NEUTRALIZED = 8;</code>
-     */
-    const GYM_NEUTRALIZED = 8;
+    class GymEvent_Event {}
 }
+class_exists(GymEvent\Event::class);
+@trigger_error('POGOProtos\Map\Fort\GymEvent_Event is deprecated and will be removed in the next major release. Use POGOProtos\Map\Fort\GymEvent\Event instead', E_USER_DEPRECATED);
 

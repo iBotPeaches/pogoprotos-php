@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Ditto.PasscodeEventParams</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Ditto.PasscodeEventParams</code>
  */
 class PasscodeEventParams extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string passcode = 1;</code>
+     * Generated from protobuf field <code>string passcode = 1;</code>
      */
     private $passcode = '';
     /**
-     * <code>bytes acquired_items_proto = 2;</code>
+     * Generated from protobuf field <code>bytes acquired_items_proto = 2;</code>
      */
     private $acquired_items_proto = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $passcode
+     *     @type string $acquired_items_proto
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Ditto\PasscodeEventParams::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string passcode = 1;</code>
+     * Generated from protobuf field <code>string passcode = 1;</code>
+     * @return string
      */
     public function getPasscode()
     {
@@ -36,16 +47,21 @@ class PasscodeEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string passcode = 1;</code>
+     * Generated from protobuf field <code>string passcode = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPasscode($var)
     {
         GPBUtil::checkString($var, True);
         $this->passcode = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bytes acquired_items_proto = 2;</code>
+     * Generated from protobuf field <code>bytes acquired_items_proto = 2;</code>
+     * @return string
      */
     public function getAcquiredItemsProto()
     {
@@ -53,12 +69,16 @@ class PasscodeEventParams extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes acquired_items_proto = 2;</code>
+     * Generated from protobuf field <code>bytes acquired_items_proto = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAcquiredItemsProto($var)
     {
         GPBUtil::checkString($var, False);
         $this->acquired_items_proto = $var;
+
+        return $this;
     }
 
 }

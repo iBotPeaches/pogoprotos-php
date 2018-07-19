@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.DownloadItemTemplatesMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.DownloadItemTemplatesMessage</code>
  */
 class DownloadItemTemplatesMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool paginate = 1;</code>
+     * Generated from protobuf field <code>bool paginate = 1;</code>
      */
     private $paginate = false;
     /**
-     * <code>int32 page_offset = 2;</code>
+     * Generated from protobuf field <code>int32 page_offset = 2;</code>
      */
     private $page_offset = 0;
     /**
-     * <code>uint64 page_timestamp = 3;</code>
+     * Generated from protobuf field <code>uint64 page_timestamp = 3;</code>
      */
     private $page_timestamp = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $paginate
+     *     @type int $page_offset
+     *     @type int|string $page_timestamp
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\DownloadItemTemplatesMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool paginate = 1;</code>
+     * Generated from protobuf field <code>bool paginate = 1;</code>
+     * @return bool
      */
     public function getPaginate()
     {
@@ -40,16 +52,21 @@ class DownloadItemTemplatesMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool paginate = 1;</code>
+     * Generated from protobuf field <code>bool paginate = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setPaginate($var)
     {
         GPBUtil::checkBool($var);
         $this->paginate = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 page_offset = 2;</code>
+     * Generated from protobuf field <code>int32 page_offset = 2;</code>
+     * @return int
      */
     public function getPageOffset()
     {
@@ -57,16 +74,21 @@ class DownloadItemTemplatesMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 page_offset = 2;</code>
+     * Generated from protobuf field <code>int32 page_offset = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPageOffset($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_offset = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 page_timestamp = 3;</code>
+     * Generated from protobuf field <code>uint64 page_timestamp = 3;</code>
+     * @return int|string
      */
     public function getPageTimestamp()
     {
@@ -74,12 +96,16 @@ class DownloadItemTemplatesMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 page_timestamp = 3;</code>
+     * Generated from protobuf field <code>uint64 page_timestamp = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPageTimestamp($var)
     {
         GPBUtil::checkUint64($var);
         $this->page_timestamp = $var;
+
+        return $this;
     }
 
 }

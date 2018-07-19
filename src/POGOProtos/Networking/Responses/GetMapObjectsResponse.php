@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetMapObjectsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetMapObjectsResponse</code>
  */
 class GetMapObjectsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Map.MapCell map_cells = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.MapCell map_cells = 1;</code>
      */
     private $map_cells;
     /**
-     * <code>.POGOProtos.Map.MapObjectsStatus status = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.MapObjectsStatus status = 2;</code>
      */
     private $status = 0;
     /**
-     * <code>.POGOProtos.Networking.Responses.GetMapObjectsResponse.TimeOfDay time_of_day = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetMapObjectsResponse.TimeOfDay time_of_day = 3;</code>
      */
     private $time_of_day = 0;
     /**
-     * <code>repeated .POGOProtos.Map.Weather.ClientWeather client_weather = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Weather.ClientWeather client_weather = 4;</code>
      */
     private $client_weather;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Map\MapCell[]|\Google\Protobuf\Internal\RepeatedField $map_cells
+     *     @type int $status
+     *     @type int $time_of_day
+     *     @type \POGOProtos\Map\Weather\ClientWeather[]|\Google\Protobuf\Internal\RepeatedField $client_weather
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetMapObjectsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.MapCell map_cells = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.MapCell map_cells = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getMapCells()
     {
@@ -44,16 +57,21 @@ class GetMapObjectsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.MapCell map_cells = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.MapCell map_cells = 1;</code>
+     * @param \POGOProtos\Map\MapCell[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setMapCells(&$var)
+    public function setMapCells($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\MapCell::class);
-        $this->map_cells = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\MapCell::class);
+        $this->map_cells = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.MapObjectsStatus status = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.MapObjectsStatus status = 2;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -61,16 +79,21 @@ class GetMapObjectsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.MapObjectsStatus status = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.MapObjectsStatus status = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\MapObjectsStatus::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetMapObjectsResponse.TimeOfDay time_of_day = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetMapObjectsResponse.TimeOfDay time_of_day = 3;</code>
+     * @return int
      */
     public function getTimeOfDay()
     {
@@ -78,16 +101,21 @@ class GetMapObjectsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetMapObjectsResponse.TimeOfDay time_of_day = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetMapObjectsResponse.TimeOfDay time_of_day = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTimeOfDay($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\GetMapObjectsResponse_TimeOfDay::class);
         $this->time_of_day = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.Weather.ClientWeather client_weather = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Weather.ClientWeather client_weather = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getClientWeather()
     {
@@ -95,12 +123,16 @@ class GetMapObjectsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.Weather.ClientWeather client_weather = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Weather.ClientWeather client_weather = 4;</code>
+     * @param \POGOProtos\Map\Weather\ClientWeather[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setClientWeather(&$var)
+    public function setClientWeather($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Weather\ClientWeather::class);
-        $this->client_weather = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Weather\ClientWeather::class);
+        $this->client_weather = $arr;
+
+        return $this;
     }
 
 }

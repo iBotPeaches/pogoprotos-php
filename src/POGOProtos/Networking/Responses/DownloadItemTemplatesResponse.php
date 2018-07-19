@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.DownloadItemTemplatesResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.DownloadItemTemplatesResponse</code>
  */
 class DownloadItemTemplatesResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.ItemTemplate item_templates = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.ItemTemplate item_templates = 2;</code>
      */
     private $item_templates;
     /**
-     * <code>uint64 timestamp_ms = 3;</code>
+     * Generated from protobuf field <code>uint64 timestamp_ms = 3;</code>
      */
     private $timestamp_ms = 0;
     /**
-     * <code>int32 page_offset = 4;</code>
+     * Generated from protobuf field <code>int32 page_offset = 4;</code>
      */
     private $page_offset = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Networking\Responses\DownloadItemTemplatesResponse\ItemTemplate[]|\Google\Protobuf\Internal\RepeatedField $item_templates
+     *     @type int|string $timestamp_ms
+     *     @type int $page_offset
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\DownloadItemTemplatesResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -44,16 +57,21 @@ class DownloadItemTemplatesResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\DownloadItemTemplatesResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.ItemTemplate item_templates = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.ItemTemplate item_templates = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getItemTemplates()
     {
@@ -61,16 +79,21 @@ class DownloadItemTemplatesResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.ItemTemplate item_templates = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.ItemTemplate item_templates = 2;</code>
+     * @param \POGOProtos\Networking\Responses\DownloadItemTemplatesResponse\ItemTemplate[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItemTemplates(&$var)
+    public function setItemTemplates($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Responses\DownloadItemTemplatesResponse_ItemTemplate::class);
-        $this->item_templates = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Responses\DownloadItemTemplatesResponse\ItemTemplate::class);
+        $this->item_templates = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 timestamp_ms = 3;</code>
+     * Generated from protobuf field <code>uint64 timestamp_ms = 3;</code>
+     * @return int|string
      */
     public function getTimestampMs()
     {
@@ -78,16 +101,21 @@ class DownloadItemTemplatesResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 timestamp_ms = 3;</code>
+     * Generated from protobuf field <code>uint64 timestamp_ms = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTimestampMs($var)
     {
         GPBUtil::checkUint64($var);
         $this->timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 page_offset = 4;</code>
+     * Generated from protobuf field <code>int32 page_offset = 4;</code>
+     * @return int
      */
     public function getPageOffset()
     {
@@ -95,12 +123,16 @@ class DownloadItemTemplatesResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 page_offset = 4;</code>
+     * Generated from protobuf field <code>int32 page_offset = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPageOffset($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_offset = $var;
+
+        return $this;
     }
 
 }

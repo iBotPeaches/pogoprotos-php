@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.BadgeSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.BadgeSettings</code>
  */
 class BadgeSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
      */
     private $badge_type = 0;
     /**
-     * <code>int32 badge_rank = 2;</code>
+     * Generated from protobuf field <code>int32 badge_rank = 2;</code>
      */
     private $badge_rank = 0;
     /**
-     * <code>repeated int32 targets = 3;</code>
+     * Generated from protobuf field <code>repeated int32 targets = 3;</code>
      */
     private $targets;
     /**
-     * <code>repeated .POGOProtos.Data.Badge.BadgeCaptureReward capture_reward = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Badge.BadgeCaptureReward capture_reward = 4;</code>
      */
     private $capture_reward;
     /**
-     * <code>bool event_badge = 5;</code>
+     * Generated from protobuf field <code>bool event_badge = 5;</code>
      */
     private $event_badge = false;
     /**
-     * <code>.POGOProtos.Settings.Master.EventBadgeSettings event_badge_settings = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.EventBadgeSettings event_badge_settings = 6;</code>
      */
     private $event_badge_settings = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $badge_type
+     *     @type int $badge_rank
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $targets
+     *     @type \POGOProtos\Data\Badge\BadgeCaptureReward[]|\Google\Protobuf\Internal\RepeatedField $capture_reward
+     *     @type bool $event_badge
+     *     @type \POGOProtos\Settings\Master\EventBadgeSettings $event_badge_settings
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\BadgeSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * @return int
      */
     public function getBadgeType()
     {
@@ -52,16 +67,21 @@ class BadgeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBadgeType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\BadgeType::class);
         $this->badge_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 badge_rank = 2;</code>
+     * Generated from protobuf field <code>int32 badge_rank = 2;</code>
+     * @return int
      */
     public function getBadgeRank()
     {
@@ -69,16 +89,21 @@ class BadgeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 badge_rank = 2;</code>
+     * Generated from protobuf field <code>int32 badge_rank = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBadgeRank($var)
     {
         GPBUtil::checkInt32($var);
         $this->badge_rank = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 targets = 3;</code>
+     * Generated from protobuf field <code>repeated int32 targets = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getTargets()
     {
@@ -86,16 +111,21 @@ class BadgeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 targets = 3;</code>
+     * Generated from protobuf field <code>repeated int32 targets = 3;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTargets(&$var)
+    public function setTargets($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->targets = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->targets = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Badge.BadgeCaptureReward capture_reward = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Badge.BadgeCaptureReward capture_reward = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCaptureReward()
     {
@@ -103,16 +133,21 @@ class BadgeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Badge.BadgeCaptureReward capture_reward = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Badge.BadgeCaptureReward capture_reward = 4;</code>
+     * @param \POGOProtos\Data\Badge\BadgeCaptureReward[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCaptureReward(&$var)
+    public function setCaptureReward($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Badge\BadgeCaptureReward::class);
-        $this->capture_reward = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Badge\BadgeCaptureReward::class);
+        $this->capture_reward = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>bool event_badge = 5;</code>
+     * Generated from protobuf field <code>bool event_badge = 5;</code>
+     * @return bool
      */
     public function getEventBadge()
     {
@@ -120,16 +155,21 @@ class BadgeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool event_badge = 5;</code>
+     * Generated from protobuf field <code>bool event_badge = 5;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEventBadge($var)
     {
         GPBUtil::checkBool($var);
         $this->event_badge = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.EventBadgeSettings event_badge_settings = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.EventBadgeSettings event_badge_settings = 6;</code>
+     * @return \POGOProtos\Settings\Master\EventBadgeSettings
      */
     public function getEventBadgeSettings()
     {
@@ -137,12 +177,16 @@ class BadgeSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.EventBadgeSettings event_badge_settings = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.EventBadgeSettings event_badge_settings = 6;</code>
+     * @param \POGOProtos\Settings\Master\EventBadgeSettings $var
+     * @return $this
      */
-    public function setEventBadgeSettings(&$var)
+    public function setEventBadgeSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\EventBadgeSettings::class);
         $this->event_badge_settings = $var;
+
+        return $this;
     }
 
 }

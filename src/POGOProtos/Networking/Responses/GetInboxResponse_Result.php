@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.GetInboxResponse.Result</code>
- */
-class GetInboxResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GetInboxResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>FAILURE = 2;</code>
-     */
-    const FAILURE = 2;
-    /**
-     * <code>TIMED_OUT = 3;</code>
-     */
-    const TIMED_OUT = 3;
+    class GetInboxResponse_Result {}
 }
+class_exists(GetInboxResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\GetInboxResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GetInboxResponse\Result instead', E_USER_DEPRECATED);
 

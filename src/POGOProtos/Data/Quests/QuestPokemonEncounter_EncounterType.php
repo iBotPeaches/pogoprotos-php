@@ -4,38 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Quests.QuestPokemonEncounter.EncounterType</code>
- */
-class QuestPokemonEncounter_EncounterType
-{
+if (false) {
     /**
-     * <code>SPAWN_POINT = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestPokemonEncounter\EncounterType instead.
+     * @deprecated
      */
-    const SPAWN_POINT = 0;
-    /**
-     * <code>INCENSE = 1;</code>
-     */
-    const INCENSE = 1;
-    /**
-     * <code>DISK = 2;</code>
-     */
-    const DISK = 2;
-    /**
-     * <code>POST_RAID = 3;</code>
-     */
-    const POST_RAID = 3;
-    /**
-     * <code>STORY_QUEST = 4;</code>
-     */
-    const STORY_QUEST = 4;
-    /**
-     * <code>QUEST_STAMP_CARD = 5;</code>
-     */
-    const QUEST_STAMP_CARD = 5;
-    /**
-     * <code>CHALLENGE_QUEST = 6;</code>
-     */
-    const CHALLENGE_QUEST = 6;
+    class QuestPokemonEncounter_EncounterType {}
 }
+class_exists(QuestPokemonEncounter\EncounterType::class);
+@trigger_error('POGOProtos\Data\Quests\QuestPokemonEncounter_EncounterType is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestPokemonEncounter\EncounterType instead', E_USER_DEPRECATED);
 

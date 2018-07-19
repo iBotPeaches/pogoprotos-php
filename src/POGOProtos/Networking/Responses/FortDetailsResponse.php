@@ -9,82 +9,107 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.FortDetailsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.FortDetailsResponse</code>
  */
 class FortDetailsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
      */
     private $fort_id = '';
     /**
-     * <code>.POGOProtos.Enums.TeamColor team_color = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team_color = 2;</code>
      */
     private $team_color = 0;
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 3;</code>
      */
     private $pokemon_data = null;
     /**
-     * <code>string name = 4;</code>
+     * Generated from protobuf field <code>string name = 4;</code>
      */
     private $name = '';
     /**
-     * <code>repeated string image_urls = 5;</code>
+     * Generated from protobuf field <code>repeated string image_urls = 5;</code>
      */
     private $image_urls;
     /**
-     * <code>int32 fp = 6;</code>
+     * Generated from protobuf field <code>int32 fp = 6;</code>
      */
     private $fp = 0;
     /**
-     * <code>int32 stamina = 7;</code>
+     * Generated from protobuf field <code>int32 stamina = 7;</code>
      */
     private $stamina = 0;
     /**
-     * <code>int32 max_stamina = 8;</code>
+     * Generated from protobuf field <code>int32 max_stamina = 8;</code>
      */
     private $max_stamina = 0;
     /**
-     * <code>.POGOProtos.Map.Fort.FortType type = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortType type = 9;</code>
      */
     private $type = 0;
     /**
-     * <code>double latitude = 10;</code>
+     * Generated from protobuf field <code>double latitude = 10;</code>
      */
     private $latitude = 0.0;
     /**
-     * <code>double longitude = 11;</code>
+     * Generated from protobuf field <code>double longitude = 11;</code>
      */
     private $longitude = 0.0;
     /**
-     * <code>string description = 12;</code>
+     * Generated from protobuf field <code>string description = 12;</code>
      */
     private $description = '';
     /**
-     * <code>repeated .POGOProtos.Map.Fort.FortModifier modifiers = 13;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Fort.FortModifier modifiers = 13;</code>
      */
     private $modifiers;
     /**
-     * <code>bool close_soon = 14;</code>
+     * Generated from protobuf field <code>bool close_soon = 14;</code>
      */
     private $close_soon = false;
     /**
-     * <code>string checkin_image_url = 15;</code>
+     * Generated from protobuf field <code>string checkin_image_url = 15;</code>
      */
     private $checkin_image_url = '';
     /**
-     * <code>.POGOProtos.Data.Raid.EventInfo event_info = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.EventInfo event_info = 16;</code>
      */
     private $event_info = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $fort_id
+     *     @type int $team_color
+     *     @type \POGOProtos\Data\PokemonData $pokemon_data
+     *     @type string $name
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $image_urls
+     *     @type int $fp
+     *     @type int $stamina
+     *     @type int $max_stamina
+     *     @type int $type
+     *     @type float $latitude
+     *     @type float $longitude
+     *     @type string $description
+     *     @type \POGOProtos\Map\Fort\FortModifier[]|\Google\Protobuf\Internal\RepeatedField $modifiers
+     *     @type bool $close_soon
+     *     @type string $checkin_image_url
+     *     @type \POGOProtos\Data\Raid\EventInfo $event_info
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\FortDetailsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -92,16 +117,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.TeamColor team_color = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team_color = 2;</code>
+     * @return int
      */
     public function getTeamColor()
     {
@@ -109,16 +139,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.TeamColor team_color = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team_color = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTeamColor($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\TeamColor::class);
         $this->team_color = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 3;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getPokemonData()
     {
@@ -126,16 +161,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 3;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setPokemonData(&$var)
+    public function setPokemonData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->pokemon_data = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string name = 4;</code>
+     * Generated from protobuf field <code>string name = 4;</code>
+     * @return string
      */
     public function getName()
     {
@@ -143,16 +183,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string name = 4;</code>
+     * Generated from protobuf field <code>string name = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated string image_urls = 5;</code>
+     * Generated from protobuf field <code>repeated string image_urls = 5;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getImageUrls()
     {
@@ -160,16 +205,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string image_urls = 5;</code>
+     * Generated from protobuf field <code>repeated string image_urls = 5;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setImageUrls(&$var)
+    public function setImageUrls($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->image_urls = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->image_urls = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 fp = 6;</code>
+     * Generated from protobuf field <code>int32 fp = 6;</code>
+     * @return int
      */
     public function getFp()
     {
@@ -177,16 +227,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 fp = 6;</code>
+     * Generated from protobuf field <code>int32 fp = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setFp($var)
     {
         GPBUtil::checkInt32($var);
         $this->fp = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 stamina = 7;</code>
+     * Generated from protobuf field <code>int32 stamina = 7;</code>
+     * @return int
      */
     public function getStamina()
     {
@@ -194,16 +249,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 stamina = 7;</code>
+     * Generated from protobuf field <code>int32 stamina = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStamina($var)
     {
         GPBUtil::checkInt32($var);
         $this->stamina = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_stamina = 8;</code>
+     * Generated from protobuf field <code>int32 max_stamina = 8;</code>
+     * @return int
      */
     public function getMaxStamina()
     {
@@ -211,16 +271,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_stamina = 8;</code>
+     * Generated from protobuf field <code>int32 max_stamina = 8;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxStamina($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_stamina = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortType type = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortType type = 9;</code>
+     * @return int
      */
     public function getType()
     {
@@ -228,16 +293,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.FortType type = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortType type = 9;</code>
+     * @param int $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Fort\FortType::class);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double latitude = 10;</code>
+     * Generated from protobuf field <code>double latitude = 10;</code>
+     * @return float
      */
     public function getLatitude()
     {
@@ -245,16 +315,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double latitude = 10;</code>
+     * Generated from protobuf field <code>double latitude = 10;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double longitude = 11;</code>
+     * Generated from protobuf field <code>double longitude = 11;</code>
+     * @return float
      */
     public function getLongitude()
     {
@@ -262,16 +337,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double longitude = 11;</code>
+     * Generated from protobuf field <code>double longitude = 11;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->longitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string description = 12;</code>
+     * Generated from protobuf field <code>string description = 12;</code>
+     * @return string
      */
     public function getDescription()
     {
@@ -279,16 +359,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string description = 12;</code>
+     * Generated from protobuf field <code>string description = 12;</code>
+     * @param string $var
+     * @return $this
      */
     public function setDescription($var)
     {
         GPBUtil::checkString($var, True);
         $this->description = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.Fort.FortModifier modifiers = 13;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Fort.FortModifier modifiers = 13;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getModifiers()
     {
@@ -296,16 +381,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Map.Fort.FortModifier modifiers = 13;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Map.Fort.FortModifier modifiers = 13;</code>
+     * @param \POGOProtos\Map\Fort\FortModifier[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setModifiers(&$var)
+    public function setModifiers($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Fort\FortModifier::class);
-        $this->modifiers = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Map\Fort\FortModifier::class);
+        $this->modifiers = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>bool close_soon = 14;</code>
+     * Generated from protobuf field <code>bool close_soon = 14;</code>
+     * @return bool
      */
     public function getCloseSoon()
     {
@@ -313,16 +403,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool close_soon = 14;</code>
+     * Generated from protobuf field <code>bool close_soon = 14;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setCloseSoon($var)
     {
         GPBUtil::checkBool($var);
         $this->close_soon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string checkin_image_url = 15;</code>
+     * Generated from protobuf field <code>string checkin_image_url = 15;</code>
+     * @return string
      */
     public function getCheckinImageUrl()
     {
@@ -330,16 +425,21 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string checkin_image_url = 15;</code>
+     * Generated from protobuf field <code>string checkin_image_url = 15;</code>
+     * @param string $var
+     * @return $this
      */
     public function setCheckinImageUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->checkin_image_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.EventInfo event_info = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.EventInfo event_info = 16;</code>
+     * @return \POGOProtos\Data\Raid\EventInfo
      */
     public function getEventInfo()
     {
@@ -347,12 +447,16 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.EventInfo event_info = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.EventInfo event_info = 16;</code>
+     * @param \POGOProtos\Data\Raid\EventInfo $var
+     * @return $this
      */
-    public function setEventInfo(&$var)
+    public function setEventInfo($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Raid\EventInfo::class);
         $this->event_info = $var;
+
+        return $this;
     }
 
 }

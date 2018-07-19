@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage</code>
  */
 class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatarType avatar_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatarType avatar_type = 1;</code>
      */
     private $avatar_type = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 2;</code>
      */
     private $slot;
     /**
-     * <code>repeated .POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter filters = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter filters = 3;</code>
      */
     private $filters;
     /**
-     * <code>int32 start = 4;</code>
+     * Generated from protobuf field <code>int32 start = 4;</code>
      */
     private $start = 0;
     /**
-     * <code>int32 limit = 5;</code>
+     * Generated from protobuf field <code>int32 limit = 5;</code>
      */
     private $limit = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $avatar_type
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $slot
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $filters
+     *     @type int $start
+     *     @type int $limit
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\ListAvatarCustomizationsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatarType avatar_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatarType avatar_type = 1;</code>
+     * @return int
      */
     public function getAvatarType()
     {
@@ -48,16 +62,21 @@ class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Player.PlayerAvatarType avatar_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerAvatarType avatar_type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setAvatarType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Player\PlayerAvatarType::class);
         $this->avatar_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getSlot()
     {
@@ -65,16 +84,21 @@ class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Avatar.AvatarCustomization.Slot slot = 2;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSlot(&$var)
+    public function setSlot($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Data\Avatar\AvatarCustomization_Slot::class);
-        $this->slot = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Data\Avatar\AvatarCustomization\Slot::class);
+        $this->slot = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter filters = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter filters = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getFilters()
     {
@@ -82,16 +106,21 @@ class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter filters = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter filters = 3;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setFilters(&$var)
+    public function setFilters($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Networking\Requests\Messages\ListAvatarCustomizationsMessage_Filter::class);
-        $this->filters = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Networking\Requests\Messages\ListAvatarCustomizationsMessage\Filter::class);
+        $this->filters = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 start = 4;</code>
+     * Generated from protobuf field <code>int32 start = 4;</code>
+     * @return int
      */
     public function getStart()
     {
@@ -99,16 +128,21 @@ class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 start = 4;</code>
+     * Generated from protobuf field <code>int32 start = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStart($var)
     {
         GPBUtil::checkInt32($var);
         $this->start = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 limit = 5;</code>
+     * Generated from protobuf field <code>int32 limit = 5;</code>
+     * @return int
      */
     public function getLimit()
     {
@@ -116,12 +150,16 @@ class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 limit = 5;</code>
+     * Generated from protobuf field <code>int32 limit = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setLimit($var)
     {
         GPBUtil::checkInt32($var);
         $this->limit = $var;
+
+        return $this;
     }
 
 }

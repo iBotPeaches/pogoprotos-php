@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.AssetCache.JournalReadEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.AssetCache.JournalReadEntry</code>
  */
 class JournalReadEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.AssetCache.HashedKey hashed_key = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.HashedKey hashed_key = 1;</code>
      */
     private $hashed_key = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\AssetCache\HashedKey $hashed_key
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\AssetCache\JournalReadEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.AssetCache.HashedKey hashed_key = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.HashedKey hashed_key = 1;</code>
+     * @return \POGOProtos\Data\AssetCache\HashedKey
      */
     public function getHashedKey()
     {
@@ -32,12 +42,16 @@ class JournalReadEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.AssetCache.HashedKey hashed_key = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.HashedKey hashed_key = 1;</code>
+     * @param \POGOProtos\Data\AssetCache\HashedKey $var
+     * @return $this
      */
-    public function setHashedKey(&$var)
+    public function setHashedKey($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\AssetCache\HashedKey::class);
         $this->hashed_key = $var;
+
+        return $this;
     }
 
 }

@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Quests.QuestDialog.Character</code>
- */
-class QuestDialog_Character
-{
+if (false) {
     /**
-     * <code>CHARACTER_UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestDialog\Character instead.
+     * @deprecated
      */
-    const CHARACTER_UNSET = 0;
-    /**
-     * <code>PROFESSOR_WILLOW = 1;</code>
-     */
-    const PROFESSOR_WILLOW = 1;
+    class QuestDialog_Character {}
 }
+class_exists(QuestDialog\Character::class);
+@trigger_error('POGOProtos\Data\Quests\QuestDialog_Character is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestDialog\Character instead', E_USER_DEPRECATED);
 

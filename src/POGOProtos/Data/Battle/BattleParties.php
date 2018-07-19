@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Battle.BattleParties</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Battle.BattleParties</code>
  */
 class BattleParties extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Data.Battle.BattleParty battle_parties = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Battle.BattleParty battle_parties = 1;</code>
      */
     private $battle_parties;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Battle\BattleParty[]|\Google\Protobuf\Internal\RepeatedField $battle_parties
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Battle\BattleParties::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Battle.BattleParty battle_parties = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Battle.BattleParty battle_parties = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getBattleParties()
     {
@@ -32,12 +42,16 @@ class BattleParties extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Battle.BattleParty battle_parties = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Battle.BattleParty battle_parties = 1;</code>
+     * @param \POGOProtos\Data\Battle\BattleParty[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setBattleParties(&$var)
+    public function setBattleParties($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Battle\BattleParty::class);
-        $this->battle_parties = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Battle\BattleParty::class);
+        $this->battle_parties = $arr;
+
+        return $this;
     }
 
 }

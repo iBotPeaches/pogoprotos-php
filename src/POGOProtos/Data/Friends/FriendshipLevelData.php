@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Friends.FriendshipLevelData</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Friends.FriendshipLevelData</code>
  */
 class FriendshipLevelData extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 bucket = 1;</code>
+     * Generated from protobuf field <code>int64 bucket = 1;</code>
      */
     private $bucket = 0;
     /**
-     * <code>int32 points_earned_today = 2;</code>
+     * Generated from protobuf field <code>int32 points_earned_today = 2;</code>
      */
     private $points_earned_today = 0;
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone awarded_friendship_milestone = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone awarded_friendship_milestone = 3;</code>
      */
     private $awarded_friendship_milestone = 0;
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone current_friendship_milestone = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone current_friendship_milestone = 4;</code>
      */
     private $current_friendship_milestone = 0;
     /**
-     * <code>double next_friendship_milestone_progress_percentage = 5;</code>
+     * Generated from protobuf field <code>double next_friendship_milestone_progress_percentage = 5;</code>
      */
     private $next_friendship_milestone_progress_percentage = 0.0;
     /**
-     * <code>int32 points_toward_next_milestone = 6;</code>
+     * Generated from protobuf field <code>int32 points_toward_next_milestone = 6;</code>
      */
     private $points_toward_next_milestone = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $bucket
+     *     @type int $points_earned_today
+     *     @type int $awarded_friendship_milestone
+     *     @type int $current_friendship_milestone
+     *     @type float $next_friendship_milestone_progress_percentage
+     *     @type int $points_toward_next_milestone
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Friends\FriendshipLevelData::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 bucket = 1;</code>
+     * Generated from protobuf field <code>int64 bucket = 1;</code>
+     * @return int|string
      */
     public function getBucket()
     {
@@ -52,16 +67,21 @@ class FriendshipLevelData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 bucket = 1;</code>
+     * Generated from protobuf field <code>int64 bucket = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setBucket($var)
     {
         GPBUtil::checkInt64($var);
         $this->bucket = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 points_earned_today = 2;</code>
+     * Generated from protobuf field <code>int32 points_earned_today = 2;</code>
+     * @return int
      */
     public function getPointsEarnedToday()
     {
@@ -69,16 +89,21 @@ class FriendshipLevelData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 points_earned_today = 2;</code>
+     * Generated from protobuf field <code>int32 points_earned_today = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPointsEarnedToday($var)
     {
         GPBUtil::checkInt32($var);
         $this->points_earned_today = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone awarded_friendship_milestone = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone awarded_friendship_milestone = 3;</code>
+     * @return int
      */
     public function getAwardedFriendshipMilestone()
     {
@@ -86,16 +111,21 @@ class FriendshipLevelData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone awarded_friendship_milestone = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone awarded_friendship_milestone = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setAwardedFriendshipMilestone($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\FriendshipLevelMilestone::class);
         $this->awarded_friendship_milestone = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone current_friendship_milestone = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone current_friendship_milestone = 4;</code>
+     * @return int
      */
     public function getCurrentFriendshipMilestone()
     {
@@ -103,16 +133,21 @@ class FriendshipLevelData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone current_friendship_milestone = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone current_friendship_milestone = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCurrentFriendshipMilestone($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\FriendshipLevelMilestone::class);
         $this->current_friendship_milestone = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double next_friendship_milestone_progress_percentage = 5;</code>
+     * Generated from protobuf field <code>double next_friendship_milestone_progress_percentage = 5;</code>
+     * @return float
      */
     public function getNextFriendshipMilestoneProgressPercentage()
     {
@@ -120,16 +155,21 @@ class FriendshipLevelData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double next_friendship_milestone_progress_percentage = 5;</code>
+     * Generated from protobuf field <code>double next_friendship_milestone_progress_percentage = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setNextFriendshipMilestoneProgressPercentage($var)
     {
         GPBUtil::checkDouble($var);
         $this->next_friendship_milestone_progress_percentage = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 points_toward_next_milestone = 6;</code>
+     * Generated from protobuf field <code>int32 points_toward_next_milestone = 6;</code>
+     * @return int
      */
     public function getPointsTowardNextMilestone()
     {
@@ -137,12 +177,16 @@ class FriendshipLevelData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 points_toward_next_milestone = 6;</code>
+     * Generated from protobuf field <code>int32 points_toward_next_milestone = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPointsTowardNextMilestone($var)
     {
         GPBUtil::checkInt32($var);
         $this->points_toward_next_milestone = $var;
+
+        return $this;
     }
 
 }

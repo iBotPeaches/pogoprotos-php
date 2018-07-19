@@ -9,62 +9,82 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Battle.BattleResults</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Battle.BattleResults</code>
  */
 class BattleResults extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Gym.GymState gym_state = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymState gym_state = 1;</code>
      */
     private $gym_state = null;
     /**
-     * <code>repeated .POGOProtos.Data.Battle.BattleParticipant attackers = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Battle.BattleParticipant attackers = 2;</code>
      */
     private $attackers;
     /**
-     * <code>repeated int32 player_xp_awarded = 3;</code>
+     * Generated from protobuf field <code>repeated int32 player_xp_awarded = 3;</code>
      */
     private $player_xp_awarded;
     /**
-     * <code>int64 next_defender_pokemon_id = 4;</code>
+     * Generated from protobuf field <code>int64 next_defender_pokemon_id = 4;</code>
      */
     private $next_defender_pokemon_id = 0;
     /**
-     * <code>int32 gym_points_delta = 5;</code>
+     * Generated from protobuf field <code>int32 gym_points_delta = 5;</code>
      */
     private $gym_points_delta = 0;
     /**
-     * <code>.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status = 6;</code>
      */
     private $gym_status = null;
     /**
-     * <code>repeated .POGOProtos.Data.Raid.Participation participation = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Raid.Participation participation = 7;</code>
      */
     private $participation;
     /**
-     * <code>repeated .POGOProtos.Inventory.Loot raid_item_rewards = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Loot raid_item_rewards = 8;</code>
      */
     private $raid_item_rewards;
     /**
-     * <code>repeated .POGOProtos.Data.Raid.RaidEncounter post_raid_encounter = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Raid.RaidEncounter post_raid_encounter = 9;</code>
      */
     private $post_raid_encounter;
     /**
-     * <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 10;</code>
      */
     private $gym_badge;
     /**
-     * <code>repeated .POGOProtos.Inventory.Loot default_raid_item_rewards = 11;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Loot default_raid_item_rewards = 11;</code>
      */
     private $default_raid_item_rewards;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Data\Gym\GymState $gym_state
+     *     @type \POGOProtos\Data\Battle\BattleParticipant[]|\Google\Protobuf\Internal\RepeatedField $attackers
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $player_xp_awarded
+     *     @type int|string $next_defender_pokemon_id
+     *     @type int $gym_points_delta
+     *     @type \POGOProtos\Data\Gym\GymStatusAndDefenders $gym_status
+     *     @type \POGOProtos\Data\Raid\Participation[]|\Google\Protobuf\Internal\RepeatedField $participation
+     *     @type \POGOProtos\Inventory\Loot[]|\Google\Protobuf\Internal\RepeatedField $raid_item_rewards
+     *     @type \POGOProtos\Data\Raid\RaidEncounter[]|\Google\Protobuf\Internal\RepeatedField $post_raid_encounter
+     *     @type \POGOProtos\Data\Badge\AwardedGymBadge[]|\Google\Protobuf\Internal\RepeatedField $gym_badge
+     *     @type \POGOProtos\Inventory\Loot[]|\Google\Protobuf\Internal\RepeatedField $default_raid_item_rewards
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Battle\BattleResults::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Gym.GymState gym_state = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymState gym_state = 1;</code>
+     * @return \POGOProtos\Data\Gym\GymState
      */
     public function getGymState()
     {
@@ -72,16 +92,21 @@ class BattleResults extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Gym.GymState gym_state = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymState gym_state = 1;</code>
+     * @param \POGOProtos\Data\Gym\GymState $var
+     * @return $this
      */
-    public function setGymState(&$var)
+    public function setGymState($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Gym\GymState::class);
         $this->gym_state = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Battle.BattleParticipant attackers = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Battle.BattleParticipant attackers = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAttackers()
     {
@@ -89,16 +114,21 @@ class BattleResults extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Battle.BattleParticipant attackers = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Battle.BattleParticipant attackers = 2;</code>
+     * @param \POGOProtos\Data\Battle\BattleParticipant[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAttackers(&$var)
+    public function setAttackers($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Battle\BattleParticipant::class);
-        $this->attackers = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Battle\BattleParticipant::class);
+        $this->attackers = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 player_xp_awarded = 3;</code>
+     * Generated from protobuf field <code>repeated int32 player_xp_awarded = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPlayerXpAwarded()
     {
@@ -106,16 +136,21 @@ class BattleResults extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 player_xp_awarded = 3;</code>
+     * Generated from protobuf field <code>repeated int32 player_xp_awarded = 3;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPlayerXpAwarded(&$var)
+    public function setPlayerXpAwarded($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->player_xp_awarded = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->player_xp_awarded = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int64 next_defender_pokemon_id = 4;</code>
+     * Generated from protobuf field <code>int64 next_defender_pokemon_id = 4;</code>
+     * @return int|string
      */
     public function getNextDefenderPokemonId()
     {
@@ -123,16 +158,21 @@ class BattleResults extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 next_defender_pokemon_id = 4;</code>
+     * Generated from protobuf field <code>int64 next_defender_pokemon_id = 4;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setNextDefenderPokemonId($var)
     {
         GPBUtil::checkInt64($var);
         $this->next_defender_pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 gym_points_delta = 5;</code>
+     * Generated from protobuf field <code>int32 gym_points_delta = 5;</code>
+     * @return int
      */
     public function getGymPointsDelta()
     {
@@ -140,16 +180,21 @@ class BattleResults extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 gym_points_delta = 5;</code>
+     * Generated from protobuf field <code>int32 gym_points_delta = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setGymPointsDelta($var)
     {
         GPBUtil::checkInt32($var);
         $this->gym_points_delta = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status = 6;</code>
+     * @return \POGOProtos\Data\Gym\GymStatusAndDefenders
      */
     public function getGymStatus()
     {
@@ -157,16 +202,21 @@ class BattleResults extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status = 6;</code>
+     * @param \POGOProtos\Data\Gym\GymStatusAndDefenders $var
+     * @return $this
      */
-    public function setGymStatus(&$var)
+    public function setGymStatus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Gym\GymStatusAndDefenders::class);
         $this->gym_status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Raid.Participation participation = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Raid.Participation participation = 7;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getParticipation()
     {
@@ -174,16 +224,21 @@ class BattleResults extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Raid.Participation participation = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Raid.Participation participation = 7;</code>
+     * @param \POGOProtos\Data\Raid\Participation[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setParticipation(&$var)
+    public function setParticipation($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Raid\Participation::class);
-        $this->participation = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Raid\Participation::class);
+        $this->participation = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Loot raid_item_rewards = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Loot raid_item_rewards = 8;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getRaidItemRewards()
     {
@@ -191,16 +246,21 @@ class BattleResults extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Loot raid_item_rewards = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Loot raid_item_rewards = 8;</code>
+     * @param \POGOProtos\Inventory\Loot[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setRaidItemRewards(&$var)
+    public function setRaidItemRewards($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Loot::class);
-        $this->raid_item_rewards = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Loot::class);
+        $this->raid_item_rewards = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Raid.RaidEncounter post_raid_encounter = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Raid.RaidEncounter post_raid_encounter = 9;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPostRaidEncounter()
     {
@@ -208,16 +268,21 @@ class BattleResults extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Raid.RaidEncounter post_raid_encounter = 9;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Raid.RaidEncounter post_raid_encounter = 9;</code>
+     * @param \POGOProtos\Data\Raid\RaidEncounter[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPostRaidEncounter(&$var)
+    public function setPostRaidEncounter($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Raid\RaidEncounter::class);
-        $this->post_raid_encounter = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Raid\RaidEncounter::class);
+        $this->post_raid_encounter = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 10;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getGymBadge()
     {
@@ -225,16 +290,21 @@ class BattleResults extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 10;</code>
+     * @param \POGOProtos\Data\Badge\AwardedGymBadge[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGymBadge(&$var)
+    public function setGymBadge($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Badge\AwardedGymBadge::class);
-        $this->gym_badge = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Badge\AwardedGymBadge::class);
+        $this->gym_badge = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Loot default_raid_item_rewards = 11;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Loot default_raid_item_rewards = 11;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getDefaultRaidItemRewards()
     {
@@ -242,12 +312,16 @@ class BattleResults extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Loot default_raid_item_rewards = 11;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Loot default_raid_item_rewards = 11;</code>
+     * @param \POGOProtos\Inventory\Loot[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDefaultRaidItemRewards(&$var)
+    public function setDefaultRaidItemRewards($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Loot::class);
-        $this->default_raid_item_rewards = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Loot::class);
+        $this->default_raid_item_rewards = $arr;
+
+        return $this;
     }
 
 }

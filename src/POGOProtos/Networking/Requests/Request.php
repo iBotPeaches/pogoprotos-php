@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Request</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Request</code>
  */
 class Request extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Requests.RequestType request_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.RequestType request_type = 1;</code>
      */
     private $request_type = 0;
     /**
-     * <code>bytes request_message = 2;</code>
+     * Generated from protobuf field <code>bytes request_message = 2;</code>
      */
     private $request_message = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $request_type
+     *     @type string $request_message
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Request::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Requests.RequestType request_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.RequestType request_type = 1;</code>
+     * @return int
      */
     public function getRequestType()
     {
@@ -36,16 +47,21 @@ class Request extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Requests.RequestType request_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.RequestType request_type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRequestType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Requests\RequestType::class);
         $this->request_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bytes request_message = 2;</code>
+     * Generated from protobuf field <code>bytes request_message = 2;</code>
+     * @return string
      */
     public function getRequestMessage()
     {
@@ -53,12 +69,16 @@ class Request extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bytes request_message = 2;</code>
+     * Generated from protobuf field <code>bytes request_message = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setRequestMessage($var)
     {
         GPBUtil::checkString($var, False);
         $this->request_message = $var;
+
+        return $this;
     }
 
 }

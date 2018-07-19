@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.SfidaSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.SfidaSettings</code>
  */
 class SfidaSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float low_battery_threshold = 1;</code>
+     * Generated from protobuf field <code>float low_battery_threshold = 1;</code>
      */
     private $low_battery_threshold = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $low_battery_threshold
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\SfidaSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float low_battery_threshold = 1;</code>
+     * Generated from protobuf field <code>float low_battery_threshold = 1;</code>
+     * @return float
      */
     public function getLowBatteryThreshold()
     {
@@ -32,12 +42,16 @@ class SfidaSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float low_battery_threshold = 1;</code>
+     * Generated from protobuf field <code>float low_battery_threshold = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLowBatteryThreshold($var)
     {
         GPBUtil::checkFloat($var);
         $this->low_battery_threshold = $var;
+
+        return $this;
     }
 
 }

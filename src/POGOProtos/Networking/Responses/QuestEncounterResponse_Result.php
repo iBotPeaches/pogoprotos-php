@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.QuestEncounterResponse.Result</code>
- */
-class QuestEncounterResponse_Result
-{
+if (false) {
     /**
-     * <code>QUEST_ENCOUNTER_UNKNOWN = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\QuestEncounterResponse\Result instead.
+     * @deprecated
      */
-    const QUEST_ENCOUNTER_UNKNOWN = 0;
-    /**
-     * <code>QUEST_ENCOUNTER_SUCCESS = 1;</code>
-     */
-    const QUEST_ENCOUNTER_SUCCESS = 1;
-    /**
-     * <code>QUEST_ENCOUNTER_NOT_AVAILABLE = 2;</code>
-     */
-    const QUEST_ENCOUNTER_NOT_AVAILABLE = 2;
-    /**
-     * <code>QUEST_ENCOUNTER_ALREADY_FINISHED = 3;</code>
-     */
-    const QUEST_ENCOUNTER_ALREADY_FINISHED = 3;
-    /**
-     * <code>POKEMON_INVENTORY_FULL = 4;</code>
-     */
-    const POKEMON_INVENTORY_FULL = 4;
+    class QuestEncounterResponse_Result {}
 }
+class_exists(QuestEncounterResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\QuestEncounterResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\QuestEncounterResponse\Result instead', E_USER_DEPRECATED);
 

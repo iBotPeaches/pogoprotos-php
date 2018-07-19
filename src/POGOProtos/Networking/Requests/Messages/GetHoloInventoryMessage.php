@@ -9,30 +9,40 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetHoloInventoryMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GetHoloInventoryMessage</code>
  */
 class GetHoloInventoryMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 last_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 last_timestamp_ms = 1;</code>
      */
     private $last_timestamp_ms = 0;
     /**
-     * <pre>
      * TODO: Find out what this is.
-     * </pre>
      *
-     * <code>int32 item_been_seen = 2;</code>
+     * Generated from protobuf field <code>int32 item_been_seen = 2;</code>
      */
     private $item_been_seen = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $last_timestamp_ms
+     *     @type int $item_been_seen
+     *           TODO: Find out what this is.
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetHoloInventoryMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 last_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 last_timestamp_ms = 1;</code>
+     * @return int|string
      */
     public function getLastTimestampMs()
     {
@@ -40,20 +50,23 @@ class GetHoloInventoryMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 last_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 last_timestamp_ms = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLastTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->last_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * TODO: Find out what this is.
-     * </pre>
      *
-     * <code>int32 item_been_seen = 2;</code>
+     * Generated from protobuf field <code>int32 item_been_seen = 2;</code>
+     * @return int
      */
     public function getItemBeenSeen()
     {
@@ -61,16 +74,18 @@ class GetHoloInventoryMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * TODO: Find out what this is.
-     * </pre>
      *
-     * <code>int32 item_been_seen = 2;</code>
+     * Generated from protobuf field <code>int32 item_been_seen = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemBeenSeen($var)
     {
         GPBUtil::checkInt32($var);
         $this->item_been_seen = $var;
+
+        return $this;
     }
 
 }

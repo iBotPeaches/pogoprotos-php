@@ -9,102 +9,132 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Quests.Quest</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Quests.Quest</code>
  */
 class Quest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.QuestType quest_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.QuestType quest_type = 1;</code>
      */
     private $quest_type = 0;
     /**
-     * <code>.POGOProtos.Data.Quests.DailyQuest daily_quest = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.DailyQuest daily_quest = 2;</code>
      */
     private $daily_quest = null;
     /**
-     * <code>.POGOProtos.Data.Quests.Quest.MultiPartQuest multi_part = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest.MultiPartQuest multi_part = 3;</code>
      */
     private $multi_part = null;
     /**
-     * <code>.POGOProtos.Data.Quests.CatchPokemonQuest catch_pokemon = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.CatchPokemonQuest catch_pokemon = 4;</code>
      */
     private $catch_pokemon = null;
     /**
-     * <code>string quest_id = 100;</code>
+     * Generated from protobuf field <code>string quest_id = 100;</code>
      */
     private $quest_id = '';
     /**
-     * <code>int64 quest_seed = 101;</code>
+     * Generated from protobuf field <code>int64 quest_seed = 101;</code>
      */
     private $quest_seed = 0;
     /**
-     * <code>.POGOProtos.Data.Quests.Quest.Context quest_context = 102;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest.Context quest_context = 102;</code>
      */
     private $quest_context = 0;
     /**
-     * <code>string template_id = 103;</code>
+     * Generated from protobuf field <code>string template_id = 103;</code>
      */
     private $template_id = '';
     /**
-     * <code>int32 progress = 104;</code>
+     * Generated from protobuf field <code>int32 progress = 104;</code>
      */
     private $progress = 0;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestGoal goal = 105;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestGoal goal = 105;</code>
      */
     private $goal = null;
     /**
-     * <code>.POGOProtos.Data.Quests.Quest.Status status = 106;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest.Status status = 106;</code>
      */
     private $status = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestReward quest_rewards = 107;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestReward quest_rewards = 107;</code>
      */
     private $quest_rewards;
     /**
-     * <code>int64 creation_timestamp_ms = 108;</code>
+     * Generated from protobuf field <code>int64 creation_timestamp_ms = 108;</code>
      */
     private $creation_timestamp_ms = 0;
     /**
-     * <code>int64 last_update_timestamp_ms = 109;</code>
+     * Generated from protobuf field <code>int64 last_update_timestamp_ms = 109;</code>
      */
     private $last_update_timestamp_ms = 0;
     /**
-     * <code>int64 compeletion_timestamp_ms = 110;</code>
+     * Generated from protobuf field <code>int64 compeletion_timestamp_ms = 110;</code>
      */
     private $compeletion_timestamp_ms = 0;
     /**
-     * <code>string fort_id = 111;</code>
+     * Generated from protobuf field <code>string fort_id = 111;</code>
      */
     private $fort_id = '';
     /**
-     * <code>bool admin_generated = 112;</code>
+     * Generated from protobuf field <code>bool admin_generated = 112;</code>
      */
     private $admin_generated = false;
     /**
-     * <code>bool stamp_count_override_enabled = 113;</code>
+     * Generated from protobuf field <code>bool stamp_count_override_enabled = 113;</code>
      */
     private $stamp_count_override_enabled = false;
     /**
-     * <code>int32 stamp_count_override = 114;</code>
+     * Generated from protobuf field <code>int32 stamp_count_override = 114;</code>
      */
     private $stamp_count_override = 0;
     /**
-     * <code>int64 s2_cell_id = 115;</code>
+     * Generated from protobuf field <code>int64 s2_cell_id = 115;</code>
      */
     private $s2_cell_id = 0;
     /**
-     * <code>int32 story_quest_template_version = 116;</code>
+     * Generated from protobuf field <code>int32 story_quest_template_version = 116;</code>
      */
     private $story_quest_template_version = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $quest_type
+     *     @type \POGOProtos\Data\Quests\DailyQuest $daily_quest
+     *     @type \POGOProtos\Data\Quests\Quest\MultiPartQuest $multi_part
+     *     @type \POGOProtos\Data\Quests\CatchPokemonQuest $catch_pokemon
+     *     @type string $quest_id
+     *     @type int|string $quest_seed
+     *     @type int $quest_context
+     *     @type string $template_id
+     *     @type int $progress
+     *     @type \POGOProtos\Data\Quests\QuestGoal $goal
+     *     @type int $status
+     *     @type \POGOProtos\Data\Quests\QuestReward[]|\Google\Protobuf\Internal\RepeatedField $quest_rewards
+     *     @type int|string $creation_timestamp_ms
+     *     @type int|string $last_update_timestamp_ms
+     *     @type int|string $compeletion_timestamp_ms
+     *     @type string $fort_id
+     *     @type bool $admin_generated
+     *     @type bool $stamp_count_override_enabled
+     *     @type int $stamp_count_override
+     *     @type int|string $s2_cell_id
+     *     @type int $story_quest_template_version
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Quests\Quest::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.QuestType quest_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.QuestType quest_type = 1;</code>
+     * @return int
      */
     public function getQuestType()
     {
@@ -112,16 +142,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.QuestType quest_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.QuestType quest_type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setQuestType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\QuestType::class);
         $this->quest_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.DailyQuest daily_quest = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.DailyQuest daily_quest = 2;</code>
+     * @return \POGOProtos\Data\Quests\DailyQuest
      */
     public function getDailyQuest()
     {
@@ -129,16 +164,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.DailyQuest daily_quest = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.DailyQuest daily_quest = 2;</code>
+     * @param \POGOProtos\Data\Quests\DailyQuest $var
+     * @return $this
      */
-    public function setDailyQuest(&$var)
+    public function setDailyQuest($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\DailyQuest::class);
         $this->daily_quest = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.Quest.MultiPartQuest multi_part = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest.MultiPartQuest multi_part = 3;</code>
+     * @return \POGOProtos\Data\Quests\Quest\MultiPartQuest
      */
     public function getMultiPart()
     {
@@ -146,16 +186,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.Quest.MultiPartQuest multi_part = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest.MultiPartQuest multi_part = 3;</code>
+     * @param \POGOProtos\Data\Quests\Quest\MultiPartQuest $var
+     * @return $this
      */
-    public function setMultiPart(&$var)
+    public function setMultiPart($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\Quest_MultiPartQuest::class);
         $this->multi_part = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.CatchPokemonQuest catch_pokemon = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.CatchPokemonQuest catch_pokemon = 4;</code>
+     * @return \POGOProtos\Data\Quests\CatchPokemonQuest
      */
     public function getCatchPokemon()
     {
@@ -163,16 +208,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.CatchPokemonQuest catch_pokemon = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.CatchPokemonQuest catch_pokemon = 4;</code>
+     * @param \POGOProtos\Data\Quests\CatchPokemonQuest $var
+     * @return $this
      */
-    public function setCatchPokemon(&$var)
+    public function setCatchPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\CatchPokemonQuest::class);
         $this->catch_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string quest_id = 100;</code>
+     * Generated from protobuf field <code>string quest_id = 100;</code>
+     * @return string
      */
     public function getQuestId()
     {
@@ -180,16 +230,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string quest_id = 100;</code>
+     * Generated from protobuf field <code>string quest_id = 100;</code>
+     * @param string $var
+     * @return $this
      */
     public function setQuestId($var)
     {
         GPBUtil::checkString($var, True);
         $this->quest_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 quest_seed = 101;</code>
+     * Generated from protobuf field <code>int64 quest_seed = 101;</code>
+     * @return int|string
      */
     public function getQuestSeed()
     {
@@ -197,16 +252,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 quest_seed = 101;</code>
+     * Generated from protobuf field <code>int64 quest_seed = 101;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setQuestSeed($var)
     {
         GPBUtil::checkInt64($var);
         $this->quest_seed = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.Quest.Context quest_context = 102;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest.Context quest_context = 102;</code>
+     * @return int
      */
     public function getQuestContext()
     {
@@ -214,16 +274,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.Quest.Context quest_context = 102;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest.Context quest_context = 102;</code>
+     * @param int $var
+     * @return $this
      */
     public function setQuestContext($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\Quest_Context::class);
         $this->quest_context = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string template_id = 103;</code>
+     * Generated from protobuf field <code>string template_id = 103;</code>
+     * @return string
      */
     public function getTemplateId()
     {
@@ -231,16 +296,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string template_id = 103;</code>
+     * Generated from protobuf field <code>string template_id = 103;</code>
+     * @param string $var
+     * @return $this
      */
     public function setTemplateId($var)
     {
         GPBUtil::checkString($var, True);
         $this->template_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 progress = 104;</code>
+     * Generated from protobuf field <code>int32 progress = 104;</code>
+     * @return int
      */
     public function getProgress()
     {
@@ -248,16 +318,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 progress = 104;</code>
+     * Generated from protobuf field <code>int32 progress = 104;</code>
+     * @param int $var
+     * @return $this
      */
     public function setProgress($var)
     {
         GPBUtil::checkInt32($var);
         $this->progress = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestGoal goal = 105;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestGoal goal = 105;</code>
+     * @return \POGOProtos\Data\Quests\QuestGoal
      */
     public function getGoal()
     {
@@ -265,16 +340,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestGoal goal = 105;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestGoal goal = 105;</code>
+     * @param \POGOProtos\Data\Quests\QuestGoal $var
+     * @return $this
      */
-    public function setGoal(&$var)
+    public function setGoal($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestGoal::class);
         $this->goal = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.Quest.Status status = 106;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest.Status status = 106;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -282,16 +362,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.Quest.Status status = 106;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest.Status status = 106;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\Quest_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestReward quest_rewards = 107;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestReward quest_rewards = 107;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getQuestRewards()
     {
@@ -299,16 +384,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Quests.QuestReward quest_rewards = 107;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Quests.QuestReward quest_rewards = 107;</code>
+     * @param \POGOProtos\Data\Quests\QuestReward[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setQuestRewards(&$var)
+    public function setQuestRewards($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\QuestReward::class);
-        $this->quest_rewards = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Quests\QuestReward::class);
+        $this->quest_rewards = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int64 creation_timestamp_ms = 108;</code>
+     * Generated from protobuf field <code>int64 creation_timestamp_ms = 108;</code>
+     * @return int|string
      */
     public function getCreationTimestampMs()
     {
@@ -316,16 +406,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 creation_timestamp_ms = 108;</code>
+     * Generated from protobuf field <code>int64 creation_timestamp_ms = 108;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setCreationTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->creation_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 last_update_timestamp_ms = 109;</code>
+     * Generated from protobuf field <code>int64 last_update_timestamp_ms = 109;</code>
+     * @return int|string
      */
     public function getLastUpdateTimestampMs()
     {
@@ -333,16 +428,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 last_update_timestamp_ms = 109;</code>
+     * Generated from protobuf field <code>int64 last_update_timestamp_ms = 109;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLastUpdateTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->last_update_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 compeletion_timestamp_ms = 110;</code>
+     * Generated from protobuf field <code>int64 compeletion_timestamp_ms = 110;</code>
+     * @return int|string
      */
     public function getCompeletionTimestampMs()
     {
@@ -350,16 +450,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 compeletion_timestamp_ms = 110;</code>
+     * Generated from protobuf field <code>int64 compeletion_timestamp_ms = 110;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setCompeletionTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->compeletion_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string fort_id = 111;</code>
+     * Generated from protobuf field <code>string fort_id = 111;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -367,16 +472,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 111;</code>
+     * Generated from protobuf field <code>string fort_id = 111;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool admin_generated = 112;</code>
+     * Generated from protobuf field <code>bool admin_generated = 112;</code>
+     * @return bool
      */
     public function getAdminGenerated()
     {
@@ -384,16 +494,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool admin_generated = 112;</code>
+     * Generated from protobuf field <code>bool admin_generated = 112;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setAdminGenerated($var)
     {
         GPBUtil::checkBool($var);
         $this->admin_generated = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool stamp_count_override_enabled = 113;</code>
+     * Generated from protobuf field <code>bool stamp_count_override_enabled = 113;</code>
+     * @return bool
      */
     public function getStampCountOverrideEnabled()
     {
@@ -401,16 +516,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool stamp_count_override_enabled = 113;</code>
+     * Generated from protobuf field <code>bool stamp_count_override_enabled = 113;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setStampCountOverrideEnabled($var)
     {
         GPBUtil::checkBool($var);
         $this->stamp_count_override_enabled = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 stamp_count_override = 114;</code>
+     * Generated from protobuf field <code>int32 stamp_count_override = 114;</code>
+     * @return int
      */
     public function getStampCountOverride()
     {
@@ -418,16 +538,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 stamp_count_override = 114;</code>
+     * Generated from protobuf field <code>int32 stamp_count_override = 114;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStampCountOverride($var)
     {
         GPBUtil::checkInt32($var);
         $this->stamp_count_override = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 s2_cell_id = 115;</code>
+     * Generated from protobuf field <code>int64 s2_cell_id = 115;</code>
+     * @return int|string
      */
     public function getS2CellId()
     {
@@ -435,16 +560,21 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 s2_cell_id = 115;</code>
+     * Generated from protobuf field <code>int64 s2_cell_id = 115;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setS2CellId($var)
     {
         GPBUtil::checkInt64($var);
         $this->s2_cell_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 story_quest_template_version = 116;</code>
+     * Generated from protobuf field <code>int32 story_quest_template_version = 116;</code>
+     * @return int
      */
     public function getStoryQuestTemplateVersion()
     {
@@ -452,12 +582,16 @@ class Quest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 story_quest_template_version = 116;</code>
+     * Generated from protobuf field <code>int32 story_quest_template_version = 116;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStoryQuestTemplateVersion($var)
     {
         GPBUtil::checkInt32($var);
         $this->story_quest_template_version = $var;
+
+        return $this;
     }
 
 }

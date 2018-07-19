@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.UpdateNotificationStatusResponse.NotificationState</code>
- */
-class UpdateNotificationStatusResponse_NotificationState
-{
+if (false) {
     /**
-     * <code>UNSET_STATE = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\UpdateNotificationStatusResponse\NotificationState instead.
+     * @deprecated
      */
-    const UNSET_STATE = 0;
-    /**
-     * <code>VIEWED = 1;</code>
-     */
-    const VIEWED = 1;
+    class UpdateNotificationStatusResponse_NotificationState {}
 }
+class_exists(UpdateNotificationStatusResponse\NotificationState::class);
+@trigger_error('POGOProtos\Networking\Responses\UpdateNotificationStatusResponse_NotificationState is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\UpdateNotificationStatusResponse\NotificationState instead', E_USER_DEPRECATED);
 

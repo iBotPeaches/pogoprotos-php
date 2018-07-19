@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Friends.FriendshipMilestoneRewardNotification</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Friends.FriendshipMilestoneRewardNotification</code>
  */
 class FriendshipMilestoneRewardNotification extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string friend_id = 1;</code>
+     * Generated from protobuf field <code>string friend_id = 1;</code>
      */
     private $friend_id = '';
     /**
-     * <code>string friend_codename = 2;</code>
+     * Generated from protobuf field <code>string friend_codename = 2;</code>
      */
     private $friend_codename = '';
     /**
-     * <code>int32 friendship_milestone_level = 3;</code>
+     * Generated from protobuf field <code>int32 friendship_milestone_level = 3;</code>
      */
     private $friendship_milestone_level = 0;
     /**
-     * <code>int64 xp_reward = 4;</code>
+     * Generated from protobuf field <code>int64 xp_reward = 4;</code>
      */
     private $xp_reward = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $friend_id
+     *     @type string $friend_codename
+     *     @type int $friendship_milestone_level
+     *     @type int|string $xp_reward
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Friends\FriendshipMilestoneRewardNotification::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string friend_id = 1;</code>
+     * Generated from protobuf field <code>string friend_id = 1;</code>
+     * @return string
      */
     public function getFriendId()
     {
@@ -44,16 +57,21 @@ class FriendshipMilestoneRewardNotification extends \Google\Protobuf\Internal\Me
     }
 
     /**
-     * <code>string friend_id = 1;</code>
+     * Generated from protobuf field <code>string friend_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFriendId($var)
     {
         GPBUtil::checkString($var, True);
         $this->friend_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string friend_codename = 2;</code>
+     * Generated from protobuf field <code>string friend_codename = 2;</code>
+     * @return string
      */
     public function getFriendCodename()
     {
@@ -61,16 +79,21 @@ class FriendshipMilestoneRewardNotification extends \Google\Protobuf\Internal\Me
     }
 
     /**
-     * <code>string friend_codename = 2;</code>
+     * Generated from protobuf field <code>string friend_codename = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFriendCodename($var)
     {
         GPBUtil::checkString($var, True);
         $this->friend_codename = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 friendship_milestone_level = 3;</code>
+     * Generated from protobuf field <code>int32 friendship_milestone_level = 3;</code>
+     * @return int
      */
     public function getFriendshipMilestoneLevel()
     {
@@ -78,16 +101,21 @@ class FriendshipMilestoneRewardNotification extends \Google\Protobuf\Internal\Me
     }
 
     /**
-     * <code>int32 friendship_milestone_level = 3;</code>
+     * Generated from protobuf field <code>int32 friendship_milestone_level = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setFriendshipMilestoneLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->friendship_milestone_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 xp_reward = 4;</code>
+     * Generated from protobuf field <code>int64 xp_reward = 4;</code>
+     * @return int|string
      */
     public function getXpReward()
     {
@@ -95,12 +123,16 @@ class FriendshipMilestoneRewardNotification extends \Google\Protobuf\Internal\Me
     }
 
     /**
-     * <code>int64 xp_reward = 4;</code>
+     * Generated from protobuf field <code>int64 xp_reward = 4;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setXpReward($var)
     {
         GPBUtil::checkInt64($var);
         $this->xp_reward = $var;
+
+        return $this;
     }
 
 }

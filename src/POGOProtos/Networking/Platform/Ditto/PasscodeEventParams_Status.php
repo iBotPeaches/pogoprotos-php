@@ -4,38 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Ditto;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Platform.Ditto.PasscodeEventParams.Status</code>
- */
-class PasscodeEventParams_Status
-{
+if (false) {
     /**
-     * <code>UNDEFINED = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Ditto\PasscodeEventParams\Status instead.
+     * @deprecated
      */
-    const UNDEFINED = 0;
-    /**
-     * <code>TIMEOUT = 1;</code>
-     */
-    const TIMEOUT = 1;
-    /**
-     * <code>ERROR = 2;</code>
-     */
-    const ERROR = 2;
-    /**
-     * <code>SUCCESS = 3;</code>
-     */
-    const SUCCESS = 3;
-    /**
-     * <code>NOT_AVAILABLE = 4;</code>
-     */
-    const NOT_AVAILABLE = 4;
-    /**
-     * <code>OVER_INVENTORY_LIMIT = 5;</code>
-     */
-    const OVER_INVENTORY_LIMIT = 5;
-    /**
-     * <code>ALREADY_REDEEMED = 6;</code>
-     */
-    const ALREADY_REDEEMED = 6;
+    class PasscodeEventParams_Status {}
 }
+class_exists(PasscodeEventParams\Status::class);
+@trigger_error('POGOProtos\Networking\Platform\Ditto\PasscodeEventParams_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Ditto\PasscodeEventParams\Status instead', E_USER_DEPRECATED);
 

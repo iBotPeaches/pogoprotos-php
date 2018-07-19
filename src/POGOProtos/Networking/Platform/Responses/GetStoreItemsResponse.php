@@ -9,54 +9,61 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse</code>
  */
 class GetStoreItemsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <pre>
      *unconfirmed
-     * </pre>
      *
-     * <code>.POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Status status = 1;</code>
      */
     private $status = 0;
     /**
-     * <pre>
      * Items to show in the shop
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItem items = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItem items = 2;</code>
      */
     private $items;
     /**
-     * <pre>
      * currencies that player has at the moment
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Data.Player.Currency player_currencies = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency player_currencies = 3;</code>
      */
     private $player_currencies;
     /**
-     * <pre>
      * hash?
-     * </pre>
      *
-     * <code>string hash = 4;</code>
+     * Generated from protobuf field <code>string hash = 4;</code>
      */
     private $hash = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status
+     *          unconfirmed
+     *     @type \POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse\StoreItem[]|\Google\Protobuf\Internal\RepeatedField $items
+     *           Items to show in the shop
+     *     @type \POGOProtos\Data\Player\Currency[]|\Google\Protobuf\Internal\RepeatedField $player_currencies
+     *           currencies that player has at the moment
+     *     @type string $hash
+     *           hash?
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <pre>
      *unconfirmed
-     * </pre>
      *
-     * <code>.POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Status status = 1;</code>
+     * @return int
      */
     public function getStatus()
     {
@@ -64,24 +71,25 @@ class GetStoreItemsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      *unconfirmed
-     * </pre>
      *
-     * <code>.POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Status status = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Status status = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatus($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse_Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * Items to show in the shop
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItem items = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItem items = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getItems()
     {
@@ -89,24 +97,25 @@ class GetStoreItemsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * Items to show in the shop
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItem items = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItem items = 2;</code>
+     * @param \POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse\StoreItem[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItems(&$var)
+    public function setItems($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse_StoreItem::class);
-        $this->items = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse\StoreItem::class);
+        $this->items = $arr;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * currencies that player has at the moment
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Data.Player.Currency player_currencies = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency player_currencies = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPlayerCurrencies()
     {
@@ -114,24 +123,25 @@ class GetStoreItemsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * currencies that player has at the moment
-     * </pre>
      *
-     * <code>repeated .POGOProtos.Data.Player.Currency player_currencies = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency player_currencies = 3;</code>
+     * @param \POGOProtos\Data\Player\Currency[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPlayerCurrencies(&$var)
+    public function setPlayerCurrencies($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Player\Currency::class);
-        $this->player_currencies = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Player\Currency::class);
+        $this->player_currencies = $arr;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * hash?
-     * </pre>
      *
-     * <code>string hash = 4;</code>
+     * Generated from protobuf field <code>string hash = 4;</code>
+     * @return string
      */
     public function getHash()
     {
@@ -139,16 +149,18 @@ class GetStoreItemsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * hash?
-     * </pre>
      *
-     * <code>string hash = 4;</code>
+     * Generated from protobuf field <code>string hash = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setHash($var)
     {
         GPBUtil::checkString($var, True);
         $this->hash = $var;
+
+        return $this;
     }
 
 }

@@ -9,106 +9,137 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.GlobalSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.GlobalSettings</code>
  */
 class GlobalSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Settings.FortSettings fort_settings = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.FortSettings fort_settings = 2;</code>
      */
     private $fort_settings = null;
     /**
-     * <code>.POGOProtos.Settings.MapSettings map_settings = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.MapSettings map_settings = 3;</code>
      */
     private $map_settings = null;
     /**
-     * <code>.POGOProtos.Settings.LevelSettings level_settings = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.LevelSettings level_settings = 4;</code>
      */
     private $level_settings = null;
     /**
-     * <code>.POGOProtos.Settings.InventorySettings inventory_settings = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.InventorySettings inventory_settings = 5;</code>
      */
     private $inventory_settings = null;
     /**
-     * <code>string minimum_client_version = 6;</code>
+     * Generated from protobuf field <code>string minimum_client_version = 6;</code>
      */
     private $minimum_client_version = '';
     /**
-     * <code>.POGOProtos.Settings.GpsSettings gps_settings = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.GpsSettings gps_settings = 7;</code>
      */
     private $gps_settings = null;
     /**
-     * <code>.POGOProtos.Settings.FestivalSettings festival_settings = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.FestivalSettings festival_settings = 8;</code>
      */
     private $festival_settings = null;
     /**
-     * <code>.POGOProtos.Settings.EventSettings event_settings = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.EventSettings event_settings = 9;</code>
      */
     private $event_settings = null;
     /**
-     * <code>int32 max_pokemon_types = 10;</code>
+     * Generated from protobuf field <code>int32 max_pokemon_types = 10;</code>
      */
     private $max_pokemon_types = 0;
     /**
-     * <code>.POGOProtos.Settings.SfidaSettings sfida_settings = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.SfidaSettings sfida_settings = 11;</code>
      */
     private $sfida_settings = null;
     /**
-     * <code>.POGOProtos.Settings.NewsSettings news_settings = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.NewsSettings news_settings = 12;</code>
      */
     private $news_settings = null;
     /**
-     * <code>.POGOProtos.Settings.TranslationSettings translation_settings = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.TranslationSettings translation_settings = 13;</code>
      */
     private $translation_settings = null;
     /**
-     * <code>.POGOProtos.Settings.PasscodeSettings passcode_settings = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.PasscodeSettings passcode_settings = 14;</code>
      */
     private $passcode_settings = null;
     /**
-     * <code>.POGOProtos.Settings.NotificationSettings notification_settings = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.NotificationSettings notification_settings = 15;</code>
      */
     private $notification_settings = null;
     /**
-     * <code>repeated string client_app_blacklist = 16;</code>
+     * Generated from protobuf field <code>repeated string client_app_blacklist = 16;</code>
      */
     private $client_app_blacklist;
     /**
-     * <code>.POGOProtos.Settings.ClientPerformanceSettings client_perf_settings = 17;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.ClientPerformanceSettings client_perf_settings = 17;</code>
      */
     private $client_perf_settings = null;
     /**
-     * <code>.POGOProtos.Settings.NewsGlobalSettings news_global_settings = 18;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.NewsGlobalSettings news_global_settings = 18;</code>
      */
     private $news_global_settings = null;
     /**
-     * <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
      */
     private $telemetry_global_settings = null;
     /**
-     * <code>.POGOProtos.Settings.LoginSettings login_settings = 22;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.LoginSettings login_settings = 22;</code>
      */
     private $login_settings = null;
     /**
-     * <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
      */
     private $quest_global_settings = null;
     /**
-     * <code>.POGOProtos.Settings.SocialClientSettings social_settings = 23;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.SocialClientSettings social_settings = 23;</code>
      */
     private $social_settings = null;
     /**
-     * <code>.POGOProtos.Settings.TradingGlobalSettings trading_global_settings = 24;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.TradingGlobalSettings trading_global_settings = 24;</code>
      */
     private $trading_global_settings = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Settings\FortSettings $fort_settings
+     *     @type \POGOProtos\Settings\MapSettings $map_settings
+     *     @type \POGOProtos\Settings\LevelSettings $level_settings
+     *     @type \POGOProtos\Settings\InventorySettings $inventory_settings
+     *     @type string $minimum_client_version
+     *     @type \POGOProtos\Settings\GpsSettings $gps_settings
+     *     @type \POGOProtos\Settings\FestivalSettings $festival_settings
+     *     @type \POGOProtos\Settings\EventSettings $event_settings
+     *     @type int $max_pokemon_types
+     *     @type \POGOProtos\Settings\SfidaSettings $sfida_settings
+     *     @type \POGOProtos\Settings\NewsSettings $news_settings
+     *     @type \POGOProtos\Settings\TranslationSettings $translation_settings
+     *     @type \POGOProtos\Settings\PasscodeSettings $passcode_settings
+     *     @type \POGOProtos\Settings\NotificationSettings $notification_settings
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $client_app_blacklist
+     *     @type \POGOProtos\Settings\ClientPerformanceSettings $client_perf_settings
+     *     @type \POGOProtos\Settings\NewsGlobalSettings $news_global_settings
+     *     @type \POGOProtos\Settings\TelemetryGlobalSettings $telemetry_global_settings
+     *     @type \POGOProtos\Settings\LoginSettings $login_settings
+     *     @type \POGOProtos\Settings\QuestGlobalSettings $quest_global_settings
+     *     @type \POGOProtos\Settings\SocialClientSettings $social_settings
+     *     @type \POGOProtos\Settings\TradingGlobalSettings $trading_global_settings
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\GlobalSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Settings.FortSettings fort_settings = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.FortSettings fort_settings = 2;</code>
+     * @return \POGOProtos\Settings\FortSettings
      */
     public function getFortSettings()
     {
@@ -116,16 +147,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.FortSettings fort_settings = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.FortSettings fort_settings = 2;</code>
+     * @param \POGOProtos\Settings\FortSettings $var
+     * @return $this
      */
-    public function setFortSettings(&$var)
+    public function setFortSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\FortSettings::class);
         $this->fort_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.MapSettings map_settings = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.MapSettings map_settings = 3;</code>
+     * @return \POGOProtos\Settings\MapSettings
      */
     public function getMapSettings()
     {
@@ -133,16 +169,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.MapSettings map_settings = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.MapSettings map_settings = 3;</code>
+     * @param \POGOProtos\Settings\MapSettings $var
+     * @return $this
      */
-    public function setMapSettings(&$var)
+    public function setMapSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\MapSettings::class);
         $this->map_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.LevelSettings level_settings = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.LevelSettings level_settings = 4;</code>
+     * @return \POGOProtos\Settings\LevelSettings
      */
     public function getLevelSettings()
     {
@@ -150,16 +191,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.LevelSettings level_settings = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.LevelSettings level_settings = 4;</code>
+     * @param \POGOProtos\Settings\LevelSettings $var
+     * @return $this
      */
-    public function setLevelSettings(&$var)
+    public function setLevelSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\LevelSettings::class);
         $this->level_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.InventorySettings inventory_settings = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.InventorySettings inventory_settings = 5;</code>
+     * @return \POGOProtos\Settings\InventorySettings
      */
     public function getInventorySettings()
     {
@@ -167,16 +213,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.InventorySettings inventory_settings = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.InventorySettings inventory_settings = 5;</code>
+     * @param \POGOProtos\Settings\InventorySettings $var
+     * @return $this
      */
-    public function setInventorySettings(&$var)
+    public function setInventorySettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\InventorySettings::class);
         $this->inventory_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string minimum_client_version = 6;</code>
+     * Generated from protobuf field <code>string minimum_client_version = 6;</code>
+     * @return string
      */
     public function getMinimumClientVersion()
     {
@@ -184,16 +235,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string minimum_client_version = 6;</code>
+     * Generated from protobuf field <code>string minimum_client_version = 6;</code>
+     * @param string $var
+     * @return $this
      */
     public function setMinimumClientVersion($var)
     {
         GPBUtil::checkString($var, True);
         $this->minimum_client_version = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.GpsSettings gps_settings = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.GpsSettings gps_settings = 7;</code>
+     * @return \POGOProtos\Settings\GpsSettings
      */
     public function getGpsSettings()
     {
@@ -201,16 +257,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.GpsSettings gps_settings = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.GpsSettings gps_settings = 7;</code>
+     * @param \POGOProtos\Settings\GpsSettings $var
+     * @return $this
      */
-    public function setGpsSettings(&$var)
+    public function setGpsSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\GpsSettings::class);
         $this->gps_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.FestivalSettings festival_settings = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.FestivalSettings festival_settings = 8;</code>
+     * @return \POGOProtos\Settings\FestivalSettings
      */
     public function getFestivalSettings()
     {
@@ -218,16 +279,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.FestivalSettings festival_settings = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.FestivalSettings festival_settings = 8;</code>
+     * @param \POGOProtos\Settings\FestivalSettings $var
+     * @return $this
      */
-    public function setFestivalSettings(&$var)
+    public function setFestivalSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\FestivalSettings::class);
         $this->festival_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.EventSettings event_settings = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.EventSettings event_settings = 9;</code>
+     * @return \POGOProtos\Settings\EventSettings
      */
     public function getEventSettings()
     {
@@ -235,16 +301,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.EventSettings event_settings = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.EventSettings event_settings = 9;</code>
+     * @param \POGOProtos\Settings\EventSettings $var
+     * @return $this
      */
-    public function setEventSettings(&$var)
+    public function setEventSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\EventSettings::class);
         $this->event_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_pokemon_types = 10;</code>
+     * Generated from protobuf field <code>int32 max_pokemon_types = 10;</code>
+     * @return int
      */
     public function getMaxPokemonTypes()
     {
@@ -252,16 +323,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_pokemon_types = 10;</code>
+     * Generated from protobuf field <code>int32 max_pokemon_types = 10;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxPokemonTypes($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_pokemon_types = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.SfidaSettings sfida_settings = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.SfidaSettings sfida_settings = 11;</code>
+     * @return \POGOProtos\Settings\SfidaSettings
      */
     public function getSfidaSettings()
     {
@@ -269,16 +345,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.SfidaSettings sfida_settings = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.SfidaSettings sfida_settings = 11;</code>
+     * @param \POGOProtos\Settings\SfidaSettings $var
+     * @return $this
      */
-    public function setSfidaSettings(&$var)
+    public function setSfidaSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\SfidaSettings::class);
         $this->sfida_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.NewsSettings news_settings = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.NewsSettings news_settings = 12;</code>
+     * @return \POGOProtos\Settings\NewsSettings
      */
     public function getNewsSettings()
     {
@@ -286,16 +367,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.NewsSettings news_settings = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.NewsSettings news_settings = 12;</code>
+     * @param \POGOProtos\Settings\NewsSettings $var
+     * @return $this
      */
-    public function setNewsSettings(&$var)
+    public function setNewsSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\NewsSettings::class);
         $this->news_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.TranslationSettings translation_settings = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.TranslationSettings translation_settings = 13;</code>
+     * @return \POGOProtos\Settings\TranslationSettings
      */
     public function getTranslationSettings()
     {
@@ -303,16 +389,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.TranslationSettings translation_settings = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.TranslationSettings translation_settings = 13;</code>
+     * @param \POGOProtos\Settings\TranslationSettings $var
+     * @return $this
      */
-    public function setTranslationSettings(&$var)
+    public function setTranslationSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\TranslationSettings::class);
         $this->translation_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.PasscodeSettings passcode_settings = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.PasscodeSettings passcode_settings = 14;</code>
+     * @return \POGOProtos\Settings\PasscodeSettings
      */
     public function getPasscodeSettings()
     {
@@ -320,16 +411,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.PasscodeSettings passcode_settings = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.PasscodeSettings passcode_settings = 14;</code>
+     * @param \POGOProtos\Settings\PasscodeSettings $var
+     * @return $this
      */
-    public function setPasscodeSettings(&$var)
+    public function setPasscodeSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\PasscodeSettings::class);
         $this->passcode_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.NotificationSettings notification_settings = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.NotificationSettings notification_settings = 15;</code>
+     * @return \POGOProtos\Settings\NotificationSettings
      */
     public function getNotificationSettings()
     {
@@ -337,16 +433,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.NotificationSettings notification_settings = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.NotificationSettings notification_settings = 15;</code>
+     * @param \POGOProtos\Settings\NotificationSettings $var
+     * @return $this
      */
-    public function setNotificationSettings(&$var)
+    public function setNotificationSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\NotificationSettings::class);
         $this->notification_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated string client_app_blacklist = 16;</code>
+     * Generated from protobuf field <code>repeated string client_app_blacklist = 16;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getClientAppBlacklist()
     {
@@ -354,16 +455,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string client_app_blacklist = 16;</code>
+     * Generated from protobuf field <code>repeated string client_app_blacklist = 16;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setClientAppBlacklist(&$var)
+    public function setClientAppBlacklist($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->client_app_blacklist = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->client_app_blacklist = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.ClientPerformanceSettings client_perf_settings = 17;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.ClientPerformanceSettings client_perf_settings = 17;</code>
+     * @return \POGOProtos\Settings\ClientPerformanceSettings
      */
     public function getClientPerfSettings()
     {
@@ -371,16 +477,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.ClientPerformanceSettings client_perf_settings = 17;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.ClientPerformanceSettings client_perf_settings = 17;</code>
+     * @param \POGOProtos\Settings\ClientPerformanceSettings $var
+     * @return $this
      */
-    public function setClientPerfSettings(&$var)
+    public function setClientPerfSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\ClientPerformanceSettings::class);
         $this->client_perf_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.NewsGlobalSettings news_global_settings = 18;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.NewsGlobalSettings news_global_settings = 18;</code>
+     * @return \POGOProtos\Settings\NewsGlobalSettings
      */
     public function getNewsGlobalSettings()
     {
@@ -388,16 +499,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.NewsGlobalSettings news_global_settings = 18;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.NewsGlobalSettings news_global_settings = 18;</code>
+     * @param \POGOProtos\Settings\NewsGlobalSettings $var
+     * @return $this
      */
-    public function setNewsGlobalSettings(&$var)
+    public function setNewsGlobalSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\NewsGlobalSettings::class);
         $this->news_global_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
+     * @return \POGOProtos\Settings\TelemetryGlobalSettings
      */
     public function getTelemetryGlobalSettings()
     {
@@ -405,16 +521,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
+     * @param \POGOProtos\Settings\TelemetryGlobalSettings $var
+     * @return $this
      */
-    public function setTelemetryGlobalSettings(&$var)
+    public function setTelemetryGlobalSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\TelemetryGlobalSettings::class);
         $this->telemetry_global_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.LoginSettings login_settings = 22;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.LoginSettings login_settings = 22;</code>
+     * @return \POGOProtos\Settings\LoginSettings
      */
     public function getLoginSettings()
     {
@@ -422,16 +543,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.LoginSettings login_settings = 22;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.LoginSettings login_settings = 22;</code>
+     * @param \POGOProtos\Settings\LoginSettings $var
+     * @return $this
      */
-    public function setLoginSettings(&$var)
+    public function setLoginSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\LoginSettings::class);
         $this->login_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
+     * @return \POGOProtos\Settings\QuestGlobalSettings
      */
     public function getQuestGlobalSettings()
     {
@@ -439,16 +565,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
+     * @param \POGOProtos\Settings\QuestGlobalSettings $var
+     * @return $this
      */
-    public function setQuestGlobalSettings(&$var)
+    public function setQuestGlobalSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\QuestGlobalSettings::class);
         $this->quest_global_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.SocialClientSettings social_settings = 23;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.SocialClientSettings social_settings = 23;</code>
+     * @return \POGOProtos\Settings\SocialClientSettings
      */
     public function getSocialSettings()
     {
@@ -456,16 +587,21 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.SocialClientSettings social_settings = 23;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.SocialClientSettings social_settings = 23;</code>
+     * @param \POGOProtos\Settings\SocialClientSettings $var
+     * @return $this
      */
-    public function setSocialSettings(&$var)
+    public function setSocialSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\SocialClientSettings::class);
         $this->social_settings = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.TradingGlobalSettings trading_global_settings = 24;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.TradingGlobalSettings trading_global_settings = 24;</code>
+     * @return \POGOProtos\Settings\TradingGlobalSettings
      */
     public function getTradingGlobalSettings()
     {
@@ -473,12 +609,16 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.TradingGlobalSettings trading_global_settings = 24;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.TradingGlobalSettings trading_global_settings = 24;</code>
+     * @param \POGOProtos\Settings\TradingGlobalSettings $var
+     * @return $this
      */
-    public function setTradingGlobalSettings(&$var)
+    public function setTradingGlobalSettings($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\TradingGlobalSettings::class);
         $this->trading_global_settings = $var;
+
+        return $this;
     }
 
 }

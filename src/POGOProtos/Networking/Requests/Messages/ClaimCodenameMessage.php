@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage</code>
  */
 class ClaimCodenameMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string codename = 1;</code>
+     * Generated from protobuf field <code>string codename = 1;</code>
      */
     private $codename = '';
     /**
-     * <code>bool force = 2;</code>
+     * Generated from protobuf field <code>bool force = 2;</code>
      */
     private $force = false;
     /**
-     * <code>bool generate_suggested_codenames = 3;</code>
+     * Generated from protobuf field <code>bool generate_suggested_codenames = 3;</code>
      */
     private $generate_suggested_codenames = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $codename
+     *     @type bool $force
+     *     @type bool $generate_suggested_codenames
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\ClaimCodenameMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string codename = 1;</code>
+     * Generated from protobuf field <code>string codename = 1;</code>
+     * @return string
      */
     public function getCodename()
     {
@@ -40,16 +52,21 @@ class ClaimCodenameMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string codename = 1;</code>
+     * Generated from protobuf field <code>string codename = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setCodename($var)
     {
         GPBUtil::checkString($var, True);
         $this->codename = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool force = 2;</code>
+     * Generated from protobuf field <code>bool force = 2;</code>
+     * @return bool
      */
     public function getForce()
     {
@@ -57,16 +74,21 @@ class ClaimCodenameMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool force = 2;</code>
+     * Generated from protobuf field <code>bool force = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setForce($var)
     {
         GPBUtil::checkBool($var);
         $this->force = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool generate_suggested_codenames = 3;</code>
+     * Generated from protobuf field <code>bool generate_suggested_codenames = 3;</code>
+     * @return bool
      */
     public function getGenerateSuggestedCodenames()
     {
@@ -74,12 +96,16 @@ class ClaimCodenameMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool generate_suggested_codenames = 3;</code>
+     * Generated from protobuf field <code>bool generate_suggested_codenames = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setGenerateSuggestedCodenames($var)
     {
         GPBUtil::checkBool($var);
         $this->generate_suggested_codenames = $var;
+
+        return $this;
     }
 
 }

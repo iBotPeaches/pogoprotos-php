@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.EquipBadgeResponse.Result</code>
- */
-class EquipBadgeResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\EquipBadgeResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>COOLDOWN_ACTIVE = 2;</code>
-     */
-    const COOLDOWN_ACTIVE = 2;
-    /**
-     * <code>NOT_QUALIFIED = 3;</code>
-     */
-    const NOT_QUALIFIED = 3;
+    class EquipBadgeResponse_Result {}
 }
+class_exists(EquipBadgeResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\EquipBadgeResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\EquipBadgeResponse\Result instead', E_USER_DEPRECATED);
 

@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Pokemon.CameraAttributes</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Pokemon.CameraAttributes</code>
  */
 class CameraAttributes extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float disk_radius_m = 1;</code>
+     * Generated from protobuf field <code>float disk_radius_m = 1;</code>
      */
     private $disk_radius_m = 0.0;
     /**
-     * <code>float cylinder_radius_m = 2;</code>
+     * Generated from protobuf field <code>float cylinder_radius_m = 2;</code>
      */
     private $cylinder_radius_m = 0.0;
     /**
-     * <code>float cylinder_height_m = 3;</code>
+     * Generated from protobuf field <code>float cylinder_height_m = 3;</code>
      */
     private $cylinder_height_m = 0.0;
     /**
-     * <code>float cylinder_ground_m = 4;</code>
+     * Generated from protobuf field <code>float cylinder_ground_m = 4;</code>
      */
     private $cylinder_ground_m = 0.0;
     /**
-     * <code>float shoulder_mode_scale = 5;</code>
+     * Generated from protobuf field <code>float shoulder_mode_scale = 5;</code>
      */
     private $shoulder_mode_scale = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $disk_radius_m
+     *     @type float $cylinder_radius_m
+     *     @type float $cylinder_height_m
+     *     @type float $cylinder_ground_m
+     *     @type float $shoulder_mode_scale
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Pokemon\CameraAttributes::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float disk_radius_m = 1;</code>
+     * Generated from protobuf field <code>float disk_radius_m = 1;</code>
+     * @return float
      */
     public function getDiskRadiusM()
     {
@@ -48,16 +62,21 @@ class CameraAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float disk_radius_m = 1;</code>
+     * Generated from protobuf field <code>float disk_radius_m = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDiskRadiusM($var)
     {
         GPBUtil::checkFloat($var);
         $this->disk_radius_m = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float cylinder_radius_m = 2;</code>
+     * Generated from protobuf field <code>float cylinder_radius_m = 2;</code>
+     * @return float
      */
     public function getCylinderRadiusM()
     {
@@ -65,16 +84,21 @@ class CameraAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float cylinder_radius_m = 2;</code>
+     * Generated from protobuf field <code>float cylinder_radius_m = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setCylinderRadiusM($var)
     {
         GPBUtil::checkFloat($var);
         $this->cylinder_radius_m = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float cylinder_height_m = 3;</code>
+     * Generated from protobuf field <code>float cylinder_height_m = 3;</code>
+     * @return float
      */
     public function getCylinderHeightM()
     {
@@ -82,16 +106,21 @@ class CameraAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float cylinder_height_m = 3;</code>
+     * Generated from protobuf field <code>float cylinder_height_m = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setCylinderHeightM($var)
     {
         GPBUtil::checkFloat($var);
         $this->cylinder_height_m = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float cylinder_ground_m = 4;</code>
+     * Generated from protobuf field <code>float cylinder_ground_m = 4;</code>
+     * @return float
      */
     public function getCylinderGroundM()
     {
@@ -99,16 +128,21 @@ class CameraAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float cylinder_ground_m = 4;</code>
+     * Generated from protobuf field <code>float cylinder_ground_m = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setCylinderGroundM($var)
     {
         GPBUtil::checkFloat($var);
         $this->cylinder_ground_m = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float shoulder_mode_scale = 5;</code>
+     * Generated from protobuf field <code>float shoulder_mode_scale = 5;</code>
+     * @return float
      */
     public function getShoulderModeScale()
     {
@@ -116,12 +150,16 @@ class CameraAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float shoulder_mode_scale = 5;</code>
+     * Generated from protobuf field <code>float shoulder_mode_scale = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setShoulderModeScale($var)
     {
         GPBUtil::checkFloat($var);
         $this->shoulder_mode_scale = $var;
+
+        return $this;
     }
 
 }

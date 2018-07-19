@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.EncounterResponse.Background</code>
- */
-class EncounterResponse_Background
-{
+if (false) {
     /**
-     * <code>PARK = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\EncounterResponse\Background instead.
+     * @deprecated
      */
-    const PARK = 0;
-    /**
-     * <code>DESERT = 1;</code>
-     */
-    const DESERT = 1;
+    class EncounterResponse_Background {}
 }
+class_exists(EncounterResponse\Background::class);
+@trigger_error('POGOProtos\Networking\Responses\EncounterResponse_Background is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\EncounterResponse\Background instead', E_USER_DEPRECATED);
 

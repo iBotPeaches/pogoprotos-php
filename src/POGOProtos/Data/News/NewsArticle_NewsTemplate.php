@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Data\News;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.News.NewsArticle.NewsTemplate</code>
- */
-class NewsArticle_NewsTemplate
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\News\NewsArticle\NewsTemplate instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>DEFAULT_TEMPLATE = 1;</code>
-     */
-    const DEFAULT_TEMPLATE = 1;
+    class NewsArticle_NewsTemplate {}
 }
+class_exists(NewsArticle\NewsTemplate::class);
+@trigger_error('POGOProtos\Data\News\NewsArticle_NewsTemplate is deprecated and will be removed in the next major release. Use POGOProtos\Data\News\NewsArticle\NewsTemplate instead', E_USER_DEPRECATED);
 

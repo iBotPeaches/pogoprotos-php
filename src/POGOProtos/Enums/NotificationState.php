@@ -5,16 +5,16 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.NotificationState</code>
+ * Protobuf type <code>POGOProtos.Enums.NotificationState</code>
  */
 class NotificationState
 {
     /**
-     * <code>UNSET_STATE = 0;</code>
+     * Generated from protobuf enum <code>UNSET_STATE = 0;</code>
      */
     const UNSET_STATE = 0;
     /**
-     * <code>VIEWED = 1;</code>
+     * Generated from protobuf enum <code>VIEWED = 1;</code>
      */
     const VIEWED = 1;
 }

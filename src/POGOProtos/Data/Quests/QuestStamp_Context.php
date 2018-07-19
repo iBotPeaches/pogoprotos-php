@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Data\Quests;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Quests.QuestStamp.Context</code>
- */
-class QuestStamp_Context
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Quests\QuestStamp\Context instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>STORY_QUEST = 1;</code>
-     */
-    const STORY_QUEST = 1;
-    /**
-     * <code>CHALLENGE_QUEST = 2;</code>
-     */
-    const CHALLENGE_QUEST = 2;
+    class QuestStamp_Context {}
 }
+class_exists(QuestStamp\Context::class);
+@trigger_error('POGOProtos\Data\Quests\QuestStamp_Context is deprecated and will be removed in the next major release. Use POGOProtos\Data\Quests\QuestStamp\Context instead', E_USER_DEPRECATED);
 

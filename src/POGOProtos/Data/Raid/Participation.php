@@ -9,58 +9,77 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Raid.Participation</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Raid.Participation</code>
  */
 class Participation extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 individual_damage_pokeballs = 1;</code>
+     * Generated from protobuf field <code>int32 individual_damage_pokeballs = 1;</code>
      */
     private $individual_damage_pokeballs = 0;
     /**
-     * <code>int32 team_damage_pokeballs = 2;</code>
+     * Generated from protobuf field <code>int32 team_damage_pokeballs = 2;</code>
      */
     private $team_damage_pokeballs = 0;
     /**
-     * <code>int32 gym_ownership_pokeballs = 3;</code>
+     * Generated from protobuf field <code>int32 gym_ownership_pokeballs = 3;</code>
      */
     private $gym_ownership_pokeballs = 0;
     /**
-     * <code>int32 base_pokeballs = 4;</code>
+     * Generated from protobuf field <code>int32 base_pokeballs = 4;</code>
      */
     private $base_pokeballs = 0;
     /**
-     * <code>double blue_percentage = 5;</code>
+     * Generated from protobuf field <code>double blue_percentage = 5;</code>
      */
     private $blue_percentage = 0.0;
     /**
-     * <code>double red_percentage = 6;</code>
+     * Generated from protobuf field <code>double red_percentage = 6;</code>
      */
     private $red_percentage = 0.0;
     /**
-     * <code>double yellow_percentage = 7;</code>
+     * Generated from protobuf field <code>double yellow_percentage = 7;</code>
      */
     private $yellow_percentage = 0.0;
     /**
-     * <code>float bonus_item_multiplier = 8;</code>
+     * Generated from protobuf field <code>float bonus_item_multiplier = 8;</code>
      */
     private $bonus_item_multiplier = 0.0;
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 9;</code>
      */
     private $highest_friendship_milestone = 0;
     /**
-     * <code>int32 highest_friendship_pokeballs = 10;</code>
+     * Generated from protobuf field <code>int32 highest_friendship_pokeballs = 10;</code>
      */
     private $highest_friendship_pokeballs = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $individual_damage_pokeballs
+     *     @type int $team_damage_pokeballs
+     *     @type int $gym_ownership_pokeballs
+     *     @type int $base_pokeballs
+     *     @type float $blue_percentage
+     *     @type float $red_percentage
+     *     @type float $yellow_percentage
+     *     @type float $bonus_item_multiplier
+     *     @type int $highest_friendship_milestone
+     *     @type int $highest_friendship_pokeballs
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Raid\Participation::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 individual_damage_pokeballs = 1;</code>
+     * Generated from protobuf field <code>int32 individual_damage_pokeballs = 1;</code>
+     * @return int
      */
     public function getIndividualDamagePokeballs()
     {
@@ -68,16 +87,21 @@ class Participation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 individual_damage_pokeballs = 1;</code>
+     * Generated from protobuf field <code>int32 individual_damage_pokeballs = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setIndividualDamagePokeballs($var)
     {
         GPBUtil::checkInt32($var);
         $this->individual_damage_pokeballs = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 team_damage_pokeballs = 2;</code>
+     * Generated from protobuf field <code>int32 team_damage_pokeballs = 2;</code>
+     * @return int
      */
     public function getTeamDamagePokeballs()
     {
@@ -85,16 +109,21 @@ class Participation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 team_damage_pokeballs = 2;</code>
+     * Generated from protobuf field <code>int32 team_damage_pokeballs = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTeamDamagePokeballs($var)
     {
         GPBUtil::checkInt32($var);
         $this->team_damage_pokeballs = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 gym_ownership_pokeballs = 3;</code>
+     * Generated from protobuf field <code>int32 gym_ownership_pokeballs = 3;</code>
+     * @return int
      */
     public function getGymOwnershipPokeballs()
     {
@@ -102,16 +131,21 @@ class Participation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 gym_ownership_pokeballs = 3;</code>
+     * Generated from protobuf field <code>int32 gym_ownership_pokeballs = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setGymOwnershipPokeballs($var)
     {
         GPBUtil::checkInt32($var);
         $this->gym_ownership_pokeballs = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 base_pokeballs = 4;</code>
+     * Generated from protobuf field <code>int32 base_pokeballs = 4;</code>
+     * @return int
      */
     public function getBasePokeballs()
     {
@@ -119,16 +153,21 @@ class Participation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 base_pokeballs = 4;</code>
+     * Generated from protobuf field <code>int32 base_pokeballs = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBasePokeballs($var)
     {
         GPBUtil::checkInt32($var);
         $this->base_pokeballs = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double blue_percentage = 5;</code>
+     * Generated from protobuf field <code>double blue_percentage = 5;</code>
+     * @return float
      */
     public function getBluePercentage()
     {
@@ -136,16 +175,21 @@ class Participation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double blue_percentage = 5;</code>
+     * Generated from protobuf field <code>double blue_percentage = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setBluePercentage($var)
     {
         GPBUtil::checkDouble($var);
         $this->blue_percentage = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double red_percentage = 6;</code>
+     * Generated from protobuf field <code>double red_percentage = 6;</code>
+     * @return float
      */
     public function getRedPercentage()
     {
@@ -153,16 +197,21 @@ class Participation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double red_percentage = 6;</code>
+     * Generated from protobuf field <code>double red_percentage = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setRedPercentage($var)
     {
         GPBUtil::checkDouble($var);
         $this->red_percentage = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double yellow_percentage = 7;</code>
+     * Generated from protobuf field <code>double yellow_percentage = 7;</code>
+     * @return float
      */
     public function getYellowPercentage()
     {
@@ -170,16 +219,21 @@ class Participation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double yellow_percentage = 7;</code>
+     * Generated from protobuf field <code>double yellow_percentage = 7;</code>
+     * @param float $var
+     * @return $this
      */
     public function setYellowPercentage($var)
     {
         GPBUtil::checkDouble($var);
         $this->yellow_percentage = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float bonus_item_multiplier = 8;</code>
+     * Generated from protobuf field <code>float bonus_item_multiplier = 8;</code>
+     * @return float
      */
     public function getBonusItemMultiplier()
     {
@@ -187,16 +241,21 @@ class Participation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float bonus_item_multiplier = 8;</code>
+     * Generated from protobuf field <code>float bonus_item_multiplier = 8;</code>
+     * @param float $var
+     * @return $this
      */
     public function setBonusItemMultiplier($var)
     {
         GPBUtil::checkFloat($var);
         $this->bonus_item_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 9;</code>
+     * @return int
      */
     public function getHighestFriendshipMilestone()
     {
@@ -204,16 +263,21 @@ class Participation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.FriendshipLevelMilestone highest_friendship_milestone = 9;</code>
+     * @param int $var
+     * @return $this
      */
     public function setHighestFriendshipMilestone($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\FriendshipLevelMilestone::class);
         $this->highest_friendship_milestone = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 highest_friendship_pokeballs = 10;</code>
+     * Generated from protobuf field <code>int32 highest_friendship_pokeballs = 10;</code>
+     * @return int
      */
     public function getHighestFriendshipPokeballs()
     {
@@ -221,12 +285,16 @@ class Participation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 highest_friendship_pokeballs = 10;</code>
+     * Generated from protobuf field <code>int32 highest_friendship_pokeballs = 10;</code>
+     * @param int $var
+     * @return $this
      */
     public function setHighestFriendshipPokeballs($var)
     {
         GPBUtil::checkInt32($var);
         $this->highest_friendship_pokeballs = $var;
+
+        return $this;
     }
 
 }

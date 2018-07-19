@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.IapItemCategoryDisplay</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.IapItemCategoryDisplay</code>
  */
 class IapItemCategoryDisplay extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.HoloIapItemCategory category = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.HoloIapItemCategory category = 1;</code>
      */
     private $category = 0;
     /**
-     * <code>string name = 2;</code>
+     * Generated from protobuf field <code>string name = 2;</code>
      */
     private $name = '';
     /**
-     * <code>bool hidden = 3;</code>
+     * Generated from protobuf field <code>bool hidden = 3;</code>
      */
     private $hidden = false;
     /**
-     * <code>int32 sort_order = 4;</code>
+     * Generated from protobuf field <code>int32 sort_order = 4;</code>
      */
     private $sort_order = 0;
     /**
-     * <code>bool banner_enabled = 5;</code>
+     * Generated from protobuf field <code>bool banner_enabled = 5;</code>
      */
     private $banner_enabled = false;
     /**
-     * <code>string banner_title = 6;</code>
+     * Generated from protobuf field <code>string banner_title = 6;</code>
      */
     private $banner_title = '';
     /**
-     * <code>string image_url = 7;</code>
+     * Generated from protobuf field <code>string image_url = 7;</code>
      */
     private $image_url = '';
     /**
-     * <code>string description = 8;</code>
+     * Generated from protobuf field <code>string description = 8;</code>
      */
     private $description = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $category
+     *     @type string $name
+     *     @type bool $hidden
+     *     @type int $sort_order
+     *     @type bool $banner_enabled
+     *     @type string $banner_title
+     *     @type string $image_url
+     *     @type string $description
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\IapItemCategoryDisplay::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.HoloIapItemCategory category = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.HoloIapItemCategory category = 1;</code>
+     * @return int
      */
     public function getCategory()
     {
@@ -60,16 +77,21 @@ class IapItemCategoryDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.HoloIapItemCategory category = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.HoloIapItemCategory category = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCategory($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\HoloIapItemCategory::class);
         $this->category = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string name = 2;</code>
+     * Generated from protobuf field <code>string name = 2;</code>
+     * @return string
      */
     public function getName()
     {
@@ -77,16 +99,21 @@ class IapItemCategoryDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string name = 2;</code>
+     * Generated from protobuf field <code>string name = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool hidden = 3;</code>
+     * Generated from protobuf field <code>bool hidden = 3;</code>
+     * @return bool
      */
     public function getHidden()
     {
@@ -94,16 +121,21 @@ class IapItemCategoryDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool hidden = 3;</code>
+     * Generated from protobuf field <code>bool hidden = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setHidden($var)
     {
         GPBUtil::checkBool($var);
         $this->hidden = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 sort_order = 4;</code>
+     * Generated from protobuf field <code>int32 sort_order = 4;</code>
+     * @return int
      */
     public function getSortOrder()
     {
@@ -111,16 +143,21 @@ class IapItemCategoryDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 sort_order = 4;</code>
+     * Generated from protobuf field <code>int32 sort_order = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSortOrder($var)
     {
         GPBUtil::checkInt32($var);
         $this->sort_order = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool banner_enabled = 5;</code>
+     * Generated from protobuf field <code>bool banner_enabled = 5;</code>
+     * @return bool
      */
     public function getBannerEnabled()
     {
@@ -128,16 +165,21 @@ class IapItemCategoryDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool banner_enabled = 5;</code>
+     * Generated from protobuf field <code>bool banner_enabled = 5;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setBannerEnabled($var)
     {
         GPBUtil::checkBool($var);
         $this->banner_enabled = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string banner_title = 6;</code>
+     * Generated from protobuf field <code>string banner_title = 6;</code>
+     * @return string
      */
     public function getBannerTitle()
     {
@@ -145,16 +187,21 @@ class IapItemCategoryDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string banner_title = 6;</code>
+     * Generated from protobuf field <code>string banner_title = 6;</code>
+     * @param string $var
+     * @return $this
      */
     public function setBannerTitle($var)
     {
         GPBUtil::checkString($var, True);
         $this->banner_title = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string image_url = 7;</code>
+     * Generated from protobuf field <code>string image_url = 7;</code>
+     * @return string
      */
     public function getImageUrl()
     {
@@ -162,16 +209,21 @@ class IapItemCategoryDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string image_url = 7;</code>
+     * Generated from protobuf field <code>string image_url = 7;</code>
+     * @param string $var
+     * @return $this
      */
     public function setImageUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->image_url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string description = 8;</code>
+     * Generated from protobuf field <code>string description = 8;</code>
+     * @return string
      */
     public function getDescription()
     {
@@ -179,12 +231,16 @@ class IapItemCategoryDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string description = 8;</code>
+     * Generated from protobuf field <code>string description = 8;</code>
+     * @param string $var
+     * @return $this
      */
     public function setDescription($var)
     {
         GPBUtil::checkString($var, True);
         $this->description = $var;
+
+        return $this;
     }
 
 }

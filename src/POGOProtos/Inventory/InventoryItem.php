@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Inventory.InventoryItem</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.InventoryItem</code>
  */
 class InventoryItem extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 modified_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 modified_timestamp_ms = 1;</code>
      */
     private $modified_timestamp_ms = 0;
     /**
-     * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
      */
     private $deleted_item = null;
     /**
-     * <code>.POGOProtos.Inventory.InventoryItemData inventory_item_data = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryItemData inventory_item_data = 3;</code>
      */
     private $inventory_item_data = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $modified_timestamp_ms
+     *     @type \POGOProtos\Inventory\InventoryItem\DeletedItem $deleted_item
+     *     @type \POGOProtos\Inventory\InventoryItemData $inventory_item_data
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\InventoryItem::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 modified_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 modified_timestamp_ms = 1;</code>
+     * @return int|string
      */
     public function getModifiedTimestampMs()
     {
@@ -40,16 +52,21 @@ class InventoryItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 modified_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 modified_timestamp_ms = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setModifiedTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->modified_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * @return \POGOProtos\Inventory\InventoryItem\DeletedItem
      */
     public function getDeletedItem()
     {
@@ -57,16 +74,21 @@ class InventoryItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
+     * @param \POGOProtos\Inventory\InventoryItem\DeletedItem $var
+     * @return $this
      */
-    public function setDeletedItem(&$var)
+    public function setDeletedItem($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\InventoryItem_DeletedItem::class);
         $this->deleted_item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.InventoryItemData inventory_item_data = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryItemData inventory_item_data = 3;</code>
+     * @return \POGOProtos\Inventory\InventoryItemData
      */
     public function getInventoryItemData()
     {
@@ -74,12 +96,16 @@ class InventoryItem extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.InventoryItemData inventory_item_data = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryItemData inventory_item_data = 3;</code>
+     * @param \POGOProtos\Inventory\InventoryItemData $var
+     * @return $this
      */
-    public function setInventoryItemData(&$var)
+    public function setInventoryItemData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\InventoryItemData::class);
         $this->inventory_item_data = $var;
+
+        return $this;
     }
 
 }

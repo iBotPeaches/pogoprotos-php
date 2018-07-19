@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Fort.FortSummary</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Fort.FortSummary</code>
  */
 class FortSummary extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string fort_summary_id = 1;</code>
+     * Generated from protobuf field <code>string fort_summary_id = 1;</code>
      */
     private $fort_summary_id = '';
     /**
-     * <code>int64 last_modified_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 last_modified_timestamp_ms = 2;</code>
      */
     private $last_modified_timestamp_ms = 0;
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
      */
     private $latitude = 0.0;
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
      */
     private $longitude = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $fort_summary_id
+     *     @type int|string $last_modified_timestamp_ms
+     *     @type float $latitude
+     *     @type float $longitude
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Fort\FortSummary::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string fort_summary_id = 1;</code>
+     * Generated from protobuf field <code>string fort_summary_id = 1;</code>
+     * @return string
      */
     public function getFortSummaryId()
     {
@@ -44,16 +57,21 @@ class FortSummary extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_summary_id = 1;</code>
+     * Generated from protobuf field <code>string fort_summary_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortSummaryId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_summary_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 last_modified_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 last_modified_timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getLastModifiedTimestampMs()
     {
@@ -61,16 +79,21 @@ class FortSummary extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 last_modified_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 last_modified_timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLastModifiedTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->last_modified_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
+     * @return float
      */
     public function getLatitude()
     {
@@ -78,16 +101,21 @@ class FortSummary extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
+     * @return float
      */
     public function getLongitude()
     {
@@ -95,12 +123,16 @@ class FortSummary extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->longitude = $var;
+
+        return $this;
     }
 
 }

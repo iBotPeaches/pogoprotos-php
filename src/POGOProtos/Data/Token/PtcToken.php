@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Token.PtcToken</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Token.PtcToken</code>
  */
 class PtcToken extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string token = 1;</code>
+     * Generated from protobuf field <code>string token = 1;</code>
      */
     private $token = '';
     /**
-     * <code>int32 expiration = 2;</code>
+     * Generated from protobuf field <code>int32 expiration = 2;</code>
      */
     private $expiration = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $token
+     *     @type int $expiration
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Token\PtcToken::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string token = 1;</code>
+     * Generated from protobuf field <code>string token = 1;</code>
+     * @return string
      */
     public function getToken()
     {
@@ -36,16 +47,21 @@ class PtcToken extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string token = 1;</code>
+     * Generated from protobuf field <code>string token = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->token = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 expiration = 2;</code>
+     * Generated from protobuf field <code>int32 expiration = 2;</code>
+     * @return int
      */
     public function getExpiration()
     {
@@ -53,12 +69,16 @@ class PtcToken extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 expiration = 2;</code>
+     * Generated from protobuf field <code>int32 expiration = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setExpiration($var)
     {
         GPBUtil::checkInt32($var);
         $this->expiration = $var;
+
+        return $this;
     }
 
 }

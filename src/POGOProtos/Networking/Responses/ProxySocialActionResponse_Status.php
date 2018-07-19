@@ -4,50 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.ProxySocialActionResponse.Status</code>
- */
-class ProxySocialActionResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\ProxySocialActionResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>COMPLETED = 1;</code>
-     */
-    const COMPLETED = 1;
-    /**
-     * <code>COMPLETED_AND_REASSIGNED = 2;</code>
-     */
-    const COMPLETED_AND_REASSIGNED = 2;
-    /**
-     * <code>ACTION_NOT_FOUND = 3;</code>
-     */
-    const ACTION_NOT_FOUND = 3;
-    /**
-     * <code>ASSIGNMENT_ERROR = 4;</code>
-     */
-    const ASSIGNMENT_ERROR = 4;
-    /**
-     * <code>PROXY_UNAUTHORIZED_ERROR = 5;</code>
-     */
-    const PROXY_UNAUTHORIZED_ERROR = 5;
-    /**
-     * <code>INTERNAL_ERROR = 6;</code>
-     */
-    const INTERNAL_ERROR = 6;
-    /**
-     * <code>BAD_REQUEST = 7;</code>
-     */
-    const BAD_REQUEST = 7;
-    /**
-     * <code>ACCESS_DENIED = 8;</code>
-     */
-    const ACCESS_DENIED = 8;
-    /**
-     * <code>TIMEOUT_ERROR = 9;</code>
-     */
-    const TIMEOUT_ERROR = 9;
+    class ProxySocialActionResponse_Status {}
 }
+class_exists(ProxySocialActionResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\ProxySocialActionResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\ProxySocialActionResponse\Status instead', E_USER_DEPRECATED);
 

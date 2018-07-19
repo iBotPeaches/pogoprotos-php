@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox</code>
- */
-class GetInboxResponse_ClientInbox extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>repeated .POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox.Notification notifications = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GetInboxResponse\ClientInbox instead.
+     * @deprecated
      */
-    private $notifications;
-    /**
-     * <code>repeated .POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox.TemplateVariable builtin_variables = 2;</code>
-     */
-    private $builtin_variables;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Responses\GetInboxResponse::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox.Notification notifications = 1;</code>
-     */
-    public function getNotifications()
-    {
-        return $this->notifications;
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox.Notification notifications = 1;</code>
-     */
-    public function setNotifications(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Responses\GetInboxResponse_ClientInbox_Notification::class);
-        $this->notifications = $var;
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox.TemplateVariable builtin_variables = 2;</code>
-     */
-    public function getBuiltinVariables()
-    {
-        return $this->builtin_variables;
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox.TemplateVariable builtin_variables = 2;</code>
-     */
-    public function setBuiltinVariables(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Responses\GetInboxResponse_ClientInbox_TemplateVariable::class);
-        $this->builtin_variables = $var;
-    }
-
+    class GetInboxResponse_ClientInbox {}
 }
+class_exists(GetInboxResponse\ClientInbox::class);
+@trigger_error('POGOProtos\Networking\Responses\GetInboxResponse_ClientInbox is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GetInboxResponse\ClientInbox instead', E_USER_DEPRECATED);
 

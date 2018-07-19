@@ -9,34 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.SetFavoritePokemonMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.SetFavoritePokemonMessage</code>
  */
 class SetFavoritePokemonMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <pre>
      * Do not change https://github.com/AeonLucid/POGOProtos/pull/126
-     * </pre>
      *
-     * <code>int64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>int64 pokemon_id = 1;</code>
      */
     private $pokemon_id = 0;
     /**
-     * <code>bool is_favorite = 2;</code>
+     * Generated from protobuf field <code>bool is_favorite = 2;</code>
      */
     private $is_favorite = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $pokemon_id
+     *           Do not change https://github.com/AeonLucid/POGOProtos/pull/126
+     *     @type bool $is_favorite
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\SetFavoritePokemonMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <pre>
      * Do not change https://github.com/AeonLucid/POGOProtos/pull/126
-     * </pre>
      *
-     * <code>int64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>int64 pokemon_id = 1;</code>
+     * @return int|string
      */
     public function getPokemonId()
     {
@@ -44,20 +52,23 @@ class SetFavoritePokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * Do not change https://github.com/AeonLucid/POGOProtos/pull/126
-     * </pre>
      *
-     * <code>int64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>int64 pokemon_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkInt64($var);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool is_favorite = 2;</code>
+     * Generated from protobuf field <code>bool is_favorite = 2;</code>
+     * @return bool
      */
     public function getIsFavorite()
     {
@@ -65,12 +76,16 @@ class SetFavoritePokemonMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool is_favorite = 2;</code>
+     * Generated from protobuf field <code>bool is_favorite = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsFavorite($var)
     {
         GPBUtil::checkBool($var);
         $this->is_favorite = $var;
+
+        return $this;
     }
 
 }

@@ -9,78 +9,102 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.FortSearchResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.FortSearchResponse</code>
  */
 class FortSearchResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.FortSearchResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FortSearchResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;</code>
      */
     private $items_awarded;
     /**
-     * <code>int32 gems_awarded = 3;</code>
+     * Generated from protobuf field <code>int32 gems_awarded = 3;</code>
      */
     private $gems_awarded = 0;
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data_egg = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data_egg = 4;</code>
      */
     private $pokemon_data_egg = null;
     /**
-     * <code>int32 experience_awarded = 5;</code>
+     * Generated from protobuf field <code>int32 experience_awarded = 5;</code>
      */
     private $experience_awarded = 0;
     /**
-     * <code>int64 cooldown_complete_timestamp_ms = 6;</code>
+     * Generated from protobuf field <code>int64 cooldown_complete_timestamp_ms = 6;</code>
      */
     private $cooldown_complete_timestamp_ms = 0;
     /**
-     * <code>int32 chain_hack_sequence_number = 7;</code>
+     * Generated from protobuf field <code>int32 chain_hack_sequence_number = 7;</code>
      */
     private $chain_hack_sequence_number = 0;
     /**
-     * <code>.POGOProtos.Data.Badge.AwardedGymBadge awarded_gym_badge = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Badge.AwardedGymBadge awarded_gym_badge = 8;</code>
      */
     private $awarded_gym_badge = null;
     /**
-     * <code>.POGOProtos.Inventory.Loot loot = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot loot = 9;</code>
      */
     private $loot = null;
     /**
-     * <code>.POGOProtos.Inventory.Loot bonus_loot = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot bonus_loot = 10;</code>
      */
     private $bonus_loot = null;
     /**
-     * <code>int32 raid_tickets = 11;</code>
+     * Generated from protobuf field <code>int32 raid_tickets = 11;</code>
      */
     private $raid_tickets = 0;
     /**
-     * <code>.POGOProtos.Inventory.Loot team_bonus_loot = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot team_bonus_loot = 12;</code>
      */
     private $team_bonus_loot = null;
     /**
-     * <code>string fort_id = 13;</code>
+     * Generated from protobuf field <code>string fort_id = 13;</code>
      */
     private $fort_id = '';
     /**
-     * <code>.POGOProtos.Data.Quests.ClientQuest challenge_quest = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.ClientQuest challenge_quest = 14;</code>
      */
     private $challenge_quest = null;
     /**
-     * <code>.POGOProtos.Data.Gift.GiftBox gift_box = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gift.GiftBox gift_box = 15;</code>
      */
     private $gift_box = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Inventory\Item\ItemAward[]|\Google\Protobuf\Internal\RepeatedField $items_awarded
+     *     @type int $gems_awarded
+     *     @type \POGOProtos\Data\PokemonData $pokemon_data_egg
+     *     @type int $experience_awarded
+     *     @type int|string $cooldown_complete_timestamp_ms
+     *     @type int $chain_hack_sequence_number
+     *     @type \POGOProtos\Data\Badge\AwardedGymBadge $awarded_gym_badge
+     *     @type \POGOProtos\Inventory\Loot $loot
+     *     @type \POGOProtos\Inventory\Loot $bonus_loot
+     *     @type int $raid_tickets
+     *     @type \POGOProtos\Inventory\Loot $team_bonus_loot
+     *     @type string $fort_id
+     *     @type \POGOProtos\Data\Quests\ClientQuest $challenge_quest
+     *     @type \POGOProtos\Data\Gift\GiftBox $gift_box
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\FortSearchResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.FortSearchResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FortSearchResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -88,16 +112,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.FortSearchResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FortSearchResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\FortSearchResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getItemsAwarded()
     {
@@ -105,16 +134,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;</code>
+     * @param \POGOProtos\Inventory\Item\ItemAward[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItemsAwarded(&$var)
+    public function setItemsAwarded($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemAward::class);
-        $this->items_awarded = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemAward::class);
+        $this->items_awarded = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>int32 gems_awarded = 3;</code>
+     * Generated from protobuf field <code>int32 gems_awarded = 3;</code>
+     * @return int
      */
     public function getGemsAwarded()
     {
@@ -122,16 +156,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 gems_awarded = 3;</code>
+     * Generated from protobuf field <code>int32 gems_awarded = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setGemsAwarded($var)
     {
         GPBUtil::checkInt32($var);
         $this->gems_awarded = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data_egg = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data_egg = 4;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getPokemonDataEgg()
     {
@@ -139,16 +178,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData pokemon_data_egg = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data_egg = 4;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setPokemonDataEgg(&$var)
+    public function setPokemonDataEgg($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->pokemon_data_egg = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 experience_awarded = 5;</code>
+     * Generated from protobuf field <code>int32 experience_awarded = 5;</code>
+     * @return int
      */
     public function getExperienceAwarded()
     {
@@ -156,16 +200,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 experience_awarded = 5;</code>
+     * Generated from protobuf field <code>int32 experience_awarded = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setExperienceAwarded($var)
     {
         GPBUtil::checkInt32($var);
         $this->experience_awarded = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 cooldown_complete_timestamp_ms = 6;</code>
+     * Generated from protobuf field <code>int64 cooldown_complete_timestamp_ms = 6;</code>
+     * @return int|string
      */
     public function getCooldownCompleteTimestampMs()
     {
@@ -173,16 +222,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 cooldown_complete_timestamp_ms = 6;</code>
+     * Generated from protobuf field <code>int64 cooldown_complete_timestamp_ms = 6;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setCooldownCompleteTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->cooldown_complete_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 chain_hack_sequence_number = 7;</code>
+     * Generated from protobuf field <code>int32 chain_hack_sequence_number = 7;</code>
+     * @return int
      */
     public function getChainHackSequenceNumber()
     {
@@ -190,16 +244,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 chain_hack_sequence_number = 7;</code>
+     * Generated from protobuf field <code>int32 chain_hack_sequence_number = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setChainHackSequenceNumber($var)
     {
         GPBUtil::checkInt32($var);
         $this->chain_hack_sequence_number = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Badge.AwardedGymBadge awarded_gym_badge = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Badge.AwardedGymBadge awarded_gym_badge = 8;</code>
+     * @return \POGOProtos\Data\Badge\AwardedGymBadge
      */
     public function getAwardedGymBadge()
     {
@@ -207,16 +266,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Badge.AwardedGymBadge awarded_gym_badge = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Badge.AwardedGymBadge awarded_gym_badge = 8;</code>
+     * @param \POGOProtos\Data\Badge\AwardedGymBadge $var
+     * @return $this
      */
-    public function setAwardedGymBadge(&$var)
+    public function setAwardedGymBadge($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Badge\AwardedGymBadge::class);
         $this->awarded_gym_badge = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot loot = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot loot = 9;</code>
+     * @return \POGOProtos\Inventory\Loot
      */
     public function getLoot()
     {
@@ -224,16 +288,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot loot = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot loot = 9;</code>
+     * @param \POGOProtos\Inventory\Loot $var
+     * @return $this
      */
-    public function setLoot(&$var)
+    public function setLoot($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\Loot::class);
         $this->loot = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot bonus_loot = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot bonus_loot = 10;</code>
+     * @return \POGOProtos\Inventory\Loot
      */
     public function getBonusLoot()
     {
@@ -241,16 +310,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot bonus_loot = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot bonus_loot = 10;</code>
+     * @param \POGOProtos\Inventory\Loot $var
+     * @return $this
      */
-    public function setBonusLoot(&$var)
+    public function setBonusLoot($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\Loot::class);
         $this->bonus_loot = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 raid_tickets = 11;</code>
+     * Generated from protobuf field <code>int32 raid_tickets = 11;</code>
+     * @return int
      */
     public function getRaidTickets()
     {
@@ -258,16 +332,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 raid_tickets = 11;</code>
+     * Generated from protobuf field <code>int32 raid_tickets = 11;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRaidTickets($var)
     {
         GPBUtil::checkInt32($var);
         $this->raid_tickets = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot team_bonus_loot = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot team_bonus_loot = 12;</code>
+     * @return \POGOProtos\Inventory\Loot
      */
     public function getTeamBonusLoot()
     {
@@ -275,16 +354,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot team_bonus_loot = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot team_bonus_loot = 12;</code>
+     * @param \POGOProtos\Inventory\Loot $var
+     * @return $this
      */
-    public function setTeamBonusLoot(&$var)
+    public function setTeamBonusLoot($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\Loot::class);
         $this->team_bonus_loot = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string fort_id = 13;</code>
+     * Generated from protobuf field <code>string fort_id = 13;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -292,16 +376,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 13;</code>
+     * Generated from protobuf field <code>string fort_id = 13;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.ClientQuest challenge_quest = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.ClientQuest challenge_quest = 14;</code>
+     * @return \POGOProtos\Data\Quests\ClientQuest
      */
     public function getChallengeQuest()
     {
@@ -309,16 +398,21 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.ClientQuest challenge_quest = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.ClientQuest challenge_quest = 14;</code>
+     * @param \POGOProtos\Data\Quests\ClientQuest $var
+     * @return $this
      */
-    public function setChallengeQuest(&$var)
+    public function setChallengeQuest($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\ClientQuest::class);
         $this->challenge_quest = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Gift.GiftBox gift_box = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gift.GiftBox gift_box = 15;</code>
+     * @return \POGOProtos\Data\Gift\GiftBox
      */
     public function getGiftBox()
     {
@@ -326,12 +420,16 @@ class FortSearchResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Gift.GiftBox gift_box = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Gift.GiftBox gift_box = 15;</code>
+     * @param \POGOProtos\Data\Gift\GiftBox $var
+     * @return $this
      */
-    public function setGiftBox(&$var)
+    public function setGiftBox($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Gift\GiftBox::class);
         $this->gift_box = $var;
+
+        return $this;
     }
 
 }

@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetPlayerProfileResponse.GymBadges</code>
- */
-class GetPlayerProfileResponse_GymBadges extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\GetPlayerProfileResponse\GymBadges instead.
+     * @deprecated
      */
-    private $gym_badge;
-    /**
-     * <code>int32 total = 2;</code>
-     */
-    private $total = 0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Responses\GetPlayerProfileResponse::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
-     */
-    public function getGymBadge()
-    {
-        return $this->gym_badge;
-    }
-
-    /**
-     * <code>repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 1;</code>
-     */
-    public function setGymBadge(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Badge\AwardedGymBadge::class);
-        $this->gym_badge = $var;
-    }
-
-    /**
-     * <code>int32 total = 2;</code>
-     */
-    public function getTotal()
-    {
-        return $this->total;
-    }
-
-    /**
-     * <code>int32 total = 2;</code>
-     */
-    public function setTotal($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->total = $var;
-    }
-
+    class GetPlayerProfileResponse_GymBadges {}
 }
+class_exists(GetPlayerProfileResponse\GymBadges::class);
+@trigger_error('POGOProtos\Networking\Responses\GetPlayerProfileResponse_GymBadges is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\GetPlayerProfileResponse\GymBadges instead', E_USER_DEPRECATED);
 

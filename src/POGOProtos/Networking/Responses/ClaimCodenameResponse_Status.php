@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.ClaimCodenameResponse.Status</code>
- */
-class ClaimCodenameResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\ClaimCodenameResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>CODENAME_NOT_AVAILABLE = 2;</code>
-     */
-    const CODENAME_NOT_AVAILABLE = 2;
-    /**
-     * <code>CODENAME_NOT_VALID = 3;</code>
-     */
-    const CODENAME_NOT_VALID = 3;
-    /**
-     * <code>CURRENT_OWNER = 4;</code>
-     */
-    const CURRENT_OWNER = 4;
-    /**
-     * <code>CODENAME_CHANGE_NOT_ALLOWED = 5;</code>
-     */
-    const CODENAME_CHANGE_NOT_ALLOWED = 5;
+    class ClaimCodenameResponse_Status {}
 }
+class_exists(ClaimCodenameResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\ClaimCodenameResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\ClaimCodenameResponse\Status instead', E_USER_DEPRECATED);
 

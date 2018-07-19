@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Player.PlayerBadge</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Player.PlayerBadge</code>
  */
 class PlayerBadge extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
      */
     private $badge_type = 0;
     /**
-     * <code>int32 rank = 2;</code>
+     * Generated from protobuf field <code>int32 rank = 2;</code>
      */
     private $rank = 0;
     /**
-     * <code>int32 start_value = 3;</code>
+     * Generated from protobuf field <code>int32 start_value = 3;</code>
      */
     private $start_value = 0;
     /**
-     * <code>int32 end_value = 4;</code>
+     * Generated from protobuf field <code>int32 end_value = 4;</code>
      */
     private $end_value = 0;
     /**
-     * <code>double current_value = 5;</code>
+     * Generated from protobuf field <code>double current_value = 5;</code>
      */
     private $current_value = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $badge_type
+     *     @type int $rank
+     *     @type int $start_value
+     *     @type int $end_value
+     *     @type float $current_value
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Player\PlayerBadge::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * @return int
      */
     public function getBadgeType()
     {
@@ -48,16 +62,21 @@ class PlayerBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BadgeType badge_type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBadgeType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\BadgeType::class);
         $this->badge_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 rank = 2;</code>
+     * Generated from protobuf field <code>int32 rank = 2;</code>
+     * @return int
      */
     public function getRank()
     {
@@ -65,16 +84,21 @@ class PlayerBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 rank = 2;</code>
+     * Generated from protobuf field <code>int32 rank = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRank($var)
     {
         GPBUtil::checkInt32($var);
         $this->rank = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 start_value = 3;</code>
+     * Generated from protobuf field <code>int32 start_value = 3;</code>
+     * @return int
      */
     public function getStartValue()
     {
@@ -82,16 +106,21 @@ class PlayerBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 start_value = 3;</code>
+     * Generated from protobuf field <code>int32 start_value = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStartValue($var)
     {
         GPBUtil::checkInt32($var);
         $this->start_value = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 end_value = 4;</code>
+     * Generated from protobuf field <code>int32 end_value = 4;</code>
+     * @return int
      */
     public function getEndValue()
     {
@@ -99,16 +128,21 @@ class PlayerBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 end_value = 4;</code>
+     * Generated from protobuf field <code>int32 end_value = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEndValue($var)
     {
         GPBUtil::checkInt32($var);
         $this->end_value = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double current_value = 5;</code>
+     * Generated from protobuf field <code>double current_value = 5;</code>
+     * @return float
      */
     public function getCurrentValue()
     {
@@ -116,12 +150,16 @@ class PlayerBadge extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double current_value = 5;</code>
+     * Generated from protobuf field <code>double current_value = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setCurrentValue($var)
     {
         GPBUtil::checkDouble($var);
         $this->current_value = $var;
+
+        return $this;
     }
 
 }

@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.SfidaActionLogResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.SfidaActionLogResponse</code>
  */
 class SfidaActionLogResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.SfidaActionLogResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SfidaActionLogResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>repeated .POGOProtos.Data.Logs.ActionLogEntry log_entries = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Logs.ActionLogEntry log_entries = 2;</code>
      */
     private $log_entries;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Data\Logs\ActionLogEntry[]|\Google\Protobuf\Internal\RepeatedField $log_entries
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\SfidaActionLogResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.SfidaActionLogResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SfidaActionLogResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class SfidaActionLogResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.SfidaActionLogResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.SfidaActionLogResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\SfidaActionLogResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Logs.ActionLogEntry log_entries = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Logs.ActionLogEntry log_entries = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getLogEntries()
     {
@@ -53,12 +69,16 @@ class SfidaActionLogResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.Logs.ActionLogEntry log_entries = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Logs.ActionLogEntry log_entries = 2;</code>
+     * @param \POGOProtos\Data\Logs\ActionLogEntry[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setLogEntries(&$var)
+    public function setLogEntries($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Logs\ActionLogEntry::class);
-        $this->log_entries = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Logs\ActionLogEntry::class);
+        $this->log_entries = $arr;
+
+        return $this;
     }
 
 }

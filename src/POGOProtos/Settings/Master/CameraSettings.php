@@ -9,82 +9,107 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.CameraSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.CameraSettings</code>
  */
 class CameraSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string next_camera = 1;</code>
+     * Generated from protobuf field <code>string next_camera = 1;</code>
      */
     private $next_camera = '';
     /**
-     * <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraInterpolation interpolation = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraInterpolation interpolation = 2;</code>
      */
     private $interpolation;
     /**
-     * <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraTarget target_type = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraTarget target_type = 3;</code>
      */
     private $target_type;
     /**
-     * <code>repeated float ease_in_speed = 4;</code>
+     * Generated from protobuf field <code>repeated float ease_in_speed = 4;</code>
      */
     private $ease_in_speed;
     /**
-     * <code>repeated float ease_out_speed = 5;</code>
+     * Generated from protobuf field <code>repeated float ease_out_speed = 5;</code>
      */
     private $ease_out_speed;
     /**
-     * <code>repeated float duration_seconds = 6;</code>
+     * Generated from protobuf field <code>repeated float duration_seconds = 6;</code>
      */
     private $duration_seconds;
     /**
-     * <code>repeated float wait_seconds = 7;</code>
+     * Generated from protobuf field <code>repeated float wait_seconds = 7;</code>
      */
     private $wait_seconds;
     /**
-     * <code>repeated float transition_seconds = 8;</code>
+     * Generated from protobuf field <code>repeated float transition_seconds = 8;</code>
      */
     private $transition_seconds;
     /**
-     * <code>repeated float angle_degree = 9;</code>
+     * Generated from protobuf field <code>repeated float angle_degree = 9;</code>
      */
     private $angle_degree;
     /**
-     * <code>repeated float angle_offset_degree = 10;</code>
+     * Generated from protobuf field <code>repeated float angle_offset_degree = 10;</code>
      */
     private $angle_offset_degree;
     /**
-     * <code>repeated float pitch_degree = 11;</code>
+     * Generated from protobuf field <code>repeated float pitch_degree = 11;</code>
      */
     private $pitch_degree;
     /**
-     * <code>repeated float pitch_offset_degree = 12;</code>
+     * Generated from protobuf field <code>repeated float pitch_offset_degree = 12;</code>
      */
     private $pitch_offset_degree;
     /**
-     * <code>repeated float roll_degree = 13;</code>
+     * Generated from protobuf field <code>repeated float roll_degree = 13;</code>
      */
     private $roll_degree;
     /**
-     * <code>repeated float distance_meters = 14;</code>
+     * Generated from protobuf field <code>repeated float distance_meters = 14;</code>
      */
     private $distance_meters;
     /**
-     * <code>repeated float height_percent = 15;</code>
+     * Generated from protobuf field <code>repeated float height_percent = 15;</code>
      */
     private $height_percent;
     /**
-     * <code>repeated float vert_ctr_ratio = 16;</code>
+     * Generated from protobuf field <code>repeated float vert_ctr_ratio = 16;</code>
      */
     private $vert_ctr_ratio;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $next_camera
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $interpolation
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $target_type
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $ease_in_speed
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $ease_out_speed
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $duration_seconds
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $wait_seconds
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $transition_seconds
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $angle_degree
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $angle_offset_degree
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $pitch_degree
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $pitch_offset_degree
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $roll_degree
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $distance_meters
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $height_percent
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $vert_ctr_ratio
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\CameraSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string next_camera = 1;</code>
+     * Generated from protobuf field <code>string next_camera = 1;</code>
+     * @return string
      */
     public function getNextCamera()
     {
@@ -92,16 +117,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string next_camera = 1;</code>
+     * Generated from protobuf field <code>string next_camera = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setNextCamera($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_camera = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraInterpolation interpolation = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraInterpolation interpolation = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getInterpolation()
     {
@@ -109,16 +139,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraInterpolation interpolation = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraInterpolation interpolation = 2;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setInterpolation(&$var)
+    public function setInterpolation($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Settings\Master\CameraSettings_CameraInterpolation::class);
-        $this->interpolation = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Settings\Master\CameraSettings\CameraInterpolation::class);
+        $this->interpolation = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraTarget target_type = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraTarget target_type = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getTargetType()
     {
@@ -126,16 +161,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraTarget target_type = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraTarget target_type = 3;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTargetType(&$var)
+    public function setTargetType($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Settings\Master\CameraSettings_CameraTarget::class);
-        $this->target_type = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Settings\Master\CameraSettings\CameraTarget::class);
+        $this->target_type = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float ease_in_speed = 4;</code>
+     * Generated from protobuf field <code>repeated float ease_in_speed = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getEaseInSpeed()
     {
@@ -143,16 +183,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float ease_in_speed = 4;</code>
+     * Generated from protobuf field <code>repeated float ease_in_speed = 4;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setEaseInSpeed(&$var)
+    public function setEaseInSpeed($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->ease_in_speed = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->ease_in_speed = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float ease_out_speed = 5;</code>
+     * Generated from protobuf field <code>repeated float ease_out_speed = 5;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getEaseOutSpeed()
     {
@@ -160,16 +205,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float ease_out_speed = 5;</code>
+     * Generated from protobuf field <code>repeated float ease_out_speed = 5;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setEaseOutSpeed(&$var)
+    public function setEaseOutSpeed($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->ease_out_speed = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->ease_out_speed = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float duration_seconds = 6;</code>
+     * Generated from protobuf field <code>repeated float duration_seconds = 6;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getDurationSeconds()
     {
@@ -177,16 +227,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float duration_seconds = 6;</code>
+     * Generated from protobuf field <code>repeated float duration_seconds = 6;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDurationSeconds(&$var)
+    public function setDurationSeconds($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->duration_seconds = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->duration_seconds = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float wait_seconds = 7;</code>
+     * Generated from protobuf field <code>repeated float wait_seconds = 7;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getWaitSeconds()
     {
@@ -194,16 +249,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float wait_seconds = 7;</code>
+     * Generated from protobuf field <code>repeated float wait_seconds = 7;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setWaitSeconds(&$var)
+    public function setWaitSeconds($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->wait_seconds = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->wait_seconds = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float transition_seconds = 8;</code>
+     * Generated from protobuf field <code>repeated float transition_seconds = 8;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getTransitionSeconds()
     {
@@ -211,16 +271,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float transition_seconds = 8;</code>
+     * Generated from protobuf field <code>repeated float transition_seconds = 8;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTransitionSeconds(&$var)
+    public function setTransitionSeconds($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->transition_seconds = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->transition_seconds = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float angle_degree = 9;</code>
+     * Generated from protobuf field <code>repeated float angle_degree = 9;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAngleDegree()
     {
@@ -228,16 +293,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float angle_degree = 9;</code>
+     * Generated from protobuf field <code>repeated float angle_degree = 9;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAngleDegree(&$var)
+    public function setAngleDegree($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->angle_degree = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->angle_degree = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float angle_offset_degree = 10;</code>
+     * Generated from protobuf field <code>repeated float angle_offset_degree = 10;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAngleOffsetDegree()
     {
@@ -245,16 +315,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float angle_offset_degree = 10;</code>
+     * Generated from protobuf field <code>repeated float angle_offset_degree = 10;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAngleOffsetDegree(&$var)
+    public function setAngleOffsetDegree($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->angle_offset_degree = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->angle_offset_degree = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float pitch_degree = 11;</code>
+     * Generated from protobuf field <code>repeated float pitch_degree = 11;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPitchDegree()
     {
@@ -262,16 +337,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float pitch_degree = 11;</code>
+     * Generated from protobuf field <code>repeated float pitch_degree = 11;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPitchDegree(&$var)
+    public function setPitchDegree($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->pitch_degree = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->pitch_degree = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float pitch_offset_degree = 12;</code>
+     * Generated from protobuf field <code>repeated float pitch_offset_degree = 12;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPitchOffsetDegree()
     {
@@ -279,16 +359,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float pitch_offset_degree = 12;</code>
+     * Generated from protobuf field <code>repeated float pitch_offset_degree = 12;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPitchOffsetDegree(&$var)
+    public function setPitchOffsetDegree($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->pitch_offset_degree = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->pitch_offset_degree = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float roll_degree = 13;</code>
+     * Generated from protobuf field <code>repeated float roll_degree = 13;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getRollDegree()
     {
@@ -296,16 +381,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float roll_degree = 13;</code>
+     * Generated from protobuf field <code>repeated float roll_degree = 13;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setRollDegree(&$var)
+    public function setRollDegree($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->roll_degree = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->roll_degree = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float distance_meters = 14;</code>
+     * Generated from protobuf field <code>repeated float distance_meters = 14;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getDistanceMeters()
     {
@@ -313,16 +403,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float distance_meters = 14;</code>
+     * Generated from protobuf field <code>repeated float distance_meters = 14;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDistanceMeters(&$var)
+    public function setDistanceMeters($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->distance_meters = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->distance_meters = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float height_percent = 15;</code>
+     * Generated from protobuf field <code>repeated float height_percent = 15;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getHeightPercent()
     {
@@ -330,16 +425,21 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float height_percent = 15;</code>
+     * Generated from protobuf field <code>repeated float height_percent = 15;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setHeightPercent(&$var)
+    public function setHeightPercent($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->height_percent = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->height_percent = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated float vert_ctr_ratio = 16;</code>
+     * Generated from protobuf field <code>repeated float vert_ctr_ratio = 16;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getVertCtrRatio()
     {
@@ -347,12 +447,16 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated float vert_ctr_ratio = 16;</code>
+     * Generated from protobuf field <code>repeated float vert_ctr_ratio = 16;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setVertCtrRatio(&$var)
+    public function setVertCtrRatio($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->vert_ctr_ratio = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->vert_ctr_ratio = $arr;
+
+        return $this;
     }
 
 }

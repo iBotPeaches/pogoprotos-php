@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.AddFortModifierResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.AddFortModifierResponse</code>
  */
 class AddFortModifierResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.AddFortModifierResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.AddFortModifierResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;</code>
      */
     private $fort_details = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Networking\Responses\FortDetailsResponse $fort_details
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\AddFortModifierResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.AddFortModifierResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.AddFortModifierResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -36,16 +47,21 @@ class AddFortModifierResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.AddFortModifierResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.AddFortModifierResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\AddFortModifierResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;</code>
+     * @return \POGOProtos\Networking\Responses\FortDetailsResponse
      */
     public function getFortDetails()
     {
@@ -53,12 +69,16 @@ class AddFortModifierResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;</code>
+     * @param \POGOProtos\Networking\Responses\FortDetailsResponse $var
+     * @return $this
      */
-    public function setFortDetails(&$var)
+    public function setFortDetails($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Responses\FortDetailsResponse::class);
         $this->fort_details = $var;
+
+        return $this;
     }
 
 }

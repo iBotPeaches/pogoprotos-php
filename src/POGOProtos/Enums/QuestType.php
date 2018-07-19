@@ -5,96 +5,96 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.QuestType</code>
+ * Protobuf type <code>POGOProtos.Enums.QuestType</code>
  */
 class QuestType
 {
     /**
-     * <code>QUEST_UNKNOWN_TYPE = 0;</code>
+     * Generated from protobuf enum <code>QUEST_UNKNOWN_TYPE = 0;</code>
      */
     const QUEST_UNKNOWN_TYPE = 0;
     /**
-     * <code>QUEST_FIRST_CATCH_OF_THE_DAY = 1;</code>
+     * Generated from protobuf enum <code>QUEST_FIRST_CATCH_OF_THE_DAY = 1;</code>
      */
     const QUEST_FIRST_CATCH_OF_THE_DAY = 1;
     /**
-     * <code>QUEST_FIRST_POKESTOP_OF_THE_DAY = 2;</code>
+     * Generated from protobuf enum <code>QUEST_FIRST_POKESTOP_OF_THE_DAY = 2;</code>
      */
     const QUEST_FIRST_POKESTOP_OF_THE_DAY = 2;
     /**
-     * <code>QUEST_MULTI_PART = 3;</code>
+     * Generated from protobuf enum <code>QUEST_MULTI_PART = 3;</code>
      */
     const QUEST_MULTI_PART = 3;
     /**
-     * <code>QUEST_CATCH_POKEMON = 4;</code>
+     * Generated from protobuf enum <code>QUEST_CATCH_POKEMON = 4;</code>
      */
     const QUEST_CATCH_POKEMON = 4;
     /**
-     * <code>QUEST_SPIN_POKESTOP = 5;</code>
+     * Generated from protobuf enum <code>QUEST_SPIN_POKESTOP = 5;</code>
      */
     const QUEST_SPIN_POKESTOP = 5;
     /**
-     * <code>QUEST_HATCH_EGG = 6;</code>
+     * Generated from protobuf enum <code>QUEST_HATCH_EGG = 6;</code>
      */
     const QUEST_HATCH_EGG = 6;
     /**
-     * <code>QUEST_COMPLETE_GYM_BATTLE = 7;</code>
+     * Generated from protobuf enum <code>QUEST_COMPLETE_GYM_BATTLE = 7;</code>
      */
     const QUEST_COMPLETE_GYM_BATTLE = 7;
     /**
-     * <code>QUEST_COMPLETE_RAID_BATTLE = 8;</code>
+     * Generated from protobuf enum <code>QUEST_COMPLETE_RAID_BATTLE = 8;</code>
      */
     const QUEST_COMPLETE_RAID_BATTLE = 8;
     /**
-     * <code>QUEST_COMPLETE_QUEST = 9;</code>
+     * Generated from protobuf enum <code>QUEST_COMPLETE_QUEST = 9;</code>
      */
     const QUEST_COMPLETE_QUEST = 9;
     /**
-     * <code>QUEST_TRANSFER_POKEMON = 10;</code>
+     * Generated from protobuf enum <code>QUEST_TRANSFER_POKEMON = 10;</code>
      */
     const QUEST_TRANSFER_POKEMON = 10;
     /**
-     * <code>QUEST_FAVORITE_POKEMON = 11;</code>
+     * Generated from protobuf enum <code>QUEST_FAVORITE_POKEMON = 11;</code>
      */
     const QUEST_FAVORITE_POKEMON = 11;
     /**
-     * <code>QUEST_AUTOCOMPLETE = 12;</code>
+     * Generated from protobuf enum <code>QUEST_AUTOCOMPLETE = 12;</code>
      */
     const QUEST_AUTOCOMPLETE = 12;
     /**
-     * <code>QUEST_USE_BERRY_IN_ENCOUNTER = 13;</code>
+     * Generated from protobuf enum <code>QUEST_USE_BERRY_IN_ENCOUNTER = 13;</code>
      */
     const QUEST_USE_BERRY_IN_ENCOUNTER = 13;
     /**
-     * <code>QUEST_UPGRADE_POKEMON = 14;</code>
+     * Generated from protobuf enum <code>QUEST_UPGRADE_POKEMON = 14;</code>
      */
     const QUEST_UPGRADE_POKEMON = 14;
     /**
-     * <code>QUEST_EVOLVE_POKEMON = 15;</code>
+     * Generated from protobuf enum <code>QUEST_EVOLVE_POKEMON = 15;</code>
      */
     const QUEST_EVOLVE_POKEMON = 15;
     /**
-     * <code>QUEST_LAND_THROW = 16;</code>
+     * Generated from protobuf enum <code>QUEST_LAND_THROW = 16;</code>
      */
     const QUEST_LAND_THROW = 16;
     /**
-     * <code>QUEST_GET_BUDDY_CANDY = 17;</code>
+     * Generated from protobuf enum <code>QUEST_GET_BUDDY_CANDY = 17;</code>
      */
     const QUEST_GET_BUDDY_CANDY = 17;
     /**
-     * <code>QUEST_BADGE_RANK = 18;</code>
+     * Generated from protobuf enum <code>QUEST_BADGE_RANK = 18;</code>
      */
     const QUEST_BADGE_RANK = 18;
     /**
-     * <code>QUEST_PLAYER_LEVEL = 19;</code>
+     * Generated from protobuf enum <code>QUEST_PLAYER_LEVEL = 19;</code>
      */
     const QUEST_PLAYER_LEVEL = 19;
     /**
-     * <code>QUEST_JOIN_RAID = 20;</code>
+     * Generated from protobuf enum <code>QUEST_JOIN_RAID = 20;</code>
      */
     const QUEST_JOIN_RAID = 20;
     /**
-     * <code>QUEST_COMPLETE_BATTLE = 21;</code>
+     * Generated from protobuf enum <code>QUEST_COMPLETE_BATTLE = 21;</code>
      */
     const QUEST_COMPLETE_BATTLE = 21;
 }

@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetHoloInventoryResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetHoloInventoryResponse</code>
  */
 class GetHoloInventoryResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
      */
     private $success = false;
     /**
-     * <code>.POGOProtos.Inventory.InventoryDelta inventory_delta = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryDelta inventory_delta = 2;</code>
      */
     private $inventory_delta = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $success
+     *     @type \POGOProtos\Inventory\InventoryDelta $inventory_delta
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetHoloInventoryResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @return bool
      */
     public function getSuccess()
     {
@@ -36,16 +47,21 @@ class GetHoloInventoryResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSuccess($var)
     {
         GPBUtil::checkBool($var);
         $this->success = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.InventoryDelta inventory_delta = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryDelta inventory_delta = 2;</code>
+     * @return \POGOProtos\Inventory\InventoryDelta
      */
     public function getInventoryDelta()
     {
@@ -53,12 +69,16 @@ class GetHoloInventoryResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.InventoryDelta inventory_delta = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryDelta inventory_delta = 2;</code>
+     * @param \POGOProtos\Inventory\InventoryDelta $var
+     * @return $this
      */
-    public function setInventoryDelta(&$var)
+    public function setInventoryDelta($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\InventoryDelta::class);
         $this->inventory_delta = $var;
+
+        return $this;
     }
 
 }

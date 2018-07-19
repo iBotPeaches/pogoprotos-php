@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.CollectDailyDefenderBonusResponse.Result</code>
- */
-class CollectDailyDefenderBonusResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\CollectDailyDefenderBonusResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>FAILURE = 2;</code>
-     */
-    const FAILURE = 2;
-    /**
-     * <code>TOO_SOON = 3;</code>
-     */
-    const TOO_SOON = 3;
-    /**
-     * <code>NO_DEFENDERS = 4;</code>
-     */
-    const NO_DEFENDERS = 4;
+    class CollectDailyDefenderBonusResponse_Result {}
 }
+class_exists(CollectDailyDefenderBonusResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\CollectDailyDefenderBonusResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\CollectDailyDefenderBonusResponse\Result instead', E_USER_DEPRECATED);
 

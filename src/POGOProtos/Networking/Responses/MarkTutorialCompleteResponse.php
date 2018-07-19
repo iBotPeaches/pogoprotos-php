@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.MarkTutorialCompleteResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.MarkTutorialCompleteResponse</code>
  */
 class MarkTutorialCompleteResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
      */
     private $success = false;
     /**
-     * <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
      */
     private $player_data = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type bool $success
+     *     @type \POGOProtos\Data\PlayerData $player_data
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\MarkTutorialCompleteResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @return bool
      */
     public function getSuccess()
     {
@@ -36,16 +47,21 @@ class MarkTutorialCompleteResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool success = 1;</code>
+     * Generated from protobuf field <code>bool success = 1;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSuccess($var)
     {
         GPBUtil::checkBool($var);
         $this->success = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * @return \POGOProtos\Data\PlayerData
      */
     public function getPlayerData()
     {
@@ -53,12 +69,16 @@ class MarkTutorialCompleteResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PlayerData player_data = 2;</code>
+     * @param \POGOProtos\Data\PlayerData $var
+     * @return $this
      */
-    public function setPlayerData(&$var)
+    public function setPlayerData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PlayerData::class);
         $this->player_data = $var;
+
+        return $this;
     }
 
 }

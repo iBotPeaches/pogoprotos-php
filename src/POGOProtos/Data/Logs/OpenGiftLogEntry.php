@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Logs.OpenGiftLogEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Logs.OpenGiftLogEntry</code>
  */
 class OpenGiftLogEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Logs.OpenGiftLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.OpenGiftLogEntry.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>string friend_codename = 2;</code>
+     * Generated from protobuf field <code>string friend_codename = 2;</code>
      */
     private $friend_codename = '';
     /**
-     * <code>.POGOProtos.Inventory.Loot items = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot items = 3;</code>
      */
     private $items = null;
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData pokemon_eggs = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData pokemon_eggs = 4;</code>
      */
     private $pokemon_eggs;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type string $friend_codename
+     *     @type \POGOProtos\Inventory\Loot $items
+     *     @type \POGOProtos\Data\PokemonData[]|\Google\Protobuf\Internal\RepeatedField $pokemon_eggs
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Logs\OpenGiftLogEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.OpenGiftLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.OpenGiftLogEntry.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -44,16 +57,21 @@ class OpenGiftLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.OpenGiftLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.OpenGiftLogEntry.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Logs\OpenGiftLogEntry_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string friend_codename = 2;</code>
+     * Generated from protobuf field <code>string friend_codename = 2;</code>
+     * @return string
      */
     public function getFriendCodename()
     {
@@ -61,16 +79,21 @@ class OpenGiftLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string friend_codename = 2;</code>
+     * Generated from protobuf field <code>string friend_codename = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFriendCodename($var)
     {
         GPBUtil::checkString($var, True);
         $this->friend_codename = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot items = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot items = 3;</code>
+     * @return \POGOProtos\Inventory\Loot
      */
     public function getItems()
     {
@@ -78,16 +101,21 @@ class OpenGiftLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Loot items = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Loot items = 3;</code>
+     * @param \POGOProtos\Inventory\Loot $var
+     * @return $this
      */
-    public function setItems(&$var)
+    public function setItems($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\Loot::class);
         $this->items = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData pokemon_eggs = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData pokemon_eggs = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPokemonEggs()
     {
@@ -95,12 +123,16 @@ class OpenGiftLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.PokemonData pokemon_eggs = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonData pokemon_eggs = 4;</code>
+     * @param \POGOProtos\Data\PokemonData[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPokemonEggs(&$var)
+    public function setPokemonEggs($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\PokemonData::class);
-        $this->pokemon_eggs = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\PokemonData::class);
+        $this->pokemon_eggs = $arr;
+
+        return $this;
     }
 
 }

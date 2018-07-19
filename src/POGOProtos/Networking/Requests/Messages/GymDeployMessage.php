@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GymDeployMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GymDeployMessage</code>
  */
 class GymDeployMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
      */
     private $fort_id = '';
     /**
-     * <code>fixed64 pokemon_id = 2;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 2;</code>
      */
     private $pokemon_id = 0;
     /**
-     * <code>double player_latitude = 3;</code>
+     * Generated from protobuf field <code>double player_latitude = 3;</code>
      */
     private $player_latitude = 0.0;
     /**
-     * <code>double player_longitude = 4;</code>
+     * Generated from protobuf field <code>double player_longitude = 4;</code>
      */
     private $player_longitude = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $fort_id
+     *     @type int|string $pokemon_id
+     *     @type float $player_latitude
+     *     @type float $player_longitude
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GymDeployMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -44,16 +57,21 @@ class GymDeployMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 1;</code>
+     * Generated from protobuf field <code>string fort_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>fixed64 pokemon_id = 2;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 2;</code>
+     * @return int|string
      */
     public function getPokemonId()
     {
@@ -61,16 +79,21 @@ class GymDeployMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 pokemon_id = 2;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_latitude = 3;</code>
+     * Generated from protobuf field <code>double player_latitude = 3;</code>
+     * @return float
      */
     public function getPlayerLatitude()
     {
@@ -78,16 +101,21 @@ class GymDeployMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_latitude = 3;</code>
+     * Generated from protobuf field <code>double player_latitude = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_longitude = 4;</code>
+     * Generated from protobuf field <code>double player_longitude = 4;</code>
+     * @return float
      */
     public function getPlayerLongitude()
     {
@@ -95,12 +123,16 @@ class GymDeployMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_longitude = 4;</code>
+     * Generated from protobuf field <code>double player_longitude = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_longitude = $var;
+
+        return $this;
     }
 
 }

@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Fort.GymEvent</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Fort.GymEvent</code>
  */
 class GymEvent extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string trainer = 1;</code>
+     * Generated from protobuf field <code>string trainer = 1;</code>
      */
     private $trainer = '';
     /**
-     * <code>int64 timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 timestamp_ms = 2;</code>
      */
     private $timestamp_ms = 0;
     /**
-     * <code>.POGOProtos.Map.Fort.GymEvent.Event event = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.GymEvent.Event event = 3;</code>
      */
     private $event = 0;
     /**
-     * <code>int32 pokedex_id = 4;</code>
+     * Generated from protobuf field <code>int32 pokedex_id = 4;</code>
      */
     private $pokedex_id = 0;
     /**
-     * <code>fixed64 pokemon_id = 5;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 5;</code>
      */
     private $pokemon_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $trainer
+     *     @type int|string $timestamp_ms
+     *     @type int $event
+     *     @type int $pokedex_id
+     *     @type int|string $pokemon_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Fort\GymEvent::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string trainer = 1;</code>
+     * Generated from protobuf field <code>string trainer = 1;</code>
+     * @return string
      */
     public function getTrainer()
     {
@@ -48,16 +62,21 @@ class GymEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string trainer = 1;</code>
+     * Generated from protobuf field <code>string trainer = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setTrainer($var)
     {
         GPBUtil::checkString($var, True);
         $this->trainer = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getTimestampMs()
     {
@@ -65,16 +84,21 @@ class GymEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.GymEvent.Event event = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.GymEvent.Event event = 3;</code>
+     * @return int
      */
     public function getEvent()
     {
@@ -82,16 +106,21 @@ class GymEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Map.Fort.GymEvent.Event event = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Fort.GymEvent.Event event = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEvent($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Map\Fort\GymEvent_Event::class);
         $this->event = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 pokedex_id = 4;</code>
+     * Generated from protobuf field <code>int32 pokedex_id = 4;</code>
+     * @return int
      */
     public function getPokedexId()
     {
@@ -99,16 +128,21 @@ class GymEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 pokedex_id = 4;</code>
+     * Generated from protobuf field <code>int32 pokedex_id = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokedexId($var)
     {
         GPBUtil::checkInt32($var);
         $this->pokedex_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>fixed64 pokemon_id = 5;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 5;</code>
+     * @return int|string
      */
     public function getPokemonId()
     {
@@ -116,12 +150,16 @@ class GymEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 pokemon_id = 5;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 5;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
 }

@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.SetContactSettingsResponse.Status</code>
- */
-class SetContactSettingsResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\SetContactSettingsResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>FAILURE = 2;</code>
-     */
-    const FAILURE = 2;
+    class SetContactSettingsResponse_Status {}
 }
+class_exists(SetContactSettingsResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\SetContactSettingsResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\SetContactSettingsResponse\Status instead', E_USER_DEPRECATED);
 

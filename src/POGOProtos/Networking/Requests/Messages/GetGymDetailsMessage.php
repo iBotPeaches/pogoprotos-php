@@ -9,42 +9,57 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetGymDetailsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GetGymDetailsMessage</code>
  */
 class GetGymDetailsMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string gym_id = 1;</code>
+     * Generated from protobuf field <code>string gym_id = 1;</code>
      */
     private $gym_id = '';
     /**
-     * <code>double player_latitude = 2;</code>
+     * Generated from protobuf field <code>double player_latitude = 2;</code>
      */
     private $player_latitude = 0.0;
     /**
-     * <code>double player_longitude = 3;</code>
+     * Generated from protobuf field <code>double player_longitude = 3;</code>
      */
     private $player_longitude = 0.0;
     /**
-     * <code>double gym_latitude = 4;</code>
+     * Generated from protobuf field <code>double gym_latitude = 4;</code>
      */
     private $gym_latitude = 0.0;
     /**
-     * <code>double gym_longitude = 5;</code>
+     * Generated from protobuf field <code>double gym_longitude = 5;</code>
      */
     private $gym_longitude = 0.0;
     /**
-     * <code>string client_version = 6;</code>
+     * Generated from protobuf field <code>string client_version = 6;</code>
      */
     private $client_version = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $gym_id
+     *     @type float $player_latitude
+     *     @type float $player_longitude
+     *     @type float $gym_latitude
+     *     @type float $gym_longitude
+     *     @type string $client_version
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetGymDetailsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string gym_id = 1;</code>
+     * Generated from protobuf field <code>string gym_id = 1;</code>
+     * @return string
      */
     public function getGymId()
     {
@@ -52,16 +67,21 @@ class GetGymDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string gym_id = 1;</code>
+     * Generated from protobuf field <code>string gym_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setGymId($var)
     {
         GPBUtil::checkString($var, True);
         $this->gym_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_latitude = 2;</code>
+     * Generated from protobuf field <code>double player_latitude = 2;</code>
+     * @return float
      */
     public function getPlayerLatitude()
     {
@@ -69,16 +89,21 @@ class GetGymDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_latitude = 2;</code>
+     * Generated from protobuf field <code>double player_latitude = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_longitude = 3;</code>
+     * Generated from protobuf field <code>double player_longitude = 3;</code>
+     * @return float
      */
     public function getPlayerLongitude()
     {
@@ -86,16 +111,21 @@ class GetGymDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_longitude = 3;</code>
+     * Generated from protobuf field <code>double player_longitude = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_longitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double gym_latitude = 4;</code>
+     * Generated from protobuf field <code>double gym_latitude = 4;</code>
+     * @return float
      */
     public function getGymLatitude()
     {
@@ -103,16 +133,21 @@ class GetGymDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double gym_latitude = 4;</code>
+     * Generated from protobuf field <code>double gym_latitude = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setGymLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->gym_latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double gym_longitude = 5;</code>
+     * Generated from protobuf field <code>double gym_longitude = 5;</code>
+     * @return float
      */
     public function getGymLongitude()
     {
@@ -120,16 +155,21 @@ class GetGymDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double gym_longitude = 5;</code>
+     * Generated from protobuf field <code>double gym_longitude = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setGymLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->gym_longitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string client_version = 6;</code>
+     * Generated from protobuf field <code>string client_version = 6;</code>
+     * @return string
      */
     public function getClientVersion()
     {
@@ -137,12 +177,16 @@ class GetGymDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string client_version = 6;</code>
+     * Generated from protobuf field <code>string client_version = 6;</code>
+     * @param string $var
+     * @return $this
      */
     public function setClientVersion($var)
     {
         GPBUtil::checkString($var, True);
         $this->client_version = $var;
+
+        return $this;
     }
 
 }

@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Pokemon.LobbyPokemon</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Pokemon.LobbyPokemon</code>
  */
 class LobbyPokemon extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 id = 1;</code>
+     * Generated from protobuf field <code>int64 id = 1;</code>
      */
     private $id = 0;
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokedex_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokedex_id = 2;</code>
      */
     private $pokedex_id = 0;
     /**
-     * <code>int32 cp = 3;</code>
+     * Generated from protobuf field <code>int32 cp = 3;</code>
      */
     private $cp = 0;
     /**
-     * <code>float percent_health = 4;</code>
+     * Generated from protobuf field <code>float percent_health = 4;</code>
      */
     private $percent_health = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $id
+     *     @type int $pokedex_id
+     *     @type int $cp
+     *     @type float $percent_health
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Pokemon\LobbyPokemon::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 id = 1;</code>
+     * Generated from protobuf field <code>int64 id = 1;</code>
+     * @return int|string
      */
     public function getId()
     {
@@ -44,16 +57,21 @@ class LobbyPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 id = 1;</code>
+     * Generated from protobuf field <code>int64 id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setId($var)
     {
         GPBUtil::checkInt64($var);
         $this->id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokedex_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokedex_id = 2;</code>
+     * @return int
      */
     public function getPokedexId()
     {
@@ -61,16 +79,21 @@ class LobbyPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonId pokedex_id = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokedex_id = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokedexId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
         $this->pokedex_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 cp = 3;</code>
+     * Generated from protobuf field <code>int32 cp = 3;</code>
+     * @return int
      */
     public function getCp()
     {
@@ -78,16 +101,21 @@ class LobbyPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 cp = 3;</code>
+     * Generated from protobuf field <code>int32 cp = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCp($var)
     {
         GPBUtil::checkInt32($var);
         $this->cp = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float percent_health = 4;</code>
+     * Generated from protobuf field <code>float percent_health = 4;</code>
+     * @return float
      */
     public function getPercentHealth()
     {
@@ -95,12 +123,16 @@ class LobbyPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float percent_health = 4;</code>
+     * Generated from protobuf field <code>float percent_health = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPercentHealth($var)
     {
         GPBUtil::checkFloat($var);
         $this->percent_health = $var;
+
+        return $this;
     }
 
 }

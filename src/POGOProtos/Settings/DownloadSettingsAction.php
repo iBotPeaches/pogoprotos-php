@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.DownloadSettingsAction</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.DownloadSettingsAction</code>
  */
 class DownloadSettingsAction extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string hash = 1;</code>
+     * Generated from protobuf field <code>string hash = 1;</code>
      */
     private $hash = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $hash
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\DownloadSettingsAction::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string hash = 1;</code>
+     * Generated from protobuf field <code>string hash = 1;</code>
+     * @return string
      */
     public function getHash()
     {
@@ -32,12 +42,16 @@ class DownloadSettingsAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string hash = 1;</code>
+     * Generated from protobuf field <code>string hash = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setHash($var)
     {
         GPBUtil::checkString($var, True);
         $this->hash = $var;
+
+        return $this;
     }
 
 }

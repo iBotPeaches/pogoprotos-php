@@ -9,18 +9,24 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * <pre>
  * Just a junk message to denote that we don't currently know what message something is.
- * </pre>
  *
- * Protobuf type <code>POGOProtos.Networking.Envelopes.UnknownMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Envelopes.UnknownMessage</code>
  */
 class UnknownMessage extends \Google\Protobuf\Internal\Message
 {
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Envelopes\Signature::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
 }

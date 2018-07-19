@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Networking\Envelopes;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Envelopes.ResponseEnvelope.PlatformResponse</code>
- */
-class ResponseEnvelope_PlatformResponse extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>.POGOProtos.Networking.Platform.PlatformRequestType type = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Envelopes\ResponseEnvelope\PlatformResponse instead.
+     * @deprecated
      */
-    private $type = 0;
-    /**
-     * <code>bytes response = 2;</code>
-     */
-    private $response = '';
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Envelopes\ResponseEnvelope::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>.POGOProtos.Networking.Platform.PlatformRequestType type = 1;</code>
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * <code>.POGOProtos.Networking.Platform.PlatformRequestType type = 1;</code>
-     */
-    public function setType($var)
-    {
-        GPBUtil::checkEnum($var, \POGOProtos\Networking\Platform\PlatformRequestType::class);
-        $this->type = $var;
-    }
-
-    /**
-     * <code>bytes response = 2;</code>
-     */
-    public function getResponse()
-    {
-        return $this->response;
-    }
-
-    /**
-     * <code>bytes response = 2;</code>
-     */
-    public function setResponse($var)
-    {
-        GPBUtil::checkString($var, False);
-        $this->response = $var;
-    }
-
+    class ResponseEnvelope_PlatformResponse {}
 }
+class_exists(ResponseEnvelope\PlatformResponse::class);
+@trigger_error('POGOProtos\Networking\Envelopes\ResponseEnvelope_PlatformResponse is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Envelopes\ResponseEnvelope\PlatformResponse instead', E_USER_DEPRECATED);
 

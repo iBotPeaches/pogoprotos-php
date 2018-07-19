@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Map\Weather;
 
-/**
- * Protobuf enum <code>POGOProtos.Map.Weather.WeatherAlert.Severity</code>
- */
-class WeatherAlert_Severity
-{
+if (false) {
     /**
-     * <code>NONE = 0;</code>
+     * This class is deprecated. Use POGOProtos\Map\Weather\WeatherAlert\Severity instead.
+     * @deprecated
      */
-    const NONE = 0;
-    /**
-     * <code>MODERATE = 1;</code>
-     */
-    const MODERATE = 1;
-    /**
-     * <code>EXTREME = 2;</code>
-     */
-    const EXTREME = 2;
+    class WeatherAlert_Severity {}
 }
+class_exists(WeatherAlert\Severity::class);
+@trigger_error('POGOProtos\Map\Weather\WeatherAlert_Severity is deprecated and will be removed in the next major release. Use POGOProtos\Map\Weather\WeatherAlert\Severity instead', E_USER_DEPRECATED);
 

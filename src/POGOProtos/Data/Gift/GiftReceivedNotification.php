@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Gift.GiftReceivedNotification</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Gift.GiftReceivedNotification</code>
  */
 class GiftReceivedNotification extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>uint64 giftbox_id = 1;</code>
+     * Generated from protobuf field <code>uint64 giftbox_id = 1;</code>
      */
     private $giftbox_id = 0;
     /**
-     * <code>string sender_id = 2;</code>
+     * Generated from protobuf field <code>string sender_id = 2;</code>
      */
     private $sender_id = '';
     /**
-     * <code>string sender_codename = 3;</code>
+     * Generated from protobuf field <code>string sender_codename = 3;</code>
      */
     private $sender_codename = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $giftbox_id
+     *     @type string $sender_id
+     *     @type string $sender_codename
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Gift\GiftReceivedNotification::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>uint64 giftbox_id = 1;</code>
+     * Generated from protobuf field <code>uint64 giftbox_id = 1;</code>
+     * @return int|string
      */
     public function getGiftboxId()
     {
@@ -40,16 +52,21 @@ class GiftReceivedNotification extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 giftbox_id = 1;</code>
+     * Generated from protobuf field <code>uint64 giftbox_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setGiftboxId($var)
     {
         GPBUtil::checkUint64($var);
         $this->giftbox_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string sender_id = 2;</code>
+     * Generated from protobuf field <code>string sender_id = 2;</code>
+     * @return string
      */
     public function getSenderId()
     {
@@ -57,16 +74,21 @@ class GiftReceivedNotification extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string sender_id = 2;</code>
+     * Generated from protobuf field <code>string sender_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSenderId($var)
     {
         GPBUtil::checkString($var, True);
         $this->sender_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string sender_codename = 3;</code>
+     * Generated from protobuf field <code>string sender_codename = 3;</code>
+     * @return string
      */
     public function getSenderCodename()
     {
@@ -74,12 +96,16 @@ class GiftReceivedNotification extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string sender_codename = 3;</code>
+     * Generated from protobuf field <code>string sender_codename = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSenderCodename($var)
     {
         GPBUtil::checkString($var, True);
         $this->sender_codename = $var;
+
+        return $this;
     }
 
 }

@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.ReleasePokemonResponse.Result</code>
- */
-class ReleasePokemonResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\ReleasePokemonResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>POKEMON_DEPLOYED = 2;</code>
-     */
-    const POKEMON_DEPLOYED = 2;
-    /**
-     * <code>FAILED = 3;</code>
-     */
-    const FAILED = 3;
-    /**
-     * <code>ERROR_POKEMON_IS_EGG = 4;</code>
-     */
-    const ERROR_POKEMON_IS_EGG = 4;
-    /**
-     * <code>ERROR_POKEMON_IS_BUDDY = 5;</code>
-     */
-    const ERROR_POKEMON_IS_BUDDY = 5;
+    class ReleasePokemonResponse_Result {}
 }
+class_exists(ReleasePokemonResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\ReleasePokemonResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\ReleasePokemonResponse\Result instead', E_USER_DEPRECATED);
 

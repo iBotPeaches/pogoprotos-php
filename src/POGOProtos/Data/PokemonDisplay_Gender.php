@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Data;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.PokemonDisplay.Gender</code>
- */
-class PokemonDisplay_Gender
-{
+if (false) {
     /**
-     * <code>GENDER_UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\PokemonDisplay\Gender instead.
+     * @deprecated
      */
-    const GENDER_UNSET = 0;
-    /**
-     * <code>MALE = 1;</code>
-     */
-    const MALE = 1;
-    /**
-     * <code>FEMALE = 2;</code>
-     */
-    const FEMALE = 2;
-    /**
-     * <code>GENDERLESS = 3;</code>
-     */
-    const GENDERLESS = 3;
+    class PokemonDisplay_Gender {}
 }
+class_exists(PokemonDisplay\Gender::class);
+@trigger_error('POGOProtos\Data\PokemonDisplay_Gender is deprecated and will be removed in the next major release. Use POGOProtos\Data\PokemonDisplay\Gender instead', E_USER_DEPRECATED);
 

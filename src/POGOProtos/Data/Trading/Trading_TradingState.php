@@ -4,34 +4,13 @@
 
 namespace POGOProtos\Data\Trading;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Trading.Trading.TradingState</code>
- */
-class Trading_TradingState
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Trading\Trading\TradingState instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>PRIMORDIAL = 1;</code>
-     */
-    const PRIMORDIAL = 1;
-    /**
-     * <code>WAIT = 2;</code>
-     */
-    const WAIT = 2;
-    /**
-     * <code>ACTIVE = 3;</code>
-     */
-    const ACTIVE = 3;
-    /**
-     * <code>CONFIRMED = 4;</code>
-     */
-    const CONFIRMED = 4;
-    /**
-     * <code>FINISHED = 5;</code>
-     */
-    const FINISHED = 5;
+    class Trading_TradingState {}
 }
+class_exists(Trading\TradingState::class);
+@trigger_error('POGOProtos\Data\Trading\Trading_TradingState is deprecated and will be removed in the next major release. Use POGOProtos\Data\Trading\Trading\TradingState instead', E_USER_DEPRECATED);
 

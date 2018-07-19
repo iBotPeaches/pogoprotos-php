@@ -9,83 +9,105 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * <pre>
  * Usage unknown.
  * - Maybe used in envelope (?)
- * </pre>
  *
- * Protobuf type <code>POGOProtos.Inventory.InventoryKey</code>
+ * Generated from protobuf message <code>POGOProtos.Inventory.InventoryKey</code>
  */
 class InventoryKey extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
      */
     private $pokemon_id = 0;
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
      */
     private $item = 0;
     /**
-     * <code>int32 pokedex_entry_id = 3;</code>
+     * Generated from protobuf field <code>int32 pokedex_entry_id = 3;</code>
      */
     private $pokedex_entry_id = 0;
     /**
-     * <code>bool player_stats = 4;</code>
+     * Generated from protobuf field <code>bool player_stats = 4;</code>
      */
     private $player_stats = false;
     /**
-     * <code>bool player_currency = 5;</code>
+     * Generated from protobuf field <code>bool player_currency = 5;</code>
      */
     private $player_currency = false;
     /**
-     * <code>bool player_camera = 6;</code>
+     * Generated from protobuf field <code>bool player_camera = 6;</code>
      */
     private $player_camera = false;
     /**
-     * <code>bool inventory_upgrades = 7;</code>
+     * Generated from protobuf field <code>bool inventory_upgrades = 7;</code>
      */
     private $inventory_upgrades = false;
     /**
-     * <code>bool applied_items = 8;</code>
+     * Generated from protobuf field <code>bool applied_items = 8;</code>
      */
     private $applied_items = false;
     /**
-     * <code>bool egg_incubators = 9;</code>
+     * Generated from protobuf field <code>bool egg_incubators = 9;</code>
      */
     private $egg_incubators = false;
     /**
-     * <code>.POGOProtos.Enums.PokemonFamilyId pokemon_family_id = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId pokemon_family_id = 10;</code>
      */
     private $pokemon_family_id = 0;
     /**
-     * <code>.POGOProtos.Enums.QuestType quest_type = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.QuestType quest_type = 11;</code>
      */
     private $quest_type = 0;
     /**
-     * <code>string avatar_template_id = 12;</code>
+     * Generated from protobuf field <code>string avatar_template_id = 12;</code>
      */
     private $avatar_template_id = '';
     /**
-     * <code>bool raid_tickets = 13;</code>
+     * Generated from protobuf field <code>bool raid_tickets = 13;</code>
      */
     private $raid_tickets = false;
     /**
-     * <code>bool quests = 14;</code>
+     * Generated from protobuf field <code>bool quests = 14;</code>
      */
     private $quests = false;
     /**
-     * <code>bool gift_boxes = 15;</code>
+     * Generated from protobuf field <code>bool gift_boxes = 15;</code>
      */
     private $gift_boxes = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $pokemon_id
+     *     @type int $item
+     *     @type int $pokedex_entry_id
+     *     @type bool $player_stats
+     *     @type bool $player_currency
+     *     @type bool $player_camera
+     *     @type bool $inventory_upgrades
+     *     @type bool $applied_items
+     *     @type bool $egg_incubators
+     *     @type int $pokemon_family_id
+     *     @type int $quest_type
+     *     @type string $avatar_template_id
+     *     @type bool $raid_tickets
+     *     @type bool $quests
+     *     @type bool $gift_boxes
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Inventory\InventoryKey::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
+     * @return int|string
      */
     public function getPokemonId()
     {
@@ -93,16 +115,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 pokemon_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
+     * @return int
      */
     public function getItem()
     {
@@ -110,16 +137,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItem($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 pokedex_entry_id = 3;</code>
+     * Generated from protobuf field <code>int32 pokedex_entry_id = 3;</code>
+     * @return int
      */
     public function getPokedexEntryId()
     {
@@ -127,16 +159,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 pokedex_entry_id = 3;</code>
+     * Generated from protobuf field <code>int32 pokedex_entry_id = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokedexEntryId($var)
     {
         GPBUtil::checkInt32($var);
         $this->pokedex_entry_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool player_stats = 4;</code>
+     * Generated from protobuf field <code>bool player_stats = 4;</code>
+     * @return bool
      */
     public function getPlayerStats()
     {
@@ -144,16 +181,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool player_stats = 4;</code>
+     * Generated from protobuf field <code>bool player_stats = 4;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setPlayerStats($var)
     {
         GPBUtil::checkBool($var);
         $this->player_stats = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool player_currency = 5;</code>
+     * Generated from protobuf field <code>bool player_currency = 5;</code>
+     * @return bool
      */
     public function getPlayerCurrency()
     {
@@ -161,16 +203,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool player_currency = 5;</code>
+     * Generated from protobuf field <code>bool player_currency = 5;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setPlayerCurrency($var)
     {
         GPBUtil::checkBool($var);
         $this->player_currency = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool player_camera = 6;</code>
+     * Generated from protobuf field <code>bool player_camera = 6;</code>
+     * @return bool
      */
     public function getPlayerCamera()
     {
@@ -178,16 +225,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool player_camera = 6;</code>
+     * Generated from protobuf field <code>bool player_camera = 6;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setPlayerCamera($var)
     {
         GPBUtil::checkBool($var);
         $this->player_camera = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool inventory_upgrades = 7;</code>
+     * Generated from protobuf field <code>bool inventory_upgrades = 7;</code>
+     * @return bool
      */
     public function getInventoryUpgrades()
     {
@@ -195,16 +247,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool inventory_upgrades = 7;</code>
+     * Generated from protobuf field <code>bool inventory_upgrades = 7;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setInventoryUpgrades($var)
     {
         GPBUtil::checkBool($var);
         $this->inventory_upgrades = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool applied_items = 8;</code>
+     * Generated from protobuf field <code>bool applied_items = 8;</code>
+     * @return bool
      */
     public function getAppliedItems()
     {
@@ -212,16 +269,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool applied_items = 8;</code>
+     * Generated from protobuf field <code>bool applied_items = 8;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setAppliedItems($var)
     {
         GPBUtil::checkBool($var);
         $this->applied_items = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool egg_incubators = 9;</code>
+     * Generated from protobuf field <code>bool egg_incubators = 9;</code>
+     * @return bool
      */
     public function getEggIncubators()
     {
@@ -229,16 +291,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool egg_incubators = 9;</code>
+     * Generated from protobuf field <code>bool egg_incubators = 9;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEggIncubators($var)
     {
         GPBUtil::checkBool($var);
         $this->egg_incubators = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonFamilyId pokemon_family_id = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId pokemon_family_id = 10;</code>
+     * @return int
      */
     public function getPokemonFamilyId()
     {
@@ -246,16 +313,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonFamilyId pokemon_family_id = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId pokemon_family_id = 10;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemonFamilyId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonFamilyId::class);
         $this->pokemon_family_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.QuestType quest_type = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.QuestType quest_type = 11;</code>
+     * @return int
      */
     public function getQuestType()
     {
@@ -263,16 +335,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.QuestType quest_type = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.QuestType quest_type = 11;</code>
+     * @param int $var
+     * @return $this
      */
     public function setQuestType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\QuestType::class);
         $this->quest_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string avatar_template_id = 12;</code>
+     * Generated from protobuf field <code>string avatar_template_id = 12;</code>
+     * @return string
      */
     public function getAvatarTemplateId()
     {
@@ -280,16 +357,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string avatar_template_id = 12;</code>
+     * Generated from protobuf field <code>string avatar_template_id = 12;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAvatarTemplateId($var)
     {
         GPBUtil::checkString($var, True);
         $this->avatar_template_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool raid_tickets = 13;</code>
+     * Generated from protobuf field <code>bool raid_tickets = 13;</code>
+     * @return bool
      */
     public function getRaidTickets()
     {
@@ -297,16 +379,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool raid_tickets = 13;</code>
+     * Generated from protobuf field <code>bool raid_tickets = 13;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setRaidTickets($var)
     {
         GPBUtil::checkBool($var);
         $this->raid_tickets = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool quests = 14;</code>
+     * Generated from protobuf field <code>bool quests = 14;</code>
+     * @return bool
      */
     public function getQuests()
     {
@@ -314,16 +401,21 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool quests = 14;</code>
+     * Generated from protobuf field <code>bool quests = 14;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setQuests($var)
     {
         GPBUtil::checkBool($var);
         $this->quests = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool gift_boxes = 15;</code>
+     * Generated from protobuf field <code>bool gift_boxes = 15;</code>
+     * @return bool
      */
     public function getGiftBoxes()
     {
@@ -331,12 +423,16 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool gift_boxes = 15;</code>
+     * Generated from protobuf field <code>bool gift_boxes = 15;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setGiftBoxes($var)
     {
         GPBUtil::checkBool($var);
         $this->gift_boxes = $var;
+
+        return $this;
     }
 
 }

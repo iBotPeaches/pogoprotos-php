@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetRaidDetailsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GetRaidDetailsMessage</code>
  */
 class GetRaidDetailsMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 raid_seed = 1;</code>
+     * Generated from protobuf field <code>int64 raid_seed = 1;</code>
      */
     private $raid_seed = 0;
     /**
-     * <code>string gym_id = 2;</code>
+     * Generated from protobuf field <code>string gym_id = 2;</code>
      */
     private $gym_id = '';
     /**
-     * <code>repeated int32 lobby_id = 3;</code>
+     * Generated from protobuf field <code>repeated int32 lobby_id = 3;</code>
      */
     private $lobby_id;
     /**
-     * <code>double player_lat_degrees = 4;</code>
+     * Generated from protobuf field <code>double player_lat_degrees = 4;</code>
      */
     private $player_lat_degrees = 0.0;
     /**
-     * <code>double player_lng_degrees = 5;</code>
+     * Generated from protobuf field <code>double player_lng_degrees = 5;</code>
      */
     private $player_lng_degrees = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $raid_seed
+     *     @type string $gym_id
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $lobby_id
+     *     @type float $player_lat_degrees
+     *     @type float $player_lng_degrees
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetRaidDetailsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 raid_seed = 1;</code>
+     * Generated from protobuf field <code>int64 raid_seed = 1;</code>
+     * @return int|string
      */
     public function getRaidSeed()
     {
@@ -48,16 +62,21 @@ class GetRaidDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 raid_seed = 1;</code>
+     * Generated from protobuf field <code>int64 raid_seed = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setRaidSeed($var)
     {
         GPBUtil::checkInt64($var);
         $this->raid_seed = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string gym_id = 2;</code>
+     * Generated from protobuf field <code>string gym_id = 2;</code>
+     * @return string
      */
     public function getGymId()
     {
@@ -65,16 +84,21 @@ class GetRaidDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string gym_id = 2;</code>
+     * Generated from protobuf field <code>string gym_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setGymId($var)
     {
         GPBUtil::checkString($var, True);
         $this->gym_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 lobby_id = 3;</code>
+     * Generated from protobuf field <code>repeated int32 lobby_id = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getLobbyId()
     {
@@ -82,16 +106,21 @@ class GetRaidDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 lobby_id = 3;</code>
+     * Generated from protobuf field <code>repeated int32 lobby_id = 3;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setLobbyId(&$var)
+    public function setLobbyId($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->lobby_id = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->lobby_id = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>double player_lat_degrees = 4;</code>
+     * Generated from protobuf field <code>double player_lat_degrees = 4;</code>
+     * @return float
      */
     public function getPlayerLatDegrees()
     {
@@ -99,16 +128,21 @@ class GetRaidDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_lat_degrees = 4;</code>
+     * Generated from protobuf field <code>double player_lat_degrees = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLatDegrees($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_lat_degrees = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_lng_degrees = 5;</code>
+     * Generated from protobuf field <code>double player_lng_degrees = 5;</code>
+     * @return float
      */
     public function getPlayerLngDegrees()
     {
@@ -116,12 +150,16 @@ class GetRaidDetailsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_lng_degrees = 5;</code>
+     * Generated from protobuf field <code>double player_lng_degrees = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLngDegrees($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_lng_degrees = $var;
+
+        return $this;
     }
 
 }

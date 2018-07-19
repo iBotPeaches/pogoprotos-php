@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Settings\Master;
 
-/**
- * Protobuf enum <code>POGOProtos.Settings.Master.PokemonSettings.PokemonRarity</code>
- */
-class PokemonSettings_PokemonRarity
-{
+if (false) {
     /**
-     * <code>POKEMON_RARITY_NORMAL = 0;</code>
+     * This class is deprecated. Use POGOProtos\Settings\Master\PokemonSettings\PokemonRarity instead.
+     * @deprecated
      */
-    const POKEMON_RARITY_NORMAL = 0;
-    /**
-     * <code>POKEMON_RARITY_LEGENDARY = 1;</code>
-     */
-    const POKEMON_RARITY_LEGENDARY = 1;
-    /**
-     * <code>POKEMON_RARITY_MYTHIC = 2;</code>
-     */
-    const POKEMON_RARITY_MYTHIC = 2;
+    class PokemonSettings_PokemonRarity {}
 }
+class_exists(PokemonSettings\PokemonRarity::class);
+@trigger_error('POGOProtos\Settings\Master\PokemonSettings_PokemonRarity is deprecated and will be removed in the next major release. Use POGOProtos\Settings\Master\PokemonSettings\PokemonRarity instead', E_USER_DEPRECATED);
 

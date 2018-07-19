@@ -4,22 +4,13 @@
 
 namespace POGOProtos\Settings\Master;
 
-/**
- * Protobuf enum <code>POGOProtos.Settings.Master.AvatarCustomizationSettings.AvatarCustomizationPromoType</code>
- */
-class AvatarCustomizationSettings_AvatarCustomizationPromoType
-{
+if (false) {
     /**
-     * <code>UNSET_PROMO_TYPE = 0;</code>
+     * This class is deprecated. Use POGOProtos\Settings\Master\AvatarCustomizationSettings\AvatarCustomizationPromoType instead.
+     * @deprecated
      */
-    const UNSET_PROMO_TYPE = 0;
-    /**
-     * <code>SALE = 1;</code>
-     */
-    const SALE = 1;
-    /**
-     * <code>FEATURED = 2;</code>
-     */
-    const FEATURED = 2;
+    class AvatarCustomizationSettings_AvatarCustomizationPromoType {}
 }
+class_exists(AvatarCustomizationSettings\AvatarCustomizationPromoType::class);
+@trigger_error('POGOProtos\Settings\Master\AvatarCustomizationSettings_AvatarCustomizationPromoType is deprecated and will be removed in the next major release. Use POGOProtos\Settings\Master\AvatarCustomizationSettings\AvatarCustomizationPromoType instead', E_USER_DEPRECATED);
 

@@ -9,90 +9,117 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Pokemon.EncounterAttributes</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Pokemon.EncounterAttributes</code>
  */
 class EncounterAttributes extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float base_capture_rate = 1;</code>
+     * Generated from protobuf field <code>float base_capture_rate = 1;</code>
      */
     private $base_capture_rate = 0.0;
     /**
-     * <code>float base_flee_rate = 2;</code>
+     * Generated from protobuf field <code>float base_flee_rate = 2;</code>
      */
     private $base_flee_rate = 0.0;
     /**
-     * <code>float collision_radius_m = 3;</code>
+     * Generated from protobuf field <code>float collision_radius_m = 3;</code>
      */
     private $collision_radius_m = 0.0;
     /**
-     * <code>float collision_height_m = 4;</code>
+     * Generated from protobuf field <code>float collision_height_m = 4;</code>
      */
     private $collision_height_m = 0.0;
     /**
-     * <code>float collision_head_radius_m = 5;</code>
+     * Generated from protobuf field <code>float collision_head_radius_m = 5;</code>
      */
     private $collision_head_radius_m = 0.0;
     /**
-     * <code>.POGOProtos.Enums.PokemonMovementType movement_type = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMovementType movement_type = 6;</code>
      */
     private $movement_type = 0;
     /**
-     * <code>float movement_timer_s = 7;</code>
+     * Generated from protobuf field <code>float movement_timer_s = 7;</code>
      */
     private $movement_timer_s = 0.0;
     /**
-     * <code>float jump_time_s = 8;</code>
+     * Generated from protobuf field <code>float jump_time_s = 8;</code>
      */
     private $jump_time_s = 0.0;
     /**
-     * <code>float attack_timer_s = 9;</code>
+     * Generated from protobuf field <code>float attack_timer_s = 9;</code>
      */
     private $attack_timer_s = 0.0;
     /**
-     * <code>int32 bonus_candy_capture_reward = 10;</code>
+     * Generated from protobuf field <code>int32 bonus_candy_capture_reward = 10;</code>
      */
     private $bonus_candy_capture_reward = 0;
     /**
-     * <code>int32 bonus_stardust_capture_reward = 11;</code>
+     * Generated from protobuf field <code>int32 bonus_stardust_capture_reward = 11;</code>
      */
     private $bonus_stardust_capture_reward = 0;
     /**
-     * <code>float attack_probability = 12;</code>
+     * Generated from protobuf field <code>float attack_probability = 12;</code>
      */
     private $attack_probability = 0.0;
     /**
-     * <code>float dodge_probability = 13;</code>
+     * Generated from protobuf field <code>float dodge_probability = 13;</code>
      */
     private $dodge_probability = 0.0;
     /**
-     * <code>float dodge_duration_s = 14;</code>
+     * Generated from protobuf field <code>float dodge_duration_s = 14;</code>
      */
     private $dodge_duration_s = 0.0;
     /**
-     * <code>float dodge_distance = 15;</code>
+     * Generated from protobuf field <code>float dodge_distance = 15;</code>
      */
     private $dodge_distance = 0.0;
     /**
-     * <code>float camera_distance = 16;</code>
+     * Generated from protobuf field <code>float camera_distance = 16;</code>
      */
     private $camera_distance = 0.0;
     /**
-     * <code>float min_pokemon_action_frequency_s = 17;</code>
+     * Generated from protobuf field <code>float min_pokemon_action_frequency_s = 17;</code>
      */
     private $min_pokemon_action_frequency_s = 0.0;
     /**
-     * <code>float max_pokemon_action_frequency_s = 18;</code>
+     * Generated from protobuf field <code>float max_pokemon_action_frequency_s = 18;</code>
      */
     private $max_pokemon_action_frequency_s = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $base_capture_rate
+     *     @type float $base_flee_rate
+     *     @type float $collision_radius_m
+     *     @type float $collision_height_m
+     *     @type float $collision_head_radius_m
+     *     @type int $movement_type
+     *     @type float $movement_timer_s
+     *     @type float $jump_time_s
+     *     @type float $attack_timer_s
+     *     @type int $bonus_candy_capture_reward
+     *     @type int $bonus_stardust_capture_reward
+     *     @type float $attack_probability
+     *     @type float $dodge_probability
+     *     @type float $dodge_duration_s
+     *     @type float $dodge_distance
+     *     @type float $camera_distance
+     *     @type float $min_pokemon_action_frequency_s
+     *     @type float $max_pokemon_action_frequency_s
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Pokemon\EncounterAttributes::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float base_capture_rate = 1;</code>
+     * Generated from protobuf field <code>float base_capture_rate = 1;</code>
+     * @return float
      */
     public function getBaseCaptureRate()
     {
@@ -100,16 +127,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float base_capture_rate = 1;</code>
+     * Generated from protobuf field <code>float base_capture_rate = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setBaseCaptureRate($var)
     {
         GPBUtil::checkFloat($var);
         $this->base_capture_rate = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float base_flee_rate = 2;</code>
+     * Generated from protobuf field <code>float base_flee_rate = 2;</code>
+     * @return float
      */
     public function getBaseFleeRate()
     {
@@ -117,16 +149,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float base_flee_rate = 2;</code>
+     * Generated from protobuf field <code>float base_flee_rate = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setBaseFleeRate($var)
     {
         GPBUtil::checkFloat($var);
         $this->base_flee_rate = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float collision_radius_m = 3;</code>
+     * Generated from protobuf field <code>float collision_radius_m = 3;</code>
+     * @return float
      */
     public function getCollisionRadiusM()
     {
@@ -134,16 +171,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float collision_radius_m = 3;</code>
+     * Generated from protobuf field <code>float collision_radius_m = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setCollisionRadiusM($var)
     {
         GPBUtil::checkFloat($var);
         $this->collision_radius_m = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float collision_height_m = 4;</code>
+     * Generated from protobuf field <code>float collision_height_m = 4;</code>
+     * @return float
      */
     public function getCollisionHeightM()
     {
@@ -151,16 +193,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float collision_height_m = 4;</code>
+     * Generated from protobuf field <code>float collision_height_m = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setCollisionHeightM($var)
     {
         GPBUtil::checkFloat($var);
         $this->collision_height_m = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float collision_head_radius_m = 5;</code>
+     * Generated from protobuf field <code>float collision_head_radius_m = 5;</code>
+     * @return float
      */
     public function getCollisionHeadRadiusM()
     {
@@ -168,16 +215,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float collision_head_radius_m = 5;</code>
+     * Generated from protobuf field <code>float collision_head_radius_m = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setCollisionHeadRadiusM($var)
     {
         GPBUtil::checkFloat($var);
         $this->collision_head_radius_m = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonMovementType movement_type = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMovementType movement_type = 6;</code>
+     * @return int
      */
     public function getMovementType()
     {
@@ -185,16 +237,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonMovementType movement_type = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMovementType movement_type = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMovementType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonMovementType::class);
         $this->movement_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float movement_timer_s = 7;</code>
+     * Generated from protobuf field <code>float movement_timer_s = 7;</code>
+     * @return float
      */
     public function getMovementTimerS()
     {
@@ -202,16 +259,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float movement_timer_s = 7;</code>
+     * Generated from protobuf field <code>float movement_timer_s = 7;</code>
+     * @param float $var
+     * @return $this
      */
     public function setMovementTimerS($var)
     {
         GPBUtil::checkFloat($var);
         $this->movement_timer_s = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float jump_time_s = 8;</code>
+     * Generated from protobuf field <code>float jump_time_s = 8;</code>
+     * @return float
      */
     public function getJumpTimeS()
     {
@@ -219,16 +281,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float jump_time_s = 8;</code>
+     * Generated from protobuf field <code>float jump_time_s = 8;</code>
+     * @param float $var
+     * @return $this
      */
     public function setJumpTimeS($var)
     {
         GPBUtil::checkFloat($var);
         $this->jump_time_s = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float attack_timer_s = 9;</code>
+     * Generated from protobuf field <code>float attack_timer_s = 9;</code>
+     * @return float
      */
     public function getAttackTimerS()
     {
@@ -236,16 +303,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float attack_timer_s = 9;</code>
+     * Generated from protobuf field <code>float attack_timer_s = 9;</code>
+     * @param float $var
+     * @return $this
      */
     public function setAttackTimerS($var)
     {
         GPBUtil::checkFloat($var);
         $this->attack_timer_s = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 bonus_candy_capture_reward = 10;</code>
+     * Generated from protobuf field <code>int32 bonus_candy_capture_reward = 10;</code>
+     * @return int
      */
     public function getBonusCandyCaptureReward()
     {
@@ -253,16 +325,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 bonus_candy_capture_reward = 10;</code>
+     * Generated from protobuf field <code>int32 bonus_candy_capture_reward = 10;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBonusCandyCaptureReward($var)
     {
         GPBUtil::checkInt32($var);
         $this->bonus_candy_capture_reward = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 bonus_stardust_capture_reward = 11;</code>
+     * Generated from protobuf field <code>int32 bonus_stardust_capture_reward = 11;</code>
+     * @return int
      */
     public function getBonusStardustCaptureReward()
     {
@@ -270,16 +347,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 bonus_stardust_capture_reward = 11;</code>
+     * Generated from protobuf field <code>int32 bonus_stardust_capture_reward = 11;</code>
+     * @param int $var
+     * @return $this
      */
     public function setBonusStardustCaptureReward($var)
     {
         GPBUtil::checkInt32($var);
         $this->bonus_stardust_capture_reward = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float attack_probability = 12;</code>
+     * Generated from protobuf field <code>float attack_probability = 12;</code>
+     * @return float
      */
     public function getAttackProbability()
     {
@@ -287,16 +369,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float attack_probability = 12;</code>
+     * Generated from protobuf field <code>float attack_probability = 12;</code>
+     * @param float $var
+     * @return $this
      */
     public function setAttackProbability($var)
     {
         GPBUtil::checkFloat($var);
         $this->attack_probability = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float dodge_probability = 13;</code>
+     * Generated from protobuf field <code>float dodge_probability = 13;</code>
+     * @return float
      */
     public function getDodgeProbability()
     {
@@ -304,16 +391,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float dodge_probability = 13;</code>
+     * Generated from protobuf field <code>float dodge_probability = 13;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDodgeProbability($var)
     {
         GPBUtil::checkFloat($var);
         $this->dodge_probability = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float dodge_duration_s = 14;</code>
+     * Generated from protobuf field <code>float dodge_duration_s = 14;</code>
+     * @return float
      */
     public function getDodgeDurationS()
     {
@@ -321,16 +413,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float dodge_duration_s = 14;</code>
+     * Generated from protobuf field <code>float dodge_duration_s = 14;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDodgeDurationS($var)
     {
         GPBUtil::checkFloat($var);
         $this->dodge_duration_s = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float dodge_distance = 15;</code>
+     * Generated from protobuf field <code>float dodge_distance = 15;</code>
+     * @return float
      */
     public function getDodgeDistance()
     {
@@ -338,16 +435,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float dodge_distance = 15;</code>
+     * Generated from protobuf field <code>float dodge_distance = 15;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDodgeDistance($var)
     {
         GPBUtil::checkFloat($var);
         $this->dodge_distance = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float camera_distance = 16;</code>
+     * Generated from protobuf field <code>float camera_distance = 16;</code>
+     * @return float
      */
     public function getCameraDistance()
     {
@@ -355,16 +457,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float camera_distance = 16;</code>
+     * Generated from protobuf field <code>float camera_distance = 16;</code>
+     * @param float $var
+     * @return $this
      */
     public function setCameraDistance($var)
     {
         GPBUtil::checkFloat($var);
         $this->camera_distance = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float min_pokemon_action_frequency_s = 17;</code>
+     * Generated from protobuf field <code>float min_pokemon_action_frequency_s = 17;</code>
+     * @return float
      */
     public function getMinPokemonActionFrequencyS()
     {
@@ -372,16 +479,21 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float min_pokemon_action_frequency_s = 17;</code>
+     * Generated from protobuf field <code>float min_pokemon_action_frequency_s = 17;</code>
+     * @param float $var
+     * @return $this
      */
     public function setMinPokemonActionFrequencyS($var)
     {
         GPBUtil::checkFloat($var);
         $this->min_pokemon_action_frequency_s = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float max_pokemon_action_frequency_s = 18;</code>
+     * Generated from protobuf field <code>float max_pokemon_action_frequency_s = 18;</code>
+     * @return float
      */
     public function getMaxPokemonActionFrequencyS()
     {
@@ -389,12 +501,16 @@ class EncounterAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float max_pokemon_action_frequency_s = 18;</code>
+     * Generated from protobuf field <code>float max_pokemon_action_frequency_s = 18;</code>
+     * @param float $var
+     * @return $this
      */
     public function setMaxPokemonActionFrequencyS($var)
     {
         GPBUtil::checkFloat($var);
         $this->max_pokemon_action_frequency_s = $var;
+
+        return $this;
     }
 
 }

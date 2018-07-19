@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Platform.Telemetry.PlatformServerData</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Platform.Telemetry.PlatformServerData</code>
  */
 class PlatformServerData extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string user_id = 1;</code>
+     * Generated from protobuf field <code>string user_id = 1;</code>
      */
     private $user_id = '';
     /**
-     * <code>string telemetry_id = 2;</code>
+     * Generated from protobuf field <code>string telemetry_id = 2;</code>
      */
     private $telemetry_id = '';
     /**
-     * <code>string session_id = 3;</code>
+     * Generated from protobuf field <code>string session_id = 3;</code>
      */
     private $session_id = '';
     /**
-     * <code>repeated int32 experiment_ids = 4;</code>
+     * Generated from protobuf field <code>repeated int32 experiment_ids = 4;</code>
      */
     private $experiment_ids;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $user_id
+     *     @type string $telemetry_id
+     *     @type string $session_id
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $experiment_ids
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Platform\Telemetry\PlatformServerData::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string user_id = 1;</code>
+     * Generated from protobuf field <code>string user_id = 1;</code>
+     * @return string
      */
     public function getUserId()
     {
@@ -44,16 +57,21 @@ class PlatformServerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string user_id = 1;</code>
+     * Generated from protobuf field <code>string user_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setUserId($var)
     {
         GPBUtil::checkString($var, True);
         $this->user_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string telemetry_id = 2;</code>
+     * Generated from protobuf field <code>string telemetry_id = 2;</code>
+     * @return string
      */
     public function getTelemetryId()
     {
@@ -61,16 +79,21 @@ class PlatformServerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string telemetry_id = 2;</code>
+     * Generated from protobuf field <code>string telemetry_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setTelemetryId($var)
     {
         GPBUtil::checkString($var, True);
         $this->telemetry_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string session_id = 3;</code>
+     * Generated from protobuf field <code>string session_id = 3;</code>
+     * @return string
      */
     public function getSessionId()
     {
@@ -78,16 +101,21 @@ class PlatformServerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string session_id = 3;</code>
+     * Generated from protobuf field <code>string session_id = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSessionId($var)
     {
         GPBUtil::checkString($var, True);
         $this->session_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int32 experiment_ids = 4;</code>
+     * Generated from protobuf field <code>repeated int32 experiment_ids = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getExperimentIds()
     {
@@ -95,12 +123,16 @@ class PlatformServerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int32 experiment_ids = 4;</code>
+     * Generated from protobuf field <code>repeated int32 experiment_ids = 4;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setExperimentIds(&$var)
+    public function setExperimentIds($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->experiment_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->experiment_ids = $arr;
+
+        return $this;
     }
 
 }

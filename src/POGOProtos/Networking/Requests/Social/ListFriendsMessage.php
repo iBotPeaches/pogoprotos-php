@@ -9,14 +9,22 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Social.ListFriendsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Social.ListFriendsMessage</code>
  */
 class ListFriendsMessage extends \Google\Protobuf\Internal\Message
 {
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Social\ListFriendsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
 }

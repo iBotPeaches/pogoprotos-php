@@ -9,50 +9,67 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Gift.GiftBox</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Gift.GiftBox</code>
  */
 class GiftBox extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>fixed64 giftbox_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 giftbox_id = 1;</code>
      */
     private $giftbox_id = 0;
     /**
-     * <code>string sender_id = 2;</code>
+     * Generated from protobuf field <code>string sender_id = 2;</code>
      */
     private $sender_id = '';
     /**
-     * <code>string receiver_id = 3;</code>
+     * Generated from protobuf field <code>string receiver_id = 3;</code>
      */
     private $receiver_id = '';
     /**
-     * <code>string fort_id = 4;</code>
+     * Generated from protobuf field <code>string fort_id = 4;</code>
      */
     private $fort_id = '';
     /**
-     * <code>double fort_lat = 5;</code>
+     * Generated from protobuf field <code>double fort_lat = 5;</code>
      */
     private $fort_lat = 0.0;
     /**
-     * <code>double fort_lng = 6;</code>
+     * Generated from protobuf field <code>double fort_lng = 6;</code>
      */
     private $fort_lng = 0.0;
     /**
-     * <code>int64 creation_timestamp = 7;</code>
+     * Generated from protobuf field <code>int64 creation_timestamp = 7;</code>
      */
     private $creation_timestamp = 0;
     /**
-     * <code>int64 sent_timestamp = 8;</code>
+     * Generated from protobuf field <code>int64 sent_timestamp = 8;</code>
      */
     private $sent_timestamp = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $giftbox_id
+     *     @type string $sender_id
+     *     @type string $receiver_id
+     *     @type string $fort_id
+     *     @type float $fort_lat
+     *     @type float $fort_lng
+     *     @type int|string $creation_timestamp
+     *     @type int|string $sent_timestamp
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Gift\GiftBox::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>fixed64 giftbox_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 giftbox_id = 1;</code>
+     * @return int|string
      */
     public function getGiftboxId()
     {
@@ -60,16 +77,21 @@ class GiftBox extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed64 giftbox_id = 1;</code>
+     * Generated from protobuf field <code>fixed64 giftbox_id = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setGiftboxId($var)
     {
         GPBUtil::checkUint64($var);
         $this->giftbox_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string sender_id = 2;</code>
+     * Generated from protobuf field <code>string sender_id = 2;</code>
+     * @return string
      */
     public function getSenderId()
     {
@@ -77,16 +99,21 @@ class GiftBox extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string sender_id = 2;</code>
+     * Generated from protobuf field <code>string sender_id = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setSenderId($var)
     {
         GPBUtil::checkString($var, True);
         $this->sender_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string receiver_id = 3;</code>
+     * Generated from protobuf field <code>string receiver_id = 3;</code>
+     * @return string
      */
     public function getReceiverId()
     {
@@ -94,16 +121,21 @@ class GiftBox extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string receiver_id = 3;</code>
+     * Generated from protobuf field <code>string receiver_id = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setReceiverId($var)
     {
         GPBUtil::checkString($var, True);
         $this->receiver_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string fort_id = 4;</code>
+     * Generated from protobuf field <code>string fort_id = 4;</code>
+     * @return string
      */
     public function getFortId()
     {
@@ -111,16 +143,21 @@ class GiftBox extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string fort_id = 4;</code>
+     * Generated from protobuf field <code>string fort_id = 4;</code>
+     * @param string $var
+     * @return $this
      */
     public function setFortId($var)
     {
         GPBUtil::checkString($var, True);
         $this->fort_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double fort_lat = 5;</code>
+     * Generated from protobuf field <code>double fort_lat = 5;</code>
+     * @return float
      */
     public function getFortLat()
     {
@@ -128,16 +165,21 @@ class GiftBox extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double fort_lat = 5;</code>
+     * Generated from protobuf field <code>double fort_lat = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setFortLat($var)
     {
         GPBUtil::checkDouble($var);
         $this->fort_lat = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double fort_lng = 6;</code>
+     * Generated from protobuf field <code>double fort_lng = 6;</code>
+     * @return float
      */
     public function getFortLng()
     {
@@ -145,16 +187,21 @@ class GiftBox extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double fort_lng = 6;</code>
+     * Generated from protobuf field <code>double fort_lng = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setFortLng($var)
     {
         GPBUtil::checkDouble($var);
         $this->fort_lng = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 creation_timestamp = 7;</code>
+     * Generated from protobuf field <code>int64 creation_timestamp = 7;</code>
+     * @return int|string
      */
     public function getCreationTimestamp()
     {
@@ -162,16 +209,21 @@ class GiftBox extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 creation_timestamp = 7;</code>
+     * Generated from protobuf field <code>int64 creation_timestamp = 7;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setCreationTimestamp($var)
     {
         GPBUtil::checkInt64($var);
         $this->creation_timestamp = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 sent_timestamp = 8;</code>
+     * Generated from protobuf field <code>int64 sent_timestamp = 8;</code>
+     * @return int|string
      */
     public function getSentTimestamp()
     {
@@ -179,12 +231,16 @@ class GiftBox extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 sent_timestamp = 8;</code>
+     * Generated from protobuf field <code>int64 sent_timestamp = 8;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setSentTimestamp($var)
     {
         GPBUtil::checkInt64($var);
         $this->sent_timestamp = $var;
+
+        return $this;
     }
 
 }

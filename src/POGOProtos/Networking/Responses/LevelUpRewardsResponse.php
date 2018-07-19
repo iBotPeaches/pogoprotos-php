@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.LevelUpRewardsResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.LevelUpRewardsResponse</code>
  */
 class LevelUpRewardsResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.LevelUpRewardsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.LevelUpRewardsResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;</code>
      */
     private $items_awarded;
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemId items_unlocked = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemId items_unlocked = 4;</code>
      */
     private $items_unlocked;
     /**
-     * <code>repeated string avatar_template_ids = 5;</code>
+     * Generated from protobuf field <code>repeated string avatar_template_ids = 5;</code>
      */
     private $avatar_template_ids;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type \POGOProtos\Inventory\Item\ItemAward[]|\Google\Protobuf\Internal\RepeatedField $items_awarded
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $items_unlocked
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $avatar_template_ids
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\LevelUpRewardsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.LevelUpRewardsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.LevelUpRewardsResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -44,16 +57,21 @@ class LevelUpRewardsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.LevelUpRewardsResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.LevelUpRewardsResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\LevelUpRewardsResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getItemsAwarded()
     {
@@ -61,16 +79,21 @@ class LevelUpRewardsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;</code>
+     * @param \POGOProtos\Inventory\Item\ItemAward[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItemsAwarded(&$var)
+    public function setItemsAwarded($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemAward::class);
-        $this->items_awarded = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Inventory\Item\ItemAward::class);
+        $this->items_awarded = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemId items_unlocked = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemId items_unlocked = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getItemsUnlocked()
     {
@@ -78,16 +101,21 @@ class LevelUpRewardsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Inventory.Item.ItemId items_unlocked = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Inventory.Item.ItemId items_unlocked = 4;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItemsUnlocked(&$var)
+    public function setItemsUnlocked($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Inventory\Item\ItemId::class);
-        $this->items_unlocked = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Inventory\Item\ItemId::class);
+        $this->items_unlocked = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated string avatar_template_ids = 5;</code>
+     * Generated from protobuf field <code>repeated string avatar_template_ids = 5;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getAvatarTemplateIds()
     {
@@ -95,12 +123,16 @@ class LevelUpRewardsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string avatar_template_ids = 5;</code>
+     * Generated from protobuf field <code>repeated string avatar_template_ids = 5;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAvatarTemplateIds(&$var)
+    public function setAvatarTemplateIds($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->avatar_template_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->avatar_template_ids = $arr;
+
+        return $this;
     }
 
 }

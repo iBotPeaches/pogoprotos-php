@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.MarkTutorialCompleteMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.MarkTutorialCompleteMessage</code>
  */
 class MarkTutorialCompleteMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated .POGOProtos.Enums.TutorialState tutorials_completed = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.TutorialState tutorials_completed = 1;</code>
      */
     private $tutorials_completed;
     /**
-     * <code>bool send_marketing_emails = 2;</code>
+     * Generated from protobuf field <code>bool send_marketing_emails = 2;</code>
      */
     private $send_marketing_emails = false;
     /**
-     * <code>bool send_push_notifications = 3;</code>
+     * Generated from protobuf field <code>bool send_push_notifications = 3;</code>
      */
     private $send_push_notifications = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $tutorials_completed
+     *     @type bool $send_marketing_emails
+     *     @type bool $send_push_notifications
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\MarkTutorialCompleteMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.TutorialState tutorials_completed = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.TutorialState tutorials_completed = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getTutorialsCompleted()
     {
@@ -40,16 +52,21 @@ class MarkTutorialCompleteMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Enums.TutorialState tutorials_completed = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.TutorialState tutorials_completed = 1;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTutorialsCompleted(&$var)
+    public function setTutorialsCompleted($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, POGOProtos\Enums\TutorialState::class);
-        $this->tutorials_completed = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\TutorialState::class);
+        $this->tutorials_completed = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>bool send_marketing_emails = 2;</code>
+     * Generated from protobuf field <code>bool send_marketing_emails = 2;</code>
+     * @return bool
      */
     public function getSendMarketingEmails()
     {
@@ -57,16 +74,21 @@ class MarkTutorialCompleteMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool send_marketing_emails = 2;</code>
+     * Generated from protobuf field <code>bool send_marketing_emails = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSendMarketingEmails($var)
     {
         GPBUtil::checkBool($var);
         $this->send_marketing_emails = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool send_push_notifications = 3;</code>
+     * Generated from protobuf field <code>bool send_push_notifications = 3;</code>
+     * @return bool
      */
     public function getSendPushNotifications()
     {
@@ -74,12 +96,16 @@ class MarkTutorialCompleteMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool send_push_notifications = 3;</code>
+     * Generated from protobuf field <code>bool send_push_notifications = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setSendPushNotifications($var)
     {
         GPBUtil::checkBool($var);
         $this->send_push_notifications = $var;
+
+        return $this;
     }
 
 }

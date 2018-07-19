@@ -4,62 +4,13 @@
 
 namespace POGOProtos\Settings;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Settings.NewsSettings.News</code>
- */
-class NewsSettings_News extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>string news_bundle_id = 1;</code>
+     * This class is deprecated. Use POGOProtos\Settings\NewsSettings\News instead.
+     * @deprecated
      */
-    private $news_bundle_id = '';
-    /**
-     * <code>repeated string exclusive_countries = 2;</code>
-     */
-    private $exclusive_countries;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Settings\NewsSettings::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>string news_bundle_id = 1;</code>
-     */
-    public function getNewsBundleId()
-    {
-        return $this->news_bundle_id;
-    }
-
-    /**
-     * <code>string news_bundle_id = 1;</code>
-     */
-    public function setNewsBundleId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->news_bundle_id = $var;
-    }
-
-    /**
-     * <code>repeated string exclusive_countries = 2;</code>
-     */
-    public function getExclusiveCountries()
-    {
-        return $this->exclusive_countries;
-    }
-
-    /**
-     * <code>repeated string exclusive_countries = 2;</code>
-     */
-    public function setExclusiveCountries(&$var)
-    {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->exclusive_countries = $var;
-    }
-
+    class NewsSettings_News {}
 }
+class_exists(NewsSettings\News::class);
+@trigger_error('POGOProtos\Settings\NewsSettings_News is deprecated and will be removed in the next major release. Use POGOProtos\Settings\NewsSettings\News instead', E_USER_DEPRECATED);
 

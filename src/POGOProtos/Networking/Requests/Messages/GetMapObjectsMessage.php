@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetMapObjectsMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GetMapObjectsMessage</code>
  */
 class GetMapObjectsMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated uint64 cell_id = 1 [packed = true];</code>
+     * Generated from protobuf field <code>repeated uint64 cell_id = 1 [packed = true];</code>
      */
     private $cell_id;
     /**
-     * <code>repeated int64 since_timestamp_ms = 2 [packed = true];</code>
+     * Generated from protobuf field <code>repeated int64 since_timestamp_ms = 2 [packed = true];</code>
      */
     private $since_timestamp_ms;
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
      */
     private $latitude = 0.0;
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
      */
     private $longitude = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $cell_id
+     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $since_timestamp_ms
+     *     @type float $latitude
+     *     @type float $longitude
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetMapObjectsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated uint64 cell_id = 1 [packed = true];</code>
+     * Generated from protobuf field <code>repeated uint64 cell_id = 1 [packed = true];</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCellId()
     {
@@ -44,16 +57,21 @@ class GetMapObjectsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated uint64 cell_id = 1 [packed = true];</code>
+     * Generated from protobuf field <code>repeated uint64 cell_id = 1 [packed = true];</code>
+     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCellId(&$var)
+    public function setCellId($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
-        $this->cell_id = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
+        $this->cell_id = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated int64 since_timestamp_ms = 2 [packed = true];</code>
+     * Generated from protobuf field <code>repeated int64 since_timestamp_ms = 2 [packed = true];</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getSinceTimestampMs()
     {
@@ -61,16 +79,21 @@ class GetMapObjectsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated int64 since_timestamp_ms = 2 [packed = true];</code>
+     * Generated from protobuf field <code>repeated int64 since_timestamp_ms = 2 [packed = true];</code>
+     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSinceTimestampMs(&$var)
+    public function setSinceTimestampMs($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT64);
-        $this->since_timestamp_ms = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT64);
+        $this->since_timestamp_ms = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
+     * @return float
      */
     public function getLatitude()
     {
@@ -78,16 +101,21 @@ class GetMapObjectsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double latitude = 3;</code>
+     * Generated from protobuf field <code>double latitude = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
+     * @return float
      */
     public function getLongitude()
     {
@@ -95,12 +123,16 @@ class GetMapObjectsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double longitude = 4;</code>
+     * Generated from protobuf field <code>double longitude = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->longitude = $var;
+
+        return $this;
     }
 
 }

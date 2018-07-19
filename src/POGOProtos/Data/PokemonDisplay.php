@@ -9,38 +9,52 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.PokemonDisplay</code>
+ * Generated from protobuf message <code>POGOProtos.Data.PokemonDisplay</code>
  */
 class PokemonDisplay extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Costume costume = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Costume costume = 1;</code>
      */
     private $costume = 0;
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Gender gender = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Gender gender = 2;</code>
      */
     private $gender = 0;
     /**
-     * <code>bool shiny = 3;</code>
+     * Generated from protobuf field <code>bool shiny = 3;</code>
      */
     private $shiny = false;
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form form = 4;</code>
      */
     private $form = 0;
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_boosted_condition = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_boosted_condition = 5;</code>
      */
     private $weather_boosted_condition = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $costume
+     *     @type int $gender
+     *     @type bool $shiny
+     *     @type int $form
+     *     @type int $weather_boosted_condition
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\PokemonDisplay::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Costume costume = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Costume costume = 1;</code>
+     * @return int
      */
     public function getCostume()
     {
@@ -48,16 +62,21 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Costume costume = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Costume costume = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCostume($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Costume::class);
         $this->costume = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Gender gender = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Gender gender = 2;</code>
+     * @return int
      */
     public function getGender()
     {
@@ -65,16 +84,21 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Gender gender = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Gender gender = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setGender($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Gender::class);
         $this->gender = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool shiny = 3;</code>
+     * Generated from protobuf field <code>bool shiny = 3;</code>
+     * @return bool
      */
     public function getShiny()
     {
@@ -82,16 +106,21 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool shiny = 3;</code>
+     * Generated from protobuf field <code>bool shiny = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setShiny($var)
     {
         GPBUtil::checkBool($var);
         $this->shiny = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form form = 4;</code>
+     * @return int
      */
     public function getForm()
     {
@@ -99,16 +128,21 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.Form form = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form form = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setForm($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Form::class);
         $this->form = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_boosted_condition = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_boosted_condition = 5;</code>
+     * @return int
      */
     public function getWeatherBoostedCondition()
     {
@@ -116,12 +150,16 @@ class PokemonDisplay extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_boosted_condition = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_boosted_condition = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setWeatherBoostedCondition($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_WeatherCondition::class);
         $this->weather_boosted_condition = $var;
+
+        return $this;
     }
 
 }

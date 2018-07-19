@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.Item.EggIncubatorAttributes</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Item.EggIncubatorAttributes</code>
  */
 class EggIncubatorAttributes extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Inventory.EggIncubatorType incubator_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.EggIncubatorType incubator_type = 1;</code>
      */
     private $incubator_type = 0;
     /**
-     * <code>int32 uses = 2;</code>
+     * Generated from protobuf field <code>int32 uses = 2;</code>
      */
     private $uses = 0;
     /**
-     * <code>float distance_multiplier = 3;</code>
+     * Generated from protobuf field <code>float distance_multiplier = 3;</code>
      */
     private $distance_multiplier = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $incubator_type
+     *     @type int $uses
+     *     @type float $distance_multiplier
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\Item\EggIncubatorAttributes::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Inventory.EggIncubatorType incubator_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.EggIncubatorType incubator_type = 1;</code>
+     * @return int
      */
     public function getIncubatorType()
     {
@@ -40,16 +52,21 @@ class EggIncubatorAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.EggIncubatorType incubator_type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.EggIncubatorType incubator_type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setIncubatorType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\EggIncubatorType::class);
         $this->incubator_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 uses = 2;</code>
+     * Generated from protobuf field <code>int32 uses = 2;</code>
+     * @return int
      */
     public function getUses()
     {
@@ -57,16 +74,21 @@ class EggIncubatorAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 uses = 2;</code>
+     * Generated from protobuf field <code>int32 uses = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setUses($var)
     {
         GPBUtil::checkInt32($var);
         $this->uses = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float distance_multiplier = 3;</code>
+     * Generated from protobuf field <code>float distance_multiplier = 3;</code>
+     * @return float
      */
     public function getDistanceMultiplier()
     {
@@ -74,12 +96,16 @@ class EggIncubatorAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float distance_multiplier = 3;</code>
+     * Generated from protobuf field <code>float distance_multiplier = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDistanceMultiplier($var)
     {
         GPBUtil::checkFloat($var);
         $this->distance_multiplier = $var;
+
+        return $this;
     }
 
 }

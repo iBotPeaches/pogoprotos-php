@@ -4,83 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Telemetry;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Protobuf type <code>POGOProtos.Networking.Platform.Telemetry.Distribution.ExponentialBuckets</code>
- */
-class Distribution_ExponentialBuckets extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * <code>int64 num_finite_buckets = 1;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Telemetry\Distribution\ExponentialBuckets instead.
+     * @deprecated
      */
-    private $num_finite_buckets = 0;
-    /**
-     * <code>float growth_factor = 2;</code>
-     */
-    private $growth_factor = 0.0;
-    /**
-     * <code>float scale = 3;</code>
-     */
-    private $scale = 0.0;
-
-    public function __construct() {
-        \GPBMetadata\POGOProtos\Networking\Platform\Telemetry\Distribution::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * <code>int64 num_finite_buckets = 1;</code>
-     */
-    public function getNumFiniteBuckets()
-    {
-        return $this->num_finite_buckets;
-    }
-
-    /**
-     * <code>int64 num_finite_buckets = 1;</code>
-     */
-    public function setNumFiniteBuckets($var)
-    {
-        GPBUtil::checkInt64($var);
-        $this->num_finite_buckets = $var;
-    }
-
-    /**
-     * <code>float growth_factor = 2;</code>
-     */
-    public function getGrowthFactor()
-    {
-        return $this->growth_factor;
-    }
-
-    /**
-     * <code>float growth_factor = 2;</code>
-     */
-    public function setGrowthFactor($var)
-    {
-        GPBUtil::checkFloat($var);
-        $this->growth_factor = $var;
-    }
-
-    /**
-     * <code>float scale = 3;</code>
-     */
-    public function getScale()
-    {
-        return $this->scale;
-    }
-
-    /**
-     * <code>float scale = 3;</code>
-     */
-    public function setScale($var)
-    {
-        GPBUtil::checkFloat($var);
-        $this->scale = $var;
-    }
-
+    class Distribution_ExponentialBuckets {}
 }
+class_exists(Distribution\ExponentialBuckets::class);
+@trigger_error('POGOProtos\Networking\Platform\Telemetry\Distribution_ExponentialBuckets is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Telemetry\Distribution\ExponentialBuckets instead', E_USER_DEPRECATED);
 

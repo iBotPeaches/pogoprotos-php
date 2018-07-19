@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Map.Fort.FortModifier</code>
+ * Generated from protobuf message <code>POGOProtos.Map.Fort.FortModifier</code>
  */
 class FortModifier extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
      */
     private $item_id = 0;
     /**
-     * <code>int64 expiration_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 expiration_timestamp_ms = 2;</code>
      */
     private $expiration_timestamp_ms = 0;
     /**
-     * <code>string deployer_player_codename = 3;</code>
+     * Generated from protobuf field <code>string deployer_player_codename = 3;</code>
      */
     private $deployer_player_codename = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $item_id
+     *     @type int|string $expiration_timestamp_ms
+     *     @type string $deployer_player_codename
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Map\Fort\FortModifier::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * @return int
      */
     public function getItemId()
     {
@@ -40,16 +52,21 @@ class FortModifier extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 expiration_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 expiration_timestamp_ms = 2;</code>
+     * @return int|string
      */
     public function getExpirationTimestampMs()
     {
@@ -57,16 +74,21 @@ class FortModifier extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 expiration_timestamp_ms = 2;</code>
+     * Generated from protobuf field <code>int64 expiration_timestamp_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setExpirationTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->expiration_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string deployer_player_codename = 3;</code>
+     * Generated from protobuf field <code>string deployer_player_codename = 3;</code>
+     * @return string
      */
     public function getDeployerPlayerCodename()
     {
@@ -74,12 +96,16 @@ class FortModifier extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string deployer_player_codename = 3;</code>
+     * Generated from protobuf field <code>string deployer_player_codename = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setDeployerPlayerCodename($var)
     {
         GPBUtil::checkString($var, True);
         $this->deployer_player_codename = $var;
+
+        return $this;
     }
 
 }

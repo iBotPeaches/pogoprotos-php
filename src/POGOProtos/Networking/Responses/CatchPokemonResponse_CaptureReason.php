@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.CatchPokemonResponse.CaptureReason</code>
- */
-class CatchPokemonResponse_CaptureReason
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\CatchPokemonResponse\CaptureReason instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>DEFAULT = 1;</code>
-     */
-    const DEFAULT = 1;
-    /**
-     * <code>ELEMENTAL_BADGE = 2;</code>
-     */
-    const ELEMENTAL_BADGE = 2;
-    /**
-     * <code>CRITICAL_CATCH = 3;</code>
-     */
-    const CRITICAL_CATCH = 3;
+    class CatchPokemonResponse_CaptureReason {}
 }
+class_exists(CatchPokemonResponse\CaptureReason::class);
+@trigger_error('POGOProtos\Networking\Responses\CatchPokemonResponse_CaptureReason is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\CatchPokemonResponse\CaptureReason instead', E_USER_DEPRECATED);
 

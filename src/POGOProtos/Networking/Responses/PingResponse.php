@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.PingResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.PingResponse</code>
  */
 class PingResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string user_info = 1;</code>
+     * Generated from protobuf field <code>string user_info = 1;</code>
      */
     private $user_info = '';
     /**
-     * <code>string server_info = 2;</code>
+     * Generated from protobuf field <code>string server_info = 2;</code>
      */
     private $server_info = '';
     /**
-     * <code>string random_response_bytes = 3;</code>
+     * Generated from protobuf field <code>string random_response_bytes = 3;</code>
      */
     private $random_response_bytes = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $user_info
+     *     @type string $server_info
+     *     @type string $random_response_bytes
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\PlatformClientActionsResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string user_info = 1;</code>
+     * Generated from protobuf field <code>string user_info = 1;</code>
+     * @return string
      */
     public function getUserInfo()
     {
@@ -40,16 +52,21 @@ class PingResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string user_info = 1;</code>
+     * Generated from protobuf field <code>string user_info = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setUserInfo($var)
     {
         GPBUtil::checkString($var, True);
         $this->user_info = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string server_info = 2;</code>
+     * Generated from protobuf field <code>string server_info = 2;</code>
+     * @return string
      */
     public function getServerInfo()
     {
@@ -57,16 +74,21 @@ class PingResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string server_info = 2;</code>
+     * Generated from protobuf field <code>string server_info = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setServerInfo($var)
     {
         GPBUtil::checkString($var, True);
         $this->server_info = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string random_response_bytes = 3;</code>
+     * Generated from protobuf field <code>string random_response_bytes = 3;</code>
+     * @return string
      */
     public function getRandomResponseBytes()
     {
@@ -74,12 +96,16 @@ class PingResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string random_response_bytes = 3;</code>
+     * Generated from protobuf field <code>string random_response_bytes = 3;</code>
+     * @param string $var
+     * @return $this
      */
     public function setRandomResponseBytes($var)
     {
         GPBUtil::checkString($var, True);
         $this->random_response_bytes = $var;
+
+        return $this;
     }
 
 }

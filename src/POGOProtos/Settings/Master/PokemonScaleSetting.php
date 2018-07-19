@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.PokemonScaleSetting</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.PokemonScaleSetting</code>
  */
 class PokemonScaleSetting extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Settings.Master.PokemonScaleSetting.PokemonScaleMode pokemon_scale_mode = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonScaleSetting.PokemonScaleMode pokemon_scale_mode = 1;</code>
      */
     private $pokemon_scale_mode = 0;
     /**
-     * <code>float min_height = 2;</code>
+     * Generated from protobuf field <code>float min_height = 2;</code>
      */
     private $min_height = 0.0;
     /**
-     * <code>float max_height = 3;</code>
+     * Generated from protobuf field <code>float max_height = 3;</code>
      */
     private $max_height = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $pokemon_scale_mode
+     *     @type float $min_height
+     *     @type float $max_height
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\PokemonScaleSetting::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.PokemonScaleSetting.PokemonScaleMode pokemon_scale_mode = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonScaleSetting.PokemonScaleMode pokemon_scale_mode = 1;</code>
+     * @return int
      */
     public function getPokemonScaleMode()
     {
@@ -40,16 +52,21 @@ class PokemonScaleSetting extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.PokemonScaleSetting.PokemonScaleMode pokemon_scale_mode = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonScaleSetting.PokemonScaleMode pokemon_scale_mode = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemonScaleMode($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Settings\Master\PokemonScaleSetting_PokemonScaleMode::class);
         $this->pokemon_scale_mode = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float min_height = 2;</code>
+     * Generated from protobuf field <code>float min_height = 2;</code>
+     * @return float
      */
     public function getMinHeight()
     {
@@ -57,16 +74,21 @@ class PokemonScaleSetting extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float min_height = 2;</code>
+     * Generated from protobuf field <code>float min_height = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setMinHeight($var)
     {
         GPBUtil::checkFloat($var);
         $this->min_height = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float max_height = 3;</code>
+     * Generated from protobuf field <code>float max_height = 3;</code>
+     * @return float
      */
     public function getMaxHeight()
     {
@@ -74,12 +96,16 @@ class PokemonScaleSetting extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float max_height = 3;</code>
+     * Generated from protobuf field <code>float max_height = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setMaxHeight($var)
     {
         GPBUtil::checkFloat($var);
         $this->max_height = $var;
+
+        return $this;
     }
 
 }

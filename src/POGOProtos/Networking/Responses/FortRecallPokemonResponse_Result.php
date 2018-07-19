@@ -4,30 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.FortRecallPokemonResponse.Result</code>
- */
-class FortRecallPokemonResponse_Result
-{
+if (false) {
     /**
-     * <code>NO_RESULT_SET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\FortRecallPokemonResponse\Result instead.
+     * @deprecated
      */
-    const NO_RESULT_SET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_NOT_IN_RANGE = 2;</code>
-     */
-    const ERROR_NOT_IN_RANGE = 2;
-    /**
-     * <code>ERROR_POKEMON_NOT_ON_FORT = 3;</code>
-     */
-    const ERROR_POKEMON_NOT_ON_FORT = 3;
-    /**
-     * <code>ERROR_NO_PLAYER = 4;</code>
-     */
-    const ERROR_NO_PLAYER = 4;
+    class FortRecallPokemonResponse_Result {}
 }
+class_exists(FortRecallPokemonResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\FortRecallPokemonResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\FortRecallPokemonResponse\Result instead', E_USER_DEPRECATED);
 

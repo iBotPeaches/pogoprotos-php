@@ -5,48 +5,48 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.NotificationCategory</code>
+ * Protobuf type <code>POGOProtos.Enums.NotificationCategory</code>
  */
 class NotificationCategory
 {
     /**
-     * <code>UNSET_NotificationCategory = 0;</code>
+     * Generated from protobuf enum <code>UNSET_NotificationCategory = 0;</code>
      */
     const UNSET_NotificationCategory = 0;
     /**
-     * <code>GYM_REMOVAL = 1;</code>
+     * Generated from protobuf enum <code>GYM_REMOVAL = 1;</code>
      */
     const GYM_REMOVAL = 1;
     /**
-     * <code>POKEMON_HUNGRY = 2;</code>
+     * Generated from protobuf enum <code>POKEMON_HUNGRY = 2;</code>
      */
     const POKEMON_HUNGRY = 2;
     /**
-     * <code>POKEMON_WON = 3;</code>
+     * Generated from protobuf enum <code>POKEMON_WON = 3;</code>
      */
     const POKEMON_WON = 3;
     /**
-     * <code>EXCLUSIVE_RAID_INVITE = 4;</code>
+     * Generated from protobuf enum <code>EXCLUSIVE_RAID_INVITE = 4;</code>
      */
     const EXCLUSIVE_RAID_INVITE = 4;
     /**
-     * <code>EXCLUSIVE_RAID_CANCELLATION = 5;</code>
+     * Generated from protobuf enum <code>EXCLUSIVE_RAID_CANCELLATION = 5;</code>
      */
     const EXCLUSIVE_RAID_CANCELLATION = 5;
     /**
-     * <code>GIFTBOX_INCOMING = 6;</code>
+     * Generated from protobuf enum <code>GIFTBOX_INCOMING = 6;</code>
      */
     const GIFTBOX_INCOMING = 6;
     /**
-     * <code>GIFTBOX_DELIVERED = 7;</code>
+     * Generated from protobuf enum <code>GIFTBOX_DELIVERED = 7;</code>
      */
     const GIFTBOX_DELIVERED = 7;
     /**
-     * <code>FRIENDSHIP_MILESTONE_REWARD = 8;</code>
+     * Generated from protobuf enum <code>FRIENDSHIP_MILESTONE_REWARD = 8;</code>
      */
     const FRIENDSHIP_MILESTONE_REWARD = 8;
     /**
-     * <code>GYM_BATTLE_FRIENDSHIP_INCREMENT = 9;</code>
+     * Generated from protobuf enum <code>GYM_BATTLE_FRIENDSHIP_INCREMENT = 9;</code>
      */
     const GYM_BATTLE_FRIENDSHIP_INCREMENT = 9;
 }

@@ -9,58 +9,77 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Envelopes.RequestEnvelope</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Envelopes.RequestEnvelope</code>
  */
 class RequestEnvelope extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 status_code = 1;</code>
+     * Generated from protobuf field <code>int32 status_code = 1;</code>
      */
     private $status_code = 0;
     /**
-     * <code>uint64 request_id = 3;</code>
+     * Generated from protobuf field <code>uint64 request_id = 3;</code>
      */
     private $request_id = 0;
     /**
-     * <code>repeated .POGOProtos.Networking.Requests.Request requests = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Requests.Request requests = 4;</code>
      */
     private $requests;
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.RequestEnvelope.PlatformRequest platform_requests = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.RequestEnvelope.PlatformRequest platform_requests = 6;</code>
      */
     private $platform_requests;
     /**
-     * <code>double latitude = 7;</code>
+     * Generated from protobuf field <code>double latitude = 7;</code>
      */
     private $latitude = 0.0;
     /**
-     * <code>double longitude = 8;</code>
+     * Generated from protobuf field <code>double longitude = 8;</code>
      */
     private $longitude = 0.0;
     /**
-     * <code>double accuracy = 9;</code>
+     * Generated from protobuf field <code>double accuracy = 9;</code>
      */
     private $accuracy = 0.0;
     /**
-     * <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo auth_info = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo auth_info = 10;</code>
      */
     private $auth_info = null;
     /**
-     * <code>.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 11;</code>
      */
     private $auth_ticket = null;
     /**
-     * <code>int64 ms_since_last_locationfix = 12;</code>
+     * Generated from protobuf field <code>int64 ms_since_last_locationfix = 12;</code>
      */
     private $ms_since_last_locationfix = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $status_code
+     *     @type int|string $request_id
+     *     @type \POGOProtos\Networking\Requests\Request[]|\Google\Protobuf\Internal\RepeatedField $requests
+     *     @type \POGOProtos\Networking\Envelopes\RequestEnvelope\PlatformRequest[]|\Google\Protobuf\Internal\RepeatedField $platform_requests
+     *     @type float $latitude
+     *     @type float $longitude
+     *     @type float $accuracy
+     *     @type \POGOProtos\Networking\Envelopes\RequestEnvelope\AuthInfo $auth_info
+     *     @type \POGOProtos\Networking\Envelopes\AuthTicket $auth_ticket
+     *     @type int|string $ms_since_last_locationfix
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Envelopes\RequestEnvelope::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 status_code = 1;</code>
+     * Generated from protobuf field <code>int32 status_code = 1;</code>
+     * @return int
      */
     public function getStatusCode()
     {
@@ -68,16 +87,21 @@ class RequestEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 status_code = 1;</code>
+     * Generated from protobuf field <code>int32 status_code = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setStatusCode($var)
     {
         GPBUtil::checkInt32($var);
         $this->status_code = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 request_id = 3;</code>
+     * Generated from protobuf field <code>uint64 request_id = 3;</code>
+     * @return int|string
      */
     public function getRequestId()
     {
@@ -85,16 +109,21 @@ class RequestEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 request_id = 3;</code>
+     * Generated from protobuf field <code>uint64 request_id = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setRequestId($var)
     {
         GPBUtil::checkUint64($var);
         $this->request_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Requests.Request requests = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Requests.Request requests = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getRequests()
     {
@@ -102,16 +131,21 @@ class RequestEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Requests.Request requests = 4;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Requests.Request requests = 4;</code>
+     * @param \POGOProtos\Networking\Requests\Request[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setRequests(&$var)
+    public function setRequests($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Requests\Request::class);
-        $this->requests = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Requests\Request::class);
+        $this->requests = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.RequestEnvelope.PlatformRequest platform_requests = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.RequestEnvelope.PlatformRequest platform_requests = 6;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getPlatformRequests()
     {
@@ -119,16 +153,21 @@ class RequestEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Networking.Envelopes.RequestEnvelope.PlatformRequest platform_requests = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Envelopes.RequestEnvelope.PlatformRequest platform_requests = 6;</code>
+     * @param \POGOProtos\Networking\Envelopes\RequestEnvelope\PlatformRequest[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPlatformRequests(&$var)
+    public function setPlatformRequests($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\RequestEnvelope_PlatformRequest::class);
-        $this->platform_requests = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Envelopes\RequestEnvelope\PlatformRequest::class);
+        $this->platform_requests = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>double latitude = 7;</code>
+     * Generated from protobuf field <code>double latitude = 7;</code>
+     * @return float
      */
     public function getLatitude()
     {
@@ -136,16 +175,21 @@ class RequestEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double latitude = 7;</code>
+     * Generated from protobuf field <code>double latitude = 7;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLatitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->latitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double longitude = 8;</code>
+     * Generated from protobuf field <code>double longitude = 8;</code>
+     * @return float
      */
     public function getLongitude()
     {
@@ -153,16 +197,21 @@ class RequestEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double longitude = 8;</code>
+     * Generated from protobuf field <code>double longitude = 8;</code>
+     * @param float $var
+     * @return $this
      */
     public function setLongitude($var)
     {
         GPBUtil::checkDouble($var);
         $this->longitude = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double accuracy = 9;</code>
+     * Generated from protobuf field <code>double accuracy = 9;</code>
+     * @return float
      */
     public function getAccuracy()
     {
@@ -170,16 +219,21 @@ class RequestEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double accuracy = 9;</code>
+     * Generated from protobuf field <code>double accuracy = 9;</code>
+     * @param float $var
+     * @return $this
      */
     public function setAccuracy($var)
     {
         GPBUtil::checkDouble($var);
         $this->accuracy = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo auth_info = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo auth_info = 10;</code>
+     * @return \POGOProtos\Networking\Envelopes\RequestEnvelope\AuthInfo
      */
     public function getAuthInfo()
     {
@@ -187,16 +241,21 @@ class RequestEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo auth_info = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo auth_info = 10;</code>
+     * @param \POGOProtos\Networking\Envelopes\RequestEnvelope\AuthInfo $var
+     * @return $this
      */
-    public function setAuthInfo(&$var)
+    public function setAuthInfo($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Envelopes\RequestEnvelope_AuthInfo::class);
         $this->auth_info = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 11;</code>
+     * @return \POGOProtos\Networking\Envelopes\AuthTicket
      */
     public function getAuthTicket()
     {
@@ -204,16 +263,21 @@ class RequestEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 11;</code>
+     * @param \POGOProtos\Networking\Envelopes\AuthTicket $var
+     * @return $this
      */
-    public function setAuthTicket(&$var)
+    public function setAuthTicket($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Envelopes\AuthTicket::class);
         $this->auth_ticket = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 ms_since_last_locationfix = 12;</code>
+     * Generated from protobuf field <code>int64 ms_since_last_locationfix = 12;</code>
+     * @return int|string
      */
     public function getMsSinceLastLocationfix()
     {
@@ -221,12 +285,16 @@ class RequestEnvelope extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 ms_since_last_locationfix = 12;</code>
+     * Generated from protobuf field <code>int64 ms_since_last_locationfix = 12;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setMsSinceLastLocationfix($var)
     {
         GPBUtil::checkInt64($var);
         $this->ms_since_last_locationfix = $var;
+
+        return $this;
     }
 
 }

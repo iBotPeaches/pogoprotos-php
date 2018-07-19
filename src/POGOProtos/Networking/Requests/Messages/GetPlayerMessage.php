@@ -9,26 +9,37 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetPlayerMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GetPlayerMessage</code>
  */
 class GetPlayerMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Requests.Messages.GetPlayerMessage.PlayerLocale player_locale = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.Messages.GetPlayerMessage.PlayerLocale player_locale = 1;</code>
      */
     private $player_locale = null;
     /**
-     * <code>bool prevent_creation = 2;</code>
+     * Generated from protobuf field <code>bool prevent_creation = 2;</code>
      */
     private $prevent_creation = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \POGOProtos\Networking\Requests\Messages\GetPlayerMessage\PlayerLocale $player_locale
+     *     @type bool $prevent_creation
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetPlayerMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Requests.Messages.GetPlayerMessage.PlayerLocale player_locale = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.Messages.GetPlayerMessage.PlayerLocale player_locale = 1;</code>
+     * @return \POGOProtos\Networking\Requests\Messages\GetPlayerMessage\PlayerLocale
      */
     public function getPlayerLocale()
     {
@@ -36,16 +47,21 @@ class GetPlayerMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Requests.Messages.GetPlayerMessage.PlayerLocale player_locale = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.Messages.GetPlayerMessage.PlayerLocale player_locale = 1;</code>
+     * @param \POGOProtos\Networking\Requests\Messages\GetPlayerMessage\PlayerLocale $var
+     * @return $this
      */
-    public function setPlayerLocale(&$var)
+    public function setPlayerLocale($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Requests\Messages\GetPlayerMessage_PlayerLocale::class);
         $this->player_locale = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool prevent_creation = 2;</code>
+     * Generated from protobuf field <code>bool prevent_creation = 2;</code>
+     * @return bool
      */
     public function getPreventCreation()
     {
@@ -53,12 +69,16 @@ class GetPlayerMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool prevent_creation = 2;</code>
+     * Generated from protobuf field <code>bool prevent_creation = 2;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setPreventCreation($var)
     {
         GPBUtil::checkBool($var);
         $this->prevent_creation = $var;
+
+        return $this;
     }
 
 }

@@ -5,200 +5,200 @@
 namespace POGOProtos\Inventory\Item;
 
 /**
- * Protobuf enum <code>POGOProtos.Inventory.Item.ItemId</code>
+ * Protobuf type <code>POGOProtos.Inventory.Item.ItemId</code>
  */
 class ItemId
 {
     /**
-     * <code>ITEM_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>ITEM_UNKNOWN = 0;</code>
      */
     const ITEM_UNKNOWN = 0;
     /**
-     * <code>ITEM_POKE_BALL = 1;</code>
+     * Generated from protobuf enum <code>ITEM_POKE_BALL = 1;</code>
      */
     const ITEM_POKE_BALL = 1;
     /**
-     * <code>ITEM_GREAT_BALL = 2;</code>
+     * Generated from protobuf enum <code>ITEM_GREAT_BALL = 2;</code>
      */
     const ITEM_GREAT_BALL = 2;
     /**
-     * <code>ITEM_ULTRA_BALL = 3;</code>
+     * Generated from protobuf enum <code>ITEM_ULTRA_BALL = 3;</code>
      */
     const ITEM_ULTRA_BALL = 3;
     /**
-     * <code>ITEM_MASTER_BALL = 4;</code>
+     * Generated from protobuf enum <code>ITEM_MASTER_BALL = 4;</code>
      */
     const ITEM_MASTER_BALL = 4;
     /**
-     * <code>ITEM_PREMIER_BALL = 5;</code>
+     * Generated from protobuf enum <code>ITEM_PREMIER_BALL = 5;</code>
      */
     const ITEM_PREMIER_BALL = 5;
     /**
-     * <code>ITEM_POTION = 101;</code>
+     * Generated from protobuf enum <code>ITEM_POTION = 101;</code>
      */
     const ITEM_POTION = 101;
     /**
-     * <code>ITEM_SUPER_POTION = 102;</code>
+     * Generated from protobuf enum <code>ITEM_SUPER_POTION = 102;</code>
      */
     const ITEM_SUPER_POTION = 102;
     /**
-     * <code>ITEM_HYPER_POTION = 103;</code>
+     * Generated from protobuf enum <code>ITEM_HYPER_POTION = 103;</code>
      */
     const ITEM_HYPER_POTION = 103;
     /**
-     * <code>ITEM_MAX_POTION = 104;</code>
+     * Generated from protobuf enum <code>ITEM_MAX_POTION = 104;</code>
      */
     const ITEM_MAX_POTION = 104;
     /**
-     * <code>ITEM_REVIVE = 201;</code>
+     * Generated from protobuf enum <code>ITEM_REVIVE = 201;</code>
      */
     const ITEM_REVIVE = 201;
     /**
-     * <code>ITEM_MAX_REVIVE = 202;</code>
+     * Generated from protobuf enum <code>ITEM_MAX_REVIVE = 202;</code>
      */
     const ITEM_MAX_REVIVE = 202;
     /**
-     * <code>ITEM_LUCKY_EGG = 301;</code>
+     * Generated from protobuf enum <code>ITEM_LUCKY_EGG = 301;</code>
      */
     const ITEM_LUCKY_EGG = 301;
     /**
-     * <code>ITEM_INCENSE_ORDINARY = 401;</code>
+     * Generated from protobuf enum <code>ITEM_INCENSE_ORDINARY = 401;</code>
      */
     const ITEM_INCENSE_ORDINARY = 401;
     /**
-     * <code>ITEM_INCENSE_SPICY = 402;</code>
+     * Generated from protobuf enum <code>ITEM_INCENSE_SPICY = 402;</code>
      */
     const ITEM_INCENSE_SPICY = 402;
     /**
-     * <code>ITEM_INCENSE_COOL = 403;</code>
+     * Generated from protobuf enum <code>ITEM_INCENSE_COOL = 403;</code>
      */
     const ITEM_INCENSE_COOL = 403;
     /**
-     * <code>ITEM_INCENSE_FLORAL = 404;</code>
+     * Generated from protobuf enum <code>ITEM_INCENSE_FLORAL = 404;</code>
      */
     const ITEM_INCENSE_FLORAL = 404;
     /**
-     * <code>ITEM_TROY_DISK = 501;</code>
+     * Generated from protobuf enum <code>ITEM_TROY_DISK = 501;</code>
      */
     const ITEM_TROY_DISK = 501;
     /**
-     * <code>ITEM_X_ATTACK = 602;</code>
+     * Generated from protobuf enum <code>ITEM_X_ATTACK = 602;</code>
      */
     const ITEM_X_ATTACK = 602;
     /**
-     * <code>ITEM_X_DEFENSE = 603;</code>
+     * Generated from protobuf enum <code>ITEM_X_DEFENSE = 603;</code>
      */
     const ITEM_X_DEFENSE = 603;
     /**
-     * <code>ITEM_X_MIRACLE = 604;</code>
+     * Generated from protobuf enum <code>ITEM_X_MIRACLE = 604;</code>
      */
     const ITEM_X_MIRACLE = 604;
     /**
-     * <code>ITEM_RAZZ_BERRY = 701;</code>
+     * Generated from protobuf enum <code>ITEM_RAZZ_BERRY = 701;</code>
      */
     const ITEM_RAZZ_BERRY = 701;
     /**
-     * <code>ITEM_BLUK_BERRY = 702;</code>
+     * Generated from protobuf enum <code>ITEM_BLUK_BERRY = 702;</code>
      */
     const ITEM_BLUK_BERRY = 702;
     /**
-     * <code>ITEM_NANAB_BERRY = 703;</code>
+     * Generated from protobuf enum <code>ITEM_NANAB_BERRY = 703;</code>
      */
     const ITEM_NANAB_BERRY = 703;
     /**
-     * <code>ITEM_WEPAR_BERRY = 704;</code>
+     * Generated from protobuf enum <code>ITEM_WEPAR_BERRY = 704;</code>
      */
     const ITEM_WEPAR_BERRY = 704;
     /**
-     * <code>ITEM_PINAP_BERRY = 705;</code>
+     * Generated from protobuf enum <code>ITEM_PINAP_BERRY = 705;</code>
      */
     const ITEM_PINAP_BERRY = 705;
     /**
-     * <code>ITEM_GOLDEN_RAZZ_BERRY = 706;</code>
+     * Generated from protobuf enum <code>ITEM_GOLDEN_RAZZ_BERRY = 706;</code>
      */
     const ITEM_GOLDEN_RAZZ_BERRY = 706;
     /**
-     * <code>ITEM_GOLDEN_NANAB_BERRY = 707;</code>
+     * Generated from protobuf enum <code>ITEM_GOLDEN_NANAB_BERRY = 707;</code>
      */
     const ITEM_GOLDEN_NANAB_BERRY = 707;
     /**
-     * <code>ITEM_GOLDEN_PINAP_BERRY = 708;</code>
+     * Generated from protobuf enum <code>ITEM_GOLDEN_PINAP_BERRY = 708;</code>
      */
     const ITEM_GOLDEN_PINAP_BERRY = 708;
     /**
-     * <code>ITEM_SPECIAL_CAMERA = 801;</code>
+     * Generated from protobuf enum <code>ITEM_SPECIAL_CAMERA = 801;</code>
      */
     const ITEM_SPECIAL_CAMERA = 801;
     /**
-     * <code>ITEM_INCUBATOR_BASIC_UNLIMITED = 901;</code>
+     * Generated from protobuf enum <code>ITEM_INCUBATOR_BASIC_UNLIMITED = 901;</code>
      */
     const ITEM_INCUBATOR_BASIC_UNLIMITED = 901;
     /**
-     * <code>ITEM_INCUBATOR_BASIC = 902;</code>
+     * Generated from protobuf enum <code>ITEM_INCUBATOR_BASIC = 902;</code>
      */
     const ITEM_INCUBATOR_BASIC = 902;
     /**
-     * <code>ITEM_INCUBATOR_SUPER = 903;</code>
+     * Generated from protobuf enum <code>ITEM_INCUBATOR_SUPER = 903;</code>
      */
     const ITEM_INCUBATOR_SUPER = 903;
     /**
-     * <code>ITEM_POKEMON_STORAGE_UPGRADE = 1001;</code>
+     * Generated from protobuf enum <code>ITEM_POKEMON_STORAGE_UPGRADE = 1001;</code>
      */
     const ITEM_POKEMON_STORAGE_UPGRADE = 1001;
     /**
-     * <code>ITEM_ITEM_STORAGE_UPGRADE = 1002;</code>
+     * Generated from protobuf enum <code>ITEM_ITEM_STORAGE_UPGRADE = 1002;</code>
      */
     const ITEM_ITEM_STORAGE_UPGRADE = 1002;
     /**
-     * <code>ITEM_SUN_STONE = 1101;</code>
+     * Generated from protobuf enum <code>ITEM_SUN_STONE = 1101;</code>
      */
     const ITEM_SUN_STONE = 1101;
     /**
-     * <code>ITEM_KINGS_ROCK = 1102;</code>
+     * Generated from protobuf enum <code>ITEM_KINGS_ROCK = 1102;</code>
      */
     const ITEM_KINGS_ROCK = 1102;
     /**
-     * <code>ITEM_METAL_COAT = 1103;</code>
+     * Generated from protobuf enum <code>ITEM_METAL_COAT = 1103;</code>
      */
     const ITEM_METAL_COAT = 1103;
     /**
-     * <code>ITEM_DRAGON_SCALE = 1104;</code>
+     * Generated from protobuf enum <code>ITEM_DRAGON_SCALE = 1104;</code>
      */
     const ITEM_DRAGON_SCALE = 1104;
     /**
-     * <code>ITEM_UP_GRADE = 1105;</code>
+     * Generated from protobuf enum <code>ITEM_UP_GRADE = 1105;</code>
      */
     const ITEM_UP_GRADE = 1105;
     /**
-     * <code>ITEM_MOVE_REROLL_FAST_ATTACK = 1201;</code>
+     * Generated from protobuf enum <code>ITEM_MOVE_REROLL_FAST_ATTACK = 1201;</code>
      */
     const ITEM_MOVE_REROLL_FAST_ATTACK = 1201;
     /**
-     * <code>ITEM_MOVE_REROLL_SPECIAL_ATTACK = 1202;</code>
+     * Generated from protobuf enum <code>ITEM_MOVE_REROLL_SPECIAL_ATTACK = 1202;</code>
      */
     const ITEM_MOVE_REROLL_SPECIAL_ATTACK = 1202;
     /**
-     * <code>ITEM_RARE_CANDY = 1301;</code>
+     * Generated from protobuf enum <code>ITEM_RARE_CANDY = 1301;</code>
      */
     const ITEM_RARE_CANDY = 1301;
     /**
-     * <code>ITEM_FREE_RAID_TICKET = 1401;</code>
+     * Generated from protobuf enum <code>ITEM_FREE_RAID_TICKET = 1401;</code>
      */
     const ITEM_FREE_RAID_TICKET = 1401;
     /**
-     * <code>ITEM_PAID_RAID_TICKET = 1402;</code>
+     * Generated from protobuf enum <code>ITEM_PAID_RAID_TICKET = 1402;</code>
      */
     const ITEM_PAID_RAID_TICKET = 1402;
     /**
-     * <code>ITEM_LEGENDARY_RAID_TICKET = 1403;</code>
+     * Generated from protobuf enum <code>ITEM_LEGENDARY_RAID_TICKET = 1403;</code>
      */
     const ITEM_LEGENDARY_RAID_TICKET = 1403;
     /**
-     * <code>ITEM_STAR_PIECE = 1404;</code>
+     * Generated from protobuf enum <code>ITEM_STAR_PIECE = 1404;</code>
      */
     const ITEM_STAR_PIECE = 1404;
     /**
-     * <code>ITEM_FRIEND_GIFT_BOX = 1405;</code>
+     * Generated from protobuf enum <code>ITEM_FRIEND_GIFT_BOX = 1405;</code>
      */
     const ITEM_FRIEND_GIFT_BOX = 1405;
 }

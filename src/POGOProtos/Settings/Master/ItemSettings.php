@@ -9,82 +9,107 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.ItemSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.ItemSettings</code>
  */
 class ItemSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
      */
     private $item_id = 0;
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemType item_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemType item_type = 2;</code>
      */
     private $item_type = 0;
     /**
-     * <code>.POGOProtos.Enums.ItemCategory category = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.ItemCategory category = 3;</code>
      */
     private $category = 0;
     /**
-     * <code>float drop_freq = 4;</code>
+     * Generated from protobuf field <code>float drop_freq = 4;</code>
      */
     private $drop_freq = 0.0;
     /**
-     * <code>int32 drop_trainer_level = 5;</code>
+     * Generated from protobuf field <code>int32 drop_trainer_level = 5;</code>
      */
     private $drop_trainer_level = 0;
     /**
-     * <code>.POGOProtos.Settings.Master.Item.PokeballAttributes pokeball = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.PokeballAttributes pokeball = 6;</code>
      */
     private $pokeball = null;
     /**
-     * <code>.POGOProtos.Settings.Master.Item.PotionAttributes potion = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.PotionAttributes potion = 7;</code>
      */
     private $potion = null;
     /**
-     * <code>.POGOProtos.Settings.Master.Item.ReviveAttributes revive = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.ReviveAttributes revive = 8;</code>
      */
     private $revive = null;
     /**
-     * <code>.POGOProtos.Settings.Master.Item.BattleAttributes battle = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.BattleAttributes battle = 9;</code>
      */
     private $battle = null;
     /**
-     * <code>.POGOProtos.Settings.Master.Item.FoodAttributes food = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.FoodAttributes food = 10;</code>
      */
     private $food = null;
     /**
-     * <code>.POGOProtos.Settings.Master.Item.InventoryUpgradeAttributes inventory_upgrade = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.InventoryUpgradeAttributes inventory_upgrade = 11;</code>
      */
     private $inventory_upgrade = null;
     /**
-     * <code>.POGOProtos.Settings.Master.Item.ExperienceBoostAttributes xp_boost = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.ExperienceBoostAttributes xp_boost = 12;</code>
      */
     private $xp_boost = null;
     /**
-     * <code>.POGOProtos.Settings.Master.Item.IncenseAttributes incense = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.IncenseAttributes incense = 13;</code>
      */
     private $incense = null;
     /**
-     * <code>.POGOProtos.Settings.Master.Item.EggIncubatorAttributes egg_incubator = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.EggIncubatorAttributes egg_incubator = 14;</code>
      */
     private $egg_incubator = null;
     /**
-     * <code>.POGOProtos.Settings.Master.Item.FortModifierAttributes fort_modifier = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.FortModifierAttributes fort_modifier = 15;</code>
      */
     private $fort_modifier = null;
     /**
-     * <code>.POGOProtos.Settings.Master.Item.StardustBoostAttributes stardust_boost = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.StardustBoostAttributes stardust_boost = 16;</code>
      */
     private $stardust_boost = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $item_id
+     *     @type int $item_type
+     *     @type int $category
+     *     @type float $drop_freq
+     *     @type int $drop_trainer_level
+     *     @type \POGOProtos\Settings\Master\Item\PokeballAttributes $pokeball
+     *     @type \POGOProtos\Settings\Master\Item\PotionAttributes $potion
+     *     @type \POGOProtos\Settings\Master\Item\ReviveAttributes $revive
+     *     @type \POGOProtos\Settings\Master\Item\BattleAttributes $battle
+     *     @type \POGOProtos\Settings\Master\Item\FoodAttributes $food
+     *     @type \POGOProtos\Settings\Master\Item\InventoryUpgradeAttributes $inventory_upgrade
+     *     @type \POGOProtos\Settings\Master\Item\ExperienceBoostAttributes $xp_boost
+     *     @type \POGOProtos\Settings\Master\Item\IncenseAttributes $incense
+     *     @type \POGOProtos\Settings\Master\Item\EggIncubatorAttributes $egg_incubator
+     *     @type \POGOProtos\Settings\Master\Item\FortModifierAttributes $fort_modifier
+     *     @type \POGOProtos\Settings\Master\Item\StardustBoostAttributes $stardust_boost
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\ItemSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * @return int
      */
     public function getItemId()
     {
@@ -92,16 +117,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item_id = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->item_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemType item_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemType item_type = 2;</code>
+     * @return int
      */
     public function getItemType()
     {
@@ -109,16 +139,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemType item_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemType item_type = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setItemType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemType::class);
         $this->item_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.ItemCategory category = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.ItemCategory category = 3;</code>
+     * @return int
      */
     public function getCategory()
     {
@@ -126,16 +161,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.ItemCategory category = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.ItemCategory category = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCategory($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\ItemCategory::class);
         $this->category = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float drop_freq = 4;</code>
+     * Generated from protobuf field <code>float drop_freq = 4;</code>
+     * @return float
      */
     public function getDropFreq()
     {
@@ -143,16 +183,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float drop_freq = 4;</code>
+     * Generated from protobuf field <code>float drop_freq = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDropFreq($var)
     {
         GPBUtil::checkFloat($var);
         $this->drop_freq = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 drop_trainer_level = 5;</code>
+     * Generated from protobuf field <code>int32 drop_trainer_level = 5;</code>
+     * @return int
      */
     public function getDropTrainerLevel()
     {
@@ -160,16 +205,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 drop_trainer_level = 5;</code>
+     * Generated from protobuf field <code>int32 drop_trainer_level = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setDropTrainerLevel($var)
     {
         GPBUtil::checkInt32($var);
         $this->drop_trainer_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.PokeballAttributes pokeball = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.PokeballAttributes pokeball = 6;</code>
+     * @return \POGOProtos\Settings\Master\Item\PokeballAttributes
      */
     public function getPokeball()
     {
@@ -177,16 +227,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.PokeballAttributes pokeball = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.PokeballAttributes pokeball = 6;</code>
+     * @param \POGOProtos\Settings\Master\Item\PokeballAttributes $var
+     * @return $this
      */
-    public function setPokeball(&$var)
+    public function setPokeball($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\PokeballAttributes::class);
         $this->pokeball = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.PotionAttributes potion = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.PotionAttributes potion = 7;</code>
+     * @return \POGOProtos\Settings\Master\Item\PotionAttributes
      */
     public function getPotion()
     {
@@ -194,16 +249,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.PotionAttributes potion = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.PotionAttributes potion = 7;</code>
+     * @param \POGOProtos\Settings\Master\Item\PotionAttributes $var
+     * @return $this
      */
-    public function setPotion(&$var)
+    public function setPotion($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\PotionAttributes::class);
         $this->potion = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.ReviveAttributes revive = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.ReviveAttributes revive = 8;</code>
+     * @return \POGOProtos\Settings\Master\Item\ReviveAttributes
      */
     public function getRevive()
     {
@@ -211,16 +271,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.ReviveAttributes revive = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.ReviveAttributes revive = 8;</code>
+     * @param \POGOProtos\Settings\Master\Item\ReviveAttributes $var
+     * @return $this
      */
-    public function setRevive(&$var)
+    public function setRevive($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\ReviveAttributes::class);
         $this->revive = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.BattleAttributes battle = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.BattleAttributes battle = 9;</code>
+     * @return \POGOProtos\Settings\Master\Item\BattleAttributes
      */
     public function getBattle()
     {
@@ -228,16 +293,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.BattleAttributes battle = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.BattleAttributes battle = 9;</code>
+     * @param \POGOProtos\Settings\Master\Item\BattleAttributes $var
+     * @return $this
      */
-    public function setBattle(&$var)
+    public function setBattle($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\BattleAttributes::class);
         $this->battle = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.FoodAttributes food = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.FoodAttributes food = 10;</code>
+     * @return \POGOProtos\Settings\Master\Item\FoodAttributes
      */
     public function getFood()
     {
@@ -245,16 +315,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.FoodAttributes food = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.FoodAttributes food = 10;</code>
+     * @param \POGOProtos\Settings\Master\Item\FoodAttributes $var
+     * @return $this
      */
-    public function setFood(&$var)
+    public function setFood($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\FoodAttributes::class);
         $this->food = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.InventoryUpgradeAttributes inventory_upgrade = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.InventoryUpgradeAttributes inventory_upgrade = 11;</code>
+     * @return \POGOProtos\Settings\Master\Item\InventoryUpgradeAttributes
      */
     public function getInventoryUpgrade()
     {
@@ -262,16 +337,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.InventoryUpgradeAttributes inventory_upgrade = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.InventoryUpgradeAttributes inventory_upgrade = 11;</code>
+     * @param \POGOProtos\Settings\Master\Item\InventoryUpgradeAttributes $var
+     * @return $this
      */
-    public function setInventoryUpgrade(&$var)
+    public function setInventoryUpgrade($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\InventoryUpgradeAttributes::class);
         $this->inventory_upgrade = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.ExperienceBoostAttributes xp_boost = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.ExperienceBoostAttributes xp_boost = 12;</code>
+     * @return \POGOProtos\Settings\Master\Item\ExperienceBoostAttributes
      */
     public function getXpBoost()
     {
@@ -279,16 +359,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.ExperienceBoostAttributes xp_boost = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.ExperienceBoostAttributes xp_boost = 12;</code>
+     * @param \POGOProtos\Settings\Master\Item\ExperienceBoostAttributes $var
+     * @return $this
      */
-    public function setXpBoost(&$var)
+    public function setXpBoost($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\ExperienceBoostAttributes::class);
         $this->xp_boost = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.IncenseAttributes incense = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.IncenseAttributes incense = 13;</code>
+     * @return \POGOProtos\Settings\Master\Item\IncenseAttributes
      */
     public function getIncense()
     {
@@ -296,16 +381,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.IncenseAttributes incense = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.IncenseAttributes incense = 13;</code>
+     * @param \POGOProtos\Settings\Master\Item\IncenseAttributes $var
+     * @return $this
      */
-    public function setIncense(&$var)
+    public function setIncense($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\IncenseAttributes::class);
         $this->incense = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.EggIncubatorAttributes egg_incubator = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.EggIncubatorAttributes egg_incubator = 14;</code>
+     * @return \POGOProtos\Settings\Master\Item\EggIncubatorAttributes
      */
     public function getEggIncubator()
     {
@@ -313,16 +403,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.EggIncubatorAttributes egg_incubator = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.EggIncubatorAttributes egg_incubator = 14;</code>
+     * @param \POGOProtos\Settings\Master\Item\EggIncubatorAttributes $var
+     * @return $this
      */
-    public function setEggIncubator(&$var)
+    public function setEggIncubator($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\EggIncubatorAttributes::class);
         $this->egg_incubator = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.FortModifierAttributes fort_modifier = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.FortModifierAttributes fort_modifier = 15;</code>
+     * @return \POGOProtos\Settings\Master\Item\FortModifierAttributes
      */
     public function getFortModifier()
     {
@@ -330,16 +425,21 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.FortModifierAttributes fort_modifier = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.FortModifierAttributes fort_modifier = 15;</code>
+     * @param \POGOProtos\Settings\Master\Item\FortModifierAttributes $var
+     * @return $this
      */
-    public function setFortModifier(&$var)
+    public function setFortModifier($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\FortModifierAttributes::class);
         $this->fort_modifier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.StardustBoostAttributes stardust_boost = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.StardustBoostAttributes stardust_boost = 16;</code>
+     * @return \POGOProtos\Settings\Master\Item\StardustBoostAttributes
      */
     public function getStardustBoost()
     {
@@ -347,12 +447,16 @@ class ItemSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Settings.Master.Item.StardustBoostAttributes stardust_boost = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.Item.StardustBoostAttributes stardust_boost = 16;</code>
+     * @param \POGOProtos\Settings\Master\Item\StardustBoostAttributes $var
+     * @return $this
      */
-    public function setStardustBoost(&$var)
+    public function setStardustBoost($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\Item\StardustBoostAttributes::class);
         $this->stardust_boost = $var;
+
+        return $this;
     }
 
 }

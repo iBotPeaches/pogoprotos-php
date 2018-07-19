@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.PingMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.PingMessage</code>
  */
 class PingMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int32 response_size_bytes = 1;</code>
+     * Generated from protobuf field <code>int32 response_size_bytes = 1;</code>
      */
     private $response_size_bytes = 0;
     /**
-     * <code>string random_request_bytes = 2;</code>
+     * Generated from protobuf field <code>string random_request_bytes = 2;</code>
      */
     private $random_request_bytes = '';
     /**
-     * <code>bool use_cache_for_random_request_bytes = 3;</code>
+     * Generated from protobuf field <code>bool use_cache_for_random_request_bytes = 3;</code>
      */
     private $use_cache_for_random_request_bytes = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $response_size_bytes
+     *     @type string $random_request_bytes
+     *     @type bool $use_cache_for_random_request_bytes
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\PlatformClientActionsMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int32 response_size_bytes = 1;</code>
+     * Generated from protobuf field <code>int32 response_size_bytes = 1;</code>
+     * @return int
      */
     public function getResponseSizeBytes()
     {
@@ -40,16 +52,21 @@ class PingMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 response_size_bytes = 1;</code>
+     * Generated from protobuf field <code>int32 response_size_bytes = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResponseSizeBytes($var)
     {
         GPBUtil::checkInt32($var);
         $this->response_size_bytes = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string random_request_bytes = 2;</code>
+     * Generated from protobuf field <code>string random_request_bytes = 2;</code>
+     * @return string
      */
     public function getRandomRequestBytes()
     {
@@ -57,16 +74,21 @@ class PingMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string random_request_bytes = 2;</code>
+     * Generated from protobuf field <code>string random_request_bytes = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setRandomRequestBytes($var)
     {
         GPBUtil::checkString($var, True);
         $this->random_request_bytes = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool use_cache_for_random_request_bytes = 3;</code>
+     * Generated from protobuf field <code>bool use_cache_for_random_request_bytes = 3;</code>
+     * @return bool
      */
     public function getUseCacheForRandomRequestBytes()
     {
@@ -74,12 +96,16 @@ class PingMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool use_cache_for_random_request_bytes = 3;</code>
+     * Generated from protobuf field <code>bool use_cache_for_random_request_bytes = 3;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setUseCacheForRandomRequestBytes($var)
     {
         GPBUtil::checkBool($var);
         $this->use_cache_for_random_request_bytes = $var;
+
+        return $this;
     }
 
 }

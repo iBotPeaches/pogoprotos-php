@@ -9,54 +9,72 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Raid.RaidInfo</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Raid.RaidInfo</code>
  */
 class RaidInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 raid_seed = 1;</code>
+     * Generated from protobuf field <code>int64 raid_seed = 1;</code>
      */
     private $raid_seed = 0;
     /**
-     * <code>int64 raid_spawn_ms = 2;</code>
+     * Generated from protobuf field <code>int64 raid_spawn_ms = 2;</code>
      */
     private $raid_spawn_ms = 0;
     /**
-     * <code>int64 raid_battle_ms = 3;</code>
+     * Generated from protobuf field <code>int64 raid_battle_ms = 3;</code>
      */
     private $raid_battle_ms = 0;
     /**
-     * <code>int64 raid_end_ms = 4;</code>
+     * Generated from protobuf field <code>int64 raid_end_ms = 4;</code>
      */
     private $raid_end_ms = 0;
     /**
-     * <code>.POGOProtos.Data.PokemonData raid_pokemon = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData raid_pokemon = 5;</code>
      */
     private $raid_pokemon = null;
     /**
-     * <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
      */
     private $raid_level = 0;
     /**
-     * <code>bool complete = 7;</code>
+     * Generated from protobuf field <code>bool complete = 7;</code>
      */
     private $complete = false;
     /**
-     * <code>bool is_exclusive = 8;</code>
+     * Generated from protobuf field <code>bool is_exclusive = 8;</code>
      */
     private $is_exclusive = false;
     /**
-     * <code>bool is_raid_hidden = 9;</code>
+     * Generated from protobuf field <code>bool is_raid_hidden = 9;</code>
      */
     private $is_raid_hidden = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $raid_seed
+     *     @type int|string $raid_spawn_ms
+     *     @type int|string $raid_battle_ms
+     *     @type int|string $raid_end_ms
+     *     @type \POGOProtos\Data\PokemonData $raid_pokemon
+     *     @type int $raid_level
+     *     @type bool $complete
+     *     @type bool $is_exclusive
+     *     @type bool $is_raid_hidden
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Raid\RaidInfo::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 raid_seed = 1;</code>
+     * Generated from protobuf field <code>int64 raid_seed = 1;</code>
+     * @return int|string
      */
     public function getRaidSeed()
     {
@@ -64,16 +82,21 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 raid_seed = 1;</code>
+     * Generated from protobuf field <code>int64 raid_seed = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setRaidSeed($var)
     {
         GPBUtil::checkInt64($var);
         $this->raid_seed = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 raid_spawn_ms = 2;</code>
+     * Generated from protobuf field <code>int64 raid_spawn_ms = 2;</code>
+     * @return int|string
      */
     public function getRaidSpawnMs()
     {
@@ -81,16 +104,21 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 raid_spawn_ms = 2;</code>
+     * Generated from protobuf field <code>int64 raid_spawn_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setRaidSpawnMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->raid_spawn_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 raid_battle_ms = 3;</code>
+     * Generated from protobuf field <code>int64 raid_battle_ms = 3;</code>
+     * @return int|string
      */
     public function getRaidBattleMs()
     {
@@ -98,16 +126,21 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 raid_battle_ms = 3;</code>
+     * Generated from protobuf field <code>int64 raid_battle_ms = 3;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setRaidBattleMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->raid_battle_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 raid_end_ms = 4;</code>
+     * Generated from protobuf field <code>int64 raid_end_ms = 4;</code>
+     * @return int|string
      */
     public function getRaidEndMs()
     {
@@ -115,16 +148,21 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 raid_end_ms = 4;</code>
+     * Generated from protobuf field <code>int64 raid_end_ms = 4;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setRaidEndMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->raid_end_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData raid_pokemon = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData raid_pokemon = 5;</code>
+     * @return \POGOProtos\Data\PokemonData
      */
     public function getRaidPokemon()
     {
@@ -132,16 +170,21 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.PokemonData raid_pokemon = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData raid_pokemon = 5;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
      */
-    public function setRaidPokemon(&$var)
+    public function setRaidPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->raid_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * @return int
      */
     public function getRaidLevel()
     {
@@ -149,16 +192,21 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setRaidLevel($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Raid\RaidInfo_RaidLevel::class);
         $this->raid_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool complete = 7;</code>
+     * Generated from protobuf field <code>bool complete = 7;</code>
+     * @return bool
      */
     public function getComplete()
     {
@@ -166,16 +214,21 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool complete = 7;</code>
+     * Generated from protobuf field <code>bool complete = 7;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setComplete($var)
     {
         GPBUtil::checkBool($var);
         $this->complete = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool is_exclusive = 8;</code>
+     * Generated from protobuf field <code>bool is_exclusive = 8;</code>
+     * @return bool
      */
     public function getIsExclusive()
     {
@@ -183,16 +236,21 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool is_exclusive = 8;</code>
+     * Generated from protobuf field <code>bool is_exclusive = 8;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsExclusive($var)
     {
         GPBUtil::checkBool($var);
         $this->is_exclusive = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool is_raid_hidden = 9;</code>
+     * Generated from protobuf field <code>bool is_raid_hidden = 9;</code>
+     * @return bool
      */
     public function getIsRaidHidden()
     {
@@ -200,12 +258,16 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool is_raid_hidden = 9;</code>
+     * Generated from protobuf field <code>bool is_raid_hidden = 9;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setIsRaidHidden($var)
     {
         GPBUtil::checkBool($var);
         $this->is_raid_hidden = $var;
+
+        return $this;
     }
 
 }

@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.AwardFreeRaidTicketMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.AwardFreeRaidTicketMessage</code>
  */
 class AwardFreeRaidTicketMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string gym_id = 1;</code>
+     * Generated from protobuf field <code>string gym_id = 1;</code>
      */
     private $gym_id = '';
     /**
-     * <code>double player_lat_degrees = 2;</code>
+     * Generated from protobuf field <code>double player_lat_degrees = 2;</code>
      */
     private $player_lat_degrees = 0.0;
     /**
-     * <code>double player_lng_degrees = 3;</code>
+     * Generated from protobuf field <code>double player_lng_degrees = 3;</code>
      */
     private $player_lng_degrees = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $gym_id
+     *     @type float $player_lat_degrees
+     *     @type float $player_lng_degrees
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\AwardFreeRaidTicketMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string gym_id = 1;</code>
+     * Generated from protobuf field <code>string gym_id = 1;</code>
+     * @return string
      */
     public function getGymId()
     {
@@ -40,16 +52,21 @@ class AwardFreeRaidTicketMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string gym_id = 1;</code>
+     * Generated from protobuf field <code>string gym_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setGymId($var)
     {
         GPBUtil::checkString($var, True);
         $this->gym_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_lat_degrees = 2;</code>
+     * Generated from protobuf field <code>double player_lat_degrees = 2;</code>
+     * @return float
      */
     public function getPlayerLatDegrees()
     {
@@ -57,16 +74,21 @@ class AwardFreeRaidTicketMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_lat_degrees = 2;</code>
+     * Generated from protobuf field <code>double player_lat_degrees = 2;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLatDegrees($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_lat_degrees = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double player_lng_degrees = 3;</code>
+     * Generated from protobuf field <code>double player_lng_degrees = 3;</code>
+     * @return float
      */
     public function getPlayerLngDegrees()
     {
@@ -74,12 +96,16 @@ class AwardFreeRaidTicketMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double player_lng_degrees = 3;</code>
+     * Generated from protobuf field <code>double player_lng_degrees = 3;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPlayerLngDegrees($var)
     {
         GPBUtil::checkDouble($var);
         $this->player_lng_degrees = $var;
+
+        return $this;
     }
 
 }

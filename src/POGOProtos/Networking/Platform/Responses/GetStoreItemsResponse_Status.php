@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Networking\Platform\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Status</code>
- */
-class GetStoreItemsResponse_Status
-{
+if (false) {
     /**
-     * <code>UNDEFINED = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse\Status instead.
+     * @deprecated
      */
-    const UNDEFINED = 0;
-    /**
-     * <code>OKAY = 1;</code>
-     */
-    const OKAY = 1;
+    class GetStoreItemsResponse_Status {}
 }
+class_exists(GetStoreItemsResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Platform\Responses\GetStoreItemsResponse\Status instead', E_USER_DEPRECATED);
 

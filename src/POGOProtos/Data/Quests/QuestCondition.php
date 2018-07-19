@@ -9,86 +9,112 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Quests.QuestCondition</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Quests.QuestCondition</code>
  */
 class QuestCondition extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.ConditionType type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.ConditionType type = 1;</code>
      */
     private $type = 0;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonType with_pokemon_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonType with_pokemon_type = 2;</code>
      */
     private $with_pokemon_type = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonCategory with_pokemon_category = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonCategory with_pokemon_category = 3;</code>
      */
     private $with_pokemon_category = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithWeatherBoost with_weather_boost = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWeatherBoost with_weather_boost = 4;</code>
      */
     private $with_weather_boost = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithDailyCaptureBonus with_daily_capture_bonus = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithDailyCaptureBonus with_daily_capture_bonus = 5;</code>
      */
     private $with_daily_capture_bonus = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithDailySpinBonus with_daily_spin_bonus = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithDailySpinBonus with_daily_spin_bonus = 6;</code>
      */
     private $with_daily_spin_bonus = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithWinRaidStatus with_win_raid_status = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWinRaidStatus with_win_raid_status = 7;</code>
      */
     private $with_win_raid_status = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithRaidLevel with_raid_level = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithRaidLevel with_raid_level = 8;</code>
      */
     private $with_raid_level = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithThrowType with_throw_type = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithThrowType with_throw_type = 9;</code>
      */
     private $with_throw_type = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithWinGymBattleStatus with_win_gym_battle_status = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWinGymBattleStatus with_win_gym_battle_status = 10;</code>
      */
     private $with_win_gym_battle_status = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithSuperEffectiveChargeMove with_super_effective_charge_move = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithSuperEffectiveChargeMove with_super_effective_charge_move = 11;</code>
      */
     private $with_super_effective_charge_move = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithItem with_item = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithItem with_item = 12;</code>
      */
     private $with_item = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithUniquePokestop with_unique_pokestop = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithUniquePokestop with_unique_pokestop = 13;</code>
      */
     private $with_unique_pokestop = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithQuestContext with_quest_context = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithQuestContext with_quest_context = 14;</code>
      */
     private $with_quest_context = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithBadgeType with_badge_type = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithBadgeType with_badge_type = 15;</code>
      */
     private $with_badge_type = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithPlayerLevel with_player_level = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPlayerLevel with_player_level = 16;</code>
      */
     private $with_player_level = null;
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithWinBattleStatus with_win_battle_status = 17;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWinBattleStatus with_win_battle_status = 17;</code>
      */
     private $with_win_battle_status = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $type
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithPokemonType $with_pokemon_type
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithPokemonCategory $with_pokemon_category
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithWeatherBoost $with_weather_boost
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithDailyCaptureBonus $with_daily_capture_bonus
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithDailySpinBonus $with_daily_spin_bonus
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithWinRaidStatus $with_win_raid_status
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithRaidLevel $with_raid_level
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithThrowType $with_throw_type
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithWinGymBattleStatus $with_win_gym_battle_status
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithSuperEffectiveChargeMove $with_super_effective_charge_move
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithItem $with_item
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithUniquePokestop $with_unique_pokestop
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithQuestContext $with_quest_context
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithBadgeType $with_badge_type
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithPlayerLevel $with_player_level
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithWinBattleStatus $with_win_battle_status
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Quests\QuestCondition::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.ConditionType type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.ConditionType type = 1;</code>
+     * @return int
      */
     public function getType()
     {
@@ -96,16 +122,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.ConditionType type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.ConditionType type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Quests\QuestCondition_ConditionType::class);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonType with_pokemon_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonType with_pokemon_type = 2;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithPokemonType
      */
     public function getWithPokemonType()
     {
@@ -113,16 +144,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonType with_pokemon_type = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonType with_pokemon_type = 2;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithPokemonType $var
+     * @return $this
      */
-    public function setWithPokemonType(&$var)
+    public function setWithPokemonType($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithPokemonType::class);
         $this->with_pokemon_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonCategory with_pokemon_category = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonCategory with_pokemon_category = 3;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithPokemonCategory
      */
     public function getWithPokemonCategory()
     {
@@ -130,16 +166,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonCategory with_pokemon_category = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonCategory with_pokemon_category = 3;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithPokemonCategory $var
+     * @return $this
      */
-    public function setWithPokemonCategory(&$var)
+    public function setWithPokemonCategory($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithPokemonCategory::class);
         $this->with_pokemon_category = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithWeatherBoost with_weather_boost = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWeatherBoost with_weather_boost = 4;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithWeatherBoost
      */
     public function getWithWeatherBoost()
     {
@@ -147,16 +188,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithWeatherBoost with_weather_boost = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWeatherBoost with_weather_boost = 4;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithWeatherBoost $var
+     * @return $this
      */
-    public function setWithWeatherBoost(&$var)
+    public function setWithWeatherBoost($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithWeatherBoost::class);
         $this->with_weather_boost = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithDailyCaptureBonus with_daily_capture_bonus = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithDailyCaptureBonus with_daily_capture_bonus = 5;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithDailyCaptureBonus
      */
     public function getWithDailyCaptureBonus()
     {
@@ -164,16 +210,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithDailyCaptureBonus with_daily_capture_bonus = 5;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithDailyCaptureBonus with_daily_capture_bonus = 5;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithDailyCaptureBonus $var
+     * @return $this
      */
-    public function setWithDailyCaptureBonus(&$var)
+    public function setWithDailyCaptureBonus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithDailyCaptureBonus::class);
         $this->with_daily_capture_bonus = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithDailySpinBonus with_daily_spin_bonus = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithDailySpinBonus with_daily_spin_bonus = 6;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithDailySpinBonus
      */
     public function getWithDailySpinBonus()
     {
@@ -181,16 +232,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithDailySpinBonus with_daily_spin_bonus = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithDailySpinBonus with_daily_spin_bonus = 6;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithDailySpinBonus $var
+     * @return $this
      */
-    public function setWithDailySpinBonus(&$var)
+    public function setWithDailySpinBonus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithDailySpinBonus::class);
         $this->with_daily_spin_bonus = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithWinRaidStatus with_win_raid_status = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWinRaidStatus with_win_raid_status = 7;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithWinRaidStatus
      */
     public function getWithWinRaidStatus()
     {
@@ -198,16 +254,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithWinRaidStatus with_win_raid_status = 7;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWinRaidStatus with_win_raid_status = 7;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithWinRaidStatus $var
+     * @return $this
      */
-    public function setWithWinRaidStatus(&$var)
+    public function setWithWinRaidStatus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithWinRaidStatus::class);
         $this->with_win_raid_status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithRaidLevel with_raid_level = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithRaidLevel with_raid_level = 8;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithRaidLevel
      */
     public function getWithRaidLevel()
     {
@@ -215,16 +276,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithRaidLevel with_raid_level = 8;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithRaidLevel with_raid_level = 8;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithRaidLevel $var
+     * @return $this
      */
-    public function setWithRaidLevel(&$var)
+    public function setWithRaidLevel($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithRaidLevel::class);
         $this->with_raid_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithThrowType with_throw_type = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithThrowType with_throw_type = 9;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithThrowType
      */
     public function getWithThrowType()
     {
@@ -232,16 +298,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithThrowType with_throw_type = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithThrowType with_throw_type = 9;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithThrowType $var
+     * @return $this
      */
-    public function setWithThrowType(&$var)
+    public function setWithThrowType($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithThrowType::class);
         $this->with_throw_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithWinGymBattleStatus with_win_gym_battle_status = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWinGymBattleStatus with_win_gym_battle_status = 10;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithWinGymBattleStatus
      */
     public function getWithWinGymBattleStatus()
     {
@@ -249,16 +320,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithWinGymBattleStatus with_win_gym_battle_status = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWinGymBattleStatus with_win_gym_battle_status = 10;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithWinGymBattleStatus $var
+     * @return $this
      */
-    public function setWithWinGymBattleStatus(&$var)
+    public function setWithWinGymBattleStatus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithWinGymBattleStatus::class);
         $this->with_win_gym_battle_status = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithSuperEffectiveChargeMove with_super_effective_charge_move = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithSuperEffectiveChargeMove with_super_effective_charge_move = 11;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithSuperEffectiveChargeMove
      */
     public function getWithSuperEffectiveChargeMove()
     {
@@ -266,16 +342,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithSuperEffectiveChargeMove with_super_effective_charge_move = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithSuperEffectiveChargeMove with_super_effective_charge_move = 11;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithSuperEffectiveChargeMove $var
+     * @return $this
      */
-    public function setWithSuperEffectiveChargeMove(&$var)
+    public function setWithSuperEffectiveChargeMove($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithSuperEffectiveChargeMove::class);
         $this->with_super_effective_charge_move = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithItem with_item = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithItem with_item = 12;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithItem
      */
     public function getWithItem()
     {
@@ -283,16 +364,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithItem with_item = 12;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithItem with_item = 12;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithItem $var
+     * @return $this
      */
-    public function setWithItem(&$var)
+    public function setWithItem($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithItem::class);
         $this->with_item = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithUniquePokestop with_unique_pokestop = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithUniquePokestop with_unique_pokestop = 13;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithUniquePokestop
      */
     public function getWithUniquePokestop()
     {
@@ -300,16 +386,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithUniquePokestop with_unique_pokestop = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithUniquePokestop with_unique_pokestop = 13;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithUniquePokestop $var
+     * @return $this
      */
-    public function setWithUniquePokestop(&$var)
+    public function setWithUniquePokestop($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithUniquePokestop::class);
         $this->with_unique_pokestop = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithQuestContext with_quest_context = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithQuestContext with_quest_context = 14;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithQuestContext
      */
     public function getWithQuestContext()
     {
@@ -317,16 +408,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithQuestContext with_quest_context = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithQuestContext with_quest_context = 14;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithQuestContext $var
+     * @return $this
      */
-    public function setWithQuestContext(&$var)
+    public function setWithQuestContext($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithQuestContext::class);
         $this->with_quest_context = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithBadgeType with_badge_type = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithBadgeType with_badge_type = 15;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithBadgeType
      */
     public function getWithBadgeType()
     {
@@ -334,16 +430,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithBadgeType with_badge_type = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithBadgeType with_badge_type = 15;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithBadgeType $var
+     * @return $this
      */
-    public function setWithBadgeType(&$var)
+    public function setWithBadgeType($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithBadgeType::class);
         $this->with_badge_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithPlayerLevel with_player_level = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPlayerLevel with_player_level = 16;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithPlayerLevel
      */
     public function getWithPlayerLevel()
     {
@@ -351,16 +452,21 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithPlayerLevel with_player_level = 16;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPlayerLevel with_player_level = 16;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithPlayerLevel $var
+     * @return $this
      */
-    public function setWithPlayerLevel(&$var)
+    public function setWithPlayerLevel($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithPlayerLevel::class);
         $this->with_player_level = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithWinBattleStatus with_win_battle_status = 17;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWinBattleStatus with_win_battle_status = 17;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithWinBattleStatus
      */
     public function getWithWinBattleStatus()
     {
@@ -368,12 +474,16 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Quests.QuestCondition.WithWinBattleStatus with_win_battle_status = 17;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWinBattleStatus with_win_battle_status = 17;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithWinBattleStatus $var
+     * @return $this
      */
-    public function setWithWinBattleStatus(&$var)
+    public function setWithWinBattleStatus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithWinBattleStatus::class);
         $this->with_win_battle_status = $var;
+
+        return $this;
     }
 
 }

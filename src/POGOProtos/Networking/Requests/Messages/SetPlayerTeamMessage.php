@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.SetPlayerTeamMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.SetPlayerTeamMessage</code>
  */
 class SetPlayerTeamMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.TeamColor team = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team = 1;</code>
      */
     private $team = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $team
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\SetPlayerTeamMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.TeamColor team = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team = 1;</code>
+     * @return int
      */
     public function getTeam()
     {
@@ -32,12 +42,16 @@ class SetPlayerTeamMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.TeamColor team = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTeam($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\TeamColor::class);
         $this->team = $var;
+
+        return $this;
     }
 
 }

@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Data\Logs;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Logs.CatchPokemonLogEntry.Result</code>
- */
-class CatchPokemonLogEntry_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Logs\CatchPokemonLogEntry\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>POKEMON_CAPTURED = 1;</code>
-     */
-    const POKEMON_CAPTURED = 1;
-    /**
-     * <code>POKEMON_FLED = 2;</code>
-     */
-    const POKEMON_FLED = 2;
-    /**
-     * <code>POKEMON_HATCHED = 3;</code>
-     */
-    const POKEMON_HATCHED = 3;
+    class CatchPokemonLogEntry_Result {}
 }
+class_exists(CatchPokemonLogEntry\Result::class);
+@trigger_error('POGOProtos\Data\Logs\CatchPokemonLogEntry_Result is deprecated and will be removed in the next major release. Use POGOProtos\Data\Logs\CatchPokemonLogEntry\Result instead', E_USER_DEPRECATED);
 

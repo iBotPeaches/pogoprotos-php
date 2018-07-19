@@ -9,30 +9,40 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.UseItemGymResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.UseItemGymResponse</code>
  */
 class UseItemGymResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.UseItemGymResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.UseItemGymResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <pre>
      * Gym Points (?)
-     * </pre>
      *
-     * <code>int64 updated_gp = 2;</code>
+     * Generated from protobuf field <code>int64 updated_gp = 2;</code>
      */
     private $updated_gp = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type int|string $updated_gp
+     *           Gym Points (?)
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\UseItemGymResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.UseItemGymResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.UseItemGymResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -40,20 +50,23 @@ class UseItemGymResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.UseItemGymResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.UseItemGymResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\UseItemGymResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <pre>
      * Gym Points (?)
-     * </pre>
      *
-     * <code>int64 updated_gp = 2;</code>
+     * Generated from protobuf field <code>int64 updated_gp = 2;</code>
+     * @return int|string
      */
     public function getUpdatedGp()
     {
@@ -61,16 +74,18 @@ class UseItemGymResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <pre>
      * Gym Points (?)
-     * </pre>
      *
-     * <code>int64 updated_gp = 2;</code>
+     * Generated from protobuf field <code>int64 updated_gp = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setUpdatedGp($var)
     {
         GPBUtil::checkInt64($var);
         $this->updated_gp = $var;
+
+        return $this;
     }
 
 }

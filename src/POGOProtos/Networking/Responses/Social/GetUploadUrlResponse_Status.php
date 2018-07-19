@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Networking\Responses\Social;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.Social.GetUploadUrlResponse.Status</code>
- */
-class GetUploadUrlResponse_Status
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\Social\GetUploadUrlResponse\Status instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>FAILURES = 1;</code>
-     */
-    const FAILURES = 1;
+    class GetUploadUrlResponse_Status {}
 }
+class_exists(GetUploadUrlResponse\Status::class);
+@trigger_error('POGOProtos\Networking\Responses\Social\GetUploadUrlResponse_Status is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\Social\GetUploadUrlResponse\Status instead', E_USER_DEPRECATED);
 

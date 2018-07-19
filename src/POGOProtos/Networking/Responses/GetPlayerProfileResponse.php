@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Responses.GetPlayerProfileResponse</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetPlayerProfileResponse</code>
  */
 class GetPlayerProfileResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Networking.Responses.GetPlayerProfileResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetPlayerProfileResponse.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>int64 start_time = 2;</code>
+     * Generated from protobuf field <code>int64 start_time = 2;</code>
      */
     private $start_time = 0;
     /**
-     * <code>repeated .POGOProtos.Data.PlayerBadge badges = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PlayerBadge badges = 3;</code>
      */
     private $badges;
     /**
-     * <code>.POGOProtos.Networking.Responses.GetPlayerProfileResponse.GymBadges gym_badges = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetPlayerProfileResponse.GymBadges gym_badges = 4;</code>
      */
     private $gym_badges = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type int|string $start_time
+     *     @type \POGOProtos\Data\PlayerBadge[]|\Google\Protobuf\Internal\RepeatedField $badges
+     *     @type \POGOProtos\Networking\Responses\GetPlayerProfileResponse\GymBadges $gym_badges
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Responses\GetPlayerProfileResponse::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetPlayerProfileResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetPlayerProfileResponse.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -44,16 +57,21 @@ class GetPlayerProfileResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetPlayerProfileResponse.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetPlayerProfileResponse.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Networking\Responses\GetPlayerProfileResponse_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 start_time = 2;</code>
+     * Generated from protobuf field <code>int64 start_time = 2;</code>
+     * @return int|string
      */
     public function getStartTime()
     {
@@ -61,16 +79,21 @@ class GetPlayerProfileResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 start_time = 2;</code>
+     * Generated from protobuf field <code>int64 start_time = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setStartTime($var)
     {
         GPBUtil::checkInt64($var);
         $this->start_time = $var;
+
+        return $this;
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.PlayerBadge badges = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PlayerBadge badges = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getBadges()
     {
@@ -78,16 +101,21 @@ class GetPlayerProfileResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated .POGOProtos.Data.PlayerBadge badges = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.PlayerBadge badges = 3;</code>
+     * @param \POGOProtos\Data\PlayerBadge[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setBadges(&$var)
+    public function setBadges($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\PlayerBadge::class);
-        $this->badges = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\PlayerBadge::class);
+        $this->badges = $arr;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetPlayerProfileResponse.GymBadges gym_badges = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetPlayerProfileResponse.GymBadges gym_badges = 4;</code>
+     * @return \POGOProtos\Networking\Responses\GetPlayerProfileResponse\GymBadges
      */
     public function getGymBadges()
     {
@@ -95,12 +123,16 @@ class GetPlayerProfileResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Networking.Responses.GetPlayerProfileResponse.GymBadges gym_badges = 4;</code>
+     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetPlayerProfileResponse.GymBadges gym_badges = 4;</code>
+     * @param \POGOProtos\Networking\Responses\GetPlayerProfileResponse\GymBadges $var
+     * @return $this
      */
-    public function setGymBadges(&$var)
+    public function setGymBadges($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Responses\GetPlayerProfileResponse_GymBadges::class);
         $this->gym_badges = $var;
+
+        return $this;
     }
 
 }

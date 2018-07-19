@@ -4,18 +4,13 @@
 
 namespace POGOProtos\Data\Logs;
 
-/**
- * Protobuf enum <code>POGOProtos.Data.Logs.CompleteQuestStampCardLogEntry.Result</code>
- */
-class CompleteQuestStampCardLogEntry_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Data\Logs\CompleteQuestStampCardLogEntry\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
+    class CompleteQuestStampCardLogEntry_Result {}
 }
+class_exists(CompleteQuestStampCardLogEntry\Result::class);
+@trigger_error('POGOProtos\Data\Logs\CompleteQuestStampCardLogEntry_Result is deprecated and will be removed in the next major release. Use POGOProtos\Data\Logs\CompleteQuestStampCardLogEntry\Result instead', E_USER_DEPRECATED);
 

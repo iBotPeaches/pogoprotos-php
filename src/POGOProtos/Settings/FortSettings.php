@@ -9,62 +9,82 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.FortSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.FortSettings</code>
  */
 class FortSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>double interaction_range_meters = 1;</code>
+     * Generated from protobuf field <code>double interaction_range_meters = 1;</code>
      */
     private $interaction_range_meters = 0.0;
     /**
-     * <code>int32 max_total_deployed_pokemon = 2;</code>
+     * Generated from protobuf field <code>int32 max_total_deployed_pokemon = 2;</code>
      */
     private $max_total_deployed_pokemon = 0;
     /**
-     * <code>int32 max_player_deployed_pokemon = 3;</code>
+     * Generated from protobuf field <code>int32 max_player_deployed_pokemon = 3;</code>
      */
     private $max_player_deployed_pokemon = 0;
     /**
-     * <code>double deploy_stamina_multiplier = 4;</code>
+     * Generated from protobuf field <code>double deploy_stamina_multiplier = 4;</code>
      */
     private $deploy_stamina_multiplier = 0.0;
     /**
-     * <code>double deploy_attack_multiplier = 5;</code>
+     * Generated from protobuf field <code>double deploy_attack_multiplier = 5;</code>
      */
     private $deploy_attack_multiplier = 0.0;
     /**
-     * <code>double far_interaction_range_meters = 6;</code>
+     * Generated from protobuf field <code>double far_interaction_range_meters = 6;</code>
      */
     private $far_interaction_range_meters = 0.0;
     /**
-     * <code>bool disable_gyms = 7;</code>
+     * Generated from protobuf field <code>bool disable_gyms = 7;</code>
      */
     private $disable_gyms = false;
     /**
-     * <code>int32 max_same_pokemon_at_fort = 8;</code>
+     * Generated from protobuf field <code>int32 max_same_pokemon_at_fort = 8;</code>
      */
     private $max_same_pokemon_at_fort = 0;
     /**
-     * <code>int32 max_player_total_deployed_pokemon = 9;</code>
+     * Generated from protobuf field <code>int32 max_player_total_deployed_pokemon = 9;</code>
      */
     private $max_player_total_deployed_pokemon = 0;
     /**
-     * <code>bool enable_hyperlinks_in_poi_descriptions = 10;</code>
+     * Generated from protobuf field <code>bool enable_hyperlinks_in_poi_descriptions = 10;</code>
      */
     private $enable_hyperlinks_in_poi_descriptions = false;
     /**
-     * <code>bool enable_right_to_left_text_display = 11;</code>
+     * Generated from protobuf field <code>bool enable_right_to_left_text_display = 11;</code>
      */
     private $enable_right_to_left_text_display = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $interaction_range_meters
+     *     @type int $max_total_deployed_pokemon
+     *     @type int $max_player_deployed_pokemon
+     *     @type float $deploy_stamina_multiplier
+     *     @type float $deploy_attack_multiplier
+     *     @type float $far_interaction_range_meters
+     *     @type bool $disable_gyms
+     *     @type int $max_same_pokemon_at_fort
+     *     @type int $max_player_total_deployed_pokemon
+     *     @type bool $enable_hyperlinks_in_poi_descriptions
+     *     @type bool $enable_right_to_left_text_display
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\FortSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>double interaction_range_meters = 1;</code>
+     * Generated from protobuf field <code>double interaction_range_meters = 1;</code>
+     * @return float
      */
     public function getInteractionRangeMeters()
     {
@@ -72,16 +92,21 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double interaction_range_meters = 1;</code>
+     * Generated from protobuf field <code>double interaction_range_meters = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setInteractionRangeMeters($var)
     {
         GPBUtil::checkDouble($var);
         $this->interaction_range_meters = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_total_deployed_pokemon = 2;</code>
+     * Generated from protobuf field <code>int32 max_total_deployed_pokemon = 2;</code>
+     * @return int
      */
     public function getMaxTotalDeployedPokemon()
     {
@@ -89,16 +114,21 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_total_deployed_pokemon = 2;</code>
+     * Generated from protobuf field <code>int32 max_total_deployed_pokemon = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxTotalDeployedPokemon($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_total_deployed_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_player_deployed_pokemon = 3;</code>
+     * Generated from protobuf field <code>int32 max_player_deployed_pokemon = 3;</code>
+     * @return int
      */
     public function getMaxPlayerDeployedPokemon()
     {
@@ -106,16 +136,21 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_player_deployed_pokemon = 3;</code>
+     * Generated from protobuf field <code>int32 max_player_deployed_pokemon = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxPlayerDeployedPokemon($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_player_deployed_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double deploy_stamina_multiplier = 4;</code>
+     * Generated from protobuf field <code>double deploy_stamina_multiplier = 4;</code>
+     * @return float
      */
     public function getDeployStaminaMultiplier()
     {
@@ -123,16 +158,21 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double deploy_stamina_multiplier = 4;</code>
+     * Generated from protobuf field <code>double deploy_stamina_multiplier = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDeployStaminaMultiplier($var)
     {
         GPBUtil::checkDouble($var);
         $this->deploy_stamina_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double deploy_attack_multiplier = 5;</code>
+     * Generated from protobuf field <code>double deploy_attack_multiplier = 5;</code>
+     * @return float
      */
     public function getDeployAttackMultiplier()
     {
@@ -140,16 +180,21 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double deploy_attack_multiplier = 5;</code>
+     * Generated from protobuf field <code>double deploy_attack_multiplier = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setDeployAttackMultiplier($var)
     {
         GPBUtil::checkDouble($var);
         $this->deploy_attack_multiplier = $var;
+
+        return $this;
     }
 
     /**
-     * <code>double far_interaction_range_meters = 6;</code>
+     * Generated from protobuf field <code>double far_interaction_range_meters = 6;</code>
+     * @return float
      */
     public function getFarInteractionRangeMeters()
     {
@@ -157,16 +202,21 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>double far_interaction_range_meters = 6;</code>
+     * Generated from protobuf field <code>double far_interaction_range_meters = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setFarInteractionRangeMeters($var)
     {
         GPBUtil::checkDouble($var);
         $this->far_interaction_range_meters = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool disable_gyms = 7;</code>
+     * Generated from protobuf field <code>bool disable_gyms = 7;</code>
+     * @return bool
      */
     public function getDisableGyms()
     {
@@ -174,16 +224,21 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool disable_gyms = 7;</code>
+     * Generated from protobuf field <code>bool disable_gyms = 7;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setDisableGyms($var)
     {
         GPBUtil::checkBool($var);
         $this->disable_gyms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_same_pokemon_at_fort = 8;</code>
+     * Generated from protobuf field <code>int32 max_same_pokemon_at_fort = 8;</code>
+     * @return int
      */
     public function getMaxSamePokemonAtFort()
     {
@@ -191,16 +246,21 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_same_pokemon_at_fort = 8;</code>
+     * Generated from protobuf field <code>int32 max_same_pokemon_at_fort = 8;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxSamePokemonAtFort($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_same_pokemon_at_fort = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 max_player_total_deployed_pokemon = 9;</code>
+     * Generated from protobuf field <code>int32 max_player_total_deployed_pokemon = 9;</code>
+     * @return int
      */
     public function getMaxPlayerTotalDeployedPokemon()
     {
@@ -208,16 +268,21 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 max_player_total_deployed_pokemon = 9;</code>
+     * Generated from protobuf field <code>int32 max_player_total_deployed_pokemon = 9;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMaxPlayerTotalDeployedPokemon($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_player_total_deployed_pokemon = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool enable_hyperlinks_in_poi_descriptions = 10;</code>
+     * Generated from protobuf field <code>bool enable_hyperlinks_in_poi_descriptions = 10;</code>
+     * @return bool
      */
     public function getEnableHyperlinksInPoiDescriptions()
     {
@@ -225,16 +290,21 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool enable_hyperlinks_in_poi_descriptions = 10;</code>
+     * Generated from protobuf field <code>bool enable_hyperlinks_in_poi_descriptions = 10;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEnableHyperlinksInPoiDescriptions($var)
     {
         GPBUtil::checkBool($var);
         $this->enable_hyperlinks_in_poi_descriptions = $var;
+
+        return $this;
     }
 
     /**
-     * <code>bool enable_right_to_left_text_display = 11;</code>
+     * Generated from protobuf field <code>bool enable_right_to_left_text_display = 11;</code>
+     * @return bool
      */
     public function getEnableRightToLeftTextDisplay()
     {
@@ -242,12 +312,16 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>bool enable_right_to_left_text_display = 11;</code>
+     * Generated from protobuf field <code>bool enable_right_to_left_text_display = 11;</code>
+     * @param bool $var
+     * @return $this
      */
     public function setEnableRightToLeftTextDisplay($var)
     {
         GPBUtil::checkBool($var);
         $this->enable_right_to_left_text_display = $var;
+
+        return $this;
     }
 
 }

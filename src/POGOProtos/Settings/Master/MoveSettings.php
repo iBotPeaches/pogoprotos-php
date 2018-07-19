@@ -9,78 +9,102 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.MoveSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.MoveSettings</code>
  */
 class MoveSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Enums.PokemonMove movement_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove movement_id = 1;</code>
      */
     private $movement_id = 0;
     /**
-     * <code>int32 animation_id = 2;</code>
+     * Generated from protobuf field <code>int32 animation_id = 2;</code>
      */
     private $animation_id = 0;
     /**
-     * <code>.POGOProtos.Enums.PokemonType pokemon_type = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonType pokemon_type = 3;</code>
      */
     private $pokemon_type = 0;
     /**
-     * <code>float power = 4;</code>
+     * Generated from protobuf field <code>float power = 4;</code>
      */
     private $power = 0.0;
     /**
-     * <code>float accuracy_chance = 5;</code>
+     * Generated from protobuf field <code>float accuracy_chance = 5;</code>
      */
     private $accuracy_chance = 0.0;
     /**
-     * <code>float critical_chance = 6;</code>
+     * Generated from protobuf field <code>float critical_chance = 6;</code>
      */
     private $critical_chance = 0.0;
     /**
-     * <code>float heal_scalar = 7;</code>
+     * Generated from protobuf field <code>float heal_scalar = 7;</code>
      */
     private $heal_scalar = 0.0;
     /**
-     * <code>float stamina_loss_scalar = 8;</code>
+     * Generated from protobuf field <code>float stamina_loss_scalar = 8;</code>
      */
     private $stamina_loss_scalar = 0.0;
     /**
-     * <code>int32 trainer_level_min = 9;</code>
+     * Generated from protobuf field <code>int32 trainer_level_min = 9;</code>
      */
     private $trainer_level_min = 0;
     /**
-     * <code>int32 trainer_level_max = 10;</code>
+     * Generated from protobuf field <code>int32 trainer_level_max = 10;</code>
      */
     private $trainer_level_max = 0;
     /**
-     * <code>string vfx_name = 11;</code>
+     * Generated from protobuf field <code>string vfx_name = 11;</code>
      */
     private $vfx_name = '';
     /**
-     * <code>int32 duration_ms = 12;</code>
+     * Generated from protobuf field <code>int32 duration_ms = 12;</code>
      */
     private $duration_ms = 0;
     /**
-     * <code>int32 damage_window_start_ms = 13;</code>
+     * Generated from protobuf field <code>int32 damage_window_start_ms = 13;</code>
      */
     private $damage_window_start_ms = 0;
     /**
-     * <code>int32 damage_window_end_ms = 14;</code>
+     * Generated from protobuf field <code>int32 damage_window_end_ms = 14;</code>
      */
     private $damage_window_end_ms = 0;
     /**
-     * <code>int32 energy_delta = 15;</code>
+     * Generated from protobuf field <code>int32 energy_delta = 15;</code>
      */
     private $energy_delta = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $movement_id
+     *     @type int $animation_id
+     *     @type int $pokemon_type
+     *     @type float $power
+     *     @type float $accuracy_chance
+     *     @type float $critical_chance
+     *     @type float $heal_scalar
+     *     @type float $stamina_loss_scalar
+     *     @type int $trainer_level_min
+     *     @type int $trainer_level_max
+     *     @type string $vfx_name
+     *     @type int $duration_ms
+     *     @type int $damage_window_start_ms
+     *     @type int $damage_window_end_ms
+     *     @type int $energy_delta
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\MoveSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonMove movement_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove movement_id = 1;</code>
+     * @return int
      */
     public function getMovementId()
     {
@@ -88,16 +112,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonMove movement_id = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove movement_id = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setMovementId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonMove::class);
         $this->movement_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 animation_id = 2;</code>
+     * Generated from protobuf field <code>int32 animation_id = 2;</code>
+     * @return int
      */
     public function getAnimationId()
     {
@@ -105,16 +134,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 animation_id = 2;</code>
+     * Generated from protobuf field <code>int32 animation_id = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setAnimationId($var)
     {
         GPBUtil::checkInt32($var);
         $this->animation_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonType pokemon_type = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonType pokemon_type = 3;</code>
+     * @return int
      */
     public function getPokemonType()
     {
@@ -122,16 +156,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Enums.PokemonType pokemon_type = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonType pokemon_type = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setPokemonType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonType::class);
         $this->pokemon_type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float power = 4;</code>
+     * Generated from protobuf field <code>float power = 4;</code>
+     * @return float
      */
     public function getPower()
     {
@@ -139,16 +178,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float power = 4;</code>
+     * Generated from protobuf field <code>float power = 4;</code>
+     * @param float $var
+     * @return $this
      */
     public function setPower($var)
     {
         GPBUtil::checkFloat($var);
         $this->power = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float accuracy_chance = 5;</code>
+     * Generated from protobuf field <code>float accuracy_chance = 5;</code>
+     * @return float
      */
     public function getAccuracyChance()
     {
@@ -156,16 +200,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float accuracy_chance = 5;</code>
+     * Generated from protobuf field <code>float accuracy_chance = 5;</code>
+     * @param float $var
+     * @return $this
      */
     public function setAccuracyChance($var)
     {
         GPBUtil::checkFloat($var);
         $this->accuracy_chance = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float critical_chance = 6;</code>
+     * Generated from protobuf field <code>float critical_chance = 6;</code>
+     * @return float
      */
     public function getCriticalChance()
     {
@@ -173,16 +222,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float critical_chance = 6;</code>
+     * Generated from protobuf field <code>float critical_chance = 6;</code>
+     * @param float $var
+     * @return $this
      */
     public function setCriticalChance($var)
     {
         GPBUtil::checkFloat($var);
         $this->critical_chance = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float heal_scalar = 7;</code>
+     * Generated from protobuf field <code>float heal_scalar = 7;</code>
+     * @return float
      */
     public function getHealScalar()
     {
@@ -190,16 +244,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float heal_scalar = 7;</code>
+     * Generated from protobuf field <code>float heal_scalar = 7;</code>
+     * @param float $var
+     * @return $this
      */
     public function setHealScalar($var)
     {
         GPBUtil::checkFloat($var);
         $this->heal_scalar = $var;
+
+        return $this;
     }
 
     /**
-     * <code>float stamina_loss_scalar = 8;</code>
+     * Generated from protobuf field <code>float stamina_loss_scalar = 8;</code>
+     * @return float
      */
     public function getStaminaLossScalar()
     {
@@ -207,16 +266,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float stamina_loss_scalar = 8;</code>
+     * Generated from protobuf field <code>float stamina_loss_scalar = 8;</code>
+     * @param float $var
+     * @return $this
      */
     public function setStaminaLossScalar($var)
     {
         GPBUtil::checkFloat($var);
         $this->stamina_loss_scalar = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 trainer_level_min = 9;</code>
+     * Generated from protobuf field <code>int32 trainer_level_min = 9;</code>
+     * @return int
      */
     public function getTrainerLevelMin()
     {
@@ -224,16 +288,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 trainer_level_min = 9;</code>
+     * Generated from protobuf field <code>int32 trainer_level_min = 9;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTrainerLevelMin($var)
     {
         GPBUtil::checkInt32($var);
         $this->trainer_level_min = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 trainer_level_max = 10;</code>
+     * Generated from protobuf field <code>int32 trainer_level_max = 10;</code>
+     * @return int
      */
     public function getTrainerLevelMax()
     {
@@ -241,16 +310,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 trainer_level_max = 10;</code>
+     * Generated from protobuf field <code>int32 trainer_level_max = 10;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTrainerLevelMax($var)
     {
         GPBUtil::checkInt32($var);
         $this->trainer_level_max = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string vfx_name = 11;</code>
+     * Generated from protobuf field <code>string vfx_name = 11;</code>
+     * @return string
      */
     public function getVfxName()
     {
@@ -258,16 +332,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string vfx_name = 11;</code>
+     * Generated from protobuf field <code>string vfx_name = 11;</code>
+     * @param string $var
+     * @return $this
      */
     public function setVfxName($var)
     {
         GPBUtil::checkString($var, True);
         $this->vfx_name = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 duration_ms = 12;</code>
+     * Generated from protobuf field <code>int32 duration_ms = 12;</code>
+     * @return int
      */
     public function getDurationMs()
     {
@@ -275,16 +354,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 duration_ms = 12;</code>
+     * Generated from protobuf field <code>int32 duration_ms = 12;</code>
+     * @param int $var
+     * @return $this
      */
     public function setDurationMs($var)
     {
         GPBUtil::checkInt32($var);
         $this->duration_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 damage_window_start_ms = 13;</code>
+     * Generated from protobuf field <code>int32 damage_window_start_ms = 13;</code>
+     * @return int
      */
     public function getDamageWindowStartMs()
     {
@@ -292,16 +376,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 damage_window_start_ms = 13;</code>
+     * Generated from protobuf field <code>int32 damage_window_start_ms = 13;</code>
+     * @param int $var
+     * @return $this
      */
     public function setDamageWindowStartMs($var)
     {
         GPBUtil::checkInt32($var);
         $this->damage_window_start_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 damage_window_end_ms = 14;</code>
+     * Generated from protobuf field <code>int32 damage_window_end_ms = 14;</code>
+     * @return int
      */
     public function getDamageWindowEndMs()
     {
@@ -309,16 +398,21 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 damage_window_end_ms = 14;</code>
+     * Generated from protobuf field <code>int32 damage_window_end_ms = 14;</code>
+     * @param int $var
+     * @return $this
      */
     public function setDamageWindowEndMs($var)
     {
         GPBUtil::checkInt32($var);
         $this->damage_window_end_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 energy_delta = 15;</code>
+     * Generated from protobuf field <code>int32 energy_delta = 15;</code>
+     * @return int
      */
     public function getEnergyDelta()
     {
@@ -326,12 +420,16 @@ class MoveSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 energy_delta = 15;</code>
+     * Generated from protobuf field <code>int32 energy_delta = 15;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEnergyDelta($var)
     {
         GPBUtil::checkInt32($var);
         $this->energy_delta = $var;
+
+        return $this;
     }
 
 }

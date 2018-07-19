@@ -5,16 +5,16 @@
 namespace POGOProtos\Data\Player;
 
 /**
- * Protobuf enum <code>POGOProtos.Data.Player.PlayerAvatarType</code>
+ * Protobuf type <code>POGOProtos.Data.Player.PlayerAvatarType</code>
  */
 class PlayerAvatarType
 {
     /**
-     * <code>PLAYER_AVATAR_MALE = 0;</code>
+     * Generated from protobuf enum <code>PLAYER_AVATAR_MALE = 0;</code>
      */
     const PLAYER_AVATAR_MALE = 0;
     /**
-     * <code>PLAYER_AVATAR_FEMALE = 1;</code>
+     * Generated from protobuf enum <code>PLAYER_AVATAR_FEMALE = 1;</code>
      */
     const PLAYER_AVATAR_FEMALE = 1;
 }

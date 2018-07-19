@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Token.SuperAwesomeToken</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Token.SuperAwesomeToken</code>
  */
 class SuperAwesomeToken extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string token = 1;</code>
+     * Generated from protobuf field <code>string token = 1;</code>
      */
     private $token = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $token
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Token\SuperAwesomeToken::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string token = 1;</code>
+     * Generated from protobuf field <code>string token = 1;</code>
+     * @return string
      */
     public function getToken()
     {
@@ -32,12 +42,16 @@ class SuperAwesomeToken extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string token = 1;</code>
+     * Generated from protobuf field <code>string token = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->token = $var;
+
+        return $this;
     }
 
 }

@@ -9,74 +9,97 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Battle.BattleAction</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Battle.BattleAction</code>
  */
 class BattleAction extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Battle.BattleActionType type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleActionType type = 1;</code>
      */
     private $type = 0;
     /**
-     * <code>int64 action_start_ms = 2;</code>
+     * Generated from protobuf field <code>int64 action_start_ms = 2;</code>
      */
     private $action_start_ms = 0;
     /**
-     * <code>int32 duration_ms = 3;</code>
+     * Generated from protobuf field <code>int32 duration_ms = 3;</code>
      */
     private $duration_ms = 0;
     /**
-     * <code>int32 energy_delta = 5;</code>
+     * Generated from protobuf field <code>int32 energy_delta = 5;</code>
      */
     private $energy_delta = 0;
     /**
-     * <code>int32 attacker_index = 6;</code>
+     * Generated from protobuf field <code>int32 attacker_index = 6;</code>
      */
     private $attacker_index = 0;
     /**
-     * <code>int32 target_index = 7;</code>
+     * Generated from protobuf field <code>int32 target_index = 7;</code>
      */
     private $target_index = 0;
     /**
-     * <code>uint64 active_pokemon_id = 8;</code>
+     * Generated from protobuf field <code>uint64 active_pokemon_id = 8;</code>
      */
     private $active_pokemon_id = 0;
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant player_joined = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant player_joined = 9;</code>
      */
     private $player_joined = null;
     /**
-     * <code>.POGOProtos.Data.Battle.BattleResults battle_results = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleResults battle_results = 10;</code>
      */
     private $battle_results = null;
     /**
-     * <code>int64 damage_windows_start_timestamp_ms = 11;</code>
+     * Generated from protobuf field <code>int64 damage_windows_start_timestamp_ms = 11;</code>
      */
     private $damage_windows_start_timestamp_ms = 0;
     /**
-     * <code>int64 damage_windows_end_timestamp_ms = 12;</code>
+     * Generated from protobuf field <code>int64 damage_windows_end_timestamp_ms = 12;</code>
      */
     private $damage_windows_end_timestamp_ms = 0;
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant player_left = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant player_left = 13;</code>
      */
     private $player_left = null;
     /**
-     * <code>uint64 target_pokemon_id = 14;</code>
+     * Generated from protobuf field <code>uint64 target_pokemon_id = 14;</code>
      */
     private $target_pokemon_id = 0;
     /**
-     * <code>.POGOProtos.Data.Friends.LeveledUpFriends leveled_up_friends = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.LeveledUpFriends leveled_up_friends = 15;</code>
      */
     private $leveled_up_friends = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $type
+     *     @type int|string $action_start_ms
+     *     @type int $duration_ms
+     *     @type int $energy_delta
+     *     @type int $attacker_index
+     *     @type int $target_index
+     *     @type int|string $active_pokemon_id
+     *     @type \POGOProtos\Data\Battle\BattleParticipant $player_joined
+     *     @type \POGOProtos\Data\Battle\BattleResults $battle_results
+     *     @type int|string $damage_windows_start_timestamp_ms
+     *     @type int|string $damage_windows_end_timestamp_ms
+     *     @type \POGOProtos\Data\Battle\BattleParticipant $player_left
+     *     @type int|string $target_pokemon_id
+     *     @type \POGOProtos\Data\Friends\LeveledUpFriends $leveled_up_friends
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Battle\BattleAction::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleActionType type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleActionType type = 1;</code>
+     * @return int
      */
     public function getType()
     {
@@ -84,16 +107,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleActionType type = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleActionType type = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Battle\BattleActionType::class);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 action_start_ms = 2;</code>
+     * Generated from protobuf field <code>int64 action_start_ms = 2;</code>
+     * @return int|string
      */
     public function getActionStartMs()
     {
@@ -101,16 +129,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 action_start_ms = 2;</code>
+     * Generated from protobuf field <code>int64 action_start_ms = 2;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setActionStartMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->action_start_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 duration_ms = 3;</code>
+     * Generated from protobuf field <code>int32 duration_ms = 3;</code>
+     * @return int
      */
     public function getDurationMs()
     {
@@ -118,16 +151,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 duration_ms = 3;</code>
+     * Generated from protobuf field <code>int32 duration_ms = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setDurationMs($var)
     {
         GPBUtil::checkInt32($var);
         $this->duration_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 energy_delta = 5;</code>
+     * Generated from protobuf field <code>int32 energy_delta = 5;</code>
+     * @return int
      */
     public function getEnergyDelta()
     {
@@ -135,16 +173,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 energy_delta = 5;</code>
+     * Generated from protobuf field <code>int32 energy_delta = 5;</code>
+     * @param int $var
+     * @return $this
      */
     public function setEnergyDelta($var)
     {
         GPBUtil::checkInt32($var);
         $this->energy_delta = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 attacker_index = 6;</code>
+     * Generated from protobuf field <code>int32 attacker_index = 6;</code>
+     * @return int
      */
     public function getAttackerIndex()
     {
@@ -152,16 +195,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 attacker_index = 6;</code>
+     * Generated from protobuf field <code>int32 attacker_index = 6;</code>
+     * @param int $var
+     * @return $this
      */
     public function setAttackerIndex($var)
     {
         GPBUtil::checkInt32($var);
         $this->attacker_index = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 target_index = 7;</code>
+     * Generated from protobuf field <code>int32 target_index = 7;</code>
+     * @return int
      */
     public function getTargetIndex()
     {
@@ -169,16 +217,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 target_index = 7;</code>
+     * Generated from protobuf field <code>int32 target_index = 7;</code>
+     * @param int $var
+     * @return $this
      */
     public function setTargetIndex($var)
     {
         GPBUtil::checkInt32($var);
         $this->target_index = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 active_pokemon_id = 8;</code>
+     * Generated from protobuf field <code>uint64 active_pokemon_id = 8;</code>
+     * @return int|string
      */
     public function getActivePokemonId()
     {
@@ -186,16 +239,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 active_pokemon_id = 8;</code>
+     * Generated from protobuf field <code>uint64 active_pokemon_id = 8;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setActivePokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->active_pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant player_joined = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant player_joined = 9;</code>
+     * @return \POGOProtos\Data\Battle\BattleParticipant
      */
     public function getPlayerJoined()
     {
@@ -203,16 +261,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant player_joined = 9;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant player_joined = 9;</code>
+     * @param \POGOProtos\Data\Battle\BattleParticipant $var
+     * @return $this
      */
-    public function setPlayerJoined(&$var)
+    public function setPlayerJoined($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleParticipant::class);
         $this->player_joined = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleResults battle_results = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleResults battle_results = 10;</code>
+     * @return \POGOProtos\Data\Battle\BattleResults
      */
     public function getBattleResults()
     {
@@ -220,16 +283,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleResults battle_results = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleResults battle_results = 10;</code>
+     * @param \POGOProtos\Data\Battle\BattleResults $var
+     * @return $this
      */
-    public function setBattleResults(&$var)
+    public function setBattleResults($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleResults::class);
         $this->battle_results = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 damage_windows_start_timestamp_ms = 11;</code>
+     * Generated from protobuf field <code>int64 damage_windows_start_timestamp_ms = 11;</code>
+     * @return int|string
      */
     public function getDamageWindowsStartTimestampMs()
     {
@@ -237,16 +305,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 damage_windows_start_timestamp_ms = 11;</code>
+     * Generated from protobuf field <code>int64 damage_windows_start_timestamp_ms = 11;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setDamageWindowsStartTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->damage_windows_start_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int64 damage_windows_end_timestamp_ms = 12;</code>
+     * Generated from protobuf field <code>int64 damage_windows_end_timestamp_ms = 12;</code>
+     * @return int|string
      */
     public function getDamageWindowsEndTimestampMs()
     {
@@ -254,16 +327,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 damage_windows_end_timestamp_ms = 12;</code>
+     * Generated from protobuf field <code>int64 damage_windows_end_timestamp_ms = 12;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setDamageWindowsEndTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->damage_windows_end_timestamp_ms = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant player_left = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant player_left = 13;</code>
+     * @return \POGOProtos\Data\Battle\BattleParticipant
      */
     public function getPlayerLeft()
     {
@@ -271,16 +349,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Battle.BattleParticipant player_left = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Battle.BattleParticipant player_left = 13;</code>
+     * @param \POGOProtos\Data\Battle\BattleParticipant $var
+     * @return $this
      */
-    public function setPlayerLeft(&$var)
+    public function setPlayerLeft($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Battle\BattleParticipant::class);
         $this->player_left = $var;
+
+        return $this;
     }
 
     /**
-     * <code>uint64 target_pokemon_id = 14;</code>
+     * Generated from protobuf field <code>uint64 target_pokemon_id = 14;</code>
+     * @return int|string
      */
     public function getTargetPokemonId()
     {
@@ -288,16 +371,21 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>uint64 target_pokemon_id = 14;</code>
+     * Generated from protobuf field <code>uint64 target_pokemon_id = 14;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setTargetPokemonId($var)
     {
         GPBUtil::checkUint64($var);
         $this->target_pokemon_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.Friends.LeveledUpFriends leveled_up_friends = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.LeveledUpFriends leveled_up_friends = 15;</code>
+     * @return \POGOProtos\Data\Friends\LeveledUpFriends
      */
     public function getLeveledUpFriends()
     {
@@ -305,12 +393,16 @@ class BattleAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Friends.LeveledUpFriends leveled_up_friends = 15;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.LeveledUpFriends leveled_up_friends = 15;</code>
+     * @param \POGOProtos\Data\Friends\LeveledUpFriends $var
+     * @return $this
      */
-    public function setLeveledUpFriends(&$var)
+    public function setLeveledUpFriends($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Friends\LeveledUpFriends::class);
         $this->leveled_up_friends = $var;
+
+        return $this;
     }
 
 }

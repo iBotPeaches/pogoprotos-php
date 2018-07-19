@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Settings.Master.MoveSequenceSettings</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.MoveSequenceSettings</code>
  */
 class MoveSequenceSettings extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>repeated string sequence = 1;</code>
+     * Generated from protobuf field <code>repeated string sequence = 1;</code>
      */
     private $sequence;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $sequence
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Settings\Master\MoveSequenceSettings::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>repeated string sequence = 1;</code>
+     * Generated from protobuf field <code>repeated string sequence = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getSequence()
     {
@@ -32,12 +42,16 @@ class MoveSequenceSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>repeated string sequence = 1;</code>
+     * Generated from protobuf field <code>repeated string sequence = 1;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSequence(&$var)
+    public function setSequence($var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->sequence = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->sequence = $arr;
+
+        return $this;
     }
 
 }

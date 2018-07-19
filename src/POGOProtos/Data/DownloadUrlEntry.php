@@ -9,34 +9,47 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.DownloadUrlEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.DownloadUrlEntry</code>
  */
 class DownloadUrlEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>string asset_id = 1;</code>
+     * Generated from protobuf field <code>string asset_id = 1;</code>
      */
     private $asset_id = '';
     /**
-     * <code>string url = 2;</code>
+     * Generated from protobuf field <code>string url = 2;</code>
      */
     private $url = '';
     /**
-     * <code>int32 size = 3;</code>
+     * Generated from protobuf field <code>int32 size = 3;</code>
      */
     private $size = 0;
     /**
-     * <code>fixed32 checksum = 4;</code>
+     * Generated from protobuf field <code>fixed32 checksum = 4;</code>
      */
     private $checksum = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $asset_id
+     *     @type string $url
+     *     @type int $size
+     *     @type int $checksum
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\DownloadUrlEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>string asset_id = 1;</code>
+     * Generated from protobuf field <code>string asset_id = 1;</code>
+     * @return string
      */
     public function getAssetId()
     {
@@ -44,16 +57,21 @@ class DownloadUrlEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string asset_id = 1;</code>
+     * Generated from protobuf field <code>string asset_id = 1;</code>
+     * @param string $var
+     * @return $this
      */
     public function setAssetId($var)
     {
         GPBUtil::checkString($var, True);
         $this->asset_id = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string url = 2;</code>
+     * Generated from protobuf field <code>string url = 2;</code>
+     * @return string
      */
     public function getUrl()
     {
@@ -61,16 +79,21 @@ class DownloadUrlEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string url = 2;</code>
+     * Generated from protobuf field <code>string url = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->url = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 size = 3;</code>
+     * Generated from protobuf field <code>int32 size = 3;</code>
+     * @return int
      */
     public function getSize()
     {
@@ -78,16 +101,21 @@ class DownloadUrlEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 size = 3;</code>
+     * Generated from protobuf field <code>int32 size = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setSize($var)
     {
         GPBUtil::checkInt32($var);
         $this->size = $var;
+
+        return $this;
     }
 
     /**
-     * <code>fixed32 checksum = 4;</code>
+     * Generated from protobuf field <code>fixed32 checksum = 4;</code>
+     * @return int
      */
     public function getChecksum()
     {
@@ -95,12 +123,16 @@ class DownloadUrlEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>fixed32 checksum = 4;</code>
+     * Generated from protobuf field <code>fixed32 checksum = 4;</code>
+     * @param int $var
+     * @return $this
      */
     public function setChecksum($var)
     {
         GPBUtil::checkUint32($var);
         $this->checksum = $var;
+
+        return $this;
     }
 
 }

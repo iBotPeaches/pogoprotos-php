@@ -4,26 +4,13 @@
 
 namespace POGOProtos\Networking\Responses;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.UseItemGymResponse.Result</code>
- */
-class UseItemGymResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\UseItemGymResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_CANNOT_USE = 2;</code>
-     */
-    const ERROR_CANNOT_USE = 2;
-    /**
-     * <code>ERROR_NOT_IN_RANGE = 3;</code>
-     */
-    const ERROR_NOT_IN_RANGE = 3;
+    class UseItemGymResponse_Result {}
 }
+class_exists(UseItemGymResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\UseItemGymResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\UseItemGymResponse\Result instead', E_USER_DEPRECATED);
 

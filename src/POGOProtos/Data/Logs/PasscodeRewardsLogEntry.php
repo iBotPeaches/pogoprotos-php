@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.Logs.PasscodeRewardsLogEntry</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Logs.PasscodeRewardsLogEntry</code>
  */
 class PasscodeRewardsLogEntry extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>.POGOProtos.Data.Logs.PasscodeRewardsLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.PasscodeRewardsLogEntry.Result result = 1;</code>
      */
     private $result = 0;
     /**
-     * <code>string passcode = 2;</code>
+     * Generated from protobuf field <code>string passcode = 2;</code>
      */
     private $passcode = '';
     /**
-     * <code>.POGOProtos.Data.RedeemPasscodeReward rewards = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.RedeemPasscodeReward rewards = 3;</code>
      */
     private $rewards = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $result
+     *     @type string $passcode
+     *     @type \POGOProtos\Data\RedeemPasscodeReward $rewards
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Logs\PasscodeRewardsLogEntry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.PasscodeRewardsLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.PasscodeRewardsLogEntry.Result result = 1;</code>
+     * @return int
      */
     public function getResult()
     {
@@ -40,16 +52,21 @@ class PasscodeRewardsLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.Logs.PasscodeRewardsLogEntry.Result result = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.PasscodeRewardsLogEntry.Result result = 1;</code>
+     * @param int $var
+     * @return $this
      */
     public function setResult($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Data\Logs\PasscodeRewardsLogEntry_Result::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
-     * <code>string passcode = 2;</code>
+     * Generated from protobuf field <code>string passcode = 2;</code>
+     * @return string
      */
     public function getPasscode()
     {
@@ -57,16 +74,21 @@ class PasscodeRewardsLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>string passcode = 2;</code>
+     * Generated from protobuf field <code>string passcode = 2;</code>
+     * @param string $var
+     * @return $this
      */
     public function setPasscode($var)
     {
         GPBUtil::checkString($var, True);
         $this->passcode = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Data.RedeemPasscodeReward rewards = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.RedeemPasscodeReward rewards = 3;</code>
+     * @return \POGOProtos\Data\RedeemPasscodeReward
      */
     public function getRewards()
     {
@@ -74,12 +96,16 @@ class PasscodeRewardsLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Data.RedeemPasscodeReward rewards = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.RedeemPasscodeReward rewards = 3;</code>
+     * @param \POGOProtos\Data\RedeemPasscodeReward $var
+     * @return $this
      */
-    public function setRewards(&$var)
+    public function setRewards($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\RedeemPasscodeReward::class);
         $this->rewards = $var;
+
+        return $this;
     }
 
 }

@@ -4,46 +4,13 @@
 
 namespace POGOProtos\Networking\Responses\Social;
 
-/**
- * Protobuf enum <code>POGOProtos.Networking.Responses.Social.OpenGiftResponse.Result</code>
- */
-class OpenGiftResponse_Result
-{
+if (false) {
     /**
-     * <code>UNSET = 0;</code>
+     * This class is deprecated. Use POGOProtos\Networking\Responses\Social\OpenGiftResponse\Result instead.
+     * @deprecated
      */
-    const UNSET = 0;
-    /**
-     * <code>SUCCESS = 1;</code>
-     */
-    const SUCCESS = 1;
-    /**
-     * <code>ERROR_UNKNOWN = 2;</code>
-     */
-    const ERROR_UNKNOWN = 2;
-    /**
-     * <code>ERROR_PLAYER_BAG_FULL = 3;</code>
-     */
-    const ERROR_PLAYER_BAG_FULL = 3;
-    /**
-     * <code>ERROR_PLAYER_LIMIT_REACHED = 4;</code>
-     */
-    const ERROR_PLAYER_LIMIT_REACHED = 4;
-    /**
-     * <code>ERROR_GIFT_DOES_NOT_EXIST = 5;</code>
-     */
-    const ERROR_GIFT_DOES_NOT_EXIST = 5;
-    /**
-     * <code>ERROR_FRIEND_NOT_FOUND = 6;</code>
-     */
-    const ERROR_FRIEND_NOT_FOUND = 6;
-    /**
-     * <code>ERROR_INVALID_PLAYER_ID = 7;</code>
-     */
-    const ERROR_INVALID_PLAYER_ID = 7;
-    /**
-     * <code>ERROR_FRIEND_UPDATE = 8;</code>
-     */
-    const ERROR_FRIEND_UPDATE = 8;
+    class OpenGiftResponse_Result {}
 }
+class_exists(OpenGiftResponse\Result::class);
+@trigger_error('POGOProtos\Networking\Responses\Social\OpenGiftResponse_Result is deprecated and will be removed in the next major release. Use POGOProtos\Networking\Responses\Social\OpenGiftResponse\Result instead', E_USER_DEPRECATED);
 

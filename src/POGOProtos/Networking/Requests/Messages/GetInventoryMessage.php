@@ -9,22 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Networking.Requests.Messages.GetInventoryMessage</code>
+ * Generated from protobuf message <code>POGOProtos.Networking.Requests.Messages.GetInventoryMessage</code>
  */
 class GetInventoryMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>int64 last_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 last_timestamp_ms = 1;</code>
      */
     private $last_timestamp_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $last_timestamp_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\GetInventoryMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>int64 last_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 last_timestamp_ms = 1;</code>
+     * @return int|string
      */
     public function getLastTimestampMs()
     {
@@ -32,12 +42,16 @@ class GetInventoryMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int64 last_timestamp_ms = 1;</code>
+     * Generated from protobuf field <code>int64 last_timestamp_ms = 1;</code>
+     * @param int|string $var
+     * @return $this
      */
     public function setLastTimestampMs($var)
     {
         GPBUtil::checkInt64($var);
         $this->last_timestamp_ms = $var;
+
+        return $this;
     }
 
 }

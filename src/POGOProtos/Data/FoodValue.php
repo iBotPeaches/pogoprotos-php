@@ -9,30 +9,42 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>POGOProtos.Data.FoodValue</code>
+ * Generated from protobuf message <code>POGOProtos.Data.FoodValue</code>
  */
 class FoodValue extends \Google\Protobuf\Internal\Message
 {
     /**
-     * <code>float motivation_increase = 1;</code>
+     * Generated from protobuf field <code>float motivation_increase = 1;</code>
      */
     private $motivation_increase = 0.0;
     /**
-     * <code>int32 cp_increase = 2;</code>
+     * Generated from protobuf field <code>int32 cp_increase = 2;</code>
      */
     private $cp_increase = 0;
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId food_item = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId food_item = 3;</code>
      */
     private $food_item = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $motivation_increase
+     *     @type int $cp_increase
+     *     @type int $food_item
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\FoodValue::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
-     * <code>float motivation_increase = 1;</code>
+     * Generated from protobuf field <code>float motivation_increase = 1;</code>
+     * @return float
      */
     public function getMotivationIncrease()
     {
@@ -40,16 +52,21 @@ class FoodValue extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>float motivation_increase = 1;</code>
+     * Generated from protobuf field <code>float motivation_increase = 1;</code>
+     * @param float $var
+     * @return $this
      */
     public function setMotivationIncrease($var)
     {
         GPBUtil::checkFloat($var);
         $this->motivation_increase = $var;
+
+        return $this;
     }
 
     /**
-     * <code>int32 cp_increase = 2;</code>
+     * Generated from protobuf field <code>int32 cp_increase = 2;</code>
+     * @return int
      */
     public function getCpIncrease()
     {
@@ -57,16 +74,21 @@ class FoodValue extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>int32 cp_increase = 2;</code>
+     * Generated from protobuf field <code>int32 cp_increase = 2;</code>
+     * @param int $var
+     * @return $this
      */
     public function setCpIncrease($var)
     {
         GPBUtil::checkInt32($var);
         $this->cp_increase = $var;
+
+        return $this;
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId food_item = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId food_item = 3;</code>
+     * @return int
      */
     public function getFoodItem()
     {
@@ -74,12 +96,16 @@ class FoodValue extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * <code>.POGOProtos.Inventory.Item.ItemId food_item = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId food_item = 3;</code>
+     * @param int $var
+     * @return $this
      */
     public function setFoodItem($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->food_item = $var;
+
+        return $this;
     }
 
 }

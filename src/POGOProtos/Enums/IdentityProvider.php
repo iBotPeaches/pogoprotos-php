@@ -5,40 +5,40 @@
 namespace POGOProtos\Enums;
 
 /**
- * Protobuf enum <code>POGOProtos.Enums.IdentityProvider</code>
+ * Protobuf type <code>POGOProtos.Enums.IdentityProvider</code>
  */
 class IdentityProvider
 {
     /**
-     * <code>UNSET_IDENTITY_PROVIDER = 0;</code>
+     * Generated from protobuf enum <code>UNSET_IDENTITY_PROVIDER = 0;</code>
      */
     const UNSET_IDENTITY_PROVIDER = 0;
     /**
-     * <code>GOOGLE = 1;</code>
+     * Generated from protobuf enum <code>GOOGLE = 1;</code>
      */
     const GOOGLE = 1;
     /**
-     * <code>PTC = 2;</code>
+     * Generated from protobuf enum <code>PTC = 2;</code>
      */
     const PTC = 2;
     /**
-     * <code>FACEBOOK = 3;</code>
+     * Generated from protobuf enum <code>FACEBOOK = 3;</code>
      */
     const FACEBOOK = 3;
     /**
-     * <code>BACKGROUND = 4;</code>
+     * Generated from protobuf enum <code>BACKGROUND = 4;</code>
      */
     const BACKGROUND = 4;
     /**
-     * <code>INTERNAL = 5;</code>
+     * Generated from protobuf enum <code>INTERNAL = 5;</code>
      */
     const INTERNAL = 5;
     /**
-     * <code>SFIDA = 6;</code>
+     * Generated from protobuf enum <code>SFIDA = 6;</code>
      */
     const SFIDA = 6;
     /**
-     * <code>SUPER_AWESOME = 7;</code>
+     * Generated from protobuf enum <code>SUPER_AWESOME = 7;</code>
      */
     const SUPER_AWESOME = 7;
 }
