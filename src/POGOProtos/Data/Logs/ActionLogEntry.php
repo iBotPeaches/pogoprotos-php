@@ -42,6 +42,9 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Logs\OpenGiftLogEntry $open_gift
      *     @type \POGOProtos\Data\Logs\SendGiftLogEntry $send_gift
      *     @type \POGOProtos\Data\Logs\TradingLogEntry $trading
+     *     @type \POGOProtos\Data\Logs\ShareExRaidPassLogEntry $share_ex_raid_pass
+     *     @type \POGOProtos\Data\Logs\DeclineExRaidPassLogEntry $decline_ex_raid_pass
+     *     @type \POGOProtos\Data\Logs\FitnessRewardsLogEntry $fitness_rewards
      * }
      */
     public function __construct($data = NULL) {
@@ -331,6 +334,72 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\TradingLogEntry::class);
         $this->writeOneof(14, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+     * @return \POGOProtos\Data\Logs\ShareExRaidPassLogEntry
+     */
+    public function getShareExRaidPass()
+    {
+        return $this->readOneof(15);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+     * @param \POGOProtos\Data\Logs\ShareExRaidPassLogEntry $var
+     * @return $this
+     */
+    public function setShareExRaidPass($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\ShareExRaidPassLogEntry::class);
+        $this->writeOneof(15, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+     * @return \POGOProtos\Data\Logs\DeclineExRaidPassLogEntry
+     */
+    public function getDeclineExRaidPass()
+    {
+        return $this->readOneof(16);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+     * @param \POGOProtos\Data\Logs\DeclineExRaidPassLogEntry $var
+     * @return $this
+     */
+    public function setDeclineExRaidPass($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\DeclineExRaidPassLogEntry::class);
+        $this->writeOneof(16, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+     * @return \POGOProtos\Data\Logs\FitnessRewardsLogEntry
+     */
+    public function getFitnessRewards()
+    {
+        return $this->readOneof(17);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+     * @param \POGOProtos\Data\Logs\FitnessRewardsLogEntry $var
+     * @return $this
+     */
+    public function setFitnessRewards($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\FitnessRewardsLogEntry::class);
+        $this->writeOneof(17, $var);
 
         return $this;
     }

@@ -153,5 +153,9 @@ class VariableName
      * Generated from protobuf enum <code>FRIENDSHIP_LEVEL_DISPLAY = 1026;</code>
      */
     const FRIENDSHIP_LEVEL_DISPLAY = 1026;
+    /**
+     * Generated from protobuf enum <code>BGMODE_BUDDY_POKEMON_NICKNAME = 1027;</code>
+     */
+    const BGMODE_BUDDY_POKEMON_NICKNAME = 1027;
 }
 

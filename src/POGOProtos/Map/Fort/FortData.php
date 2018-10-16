@@ -145,6 +145,10 @@ class FortData extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool challenge_quest_completed = 30;</code>
      */
     private $challenge_quest_completed = false;
+    /**
+     * Generated from protobuf field <code>bool is_ex_raid_eligible = 31;</code>
+     */
+    private $is_ex_raid_eligible = false;
 
     /**
      * Constructor.
@@ -189,6 +193,7 @@ class FortData extends \Google\Protobuf\Internal\Message
      *     @type string $banner_url
      *     @type string $partner_id
      *     @type bool $challenge_quest_completed
+     *     @type bool $is_ex_raid_eligible
      * }
      */
     public function __construct($data = NULL) {
@@ -862,6 +867,28 @@ class FortData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->challenge_quest_completed = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_ex_raid_eligible = 31;</code>
+     * @return bool
+     */
+    public function getIsExRaidEligible()
+    {
+        return $this->is_ex_raid_eligible;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_ex_raid_eligible = 31;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsExRaidEligible($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_ex_raid_eligible = $var;
 
         return $this;
     }

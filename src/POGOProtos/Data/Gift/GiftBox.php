@@ -45,6 +45,10 @@ class GiftBox extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 sent_timestamp = 8;</code>
      */
     private $sent_timestamp = 0;
+    /**
+     * Generated from protobuf field <code>int64 sent_bucket = 9;</code>
+     */
+    private $sent_bucket = 0;
 
     /**
      * Constructor.
@@ -60,6 +64,7 @@ class GiftBox extends \Google\Protobuf\Internal\Message
      *     @type float $fort_lng
      *     @type int|string $creation_timestamp
      *     @type int|string $sent_timestamp
+     *     @type int|string $sent_bucket
      * }
      */
     public function __construct($data = NULL) {
@@ -239,6 +244,28 @@ class GiftBox extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->sent_timestamp = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 sent_bucket = 9;</code>
+     * @return int|string
+     */
+    public function getSentBucket()
+    {
+        return $this->sent_bucket;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 sent_bucket = 9;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setSentBucket($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->sent_bucket = $var;
 
         return $this;
     }

@@ -62,7 +62,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      */
     private $evolution_pips = 0;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonRarity rarity = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonRarity rarity = 14;</code>
      */
     private $rarity = 0;
     /**
@@ -102,7 +102,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      */
     private $km_buddy_distance = 0.0;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BuddySize buddy_size = 24;</code>
      */
     private $buddy_size = 0;
     /**
@@ -118,7 +118,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      */
     private $model_scale_v2 = 0.0;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form form = 28;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.Form form = 28;</code>
      */
     private $form = 0;
     /**
@@ -146,9 +146,17 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      */
     private $buddy_portrait_offset;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form parent_form = 35;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.Form parent_form = 35;</code>
      */
     private $parent_form = 0;
+    /**
+     * Generated from protobuf field <code>bool is_transferable = 37;</code>
+     */
+    private $is_transferable = false;
+    /**
+     * Generated from protobuf field <code>bool is_deployable = 38;</code>
+     */
+    private $is_deployable = false;
 
     /**
      * Constructor.
@@ -190,6 +198,8 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      *     @type float $buddy_scale
      *     @type float[]|\Google\Protobuf\Internal\RepeatedField $buddy_portrait_offset
      *     @type int $parent_form
+     *     @type bool $is_transferable
+     *     @type bool $is_deployable
      * }
      */
     public function __construct($data = NULL) {
@@ -462,7 +472,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonRarity rarity = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonRarity rarity = 14;</code>
      * @return int
      */
     public function getRarity()
@@ -471,13 +481,13 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonRarity rarity = 14;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonRarity rarity = 14;</code>
      * @param int $var
      * @return $this
      */
     public function setRarity($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Settings\Master\PokemonSettings_PokemonRarity::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonRarity::class);
         $this->rarity = $var;
 
         return $this;
@@ -682,7 +692,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BuddySize buddy_size = 24;</code>
      * @return int
      */
     public function getBuddySize()
@@ -691,13 +701,13 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.BuddySize buddy_size = 24;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.BuddySize buddy_size = 24;</code>
      * @param int $var
      * @return $this
      */
     public function setBuddySize($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Settings\Master\PokemonSettings_BuddySize::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\BuddySize::class);
         $this->buddy_size = $var;
 
         return $this;
@@ -770,7 +780,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form form = 28;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.Form form = 28;</code>
      * @return int
      */
     public function getForm()
@@ -779,13 +789,13 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form form = 28;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.Form form = 28;</code>
      * @param int $var
      * @return $this
      */
     public function setForm($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Form::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
         $this->form = $var;
 
         return $this;
@@ -924,7 +934,7 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form parent_form = 35;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.Form parent_form = 35;</code>
      * @return int
      */
     public function getParentForm()
@@ -933,14 +943,58 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.Form parent_form = 35;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.Form parent_form = 35;</code>
      * @param int $var
      * @return $this
      */
     public function setParentForm($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_Form::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
         $this->parent_form = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_transferable = 37;</code>
+     * @return bool
+     */
+    public function getIsTransferable()
+    {
+        return $this->is_transferable;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_transferable = 37;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsTransferable($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_transferable = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_deployable = 38;</code>
+     * @return bool
+     */
+    public function getIsDeployable()
+    {
+        return $this->is_deployable;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_deployable = 38;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsDeployable($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_deployable = $var;
 
         return $this;
     }

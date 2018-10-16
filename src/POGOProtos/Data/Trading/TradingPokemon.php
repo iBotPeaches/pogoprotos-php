@@ -89,6 +89,10 @@ class TradingPokemon extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string nickname = 19;</code>
      */
     private $nickname = '';
+    /**
+     * Generated from protobuf field <code>bool favorite = 20;</code>
+     */
+    private $favorite = false;
 
     /**
      * Constructor.
@@ -115,6 +119,7 @@ class TradingPokemon extends \Google\Protobuf\Internal\Message
      *     @type int $individual_defense
      *     @type int $individual_stamina
      *     @type string $nickname
+     *     @type bool $favorite
      * }
      */
     public function __construct($data = NULL) {
@@ -536,6 +541,28 @@ class TradingPokemon extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->nickname = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool favorite = 20;</code>
+     * @return bool
+     */
+    public function getFavorite()
+    {
+        return $this->favorite;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool favorite = 20;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setFavorite($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->favorite = $var;
 
         return $this;
     }

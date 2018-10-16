@@ -10,838 +10,460 @@ namespace POGOProtos\Networking\Requests;
 class RequestType
 {
     /**
-     * No implementation required
-     *
      * Generated from protobuf enum <code>METHOD_UNSET = 0;</code>
      */
     const METHOD_UNSET = 0;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_PLAYER = 2;</code>
      */
     const GET_PLAYER = 2;
     /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>GET_HOLO_INVENTORY = 4;</code>
+     * Generated from protobuf enum <code>GET_HOLOHOLO_INVENTORY = 4;</code>
      */
-    const GET_HOLO_INVENTORY = 4;
+    const GET_HOLOHOLO_INVENTORY = 4;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>DOWNLOAD_SETTINGS = 5;</code>
      */
     const DOWNLOAD_SETTINGS = 5;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>DOWNLOAD_ITEM_TEMPLATES = 6;</code>
      */
     const DOWNLOAD_ITEM_TEMPLATES = 6;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>DOWNLOAD_REMOTE_CONFIG_VERSION = 7;</code>
      */
     const DOWNLOAD_REMOTE_CONFIG_VERSION = 7;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>REGISTER_BACKGROUND_DEVICE = 8;</code>
      */
     const REGISTER_BACKGROUND_DEVICE = 8;
     /**
-     * Implemented [R & M]
-     *
+     * Generated from protobuf enum <code>GET_PLAYER_DAY = 9;</code>
+     */
+    const GET_PLAYER_DAY = 9;
+    /**
+     * Generated from protobuf enum <code>ACKNOWLEDGE_PUNISHMENT = 10;</code>
+     */
+    const ACKNOWLEDGE_PUNISHMENT = 10;
+    /**
      * Generated from protobuf enum <code>FORT_SEARCH = 101;</code>
      */
     const FORT_SEARCH = 101;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>ENCOUNTER = 102;</code>
      */
     const ENCOUNTER = 102;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>CATCH_POKEMON = 103;</code>
      */
     const CATCH_POKEMON = 103;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>FORT_DETAILS = 104;</code>
      */
     const FORT_DETAILS = 104;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_MAP_OBJECTS = 106;</code>
      */
     const GET_MAP_OBJECTS = 106;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>FORT_DEPLOY_POKEMON = 110;</code>
      */
     const FORT_DEPLOY_POKEMON = 110;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>FORT_RECALL_POKEMON = 111;</code>
      */
     const FORT_RECALL_POKEMON = 111;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>RELEASE_POKEMON = 112;</code>
      */
     const RELEASE_POKEMON = 112;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>USE_ITEM_POTION = 113;</code>
      */
     const USE_ITEM_POTION = 113;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>USE_ITEM_CAPTURE = 114;</code>
      */
     const USE_ITEM_CAPTURE = 114;
     /**
-     * Can't find this one
-     *
      * Generated from protobuf enum <code>USE_ITEM_FLEE = 115;</code>
      */
     const USE_ITEM_FLEE = 115;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>USE_ITEM_REVIVE = 116;</code>
      */
     const USE_ITEM_REVIVE = 116;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_PLAYER_PROFILE = 121;</code>
      */
     const GET_PLAYER_PROFILE = 121;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>EVOLVE_POKEMON = 125;</code>
      */
     const EVOLVE_POKEMON = 125;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_HATCHED_EGGS = 126;</code>
      */
     const GET_HATCHED_EGGS = 126;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>ENCOUNTER_TUTORIAL_COMPLETE = 127;</code>
      */
     const ENCOUNTER_TUTORIAL_COMPLETE = 127;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>LEVEL_UP_REWARDS = 128;</code>
      */
     const LEVEL_UP_REWARDS = 128;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>CHECK_AWARDED_BADGES = 129;</code>
      */
     const CHECK_AWARDED_BADGES = 129;
     /**
-     * UnUsed - Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>USE_ITEM_GYM = 133;</code>
-     */
-    const USE_ITEM_GYM = 133;
-    /**
-     * UnUsed - Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>GET_GYM_DETAILS = 134;</code>
-     */
-    const GET_GYM_DETAILS = 134;
-    /**
-     * UnUsed - Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>START_GYM_BATTLE = 135;</code>
-     */
-    const START_GYM_BATTLE = 135;
-    /**
-     * UnUsed - Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>ATTACK_GYM = 136;</code>
-     */
-    const ATTACK_GYM = 136;
-    /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>RECYCLE_INVENTORY_ITEM = 137;</code>
      */
     const RECYCLE_INVENTORY_ITEM = 137;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>COLLECT_DAILY_BONUS = 138;</code>
      */
     const COLLECT_DAILY_BONUS = 138;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>USE_ITEM_XP_BOOST = 139;</code>
      */
     const USE_ITEM_XP_BOOST = 139;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>USE_ITEM_EGG_INCUBATOR = 140;</code>
      */
     const USE_ITEM_EGG_INCUBATOR = 140;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>USE_INCENSE = 141;</code>
      */
     const USE_INCENSE = 141;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_INCENSE_POKEMON = 142;</code>
      */
     const GET_INCENSE_POKEMON = 142;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>INCENSE_ENCOUNTER = 143;</code>
      */
     const INCENSE_ENCOUNTER = 143;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>ADD_FORT_MODIFIER = 144;</code>
      */
     const ADD_FORT_MODIFIER = 144;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>DISK_ENCOUNTER = 145;</code>
      */
     const DISK_ENCOUNTER = 145;
     /**
-     * UnUsed - Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>COLLECT_DAILY_DEFENDER_BONUS = 146;</code>
-     */
-    const COLLECT_DAILY_DEFENDER_BONUS = 146;
-    /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>UPGRADE_POKEMON = 147;</code>
      */
     const UPGRADE_POKEMON = 147;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>SET_FAVORITE_POKEMON = 148;</code>
      */
     const SET_FAVORITE_POKEMON = 148;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>NICKNAME_POKEMON = 149;</code>
      */
     const NICKNAME_POKEMON = 149;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>EQUIP_BADGE = 150;</code>
      */
     const EQUIP_BADGE = 150;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>SET_CONTACT_SETTINGS = 151;</code>
      */
     const SET_CONTACT_SETTINGS = 151;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>SET_BUDDY_POKEMON = 152;</code>
      */
     const SET_BUDDY_POKEMON = 152;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_BUDDY_WALKED = 153;</code>
      */
     const GET_BUDDY_WALKED = 153;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>USE_ITEM_ENCOUNTER = 154;</code>
      */
     const USE_ITEM_ENCOUNTER = 154;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GYM_DEPLOY = 155;</code>
      */
     const GYM_DEPLOY = 155;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GYM_GET_INFO = 156;</code>
      */
     const GYM_GET_INFO = 156;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GYM_START_SESSION = 157;</code>
      */
     const GYM_START_SESSION = 157;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GYM_BATTLE_ATTACK = 158;</code>
      */
     const GYM_BATTLE_ATTACK = 158;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>JOIN_LOBBY = 159;</code>
      */
     const JOIN_LOBBY = 159;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>LEAVE_LOBBY = 160;</code>
      */
     const LEAVE_LOBBY = 160;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>SET_LOBBY_VISIBILITY = 161;</code>
      */
     const SET_LOBBY_VISIBILITY = 161;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>SET_LOBBY_POKEMON = 162;</code>
      */
     const SET_LOBBY_POKEMON = 162;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_RAID_DETAILS = 163;</code>
      */
     const GET_RAID_DETAILS = 163;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GYM_FEED_POKEMON = 164;</code>
      */
     const GYM_FEED_POKEMON = 164;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>START_RAID_BATTLE = 165;</code>
      */
     const START_RAID_BATTLE = 165;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>ATTACK_RAID = 166;</code>
      */
     const ATTACK_RAID = 166;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>AWARD_POKECOIN = 167;</code>
      */
     const AWARD_POKECOIN = 167;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>USE_ITEM_STARDUST_BOOST = 168;</code>
      */
     const USE_ITEM_STARDUST_BOOST = 168;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_ASSET_DIGEST = 300;</code>
      */
     const GET_ASSET_DIGEST = 300;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_DOWNLOAD_URLS = 301;</code>
      */
     const GET_DOWNLOAD_URLS = 301;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>CLAIM_CODENAME = 403;</code>
      */
     const CLAIM_CODENAME = 403;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>SET_AVATAR = 404;</code>
      */
     const SET_AVATAR = 404;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>SET_PLAYER_TEAM = 405;</code>
      */
     const SET_PLAYER_TEAM = 405;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>MARK_TUTORIAL_COMPLETE = 406;</code>
      */
     const MARK_TUTORIAL_COMPLETE = 406;
     /**
-     * Can't find this one
-     *
      * Generated from protobuf enum <code>UPDATE_PERFORMANCE_METRICS = 407;</code>
      */
     const UPDATE_PERFORMANCE_METRICS = 407;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>CHECK_CHALLENGE = 600;</code>
      */
     const CHECK_CHALLENGE = 600;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>VERIFY_CHALLENGE = 601;</code>
      */
     const VERIFY_CHALLENGE = 601;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>ECHO = 666;</code>
      */
     const PBECHO = 666;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>SFIDA_REGISTRATION = 800;</code>
      */
     const SFIDA_REGISTRATION = 800;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>SFIDA_ACTION_LOG = 801;</code>
      */
     const SFIDA_ACTION_LOG = 801;
     /**
-     * Can't find this one
-     *
      * Generated from protobuf enum <code>SFIDA_CERTIFICATION = 802;</code>
      */
     const SFIDA_CERTIFICATION = 802;
     /**
-     * Can't find this one
-     *
      * Generated from protobuf enum <code>SFIDA_UPDATE = 803;</code>
      */
     const SFIDA_UPDATE = 803;
     /**
-     * Can't find this one
-     *
      * Generated from protobuf enum <code>SFIDA_ACTION = 804;</code>
      */
     const SFIDA_ACTION = 804;
     /**
-     * Can't find this one
-     *
      * Generated from protobuf enum <code>SFIDA_DOWSER = 805;</code>
      */
     const SFIDA_DOWSER = 805;
     /**
-     * Can't find this one
-     *
      * Generated from protobuf enum <code>SFIDA_CAPTURE = 806;</code>
      */
     const SFIDA_CAPTURE = 806;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>LIST_AVATAR_CUSTOMIZATIONS = 807;</code>
      */
     const LIST_AVATAR_CUSTOMIZATIONS = 807;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>SET_AVATAR_ITEM_AS_VIEWED = 808;</code>
      */
     const SET_AVATAR_ITEM_AS_VIEWED = 808;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_INBOX = 809;</code>
      */
     const GET_INBOX = 809;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>LIST_GYM_BADGES = 811;</code>
      */
     const LIST_GYM_BADGES = 811;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_GYM_BADGE_DETAILS = 812;</code>
      */
     const GET_GYM_BADGE_DETAILS = 812;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>USE_ITEM_MOVE_REROLL = 813;</code>
      */
     const USE_ITEM_MOVE_REROLL = 813;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>USE_ITEM_RARE_CANDY = 814;</code>
      */
     const USE_ITEM_RARE_CANDY = 814;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>AWARD_FREE_RAID_TICKET = 815;</code>
      */
     const AWARD_FREE_RAID_TICKET = 815;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>FETCH_ALL_NEWS = 816;</code>
      */
     const FETCH_ALL_NEWS = 816;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>MARK_READ_NEWS_ARTICLE = 817;</code>
      */
     const MARK_READ_NEWS_ARTICLE = 817;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_PLAYER_DISPLAY_INFO = 818;</code>
      */
     const GET_PLAYER_DISPLAY_INFO = 818;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_NEW_QUESTS = 900;</code>
      */
     const GET_NEW_QUESTS = 900;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_QUEST_DETAILS = 901;</code>
      */
     const GET_QUEST_DETAILS = 901;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>COMPLETE_QUEST = 902;</code>
      */
     const COMPLETE_QUEST = 902;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>REMOVE_QUEST = 903;</code>
      */
     const REMOVE_QUEST = 903;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>QUEST_ENCOUNTER = 904;</code>
      */
     const QUEST_ENCOUNTER = 904;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>COMPLETE_QUEST_STAMP_CARD = 905;</code>
      */
     const COMPLETE_QUEST_STAMP_CARD = 905;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>SEND_GIFT = 950;</code>
      */
     const SEND_GIFT = 950;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>OPEN_GIFT = 951;</code>
      */
     const OPEN_GIFT = 951;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GIFT_DETAILS = 952;</code>
      */
     const GIFT_DETAILS = 952;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>DELETE_GIFT = 953;</code>
      */
     const DELETE_GIFT = 953;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>SAVE_PLAYER_SNAPSHOT = 954;</code>
      */
     const SAVE_PLAYER_SNAPSHOT = 954;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_FRIENDSHIP_MILESTONE_REWARDS = 955;</code>
      */
     const GET_FRIENDSHIP_MILESTONE_REWARDS = 955;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>CHECK_SEND_GIFT = 956;</code>
      */
     const CHECK_SEND_GIFT = 956;
     /**
-     * Implemented [R & M]
-     *
+     * Generated from protobuf enum <code>SET_FRIEND_NICKNAME = 957;</code>
+     */
+    const SET_FRIEND_NICKNAME = 957;
+    /**
+     * Generated from protobuf enum <code>DELETE_GIFT_FROM_INVENTORY = 958;</code>
+     */
+    const DELETE_GIFT_FROM_INVENTORY = 958;
+    /**
+     * Generated from protobuf enum <code>SAVE_SOCIAL_PLAYER_SETTINGS = 959;</code>
+     */
+    const SAVE_SOCIAL_PLAYER_SETTINGS = 959;
+    /**
+     * Generated from protobuf enum <code>SHARE_EX_RAID_PASS = 960;</code>
+     */
+    const SHARE_EX_RAID_PASS = 960;
+    /**
+     * Generated from protobuf enum <code>CHECK_SHARE_EX_RAID_PASS = 961;</code>
+     */
+    const CHECK_SHARE_EX_RAID_PASS = 961;
+    /**
+     * Generated from protobuf enum <code>DECLINE_SHARED_EX_RAID_PASS = 962;</code>
+     */
+    const DECLINE_SHARED_EX_RAID_PASS = 962;
+    /**
      * Generated from protobuf enum <code>OPEN_TRADING = 970;</code>
      */
     const OPEN_TRADING = 970;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>UPDATE_TRADING = 971;</code>
      */
     const UPDATE_TRADING = 971;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>CONFIRM_TRADING = 972;</code>
      */
     const CONFIRM_TRADING = 972;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>CANCEL_TRADING = 973;</code>
      */
     const CANCEL_TRADING = 973;
     /**
-     * Implemented [R & M]
-     *
      * Generated from protobuf enum <code>GET_TRADING = 974;</code>
      */
     const GET_TRADING = 974;
     /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>ACCEPT_FRIEND_INVITE = 975;</code>
+     * Generated from protobuf enum <code>GET_FITNESS_REWARDS = 980;</code>
      */
-    const ACCEPT_FRIEND_INVITE = 975;
+    const GET_FITNESS_REWARDS = 980;
     /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>CANCEL_FRIEND_INVITE = 976;</code>
+     * Generated from protobuf enum <code>SEND_PROBE = 1020;</code>
      */
-    const CANCEL_FRIEND_INVITE = 976;
+    const SEND_PROBE = 1020;
     /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>DECLINE_FRIEND_INVITE = 977;</code>
+     * Generated from protobuf enum <code>PROBE_DATA = 1021;</code>
      */
-    const DECLINE_FRIEND_INVITE = 977;
+    const PROBE_DATA = 1021;
     /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>GET_FRIEND_CODE = 978;</code>
+     * Generated from protobuf enum <code>COMBAT_DATA = 1022;</code>
      */
-    const GET_FRIEND_CODE = 978;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>GET_FRIEND_DETAILS = 979;</code>
-     */
-    const GET_FRIEND_DETAILS = 979;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>GET_FRIEND_LIST = 980;</code>
-     */
-    const GET_FRIEND_LIST = 980;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>GET_INCOMING_FRIEND_INVITES = 981;</code>
-     */
-    const GET_INCOMING_FRIEND_INVITES = 981;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>GET_OUTGOING_FRIEND_INVITES = 982;</code>
-     */
-    const GET_OUTGOING_FRIEND_INVITES = 982;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>GET_UPLOAD_URL = 983;</code>
-     */
-    const GET_UPLOAD_URL = 983;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>INVITE_FACEBOOK_FRIEND = 984;</code>
-     */
-    const INVITE_FACEBOOK_FRIEND = 984;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>IS_MY_FRIEND = 985;</code>
-     */
-    const IS_MY_FRIEND = 985;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>REMOVE_FRIEND = 986;</code>
-     */
-    const REMOVE_FRIEND = 986;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>SEARCH_PLAYER = 987;</code>
-     */
-    const SEARCH_PLAYER = 987;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>SEND_FRIEND_INVITE = 988;</code>
-     */
-    const SEND_FRIEND_INVITE = 988;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>GET_FRIENDSHIP_REWARDS = 989;</code>
-     */
-    const GET_FRIENDSHIP_REWARDS = 989;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>GET_GITBOX_DETAILS = 990;</code>
-     */
-    const GET_GITBOX_DETAILS = 990;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>REGISTER_PUSH_NOTIFICATION = 5000;</code>
-     */
-    const REGISTER_PUSH_NOTIFICATION = 5000;
-    /**
-     * Can't find this one
-     *
-     * Generated from protobuf enum <code>UNREGISTER_PUSH_NOTIFICATION = 5001;</code>
-     */
-    const UNREGISTER_PUSH_NOTIFICATION = 5001;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>UPDATE_NOTIFICATION_STATUS = 5002;</code>
-     */
-    const UPDATE_NOTIFICATION_STATUS = 5002;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>OPT_OUT_PUSH_NOTIFICATION_CATEGORY = 5003;</code>
-     */
-    const OPT_OUT_PUSH_NOTIFICATION_CATEGORY = 5003;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>DOWNLOAD_GAME_MASTER_TEMPLATES = 5004;</code>
-     */
-    const DOWNLOAD_GAME_MASTER_TEMPLATES = 5004;
-    /**
-     * UnUsed - Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>GET_INVENTORY = 5005;</code>
-     */
-    const GET_INVENTORY = 5005;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>REDEEM_PASSCODE = 5006;</code>
-     */
-    const REDEEM_PASSCODE = 5006;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>PING = 5007;</code>
-     */
-    const PING = 5007;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>ADD_LOGIN_ACTION = 5008;</code>
-     */
-    const ADD_LOGIN_ACTION = 5008;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>REMOVE_LOGIN_ACTION = 5009;</code>
-     */
-    const REMOVE_LOGIN_ACTION = 5009;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>LIST_LOGIN_ACTION = 5010;</code>
-     */
-    const LIST_LOGIN_ACTION = 5010;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>SUBMIT_NEW_POI = 5011;</code>
-     */
-    const SUBMIT_NEW_POI = 5011;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>PROXY_SOCIAL_ACTION = 5012;</code>
-     */
-    const PROXY_SOCIAL_ACTION = 5012;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>CLIENT_TELEMETRY = 5013;</code>
-     */
-    const CLIENT_TELEMETRY = 5013;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>GET_AVAILABLE_SUBMISSIONS = 5014;</code>
-     */
-    const GET_AVAILABLE_SUBMISSIONS = 5014;
-    /**
-     * Implemented [R & M]
-     *
-     * Generated from protobuf enum <code>UPLOAD_POI_PHOTO_BY_URL = 5015;</code>
-     */
-    const UPLOAD_POI_PHOTO_BY_URL = 5015;
+    const COMBAT_DATA = 1022;
 }
 

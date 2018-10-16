@@ -57,6 +57,14 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.PokemonData raid_pokemon = 12;</code>
      */
     private $raid_pokemon = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.SharedExclusiveTicketTrainerInfo inviter = 13;</code>
+     */
+    private $inviter = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.SharedExclusiveTicketTrainerInfo invitee = 14;</code>
+     */
+    private $invitee = null;
 
     /**
      * Constructor.
@@ -75,6 +83,8 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
      *     @type int|string $spawn_time_ms
      *     @type bool $is_cancelled
      *     @type \POGOProtos\Data\PokemonData $raid_pokemon
+     *     @type \POGOProtos\Data\Raid\SharedExclusiveTicketTrainerInfo $inviter
+     *     @type \POGOProtos\Data\Raid\SharedExclusiveTicketTrainerInfo $invitee
      * }
      */
     public function __construct($data = NULL) {
@@ -320,6 +330,50 @@ class ExclusiveTicketInfo extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->raid_pokemon = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.SharedExclusiveTicketTrainerInfo inviter = 13;</code>
+     * @return \POGOProtos\Data\Raid\SharedExclusiveTicketTrainerInfo
+     */
+    public function getInviter()
+    {
+        return $this->inviter;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.SharedExclusiveTicketTrainerInfo inviter = 13;</code>
+     * @param \POGOProtos\Data\Raid\SharedExclusiveTicketTrainerInfo $var
+     * @return $this
+     */
+    public function setInviter($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Raid\SharedExclusiveTicketTrainerInfo::class);
+        $this->inviter = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.SharedExclusiveTicketTrainerInfo invitee = 14;</code>
+     * @return \POGOProtos\Data\Raid\SharedExclusiveTicketTrainerInfo
+     */
+    public function getInvitee()
+    {
+        return $this->invitee;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Raid.SharedExclusiveTicketTrainerInfo invitee = 14;</code>
+     * @param \POGOProtos\Data\Raid\SharedExclusiveTicketTrainerInfo $var
+     * @return $this
+     */
+    public function setInvitee($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Raid\SharedExclusiveTicketTrainerInfo::class);
+        $this->invitee = $var;
 
         return $this;
     }

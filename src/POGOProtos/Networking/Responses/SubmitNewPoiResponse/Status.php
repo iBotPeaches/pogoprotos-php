@@ -33,6 +33,14 @@ class Status
      * Generated from protobuf enum <code>INVALID_INPUT = 5;</code>
      */
     const INVALID_INPUT = 5;
+    /**
+     * Generated from protobuf enum <code>MINOR = 6;</code>
+     */
+    const MINOR = 6;
+    /**
+     * Generated from protobuf enum <code>NOT_AVAILABLE = 7;</code>
+     */
+    const NOT_AVAILABLE = 7;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

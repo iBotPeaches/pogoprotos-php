@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class WithRaidLevel extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.RaidLevel raid_level = 1;</code>
      */
     private $raid_level;
 
@@ -33,7 +33,7 @@ class WithRaidLevel extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.RaidLevel raid_level = 1;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getRaidLevel()
@@ -42,13 +42,13 @@ class WithRaidLevel extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 1;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.RaidLevel raid_level = 1;</code>
      * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setRaidLevel($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Data\Raid\RaidInfo\RaidLevel::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\RaidLevel::class);
         $this->raid_level = $arr;
 
         return $this;

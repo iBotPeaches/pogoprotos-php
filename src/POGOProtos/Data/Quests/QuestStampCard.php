@@ -29,6 +29,10 @@ class QuestStampCard extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string id = 4;</code>
      */
     private $id = '';
+    /**
+     * Generated from protobuf field <code>string icon_url = 5;</code>
+     */
+    private $icon_url = '';
 
     /**
      * Constructor.
@@ -40,6 +44,7 @@ class QuestStampCard extends \Google\Protobuf\Internal\Message
      *     @type int $target
      *     @type int $remaining_daily_stamps
      *     @type string $id
+     *     @type string $icon_url
      * }
      */
     public function __construct($data = NULL) {
@@ -131,6 +136,28 @@ class QuestStampCard extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string icon_url = 5;</code>
+     * @return string
+     */
+    public function getIconUrl()
+    {
+        return $this->icon_url;
+    }
+
+    /**
+     * Generated from protobuf field <code>string icon_url = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setIconUrl($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->icon_url = $var;
 
         return $this;
     }

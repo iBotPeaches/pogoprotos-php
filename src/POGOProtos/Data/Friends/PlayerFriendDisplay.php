@@ -37,6 +37,10 @@ class PlayerFriendDisplay extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 last_pokemon_caught_timestamp = 6;</code>
      */
     private $last_pokemon_caught_timestamp = 0;
+    /**
+     * Generated from protobuf field <code>int32 buddy_candy_awarded = 7;</code>
+     */
+    private $buddy_candy_awarded = 0;
 
     /**
      * Constructor.
@@ -50,6 +54,7 @@ class PlayerFriendDisplay extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\PokemonDisplay $last_pokemon_caught
      *     @type int $last_pokemon_caught_display_id
      *     @type int|string $last_pokemon_caught_timestamp
+     *     @type int $buddy_candy_awarded
      * }
      */
     public function __construct($data = NULL) {
@@ -185,6 +190,28 @@ class PlayerFriendDisplay extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->last_pokemon_caught_timestamp = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 buddy_candy_awarded = 7;</code>
+     * @return int
+     */
+    public function getBuddyCandyAwarded()
+    {
+        return $this->buddy_candy_awarded;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 buddy_candy_awarded = 7;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setBuddyCandyAwarded($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->buddy_candy_awarded = $var;
 
         return $this;
     }

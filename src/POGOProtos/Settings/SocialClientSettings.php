@@ -25,6 +25,18 @@ class SocialClientSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 player_level_gate = 3;</code>
      */
     private $player_level_gate = 0;
+    /**
+     * Generated from protobuf field <code>int32 max_friend_nickname_length = 4;</code>
+     */
+    private $max_friend_nickname_length = 0;
+    /**
+     * Generated from protobuf field <code>bool enable_add_friend_via_qr_code = 5;</code>
+     */
+    private $enable_add_friend_via_qr_code = false;
+    /**
+     * Generated from protobuf field <code>bool enable_share_ex_pass = 6;</code>
+     */
+    private $enable_share_ex_pass = false;
 
     /**
      * Constructor.
@@ -35,6 +47,9 @@ class SocialClientSettings extends \Google\Protobuf\Internal\Message
      *     @type bool $enable_social
      *     @type int $max_friend_details
      *     @type int $player_level_gate
+     *     @type int $max_friend_nickname_length
+     *     @type bool $enable_add_friend_via_qr_code
+     *     @type bool $enable_share_ex_pass
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +119,72 @@ class SocialClientSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->player_level_gate = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 max_friend_nickname_length = 4;</code>
+     * @return int
+     */
+    public function getMaxFriendNicknameLength()
+    {
+        return $this->max_friend_nickname_length;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 max_friend_nickname_length = 4;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setMaxFriendNicknameLength($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->max_friend_nickname_length = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_add_friend_via_qr_code = 5;</code>
+     * @return bool
+     */
+    public function getEnableAddFriendViaQrCode()
+    {
+        return $this->enable_add_friend_via_qr_code;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_add_friend_via_qr_code = 5;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setEnableAddFriendViaQrCode($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_add_friend_via_qr_code = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_share_ex_pass = 6;</code>
+     * @return bool
+     */
+    public function getEnableShareExPass()
+    {
+        return $this->enable_share_ex_pass;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_share_ex_pass = 6;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setEnableShareExPass($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_share_ex_pass = $var;
 
         return $this;
     }

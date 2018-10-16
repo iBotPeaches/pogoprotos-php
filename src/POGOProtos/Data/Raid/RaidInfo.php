@@ -34,7 +34,7 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
      */
     private $raid_pokemon = null;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.RaidLevel raid_level = 6;</code>
      */
     private $raid_level = 0;
     /**
@@ -183,7 +183,7 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.RaidLevel raid_level = 6;</code>
      * @return int
      */
     public function getRaidLevel()
@@ -192,13 +192,13 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Raid.RaidInfo.RaidLevel raid_level = 6;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.RaidLevel raid_level = 6;</code>
      * @param int $var
      * @return $this
      */
     public function setRaidLevel($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Data\Raid\RaidInfo_RaidLevel::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\RaidLevel::class);
         $this->raid_level = $var;
 
         return $this;

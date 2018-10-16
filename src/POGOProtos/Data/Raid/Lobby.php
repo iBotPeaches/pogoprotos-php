@@ -58,7 +58,7 @@ class Lobby extends \Google\Protobuf\Internal\Message
      */
     private $battle_plfe_instance = 0;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.WeatherCondition weather_condition = 13;</code>
      */
     private $weather_condition = 0;
 
@@ -330,7 +330,7 @@ class Lobby extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.WeatherCondition weather_condition = 13;</code>
      * @return int
      */
     public function getWeatherCondition()
@@ -339,13 +339,13 @@ class Lobby extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.WeatherCondition weather_condition = 13;</code>
      * @param int $var
      * @return $this
      */
     public function setWeatherCondition($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_WeatherCondition::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\WeatherCondition::class);
         $this->weather_condition = $var;
 
         return $this;

@@ -18,9 +18,13 @@ class GetUploadUrlResponse extends \Google\Protobuf\Internal\Message
      */
     private $status = 0;
     /**
-     * Generated from protobuf field <code>string url = 2;</code>
+     * Generated from protobuf field <code>string signed_url = 2;</code>
      */
-    private $url = '';
+    private $signed_url = '';
+    /**
+     * Generated from protobuf field <code>string supporting_image_signed_url = 3;</code>
+     */
+    private $supporting_image_signed_url = '';
 
     /**
      * Constructor.
@@ -29,7 +33,8 @@ class GetUploadUrlResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $status
-     *     @type string $url
+     *     @type string $signed_url
+     *     @type string $supporting_image_signed_url
      * }
      */
     public function __construct($data = NULL) {
@@ -60,23 +65,45 @@ class GetUploadUrlResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string url = 2;</code>
+     * Generated from protobuf field <code>string signed_url = 2;</code>
      * @return string
      */
-    public function getUrl()
+    public function getSignedUrl()
     {
-        return $this->url;
+        return $this->signed_url;
     }
 
     /**
-     * Generated from protobuf field <code>string url = 2;</code>
+     * Generated from protobuf field <code>string signed_url = 2;</code>
      * @param string $var
      * @return $this
      */
-    public function setUrl($var)
+    public function setSignedUrl($var)
     {
         GPBUtil::checkString($var, True);
-        $this->url = $var;
+        $this->signed_url = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string supporting_image_signed_url = 3;</code>
+     * @return string
+     */
+    public function getSupportingImageSignedUrl()
+    {
+        return $this->supporting_image_signed_url;
+    }
+
+    /**
+     * Generated from protobuf field <code>string supporting_image_signed_url = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setSupportingImageSignedUrl($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->supporting_image_signed_url = $var;
 
         return $this;
     }

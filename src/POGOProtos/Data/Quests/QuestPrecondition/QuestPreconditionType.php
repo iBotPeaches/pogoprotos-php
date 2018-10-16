@@ -25,6 +25,14 @@ class QuestPreconditionType
      * Generated from protobuf enum <code>QUEST_PRECONDITION_MEDAL = 3;</code>
      */
     const QUEST_PRECONDITION_MEDAL = 3;
+    /**
+     * Generated from protobuf enum <code>QUEST_PRECONDITION_IS_MINOR = 4;</code>
+     */
+    const QUEST_PRECONDITION_IS_MINOR = 4;
+    /**
+     * Generated from protobuf enum <code>QUEST_PRECONDITION_EXCLUSIVE_QUESTS = 5;</code>
+     */
+    const QUEST_PRECONDITION_EXCLUSIVE_QUESTS = 5;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

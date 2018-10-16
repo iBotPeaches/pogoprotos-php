@@ -25,6 +25,14 @@ class PokemonEncounterReward extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 3;</code>
      */
     private $pokemon_display = null;
+    /**
+     * Generated from protobuf field <code>bool is_hidden_ditto = 4;</code>
+     */
+    private $is_hidden_ditto = false;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay ditto_display = 5;</code>
+     */
+    private $ditto_display = null;
 
     /**
      * Constructor.
@@ -35,6 +43,8 @@ class PokemonEncounterReward extends \Google\Protobuf\Internal\Message
      *     @type int $pokemon_id
      *     @type bool $use_quest_pokemon_encounter_distribuition
      *     @type \POGOProtos\Data\PokemonDisplay $pokemon_display
+     *     @type bool $is_hidden_ditto
+     *     @type \POGOProtos\Data\PokemonDisplay $ditto_display
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +114,50 @@ class PokemonEncounterReward extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonDisplay::class);
         $this->pokemon_display = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_hidden_ditto = 4;</code>
+     * @return bool
+     */
+    public function getIsHiddenDitto()
+    {
+        return $this->is_hidden_ditto;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_hidden_ditto = 4;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsHiddenDitto($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_hidden_ditto = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay ditto_display = 5;</code>
+     * @return \POGOProtos\Data\PokemonDisplay
+     */
+    public function getDittoDisplay()
+    {
+        return $this->ditto_display;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay ditto_display = 5;</code>
+     * @param \POGOProtos\Data\PokemonDisplay $var
+     * @return $this
+     */
+    public function setDittoDisplay($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonDisplay::class);
+        $this->ditto_display = $var;
 
         return $this;
     }

@@ -29,6 +29,10 @@ class QuestPrecondition extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestPrecondition.Medal medal = 4;</code>
      */
     private $medal = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestPrecondition.Quests quests = 5;</code>
+     */
+    private $quests = null;
 
     /**
      * Constructor.
@@ -40,6 +44,7 @@ class QuestPrecondition extends \Google\Protobuf\Internal\Message
      *     @type string $quest_template_id
      *     @type \POGOProtos\Data\Quests\QuestPrecondition\Level $level
      *     @type \POGOProtos\Data\Quests\QuestPrecondition\Medal $medal
+     *     @type \POGOProtos\Data\Quests\QuestPrecondition\Quests $quests
      * }
      */
     public function __construct($data = NULL) {
@@ -131,6 +136,28 @@ class QuestPrecondition extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestPrecondition_Medal::class);
         $this->medal = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestPrecondition.Quests quests = 5;</code>
+     * @return \POGOProtos\Data\Quests\QuestPrecondition\Quests
+     */
+    public function getQuests()
+    {
+        return $this->quests;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestPrecondition.Quests quests = 5;</code>
+     * @param \POGOProtos\Data\Quests\QuestPrecondition\Quests $var
+     * @return $this
+     */
+    public function setQuests($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestPrecondition_Quests::class);
+        $this->quests = $var;
 
         return $this;
     }

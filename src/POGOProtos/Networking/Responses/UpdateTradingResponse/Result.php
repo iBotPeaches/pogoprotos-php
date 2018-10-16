@@ -49,6 +49,10 @@ class Result
      * Generated from protobuf enum <code>ERROR_TRADING_EXPIRED = 9;</code>
      */
     const ERROR_TRADING_EXPIRED = 9;
+    /**
+     * Generated from protobuf enum <code>ERROR_TRADING_FINISHED = 10;</code>
+     */
+    const ERROR_TRADING_FINISHED = 10;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

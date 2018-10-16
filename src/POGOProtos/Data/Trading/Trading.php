@@ -45,6 +45,10 @@ class Trading extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool is_special_trading = 8;</code>
      */
     private $is_special_trading = false;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.FriendshipLevelData pre_trading_friendship_level = 9;</code>
+     */
+    private $pre_trading_friendship_level = null;
 
     /**
      * Constructor.
@@ -60,6 +64,7 @@ class Trading extends \Google\Protobuf\Internal\Message
      *     @type string $transaction_log
      *     @type \POGOProtos\Data\Friends\FriendshipLevelData $friendship_level_data
      *     @type bool $is_special_trading
+     *     @type \POGOProtos\Data\Friends\FriendshipLevelData $pre_trading_friendship_level
      * }
      */
     public function __construct($data = NULL) {
@@ -239,6 +244,28 @@ class Trading extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->is_special_trading = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.FriendshipLevelData pre_trading_friendship_level = 9;</code>
+     * @return \POGOProtos\Data\Friends\FriendshipLevelData
+     */
+    public function getPreTradingFriendshipLevel()
+    {
+        return $this->pre_trading_friendship_level;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Friends.FriendshipLevelData pre_trading_friendship_level = 9;</code>
+     * @param \POGOProtos\Data\Friends\FriendshipLevelData $var
+     * @return $this
+     */
+    public function setPreTradingFriendshipLevel($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Friends\FriendshipLevelData::class);
+        $this->pre_trading_friendship_level = $var;
 
         return $this;
     }

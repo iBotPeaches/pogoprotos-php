@@ -13,18 +13,6 @@ use Google\Protobuf\Internal\GPBUtil;
  */
 class GetAvailableSubmissionsMessage extends \Google\Protobuf\Internal\Message
 {
-    /**
-     * Generated from protobuf field <code>string user_id = 1;</code>
-     */
-    private $user_id = '';
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerReputation player_reputation = 2;</code>
-     */
-    private $player_reputation = null;
-    /**
-     * Generated from protobuf field <code>string game_unique_id = 3;</code>
-     */
-    private $game_unique_id = '';
 
     /**
      * Constructor.
@@ -32,80 +20,11 @@ class GetAvailableSubmissionsMessage extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type string $user_id
-     *     @type \POGOProtos\Data\Player\PlayerReputation $player_reputation
-     *     @type string $game_unique_id
      * }
      */
     public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Networking\Requests\Messages\PlatformClientActionsMessage::initOnce();
         parent::__construct($data);
-    }
-
-    /**
-     * Generated from protobuf field <code>string user_id = 1;</code>
-     * @return string
-     */
-    public function getUserId()
-    {
-        return $this->user_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>string user_id = 1;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setUserId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->user_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerReputation player_reputation = 2;</code>
-     * @return \POGOProtos\Data\Player\PlayerReputation
-     */
-    public function getPlayerReputation()
-    {
-        return $this->player_reputation;
-    }
-
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerReputation player_reputation = 2;</code>
-     * @param \POGOProtos\Data\Player\PlayerReputation $var
-     * @return $this
-     */
-    public function setPlayerReputation($var)
-    {
-        GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerReputation::class);
-        $this->player_reputation = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string game_unique_id = 3;</code>
-     * @return string
-     */
-    public function getGameUniqueId()
-    {
-        return $this->game_unique_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>string game_unique_id = 3;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setGameUniqueId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->game_unique_id = $var;
-
-        return $this;
     }
 
 }

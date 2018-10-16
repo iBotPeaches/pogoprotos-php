@@ -21,6 +21,10 @@ class ClientPerformanceSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 max_number_local_battle_parties = 2;</code>
      */
     private $max_number_local_battle_parties = 0;
+    /**
+     * Generated from protobuf field <code>bool multi_pokemon_battle_party_select = 3;</code>
+     */
+    private $multi_pokemon_battle_party_select = false;
 
     /**
      * Constructor.
@@ -30,6 +34,7 @@ class ClientPerformanceSettings extends \Google\Protobuf\Internal\Message
      *
      *     @type bool $enable_local_disk_caching
      *     @type int $max_number_local_battle_parties
+     *     @type bool $multi_pokemon_battle_party_select
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +82,28 @@ class ClientPerformanceSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->max_number_local_battle_parties = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool multi_pokemon_battle_party_select = 3;</code>
+     * @return bool
+     */
+    public function getMultiPokemonBattlePartySelect()
+    {
+        return $this->multi_pokemon_battle_party_select;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool multi_pokemon_battle_party_select = 3;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setMultiPokemonBattlePartySelect($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->multi_pokemon_battle_party_select = $var;
 
         return $this;
     }

@@ -1557,5 +1557,433 @@ class PokemonId
      * Generated from protobuf enum <code>DEOXYS = 386;</code>
      */
     const DEOXYS = 386;
+    /**
+     * Generated from protobuf enum <code>TURTWIG = 387;</code>
+     */
+    const TURTWIG = 387;
+    /**
+     * Generated from protobuf enum <code>GROTLE = 388;</code>
+     */
+    const GROTLE = 388;
+    /**
+     * Generated from protobuf enum <code>TORTERRA = 389;</code>
+     */
+    const TORTERRA = 389;
+    /**
+     * Generated from protobuf enum <code>CHIMCHAR = 390;</code>
+     */
+    const CHIMCHAR = 390;
+    /**
+     * Generated from protobuf enum <code>MONFERNO = 391;</code>
+     */
+    const MONFERNO = 391;
+    /**
+     * Generated from protobuf enum <code>INFERNAPE = 392;</code>
+     */
+    const INFERNAPE = 392;
+    /**
+     * Generated from protobuf enum <code>PIPLUP = 393;</code>
+     */
+    const PIPLUP = 393;
+    /**
+     * Generated from protobuf enum <code>PRINPLUP = 394;</code>
+     */
+    const PRINPLUP = 394;
+    /**
+     * Generated from protobuf enum <code>EMPOLEON = 395;</code>
+     */
+    const EMPOLEON = 395;
+    /**
+     * Generated from protobuf enum <code>STARLY = 396;</code>
+     */
+    const STARLY = 396;
+    /**
+     * Generated from protobuf enum <code>STARAVIA = 397;</code>
+     */
+    const STARAVIA = 397;
+    /**
+     * Generated from protobuf enum <code>STARAPTOR = 398;</code>
+     */
+    const STARAPTOR = 398;
+    /**
+     * Generated from protobuf enum <code>BIDOOF = 399;</code>
+     */
+    const BIDOOF = 399;
+    /**
+     * Generated from protobuf enum <code>BIBAREL = 400;</code>
+     */
+    const BIBAREL = 400;
+    /**
+     * Generated from protobuf enum <code>KRICKETOT = 401;</code>
+     */
+    const KRICKETOT = 401;
+    /**
+     * Generated from protobuf enum <code>KRICKETUNE = 402;</code>
+     */
+    const KRICKETUNE = 402;
+    /**
+     * Generated from protobuf enum <code>SHINX = 403;</code>
+     */
+    const SHINX = 403;
+    /**
+     * Generated from protobuf enum <code>LUXIO = 404;</code>
+     */
+    const LUXIO = 404;
+    /**
+     * Generated from protobuf enum <code>LUXRAY = 405;</code>
+     */
+    const LUXRAY = 405;
+    /**
+     * Generated from protobuf enum <code>BUDEW = 406;</code>
+     */
+    const BUDEW = 406;
+    /**
+     * Generated from protobuf enum <code>ROSERADE = 407;</code>
+     */
+    const ROSERADE = 407;
+    /**
+     * Generated from protobuf enum <code>CRANIDOS = 408;</code>
+     */
+    const CRANIDOS = 408;
+    /**
+     * Generated from protobuf enum <code>RAMPARDOS = 409;</code>
+     */
+    const RAMPARDOS = 409;
+    /**
+     * Generated from protobuf enum <code>SHIELDON = 410;</code>
+     */
+    const SHIELDON = 410;
+    /**
+     * Generated from protobuf enum <code>BASTIODON = 411;</code>
+     */
+    const BASTIODON = 411;
+    /**
+     * Generated from protobuf enum <code>BURMY = 412;</code>
+     */
+    const BURMY = 412;
+    /**
+     * Generated from protobuf enum <code>WORMADAM = 413;</code>
+     */
+    const WORMADAM = 413;
+    /**
+     * Generated from protobuf enum <code>MOTHIM = 414;</code>
+     */
+    const MOTHIM = 414;
+    /**
+     * Generated from protobuf enum <code>COMBEE = 415;</code>
+     */
+    const COMBEE = 415;
+    /**
+     * Generated from protobuf enum <code>VESPIQUEN = 416;</code>
+     */
+    const VESPIQUEN = 416;
+    /**
+     * Generated from protobuf enum <code>PACHIRISU = 417;</code>
+     */
+    const PACHIRISU = 417;
+    /**
+     * Generated from protobuf enum <code>BUIZEL = 418;</code>
+     */
+    const BUIZEL = 418;
+    /**
+     * Generated from protobuf enum <code>FLOATZEL = 419;</code>
+     */
+    const FLOATZEL = 419;
+    /**
+     * Generated from protobuf enum <code>CHERUBI = 420;</code>
+     */
+    const CHERUBI = 420;
+    /**
+     * Generated from protobuf enum <code>CHERRIM = 421;</code>
+     */
+    const CHERRIM = 421;
+    /**
+     * Generated from protobuf enum <code>SHELLOS = 422;</code>
+     */
+    const SHELLOS = 422;
+    /**
+     * Generated from protobuf enum <code>GASTRODON = 423;</code>
+     */
+    const GASTRODON = 423;
+    /**
+     * Generated from protobuf enum <code>AMBIPOM = 424;</code>
+     */
+    const AMBIPOM = 424;
+    /**
+     * Generated from protobuf enum <code>DRIFLOON = 425;</code>
+     */
+    const DRIFLOON = 425;
+    /**
+     * Generated from protobuf enum <code>DRIFBLIM = 426;</code>
+     */
+    const DRIFBLIM = 426;
+    /**
+     * Generated from protobuf enum <code>BUNEARY = 427;</code>
+     */
+    const BUNEARY = 427;
+    /**
+     * Generated from protobuf enum <code>LOPUNNY = 428;</code>
+     */
+    const LOPUNNY = 428;
+    /**
+     * Generated from protobuf enum <code>MISMAGIUS = 429;</code>
+     */
+    const MISMAGIUS = 429;
+    /**
+     * Generated from protobuf enum <code>HONCHKROW = 430;</code>
+     */
+    const HONCHKROW = 430;
+    /**
+     * Generated from protobuf enum <code>GLAMEOW = 431;</code>
+     */
+    const GLAMEOW = 431;
+    /**
+     * Generated from protobuf enum <code>PURUGLY = 432;</code>
+     */
+    const PURUGLY = 432;
+    /**
+     * Generated from protobuf enum <code>CHINGLING = 433;</code>
+     */
+    const CHINGLING = 433;
+    /**
+     * Generated from protobuf enum <code>STUNKY = 434;</code>
+     */
+    const STUNKY = 434;
+    /**
+     * Generated from protobuf enum <code>SKUNTANK = 435;</code>
+     */
+    const SKUNTANK = 435;
+    /**
+     * Generated from protobuf enum <code>BRONZOR = 436;</code>
+     */
+    const BRONZOR = 436;
+    /**
+     * Generated from protobuf enum <code>BRONZONG = 437;</code>
+     */
+    const BRONZONG = 437;
+    /**
+     * Generated from protobuf enum <code>BONSLY = 438;</code>
+     */
+    const BONSLY = 438;
+    /**
+     * Generated from protobuf enum <code>MIME_JR = 439;</code>
+     */
+    const MIME_JR = 439;
+    /**
+     * Generated from protobuf enum <code>HAPPINY = 440;</code>
+     */
+    const HAPPINY = 440;
+    /**
+     * Generated from protobuf enum <code>CHATOT = 441;</code>
+     */
+    const CHATOT = 441;
+    /**
+     * Generated from protobuf enum <code>SPIRITOMB = 442;</code>
+     */
+    const SPIRITOMB = 442;
+    /**
+     * Generated from protobuf enum <code>GIBLE = 443;</code>
+     */
+    const GIBLE = 443;
+    /**
+     * Generated from protobuf enum <code>GABITE = 444;</code>
+     */
+    const GABITE = 444;
+    /**
+     * Generated from protobuf enum <code>GARCHOMP = 445;</code>
+     */
+    const GARCHOMP = 445;
+    /**
+     * Generated from protobuf enum <code>MUNCHLAX = 446;</code>
+     */
+    const MUNCHLAX = 446;
+    /**
+     * Generated from protobuf enum <code>RIOLU = 447;</code>
+     */
+    const RIOLU = 447;
+    /**
+     * Generated from protobuf enum <code>LUCARIO = 448;</code>
+     */
+    const LUCARIO = 448;
+    /**
+     * Generated from protobuf enum <code>HIPPOPOTAS = 449;</code>
+     */
+    const HIPPOPOTAS = 449;
+    /**
+     * Generated from protobuf enum <code>HIPPOWDON = 450;</code>
+     */
+    const HIPPOWDON = 450;
+    /**
+     * Generated from protobuf enum <code>SKORUPI = 451;</code>
+     */
+    const SKORUPI = 451;
+    /**
+     * Generated from protobuf enum <code>DRAPION = 452;</code>
+     */
+    const DRAPION = 452;
+    /**
+     * Generated from protobuf enum <code>CROAGUNK = 453;</code>
+     */
+    const CROAGUNK = 453;
+    /**
+     * Generated from protobuf enum <code>TOXICROAK = 454;</code>
+     */
+    const TOXICROAK = 454;
+    /**
+     * Generated from protobuf enum <code>CARNIVINE = 455;</code>
+     */
+    const CARNIVINE = 455;
+    /**
+     * Generated from protobuf enum <code>FINNEON = 456;</code>
+     */
+    const FINNEON = 456;
+    /**
+     * Generated from protobuf enum <code>LUMINEON = 457;</code>
+     */
+    const LUMINEON = 457;
+    /**
+     * Generated from protobuf enum <code>MANTYKE = 458;</code>
+     */
+    const MANTYKE = 458;
+    /**
+     * Generated from protobuf enum <code>SNOVER = 459;</code>
+     */
+    const SNOVER = 459;
+    /**
+     * Generated from protobuf enum <code>ABOMASNOW = 460;</code>
+     */
+    const ABOMASNOW = 460;
+    /**
+     * Generated from protobuf enum <code>WEAVILE = 461;</code>
+     */
+    const WEAVILE = 461;
+    /**
+     * Generated from protobuf enum <code>MAGNEZONE = 462;</code>
+     */
+    const MAGNEZONE = 462;
+    /**
+     * Generated from protobuf enum <code>LICKILICKY = 463;</code>
+     */
+    const LICKILICKY = 463;
+    /**
+     * Generated from protobuf enum <code>RHYPERIOR = 464;</code>
+     */
+    const RHYPERIOR = 464;
+    /**
+     * Generated from protobuf enum <code>TANGROWTH = 465;</code>
+     */
+    const TANGROWTH = 465;
+    /**
+     * Generated from protobuf enum <code>ELECTIVIRE = 466;</code>
+     */
+    const ELECTIVIRE = 466;
+    /**
+     * Generated from protobuf enum <code>MAGMORTAR = 467;</code>
+     */
+    const MAGMORTAR = 467;
+    /**
+     * Generated from protobuf enum <code>TOGEKISS = 468;</code>
+     */
+    const TOGEKISS = 468;
+    /**
+     * Generated from protobuf enum <code>YANMEGA = 469;</code>
+     */
+    const YANMEGA = 469;
+    /**
+     * Generated from protobuf enum <code>LEAFEON = 470;</code>
+     */
+    const LEAFEON = 470;
+    /**
+     * Generated from protobuf enum <code>GLACEON = 471;</code>
+     */
+    const GLACEON = 471;
+    /**
+     * Generated from protobuf enum <code>GLISCOR = 472;</code>
+     */
+    const GLISCOR = 472;
+    /**
+     * Generated from protobuf enum <code>MAMOSWINE = 473;</code>
+     */
+    const MAMOSWINE = 473;
+    /**
+     * Generated from protobuf enum <code>PORYGON_Z = 474;</code>
+     */
+    const PORYGON_Z = 474;
+    /**
+     * Generated from protobuf enum <code>GALLADE = 475;</code>
+     */
+    const GALLADE = 475;
+    /**
+     * Generated from protobuf enum <code>PROBOPASS = 476;</code>
+     */
+    const PROBOPASS = 476;
+    /**
+     * Generated from protobuf enum <code>DUSKNOIR = 477;</code>
+     */
+    const DUSKNOIR = 477;
+    /**
+     * Generated from protobuf enum <code>FROSLASS = 478;</code>
+     */
+    const FROSLASS = 478;
+    /**
+     * Generated from protobuf enum <code>ROTOM = 479;</code>
+     */
+    const ROTOM = 479;
+    /**
+     * Generated from protobuf enum <code>UXIE = 480;</code>
+     */
+    const UXIE = 480;
+    /**
+     * Generated from protobuf enum <code>MESPRIT = 481;</code>
+     */
+    const MESPRIT = 481;
+    /**
+     * Generated from protobuf enum <code>AZELF = 482;</code>
+     */
+    const AZELF = 482;
+    /**
+     * Generated from protobuf enum <code>DIALGA = 483;</code>
+     */
+    const DIALGA = 483;
+    /**
+     * Generated from protobuf enum <code>PALKIA = 484;</code>
+     */
+    const PALKIA = 484;
+    /**
+     * Generated from protobuf enum <code>HEATRAN = 485;</code>
+     */
+    const HEATRAN = 485;
+    /**
+     * Generated from protobuf enum <code>REGIGIGAS = 486;</code>
+     */
+    const REGIGIGAS = 486;
+    /**
+     * Generated from protobuf enum <code>GIRATINA = 487;</code>
+     */
+    const GIRATINA = 487;
+    /**
+     * Generated from protobuf enum <code>CRESSELIA = 488;</code>
+     */
+    const CRESSELIA = 488;
+    /**
+     * Generated from protobuf enum <code>PHIONE = 489;</code>
+     */
+    const PHIONE = 489;
+    /**
+     * Generated from protobuf enum <code>MANAPHY = 490;</code>
+     */
+    const MANAPHY = 490;
+    /**
+     * Generated from protobuf enum <code>DARKRAI = 491;</code>
+     */
+    const DARKRAI = 491;
+    /**
+     * Generated from protobuf enum <code>SHAYMIN = 492;</code>
+     */
+    const SHAYMIN = 492;
+    /**
+     * Generated from protobuf enum <code>ARCEUS = 493;</code>
+     */
+    const ARCEUS = 493;
 }
 

@@ -82,6 +82,10 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      */
     private $news_global_settings = null;
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
+     */
+    private $quest_global_settings = null;
+    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
      */
     private $telemetry_global_settings = null;
@@ -90,10 +94,6 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      */
     private $login_settings = null;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
-     */
-    private $quest_global_settings = null;
-    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.SocialClientSettings social_settings = 23;</code>
      */
     private $social_settings = null;
@@ -101,6 +101,22 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Settings.TradingGlobalSettings trading_global_settings = 24;</code>
      */
     private $trading_global_settings = null;
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonId additional_allowed_pokemon_ids = 25;</code>
+     */
+    private $additional_allowed_pokemon_ids;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.UpsightLoggingSettings upsight_logging_settings = 26;</code>
+     */
+    private $upsight_logging_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.BackgroundModeGlobalSettings bgmode_global_settings = 30;</code>
+     */
+    private $bgmode_global_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.ProbeSettings probe_settings = 31;</code>
+     */
+    private $probe_settings = null;
 
     /**
      * Constructor.
@@ -125,11 +141,15 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      *     @type string[]|\Google\Protobuf\Internal\RepeatedField $client_app_blacklist
      *     @type \POGOProtos\Settings\ClientPerformanceSettings $client_perf_settings
      *     @type \POGOProtos\Settings\NewsGlobalSettings $news_global_settings
+     *     @type \POGOProtos\Settings\QuestGlobalSettings $quest_global_settings
      *     @type \POGOProtos\Settings\TelemetryGlobalSettings $telemetry_global_settings
      *     @type \POGOProtos\Settings\LoginSettings $login_settings
-     *     @type \POGOProtos\Settings\QuestGlobalSettings $quest_global_settings
      *     @type \POGOProtos\Settings\SocialClientSettings $social_settings
      *     @type \POGOProtos\Settings\TradingGlobalSettings $trading_global_settings
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $additional_allowed_pokemon_ids
+     *     @type \POGOProtos\Settings\UpsightLoggingSettings $upsight_logging_settings
+     *     @type \POGOProtos\Settings\BackgroundModeGlobalSettings $bgmode_global_settings
+     *     @type \POGOProtos\Settings\ProbeSettings $probe_settings
      * }
      */
     public function __construct($data = NULL) {
@@ -512,6 +532,28 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
+     * @return \POGOProtos\Settings\QuestGlobalSettings
+     */
+    public function getQuestGlobalSettings()
+    {
+        return $this->quest_global_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
+     * @param \POGOProtos\Settings\QuestGlobalSettings $var
+     * @return $this
+     */
+    public function setQuestGlobalSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\QuestGlobalSettings::class);
+        $this->quest_global_settings = $var;
+
+        return $this;
+    }
+
+    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
      * @return \POGOProtos\Settings\TelemetryGlobalSettings
      */
@@ -556,28 +598,6 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
-     * @return \POGOProtos\Settings\QuestGlobalSettings
-     */
-    public function getQuestGlobalSettings()
-    {
-        return $this->quest_global_settings;
-    }
-
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.QuestGlobalSettings quest_global_settings = 19;</code>
-     * @param \POGOProtos\Settings\QuestGlobalSettings $var
-     * @return $this
-     */
-    public function setQuestGlobalSettings($var)
-    {
-        GPBUtil::checkMessage($var, \POGOProtos\Settings\QuestGlobalSettings::class);
-        $this->quest_global_settings = $var;
-
-        return $this;
-    }
-
-    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.SocialClientSettings social_settings = 23;</code>
      * @return \POGOProtos\Settings\SocialClientSettings
      */
@@ -617,6 +637,94 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\TradingGlobalSettings::class);
         $this->trading_global_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonId additional_allowed_pokemon_ids = 25;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getAdditionalAllowedPokemonIds()
+    {
+        return $this->additional_allowed_pokemon_ids;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonId additional_allowed_pokemon_ids = 25;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setAdditionalAllowedPokemonIds($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\PokemonId::class);
+        $this->additional_allowed_pokemon_ids = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.UpsightLoggingSettings upsight_logging_settings = 26;</code>
+     * @return \POGOProtos\Settings\UpsightLoggingSettings
+     */
+    public function getUpsightLoggingSettings()
+    {
+        return $this->upsight_logging_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.UpsightLoggingSettings upsight_logging_settings = 26;</code>
+     * @param \POGOProtos\Settings\UpsightLoggingSettings $var
+     * @return $this
+     */
+    public function setUpsightLoggingSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\UpsightLoggingSettings::class);
+        $this->upsight_logging_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.BackgroundModeGlobalSettings bgmode_global_settings = 30;</code>
+     * @return \POGOProtos\Settings\BackgroundModeGlobalSettings
+     */
+    public function getBgmodeGlobalSettings()
+    {
+        return $this->bgmode_global_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.BackgroundModeGlobalSettings bgmode_global_settings = 30;</code>
+     * @param \POGOProtos\Settings\BackgroundModeGlobalSettings $var
+     * @return $this
+     */
+    public function setBgmodeGlobalSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\BackgroundModeGlobalSettings::class);
+        $this->bgmode_global_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.ProbeSettings probe_settings = 31;</code>
+     * @return \POGOProtos\Settings\ProbeSettings
+     */
+    public function getProbeSettings()
+    {
+        return $this->probe_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.ProbeSettings probe_settings = 31;</code>
+     * @param \POGOProtos\Settings\ProbeSettings $var
+     * @return $this
+     */
+    public function setProbeSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\ProbeSettings::class);
+        $this->probe_settings = $var;
 
         return $this;
     }

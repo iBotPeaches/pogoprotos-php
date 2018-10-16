@@ -30,7 +30,7 @@ class FriendshipLevelMilestoneSettings extends \Google\Protobuf\Internal\Message
      */
     private $raid_ball_bonus = 0;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.FriendshipLevelMilestoneSettings.PokemonTradingType unlocked_trading = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonTradingType unlocked_trading = 5;</code>
      */
     private $unlocked_trading;
     /**
@@ -146,7 +146,7 @@ class FriendshipLevelMilestoneSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.FriendshipLevelMilestoneSettings.PokemonTradingType unlocked_trading = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonTradingType unlocked_trading = 5;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getUnlockedTrading()
@@ -155,13 +155,13 @@ class FriendshipLevelMilestoneSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.FriendshipLevelMilestoneSettings.PokemonTradingType unlocked_trading = 5;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonTradingType unlocked_trading = 5;</code>
      * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setUnlockedTrading($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Settings\Master\FriendshipLevelMilestoneSettings\PokemonTradingType::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\PokemonTradingType::class);
         $this->unlocked_trading = $arr;
 
         return $this;

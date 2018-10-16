@@ -214,6 +214,10 @@ class BadgeType
      */
     const BADGE_TRADING_DISTANCE = 50;
     /**
+     * Generated from protobuf enum <code>BADGE_POKEDEX_ENTRIES_GEN4 = 51;</code>
+     */
+    const BADGE_POKEDEX_ENTRIES_GEN4 = 51;
+    /**
      * Generated from protobuf enum <code>BADGE_EVENT_MIN = 2000;</code>
      */
     const BADGE_EVENT_MIN = 2000;
@@ -253,5 +257,105 @@ class BadgeType
      * Generated from protobuf enum <code>BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUTH = 2009;</code>
      */
     const BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUTH = 2009;
+    /**
+     * Generated from protobuf enum <code>BADGE_APAC_PARTNER_JULY_2018_0 = 2010;</code>
+     */
+    const BADGE_APAC_PARTNER_JULY_2018_0 = 2010;
+    /**
+     * Generated from protobuf enum <code>BADGE_APAC_PARTNER_JULY_2018_1 = 2011;</code>
+     */
+    const BADGE_APAC_PARTNER_JULY_2018_1 = 2011;
+    /**
+     * Generated from protobuf enum <code>BADGE_APAC_PARTNER_JULY_2018_2 = 2012;</code>
+     */
+    const BADGE_APAC_PARTNER_JULY_2018_2 = 2012;
+    /**
+     * Generated from protobuf enum <code>BADGE_APAC_PARTNER_JULY_2018_3 = 2013;</code>
+     */
+    const BADGE_APAC_PARTNER_JULY_2018_3 = 2013;
+    /**
+     * Generated from protobuf enum <code>BADGE_APAC_PARTNER_JULY_2018_4 = 2014;</code>
+     */
+    const BADGE_APAC_PARTNER_JULY_2018_4 = 2014;
+    /**
+     * Generated from protobuf enum <code>BADGE_APAC_PARTNER_JULY_2018_5 = 2015;</code>
+     */
+    const BADGE_APAC_PARTNER_JULY_2018_5 = 2015;
+    /**
+     * Generated from protobuf enum <code>BADGE_APAC_PARTNER_JULY_2018_6 = 2016;</code>
+     */
+    const BADGE_APAC_PARTNER_JULY_2018_6 = 2016;
+    /**
+     * Generated from protobuf enum <code>BADGE_APAC_PARTNER_JULY_2018_7 = 2017;</code>
+     */
+    const BADGE_APAC_PARTNER_JULY_2018_7 = 2017;
+    /**
+     * Generated from protobuf enum <code>BADGE_APAC_PARTNER_JULY_2018_8 = 2018;</code>
+     */
+    const BADGE_APAC_PARTNER_JULY_2018_8 = 2018;
+    /**
+     * Generated from protobuf enum <code>BADGE_APAC_PARTNER_JULY_2018_9 = 2019;</code>
+     */
+    const BADGE_APAC_PARTNER_JULY_2018_9 = 2019;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_29_AUG_2018_MIKASA = 2020;</code>
+     */
+    const BADGE_YOKOSUKA_29_AUG_2018_MIKASA = 2020;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_29_AUG_2018_VERNY = 2021;</code>
+     */
+    const BADGE_YOKOSUKA_29_AUG_2018_VERNY = 2021;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_29_AUG_2018_KURIHAMA = 2022;</code>
+     */
+    const BADGE_YOKOSUKA_29_AUG_2018_KURIHAMA = 2022;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_30_AUG_2018_MIKASA = 2023;</code>
+     */
+    const BADGE_YOKOSUKA_30_AUG_2018_MIKASA = 2023;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_30_AUG_2018_VERNY = 2024;</code>
+     */
+    const BADGE_YOKOSUKA_30_AUG_2018_VERNY = 2024;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_30_AUG_2018_KURIHAMA = 2025;</code>
+     */
+    const BADGE_YOKOSUKA_30_AUG_2018_KURIHAMA = 2025;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_31_AUG_2018_MIKASA = 2026;</code>
+     */
+    const BADGE_YOKOSUKA_31_AUG_2018_MIKASA = 2026;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_31_AUG_2018_VERNY = 2027;</code>
+     */
+    const BADGE_YOKOSUKA_31_AUG_2018_VERNY = 2027;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_31_AUG_2018_KURIHAMA = 2028;</code>
+     */
+    const BADGE_YOKOSUKA_31_AUG_2018_KURIHAMA = 2028;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_1_SEP_2018_MIKASA = 2029;</code>
+     */
+    const BADGE_YOKOSUKA_1_SEP_2018_MIKASA = 2029;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_1_SEP_2018_VERNY = 2030;</code>
+     */
+    const BADGE_YOKOSUKA_1_SEP_2018_VERNY = 2030;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_1_SEP_2018_KURIHAMA = 2031;</code>
+     */
+    const BADGE_YOKOSUKA_1_SEP_2018_KURIHAMA = 2031;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_2_SEP_2018_MIKASA = 2032;</code>
+     */
+    const BADGE_YOKOSUKA_2_SEP_2018_MIKASA = 2032;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_2_SEP_2018_VERNY = 2033;</code>
+     */
+    const BADGE_YOKOSUKA_2_SEP_2018_VERNY = 2033;
+    /**
+     * Generated from protobuf enum <code>BADGE_YOKOSUKA_2_SEP_2018_KURIHAMA = 2034;</code>
+     */
+    const BADGE_YOKOSUKA_2_SEP_2018_KURIHAMA = 2034;
 }
 

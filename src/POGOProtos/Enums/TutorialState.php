@@ -34,9 +34,9 @@ class TutorialState
      */
     const POKEMON_BERRY = 5;
     /**
-     * Generated from protobuf enum <code>USE_ITEM = 6;</code>
+     * Generated from protobuf enum <code>USE_ITEM_TUTORIAL = 6;</code>
      */
-    const USE_ITEM = 6;
+    const USE_ITEM_TUTORIAL = 6;
     /**
      * Generated from protobuf enum <code>FIRST_TIME_EXPERIENCE_COMPLETE = 7;</code>
      */
@@ -61,5 +61,9 @@ class TutorialState
      * Generated from protobuf enum <code>TRADING_TUTORIAL = 12;</code>
      */
     const TRADING_TUTORIAL = 12;
+    /**
+     * Generated from protobuf enum <code>POI_SUBMISSION_TUTORIAL = 13;</code>
+     */
+    const POI_SUBMISSION_TUTORIAL = 13;
 }
 

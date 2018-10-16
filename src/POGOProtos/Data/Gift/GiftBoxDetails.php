@@ -65,6 +65,10 @@ class GiftBoxDetails extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>fixed64 delivery_pokemon_id = 13;</code>
      */
     private $delivery_pokemon_id = 0;
+    /**
+     * Generated from protobuf field <code>bool is_sponsored = 14;</code>
+     */
+    private $is_sponsored = false;
 
     /**
      * Constructor.
@@ -85,6 +89,7 @@ class GiftBoxDetails extends \Google\Protobuf\Internal\Message
      *     @type int|string $creation_timestamp
      *     @type int|string $sent_timestamp
      *     @type int|string $delivery_pokemon_id
+     *     @type bool $is_sponsored
      * }
      */
     public function __construct($data = NULL) {
@@ -374,6 +379,28 @@ class GiftBoxDetails extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint64($var);
         $this->delivery_pokemon_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_sponsored = 14;</code>
+     * @return bool
+     */
+    public function getIsSponsored()
+    {
+        return $this->is_sponsored;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_sponsored = 14;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsSponsored($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_sponsored = $var;
 
         return $this;
     }

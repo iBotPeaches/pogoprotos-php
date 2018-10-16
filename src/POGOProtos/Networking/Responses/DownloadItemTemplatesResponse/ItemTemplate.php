@@ -121,6 +121,18 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Settings.Master.FriendshipLevelMilestoneSettings friendship_milestone_settings = 31;</code>
      */
     private $friendship_milestone_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.LuckyPokemonSettings lucky_pokemon_settings = 32;</code>
+     */
+    private $lucky_pokemon_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.ExRaidSettings ex_raid_settings = 36;</code>
+     */
+    private $ex_raid_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.BackgroundModeSettings background_mode_settings = 38;</code>
+     */
+    private $background_mode_settings = null;
 
     /**
      * Constructor.
@@ -155,6 +167,9 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Settings\Master\IapItemCategoryDisplay $iap_category_display
      *     @type \POGOProtos\Settings\Master\OnboardingSettings $onboarding_settings
      *     @type \POGOProtos\Settings\Master\FriendshipLevelMilestoneSettings $friendship_milestone_settings
+     *     @type \POGOProtos\Settings\Master\LuckyPokemonSettings $lucky_pokemon_settings
+     *     @type \POGOProtos\Settings\Master\ExRaidSettings $ex_raid_settings
+     *     @type \POGOProtos\Settings\Master\BackgroundModeSettings $background_mode_settings
      * }
      */
     public function __construct($data = NULL) {
@@ -752,6 +767,72 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\FriendshipLevelMilestoneSettings::class);
         $this->friendship_milestone_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.LuckyPokemonSettings lucky_pokemon_settings = 32;</code>
+     * @return \POGOProtos\Settings\Master\LuckyPokemonSettings
+     */
+    public function getLuckyPokemonSettings()
+    {
+        return $this->lucky_pokemon_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.LuckyPokemonSettings lucky_pokemon_settings = 32;</code>
+     * @param \POGOProtos\Settings\Master\LuckyPokemonSettings $var
+     * @return $this
+     */
+    public function setLuckyPokemonSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\LuckyPokemonSettings::class);
+        $this->lucky_pokemon_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.ExRaidSettings ex_raid_settings = 36;</code>
+     * @return \POGOProtos\Settings\Master\ExRaidSettings
+     */
+    public function getExRaidSettings()
+    {
+        return $this->ex_raid_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.ExRaidSettings ex_raid_settings = 36;</code>
+     * @param \POGOProtos\Settings\Master\ExRaidSettings $var
+     * @return $this
+     */
+    public function setExRaidSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\ExRaidSettings::class);
+        $this->ex_raid_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.BackgroundModeSettings background_mode_settings = 38;</code>
+     * @return \POGOProtos\Settings\Master\BackgroundModeSettings
+     */
+    public function getBackgroundModeSettings()
+    {
+        return $this->background_mode_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.BackgroundModeSettings background_mode_settings = 38;</code>
+     * @param \POGOProtos\Settings\Master\BackgroundModeSettings $var
+     * @return $this
+     */
+    public function setBackgroundModeSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\BackgroundModeSettings::class);
+        $this->background_mode_settings = $var;
 
         return $this;
     }

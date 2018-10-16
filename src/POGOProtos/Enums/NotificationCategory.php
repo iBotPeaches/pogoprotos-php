@@ -49,5 +49,21 @@ class NotificationCategory
      * Generated from protobuf enum <code>GYM_BATTLE_FRIENDSHIP_INCREMENT = 9;</code>
      */
     const GYM_BATTLE_FRIENDSHIP_INCREMENT = 9;
+    /**
+     * Generated from protobuf enum <code>SHARED_EXCLUSIVE_RAID_INVITE = 10;</code>
+     */
+    const SHARED_EXCLUSIVE_RAID_INVITE = 10;
+    /**
+     * Generated from protobuf enum <code>BGMODE_EGG_HATCH = 11;</code>
+     */
+    const BGMODE_EGG_HATCH = 11;
+    /**
+     * Generated from protobuf enum <code>BGMODE_BUDDY_CANDY = 12;</code>
+     */
+    const BGMODE_BUDDY_CANDY = 12;
+    /**
+     * Generated from protobuf enum <code>BGMODE_WEEKLY_FITNESS_REPORT = 13;</code>
+     */
+    const BGMODE_WEEKLY_FITNESS_REPORT = 13;
 }
 

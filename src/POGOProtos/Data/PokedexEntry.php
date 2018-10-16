@@ -34,15 +34,15 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
      */
     private $evolution_stones = 0;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Costume captured_costumes = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Costume captured_costumes = 6;</code>
      */
     private $captured_costumes;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Form captured_forms = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Form captured_forms = 7;</code>
      */
     private $captured_forms;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Gender captured_genders = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Gender captured_genders = 8;</code>
      */
     private $captured_genders;
     /**
@@ -50,21 +50,25 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
      */
     private $captured_shiny = false;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Costume encountered_costumes = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Costume encountered_costumes = 10;</code>
      */
     private $encountered_costumes;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Form encountered_forms = 11;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Form encountered_forms = 11;</code>
      */
     private $encountered_forms;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Gender encountered_genders = 12;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Gender encountered_genders = 12;</code>
      */
     private $encountered_genders;
     /**
      * Generated from protobuf field <code>bool encountered_shiny = 13;</code>
      */
     private $encountered_shiny = false;
+    /**
+     * Generated from protobuf field <code>int32 times_lucky_received = 14;</code>
+     */
+    private $times_lucky_received = 0;
 
     /**
      * Constructor.
@@ -85,6 +89,7 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
      *     @type int[]|\Google\Protobuf\Internal\RepeatedField $encountered_forms
      *     @type int[]|\Google\Protobuf\Internal\RepeatedField $encountered_genders
      *     @type bool $encountered_shiny
+     *     @type int $times_lucky_received
      * }
      */
     public function __construct($data = NULL) {
@@ -203,7 +208,7 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Costume captured_costumes = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Costume captured_costumes = 6;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCapturedCostumes()
@@ -212,20 +217,20 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Costume captured_costumes = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Costume captured_costumes = 6;</code>
      * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setCapturedCostumes($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Data\PokemonDisplay\Costume::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\Costume::class);
         $this->captured_costumes = $arr;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Form captured_forms = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Form captured_forms = 7;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCapturedForms()
@@ -234,20 +239,20 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Form captured_forms = 7;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Form captured_forms = 7;</code>
      * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setCapturedForms($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Data\PokemonDisplay\Form::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\Form::class);
         $this->captured_forms = $arr;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Gender captured_genders = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Gender captured_genders = 8;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCapturedGenders()
@@ -256,13 +261,13 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Gender captured_genders = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Gender captured_genders = 8;</code>
      * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setCapturedGenders($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Data\PokemonDisplay\Gender::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\Gender::class);
         $this->captured_genders = $arr;
 
         return $this;
@@ -291,7 +296,7 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Costume encountered_costumes = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Costume encountered_costumes = 10;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getEncounteredCostumes()
@@ -300,20 +305,20 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Costume encountered_costumes = 10;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Costume encountered_costumes = 10;</code>
      * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setEncounteredCostumes($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Data\PokemonDisplay\Costume::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\Costume::class);
         $this->encountered_costumes = $arr;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Form encountered_forms = 11;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Form encountered_forms = 11;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getEncounteredForms()
@@ -322,20 +327,20 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Form encountered_forms = 11;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Form encountered_forms = 11;</code>
      * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setEncounteredForms($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Data\PokemonDisplay\Form::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\Form::class);
         $this->encountered_forms = $arr;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Gender encountered_genders = 12;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Gender encountered_genders = 12;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getEncounteredGenders()
@@ -344,13 +349,13 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.PokemonDisplay.Gender encountered_genders = 12;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Gender encountered_genders = 12;</code>
      * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setEncounteredGenders($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Data\PokemonDisplay\Gender::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\Gender::class);
         $this->encountered_genders = $arr;
 
         return $this;
@@ -374,6 +379,28 @@ class PokedexEntry extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->encountered_shiny = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 times_lucky_received = 14;</code>
+     * @return int
+     */
+    public function getTimesLuckyReceived()
+    {
+        return $this->times_lucky_received;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 times_lucky_received = 14;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setTimesLuckyReceived($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->times_lucky_received = $var;
 
         return $this;
     }

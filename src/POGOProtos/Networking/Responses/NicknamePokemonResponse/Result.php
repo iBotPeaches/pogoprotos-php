@@ -29,6 +29,14 @@ class Result
      * Generated from protobuf enum <code>ERROR_POKEMON_IS_EGG = 4;</code>
      */
     const ERROR_POKEMON_IS_EGG = 4;
+    /**
+     * Generated from protobuf enum <code>ERROR_FILTERED_NICKNAME = 5;</code>
+     */
+    const ERROR_FILTERED_NICKNAME = 5;
+    /**
+     * Generated from protobuf enum <code>ERROR_EXCEEDED_CHANGE_LIMIT = 6;</code>
+     */
+    const ERROR_EXCEEDED_CHANGE_LIMIT = 6;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

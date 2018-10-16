@@ -161,6 +161,10 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 trade_accumulated_distance_km = 37;</code>
      */
     private $trade_accumulated_distance_km = 0;
+    /**
+     * Generated from protobuf field <code>int64 fitness_report_last_check_bucket = 38;</code>
+     */
+    private $fitness_report_last_check_bucket = 0;
 
     /**
      * Constructor.
@@ -205,6 +209,7 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
      *     @type int $num_trades
      *     @type int $num_max_level_friends
      *     @type int|string $trade_accumulated_distance_km
+     *     @type int|string $fitness_report_last_check_bucket
      * }
      */
     public function __construct($data = NULL) {
@@ -1022,6 +1027,28 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->trade_accumulated_distance_km = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 fitness_report_last_check_bucket = 38;</code>
+     * @return int|string
+     */
+    public function getFitnessReportLastCheckBucket()
+    {
+        return $this->fitness_report_last_check_bucket;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 fitness_report_last_check_bucket = 38;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setFitnessReportLastCheckBucket($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->fitness_report_last_check_bucket = $var;
 
         return $this;
     }

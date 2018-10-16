@@ -145,5 +145,53 @@ class ActivityType
      * Generated from protobuf enum <code>ACTIVITY_CATCH_QUEST_POKEMON_ENCOUNTER = 33;</code>
      */
     const ACTIVITY_CATCH_QUEST_POKEMON_ENCOUNTER = 33;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_FRIENDSHIP_LEVEL_UP_0 = 35;</code>
+     */
+    const ACTIVITY_FRIENDSHIP_LEVEL_UP_0 = 35;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_FRIENDSHIP_LEVEL_UP_1 = 36;</code>
+     */
+    const ACTIVITY_FRIENDSHIP_LEVEL_UP_1 = 36;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_FRIENDSHIP_LEVEL_UP_2 = 37;</code>
+     */
+    const ACTIVITY_FRIENDSHIP_LEVEL_UP_2 = 37;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_FRIENDSHIP_LEVEL_UP_3 = 38;</code>
+     */
+    const ACTIVITY_FRIENDSHIP_LEVEL_UP_3 = 38;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_FRIENDSHIP_LEVEL_UP_4 = 39;</code>
+     */
+    const ACTIVITY_FRIENDSHIP_LEVEL_UP_4 = 39;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_SEND_GIFT = 40;</code>
+     */
+    const ACTIVITY_SEND_GIFT = 40;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_SHARE_EX_RAID_PASS = 41;</code>
+     */
+    const ACTIVITY_SHARE_EX_RAID_PASS = 41;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_RAID_LEVEL_1_ADDITIONAL_XP = 42;</code>
+     */
+    const ACTIVITY_RAID_LEVEL_1_ADDITIONAL_XP = 42;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_RAID_LEVEL_2_ADDITIONAL_XP = 43;</code>
+     */
+    const ACTIVITY_RAID_LEVEL_2_ADDITIONAL_XP = 43;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_RAID_LEVEL_3_ADDITIONAL_XP = 44;</code>
+     */
+    const ACTIVITY_RAID_LEVEL_3_ADDITIONAL_XP = 44;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_RAID_LEVEL_4_ADDITIONAL_XP = 45;</code>
+     */
+    const ACTIVITY_RAID_LEVEL_4_ADDITIONAL_XP = 45;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_RAID_LEVEL_5_ADDITIONAL_XP = 46;</code>
+     */
+    const ACTIVITY_RAID_LEVEL_5_ADDITIONAL_XP = 46;
 }
 

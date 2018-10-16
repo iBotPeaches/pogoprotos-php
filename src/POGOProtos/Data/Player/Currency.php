@@ -14,13 +14,25 @@ use Google\Protobuf\Internal\GPBUtil;
 class Currency extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string name = 1;</code>
+     * Generated from protobuf field <code>string currency_type = 1;</code>
      */
-    private $name = '';
+    private $currency_type = '';
     /**
-     * Generated from protobuf field <code>int32 amount = 2;</code>
+     * Generated from protobuf field <code>int32 quantity = 2;</code>
      */
-    private $amount = 0;
+    private $quantity = 0;
+    /**
+     * Generated from protobuf field <code>int32 fiat_purchased_quantity = 3;</code>
+     */
+    private $fiat_purchased_quantity = 0;
+    /**
+     * Generated from protobuf field <code>string fiat_currency_type = 4;</code>
+     */
+    private $fiat_currency_type = '';
+    /**
+     * Generated from protobuf field <code>int64 fiat_currency_cost_e6 = 5;</code>
+     */
+    private $fiat_currency_cost_e6 = 0;
 
     /**
      * Constructor.
@@ -28,8 +40,11 @@ class Currency extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type string $name
-     *     @type int $amount
+     *     @type string $currency_type
+     *     @type int $quantity
+     *     @type int $fiat_purchased_quantity
+     *     @type string $fiat_currency_type
+     *     @type int|string $fiat_currency_cost_e6
      * }
      */
     public function __construct($data = NULL) {
@@ -38,45 +53,111 @@ class Currency extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string name = 1;</code>
+     * Generated from protobuf field <code>string currency_type = 1;</code>
      * @return string
      */
-    public function getName()
+    public function getCurrencyType()
     {
-        return $this->name;
+        return $this->currency_type;
     }
 
     /**
-     * Generated from protobuf field <code>string name = 1;</code>
+     * Generated from protobuf field <code>string currency_type = 1;</code>
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setCurrencyType($var)
     {
         GPBUtil::checkString($var, True);
-        $this->name = $var;
+        $this->currency_type = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>int32 amount = 2;</code>
+     * Generated from protobuf field <code>int32 quantity = 2;</code>
      * @return int
      */
-    public function getAmount()
+    public function getQuantity()
     {
-        return $this->amount;
+        return $this->quantity;
     }
 
     /**
-     * Generated from protobuf field <code>int32 amount = 2;</code>
+     * Generated from protobuf field <code>int32 quantity = 2;</code>
      * @param int $var
      * @return $this
      */
-    public function setAmount($var)
+    public function setQuantity($var)
     {
         GPBUtil::checkInt32($var);
-        $this->amount = $var;
+        $this->quantity = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 fiat_purchased_quantity = 3;</code>
+     * @return int
+     */
+    public function getFiatPurchasedQuantity()
+    {
+        return $this->fiat_purchased_quantity;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 fiat_purchased_quantity = 3;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setFiatPurchasedQuantity($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->fiat_purchased_quantity = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string fiat_currency_type = 4;</code>
+     * @return string
+     */
+    public function getFiatCurrencyType()
+    {
+        return $this->fiat_currency_type;
+    }
+
+    /**
+     * Generated from protobuf field <code>string fiat_currency_type = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setFiatCurrencyType($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->fiat_currency_type = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 fiat_currency_cost_e6 = 5;</code>
+     * @return int|string
+     */
+    public function getFiatCurrencyCostE6()
+    {
+        return $this->fiat_currency_cost_e6;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 fiat_currency_cost_e6 = 5;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setFiatCurrencyCostE6($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->fiat_currency_cost_e6 = $var;
 
         return $this;
     }

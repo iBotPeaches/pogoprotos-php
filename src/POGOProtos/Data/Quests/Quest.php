@@ -30,6 +30,14 @@ class Quest extends \Google\Protobuf\Internal\Message
      */
     private $catch_pokemon = null;
     /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.AddFriendQuest add_friend = 5;</code>
+     */
+    private $add_friend = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.TradePokemonQuest trade_pokemon = 6;</code>
+     */
+    private $trade_pokemon = null;
+    /**
      * Generated from protobuf field <code>string quest_id = 100;</code>
      */
     private $quest_id = '';
@@ -97,6 +105,14 @@ class Quest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 story_quest_template_version = 116;</code>
      */
     private $story_quest_template_version = 0;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.DailyCounter daily_counter = 117;</code>
+     */
+    private $daily_counter = null;
+    /**
+     * Generated from protobuf field <code>string reward_pokemon_icon_url = 118;</code>
+     */
+    private $reward_pokemon_icon_url = '';
 
     /**
      * Constructor.
@@ -108,6 +124,8 @@ class Quest extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Quests\DailyQuest $daily_quest
      *     @type \POGOProtos\Data\Quests\Quest\MultiPartQuest $multi_part
      *     @type \POGOProtos\Data\Quests\CatchPokemonQuest $catch_pokemon
+     *     @type \POGOProtos\Data\Quests\AddFriendQuest $add_friend
+     *     @type \POGOProtos\Data\Quests\TradePokemonQuest $trade_pokemon
      *     @type string $quest_id
      *     @type int|string $quest_seed
      *     @type int $quest_context
@@ -125,6 +143,8 @@ class Quest extends \Google\Protobuf\Internal\Message
      *     @type int $stamp_count_override
      *     @type int|string $s2_cell_id
      *     @type int $story_quest_template_version
+     *     @type \POGOProtos\Data\Player\DailyCounter $daily_counter
+     *     @type string $reward_pokemon_icon_url
      * }
      */
     public function __construct($data = NULL) {
@@ -216,6 +236,50 @@ class Quest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\CatchPokemonQuest::class);
         $this->catch_pokemon = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.AddFriendQuest add_friend = 5;</code>
+     * @return \POGOProtos\Data\Quests\AddFriendQuest
+     */
+    public function getAddFriend()
+    {
+        return $this->add_friend;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.AddFriendQuest add_friend = 5;</code>
+     * @param \POGOProtos\Data\Quests\AddFriendQuest $var
+     * @return $this
+     */
+    public function setAddFriend($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\AddFriendQuest::class);
+        $this->add_friend = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.TradePokemonQuest trade_pokemon = 6;</code>
+     * @return \POGOProtos\Data\Quests\TradePokemonQuest
+     */
+    public function getTradePokemon()
+    {
+        return $this->trade_pokemon;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.TradePokemonQuest trade_pokemon = 6;</code>
+     * @param \POGOProtos\Data\Quests\TradePokemonQuest $var
+     * @return $this
+     */
+    public function setTradePokemon($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\TradePokemonQuest::class);
+        $this->trade_pokemon = $var;
 
         return $this;
     }
@@ -590,6 +654,50 @@ class Quest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->story_quest_template_version = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.DailyCounter daily_counter = 117;</code>
+     * @return \POGOProtos\Data\Player\DailyCounter
+     */
+    public function getDailyCounter()
+    {
+        return $this->daily_counter;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.DailyCounter daily_counter = 117;</code>
+     * @param \POGOProtos\Data\Player\DailyCounter $var
+     * @return $this
+     */
+    public function setDailyCounter($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Player\DailyCounter::class);
+        $this->daily_counter = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string reward_pokemon_icon_url = 118;</code>
+     * @return string
+     */
+    public function getRewardPokemonIconUrl()
+    {
+        return $this->reward_pokemon_icon_url;
+    }
+
+    /**
+     * Generated from protobuf field <code>string reward_pokemon_icon_url = 118;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRewardPokemonIconUrl($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->reward_pokemon_icon_url = $var;
 
         return $this;
     }

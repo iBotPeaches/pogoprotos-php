@@ -33,6 +33,22 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool was_created = 5;</code>
      */
     private $was_created = false;
+    /**
+     * Generated from protobuf field <code>bool warn_message_acknowledged = 6;</code>
+     */
+    private $warn_message_acknowledged = false;
+    /**
+     * Generated from protobuf field <code>bool was_suspended = 7;</code>
+     */
+    private $was_suspended = false;
+    /**
+     * Generated from protobuf field <code>bool suspended_message_acknowledged = 8;</code>
+     */
+    private $suspended_message_acknowledged = false;
+    /**
+     * Generated from protobuf field <code>int64 warn_expire_ms = 9;</code>
+     */
+    private $warn_expire_ms = 0;
 
     /**
      * Constructor.
@@ -45,6 +61,10 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
      *     @type bool $banned
      *     @type bool $warn
      *     @type bool $was_created
+     *     @type bool $warn_message_acknowledged
+     *     @type bool $was_suspended
+     *     @type bool $suspended_message_acknowledged
+     *     @type int|string $warn_expire_ms
      * }
      */
     public function __construct($data = NULL) {
@@ -158,6 +178,94 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->was_created = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool warn_message_acknowledged = 6;</code>
+     * @return bool
+     */
+    public function getWarnMessageAcknowledged()
+    {
+        return $this->warn_message_acknowledged;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool warn_message_acknowledged = 6;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setWarnMessageAcknowledged($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->warn_message_acknowledged = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool was_suspended = 7;</code>
+     * @return bool
+     */
+    public function getWasSuspended()
+    {
+        return $this->was_suspended;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool was_suspended = 7;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setWasSuspended($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->was_suspended = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool suspended_message_acknowledged = 8;</code>
+     * @return bool
+     */
+    public function getSuspendedMessageAcknowledged()
+    {
+        return $this->suspended_message_acknowledged;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool suspended_message_acknowledged = 8;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setSuspendedMessageAcknowledged($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->suspended_message_acknowledged = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 warn_expire_ms = 9;</code>
+     * @return int|string
+     */
+    public function getWarnExpireMs()
+    {
+        return $this->warn_expire_ms;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 warn_expire_ms = 9;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setWarnExpireMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->warn_expire_ms = $var;
 
         return $this;
     }

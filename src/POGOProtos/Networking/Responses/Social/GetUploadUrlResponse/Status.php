@@ -17,6 +17,10 @@ class Status
      * Generated from protobuf enum <code>FAILURES = 1;</code>
      */
     const FAILURES = 1;
+    /**
+     * Generated from protobuf enum <code>SUCCESS = 2;</code>
+     */
+    const SUCCESS = 2;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

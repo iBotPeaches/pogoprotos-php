@@ -54,9 +54,9 @@ class PlayerData extends \Google\Protobuf\Internal\Message
      */
     private $contact_settings = null;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency currencies = 14;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency currency_balance = 14;</code>
      */
-    private $currencies;
+    private $currency_balance;
     /**
      * Generated from protobuf field <code>int32 remaining_codename_claims = 15;</code>
      */
@@ -77,6 +77,10 @@ class PlayerData extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool name_is_blacklisted = 19;</code>
      */
     private $name_is_blacklisted = false;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.SocialPlayerSettings social_player_settings = 20;</code>
+     */
+    private $social_player_settings = null;
 
     /**
      * Constructor.
@@ -94,12 +98,13 @@ class PlayerData extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Player\DailyBonus $daily_bonus
      *     @type \POGOProtos\Data\Player\EquippedBadge $equipped_badge
      *     @type \POGOProtos\Data\Player\ContactSettings $contact_settings
-     *     @type \POGOProtos\Data\Player\Currency[]|\Google\Protobuf\Internal\RepeatedField $currencies
+     *     @type \POGOProtos\Data\Player\Currency[]|\Google\Protobuf\Internal\RepeatedField $currency_balance
      *     @type int $remaining_codename_claims
      *     @type \POGOProtos\Data\BuddyPokemon $buddy_pokemon
      *     @type int|string $battle_lockout_end_ms
      *     @type \POGOProtos\Data\Player\PlayerAvatar $secondary_player_avatar
      *     @type bool $name_is_blacklisted
+     *     @type \POGOProtos\Data\Player\SocialPlayerSettings $social_player_settings
      * }
      */
     public function __construct($data = NULL) {
@@ -328,23 +333,23 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency currencies = 14;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency currency_balance = 14;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
-    public function getCurrencies()
+    public function getCurrencyBalance()
     {
-        return $this->currencies;
+        return $this->currency_balance;
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency currencies = 14;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency currency_balance = 14;</code>
      * @param \POGOProtos\Data\Player\Currency[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
-    public function setCurrencies($var)
+    public function setCurrencyBalance($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Player\Currency::class);
-        $this->currencies = $arr;
+        $this->currency_balance = $arr;
 
         return $this;
     }
@@ -455,6 +460,28 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->name_is_blacklisted = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.SocialPlayerSettings social_player_settings = 20;</code>
+     * @return \POGOProtos\Data\Player\SocialPlayerSettings
+     */
+    public function getSocialPlayerSettings()
+    {
+        return $this->social_player_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.SocialPlayerSettings social_player_settings = 20;</code>
+     * @param \POGOProtos\Data\Player\SocialPlayerSettings $var
+     * @return $this
+     */
+    public function setSocialPlayerSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Player\SocialPlayerSettings::class);
+        $this->social_player_settings = $var;
 
         return $this;
     }

@@ -21,6 +21,18 @@ class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 min_player_level = 2;</code>
      */
     private $min_player_level = 0;
+    /**
+     * Generated from protobuf field <code>bool has_valid_email = 3;</code>
+     */
+    private $has_valid_email = false;
+    /**
+     * Generated from protobuf field <code>bool is_feature_enabled = 4;</code>
+     */
+    private $is_feature_enabled = false;
+    /**
+     * Generated from protobuf field <code>int32 time_window_for_submissions_limit_ms = 5;</code>
+     */
+    private $time_window_for_submissions_limit_ms = 0;
 
     /**
      * Constructor.
@@ -30,6 +42,9 @@ class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
      *
      *     @type int $submissions_left
      *     @type int $min_player_level
+     *     @type bool $has_valid_email
+     *     @type bool $is_feature_enabled
+     *     @type int $time_window_for_submissions_limit_ms
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +92,72 @@ class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->min_player_level = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool has_valid_email = 3;</code>
+     * @return bool
+     */
+    public function getHasValidEmail()
+    {
+        return $this->has_valid_email;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool has_valid_email = 3;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setHasValidEmail($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->has_valid_email = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_feature_enabled = 4;</code>
+     * @return bool
+     */
+    public function getIsFeatureEnabled()
+    {
+        return $this->is_feature_enabled;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_feature_enabled = 4;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsFeatureEnabled($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_feature_enabled = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 time_window_for_submissions_limit_ms = 5;</code>
+     * @return int
+     */
+    public function getTimeWindowForSubmissionsLimitMs()
+    {
+        return $this->time_window_for_submissions_limit_ms;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 time_window_for_submissions_limit_ms = 5;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setTimeWindowForSubmissionsLimitMs($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->time_window_for_submissions_limit_ms = $var;
 
         return $this;
     }

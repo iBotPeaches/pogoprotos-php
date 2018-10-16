@@ -25,6 +25,14 @@ class FriendshipData extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string codename = 3;</code>
      */
     private $codename = '';
+    /**
+     * Generated from protobuf field <code>string nickname = 4;</code>
+     */
+    private $nickname = '';
+    /**
+     * Generated from protobuf field <code>int64 open_trade_expire_ms = 5;</code>
+     */
+    private $open_trade_expire_ms = 0;
 
     /**
      * Constructor.
@@ -35,6 +43,8 @@ class FriendshipData extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Friends\FriendshipLevelData $friendship_level_data
      *     @type \POGOProtos\Data\Gift\GiftBoxDetails[]|\Google\Protobuf\Internal\RepeatedField $giftbox_details
      *     @type string $codename
+     *     @type string $nickname
+     *     @type int|string $open_trade_expire_ms
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +114,50 @@ class FriendshipData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->codename = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string nickname = 4;</code>
+     * @return string
+     */
+    public function getNickname()
+    {
+        return $this->nickname;
+    }
+
+    /**
+     * Generated from protobuf field <code>string nickname = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setNickname($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->nickname = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 open_trade_expire_ms = 5;</code>
+     * @return int|string
+     */
+    public function getOpenTradeExpireMs()
+    {
+        return $this->open_trade_expire_ms;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 open_trade_expire_ms = 5;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setOpenTradeExpireMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->open_trade_expire_ms = $var;
 
         return $this;
     }

@@ -29,6 +29,14 @@ class PlatformServerData extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated int32 experiment_ids = 4;</code>
      */
     private $experiment_ids;
+    /**
+     * Generated from protobuf field <code>string event_request_id = 5;</code>
+     */
+    private $event_request_id = '';
+    /**
+     * Generated from protobuf field <code>int64 server_timestamp_ms = 6;</code>
+     */
+    private $server_timestamp_ms = 0;
 
     /**
      * Constructor.
@@ -40,6 +48,8 @@ class PlatformServerData extends \Google\Protobuf\Internal\Message
      *     @type string $telemetry_id
      *     @type string $session_id
      *     @type int[]|\Google\Protobuf\Internal\RepeatedField $experiment_ids
+     *     @type string $event_request_id
+     *     @type int|string $server_timestamp_ms
      * }
      */
     public function __construct($data = NULL) {
@@ -131,6 +141,50 @@ class PlatformServerData extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
         $this->experiment_ids = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string event_request_id = 5;</code>
+     * @return string
+     */
+    public function getEventRequestId()
+    {
+        return $this->event_request_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string event_request_id = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEventRequestId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->event_request_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 server_timestamp_ms = 6;</code>
+     * @return int|string
+     */
+    public function getServerTimestampMs()
+    {
+        return $this->server_timestamp_ms;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 server_timestamp_ms = 6;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setServerTimestampMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->server_timestamp_ms = $var;
 
         return $this;
     }

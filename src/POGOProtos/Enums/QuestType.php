@@ -97,5 +97,21 @@ class QuestType
      * Generated from protobuf enum <code>QUEST_COMPLETE_BATTLE = 21;</code>
      */
     const QUEST_COMPLETE_BATTLE = 21;
+    /**
+     * Generated from protobuf enum <code>QUEST_ADD_FRIEND = 22;</code>
+     */
+    const QUEST_ADD_FRIEND = 22;
+    /**
+     * Generated from protobuf enum <code>QUEST_TRADE_POKEMON = 23;</code>
+     */
+    const QUEST_TRADE_POKEMON = 23;
+    /**
+     * Generated from protobuf enum <code>QUEST_SEND_GIFT = 24;</code>
+     */
+    const QUEST_SEND_GIFT = 24;
+    /**
+     * Generated from protobuf enum <code>QUEST_EVOLVE_INTO_POKEMON = 25;</code>
+     */
+    const QUEST_EVOLVE_INTO_POKEMON = 25;
 }
 

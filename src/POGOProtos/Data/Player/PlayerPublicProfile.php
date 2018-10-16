@@ -53,6 +53,10 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 experience = 10;</code>
      */
     private $experience = 0;
+    /**
+     * Generated from protobuf field <code>bool has_shared_ex_pass = 11;</code>
+     */
+    private $has_shared_ex_pass = false;
 
     /**
      * Constructor.
@@ -70,6 +74,7 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
      *     @type int $gym_badge_type
      *     @type \POGOProtos\Data\Player\PlayerBadge[]|\Google\Protobuf\Internal\RepeatedField $badges
      *     @type int|string $experience
+     *     @type bool $has_shared_ex_pass
      * }
      */
     public function __construct($data = NULL) {
@@ -293,6 +298,28 @@ class PlayerPublicProfile extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->experience = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool has_shared_ex_pass = 11;</code>
+     * @return bool
+     */
+    public function getHasSharedExPass()
+    {
+        return $this->has_shared_ex_pass;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool has_shared_ex_pass = 11;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setHasSharedExPass($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->has_shared_ex_pass = $var;
 
         return $this;
     }

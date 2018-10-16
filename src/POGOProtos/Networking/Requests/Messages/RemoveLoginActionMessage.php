@@ -14,13 +14,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class RemoveLoginActionMessage extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>bool success = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.IdentityProvider identity_provider = 1;</code>
      */
-    private $success = false;
-    /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Login.LoginDetail login_detail = 2;</code>
-     */
-    private $login_detail;
+    private $identity_provider = 0;
 
     /**
      * Constructor.
@@ -28,8 +24,7 @@ class RemoveLoginActionMessage extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type bool $success
-     *     @type \POGOProtos\Data\Login\LoginDetail[]|\Google\Protobuf\Internal\RepeatedField $login_detail
+     *     @type int $identity_provider
      * }
      */
     public function __construct($data = NULL) {
@@ -38,45 +33,23 @@ class RemoveLoginActionMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool success = 1;</code>
-     * @return bool
+     * Generated from protobuf field <code>.POGOProtos.Enums.IdentityProvider identity_provider = 1;</code>
+     * @return int
      */
-    public function getSuccess()
+    public function getIdentityProvider()
     {
-        return $this->success;
+        return $this->identity_provider;
     }
 
     /**
-     * Generated from protobuf field <code>bool success = 1;</code>
-     * @param bool $var
+     * Generated from protobuf field <code>.POGOProtos.Enums.IdentityProvider identity_provider = 1;</code>
+     * @param int $var
      * @return $this
      */
-    public function setSuccess($var)
+    public function setIdentityProvider($var)
     {
-        GPBUtil::checkBool($var);
-        $this->success = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Login.LoginDetail login_detail = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
-     */
-    public function getLoginDetail()
-    {
-        return $this->login_detail;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Login.LoginDetail login_detail = 2;</code>
-     * @param \POGOProtos\Data\Login\LoginDetail[]|\Google\Protobuf\Internal\RepeatedField $var
-     * @return $this
-     */
-    public function setLoginDetail($var)
-    {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Login\LoginDetail::class);
-        $this->login_detail = $arr;
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\IdentityProvider::class);
+        $this->identity_provider = $var;
 
         return $this;
     }

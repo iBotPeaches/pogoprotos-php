@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class WeatherAffinity extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.WeatherCondition weather_condition = 1;</code>
      */
     private $weather_condition = 0;
     /**
@@ -38,7 +38,7 @@ class WeatherAffinity extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.WeatherCondition weather_condition = 1;</code>
      * @return int
      */
     public function getWeatherCondition()
@@ -47,13 +47,13 @@ class WeatherAffinity extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay.WeatherCondition weather_condition = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.WeatherCondition weather_condition = 1;</code>
      * @param int $var
      * @return $this
      */
     public function setWeatherCondition($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Data\PokemonDisplay_WeatherCondition::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\WeatherCondition::class);
         $this->weather_condition = $var;
 
         return $this;

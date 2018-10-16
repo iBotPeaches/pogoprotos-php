@@ -49,6 +49,10 @@ class Status
      * Generated from protobuf enum <code>TIMEOUT_ERROR = 9;</code>
      */
     const TIMEOUT_ERROR = 9;
+    /**
+     * Generated from protobuf enum <code>RATE_LIMITED = 10;</code>
+     */
+    const RATE_LIMITED = 10;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

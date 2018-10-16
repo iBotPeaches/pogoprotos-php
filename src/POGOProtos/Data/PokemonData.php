@@ -178,9 +178,9 @@ class PokemonData extends \Google\Protobuf\Internal\Message
      */
     private $cp_multiplier_before_trading = 0.0;
     /**
-     * Generated from protobuf field <code>int32 original_owner_hash = 43;</code>
+     * Generated from protobuf field <code>int32 trading_original_owner_hash = 43;</code>
      */
-    private $original_owner_hash = 0;
+    private $trading_original_owner_hash = 0;
     /**
      * Generated from protobuf field <code>string original_owner_nickname = 44;</code>
      */
@@ -189,6 +189,10 @@ class PokemonData extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 traded_time_ms = 45;</code>
      */
     private $traded_time_ms = 0;
+    /**
+     * Generated from protobuf field <code>bool is_lucky = 46;</code>
+     */
+    private $is_lucky = false;
 
     /**
      * Constructor.
@@ -237,9 +241,10 @@ class PokemonData extends \Google\Protobuf\Internal\Message
      *     @type int|string $deployed_duration_ms
      *     @type int|string $deployed_returned_timestamp_ms
      *     @type float $cp_multiplier_before_trading
-     *     @type int $original_owner_hash
+     *     @type int $trading_original_owner_hash
      *     @type string $original_owner_nickname
      *     @type int|string $traded_time_ms
+     *     @type bool $is_lucky
      * }
      */
     public function __construct($data = NULL) {
@@ -1150,23 +1155,23 @@ class PokemonData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 original_owner_hash = 43;</code>
+     * Generated from protobuf field <code>int32 trading_original_owner_hash = 43;</code>
      * @return int
      */
-    public function getOriginalOwnerHash()
+    public function getTradingOriginalOwnerHash()
     {
-        return $this->original_owner_hash;
+        return $this->trading_original_owner_hash;
     }
 
     /**
-     * Generated from protobuf field <code>int32 original_owner_hash = 43;</code>
+     * Generated from protobuf field <code>int32 trading_original_owner_hash = 43;</code>
      * @param int $var
      * @return $this
      */
-    public function setOriginalOwnerHash($var)
+    public function setTradingOriginalOwnerHash($var)
     {
         GPBUtil::checkInt32($var);
-        $this->original_owner_hash = $var;
+        $this->trading_original_owner_hash = $var;
 
         return $this;
     }
@@ -1211,6 +1216,28 @@ class PokemonData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->traded_time_ms = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_lucky = 46;</code>
+     * @return bool
+     */
+    public function getIsLucky()
+    {
+        return $this->is_lucky;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_lucky = 46;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsLucky($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_lucky = $var;
 
         return $this;
     }

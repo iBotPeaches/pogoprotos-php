@@ -34,7 +34,7 @@ class Debug extends \Google\Protobuf\Internal\Message
      */
     private $failed_to_fetch = 0;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Callee callee_list = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Debug.Callee callee_list = 6;</code>
      */
     private $callee_list;
 
@@ -49,7 +49,7 @@ class Debug extends \Google\Protobuf\Internal\Message
      *     @type int $fetched_from_player_mapper
      *     @type int $fetched_from_status_cache
      *     @type int $failed_to_fetch
-     *     @type \POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse\Callee[]|\Google\Protobuf\Internal\RepeatedField $callee_list
+     *     @type \POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse\Debug\Callee[]|\Google\Protobuf\Internal\RepeatedField $callee_list
      * }
      */
     public function __construct($data = NULL) {
@@ -168,7 +168,7 @@ class Debug extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Callee callee_list = 6;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Debug.Callee callee_list = 6;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCalleeList()
@@ -177,13 +177,13 @@ class Debug extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Callee callee_list = 6;</code>
-     * @param \POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse\Callee[]|\Google\Protobuf\Internal\RepeatedField $var
+     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Responses.Social.GetFriendDetailsResponse.Debug.Callee callee_list = 6;</code>
+     * @param \POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse\Debug\Callee[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setCalleeList($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse\Callee::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Networking\Responses\Social\GetFriendDetailsResponse\Debug\Callee::class);
         $this->callee_list = $arr;
 
         return $this;

@@ -961,5 +961,81 @@ class PokemonMove
      * Generated from protobuf enum <code>HYDRO_CANNON = 299;</code>
      */
     const HYDRO_CANNON = 299;
+    /**
+     * Generated from protobuf enum <code>LAST_RESORT = 300;</code>
+     */
+    const LAST_RESORT = 300;
+    /**
+     * Generated from protobuf enum <code>METEOR_MASH = 301;</code>
+     */
+    const METEOR_MASH = 301;
+    /**
+     * Generated from protobuf enum <code>SKULL_BASH = 302;</code>
+     */
+    const SKULL_BASH = 302;
+    /**
+     * Generated from protobuf enum <code>ACID_SPRAY = 303;</code>
+     */
+    const ACID_SPRAY = 303;
+    /**
+     * Generated from protobuf enum <code>EARTH_POWER = 304;</code>
+     */
+    const EARTH_POWER = 304;
+    /**
+     * Generated from protobuf enum <code>CRABHAMMER = 305;</code>
+     */
+    const CRABHAMMER = 305;
+    /**
+     * Generated from protobuf enum <code>LUNGE = 306;</code>
+     */
+    const LUNGE = 306;
+    /**
+     * Generated from protobuf enum <code>CRUSH_CLAW = 307;</code>
+     */
+    const CRUSH_CLAW = 307;
+    /**
+     * Generated from protobuf enum <code>OCTAZOOKA = 308;</code>
+     */
+    const OCTAZOOKA = 308;
+    /**
+     * Generated from protobuf enum <code>MIRROR_SHOT = 309;</code>
+     */
+    const MIRROR_SHOT = 309;
+    /**
+     * Generated from protobuf enum <code>SUPER_POWER = 310;</code>
+     */
+    const SUPER_POWER = 310;
+    /**
+     * Generated from protobuf enum <code>FELL_STINGER = 311;</code>
+     */
+    const FELL_STINGER = 311;
+    /**
+     * Generated from protobuf enum <code>LEAF_TORNADO = 312;</code>
+     */
+    const LEAF_TORNADO = 312;
+    /**
+     * Generated from protobuf enum <code>LEECH_LIFE = 313;</code>
+     */
+    const LEECH_LIFE = 313;
+    /**
+     * Generated from protobuf enum <code>DRAIN_PUNCH = 314;</code>
+     */
+    const DRAIN_PUNCH = 314;
+    /**
+     * Generated from protobuf enum <code>SHADOW_BONE = 315;</code>
+     */
+    const SHADOW_BONE = 315;
+    /**
+     * Generated from protobuf enum <code>MUDDY_WATER = 316;</code>
+     */
+    const MUDDY_WATER = 316;
+    /**
+     * Generated from protobuf enum <code>BLAZE_KICK = 317;</code>
+     */
+    const BLAZE_KICK = 317;
+    /**
+     * Generated from protobuf enum <code>RAZOR_SHELL = 318;</code>
+     */
+    const RAZOR_SHELL = 318;
 }
 

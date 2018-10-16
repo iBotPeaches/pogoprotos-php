@@ -18,11 +18,11 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
      */
     private $next_camera = '';
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraInterpolation interpolation = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.CameraInterpolation interpolation = 2;</code>
      */
     private $interpolation;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraTarget target_type = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.CameraTarget target_type = 3;</code>
      */
     private $target_type;
     /**
@@ -130,7 +130,7 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraInterpolation interpolation = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.CameraInterpolation interpolation = 2;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getInterpolation()
@@ -139,20 +139,20 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraInterpolation interpolation = 2;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.CameraInterpolation interpolation = 2;</code>
      * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setInterpolation($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Settings\Master\CameraSettings\CameraInterpolation::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\CameraInterpolation::class);
         $this->interpolation = $arr;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraTarget target_type = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.CameraTarget target_type = 3;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getTargetType()
@@ -161,13 +161,13 @@ class CameraSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.CameraSettings.CameraTarget target_type = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.CameraTarget target_type = 3;</code>
      * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTargetType($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Settings\Master\CameraSettings\CameraTarget::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\CameraTarget::class);
         $this->target_type = $arr;
 
         return $this;

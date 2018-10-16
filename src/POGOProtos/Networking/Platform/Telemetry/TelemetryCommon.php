@@ -21,6 +21,14 @@ class TelemetryCommon extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string correlation_vector = 2;</code>
      */
     private $correlation_vector = '';
+    /**
+     * Generated from protobuf field <code>string event_id = 3;</code>
+     */
+    private $event_id = '';
+    /**
+     * Generated from protobuf field <code>int64 client_timestamp_ms = 4;</code>
+     */
+    private $client_timestamp_ms = 0;
 
     /**
      * Constructor.
@@ -30,6 +38,8 @@ class TelemetryCommon extends \Google\Protobuf\Internal\Message
      *
      *     @type int|string $timestamp
      *     @type string $correlation_vector
+     *     @type string $event_id
+     *     @type int|string $client_timestamp_ms
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +87,50 @@ class TelemetryCommon extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->correlation_vector = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string event_id = 3;</code>
+     * @return string
+     */
+    public function getEventId()
+    {
+        return $this->event_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string event_id = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEventId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->event_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 client_timestamp_ms = 4;</code>
+     * @return int|string
+     */
+    public function getClientTimestampMs()
+    {
+        return $this->client_timestamp_ms;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 client_timestamp_ms = 4;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setClientTimestampMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->client_timestamp_ms = $var;
 
         return $this;
     }

@@ -25,6 +25,10 @@ class PlayerReputation extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.PlayerReputation.CheatReputation cheat_reputation = 3;</code>
      */
     private $cheat_reputation;
+    /**
+     * Generated from protobuf field <code>bool is_minor = 4;</code>
+     */
+    private $is_minor = false;
 
     /**
      * Constructor.
@@ -35,6 +39,7 @@ class PlayerReputation extends \Google\Protobuf\Internal\Message
      *     @type int|string $account_age_ms
      *     @type int|string $player_level
      *     @type int[]|\Google\Protobuf\Internal\RepeatedField $cheat_reputation
+     *     @type bool $is_minor
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +109,28 @@ class PlayerReputation extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Data\Player\PlayerReputation\CheatReputation::class);
         $this->cheat_reputation = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_minor = 4;</code>
+     * @return bool
+     */
+    public function getIsMinor()
+    {
+        return $this->is_minor;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_minor = 4;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsMinor($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_minor = $var;
 
         return $this;
     }

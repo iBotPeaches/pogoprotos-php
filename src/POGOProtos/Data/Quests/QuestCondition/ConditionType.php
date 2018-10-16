@@ -85,6 +85,14 @@ class ConditionType
      * Generated from protobuf enum <code>WITH_WIN_BATTLE_STATUS = 18;</code>
      */
     const WITH_WIN_BATTLE_STATUS = 18;
+    /**
+     * Generated from protobuf enum <code>WITH_NEW_FRIEND = 19;</code>
+     */
+    const WITH_NEW_FRIEND = 19;
+    /**
+     * Generated from protobuf enum <code>WITH_DAYS_IN_A_ROW = 20;</code>
+     */
+    const WITH_DAYS_IN_A_ROW = 20;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

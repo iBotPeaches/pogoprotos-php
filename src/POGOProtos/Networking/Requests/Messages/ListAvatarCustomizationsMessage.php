@@ -22,7 +22,7 @@ class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
      */
     private $slot;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter filters = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Filter filters = 3;</code>
      */
     private $filters;
     /**
@@ -97,7 +97,7 @@ class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter filters = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Filter filters = 3;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getFilters()
@@ -106,13 +106,13 @@ class ListAvatarCustomizationsMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Networking.Requests.Messages.ListAvatarCustomizationsMessage.Filter filters = 3;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.Filter filters = 3;</code>
      * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setFilters($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Networking\Requests\Messages\ListAvatarCustomizationsMessage\Filter::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\Filter::class);
         $this->filters = $arr;
 
         return $this;
