@@ -9,73 +9,11 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Usage unknown.
- * - Maybe used in envelope (?)
- *
  * Generated from protobuf message <code>POGOProtos.Inventory.InventoryKey</code>
  */
 class InventoryKey extends \Google\Protobuf\Internal\Message
 {
-    /**
-     * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
-     */
-    private $pokemon_id = 0;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 2;</code>
-     */
-    private $item = 0;
-    /**
-     * Generated from protobuf field <code>int32 pokedex_entry_id = 3;</code>
-     */
-    private $pokedex_entry_id = 0;
-    /**
-     * Generated from protobuf field <code>bool player_stats = 4;</code>
-     */
-    private $player_stats = false;
-    /**
-     * Generated from protobuf field <code>bool player_currency = 5;</code>
-     */
-    private $player_currency = false;
-    /**
-     * Generated from protobuf field <code>bool player_camera = 6;</code>
-     */
-    private $player_camera = false;
-    /**
-     * Generated from protobuf field <code>bool inventory_upgrades = 7;</code>
-     */
-    private $inventory_upgrades = false;
-    /**
-     * Generated from protobuf field <code>bool applied_items = 8;</code>
-     */
-    private $applied_items = false;
-    /**
-     * Generated from protobuf field <code>bool egg_incubators = 9;</code>
-     */
-    private $egg_incubators = false;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonFamilyId pokemon_family_id = 10;</code>
-     */
-    private $pokemon_family_id = 0;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Enums.QuestType quest_type = 11;</code>
-     */
-    private $quest_type = 0;
-    /**
-     * Generated from protobuf field <code>string avatar_template_id = 12;</code>
-     */
-    private $avatar_template_id = '';
-    /**
-     * Generated from protobuf field <code>bool raid_tickets = 13;</code>
-     */
-    private $raid_tickets = false;
-    /**
-     * Generated from protobuf field <code>bool quests = 14;</code>
-     */
-    private $quests = false;
-    /**
-     * Generated from protobuf field <code>bool gift_boxes = 15;</code>
-     */
-    private $gift_boxes = false;
+    protected $Type;
 
     /**
      * Constructor.
@@ -111,7 +49,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getPokemonId()
     {
-        return $this->pokemon_id;
+        return $this->readOneof(1);
     }
 
     /**
@@ -122,7 +60,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setPokemonId($var)
     {
         GPBUtil::checkUint64($var);
-        $this->pokemon_id = $var;
+        $this->writeOneof(1, $var);
 
         return $this;
     }
@@ -133,7 +71,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getItem()
     {
-        return $this->item;
+        return $this->readOneof(2);
     }
 
     /**
@@ -144,7 +82,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setItem($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
-        $this->item = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -155,7 +93,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getPokedexEntryId()
     {
-        return $this->pokedex_entry_id;
+        return $this->readOneof(3);
     }
 
     /**
@@ -166,7 +104,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setPokedexEntryId($var)
     {
         GPBUtil::checkInt32($var);
-        $this->pokedex_entry_id = $var;
+        $this->writeOneof(3, $var);
 
         return $this;
     }
@@ -177,7 +115,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getPlayerStats()
     {
-        return $this->player_stats;
+        return $this->readOneof(4);
     }
 
     /**
@@ -188,7 +126,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setPlayerStats($var)
     {
         GPBUtil::checkBool($var);
-        $this->player_stats = $var;
+        $this->writeOneof(4, $var);
 
         return $this;
     }
@@ -199,7 +137,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getPlayerCurrency()
     {
-        return $this->player_currency;
+        return $this->readOneof(5);
     }
 
     /**
@@ -210,7 +148,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setPlayerCurrency($var)
     {
         GPBUtil::checkBool($var);
-        $this->player_currency = $var;
+        $this->writeOneof(5, $var);
 
         return $this;
     }
@@ -221,7 +159,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getPlayerCamera()
     {
-        return $this->player_camera;
+        return $this->readOneof(6);
     }
 
     /**
@@ -232,7 +170,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setPlayerCamera($var)
     {
         GPBUtil::checkBool($var);
-        $this->player_camera = $var;
+        $this->writeOneof(6, $var);
 
         return $this;
     }
@@ -243,7 +181,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getInventoryUpgrades()
     {
-        return $this->inventory_upgrades;
+        return $this->readOneof(7);
     }
 
     /**
@@ -254,7 +192,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setInventoryUpgrades($var)
     {
         GPBUtil::checkBool($var);
-        $this->inventory_upgrades = $var;
+        $this->writeOneof(7, $var);
 
         return $this;
     }
@@ -265,7 +203,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getAppliedItems()
     {
-        return $this->applied_items;
+        return $this->readOneof(8);
     }
 
     /**
@@ -276,7 +214,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setAppliedItems($var)
     {
         GPBUtil::checkBool($var);
-        $this->applied_items = $var;
+        $this->writeOneof(8, $var);
 
         return $this;
     }
@@ -287,7 +225,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getEggIncubators()
     {
-        return $this->egg_incubators;
+        return $this->readOneof(9);
     }
 
     /**
@@ -298,7 +236,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setEggIncubators($var)
     {
         GPBUtil::checkBool($var);
-        $this->egg_incubators = $var;
+        $this->writeOneof(9, $var);
 
         return $this;
     }
@@ -309,7 +247,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getPokemonFamilyId()
     {
-        return $this->pokemon_family_id;
+        return $this->readOneof(10);
     }
 
     /**
@@ -320,7 +258,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setPokemonFamilyId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonFamilyId::class);
-        $this->pokemon_family_id = $var;
+        $this->writeOneof(10, $var);
 
         return $this;
     }
@@ -331,7 +269,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getQuestType()
     {
-        return $this->quest_type;
+        return $this->readOneof(11);
     }
 
     /**
@@ -342,7 +280,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setQuestType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\QuestType::class);
-        $this->quest_type = $var;
+        $this->writeOneof(11, $var);
 
         return $this;
     }
@@ -353,7 +291,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getAvatarTemplateId()
     {
-        return $this->avatar_template_id;
+        return $this->readOneof(12);
     }
 
     /**
@@ -364,7 +302,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setAvatarTemplateId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->avatar_template_id = $var;
+        $this->writeOneof(12, $var);
 
         return $this;
     }
@@ -375,7 +313,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getRaidTickets()
     {
-        return $this->raid_tickets;
+        return $this->readOneof(13);
     }
 
     /**
@@ -386,7 +324,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setRaidTickets($var)
     {
         GPBUtil::checkBool($var);
-        $this->raid_tickets = $var;
+        $this->writeOneof(13, $var);
 
         return $this;
     }
@@ -397,7 +335,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getQuests()
     {
-        return $this->quests;
+        return $this->readOneof(14);
     }
 
     /**
@@ -408,7 +346,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setQuests($var)
     {
         GPBUtil::checkBool($var);
-        $this->quests = $var;
+        $this->writeOneof(14, $var);
 
         return $this;
     }
@@ -419,7 +357,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      */
     public function getGiftBoxes()
     {
-        return $this->gift_boxes;
+        return $this->readOneof(15);
     }
 
     /**
@@ -430,9 +368,17 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     public function setGiftBoxes($var)
     {
         GPBUtil::checkBool($var);
-        $this->gift_boxes = $var;
+        $this->writeOneof(15, $var);
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->whichOneof("Type");
     }
 
 }

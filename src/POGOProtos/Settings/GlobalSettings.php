@@ -117,6 +117,10 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Settings.ProbeSettings probe_settings = 31;</code>
      */
     private $probe_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.PokecoinPurchaseDisplaySettings purchased_settings = 32;</code>
+     */
+    private $purchased_settings = null;
 
     /**
      * Constructor.
@@ -150,6 +154,7 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Settings\UpsightLoggingSettings $upsight_logging_settings
      *     @type \POGOProtos\Settings\BackgroundModeGlobalSettings $bgmode_global_settings
      *     @type \POGOProtos\Settings\ProbeSettings $probe_settings
+     *     @type \POGOProtos\Settings\PokecoinPurchaseDisplaySettings $purchased_settings
      * }
      */
     public function __construct($data = NULL) {
@@ -725,6 +730,28 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\ProbeSettings::class);
         $this->probe_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.PokecoinPurchaseDisplaySettings purchased_settings = 32;</code>
+     * @return \POGOProtos\Settings\PokecoinPurchaseDisplaySettings
+     */
+    public function getPurchasedSettings()
+    {
+        return $this->purchased_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.PokecoinPurchaseDisplaySettings purchased_settings = 32;</code>
+     * @param \POGOProtos\Settings\PokecoinPurchaseDisplaySettings $var
+     * @return $this
+     */
+    public function setPurchasedSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\PokecoinPurchaseDisplaySettings::class);
+        $this->purchased_settings = $var;
 
         return $this;
     }

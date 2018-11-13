@@ -17,22 +17,7 @@ class QuestPrecondition extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestPrecondition.QuestPreconditionType type = 1;</code>
      */
     private $type = 0;
-    /**
-     * Generated from protobuf field <code>string quest_template_id = 2;</code>
-     */
-    private $quest_template_id = '';
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestPrecondition.Level level = 3;</code>
-     */
-    private $level = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestPrecondition.Medal medal = 4;</code>
-     */
-    private $medal = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestPrecondition.Quests quests = 5;</code>
-     */
-    private $quests = null;
+    protected $Condition;
 
     /**
      * Constructor.
@@ -80,7 +65,7 @@ class QuestPrecondition extends \Google\Protobuf\Internal\Message
      */
     public function getQuestTemplateId()
     {
-        return $this->quest_template_id;
+        return $this->readOneof(2);
     }
 
     /**
@@ -91,7 +76,7 @@ class QuestPrecondition extends \Google\Protobuf\Internal\Message
     public function setQuestTemplateId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->quest_template_id = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -102,7 +87,7 @@ class QuestPrecondition extends \Google\Protobuf\Internal\Message
      */
     public function getLevel()
     {
-        return $this->level;
+        return $this->readOneof(3);
     }
 
     /**
@@ -113,7 +98,7 @@ class QuestPrecondition extends \Google\Protobuf\Internal\Message
     public function setLevel($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestPrecondition_Level::class);
-        $this->level = $var;
+        $this->writeOneof(3, $var);
 
         return $this;
     }
@@ -124,7 +109,7 @@ class QuestPrecondition extends \Google\Protobuf\Internal\Message
      */
     public function getMedal()
     {
-        return $this->medal;
+        return $this->readOneof(4);
     }
 
     /**
@@ -135,7 +120,7 @@ class QuestPrecondition extends \Google\Protobuf\Internal\Message
     public function setMedal($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestPrecondition_Medal::class);
-        $this->medal = $var;
+        $this->writeOneof(4, $var);
 
         return $this;
     }
@@ -146,7 +131,7 @@ class QuestPrecondition extends \Google\Protobuf\Internal\Message
      */
     public function getQuests()
     {
-        return $this->quests;
+        return $this->readOneof(5);
     }
 
     /**
@@ -157,9 +142,17 @@ class QuestPrecondition extends \Google\Protobuf\Internal\Message
     public function setQuests($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestPrecondition_Quests::class);
-        $this->quests = $var;
+        $this->writeOneof(5, $var);
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCondition()
+    {
+        return $this->whichOneof("Condition");
     }
 
 }

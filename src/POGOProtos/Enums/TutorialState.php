@@ -34,9 +34,9 @@ class TutorialState
      */
     const POKEMON_BERRY = 5;
     /**
-     * Generated from protobuf enum <code>USE_ITEM_TUTORIAL = 6;</code>
+     * Generated from protobuf enum <code>USE_ITEM_TUTORIAL_STATE = 6;</code>
      */
-    const USE_ITEM_TUTORIAL = 6;
+    const USE_ITEM_TUTORIAL_STATE = 6;
     /**
      * Generated from protobuf enum <code>FIRST_TIME_EXPERIENCE_COMPLETE = 7;</code>
      */

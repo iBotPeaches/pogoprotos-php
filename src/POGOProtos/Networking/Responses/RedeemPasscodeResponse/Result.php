@@ -29,6 +29,10 @@ class Result
      * Generated from protobuf enum <code>ALREADY_REDEEMED = 4;</code>
      */
     const ALREADY_REDEEMED = 4;
+    /**
+     * Generated from protobuf enum <code>OVER_PLAYER_REDEMPTION_LIMIT = 5;</code>
+     */
+    const OVER_PLAYER_REDEMPTION_LIMIT = 5;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

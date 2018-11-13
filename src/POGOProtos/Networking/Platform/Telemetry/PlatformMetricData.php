@@ -18,25 +18,10 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
      */
     private $common_telemetry = null;
     /**
-     * Generated from protobuf field <code>int64 long_value = 2;</code>
-     */
-    private $long_value = 0;
-    /**
-     * Generated from protobuf field <code>double double_value = 3;</code>
-     */
-    private $double_value = 0.0;
-    /**
-     * Generated from protobuf field <code>bool boolean_value = 4;</code>
-     */
-    private $boolean_value = false;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution distribution = 5;</code>
-     */
-    private $distribution = null;
-    /**
      * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData.Kind metric_kind = 6;</code>
      */
     private $metric_kind = 0;
+    protected $DatapointValue;
 
     /**
      * Constructor.
@@ -85,7 +70,7 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
      */
     public function getLongValue()
     {
-        return $this->long_value;
+        return $this->readOneof(2);
     }
 
     /**
@@ -96,7 +81,7 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
     public function setLongValue($var)
     {
         GPBUtil::checkInt64($var);
-        $this->long_value = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -107,7 +92,7 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
      */
     public function getDoubleValue()
     {
-        return $this->double_value;
+        return $this->readOneof(3);
     }
 
     /**
@@ -118,7 +103,7 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
     public function setDoubleValue($var)
     {
         GPBUtil::checkDouble($var);
-        $this->double_value = $var;
+        $this->writeOneof(3, $var);
 
         return $this;
     }
@@ -129,7 +114,7 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
      */
     public function getBooleanValue()
     {
-        return $this->boolean_value;
+        return $this->readOneof(4);
     }
 
     /**
@@ -140,7 +125,7 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
     public function setBooleanValue($var)
     {
         GPBUtil::checkBool($var);
-        $this->boolean_value = $var;
+        $this->writeOneof(4, $var);
 
         return $this;
     }
@@ -151,7 +136,7 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
      */
     public function getDistribution()
     {
-        return $this->distribution;
+        return $this->readOneof(5);
     }
 
     /**
@@ -162,7 +147,7 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
     public function setDistribution($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\Distribution::class);
-        $this->distribution = $var;
+        $this->writeOneof(5, $var);
 
         return $this;
     }
@@ -187,6 +172,14 @@ class PlatformMetricData extends \Google\Protobuf\Internal\Message
         $this->metric_kind = $var;
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDatapointValue()
+    {
+        return $this->whichOneof("DatapointValue");
     }
 
 }

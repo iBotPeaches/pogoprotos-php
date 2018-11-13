@@ -10,9 +10,9 @@ namespace POGOProtos\Enums;
 class NotificationCategory
 {
     /**
-     * Generated from protobuf enum <code>UNSET_NotificationCategory = 0;</code>
+     * Generated from protobuf enum <code>UNSET_NOTIFICATION_CATEGORY = 0;</code>
      */
-    const UNSET_NotificationCategory = 0;
+    const UNSET_NOTIFICATION_CATEGORY = 0;
     /**
      * Generated from protobuf enum <code>GYM_REMOVAL = 1;</code>
      */
@@ -22,17 +22,17 @@ class NotificationCategory
      */
     const POKEMON_HUNGRY = 2;
     /**
-     * Generated from protobuf enum <code>POKEMON_WON = 3;</code>
+     * Generated from protobuf enum <code>EXCLUSIVE_RAID_INVITE = 3;</code>
      */
-    const POKEMON_WON = 3;
+    const EXCLUSIVE_RAID_INVITE = 3;
     /**
-     * Generated from protobuf enum <code>EXCLUSIVE_RAID_INVITE = 4;</code>
+     * Generated from protobuf enum <code>EXCLUSIVE_RAID_CANCELLATION = 4;</code>
      */
-    const EXCLUSIVE_RAID_INVITE = 4;
+    const EXCLUSIVE_RAID_CANCELLATION = 4;
     /**
-     * Generated from protobuf enum <code>EXCLUSIVE_RAID_CANCELLATION = 5;</code>
+     * Generated from protobuf enum <code>SHARED_EXCLUSIVE_RAID_INVITE = 5;</code>
      */
-    const EXCLUSIVE_RAID_CANCELLATION = 5;
+    const SHARED_EXCLUSIVE_RAID_INVITE = 5;
     /**
      * Generated from protobuf enum <code>GIFTBOX_INCOMING = 6;</code>
      */
@@ -50,20 +50,24 @@ class NotificationCategory
      */
     const GYM_BATTLE_FRIENDSHIP_INCREMENT = 9;
     /**
-     * Generated from protobuf enum <code>SHARED_EXCLUSIVE_RAID_INVITE = 10;</code>
+     * Generated from protobuf enum <code>BGMODE_EGG_HATCH = 10;</code>
      */
-    const SHARED_EXCLUSIVE_RAID_INVITE = 10;
+    const BGMODE_EGG_HATCH = 10;
     /**
-     * Generated from protobuf enum <code>BGMODE_EGG_HATCH = 11;</code>
+     * Generated from protobuf enum <code>BGMODE_BUDDY_CANDY = 11;</code>
      */
-    const BGMODE_EGG_HATCH = 11;
+    const BGMODE_BUDDY_CANDY = 11;
     /**
-     * Generated from protobuf enum <code>BGMODE_BUDDY_CANDY = 12;</code>
+     * Generated from protobuf enum <code>BGMODE_WEEKLY_FITNESS_REPORT = 12;</code>
      */
-    const BGMODE_BUDDY_CANDY = 12;
+    const BGMODE_WEEKLY_FITNESS_REPORT = 12;
     /**
-     * Generated from protobuf enum <code>BGMODE_WEEKLY_FITNESS_REPORT = 13;</code>
+     * Generated from protobuf enum <code>FRIEND_INVITE_RECEIVED = 13;</code>
      */
-    const BGMODE_WEEKLY_FITNESS_REPORT = 13;
+    const FRIEND_INVITE_RECEIVED = 13;
+    /**
+     * Generated from protobuf enum <code>FRIEND_INVITE_ACCEPTED = 14;</code>
+     */
+    const FRIEND_INVITE_ACCEPTED = 14;
 }
 

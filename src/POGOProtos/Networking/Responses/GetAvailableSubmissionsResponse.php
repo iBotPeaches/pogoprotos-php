@@ -30,7 +30,7 @@ class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
      */
     private $is_feature_enabled = false;
     /**
-     * Generated from protobuf field <code>int32 time_window_for_submissions_limit_ms = 5;</code>
+     * Generated from protobuf field <code>int64 time_window_for_submissions_limit_ms = 5;</code>
      */
     private $time_window_for_submissions_limit_ms = 0;
 
@@ -44,7 +44,7 @@ class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
      *     @type int $min_player_level
      *     @type bool $has_valid_email
      *     @type bool $is_feature_enabled
-     *     @type int $time_window_for_submissions_limit_ms
+     *     @type int|string $time_window_for_submissions_limit_ms
      * }
      */
     public function __construct($data = NULL) {
@@ -141,8 +141,8 @@ class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 time_window_for_submissions_limit_ms = 5;</code>
-     * @return int
+     * Generated from protobuf field <code>int64 time_window_for_submissions_limit_ms = 5;</code>
+     * @return int|string
      */
     public function getTimeWindowForSubmissionsLimitMs()
     {
@@ -150,13 +150,13 @@ class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 time_window_for_submissions_limit_ms = 5;</code>
-     * @param int $var
+     * Generated from protobuf field <code>int64 time_window_for_submissions_limit_ms = 5;</code>
+     * @param int|string $var
      * @return $this
      */
     public function setTimeWindowForSubmissionsLimitMs($var)
     {
-        GPBUtil::checkInt32($var);
+        GPBUtil::checkInt64($var);
         $this->time_window_for_submissions_limit_ms = $var;
 
         return $this;

@@ -13,18 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  */
 class BucketOptions extends \Google\Protobuf\Internal\Message
 {
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.LinearBuckets linear_buckets = 1;</code>
-     */
-    private $linear_buckets = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.ExponentialBuckets exponential_buckets = 2;</code>
-     */
-    private $exponential_buckets = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.Distribution.ExplicitBuckets explicit_buckets = 3;</code>
-     */
-    private $explicit_buckets = null;
+    protected $BucketType;
 
     /**
      * Constructor.
@@ -48,7 +37,7 @@ class BucketOptions extends \Google\Protobuf\Internal\Message
      */
     public function getLinearBuckets()
     {
-        return $this->linear_buckets;
+        return $this->readOneof(1);
     }
 
     /**
@@ -59,7 +48,7 @@ class BucketOptions extends \Google\Protobuf\Internal\Message
     public function setLinearBuckets($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\Distribution_LinearBuckets::class);
-        $this->linear_buckets = $var;
+        $this->writeOneof(1, $var);
 
         return $this;
     }
@@ -70,7 +59,7 @@ class BucketOptions extends \Google\Protobuf\Internal\Message
      */
     public function getExponentialBuckets()
     {
-        return $this->exponential_buckets;
+        return $this->readOneof(2);
     }
 
     /**
@@ -81,7 +70,7 @@ class BucketOptions extends \Google\Protobuf\Internal\Message
     public function setExponentialBuckets($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\Distribution_ExponentialBuckets::class);
-        $this->exponential_buckets = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -92,7 +81,7 @@ class BucketOptions extends \Google\Protobuf\Internal\Message
      */
     public function getExplicitBuckets()
     {
-        return $this->explicit_buckets;
+        return $this->readOneof(3);
     }
 
     /**
@@ -103,9 +92,17 @@ class BucketOptions extends \Google\Protobuf\Internal\Message
     public function setExplicitBuckets($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\Distribution_ExplicitBuckets::class);
-        $this->explicit_buckets = $var;
+        $this->writeOneof(3, $var);
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBucketType()
+    {
+        return $this->whichOneof("BucketType");
     }
 
 }

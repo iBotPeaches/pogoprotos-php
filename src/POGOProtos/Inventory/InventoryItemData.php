@@ -13,66 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  */
 class InventoryItemData extends \Google\Protobuf\Internal\Message
 {
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_data = 1;</code>
-     */
-    private $pokemon_data = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemData item = 2;</code>
-     */
-    private $item = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokedexEntry pokedex_entry = 3;</code>
-     */
-    private $pokedex_entry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerStats player_stats = 4;</code>
-     */
-    private $player_stats = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerCurrency player_currency = 5;</code>
-     */
-    private $player_currency = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Player.PlayerCamera player_camera = 6;</code>
-     */
-    private $player_camera = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryUpgrades inventory_upgrades = 7;</code>
-     */
-    private $inventory_upgrades = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.AppliedItems applied_items = 8;</code>
-     */
-    private $applied_items = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.EggIncubators egg_incubators = 9;</code>
-     */
-    private $egg_incubators = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.Candy candy = 10;</code>
-     */
-    private $candy = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quest quest = 11;</code>
-     */
-    private $quest = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Avatar.AvatarItem avatar_item = 12;</code>
-     */
-    private $avatar_item = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.RaidTickets raid_tickets = 13;</code>
-     */
-    private $raid_tickets = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.Quests quests = 14;</code>
-     */
-    private $quests = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Gift.GiftBoxes gift_boxes = 15;</code>
-     */
-    private $gift_boxes = null;
+    protected $Type;
 
     /**
      * Constructor.
@@ -108,7 +49,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getPokemonData()
     {
-        return $this->pokemon_data;
+        return $this->readOneof(1);
     }
 
     /**
@@ -119,7 +60,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setPokemonData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
-        $this->pokemon_data = $var;
+        $this->writeOneof(1, $var);
 
         return $this;
     }
@@ -130,7 +71,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getItem()
     {
-        return $this->item;
+        return $this->readOneof(2);
     }
 
     /**
@@ -141,7 +82,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setItem($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\Item\ItemData::class);
-        $this->item = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -152,7 +93,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getPokedexEntry()
     {
-        return $this->pokedex_entry;
+        return $this->readOneof(3);
     }
 
     /**
@@ -163,7 +104,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setPokedexEntry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokedexEntry::class);
-        $this->pokedex_entry = $var;
+        $this->writeOneof(3, $var);
 
         return $this;
     }
@@ -174,7 +115,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getPlayerStats()
     {
-        return $this->player_stats;
+        return $this->readOneof(4);
     }
 
     /**
@@ -185,7 +126,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setPlayerStats($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerStats::class);
-        $this->player_stats = $var;
+        $this->writeOneof(4, $var);
 
         return $this;
     }
@@ -196,7 +137,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getPlayerCurrency()
     {
-        return $this->player_currency;
+        return $this->readOneof(5);
     }
 
     /**
@@ -207,7 +148,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setPlayerCurrency($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerCurrency::class);
-        $this->player_currency = $var;
+        $this->writeOneof(5, $var);
 
         return $this;
     }
@@ -218,7 +159,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getPlayerCamera()
     {
-        return $this->player_camera;
+        return $this->readOneof(6);
     }
 
     /**
@@ -229,7 +170,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setPlayerCamera($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\PlayerCamera::class);
-        $this->player_camera = $var;
+        $this->writeOneof(6, $var);
 
         return $this;
     }
@@ -240,7 +181,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getInventoryUpgrades()
     {
-        return $this->inventory_upgrades;
+        return $this->readOneof(7);
     }
 
     /**
@@ -251,7 +192,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setInventoryUpgrades($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\InventoryUpgrades::class);
-        $this->inventory_upgrades = $var;
+        $this->writeOneof(7, $var);
 
         return $this;
     }
@@ -262,7 +203,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getAppliedItems()
     {
-        return $this->applied_items;
+        return $this->readOneof(8);
     }
 
     /**
@@ -273,7 +214,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setAppliedItems($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\AppliedItems::class);
-        $this->applied_items = $var;
+        $this->writeOneof(8, $var);
 
         return $this;
     }
@@ -284,7 +225,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getEggIncubators()
     {
-        return $this->egg_incubators;
+        return $this->readOneof(9);
     }
 
     /**
@@ -295,7 +236,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setEggIncubators($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\EggIncubators::class);
-        $this->egg_incubators = $var;
+        $this->writeOneof(9, $var);
 
         return $this;
     }
@@ -306,7 +247,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getCandy()
     {
-        return $this->candy;
+        return $this->readOneof(10);
     }
 
     /**
@@ -317,7 +258,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setCandy($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\Candy::class);
-        $this->candy = $var;
+        $this->writeOneof(10, $var);
 
         return $this;
     }
@@ -328,7 +269,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getQuest()
     {
-        return $this->quest;
+        return $this->readOneof(11);
     }
 
     /**
@@ -339,7 +280,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setQuest($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\Quest::class);
-        $this->quest = $var;
+        $this->writeOneof(11, $var);
 
         return $this;
     }
@@ -350,7 +291,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getAvatarItem()
     {
-        return $this->avatar_item;
+        return $this->readOneof(12);
     }
 
     /**
@@ -361,7 +302,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setAvatarItem($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Avatar\AvatarItem::class);
-        $this->avatar_item = $var;
+        $this->writeOneof(12, $var);
 
         return $this;
     }
@@ -372,7 +313,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getRaidTickets()
     {
-        return $this->raid_tickets;
+        return $this->readOneof(13);
     }
 
     /**
@@ -383,7 +324,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setRaidTickets($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\RaidTickets::class);
-        $this->raid_tickets = $var;
+        $this->writeOneof(13, $var);
 
         return $this;
     }
@@ -394,7 +335,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getQuests()
     {
-        return $this->quests;
+        return $this->readOneof(14);
     }
 
     /**
@@ -405,7 +346,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setQuests($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\Quests::class);
-        $this->quests = $var;
+        $this->writeOneof(14, $var);
 
         return $this;
     }
@@ -416,7 +357,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      */
     public function getGiftBoxes()
     {
-        return $this->gift_boxes;
+        return $this->readOneof(15);
     }
 
     /**
@@ -427,9 +368,17 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     public function setGiftBoxes($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Gift\GiftBoxes::class);
-        $this->gift_boxes = $var;
+        $this->writeOneof(15, $var);
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->whichOneof("Type");
     }
 
 }

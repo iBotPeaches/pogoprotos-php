@@ -17,34 +17,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.Type type = 1;</code>
      */
     private $type = 0;
-    /**
-     * Generated from protobuf field <code>int32 exp = 2;</code>
-     */
-    private $exp = 0;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.ItemReward item = 3;</code>
-     */
-    private $item = null;
-    /**
-     * Generated from protobuf field <code>int32 stardust = 4;</code>
-     */
-    private $stardust = 0;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.PokemonCandyReward candy = 5;</code>
-     */
-    private $candy = null;
-    /**
-     * Generated from protobuf field <code>string avatar_template_id = 6;</code>
-     */
-    private $avatar_template_id = '';
-    /**
-     * Generated from protobuf field <code>string quest_template_id = 7;</code>
-     */
-    private $quest_template_id = '';
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestReward.PokemonEncounterReward pokemon_encounter = 8;</code>
-     */
-    private $pokemon_encounter = null;
+    protected $Reward;
 
     /**
      * Constructor.
@@ -95,7 +68,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
      */
     public function getExp()
     {
-        return $this->exp;
+        return $this->readOneof(2);
     }
 
     /**
@@ -106,7 +79,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     public function setExp($var)
     {
         GPBUtil::checkInt32($var);
-        $this->exp = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -117,7 +90,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
      */
     public function getItem()
     {
-        return $this->item;
+        return $this->readOneof(3);
     }
 
     /**
@@ -128,7 +101,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     public function setItem($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestReward_ItemReward::class);
-        $this->item = $var;
+        $this->writeOneof(3, $var);
 
         return $this;
     }
@@ -139,7 +112,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
      */
     public function getStardust()
     {
-        return $this->stardust;
+        return $this->readOneof(4);
     }
 
     /**
@@ -150,7 +123,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     public function setStardust($var)
     {
         GPBUtil::checkInt32($var);
-        $this->stardust = $var;
+        $this->writeOneof(4, $var);
 
         return $this;
     }
@@ -161,7 +134,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
      */
     public function getCandy()
     {
-        return $this->candy;
+        return $this->readOneof(5);
     }
 
     /**
@@ -172,7 +145,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     public function setCandy($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestReward_PokemonCandyReward::class);
-        $this->candy = $var;
+        $this->writeOneof(5, $var);
 
         return $this;
     }
@@ -183,7 +156,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
      */
     public function getAvatarTemplateId()
     {
-        return $this->avatar_template_id;
+        return $this->readOneof(6);
     }
 
     /**
@@ -194,7 +167,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     public function setAvatarTemplateId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->avatar_template_id = $var;
+        $this->writeOneof(6, $var);
 
         return $this;
     }
@@ -205,7 +178,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
      */
     public function getQuestTemplateId()
     {
-        return $this->quest_template_id;
+        return $this->readOneof(7);
     }
 
     /**
@@ -216,7 +189,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     public function setQuestTemplateId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->quest_template_id = $var;
+        $this->writeOneof(7, $var);
 
         return $this;
     }
@@ -227,7 +200,7 @@ class QuestReward extends \Google\Protobuf\Internal\Message
      */
     public function getPokemonEncounter()
     {
-        return $this->pokemon_encounter;
+        return $this->readOneof(8);
     }
 
     /**
@@ -238,9 +211,17 @@ class QuestReward extends \Google\Protobuf\Internal\Message
     public function setPokemonEncounter($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestReward_PokemonEncounterReward::class);
-        $this->pokemon_encounter = $var;
+        $this->writeOneof(8, $var);
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getReward()
+    {
+        return $this->whichOneof("Reward");
     }
 
 }

@@ -165,5 +165,13 @@ class ClientTelemetryIds
      * Generated from protobuf enum <code>RPC_SOCKET_TIMING = 38;</code>
      */
     const RPC_SOCKET_TIMING = 38;
+    /**
+     * Generated from protobuf enum <code>PERMISSIONS_FLOW = 39;</code>
+     */
+    const PERMISSIONS_FLOW = 39;
+    /**
+     * Generated from protobuf enum <code>DEVICE_SERVICE_TOGGLE = 40;</code>
+     */
+    const DEVICE_SERVICE_TOGGLE = 40;
 }
 

@@ -10,9 +10,9 @@ namespace POGOProtos\Enums;
 class VariableName
 {
     /**
-     * Generated from protobuf enum <code>UNSET_VariableName = 0;</code>
+     * Generated from protobuf enum <code>UNSET_VARIABLE_NAME = 0;</code>
      */
-    const UNSET_VariableName = 0;
+    const UNSET_VARIABLE_NAME = 0;
     /**
      * Generated from protobuf enum <code>CODE_NAME = 1;</code>
      */

@@ -13,162 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  */
 class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
 {
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.BootTime boot_time = 1;</code>
-     */
-    private $boot_time = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.FrameRate frame_rate = 2;</code>
-     */
-    private $frame_rate = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.GenericClickTelemetry generic_click_telemetry = 3;</code>
-     */
-    private $generic_click_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.MapEventsTelemetry map_events_telemetry = 4;</code>
-     */
-    private $map_events_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.SpinPokestopTelemetry spin_pokestop_telemetry = 5;</code>
-     */
-    private $spin_pokestop_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.ProfilePageTelemetry profile_page_telemetry = 6;</code>
-     */
-    private $profile_page_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.ShoppingPageTelemetry shopping_page_telemetry = 7;</code>
-     */
-    private $shopping_page_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.EncounterPokemonTelemetry encounter_pokemon_telemetry = 8;</code>
-     */
-    private $encounter_pokemon_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.CatchPokemonTelemetry catch_pokemon_telemetry = 9;</code>
-     */
-    private $catch_pokemon_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.DeployPokemonTelemetry deploy_pokemon_telemetry = 10;</code>
-     */
-    private $deploy_pokemon_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.FeedPokemonTelemetry feed_pokemon_telemetry = 11;</code>
-     */
-    private $feed_pokemon_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.EvolvePokemonTelemetry evolve_pokemon_telemetry = 12;</code>
-     */
-    private $evolve_pokemon_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.ReleasePokemonTelemetry release_pokemon_telemetry = 13;</code>
-     */
-    private $release_pokemon_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.NicknamePokemonTelemetry nickname_pokemon_telemetry = 14;</code>
-     */
-    private $nickname_pokemon_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.NewsPageTelemetry news_page_telemetry = 15;</code>
-     */
-    private $news_page_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.ItemTelemetry item_telemetry = 16;</code>
-     */
-    private $item_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.BattlePartyTelemetry battle_party_telemetry = 17;</code>
-     */
-    private $battle_party_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PasscodeRedeemTelemetry passcode_redeem_telemetry = 18;</code>
-     */
-    private $passcode_redeem_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.LinkLoginTelemetry link_login_telemetry = 19;</code>
-     */
-    private $link_login_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.RaidTelemetry raid_telemetry = 20;</code>
-     */
-    private $raid_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PushNotificationTelemetry push_notification_telemetry = 21;</code>
-     */
-    private $push_notification_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.AvatarCustomizationTelemetry avatar_customization_telemetry = 22;</code>
-     */
-    private $avatar_customization_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.ReadPointOfInterestDescriptionTelemetry read_point_of_interest_description_telemetry = 23;</code>
-     */
-    private $read_point_of_interest_description_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.WebTelemetry web_telemetry = 24;</code>
-     */
-    private $web_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.ChangeArTelemetry change_ar_telemetry = 25;</code>
-     */
-    private $change_ar_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.WeatherDetailClickTelemetry weather_detail_click_telemetry = 26;</code>
-     */
-    private $weather_detail_click_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Player.UserIssueWeatherReport user_issue_weather_report = 27;</code>
-     */
-    private $user_issue_weather_report = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PokemonInventoryTelemetry pokemon_inventory_telemetry = 28;</code>
-     */
-    private $pokemon_inventory_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.SocialTelemetry social_telemetry = 29;</code>
-     */
-    private $social_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;</code>
-     */
-    private $check_encounter_info_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;</code>
-     */
-    private $pokemon_go_plus_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
-     */
-    private $rpc_timing_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.SocialGiftCountTelemetry social_gift_count_telemetry = 33;</code>
-     */
-    private $social_gift_count_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;</code>
-     */
-    private $asset_bundle_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;</code>
-     */
-    private $asset_poi_download_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;</code>
-     */
-    private $asset_stream_download_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;</code>
-     */
-    private $asset_stream_cache_culled_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
-     */
-    private $rpc_socket_timing_telemetry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformServerData server_data = 1001;</code>
-     */
-    private $server_data = null;
+    protected $TelemetryData;
 
     /**
      * Constructor.
@@ -214,6 +59,8 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Telemetry\AssetStreamDownloadTelemetry $asset_stream_download_telemetry
      *     @type \POGOProtos\Data\Telemetry\AssetStreamCacheCulledTelemetry $asset_stream_cache_culled_telemetry
      *     @type \POGOProtos\Data\Telemetry\RpcSocketResponseTelemetry $rpc_socket_timing_telemetry
+     *     @type \POGOProtos\Data\Telemetry\PermissionsFlowTelemetry $permissions_flow
+     *     @type \POGOProtos\Data\Telemetry\DeviceServiceToggleTelemetry $device_service_toggle
      *     @type \POGOProtos\Networking\Platform\Telemetry\PlatformServerData $server_data
      * }
      */
@@ -228,7 +75,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getBootTime()
     {
-        return $this->boot_time;
+        return $this->readOneof(1);
     }
 
     /**
@@ -239,7 +86,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setBootTime($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\BootTime::class);
-        $this->boot_time = $var;
+        $this->writeOneof(1, $var);
 
         return $this;
     }
@@ -250,7 +97,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getFrameRate()
     {
-        return $this->frame_rate;
+        return $this->readOneof(2);
     }
 
     /**
@@ -261,7 +108,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setFrameRate($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\FrameRate::class);
-        $this->frame_rate = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -272,7 +119,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getGenericClickTelemetry()
     {
-        return $this->generic_click_telemetry;
+        return $this->readOneof(3);
     }
 
     /**
@@ -283,7 +130,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setGenericClickTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\GenericClickTelemetry::class);
-        $this->generic_click_telemetry = $var;
+        $this->writeOneof(3, $var);
 
         return $this;
     }
@@ -294,7 +141,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getMapEventsTelemetry()
     {
-        return $this->map_events_telemetry;
+        return $this->readOneof(4);
     }
 
     /**
@@ -305,7 +152,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setMapEventsTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\MapEventsTelemetry::class);
-        $this->map_events_telemetry = $var;
+        $this->writeOneof(4, $var);
 
         return $this;
     }
@@ -316,7 +163,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getSpinPokestopTelemetry()
     {
-        return $this->spin_pokestop_telemetry;
+        return $this->readOneof(5);
     }
 
     /**
@@ -327,7 +174,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setSpinPokestopTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\SpinPokestopTelemetry::class);
-        $this->spin_pokestop_telemetry = $var;
+        $this->writeOneof(5, $var);
 
         return $this;
     }
@@ -338,7 +185,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getProfilePageTelemetry()
     {
-        return $this->profile_page_telemetry;
+        return $this->readOneof(6);
     }
 
     /**
@@ -349,7 +196,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setProfilePageTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\ProfilePageTelemetry::class);
-        $this->profile_page_telemetry = $var;
+        $this->writeOneof(6, $var);
 
         return $this;
     }
@@ -360,7 +207,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getShoppingPageTelemetry()
     {
-        return $this->shopping_page_telemetry;
+        return $this->readOneof(7);
     }
 
     /**
@@ -371,7 +218,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setShoppingPageTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\ShoppingPageTelemetry::class);
-        $this->shopping_page_telemetry = $var;
+        $this->writeOneof(7, $var);
 
         return $this;
     }
@@ -382,7 +229,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getEncounterPokemonTelemetry()
     {
-        return $this->encounter_pokemon_telemetry;
+        return $this->readOneof(8);
     }
 
     /**
@@ -393,7 +240,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setEncounterPokemonTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\EncounterPokemonTelemetry::class);
-        $this->encounter_pokemon_telemetry = $var;
+        $this->writeOneof(8, $var);
 
         return $this;
     }
@@ -404,7 +251,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getCatchPokemonTelemetry()
     {
-        return $this->catch_pokemon_telemetry;
+        return $this->readOneof(9);
     }
 
     /**
@@ -415,7 +262,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setCatchPokemonTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\CatchPokemonTelemetry::class);
-        $this->catch_pokemon_telemetry = $var;
+        $this->writeOneof(9, $var);
 
         return $this;
     }
@@ -426,7 +273,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getDeployPokemonTelemetry()
     {
-        return $this->deploy_pokemon_telemetry;
+        return $this->readOneof(10);
     }
 
     /**
@@ -437,7 +284,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setDeployPokemonTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\DeployPokemonTelemetry::class);
-        $this->deploy_pokemon_telemetry = $var;
+        $this->writeOneof(10, $var);
 
         return $this;
     }
@@ -448,7 +295,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getFeedPokemonTelemetry()
     {
-        return $this->feed_pokemon_telemetry;
+        return $this->readOneof(11);
     }
 
     /**
@@ -459,7 +306,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setFeedPokemonTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\FeedPokemonTelemetry::class);
-        $this->feed_pokemon_telemetry = $var;
+        $this->writeOneof(11, $var);
 
         return $this;
     }
@@ -470,7 +317,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getEvolvePokemonTelemetry()
     {
-        return $this->evolve_pokemon_telemetry;
+        return $this->readOneof(12);
     }
 
     /**
@@ -481,7 +328,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setEvolvePokemonTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\EvolvePokemonTelemetry::class);
-        $this->evolve_pokemon_telemetry = $var;
+        $this->writeOneof(12, $var);
 
         return $this;
     }
@@ -492,7 +339,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getReleasePokemonTelemetry()
     {
-        return $this->release_pokemon_telemetry;
+        return $this->readOneof(13);
     }
 
     /**
@@ -503,7 +350,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setReleasePokemonTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\ReleasePokemonTelemetry::class);
-        $this->release_pokemon_telemetry = $var;
+        $this->writeOneof(13, $var);
 
         return $this;
     }
@@ -514,7 +361,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getNicknamePokemonTelemetry()
     {
-        return $this->nickname_pokemon_telemetry;
+        return $this->readOneof(14);
     }
 
     /**
@@ -525,7 +372,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setNicknamePokemonTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\NicknamePokemonTelemetry::class);
-        $this->nickname_pokemon_telemetry = $var;
+        $this->writeOneof(14, $var);
 
         return $this;
     }
@@ -536,7 +383,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getNewsPageTelemetry()
     {
-        return $this->news_page_telemetry;
+        return $this->readOneof(15);
     }
 
     /**
@@ -547,7 +394,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setNewsPageTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\NewsPageTelemetry::class);
-        $this->news_page_telemetry = $var;
+        $this->writeOneof(15, $var);
 
         return $this;
     }
@@ -558,7 +405,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getItemTelemetry()
     {
-        return $this->item_telemetry;
+        return $this->readOneof(16);
     }
 
     /**
@@ -569,7 +416,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setItemTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\ItemTelemetry::class);
-        $this->item_telemetry = $var;
+        $this->writeOneof(16, $var);
 
         return $this;
     }
@@ -580,7 +427,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getBattlePartyTelemetry()
     {
-        return $this->battle_party_telemetry;
+        return $this->readOneof(17);
     }
 
     /**
@@ -591,7 +438,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setBattlePartyTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\BattlePartyTelemetry::class);
-        $this->battle_party_telemetry = $var;
+        $this->writeOneof(17, $var);
 
         return $this;
     }
@@ -602,7 +449,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getPasscodeRedeemTelemetry()
     {
-        return $this->passcode_redeem_telemetry;
+        return $this->readOneof(18);
     }
 
     /**
@@ -613,7 +460,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setPasscodeRedeemTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\PasscodeRedeemTelemetry::class);
-        $this->passcode_redeem_telemetry = $var;
+        $this->writeOneof(18, $var);
 
         return $this;
     }
@@ -624,7 +471,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getLinkLoginTelemetry()
     {
-        return $this->link_login_telemetry;
+        return $this->readOneof(19);
     }
 
     /**
@@ -635,7 +482,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setLinkLoginTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\LinkLoginTelemetry::class);
-        $this->link_login_telemetry = $var;
+        $this->writeOneof(19, $var);
 
         return $this;
     }
@@ -646,7 +493,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getRaidTelemetry()
     {
-        return $this->raid_telemetry;
+        return $this->readOneof(20);
     }
 
     /**
@@ -657,7 +504,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setRaidTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\RaidTelemetry::class);
-        $this->raid_telemetry = $var;
+        $this->writeOneof(20, $var);
 
         return $this;
     }
@@ -668,7 +515,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getPushNotificationTelemetry()
     {
-        return $this->push_notification_telemetry;
+        return $this->readOneof(21);
     }
 
     /**
@@ -679,7 +526,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setPushNotificationTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\PushNotificationTelemetry::class);
-        $this->push_notification_telemetry = $var;
+        $this->writeOneof(21, $var);
 
         return $this;
     }
@@ -690,7 +537,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getAvatarCustomizationTelemetry()
     {
-        return $this->avatar_customization_telemetry;
+        return $this->readOneof(22);
     }
 
     /**
@@ -701,7 +548,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setAvatarCustomizationTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\AvatarCustomizationTelemetry::class);
-        $this->avatar_customization_telemetry = $var;
+        $this->writeOneof(22, $var);
 
         return $this;
     }
@@ -712,7 +559,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getReadPointOfInterestDescriptionTelemetry()
     {
-        return $this->read_point_of_interest_description_telemetry;
+        return $this->readOneof(23);
     }
 
     /**
@@ -723,7 +570,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setReadPointOfInterestDescriptionTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\ReadPointOfInterestDescriptionTelemetry::class);
-        $this->read_point_of_interest_description_telemetry = $var;
+        $this->writeOneof(23, $var);
 
         return $this;
     }
@@ -734,7 +581,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getWebTelemetry()
     {
-        return $this->web_telemetry;
+        return $this->readOneof(24);
     }
 
     /**
@@ -745,7 +592,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setWebTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\WebTelemetry::class);
-        $this->web_telemetry = $var;
+        $this->writeOneof(24, $var);
 
         return $this;
     }
@@ -756,7 +603,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getChangeArTelemetry()
     {
-        return $this->change_ar_telemetry;
+        return $this->readOneof(25);
     }
 
     /**
@@ -767,7 +614,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setChangeArTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\ChangeArTelemetry::class);
-        $this->change_ar_telemetry = $var;
+        $this->writeOneof(25, $var);
 
         return $this;
     }
@@ -778,7 +625,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getWeatherDetailClickTelemetry()
     {
-        return $this->weather_detail_click_telemetry;
+        return $this->readOneof(26);
     }
 
     /**
@@ -789,7 +636,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setWeatherDetailClickTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\WeatherDetailClickTelemetry::class);
-        $this->weather_detail_click_telemetry = $var;
+        $this->writeOneof(26, $var);
 
         return $this;
     }
@@ -800,7 +647,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getUserIssueWeatherReport()
     {
-        return $this->user_issue_weather_report;
+        return $this->readOneof(27);
     }
 
     /**
@@ -811,7 +658,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setUserIssueWeatherReport($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\UserIssueWeatherReport::class);
-        $this->user_issue_weather_report = $var;
+        $this->writeOneof(27, $var);
 
         return $this;
     }
@@ -822,7 +669,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getPokemonInventoryTelemetry()
     {
-        return $this->pokemon_inventory_telemetry;
+        return $this->readOneof(28);
     }
 
     /**
@@ -833,7 +680,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setPokemonInventoryTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\PokemonInventoryTelemetry::class);
-        $this->pokemon_inventory_telemetry = $var;
+        $this->writeOneof(28, $var);
 
         return $this;
     }
@@ -844,7 +691,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getSocialTelemetry()
     {
-        return $this->social_telemetry;
+        return $this->readOneof(29);
     }
 
     /**
@@ -855,7 +702,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setSocialTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\SocialTelemetry::class);
-        $this->social_telemetry = $var;
+        $this->writeOneof(29, $var);
 
         return $this;
     }
@@ -866,7 +713,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getCheckEncounterInfoTelemetry()
     {
-        return $this->check_encounter_info_telemetry;
+        return $this->readOneof(30);
     }
 
     /**
@@ -877,7 +724,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setCheckEncounterInfoTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\CheckEncounterTrayInfoTelemetry::class);
-        $this->check_encounter_info_telemetry = $var;
+        $this->writeOneof(30, $var);
 
         return $this;
     }
@@ -888,7 +735,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getPokemonGoPlusTelemetry()
     {
-        return $this->pokemon_go_plus_telemetry;
+        return $this->readOneof(31);
     }
 
     /**
@@ -899,7 +746,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setPokemonGoPlusTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\PokemonGoPlusTelemetry::class);
-        $this->pokemon_go_plus_telemetry = $var;
+        $this->writeOneof(31, $var);
 
         return $this;
     }
@@ -910,7 +757,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getRpcTimingTelemetry()
     {
-        return $this->rpc_timing_telemetry;
+        return $this->readOneof(32);
     }
 
     /**
@@ -921,7 +768,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setRpcTimingTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\RpcResponseTelemetry::class);
-        $this->rpc_timing_telemetry = $var;
+        $this->writeOneof(32, $var);
 
         return $this;
     }
@@ -932,7 +779,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getSocialGiftCountTelemetry()
     {
-        return $this->social_gift_count_telemetry;
+        return $this->readOneof(33);
     }
 
     /**
@@ -943,7 +790,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setSocialGiftCountTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\SocialGiftCountTelemetry::class);
-        $this->social_gift_count_telemetry = $var;
+        $this->writeOneof(33, $var);
 
         return $this;
     }
@@ -954,7 +801,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getAssetBundleTelemetry()
     {
-        return $this->asset_bundle_telemetry;
+        return $this->readOneof(34);
     }
 
     /**
@@ -965,7 +812,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setAssetBundleTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\AssetBundleDownloadTelemetry::class);
-        $this->asset_bundle_telemetry = $var;
+        $this->writeOneof(34, $var);
 
         return $this;
     }
@@ -976,7 +823,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getAssetPoiDownloadTelemetry()
     {
-        return $this->asset_poi_download_telemetry;
+        return $this->readOneof(35);
     }
 
     /**
@@ -987,7 +834,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setAssetPoiDownloadTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\AssetPoiDownloadTelemetry::class);
-        $this->asset_poi_download_telemetry = $var;
+        $this->writeOneof(35, $var);
 
         return $this;
     }
@@ -998,7 +845,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getAssetStreamDownloadTelemetry()
     {
-        return $this->asset_stream_download_telemetry;
+        return $this->readOneof(36);
     }
 
     /**
@@ -1009,7 +856,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setAssetStreamDownloadTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\AssetStreamDownloadTelemetry::class);
-        $this->asset_stream_download_telemetry = $var;
+        $this->writeOneof(36, $var);
 
         return $this;
     }
@@ -1020,7 +867,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getAssetStreamCacheCulledTelemetry()
     {
-        return $this->asset_stream_cache_culled_telemetry;
+        return $this->readOneof(37);
     }
 
     /**
@@ -1031,7 +878,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setAssetStreamCacheCulledTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\AssetStreamCacheCulledTelemetry::class);
-        $this->asset_stream_cache_culled_telemetry = $var;
+        $this->writeOneof(37, $var);
 
         return $this;
     }
@@ -1042,7 +889,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getRpcSocketTimingTelemetry()
     {
-        return $this->rpc_socket_timing_telemetry;
+        return $this->readOneof(38);
     }
 
     /**
@@ -1053,7 +900,51 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setRpcSocketTimingTelemetry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\RpcSocketResponseTelemetry::class);
-        $this->rpc_socket_timing_telemetry = $var;
+        $this->writeOneof(38, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PermissionsFlowTelemetry permissions_flow = 39;</code>
+     * @return \POGOProtos\Data\Telemetry\PermissionsFlowTelemetry
+     */
+    public function getPermissionsFlow()
+    {
+        return $this->readOneof(39);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PermissionsFlowTelemetry permissions_flow = 39;</code>
+     * @param \POGOProtos\Data\Telemetry\PermissionsFlowTelemetry $var
+     * @return $this
+     */
+    public function setPermissionsFlow($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\PermissionsFlowTelemetry::class);
+        $this->writeOneof(39, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.DeviceServiceToggleTelemetry device_service_toggle = 40;</code>
+     * @return \POGOProtos\Data\Telemetry\DeviceServiceToggleTelemetry
+     */
+    public function getDeviceServiceToggle()
+    {
+        return $this->readOneof(40);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.DeviceServiceToggleTelemetry device_service_toggle = 40;</code>
+     * @param \POGOProtos\Data\Telemetry\DeviceServiceToggleTelemetry $var
+     * @return $this
+     */
+    public function setDeviceServiceToggle($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\DeviceServiceToggleTelemetry::class);
+        $this->writeOneof(40, $var);
 
         return $this;
     }
@@ -1064,7 +955,7 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      */
     public function getServerData()
     {
-        return $this->server_data;
+        return $this->readOneof(1001);
     }
 
     /**
@@ -1075,9 +966,17 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     public function setServerData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\PlatformServerData::class);
-        $this->server_data = $var;
+        $this->writeOneof(1001, $var);
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTelemetryData()
+    {
+        return $this->whichOneof("TelemetryData");
     }
 
 }

@@ -13,18 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  */
 class JournalEntry extends \Google\Protobuf\Internal\Message
 {
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.JournalAddEntry add_entry = 1;</code>
-     */
-    private $add_entry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.JournalReadEntry read_entry = 2;</code>
-     */
-    private $read_entry = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.AssetCache.JournalRemoveEntry remove_entry = 3;</code>
-     */
-    private $remove_entry = null;
+    protected $Subentry;
 
     /**
      * Constructor.
@@ -48,7 +37,7 @@ class JournalEntry extends \Google\Protobuf\Internal\Message
      */
     public function getAddEntry()
     {
-        return $this->add_entry;
+        return $this->readOneof(1);
     }
 
     /**
@@ -59,7 +48,7 @@ class JournalEntry extends \Google\Protobuf\Internal\Message
     public function setAddEntry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\AssetCache\JournalAddEntry::class);
-        $this->add_entry = $var;
+        $this->writeOneof(1, $var);
 
         return $this;
     }
@@ -70,7 +59,7 @@ class JournalEntry extends \Google\Protobuf\Internal\Message
      */
     public function getReadEntry()
     {
-        return $this->read_entry;
+        return $this->readOneof(2);
     }
 
     /**
@@ -81,7 +70,7 @@ class JournalEntry extends \Google\Protobuf\Internal\Message
     public function setReadEntry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\AssetCache\JournalReadEntry::class);
-        $this->read_entry = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -92,7 +81,7 @@ class JournalEntry extends \Google\Protobuf\Internal\Message
      */
     public function getRemoveEntry()
     {
-        return $this->remove_entry;
+        return $this->readOneof(3);
     }
 
     /**
@@ -103,9 +92,17 @@ class JournalEntry extends \Google\Protobuf\Internal\Message
     public function setRemoveEntry($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\AssetCache\JournalRemoveEntry::class);
-        $this->remove_entry = $var;
+        $this->writeOneof(3, $var);
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSubentry()
+    {
+        return $this->whichOneof("Subentry");
     }
 
 }

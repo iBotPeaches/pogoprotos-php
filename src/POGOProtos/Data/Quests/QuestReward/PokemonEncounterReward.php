@@ -14,14 +14,6 @@ use Google\Protobuf\Internal\GPBUtil;
 class PokemonEncounterReward extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
-     */
-    private $pokemon_id = 0;
-    /**
-     * Generated from protobuf field <code>bool use_quest_pokemon_encounter_distribuition = 2;</code>
-     */
-    private $use_quest_pokemon_encounter_distribuition = false;
-    /**
      * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay pokemon_display = 3;</code>
      */
     private $pokemon_display = null;
@@ -33,6 +25,7 @@ class PokemonEncounterReward extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.PokemonDisplay ditto_display = 5;</code>
      */
     private $ditto_display = null;
+    protected $Type;
 
     /**
      * Constructor.
@@ -58,7 +51,7 @@ class PokemonEncounterReward extends \Google\Protobuf\Internal\Message
      */
     public function getPokemonId()
     {
-        return $this->pokemon_id;
+        return $this->readOneof(1);
     }
 
     /**
@@ -69,7 +62,7 @@ class PokemonEncounterReward extends \Google\Protobuf\Internal\Message
     public function setPokemonId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
-        $this->pokemon_id = $var;
+        $this->writeOneof(1, $var);
 
         return $this;
     }
@@ -80,7 +73,7 @@ class PokemonEncounterReward extends \Google\Protobuf\Internal\Message
      */
     public function getUseQuestPokemonEncounterDistribuition()
     {
-        return $this->use_quest_pokemon_encounter_distribuition;
+        return $this->readOneof(2);
     }
 
     /**
@@ -91,7 +84,7 @@ class PokemonEncounterReward extends \Google\Protobuf\Internal\Message
     public function setUseQuestPokemonEncounterDistribuition($var)
     {
         GPBUtil::checkBool($var);
-        $this->use_quest_pokemon_encounter_distribuition = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -160,6 +153,14 @@ class PokemonEncounterReward extends \Google\Protobuf\Internal\Message
         $this->ditto_display = $var;
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->whichOneof("Type");
     }
 
 }

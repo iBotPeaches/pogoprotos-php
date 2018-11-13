@@ -13,14 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  */
 class WithThrowType extends \Google\Protobuf\Internal\Message
 {
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Enums.ActivityType throw_type = 1;</code>
-     */
-    private $throw_type = 0;
-    /**
-     * Generated from protobuf field <code>bool hit = 2;</code>
-     */
-    private $hit = false;
+    protected $Throw;
 
     /**
      * Constructor.
@@ -43,7 +36,7 @@ class WithThrowType extends \Google\Protobuf\Internal\Message
      */
     public function getThrowType()
     {
-        return $this->throw_type;
+        return $this->readOneof(1);
     }
 
     /**
@@ -54,7 +47,7 @@ class WithThrowType extends \Google\Protobuf\Internal\Message
     public function setThrowType($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\ActivityType::class);
-        $this->throw_type = $var;
+        $this->writeOneof(1, $var);
 
         return $this;
     }
@@ -65,7 +58,7 @@ class WithThrowType extends \Google\Protobuf\Internal\Message
      */
     public function getHit()
     {
-        return $this->hit;
+        return $this->readOneof(2);
     }
 
     /**
@@ -76,9 +69,17 @@ class WithThrowType extends \Google\Protobuf\Internal\Message
     public function setHit($var)
     {
         GPBUtil::checkBool($var);
-        $this->hit = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getThrow()
+    {
+        return $this->whichOneof("Throw");
     }
 
 }

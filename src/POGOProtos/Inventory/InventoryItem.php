@@ -17,14 +17,7 @@ class InventoryItem extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 modified_timestamp_ms = 1;</code>
      */
     private $modified_timestamp_ms = 0;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryItem.DeletedItem deleted_item = 2;</code>
-     */
-    private $deleted_item = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.InventoryItemData inventory_item_data = 3;</code>
-     */
-    private $inventory_item_data = null;
+    protected $InventoryItem;
 
     /**
      * Constructor.
@@ -70,7 +63,7 @@ class InventoryItem extends \Google\Protobuf\Internal\Message
      */
     public function getDeletedItem()
     {
-        return $this->deleted_item;
+        return $this->readOneof(2);
     }
 
     /**
@@ -81,7 +74,7 @@ class InventoryItem extends \Google\Protobuf\Internal\Message
     public function setDeletedItem($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\InventoryItem_DeletedItem::class);
-        $this->deleted_item = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -92,7 +85,7 @@ class InventoryItem extends \Google\Protobuf\Internal\Message
      */
     public function getInventoryItemData()
     {
-        return $this->inventory_item_data;
+        return $this->readOneof(3);
     }
 
     /**
@@ -103,9 +96,17 @@ class InventoryItem extends \Google\Protobuf\Internal\Message
     public function setInventoryItemData($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Inventory\InventoryItemData::class);
-        $this->inventory_item_data = $var;
+        $this->writeOneof(3, $var);
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInventoryItem()
+    {
+        return $this->whichOneof("InventoryItem");
     }
 
 }

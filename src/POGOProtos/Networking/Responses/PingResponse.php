@@ -25,6 +25,10 @@ class PingResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string random_response_bytes = 3;</code>
      */
     private $random_response_bytes = '';
+    /**
+     * Generated from protobuf field <code>string return_value = 4;</code>
+     */
+    private $return_value = '';
 
     /**
      * Constructor.
@@ -35,6 +39,7 @@ class PingResponse extends \Google\Protobuf\Internal\Message
      *     @type string $user_info
      *     @type string $server_info
      *     @type string $random_response_bytes
+     *     @type string $return_value
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +109,28 @@ class PingResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->random_response_bytes = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string return_value = 4;</code>
+     * @return string
+     */
+    public function getReturnValue()
+    {
+        return $this->return_value;
+    }
+
+    /**
+     * Generated from protobuf field <code>string return_value = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setReturnValue($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->return_value = $var;
 
         return $this;
     }

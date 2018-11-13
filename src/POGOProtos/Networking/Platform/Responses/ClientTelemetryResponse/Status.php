@@ -22,17 +22,13 @@ class Status
      */
     const FAILURE = 2;
     /**
-     * Generated from protobuf enum <code>ERROR_INVALID_REQUEST = 3;</code>
+     * Generated from protobuf enum <code>PARTIAL_FAILURE = 3;</code>
      */
-    const ERROR_INVALID_REQUEST = 3;
+    const PARTIAL_FAILURE = 3;
     /**
-     * Generated from protobuf enum <code>ERROR_INVALID_PROTO = 4;</code>
+     * Generated from protobuf enum <code>INVALID_REQUEST = 4;</code>
      */
-    const ERROR_INVALID_PROTO = 4;
-    /**
-     * Generated from protobuf enum <code>ERROR_UNSET_TELEMETRY_ID = 5;</code>
-     */
-    const ERROR_UNSET_TELEMETRY_ID = 5;
+    const INVALID_REQUEST = 4;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

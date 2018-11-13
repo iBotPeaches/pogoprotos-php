@@ -66,21 +66,21 @@ class SocialAction
      */
     const CREATE_INVITE_CODE = 10013;
     /**
-     * Generated from protobuf enum <code>REGISTER_PUSH_NOTIFICATION = 10101;</code>
+     * Generated from protobuf enum <code>REGISTER_PUSH_NOTIFICATION_SOCIAL_ACTION = 10101;</code>
      */
-    const REGISTER_PUSH_NOTIFICATION = 10101;
+    const REGISTER_PUSH_NOTIFICATION_SOCIAL_ACTION = 10101;
     /**
-     * Generated from protobuf enum <code>UNREGISTER_PUSH_NOTIFICATION = 10102;</code>
+     * Generated from protobuf enum <code>UNREGISTER_PUSH_NOTIFICATION_SOCIAL_ACTION = 10102;</code>
      */
-    const UNREGISTER_PUSH_NOTIFICATION = 10102;
+    const UNREGISTER_PUSH_NOTIFICATION_SOCIAL_ACTION = 10102;
     /**
      * Generated from protobuf enum <code>UPDATE_NOTIFICATION = 10103;</code>
      */
     const UPDATE_NOTIFICATION = 10103;
     /**
-     * Generated from protobuf enum <code>OPT_OUT_PUSH_NOTIFICATION_CATEGORY = 10104;</code>
+     * Generated from protobuf enum <code>OPT_OUT_PUSH_NOTIFICATION_CATEGORY_SOCIAL_ACTION = 10104;</code>
      */
-    const OPT_OUT_PUSH_NOTIFICATION_CATEGORY = 10104;
+    const OPT_OUT_PUSH_NOTIFICATION_CATEGORY_SOCIAL_ACTION = 10104;
     /**
      * Generated from protobuf enum <code>GET_INBOX = 10105;</code>
      */

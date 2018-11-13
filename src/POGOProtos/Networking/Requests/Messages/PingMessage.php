@@ -25,6 +25,10 @@ class PingMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool use_cache_for_random_request_bytes = 3;</code>
      */
     private $use_cache_for_random_request_bytes = false;
+    /**
+     * Generated from protobuf field <code>string return_value = 4;</code>
+     */
+    private $return_value = '';
 
     /**
      * Constructor.
@@ -35,6 +39,7 @@ class PingMessage extends \Google\Protobuf\Internal\Message
      *     @type int $response_size_bytes
      *     @type string $random_request_bytes
      *     @type bool $use_cache_for_random_request_bytes
+     *     @type string $return_value
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +109,28 @@ class PingMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->use_cache_for_random_request_bytes = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string return_value = 4;</code>
+     * @return string
+     */
+    public function getReturnValue()
+    {
+        return $this->return_value;
+    }
+
+    /**
+     * Generated from protobuf field <code>string return_value = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setReturnValue($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->return_value = $var;
 
         return $this;
     }

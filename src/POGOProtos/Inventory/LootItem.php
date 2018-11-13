@@ -13,34 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  */
 class LootItem extends \Google\Protobuf\Internal\Message
 {
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId item = 1;</code>
-     */
-    private $item = 0;
-    /**
-     * Generated from protobuf field <code>bool stardust = 2;</code>
-     */
-    private $stardust = false;
-    /**
-     * Generated from protobuf field <code>bool pokecoin = 3;</code>
-     */
-    private $pokecoin = false;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_candy = 4;</code>
-     */
-    private $pokemon_candy = 0;
-    /**
-     * Generated from protobuf field <code>int32 count = 5;</code>
-     */
-    private $count = 0;
-    /**
-     * Generated from protobuf field <code>bool experience = 6;</code>
-     */
-    private $experience = false;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData pokemon_egg = 7;</code>
-     */
-    private $pokemon_egg = null;
+    protected $Type;
 
     /**
      * Constructor.
@@ -68,7 +41,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
      */
     public function getItem()
     {
-        return $this->item;
+        return $this->readOneof(1);
     }
 
     /**
@@ -79,7 +52,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
     public function setItem($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
-        $this->item = $var;
+        $this->writeOneof(1, $var);
 
         return $this;
     }
@@ -90,7 +63,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
      */
     public function getStardust()
     {
-        return $this->stardust;
+        return $this->readOneof(2);
     }
 
     /**
@@ -101,7 +74,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
     public function setStardust($var)
     {
         GPBUtil::checkBool($var);
-        $this->stardust = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -112,7 +85,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
      */
     public function getPokecoin()
     {
-        return $this->pokecoin;
+        return $this->readOneof(3);
     }
 
     /**
@@ -123,7 +96,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
     public function setPokecoin($var)
     {
         GPBUtil::checkBool($var);
-        $this->pokecoin = $var;
+        $this->writeOneof(3, $var);
 
         return $this;
     }
@@ -134,7 +107,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
      */
     public function getPokemonCandy()
     {
-        return $this->pokemon_candy;
+        return $this->readOneof(4);
     }
 
     /**
@@ -145,7 +118,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
     public function setPokemonCandy($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
-        $this->pokemon_candy = $var;
+        $this->writeOneof(4, $var);
 
         return $this;
     }
@@ -156,7 +129,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
      */
     public function getCount()
     {
-        return $this->count;
+        return $this->readOneof(5);
     }
 
     /**
@@ -167,7 +140,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
     public function setCount($var)
     {
         GPBUtil::checkInt32($var);
-        $this->count = $var;
+        $this->writeOneof(5, $var);
 
         return $this;
     }
@@ -178,7 +151,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
      */
     public function getExperience()
     {
-        return $this->experience;
+        return $this->readOneof(6);
     }
 
     /**
@@ -189,7 +162,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
     public function setExperience($var)
     {
         GPBUtil::checkBool($var);
-        $this->experience = $var;
+        $this->writeOneof(6, $var);
 
         return $this;
     }
@@ -200,7 +173,7 @@ class LootItem extends \Google\Protobuf\Internal\Message
      */
     public function getPokemonEgg()
     {
-        return $this->pokemon_egg;
+        return $this->readOneof(7);
     }
 
     /**
@@ -211,9 +184,17 @@ class LootItem extends \Google\Protobuf\Internal\Message
     public function setPokemonEgg($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
-        $this->pokemon_egg = $var;
+        $this->writeOneof(7, $var);
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->whichOneof("Type");
     }
 
 }

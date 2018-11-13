@@ -17,70 +17,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.ConditionType type = 1;</code>
      */
     private $type = 0;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonType with_pokemon_type = 2;</code>
-     */
-    private $with_pokemon_type = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPokemonCategory with_pokemon_category = 3;</code>
-     */
-    private $with_pokemon_category = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWeatherBoost with_weather_boost = 4;</code>
-     */
-    private $with_weather_boost = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithDailyCaptureBonus with_daily_capture_bonus = 5;</code>
-     */
-    private $with_daily_capture_bonus = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithDailySpinBonus with_daily_spin_bonus = 6;</code>
-     */
-    private $with_daily_spin_bonus = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWinRaidStatus with_win_raid_status = 7;</code>
-     */
-    private $with_win_raid_status = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithRaidLevel with_raid_level = 8;</code>
-     */
-    private $with_raid_level = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithThrowType with_throw_type = 9;</code>
-     */
-    private $with_throw_type = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWinGymBattleStatus with_win_gym_battle_status = 10;</code>
-     */
-    private $with_win_gym_battle_status = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithSuperEffectiveChargeMove with_super_effective_charge_move = 11;</code>
-     */
-    private $with_super_effective_charge_move = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithItem with_item = 12;</code>
-     */
-    private $with_item = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithUniquePokestop with_unique_pokestop = 13;</code>
-     */
-    private $with_unique_pokestop = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithQuestContext with_quest_context = 14;</code>
-     */
-    private $with_quest_context = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithBadgeType with_badge_type = 15;</code>
-     */
-    private $with_badge_type = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPlayerLevel with_player_level = 16;</code>
-     */
-    private $with_player_level = null;
-    /**
-     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithWinBattleStatus with_win_battle_status = 17;</code>
-     */
-    private $with_win_battle_status = null;
+    protected $Condition;
 
     /**
      * Constructor.
@@ -140,7 +77,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithPokemonType()
     {
-        return $this->with_pokemon_type;
+        return $this->readOneof(2);
     }
 
     /**
@@ -151,7 +88,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithPokemonType($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithPokemonType::class);
-        $this->with_pokemon_type = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -162,7 +99,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithPokemonCategory()
     {
-        return $this->with_pokemon_category;
+        return $this->readOneof(3);
     }
 
     /**
@@ -173,7 +110,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithPokemonCategory($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithPokemonCategory::class);
-        $this->with_pokemon_category = $var;
+        $this->writeOneof(3, $var);
 
         return $this;
     }
@@ -184,7 +121,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithWeatherBoost()
     {
-        return $this->with_weather_boost;
+        return $this->readOneof(4);
     }
 
     /**
@@ -195,7 +132,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithWeatherBoost($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithWeatherBoost::class);
-        $this->with_weather_boost = $var;
+        $this->writeOneof(4, $var);
 
         return $this;
     }
@@ -206,7 +143,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithDailyCaptureBonus()
     {
-        return $this->with_daily_capture_bonus;
+        return $this->readOneof(5);
     }
 
     /**
@@ -217,7 +154,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithDailyCaptureBonus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithDailyCaptureBonus::class);
-        $this->with_daily_capture_bonus = $var;
+        $this->writeOneof(5, $var);
 
         return $this;
     }
@@ -228,7 +165,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithDailySpinBonus()
     {
-        return $this->with_daily_spin_bonus;
+        return $this->readOneof(6);
     }
 
     /**
@@ -239,7 +176,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithDailySpinBonus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithDailySpinBonus::class);
-        $this->with_daily_spin_bonus = $var;
+        $this->writeOneof(6, $var);
 
         return $this;
     }
@@ -250,7 +187,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithWinRaidStatus()
     {
-        return $this->with_win_raid_status;
+        return $this->readOneof(7);
     }
 
     /**
@@ -261,7 +198,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithWinRaidStatus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithWinRaidStatus::class);
-        $this->with_win_raid_status = $var;
+        $this->writeOneof(7, $var);
 
         return $this;
     }
@@ -272,7 +209,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithRaidLevel()
     {
-        return $this->with_raid_level;
+        return $this->readOneof(8);
     }
 
     /**
@@ -283,7 +220,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithRaidLevel($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithRaidLevel::class);
-        $this->with_raid_level = $var;
+        $this->writeOneof(8, $var);
 
         return $this;
     }
@@ -294,7 +231,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithThrowType()
     {
-        return $this->with_throw_type;
+        return $this->readOneof(9);
     }
 
     /**
@@ -305,7 +242,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithThrowType($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithThrowType::class);
-        $this->with_throw_type = $var;
+        $this->writeOneof(9, $var);
 
         return $this;
     }
@@ -316,7 +253,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithWinGymBattleStatus()
     {
-        return $this->with_win_gym_battle_status;
+        return $this->readOneof(10);
     }
 
     /**
@@ -327,7 +264,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithWinGymBattleStatus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithWinGymBattleStatus::class);
-        $this->with_win_gym_battle_status = $var;
+        $this->writeOneof(10, $var);
 
         return $this;
     }
@@ -338,7 +275,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithSuperEffectiveChargeMove()
     {
-        return $this->with_super_effective_charge_move;
+        return $this->readOneof(11);
     }
 
     /**
@@ -349,7 +286,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithSuperEffectiveChargeMove($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithSuperEffectiveChargeMove::class);
-        $this->with_super_effective_charge_move = $var;
+        $this->writeOneof(11, $var);
 
         return $this;
     }
@@ -360,7 +297,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithItem()
     {
-        return $this->with_item;
+        return $this->readOneof(12);
     }
 
     /**
@@ -371,7 +308,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithItem($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithItem::class);
-        $this->with_item = $var;
+        $this->writeOneof(12, $var);
 
         return $this;
     }
@@ -382,7 +319,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithUniquePokestop()
     {
-        return $this->with_unique_pokestop;
+        return $this->readOneof(13);
     }
 
     /**
@@ -393,7 +330,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithUniquePokestop($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithUniquePokestop::class);
-        $this->with_unique_pokestop = $var;
+        $this->writeOneof(13, $var);
 
         return $this;
     }
@@ -404,7 +341,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithQuestContext()
     {
-        return $this->with_quest_context;
+        return $this->readOneof(14);
     }
 
     /**
@@ -415,7 +352,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithQuestContext($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithQuestContext::class);
-        $this->with_quest_context = $var;
+        $this->writeOneof(14, $var);
 
         return $this;
     }
@@ -426,7 +363,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithBadgeType()
     {
-        return $this->with_badge_type;
+        return $this->readOneof(15);
     }
 
     /**
@@ -437,7 +374,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithBadgeType($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithBadgeType::class);
-        $this->with_badge_type = $var;
+        $this->writeOneof(15, $var);
 
         return $this;
     }
@@ -448,7 +385,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithPlayerLevel()
     {
-        return $this->with_player_level;
+        return $this->readOneof(16);
     }
 
     /**
@@ -459,7 +396,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithPlayerLevel($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithPlayerLevel::class);
-        $this->with_player_level = $var;
+        $this->writeOneof(16, $var);
 
         return $this;
     }
@@ -470,7 +407,7 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      */
     public function getWithWinBattleStatus()
     {
-        return $this->with_win_battle_status;
+        return $this->readOneof(17);
     }
 
     /**
@@ -481,9 +418,17 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     public function setWithWinBattleStatus($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithWinBattleStatus::class);
-        $this->with_win_battle_status = $var;
+        $this->writeOneof(17, $var);
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCondition()
+    {
+        return $this->whichOneof("Condition");
     }
 
 }
