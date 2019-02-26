@@ -157,5 +157,21 @@ class VariableName
      * Generated from protobuf enum <code>BGMODE_BUDDY_POKEMON_NICKNAME = 1027;</code>
      */
     const BGMODE_BUDDY_POKEMON_NICKNAME = 1027;
+    /**
+     * Generated from protobuf enum <code>COMBAT_CHALLENGE = 1028;</code>
+     */
+    const COMBAT_CHALLENGE = 1028;
+    /**
+     * Generated from protobuf enum <code>COMBAT_CHALLENGER_CODENAME = 1029;</code>
+     */
+    const COMBAT_CHALLENGER_CODENAME = 1029;
+    /**
+     * Generated from protobuf enum <code>BGMODE_OFF_SESSION_DISTANCE_KM = 1030;</code>
+     */
+    const BGMODE_OFF_SESSION_DISTANCE_KM = 1030;
+    /**
+     * Generated from protobuf enum <code>POI_NAME = 1031;</code>
+     */
+    const POI_NAME = 1031;
 }
 

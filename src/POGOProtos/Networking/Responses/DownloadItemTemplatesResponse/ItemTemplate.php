@@ -82,7 +82,7 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
      */
     private $quest_settings = null;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.Master.AvatarCustomizationSettings avatar_customization = 21;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Avatar.AvatarCustomization avatar_customization = 21;</code>
      */
     private $avatar_customization = null;
     /**
@@ -114,6 +114,10 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
      */
     private $iap_category_display = null;
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.BelugaPokemonWhitelist beluga_pokemon_whitelist = 29;</code>
+     */
+    private $beluga_pokemon_whitelist = null;
+    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.Master.OnboardingSettings onboarding_settings = 30;</code>
      */
     private $onboarding_settings = null;
@@ -126,13 +130,53 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
      */
     private $lucky_pokemon_settings = null;
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatSettings combat_settings = 33;</code>
+     */
+    private $combat_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatLeagueSettings combat_league_settings = 34;</code>
+     */
+    private $combat_league_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatLeague combat_league = 35;</code>
+     */
+    private $combat_league = null;
+    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.Master.ExRaidSettings ex_raid_settings = 36;</code>
      */
     private $ex_raid_settings = null;
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatMoveSettings combat_move = 37;</code>
+     */
+    private $combat_move = null;
+    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.Master.BackgroundModeSettings background_mode_settings = 38;</code>
      */
     private $background_mode_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatStatStageSettings combat_stat_stage_settings = 39;</code>
+     */
+    private $combat_stat_stage_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatNpcTrainer combat_npc_trainer = 40;</code>
+     */
+    private $combat_npc_trainer = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatNpcPersonality combat_npc_personality = 41;</code>
+     */
+    private $combat_npc_personality = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.OnboardingV2Settings onboarding_v2_settings = 42;</code>
+     */
+    private $onboarding_v2_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PartyRecommendationSettings party_recommendation_settings = 43;</code>
+     */
+    private $party_recommendation_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.SmeargleMovesSettings smeargle_moves_settings = 44;</code>
+     */
+    private $smeargle_moves_settings = null;
 
     /**
      * Constructor.
@@ -157,7 +201,7 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Settings\Master\PokemonUpgradeSettings $pokemon_upgrades
      *     @type \POGOProtos\Settings\Master\EquippedBadgeSettings $equipped_badges
      *     @type \POGOProtos\Settings\Master\QuestSettings $quest_settings
-     *     @type \POGOProtos\Settings\Master\AvatarCustomizationSettings $avatar_customization
+     *     @type \POGOProtos\Data\Avatar\AvatarCustomization $avatar_customization
      *     @type \POGOProtos\Settings\Master\FormSettings $form_settings
      *     @type \POGOProtos\Settings\Master\GenderSettings $gender_settings
      *     @type \POGOProtos\Settings\Master\GymBadgeGmtSettings $gym_badge_settings
@@ -165,11 +209,22 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Settings\Master\WeatherBonus $weather_bonus_settings
      *     @type \POGOProtos\Settings\Master\PokemonScaleSetting $pokemon_scale_settings
      *     @type \POGOProtos\Settings\Master\IapItemCategoryDisplay $iap_category_display
+     *     @type \POGOProtos\Settings\Master\BelugaPokemonWhitelist $beluga_pokemon_whitelist
      *     @type \POGOProtos\Settings\Master\OnboardingSettings $onboarding_settings
      *     @type \POGOProtos\Settings\Master\FriendshipLevelMilestoneSettings $friendship_milestone_settings
      *     @type \POGOProtos\Settings\Master\LuckyPokemonSettings $lucky_pokemon_settings
+     *     @type \POGOProtos\Settings\Master\CombatSettings $combat_settings
+     *     @type \POGOProtos\Settings\Master\CombatLeagueSettings $combat_league_settings
+     *     @type \POGOProtos\Settings\Master\CombatLeague $combat_league
      *     @type \POGOProtos\Settings\Master\ExRaidSettings $ex_raid_settings
+     *     @type \POGOProtos\Settings\Master\CombatMoveSettings $combat_move
      *     @type \POGOProtos\Settings\Master\BackgroundModeSettings $background_mode_settings
+     *     @type \POGOProtos\Settings\Master\CombatStatStageSettings $combat_stat_stage_settings
+     *     @type \POGOProtos\Settings\Master\CombatNpcTrainer $combat_npc_trainer
+     *     @type \POGOProtos\Settings\Master\CombatNpcPersonality $combat_npc_personality
+     *     @type \POGOProtos\Settings\Master\OnboardingV2Settings $onboarding_v2_settings
+     *     @type \POGOProtos\Settings\Master\PartyRecommendationSettings $party_recommendation_settings
+     *     @type \POGOProtos\Settings\Master\SmeargleMovesSettings $smeargle_moves_settings
      * }
      */
     public function __construct($data = NULL) {
@@ -552,8 +607,8 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.Master.AvatarCustomizationSettings avatar_customization = 21;</code>
-     * @return \POGOProtos\Settings\Master\AvatarCustomizationSettings
+     * Generated from protobuf field <code>.POGOProtos.Data.Avatar.AvatarCustomization avatar_customization = 21;</code>
+     * @return \POGOProtos\Data\Avatar\AvatarCustomization
      */
     public function getAvatarCustomization()
     {
@@ -561,13 +616,13 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Settings.Master.AvatarCustomizationSettings avatar_customization = 21;</code>
-     * @param \POGOProtos\Settings\Master\AvatarCustomizationSettings $var
+     * Generated from protobuf field <code>.POGOProtos.Data.Avatar.AvatarCustomization avatar_customization = 21;</code>
+     * @param \POGOProtos\Data\Avatar\AvatarCustomization $var
      * @return $this
      */
     public function setAvatarCustomization($var)
     {
-        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\AvatarCustomizationSettings::class);
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Avatar\AvatarCustomization::class);
         $this->avatar_customization = $var;
 
         return $this;
@@ -728,6 +783,28 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.BelugaPokemonWhitelist beluga_pokemon_whitelist = 29;</code>
+     * @return \POGOProtos\Settings\Master\BelugaPokemonWhitelist
+     */
+    public function getBelugaPokemonWhitelist()
+    {
+        return $this->beluga_pokemon_whitelist;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.BelugaPokemonWhitelist beluga_pokemon_whitelist = 29;</code>
+     * @param \POGOProtos\Settings\Master\BelugaPokemonWhitelist $var
+     * @return $this
+     */
+    public function setBelugaPokemonWhitelist($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\BelugaPokemonWhitelist::class);
+        $this->beluga_pokemon_whitelist = $var;
+
+        return $this;
+    }
+
+    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.Master.OnboardingSettings onboarding_settings = 30;</code>
      * @return \POGOProtos\Settings\Master\OnboardingSettings
      */
@@ -794,6 +871,72 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatSettings combat_settings = 33;</code>
+     * @return \POGOProtos\Settings\Master\CombatSettings
+     */
+    public function getCombatSettings()
+    {
+        return $this->combat_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatSettings combat_settings = 33;</code>
+     * @param \POGOProtos\Settings\Master\CombatSettings $var
+     * @return $this
+     */
+    public function setCombatSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\CombatSettings::class);
+        $this->combat_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatLeagueSettings combat_league_settings = 34;</code>
+     * @return \POGOProtos\Settings\Master\CombatLeagueSettings
+     */
+    public function getCombatLeagueSettings()
+    {
+        return $this->combat_league_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatLeagueSettings combat_league_settings = 34;</code>
+     * @param \POGOProtos\Settings\Master\CombatLeagueSettings $var
+     * @return $this
+     */
+    public function setCombatLeagueSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\CombatLeagueSettings::class);
+        $this->combat_league_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatLeague combat_league = 35;</code>
+     * @return \POGOProtos\Settings\Master\CombatLeague
+     */
+    public function getCombatLeague()
+    {
+        return $this->combat_league;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatLeague combat_league = 35;</code>
+     * @param \POGOProtos\Settings\Master\CombatLeague $var
+     * @return $this
+     */
+    public function setCombatLeague($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\CombatLeague::class);
+        $this->combat_league = $var;
+
+        return $this;
+    }
+
+    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.Master.ExRaidSettings ex_raid_settings = 36;</code>
      * @return \POGOProtos\Settings\Master\ExRaidSettings
      */
@@ -816,6 +959,28 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatMoveSettings combat_move = 37;</code>
+     * @return \POGOProtos\Settings\Master\CombatMoveSettings
+     */
+    public function getCombatMove()
+    {
+        return $this->combat_move;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatMoveSettings combat_move = 37;</code>
+     * @param \POGOProtos\Settings\Master\CombatMoveSettings $var
+     * @return $this
+     */
+    public function setCombatMove($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\CombatMoveSettings::class);
+        $this->combat_move = $var;
+
+        return $this;
+    }
+
+    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.Master.BackgroundModeSettings background_mode_settings = 38;</code>
      * @return \POGOProtos\Settings\Master\BackgroundModeSettings
      */
@@ -833,6 +998,138 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\BackgroundModeSettings::class);
         $this->background_mode_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatStatStageSettings combat_stat_stage_settings = 39;</code>
+     * @return \POGOProtos\Settings\Master\CombatStatStageSettings
+     */
+    public function getCombatStatStageSettings()
+    {
+        return $this->combat_stat_stage_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatStatStageSettings combat_stat_stage_settings = 39;</code>
+     * @param \POGOProtos\Settings\Master\CombatStatStageSettings $var
+     * @return $this
+     */
+    public function setCombatStatStageSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\CombatStatStageSettings::class);
+        $this->combat_stat_stage_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatNpcTrainer combat_npc_trainer = 40;</code>
+     * @return \POGOProtos\Settings\Master\CombatNpcTrainer
+     */
+    public function getCombatNpcTrainer()
+    {
+        return $this->combat_npc_trainer;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatNpcTrainer combat_npc_trainer = 40;</code>
+     * @param \POGOProtos\Settings\Master\CombatNpcTrainer $var
+     * @return $this
+     */
+    public function setCombatNpcTrainer($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\CombatNpcTrainer::class);
+        $this->combat_npc_trainer = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatNpcPersonality combat_npc_personality = 41;</code>
+     * @return \POGOProtos\Settings\Master\CombatNpcPersonality
+     */
+    public function getCombatNpcPersonality()
+    {
+        return $this->combat_npc_personality;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.CombatNpcPersonality combat_npc_personality = 41;</code>
+     * @param \POGOProtos\Settings\Master\CombatNpcPersonality $var
+     * @return $this
+     */
+    public function setCombatNpcPersonality($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\CombatNpcPersonality::class);
+        $this->combat_npc_personality = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.OnboardingV2Settings onboarding_v2_settings = 42;</code>
+     * @return \POGOProtos\Settings\Master\OnboardingV2Settings
+     */
+    public function getOnboardingV2Settings()
+    {
+        return $this->onboarding_v2_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.OnboardingV2Settings onboarding_v2_settings = 42;</code>
+     * @param \POGOProtos\Settings\Master\OnboardingV2Settings $var
+     * @return $this
+     */
+    public function setOnboardingV2Settings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\OnboardingV2Settings::class);
+        $this->onboarding_v2_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PartyRecommendationSettings party_recommendation_settings = 43;</code>
+     * @return \POGOProtos\Settings\Master\PartyRecommendationSettings
+     */
+    public function getPartyRecommendationSettings()
+    {
+        return $this->party_recommendation_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PartyRecommendationSettings party_recommendation_settings = 43;</code>
+     * @param \POGOProtos\Settings\Master\PartyRecommendationSettings $var
+     * @return $this
+     */
+    public function setPartyRecommendationSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\PartyRecommendationSettings::class);
+        $this->party_recommendation_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.SmeargleMovesSettings smeargle_moves_settings = 44;</code>
+     * @return \POGOProtos\Settings\Master\SmeargleMovesSettings
+     */
+    public function getSmeargleMovesSettings()
+    {
+        return $this->smeargle_moves_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.SmeargleMovesSettings smeargle_moves_settings = 44;</code>
+     * @param \POGOProtos\Settings\Master\SmeargleMovesSettings $var
+     * @return $this
+     */
+    public function setSmeargleMovesSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\SmeargleMovesSettings::class);
+        $this->smeargle_moves_settings = $var;
 
         return $this;
     }

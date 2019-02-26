@@ -33,6 +33,10 @@ class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 time_window_for_submissions_limit_ms = 5;</code>
      */
     private $time_window_for_submissions_limit_ms = 0;
+    /**
+     * Generated from protobuf field <code>int32 max_poi_distance_in_meters = 6;</code>
+     */
+    private $max_poi_distance_in_meters = 0;
 
     /**
      * Constructor.
@@ -45,6 +49,7 @@ class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
      *     @type bool $has_valid_email
      *     @type bool $is_feature_enabled
      *     @type int|string $time_window_for_submissions_limit_ms
+     *     @type int $max_poi_distance_in_meters
      * }
      */
     public function __construct($data = NULL) {
@@ -158,6 +163,28 @@ class GetAvailableSubmissionsResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->time_window_for_submissions_limit_ms = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 max_poi_distance_in_meters = 6;</code>
+     * @return int
+     */
+    public function getMaxPoiDistanceInMeters()
+    {
+        return $this->max_poi_distance_in_meters;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 max_poi_distance_in_meters = 6;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setMaxPoiDistanceInMeters($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->max_poi_distance_in_meters = $var;
 
         return $this;
     }

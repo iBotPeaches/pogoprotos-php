@@ -10,78 +10,128 @@ namespace POGOProtos\Enums;
 class SocialAction
 {
     /**
+     * No implementation required
+     *
      * Generated from protobuf enum <code>UNKNOWN_SOCIAL_ACTION = 0;</code>
      */
     const UNKNOWN_SOCIAL_ACTION = 0;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>SEARCH_PLAYER = 10000;</code>
      */
     const SEARCH_PLAYER = 10000;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>SEND_FRIEND_INVITE = 10002;</code>
      */
     const SEND_FRIEND_INVITE = 10002;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>CANCEL_FRIEND_INVITE = 10003;</code>
      */
     const CANCEL_FRIEND_INVITE = 10003;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>ACCEPT_FRIEND_INVITE = 10004;</code>
      */
     const ACCEPT_FRIEND_INVITE = 10004;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>DECLINE_FRIEND_INVITE = 10005;</code>
      */
     const DECLINE_FRIEND_INVITE = 10005;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>LIST_FRIENDS = 10006;</code>
      */
     const LIST_FRIENDS = 10006;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>LIST_OUTGOING_FRIEND_INVITES = 10007;</code>
      */
     const LIST_OUTGOING_FRIEND_INVITES = 10007;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>LIST_INCOMING_FRIEND_INVITES = 10008;</code>
      */
     const LIST_INCOMING_FRIEND_INVITES = 10008;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>REMOVE_FRIEND = 10009;</code>
      */
     const REMOVE_FRIEND = 10009;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>LIST_FRIEND_STATUS = 10010;</code>
      */
     const LIST_FRIEND_STATUS = 10010;
     /**
-     * Generated from protobuf enum <code>INVITE_FACEBOOK_FRIEND = 10011;</code>
+     * Implemented
+     *
+     * Generated from protobuf enum <code>SEND_FACEBOOK_FRIEND_INVITE = 10011;</code>
      */
-    const INVITE_FACEBOOK_FRIEND = 10011;
+    const SEND_FACEBOOK_FRIEND_INVITE = 10011;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>IS_MY_FRIEND = 10012;</code>
      */
     const IS_MY_FRIEND = 10012;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>CREATE_INVITE_CODE = 10013;</code>
      */
     const CREATE_INVITE_CODE = 10013;
     /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>GET_FACEBOOK_FRIEND_LIST = 10014;</code>
+     */
+    const GET_FACEBOOK_FRIEND_LIST = 10014;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>UPDATE_FACEBOOK_STATUS = 10015;</code>
+     */
+    const UPDATE_FACEBOOK_STATUS = 10015;
+    /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>REGISTER_PUSH_NOTIFICATION_SOCIAL_ACTION = 10101;</code>
      */
     const REGISTER_PUSH_NOTIFICATION_SOCIAL_ACTION = 10101;
     /**
+     * ???
+     *
      * Generated from protobuf enum <code>UNREGISTER_PUSH_NOTIFICATION_SOCIAL_ACTION = 10102;</code>
      */
     const UNREGISTER_PUSH_NOTIFICATION_SOCIAL_ACTION = 10102;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>UPDATE_NOTIFICATION = 10103;</code>
      */
     const UPDATE_NOTIFICATION = 10103;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>OPT_OUT_PUSH_NOTIFICATION_CATEGORY_SOCIAL_ACTION = 10104;</code>
      */
     const OPT_OUT_PUSH_NOTIFICATION_CATEGORY_SOCIAL_ACTION = 10104;
     /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>GET_INBOX = 10105;</code>
      */
     const GET_INBOX = 10105;

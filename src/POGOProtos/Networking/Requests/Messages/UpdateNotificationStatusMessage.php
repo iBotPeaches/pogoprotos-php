@@ -22,7 +22,7 @@ class UpdateNotificationStatusMessage extends \Google\Protobuf\Internal\Message
      */
     private $create_timestamp_ms;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.Messages.UpdateNotificationStatusMessage.NotificationState state = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.NotificationState state = 3;</code>
      */
     private $state = 0;
 
@@ -87,7 +87,7 @@ class UpdateNotificationStatusMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.Messages.UpdateNotificationStatusMessage.NotificationState state = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.NotificationState state = 3;</code>
      * @return int
      */
     public function getState()
@@ -96,13 +96,13 @@ class UpdateNotificationStatusMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Requests.Messages.UpdateNotificationStatusMessage.NotificationState state = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.NotificationState state = 3;</code>
      * @param int $var
      * @return $this
      */
     public function setState($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Networking\Requests\Messages\UpdateNotificationStatusMessage_NotificationState::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\NotificationState::class);
         $this->state = $var;
 
         return $this;

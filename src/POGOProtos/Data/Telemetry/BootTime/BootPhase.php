@@ -73,6 +73,10 @@ class BootPhase
      * Generated from protobuf enum <code>LOGIN_AUTHENTICATION = 15;</code>
      */
     const LOGIN_AUTHENTICATION = 15;
+    /**
+     * Generated from protobuf enum <code>MODAL_TIME = 16;</code>
+     */
+    const MODAL_TIME = 16;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

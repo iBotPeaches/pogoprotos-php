@@ -481,5 +481,65 @@ class Form
      * Generated from protobuf enum <code>ARCEUS_FAIRY = 117;</code>
      */
     const ARCEUS_FAIRY = 117;
+    /**
+     * Generated from protobuf enum <code>BURMY_PLANT = 118;</code>
+     */
+    const BURMY_PLANT = 118;
+    /**
+     * Generated from protobuf enum <code>BURMY_SANDY = 119;</code>
+     */
+    const BURMY_SANDY = 119;
+    /**
+     * Generated from protobuf enum <code>BURMY_TRASH = 120;</code>
+     */
+    const BURMY_TRASH = 120;
+    /**
+     * Generated from protobuf enum <code>SPINDA_08 = 121;</code>
+     */
+    const SPINDA_08 = 121;
+    /**
+     * Generated from protobuf enum <code>SPINDA_09 = 122;</code>
+     */
+    const SPINDA_09 = 122;
+    /**
+     * Generated from protobuf enum <code>SPINDA_10 = 123;</code>
+     */
+    const SPINDA_10 = 123;
+    /**
+     * Generated from protobuf enum <code>SPINDA_11 = 124;</code>
+     */
+    const SPINDA_11 = 124;
+    /**
+     * Generated from protobuf enum <code>SPINDA_12 = 125;</code>
+     */
+    const SPINDA_12 = 125;
+    /**
+     * Generated from protobuf enum <code>SPINDA_13 = 126;</code>
+     */
+    const SPINDA_13 = 126;
+    /**
+     * Generated from protobuf enum <code>SPINDA_14 = 127;</code>
+     */
+    const SPINDA_14 = 127;
+    /**
+     * Generated from protobuf enum <code>SPINDA_15 = 128;</code>
+     */
+    const SPINDA_15 = 128;
+    /**
+     * Generated from protobuf enum <code>SPINDA_16 = 129;</code>
+     */
+    const SPINDA_16 = 129;
+    /**
+     * Generated from protobuf enum <code>SPINDA_17 = 130;</code>
+     */
+    const SPINDA_17 = 130;
+    /**
+     * Generated from protobuf enum <code>SPINDA_18 = 131;</code>
+     */
+    const SPINDA_18 = 131;
+    /**
+     * Generated from protobuf enum <code>SPINDA_19 = 132;</code>
+     */
+    const SPINDA_19 = 132;
 }
 

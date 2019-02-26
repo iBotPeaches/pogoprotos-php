@@ -39,12 +39,14 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Logs\CompleteQuestLogEntry $complete_quest
      *     @type \POGOProtos\Data\Logs\CompleteQuestStampCardLogEntry $complete_quest_stamp_card
      *     @type \POGOProtos\Data\Logs\CompleteQuestPokemonEncounterLogEntry $complete_quest_pokemon_encounter
+     *     @type \POGOProtos\Data\Logs\BelugaDailyTransferLogEntry $beluga_transfer
      *     @type \POGOProtos\Data\Logs\OpenGiftLogEntry $open_gift
      *     @type \POGOProtos\Data\Logs\SendGiftLogEntry $send_gift
      *     @type \POGOProtos\Data\Logs\TradingLogEntry $trading
      *     @type \POGOProtos\Data\Logs\ShareExRaidPassLogEntry $share_ex_raid_pass
      *     @type \POGOProtos\Data\Logs\DeclineExRaidPassLogEntry $decline_ex_raid_pass
      *     @type \POGOProtos\Data\Logs\FitnessRewardsLogEntry $fitness_rewards
+     *     @type \POGOProtos\Data\Logs\CombatLogEntry $combat
      * }
      */
     public function __construct($data = NULL) {
@@ -273,6 +275,28 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+     * @return \POGOProtos\Data\Logs\BelugaDailyTransferLogEntry
+     */
+    public function getBelugaTransfer()
+    {
+        return $this->readOneof(11);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+     * @param \POGOProtos\Data\Logs\BelugaDailyTransferLogEntry $var
+     * @return $this
+     */
+    public function setBelugaTransfer($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\BelugaDailyTransferLogEntry::class);
+        $this->writeOneof(11, $var);
+
+        return $this;
+    }
+
+    /**
      * Generated from protobuf field <code>.POGOProtos.Data.Logs.OpenGiftLogEntry open_gift = 12;</code>
      * @return \POGOProtos\Data\Logs\OpenGiftLogEntry
      */
@@ -400,6 +424,28 @@ class ActionLogEntry extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\FitnessRewardsLogEntry::class);
         $this->writeOneof(17, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CombatLogEntry combat = 18;</code>
+     * @return \POGOProtos\Data\Logs\CombatLogEntry
+     */
+    public function getCombat()
+    {
+        return $this->readOneof(18);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Logs.CombatLogEntry combat = 18;</code>
+     * @param \POGOProtos\Data\Logs\CombatLogEntry $var
+     * @return $this
+     */
+    public function setCombat($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Logs\CombatLogEntry::class);
+        $this->writeOneof(18, $var);
 
         return $this;
     }

@@ -21,6 +21,10 @@ class UseItemMoveRerollMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>fixed64 pokemon_id = 2;</code>
      */
     private $pokemon_id = 0;
+    /**
+     * Generated from protobuf field <code>bool reroll_unlocked_move = 3;</code>
+     */
+    private $reroll_unlocked_move = false;
 
     /**
      * Constructor.
@@ -30,6 +34,7 @@ class UseItemMoveRerollMessage extends \Google\Protobuf\Internal\Message
      *
      *     @type int $item_id
      *     @type int|string $pokemon_id
+     *     @type bool $reroll_unlocked_move
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +82,28 @@ class UseItemMoveRerollMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool reroll_unlocked_move = 3;</code>
+     * @return bool
+     */
+    public function getRerollUnlockedMove()
+    {
+        return $this->reroll_unlocked_move;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool reroll_unlocked_move = 3;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setRerollUnlockedMove($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->reroll_unlocked_move = $var;
 
         return $this;
     }

@@ -14,15 +14,14 @@ class FrameRate
         if (static::$is_initialized == true) {
           return;
         }
-        \GPBMetadata\POGOProtos\Networking\Platform\Telemetry\PlatformMetricData::initOnce();
+        \GPBMetadata\POGOProtos\Data\Telemetry\PlatformMetricData::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
-            "0ab5010a29504f474f50726f746f732f446174612f54656c656d65747279" .
+            "0aa6010a29504f474f50726f746f732f446174612f54656c656d65747279" .
             "2f4672616d65526174652e70726f746f1219504f474f50726f746f732e44" .
-            "6174612e54656c656d6574727922650a094672616d655261746512580a12" .
-            "73616d706c65645f6672616d655f7261746518012001280b323c2e504f47" .
-            "4f50726f746f732e4e6574776f726b696e672e506c6174666f726d2e5465" .
-            "6c656d657472792e506c6174666f726d4d65747269634461746162067072" .
-            "6f746f33"
+            "6174612e54656c656d6574727922560a094672616d655261746512490a12" .
+            "73616d706c65645f6672616d655f7261746518012001280b322d2e504f47" .
+            "4f50726f746f732e446174612e54656c656d657472792e506c6174666f72" .
+            "6d4d657472696344617461620670726f746f33"
         ));
 
         static::$is_initialized = true;

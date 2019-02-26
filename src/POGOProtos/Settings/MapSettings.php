@@ -53,6 +53,10 @@ class MapSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>float special_weather_probability = 10;</code>
      */
     private $special_weather_probability = 0.0;
+    /**
+     * Generated from protobuf field <code>string google_maps_client_id = 11;</code>
+     */
+    private $google_maps_client_id = '';
 
     /**
      * Constructor.
@@ -70,6 +74,7 @@ class MapSettings extends \Google\Protobuf\Internal\Message
      *     @type int $min_nearby_hide_sightings
      *     @type bool $enable_special_weather
      *     @type float $special_weather_probability
+     *     @type string $google_maps_client_id
      * }
      */
     public function __construct($data = NULL) {
@@ -293,6 +298,28 @@ class MapSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkFloat($var);
         $this->special_weather_probability = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string google_maps_client_id = 11;</code>
+     * @return string
+     */
+    public function getGoogleMapsClientId()
+    {
+        return $this->google_maps_client_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string google_maps_client_id = 11;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setGoogleMapsClientId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->google_maps_client_id = $var;
 
         return $this;
     }

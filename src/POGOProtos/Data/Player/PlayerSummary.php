@@ -29,6 +29,10 @@ class PlayerSummary extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string team = 4;</code>
      */
     private $team = '';
+    /**
+     * Generated from protobuf field <code>string fb_user_id = 5;</code>
+     */
+    private $fb_user_id = '';
 
     /**
      * Constructor.
@@ -40,6 +44,7 @@ class PlayerSummary extends \Google\Protobuf\Internal\Message
      *     @type string $codename
      *     @type string $public_data
      *     @type string $team
+     *     @type string $fb_user_id
      * }
      */
     public function __construct($data = NULL) {
@@ -131,6 +136,28 @@ class PlayerSummary extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->team = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string fb_user_id = 5;</code>
+     * @return string
+     */
+    public function getFbUserId()
+    {
+        return $this->fb_user_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string fb_user_id = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setFbUserId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->fb_user_id = $var;
 
         return $this;
     }

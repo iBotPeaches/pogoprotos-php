@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class GiftBox extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>fixed64 giftbox_id = 1;</code>
+     * Generated from protobuf field <code>uint64 giftbox_id = 1;</code>
      */
     private $giftbox_id = 0;
     /**
@@ -73,7 +73,7 @@ class GiftBox extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>fixed64 giftbox_id = 1;</code>
+     * Generated from protobuf field <code>uint64 giftbox_id = 1;</code>
      * @return int|string
      */
     public function getGiftboxId()
@@ -82,7 +82,7 @@ class GiftBox extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>fixed64 giftbox_id = 1;</code>
+     * Generated from protobuf field <code>uint64 giftbox_id = 1;</code>
      * @param int|string $var
      * @return $this
      */

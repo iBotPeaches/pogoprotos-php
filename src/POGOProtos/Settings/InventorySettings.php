@@ -33,6 +33,14 @@ class InventorySettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 base_eggs = 5;</code>
      */
     private $base_eggs = 0;
+    /**
+     * Generated from protobuf field <code>int32 max_team_changes = 6;</code>
+     */
+    private $max_team_changes = 0;
+    /**
+     * Generated from protobuf field <code>int64 team_change_item_reset_period_in_days = 7;</code>
+     */
+    private $team_change_item_reset_period_in_days = 0;
 
     /**
      * Constructor.
@@ -45,6 +53,8 @@ class InventorySettings extends \Google\Protobuf\Internal\Message
      *     @type int $base_pokemon
      *     @type int $base_bag_items
      *     @type int $base_eggs
+     *     @type int $max_team_changes
+     *     @type int|string $team_change_item_reset_period_in_days
      * }
      */
     public function __construct($data = NULL) {
@@ -158,6 +168,50 @@ class InventorySettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->base_eggs = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 max_team_changes = 6;</code>
+     * @return int
+     */
+    public function getMaxTeamChanges()
+    {
+        return $this->max_team_changes;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 max_team_changes = 6;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setMaxTeamChanges($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->max_team_changes = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 team_change_item_reset_period_in_days = 7;</code>
+     * @return int|string
+     */
+    public function getTeamChangeItemResetPeriodInDays()
+    {
+        return $this->team_change_item_reset_period_in_days;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 team_change_item_reset_period_in_days = 7;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setTeamChangeItemResetPeriodInDays($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->team_change_item_reset_period_in_days = $var;
 
         return $this;
     }

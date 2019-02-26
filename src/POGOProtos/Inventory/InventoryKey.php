@@ -36,6 +36,7 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
      *     @type bool $raid_tickets
      *     @type bool $quests
      *     @type bool $gift_boxes
+     *     @type bool $beluga_incense_box
      * }
      */
     public function __construct($data = NULL) {
@@ -369,6 +370,28 @@ class InventoryKey extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->writeOneof(15, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool beluga_incense_box = 16;</code>
+     * @return bool
+     */
+    public function getBelugaIncenseBox()
+    {
+        return $this->readOneof(16);
+    }
+
+    /**
+     * Generated from protobuf field <code>bool beluga_incense_box = 16;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setBelugaIncenseBox($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->writeOneof(16, $var);
 
         return $this;
     }

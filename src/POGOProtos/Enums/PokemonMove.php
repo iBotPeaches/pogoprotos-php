@@ -1037,5 +1037,9 @@ class PokemonMove
      * Generated from protobuf enum <code>RAZOR_SHELL = 318;</code>
      */
     const RAZOR_SHELL = 318;
+    /**
+     * Generated from protobuf enum <code>POWER_UP_PUNCH = 319;</code>
+     */
+    const POWER_UP_PUNCH = 319;
 }
 

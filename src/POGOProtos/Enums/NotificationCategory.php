@@ -62,12 +62,32 @@ class NotificationCategory
      */
     const BGMODE_WEEKLY_FITNESS_REPORT = 12;
     /**
-     * Generated from protobuf enum <code>FRIEND_INVITE_RECEIVED = 13;</code>
+     * Generated from protobuf enum <code>BGMODE_OFF_SESSION_DISTANCE = 13;</code>
      */
-    const FRIEND_INVITE_RECEIVED = 13;
+    const BGMODE_OFF_SESSION_DISTANCE = 13;
     /**
-     * Generated from protobuf enum <code>FRIEND_INVITE_ACCEPTED = 14;</code>
+     * Generated from protobuf enum <code>BGMODE_POI_PROXIMITY = 14;</code>
      */
-    const FRIEND_INVITE_ACCEPTED = 14;
+    const BGMODE_POI_PROXIMITY = 14;
+    /**
+     * Generated from protobuf enum <code>COMBAT_CHALLENGE_OPENED = 15;</code>
+     */
+    const COMBAT_CHALLENGE_OPENED = 15;
+    /**
+     * Generated from protobuf enum <code>FRIEND_INVITE_RECEIVED = 16;</code>
+     */
+    const FRIEND_INVITE_RECEIVED = 16;
+    /**
+     * Generated from protobuf enum <code>FRIEND_INVITE_ACCEPTED = 17;</code>
+     */
+    const FRIEND_INVITE_ACCEPTED = 17;
+    /**
+     * Generated from protobuf enum <code>BGMODE_NAMED_BUDDY_CANDY = 18;</code>
+     */
+    const BGMODE_NAMED_BUDDY_CANDY = 18;
+    /**
+     * Generated from protobuf enum <code>APP_BADGE_ONLY = 19;</code>
+     */
+    const APP_BADGE_ONLY = 19;
 }
 

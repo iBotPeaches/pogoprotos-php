@@ -57,6 +57,10 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 server_ms = 11;</code>
      */
     private $server_ms = 0;
+    /**
+     * Generated from protobuf field <code>int32 server_instance = 12;</code>
+     */
+    private $server_instance = 0;
 
     /**
      * Constructor.
@@ -75,6 +79,7 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
      *     @type bool $received_rewards
      *     @type int $num_players_in_lobby
      *     @type int|string $server_ms
+     *     @type int $server_instance
      * }
      */
     public function __construct($data = NULL) {
@@ -320,6 +325,28 @@ class GetRaidDetailsResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->server_ms = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 server_instance = 12;</code>
+     * @return int
+     */
+    public function getServerInstance()
+    {
+        return $this->server_instance;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 server_instance = 12;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setServerInstance($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->server_instance = $var;
 
         return $this;
     }

@@ -97,6 +97,14 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string avatar_necklace = 22;</code>
      */
     private $avatar_necklace = '';
+    /**
+     * Generated from protobuf field <code>string avatar_skin = 23;</code>
+     */
+    private $avatar_skin = '';
+    /**
+     * Generated from protobuf field <code>string avatar_pose = 24;</code>
+     */
+    private $avatar_pose = '';
 
     /**
      * Constructor.
@@ -125,6 +133,8 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
      *     @type string $avatar_belt
      *     @type string $avatar_glasses
      *     @type string $avatar_necklace
+     *     @type string $avatar_skin
+     *     @type string $avatar_pose
      * }
      */
     public function __construct($data = NULL) {
@@ -590,6 +600,50 @@ class PlayerAvatar extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->avatar_necklace = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string avatar_skin = 23;</code>
+     * @return string
+     */
+    public function getAvatarSkin()
+    {
+        return $this->avatar_skin;
+    }
+
+    /**
+     * Generated from protobuf field <code>string avatar_skin = 23;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAvatarSkin($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->avatar_skin = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string avatar_pose = 24;</code>
+     * @return string
+     */
+    public function getAvatarPose()
+    {
+        return $this->avatar_pose;
+    }
+
+    /**
+     * Generated from protobuf field <code>string avatar_pose = 24;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAvatarPose($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->avatar_pose = $var;
 
         return $this;
     }

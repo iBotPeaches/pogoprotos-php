@@ -109,5 +109,9 @@ class LoginActionTelemetryIds
      * Generated from protobuf enum <code>EXIT_EXISTING_PLAYER = 24;</code>
      */
     const EXIT_EXISTING_PLAYER = 24;
+    /**
+     * Generated from protobuf enum <code>LOGIN_STARTED = 25;</code>
+     */
+    const LOGIN_STARTED = 25;
 }
 

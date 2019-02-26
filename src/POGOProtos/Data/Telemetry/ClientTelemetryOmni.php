@@ -61,7 +61,12 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Telemetry\RpcSocketResponseTelemetry $rpc_socket_timing_telemetry
      *     @type \POGOProtos\Data\Telemetry\PermissionsFlowTelemetry $permissions_flow
      *     @type \POGOProtos\Data\Telemetry\DeviceServiceToggleTelemetry $device_service_toggle
-     *     @type \POGOProtos\Networking\Platform\Telemetry\PlatformServerData $server_data
+     *     @type \POGOProtos\Data\Telemetry\BootTelemetry $boot_telemetry
+     *     @type \POGOProtos\Data\Player\UserAttributes $user_attributes
+     *     @type \POGOProtos\Data\Telemetry\OnboardingTelemetry $onboarding_telemetry
+     *     @type \POGOProtos\Data\Telemetry\LoginActionTelemetry $login_action_telemetry
+     *     @type \POGOProtos\Data\Telemetry\ArPhotoSession $ar_photo_session_telemetry
+     *     @type \POGOProtos\Data\Telemetry\PlatformServerData $server_data
      * }
      */
     public function __construct($data = NULL) {
@@ -950,8 +955,118 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformServerData server_data = 1001;</code>
-     * @return \POGOProtos\Networking\Platform\Telemetry\PlatformServerData
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.BootTelemetry boot_telemetry = 41;</code>
+     * @return \POGOProtos\Data\Telemetry\BootTelemetry
+     */
+    public function getBootTelemetry()
+    {
+        return $this->readOneof(41);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.BootTelemetry boot_telemetry = 41;</code>
+     * @param \POGOProtos\Data\Telemetry\BootTelemetry $var
+     * @return $this
+     */
+    public function setBootTelemetry($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\BootTelemetry::class);
+        $this->writeOneof(41, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.UserAttributes user_attributes = 42;</code>
+     * @return \POGOProtos\Data\Player\UserAttributes
+     */
+    public function getUserAttributes()
+    {
+        return $this->readOneof(42);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.UserAttributes user_attributes = 42;</code>
+     * @param \POGOProtos\Data\Player\UserAttributes $var
+     * @return $this
+     */
+    public function setUserAttributes($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Player\UserAttributes::class);
+        $this->writeOneof(42, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.OnboardingTelemetry onboarding_telemetry = 43;</code>
+     * @return \POGOProtos\Data\Telemetry\OnboardingTelemetry
+     */
+    public function getOnboardingTelemetry()
+    {
+        return $this->readOneof(43);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.OnboardingTelemetry onboarding_telemetry = 43;</code>
+     * @param \POGOProtos\Data\Telemetry\OnboardingTelemetry $var
+     * @return $this
+     */
+    public function setOnboardingTelemetry($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\OnboardingTelemetry::class);
+        $this->writeOneof(43, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.LoginActionTelemetry login_action_telemetry = 44;</code>
+     * @return \POGOProtos\Data\Telemetry\LoginActionTelemetry
+     */
+    public function getLoginActionTelemetry()
+    {
+        return $this->readOneof(44);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.LoginActionTelemetry login_action_telemetry = 44;</code>
+     * @param \POGOProtos\Data\Telemetry\LoginActionTelemetry $var
+     * @return $this
+     */
+    public function setLoginActionTelemetry($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\LoginActionTelemetry::class);
+        $this->writeOneof(44, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.ArPhotoSession ar_photo_session_telemetry = 45;</code>
+     * @return \POGOProtos\Data\Telemetry\ArPhotoSession
+     */
+    public function getArPhotoSessionTelemetry()
+    {
+        return $this->readOneof(45);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.ArPhotoSession ar_photo_session_telemetry = 45;</code>
+     * @param \POGOProtos\Data\Telemetry\ArPhotoSession $var
+     * @return $this
+     */
+    public function setArPhotoSessionTelemetry($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\ArPhotoSession::class);
+        $this->writeOneof(45, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PlatformServerData server_data = 1001;</code>
+     * @return \POGOProtos\Data\Telemetry\PlatformServerData
      */
     public function getServerData()
     {
@@ -959,13 +1074,13 @@ class ClientTelemetryOmni extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformServerData server_data = 1001;</code>
-     * @param \POGOProtos\Networking\Platform\Telemetry\PlatformServerData $var
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PlatformServerData server_data = 1001;</code>
+     * @param \POGOProtos\Data\Telemetry\PlatformServerData $var
      * @return $this
      */
     public function setServerData($var)
     {
-        GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\PlatformServerData::class);
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\PlatformServerData::class);
         $this->writeOneof(1001, $var);
 
         return $this;

@@ -9,8 +9,6 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * UNTESTED
- *
  * Generated from protobuf message <code>POGOProtos.Networking.Responses.GetDownloadUrlsResponse</code>
  */
 class GetDownloadUrlsResponse extends \Google\Protobuf\Internal\Message

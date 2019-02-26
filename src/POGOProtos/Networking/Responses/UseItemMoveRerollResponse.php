@@ -18,9 +18,9 @@ class UseItemMoveRerollResponse extends \Google\Protobuf\Internal\Message
      */
     private $result = 0;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData upgraded_pokemon = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData updated_pokemon = 2;</code>
      */
-    private $upgraded_pokemon = null;
+    private $updated_pokemon = null;
 
     /**
      * Constructor.
@@ -29,7 +29,7 @@ class UseItemMoveRerollResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $result
-     *     @type \POGOProtos\Data\PokemonData $upgraded_pokemon
+     *     @type \POGOProtos\Data\PokemonData $updated_pokemon
      * }
      */
     public function __construct($data = NULL) {
@@ -60,23 +60,23 @@ class UseItemMoveRerollResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData upgraded_pokemon = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData updated_pokemon = 2;</code>
      * @return \POGOProtos\Data\PokemonData
      */
-    public function getUpgradedPokemon()
+    public function getUpdatedPokemon()
     {
-        return $this->upgraded_pokemon;
+        return $this->updated_pokemon;
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData upgraded_pokemon = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData updated_pokemon = 2;</code>
      * @param \POGOProtos\Data\PokemonData $var
      * @return $this
      */
-    public function setUpgradedPokemon($var)
+    public function setUpdatedPokemon($var)
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
-        $this->upgraded_pokemon = $var;
+        $this->updated_pokemon = $var;
 
         return $this;
     }

@@ -33,6 +33,10 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Enums.Form form = 5;</code>
      */
     private $form = 0;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.Gender gender_requirement = 6;</code>
+     */
+    private $gender_requirement = 0;
 
     /**
      * Constructor.
@@ -45,6 +49,7 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
      *     @type int $candy_cost
      *     @type float $km_buddy_distance_requirement
      *     @type int $form
+     *     @type int $gender_requirement
      * }
      */
     public function __construct($data = NULL) {
@@ -158,6 +163,28 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
         $this->form = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.Gender gender_requirement = 6;</code>
+     * @return int
+     */
+    public function getGenderRequirement()
+    {
+        return $this->gender_requirement;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.Gender gender_requirement = 6;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setGenderRequirement($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\Gender::class);
+        $this->gender_requirement = $var;
 
         return $this;
     }

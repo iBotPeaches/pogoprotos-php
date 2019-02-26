@@ -193,6 +193,18 @@ class PokemonData extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool is_lucky = 46;</code>
      */
     private $is_lucky = false;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove move_3 = 47;</code>
+     */
+    private $move_3 = 0;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Combat.PokemonCombatStats pvp_combat_stats = 48;</code>
+     */
+    private $pvp_combat_stats = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Combat.PokemonCombatStats npc_combat_stats = 49;</code>
+     */
+    private $npc_combat_stats = null;
 
     /**
      * Constructor.
@@ -245,6 +257,9 @@ class PokemonData extends \Google\Protobuf\Internal\Message
      *     @type string $original_owner_nickname
      *     @type int|string $traded_time_ms
      *     @type bool $is_lucky
+     *     @type int $move_3
+     *     @type \POGOProtos\Data\Combat\PokemonCombatStats $pvp_combat_stats
+     *     @type \POGOProtos\Data\Combat\PokemonCombatStats $npc_combat_stats
      * }
      */
     public function __construct($data = NULL) {
@@ -1238,6 +1253,72 @@ class PokemonData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->is_lucky = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove move_3 = 47;</code>
+     * @return int
+     */
+    public function getMove3()
+    {
+        return $this->move_3;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove move_3 = 47;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setMove3($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonMove::class);
+        $this->move_3 = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Combat.PokemonCombatStats pvp_combat_stats = 48;</code>
+     * @return \POGOProtos\Data\Combat\PokemonCombatStats
+     */
+    public function getPvpCombatStats()
+    {
+        return $this->pvp_combat_stats;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Combat.PokemonCombatStats pvp_combat_stats = 48;</code>
+     * @param \POGOProtos\Data\Combat\PokemonCombatStats $var
+     * @return $this
+     */
+    public function setPvpCombatStats($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Combat\PokemonCombatStats::class);
+        $this->pvp_combat_stats = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Combat.PokemonCombatStats npc_combat_stats = 49;</code>
+     * @return \POGOProtos\Data\Combat\PokemonCombatStats
+     */
+    public function getNpcCombatStats()
+    {
+        return $this->npc_combat_stats;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Combat.PokemonCombatStats npc_combat_stats = 49;</code>
+     * @param \POGOProtos\Data\Combat\PokemonCombatStats $var
+     * @return $this
+     */
+    public function setNpcCombatStats($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Combat\PokemonCombatStats::class);
+        $this->npc_combat_stats = $var;
 
         return $this;
     }

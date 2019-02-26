@@ -65,5 +65,61 @@ class TutorialState
      * Generated from protobuf enum <code>POI_SUBMISSION_TUTORIAL = 13;</code>
      */
     const POI_SUBMISSION_TUTORIAL = 13;
+    /**
+     * Generated from protobuf enum <code>V1_START_TUTORIAL = 14;</code>
+     */
+    const V1_START_TUTORIAL = 14;
+    /**
+     * Generated from protobuf enum <code>V2_START_TUTORIAL = 15;</code>
+     */
+    const V2_START_TUTORIAL = 15;
+    /**
+     * Generated from protobuf enum <code>V2_CUSTOMIZED_AVATAR = 16;</code>
+     */
+    const V2_CUSTOMIZED_AVATAR = 16;
+    /**
+     * Generated from protobuf enum <code>V2_CAUGHT_FIRST_WILD = 17;</code>
+     */
+    const V2_CAUGHT_FIRST_WILD = 17;
+    /**
+     * Generated from protobuf enum <code>V2_FINISHED_TUTORIAL_CATCHES = 18;</code>
+     */
+    const V2_FINISHED_TUTORIAL_CATCHES = 18;
+    /**
+     * Generated from protobuf enum <code>V2_NAME_SELECTION = 19;</code>
+     */
+    const V2_NAME_SELECTION = 19;
+    /**
+     * Generated from protobuf enum <code>V2_EGG_GIVEN = 20;</code>
+     */
+    const V2_EGG_GIVEN = 20;
+    /**
+     * Generated from protobuf enum <code>V2_START_EGG_TUTORIAL = 21;</code>
+     */
+    const V2_START_EGG_TUTORIAL = 21;
+    /**
+     * Generated from protobuf enum <code>V2_COMPLETED_EGG_TUTORIAL = 22;</code>
+     */
+    const V2_COMPLETED_EGG_TUTORIAL = 22;
+    /**
+     * Generated from protobuf enum <code>AR_PHOTO_TUTORIAL = 23;</code>
+     */
+    const AR_PHOTO_TUTORIAL = 23;
+    /**
+     * Generated from protobuf enum <code>STARTER_POKEMON_CAPTURED = 24;</code>
+     */
+    const STARTER_POKEMON_CAPTURED = 24;
+    /**
+     * Generated from protobuf enum <code>AR_PHOTO_FIRST_TIME_DIALOG = 25;</code>
+     */
+    const AR_PHOTO_FIRST_TIME_DIALOG = 25;
+    /**
+     * Generated from protobuf enum <code>AR_CLASSIC_PHOTO_TUTORIAL = 26;</code>
+     */
+    const AR_CLASSIC_PHOTO_TUTORIAL = 26;
+    /**
+     * Generated from protobuf enum <code>AR_PLUS_PHOTO_TUTORIAL = 27;</code>
+     */
+    const AR_PLUS_PHOTO_TUTORIAL = 27;
 }
 

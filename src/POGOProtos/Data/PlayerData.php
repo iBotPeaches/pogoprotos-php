@@ -54,7 +54,7 @@ class PlayerData extends \Google\Protobuf\Internal\Message
      */
     private $contact_settings = null;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency currency_balance = 14;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Store.CurrencyQuantity currency_balance = 14;</code>
      */
     private $currency_balance;
     /**
@@ -81,6 +81,18 @@ class PlayerData extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.Player.SocialPlayerSettings social_player_settings = 20;</code>
      */
     private $social_player_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Combat.CombatPlayerPreferences combat_player_preferences = 21;</code>
+     */
+    private $combat_player_preferences = null;
+    /**
+     * Generated from protobuf field <code>string player_support_id = 22;</code>
+     */
+    private $player_support_id = '';
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.TeamChangeInfo team_change_info = 23;</code>
+     */
+    private $team_change_info = null;
 
     /**
      * Constructor.
@@ -98,13 +110,16 @@ class PlayerData extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Player\DailyBonus $daily_bonus
      *     @type \POGOProtos\Data\Player\EquippedBadge $equipped_badge
      *     @type \POGOProtos\Data\Player\ContactSettings $contact_settings
-     *     @type \POGOProtos\Data\Player\Currency[]|\Google\Protobuf\Internal\RepeatedField $currency_balance
+     *     @type \POGOProtos\Data\Store\CurrencyQuantity[]|\Google\Protobuf\Internal\RepeatedField $currency_balance
      *     @type int $remaining_codename_claims
      *     @type \POGOProtos\Data\BuddyPokemon $buddy_pokemon
      *     @type int|string $battle_lockout_end_ms
      *     @type \POGOProtos\Data\Player\PlayerAvatar $secondary_player_avatar
      *     @type bool $name_is_blacklisted
      *     @type \POGOProtos\Data\Player\SocialPlayerSettings $social_player_settings
+     *     @type \POGOProtos\Data\Combat\CombatPlayerPreferences $combat_player_preferences
+     *     @type string $player_support_id
+     *     @type \POGOProtos\Data\Player\TeamChangeInfo $team_change_info
      * }
      */
     public function __construct($data = NULL) {
@@ -333,7 +348,7 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency currency_balance = 14;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Store.CurrencyQuantity currency_balance = 14;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getCurrencyBalance()
@@ -342,13 +357,13 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Player.Currency currency_balance = 14;</code>
-     * @param \POGOProtos\Data\Player\Currency[]|\Google\Protobuf\Internal\RepeatedField $var
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Store.CurrencyQuantity currency_balance = 14;</code>
+     * @param \POGOProtos\Data\Store\CurrencyQuantity[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setCurrencyBalance($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Player\Currency::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Store\CurrencyQuantity::class);
         $this->currency_balance = $arr;
 
         return $this;
@@ -482,6 +497,72 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\SocialPlayerSettings::class);
         $this->social_player_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Combat.CombatPlayerPreferences combat_player_preferences = 21;</code>
+     * @return \POGOProtos\Data\Combat\CombatPlayerPreferences
+     */
+    public function getCombatPlayerPreferences()
+    {
+        return $this->combat_player_preferences;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Combat.CombatPlayerPreferences combat_player_preferences = 21;</code>
+     * @param \POGOProtos\Data\Combat\CombatPlayerPreferences $var
+     * @return $this
+     */
+    public function setCombatPlayerPreferences($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Combat\CombatPlayerPreferences::class);
+        $this->combat_player_preferences = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string player_support_id = 22;</code>
+     * @return string
+     */
+    public function getPlayerSupportId()
+    {
+        return $this->player_support_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string player_support_id = 22;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPlayerSupportId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->player_support_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.TeamChangeInfo team_change_info = 23;</code>
+     * @return \POGOProtos\Data\Player\TeamChangeInfo
+     */
+    public function getTeamChangeInfo()
+    {
+        return $this->team_change_info;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Player.TeamChangeInfo team_change_info = 23;</code>
+     * @param \POGOProtos\Data\Player\TeamChangeInfo $var
+     * @return $this
+     */
+    public function setTeamChangeInfo($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Player\TeamChangeInfo::class);
+        $this->team_change_info = $var;
 
         return $this;
     }

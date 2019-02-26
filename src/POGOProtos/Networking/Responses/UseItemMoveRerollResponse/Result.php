@@ -41,6 +41,10 @@ class Result
      * Generated from protobuf enum <code>INVALID_POKEMON = 7;</code>
      */
     const INVALID_POKEMON = 7;
+    /**
+     * Generated from protobuf enum <code>MOVE_LOCKED = 8;</code>
+     */
+    const MOVE_LOCKED = 8;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

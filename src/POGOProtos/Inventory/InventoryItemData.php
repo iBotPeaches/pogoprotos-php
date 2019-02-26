@@ -36,6 +36,7 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Inventory\RaidTickets $raid_tickets
      *     @type \POGOProtos\Data\Quests\Quests $quests
      *     @type \POGOProtos\Data\Gift\GiftBoxes $gift_boxes
+     *     @type \POGOProtos\Data\Beluga\BelugaIncenseBox $beluga_incense
      * }
      */
     public function __construct($data = NULL) {
@@ -369,6 +370,28 @@ class InventoryItemData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Gift\GiftBoxes::class);
         $this->writeOneof(15, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Beluga.BelugaIncenseBox beluga_incense = 16;</code>
+     * @return \POGOProtos\Data\Beluga\BelugaIncenseBox
+     */
+    public function getBelugaIncense()
+    {
+        return $this->readOneof(16);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Beluga.BelugaIncenseBox beluga_incense = 16;</code>
+     * @param \POGOProtos\Data\Beluga\BelugaIncenseBox $var
+     * @return $this
+     */
+    public function setBelugaIncense($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Beluga\BelugaIncenseBox::class);
+        $this->writeOneof(16, $var);
 
         return $this;
     }

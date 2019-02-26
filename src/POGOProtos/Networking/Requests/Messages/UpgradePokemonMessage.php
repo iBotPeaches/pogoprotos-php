@@ -17,6 +17,10 @@ class UpgradePokemonMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>fixed64 pokemon_id = 1;</code>
      */
     private $pokemon_id = 0;
+    /**
+     * Generated from protobuf field <code>bool preview = 2;</code>
+     */
+    private $preview = false;
 
     /**
      * Constructor.
@@ -25,6 +29,7 @@ class UpgradePokemonMessage extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int|string $pokemon_id
+     *     @type bool $preview
      * }
      */
     public function __construct($data = NULL) {
@@ -50,6 +55,28 @@ class UpgradePokemonMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint64($var);
         $this->pokemon_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool preview = 2;</code>
+     * @return bool
+     */
+    public function getPreview()
+    {
+        return $this->preview;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool preview = 2;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setPreview($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->preview = $var;
 
         return $this;
     }

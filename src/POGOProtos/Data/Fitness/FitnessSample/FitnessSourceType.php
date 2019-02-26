@@ -21,6 +21,14 @@ class FitnessSourceType
      * Generated from protobuf enum <code>GOOGLE_FIT = 2;</code>
      */
     const GOOGLE_FIT = 2;
+    /**
+     * Generated from protobuf enum <code>APPLE_WATCH = 3;</code>
+     */
+    const APPLE_WATCH = 3;
+    /**
+     * Generated from protobuf enum <code>GPS = 4;</code>
+     */
+    const GPS = 4;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

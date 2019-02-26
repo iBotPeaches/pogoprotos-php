@@ -22,15 +22,13 @@ class MapPokemon extends \Google\Protobuf\Internal\Message
      */
     private $encounter_id = 0;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokedex_type_id = 3;</code>
      */
-    private $pokemon_id = 0;
+    private $pokedex_type_id = 0;
     /**
-     * After this timestamp, the pokemon will be gone.
-     *
-     * Generated from protobuf field <code>int64 expiration_timestamp_ms = 4;</code>
+     * Generated from protobuf field <code>int64 expiration_time_ms = 4;</code>
      */
-    private $expiration_timestamp_ms = 0;
+    private $expiration_time_ms = 0;
     /**
      * Generated from protobuf field <code>double latitude = 5;</code>
      */
@@ -52,9 +50,8 @@ class MapPokemon extends \Google\Protobuf\Internal\Message
      *
      *     @type string $spawn_point_id
      *     @type int|string $encounter_id
-     *     @type int $pokemon_id
-     *     @type int|string $expiration_timestamp_ms
-     *           After this timestamp, the pokemon will be gone.
+     *     @type int $pokedex_type_id
+     *     @type int|string $expiration_time_ms
      *     @type float $latitude
      *     @type float $longitude
      *     @type \POGOProtos\Data\PokemonDisplay $pokemon_display
@@ -110,49 +107,45 @@ class MapPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokedex_type_id = 3;</code>
      * @return int
      */
-    public function getPokemonId()
+    public function getPokedexTypeId()
     {
-        return $this->pokemon_id;
+        return $this->pokedex_type_id;
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 3;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokedex_type_id = 3;</code>
      * @param int $var
      * @return $this
      */
-    public function setPokemonId($var)
+    public function setPokedexTypeId($var)
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
-        $this->pokemon_id = $var;
+        $this->pokedex_type_id = $var;
 
         return $this;
     }
 
     /**
-     * After this timestamp, the pokemon will be gone.
-     *
-     * Generated from protobuf field <code>int64 expiration_timestamp_ms = 4;</code>
+     * Generated from protobuf field <code>int64 expiration_time_ms = 4;</code>
      * @return int|string
      */
-    public function getExpirationTimestampMs()
+    public function getExpirationTimeMs()
     {
-        return $this->expiration_timestamp_ms;
+        return $this->expiration_time_ms;
     }
 
     /**
-     * After this timestamp, the pokemon will be gone.
-     *
-     * Generated from protobuf field <code>int64 expiration_timestamp_ms = 4;</code>
+     * Generated from protobuf field <code>int64 expiration_time_ms = 4;</code>
      * @param int|string $var
      * @return $this
      */
-    public function setExpirationTimestampMs($var)
+    public function setExpirationTimeMs($var)
     {
         GPBUtil::checkInt64($var);
-        $this->expiration_timestamp_ms = $var;
+        $this->expiration_time_ms = $var;
 
         return $this;
     }

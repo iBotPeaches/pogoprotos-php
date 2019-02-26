@@ -37,5 +37,9 @@ class EncounterType
      * Generated from protobuf enum <code>CHALLENGE_QUEST = 6;</code>
      */
     const CHALLENGE_QUEST = 6;
+    /**
+     * Generated from protobuf enum <code>PHOTOBOMB = 7;</code>
+     */
+    const PHOTOBOMB = 7;
 }
 

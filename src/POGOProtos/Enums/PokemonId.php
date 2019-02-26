@@ -1985,5 +1985,13 @@ class PokemonId
      * Generated from protobuf enum <code>ARCEUS = 493;</code>
      */
     const ARCEUS = 493;
+    /**
+     * Generated from protobuf enum <code>MELTAN = 808;</code>
+     */
+    const MELTAN = 808;
+    /**
+     * Generated from protobuf enum <code>MELMETAL = 809;</code>
+     */
+    const MELMETAL = 809;
 }
 

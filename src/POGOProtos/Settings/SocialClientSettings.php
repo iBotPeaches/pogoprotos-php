@@ -37,6 +37,18 @@ class SocialClientSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool enable_share_ex_pass = 6;</code>
      */
     private $enable_share_ex_pass = false;
+    /**
+     * Generated from protobuf field <code>bool enable_facebook_friends = 7;</code>
+     */
+    private $enable_facebook_friends = false;
+    /**
+     * Generated from protobuf field <code>int32 facebook_friend_limit_per_request = 8;</code>
+     */
+    private $facebook_friend_limit_per_request = 0;
+    /**
+     * Generated from protobuf field <code>bool disable_facebook_friends_opening_prompt = 9;</code>
+     */
+    private $disable_facebook_friends_opening_prompt = false;
 
     /**
      * Constructor.
@@ -50,6 +62,9 @@ class SocialClientSettings extends \Google\Protobuf\Internal\Message
      *     @type int $max_friend_nickname_length
      *     @type bool $enable_add_friend_via_qr_code
      *     @type bool $enable_share_ex_pass
+     *     @type bool $enable_facebook_friends
+     *     @type int $facebook_friend_limit_per_request
+     *     @type bool $disable_facebook_friends_opening_prompt
      * }
      */
     public function __construct($data = NULL) {
@@ -185,6 +200,72 @@ class SocialClientSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->enable_share_ex_pass = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_facebook_friends = 7;</code>
+     * @return bool
+     */
+    public function getEnableFacebookFriends()
+    {
+        return $this->enable_facebook_friends;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_facebook_friends = 7;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setEnableFacebookFriends($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_facebook_friends = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 facebook_friend_limit_per_request = 8;</code>
+     * @return int
+     */
+    public function getFacebookFriendLimitPerRequest()
+    {
+        return $this->facebook_friend_limit_per_request;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 facebook_friend_limit_per_request = 8;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setFacebookFriendLimitPerRequest($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->facebook_friend_limit_per_request = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool disable_facebook_friends_opening_prompt = 9;</code>
+     * @return bool
+     */
+    public function getDisableFacebookFriendsOpeningPrompt()
+    {
+        return $this->disable_facebook_friends_opening_prompt;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool disable_facebook_friends_opening_prompt = 9;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setDisableFacebookFriendsOpeningPrompt($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->disable_facebook_friends_opening_prompt = $var;
 
         return $this;
     }

@@ -165,6 +165,22 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 fitness_report_last_check_bucket = 38;</code>
      */
     private $fitness_report_last_check_bucket = 0;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Combat.PlayerCombatStats combat_stats = 39;</code>
+     */
+    private $combat_stats = null;
+    /**
+     * Generated from protobuf field <code>int32 num_npc_combats_won = 40;</code>
+     */
+    private $num_npc_combats_won = 0;
+    /**
+     * Generated from protobuf field <code>int32 num_npc_combats_total = 41;</code>
+     */
+    private $num_npc_combats_total = 0;
+    /**
+     * Generated from protobuf field <code>int32 num_photobomb_seen = 42;</code>
+     */
+    private $num_photobomb_seen = 0;
 
     /**
      * Constructor.
@@ -210,6 +226,10 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
      *     @type int $num_max_level_friends
      *     @type int|string $trade_accumulated_distance_km
      *     @type int|string $fitness_report_last_check_bucket
+     *     @type \POGOProtos\Data\Combat\PlayerCombatStats $combat_stats
+     *     @type int $num_npc_combats_won
+     *     @type int $num_npc_combats_total
+     *     @type int $num_photobomb_seen
      * }
      */
     public function __construct($data = NULL) {
@@ -1049,6 +1069,94 @@ class PlayerStats extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->fitness_report_last_check_bucket = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Combat.PlayerCombatStats combat_stats = 39;</code>
+     * @return \POGOProtos\Data\Combat\PlayerCombatStats
+     */
+    public function getCombatStats()
+    {
+        return $this->combat_stats;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Combat.PlayerCombatStats combat_stats = 39;</code>
+     * @param \POGOProtos\Data\Combat\PlayerCombatStats $var
+     * @return $this
+     */
+    public function setCombatStats($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Combat\PlayerCombatStats::class);
+        $this->combat_stats = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 num_npc_combats_won = 40;</code>
+     * @return int
+     */
+    public function getNumNpcCombatsWon()
+    {
+        return $this->num_npc_combats_won;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 num_npc_combats_won = 40;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setNumNpcCombatsWon($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->num_npc_combats_won = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 num_npc_combats_total = 41;</code>
+     * @return int
+     */
+    public function getNumNpcCombatsTotal()
+    {
+        return $this->num_npc_combats_total;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 num_npc_combats_total = 41;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setNumNpcCombatsTotal($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->num_npc_combats_total = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 num_photobomb_seen = 42;</code>
+     * @return int
+     */
+    public function getNumPhotobombSeen()
+    {
+        return $this->num_photobomb_seen;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 num_photobomb_seen = 42;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setNumPhotobombSeen($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->num_photobomb_seen = $var;
 
         return $this;
     }

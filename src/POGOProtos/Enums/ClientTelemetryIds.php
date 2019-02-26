@@ -173,5 +173,13 @@ class ClientTelemetryIds
      * Generated from protobuf enum <code>DEVICE_SERVICE_TOGGLE = 40;</code>
      */
     const DEVICE_SERVICE_TOGGLE = 40;
+    /**
+     * Generated from protobuf enum <code>BOOT_TELEMETRY = 41;</code>
+     */
+    const BOOT_TELEMETRY = 41;
+    /**
+     * Generated from protobuf enum <code>AR_PHOTO_SESSION_TELEMETRY = 42;</code>
+     */
+    const AR_PHOTO_SESSION_TELEMETRY = 42;
 }
 

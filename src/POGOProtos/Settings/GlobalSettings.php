@@ -86,6 +86,10 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      */
     private $quest_global_settings = null;
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.BelugaGlobalSettings beluga_global_settings = 20;</code>
+     */
+    private $beluga_global_settings = null;
+    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
      */
     private $telemetry_global_settings = null;
@@ -110,6 +114,18 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      */
     private $upsight_logging_settings = null;
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.CombatGlobalSettings combat_global_settings = 27;</code>
+     */
+    private $combat_global_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.ThirdMoveGlobalSettings third_move_settings = 28;</code>
+     */
+    private $third_move_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.CombatChallengeGlobalSettings combat_challenge_global_settings = 29;</code>
+     */
+    private $combat_challenge_global_settings = null;
+    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.BackgroundModeGlobalSettings bgmode_global_settings = 30;</code>
      */
     private $bgmode_global_settings = null;
@@ -121,6 +137,22 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Settings.PokecoinPurchaseDisplaySettings purchased_settings = 32;</code>
      */
     private $purchased_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.HelpshiftSettings helpshift_settings = 33;</code>
+     */
+    private $helpshift_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.ArPhotoGlobalSettings ar_photo_settings = 34;</code>
+     */
+    private $ar_photo_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.PoiGlobalSettings poi_settings = 35;</code>
+     */
+    private $poi_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.PokemonGlobalSettings pokemon_settings = 36;</code>
+     */
+    private $pokemon_settings = null;
 
     /**
      * Constructor.
@@ -146,15 +178,23 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Settings\ClientPerformanceSettings $client_perf_settings
      *     @type \POGOProtos\Settings\NewsGlobalSettings $news_global_settings
      *     @type \POGOProtos\Settings\QuestGlobalSettings $quest_global_settings
+     *     @type \POGOProtos\Settings\BelugaGlobalSettings $beluga_global_settings
      *     @type \POGOProtos\Settings\TelemetryGlobalSettings $telemetry_global_settings
      *     @type \POGOProtos\Settings\LoginSettings $login_settings
      *     @type \POGOProtos\Settings\SocialClientSettings $social_settings
      *     @type \POGOProtos\Settings\TradingGlobalSettings $trading_global_settings
      *     @type int[]|\Google\Protobuf\Internal\RepeatedField $additional_allowed_pokemon_ids
      *     @type \POGOProtos\Settings\UpsightLoggingSettings $upsight_logging_settings
+     *     @type \POGOProtos\Settings\CombatGlobalSettings $combat_global_settings
+     *     @type \POGOProtos\Settings\ThirdMoveGlobalSettings $third_move_settings
+     *     @type \POGOProtos\Settings\CombatChallengeGlobalSettings $combat_challenge_global_settings
      *     @type \POGOProtos\Settings\BackgroundModeGlobalSettings $bgmode_global_settings
      *     @type \POGOProtos\Settings\ProbeSettings $probe_settings
      *     @type \POGOProtos\Settings\PokecoinPurchaseDisplaySettings $purchased_settings
+     *     @type \POGOProtos\Settings\HelpshiftSettings $helpshift_settings
+     *     @type \POGOProtos\Settings\ArPhotoGlobalSettings $ar_photo_settings
+     *     @type \POGOProtos\Settings\PoiGlobalSettings $poi_settings
+     *     @type \POGOProtos\Settings\PokemonGlobalSettings $pokemon_settings
      * }
      */
     public function __construct($data = NULL) {
@@ -559,6 +599,28 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.BelugaGlobalSettings beluga_global_settings = 20;</code>
+     * @return \POGOProtos\Settings\BelugaGlobalSettings
+     */
+    public function getBelugaGlobalSettings()
+    {
+        return $this->beluga_global_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.BelugaGlobalSettings beluga_global_settings = 20;</code>
+     * @param \POGOProtos\Settings\BelugaGlobalSettings $var
+     * @return $this
+     */
+    public function setBelugaGlobalSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\BelugaGlobalSettings::class);
+        $this->beluga_global_settings = $var;
+
+        return $this;
+    }
+
+    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.TelemetryGlobalSettings telemetry_global_settings = 21;</code>
      * @return \POGOProtos\Settings\TelemetryGlobalSettings
      */
@@ -691,6 +753,72 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.CombatGlobalSettings combat_global_settings = 27;</code>
+     * @return \POGOProtos\Settings\CombatGlobalSettings
+     */
+    public function getCombatGlobalSettings()
+    {
+        return $this->combat_global_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.CombatGlobalSettings combat_global_settings = 27;</code>
+     * @param \POGOProtos\Settings\CombatGlobalSettings $var
+     * @return $this
+     */
+    public function setCombatGlobalSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\CombatGlobalSettings::class);
+        $this->combat_global_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.ThirdMoveGlobalSettings third_move_settings = 28;</code>
+     * @return \POGOProtos\Settings\ThirdMoveGlobalSettings
+     */
+    public function getThirdMoveSettings()
+    {
+        return $this->third_move_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.ThirdMoveGlobalSettings third_move_settings = 28;</code>
+     * @param \POGOProtos\Settings\ThirdMoveGlobalSettings $var
+     * @return $this
+     */
+    public function setThirdMoveSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\ThirdMoveGlobalSettings::class);
+        $this->third_move_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.CombatChallengeGlobalSettings combat_challenge_global_settings = 29;</code>
+     * @return \POGOProtos\Settings\CombatChallengeGlobalSettings
+     */
+    public function getCombatChallengeGlobalSettings()
+    {
+        return $this->combat_challenge_global_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.CombatChallengeGlobalSettings combat_challenge_global_settings = 29;</code>
+     * @param \POGOProtos\Settings\CombatChallengeGlobalSettings $var
+     * @return $this
+     */
+    public function setCombatChallengeGlobalSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\CombatChallengeGlobalSettings::class);
+        $this->combat_challenge_global_settings = $var;
+
+        return $this;
+    }
+
+    /**
      * Generated from protobuf field <code>.POGOProtos.Settings.BackgroundModeGlobalSettings bgmode_global_settings = 30;</code>
      * @return \POGOProtos\Settings\BackgroundModeGlobalSettings
      */
@@ -752,6 +880,94 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\PokecoinPurchaseDisplaySettings::class);
         $this->purchased_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.HelpshiftSettings helpshift_settings = 33;</code>
+     * @return \POGOProtos\Settings\HelpshiftSettings
+     */
+    public function getHelpshiftSettings()
+    {
+        return $this->helpshift_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.HelpshiftSettings helpshift_settings = 33;</code>
+     * @param \POGOProtos\Settings\HelpshiftSettings $var
+     * @return $this
+     */
+    public function setHelpshiftSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\HelpshiftSettings::class);
+        $this->helpshift_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.ArPhotoGlobalSettings ar_photo_settings = 34;</code>
+     * @return \POGOProtos\Settings\ArPhotoGlobalSettings
+     */
+    public function getArPhotoSettings()
+    {
+        return $this->ar_photo_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.ArPhotoGlobalSettings ar_photo_settings = 34;</code>
+     * @param \POGOProtos\Settings\ArPhotoGlobalSettings $var
+     * @return $this
+     */
+    public function setArPhotoSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\ArPhotoGlobalSettings::class);
+        $this->ar_photo_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.PoiGlobalSettings poi_settings = 35;</code>
+     * @return \POGOProtos\Settings\PoiGlobalSettings
+     */
+    public function getPoiSettings()
+    {
+        return $this->poi_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.PoiGlobalSettings poi_settings = 35;</code>
+     * @param \POGOProtos\Settings\PoiGlobalSettings $var
+     * @return $this
+     */
+    public function setPoiSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\PoiGlobalSettings::class);
+        $this->poi_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.PokemonGlobalSettings pokemon_settings = 36;</code>
+     * @return \POGOProtos\Settings\PokemonGlobalSettings
+     */
+    public function getPokemonSettings()
+    {
+        return $this->pokemon_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.PokemonGlobalSettings pokemon_settings = 36;</code>
+     * @param \POGOProtos\Settings\PokemonGlobalSettings $var
+     * @return $this
+     */
+    public function setPokemonSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\PokemonGlobalSettings::class);
+        $this->pokemon_settings = $var;
 
         return $this;
     }

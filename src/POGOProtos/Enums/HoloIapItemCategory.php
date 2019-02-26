@@ -37,5 +37,9 @@ class HoloIapItemCategory
      * Generated from protobuf enum <code>IAP_CATEGORY_AVATAR_STORE_LINK = 6;</code>
      */
     const IAP_CATEGORY_AVATAR_STORE_LINK = 6;
+    /**
+     * Generated from protobuf enum <code>IAP_CATEGORY_TEAM_CHANGE = 7;</code>
+     */
+    const IAP_CATEGORY_TEAM_CHANGE = 7;
 }
 

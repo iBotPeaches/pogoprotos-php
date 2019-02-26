@@ -21,6 +21,10 @@ class AuthInfo extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo.JWT token = 2;</code>
      */
     private $token = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo.AuthOptions options = 3;</code>
+     */
+    private $options = null;
 
     /**
      * Constructor.
@@ -30,6 +34,7 @@ class AuthInfo extends \Google\Protobuf\Internal\Message
      *
      *     @type string $provider
      *     @type \POGOProtos\Networking\Envelopes\RequestEnvelope\AuthInfo\JWT $token
+     *     @type \POGOProtos\Networking\Envelopes\RequestEnvelope\AuthInfo\AuthOptions $options
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +82,28 @@ class AuthInfo extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Networking\Envelopes\RequestEnvelope_AuthInfo_JWT::class);
         $this->token = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo.AuthOptions options = 3;</code>
+     * @return \POGOProtos\Networking\Envelopes\RequestEnvelope\AuthInfo\AuthOptions
+     */
+    public function getOptions()
+    {
+        return $this->options;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo.AuthOptions options = 3;</code>
+     * @param \POGOProtos\Networking\Envelopes\RequestEnvelope\AuthInfo\AuthOptions $var
+     * @return $this
+     */
+    public function setOptions($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Networking\Envelopes\RequestEnvelope_AuthInfo_AuthOptions::class);
+        $this->options = $var;
 
         return $this;
     }

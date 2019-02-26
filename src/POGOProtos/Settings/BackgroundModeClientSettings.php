@@ -33,6 +33,10 @@ class BackgroundModeClientSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 max_upload_size_in_bytes = 5;</code>
      */
     private $max_upload_size_in_bytes = 0;
+    /**
+     * Generated from protobuf field <code>double min_enclosing_geofence_radius_m = 6;</code>
+     */
+    private $min_enclosing_geofence_radius_m = 0.0;
 
     /**
      * Constructor.
@@ -45,6 +49,7 @@ class BackgroundModeClientSettings extends \Google\Protobuf\Internal\Message
      *     @type float $minimum_location_accuracy_meters
      *     @type int $background_wake_up_interval_minutes
      *     @type int $max_upload_size_in_bytes
+     *     @type float $min_enclosing_geofence_radius_m
      * }
      */
     public function __construct($data = NULL) {
@@ -158,6 +163,28 @@ class BackgroundModeClientSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->max_upload_size_in_bytes = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>double min_enclosing_geofence_radius_m = 6;</code>
+     * @return float
+     */
+    public function getMinEnclosingGeofenceRadiusM()
+    {
+        return $this->min_enclosing_geofence_radius_m;
+    }
+
+    /**
+     * Generated from protobuf field <code>double min_enclosing_geofence_radius_m = 6;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setMinEnclosingGeofenceRadiusM($var)
+    {
+        GPBUtil::checkDouble($var);
+        $this->min_enclosing_geofence_radius_m = $var;
 
         return $this;
     }

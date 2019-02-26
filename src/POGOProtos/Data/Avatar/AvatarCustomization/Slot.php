@@ -61,6 +61,14 @@ class Slot
      * Generated from protobuf enum <code>NECKLACE = 12;</code>
      */
     const NECKLACE = 12;
+    /**
+     * Generated from protobuf enum <code>SKIN = 13;</code>
+     */
+    const SKIN = 13;
+    /**
+     * Generated from protobuf enum <code>POSE = 14;</code>
+     */
+    const POSE = 14;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

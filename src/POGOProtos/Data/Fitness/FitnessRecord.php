@@ -14,6 +14,10 @@ use Google\Protobuf\Internal\GPBUtil;
 class FitnessRecord extends \Google\Protobuf\Internal\Message
 {
     /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Fitness.FitnessRecord.HourlyReportsEntry hourly_reports = 1;</code>
+     */
+    private $hourly_reports;
+    /**
      * Generated from protobuf field <code>repeated .POGOProtos.Data.Fitness.FitnessSample raw_samples = 2;</code>
      */
     private $raw_samples;
@@ -25,6 +29,10 @@ class FitnessRecord extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.Fitness.FitnessStats fitness_stats = 4;</code>
      */
     private $fitness_stats = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Fitness.FitnessMetricsReportHistory report_history = 5;</code>
+     */
+    private $report_history = null;
 
     /**
      * Constructor.
@@ -32,14 +40,38 @@ class FitnessRecord extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
+     *     @type \POGOProtos\Data\Fitness\FitnessRecord\HourlyReportsEntry[]|\Google\Protobuf\Internal\RepeatedField $hourly_reports
      *     @type \POGOProtos\Data\Fitness\FitnessSample[]|\Google\Protobuf\Internal\RepeatedField $raw_samples
      *     @type int|string $last_aggregation_timestamp_ms
      *     @type \POGOProtos\Data\Fitness\FitnessStats $fitness_stats
+     *     @type \POGOProtos\Data\Fitness\FitnessMetricsReportHistory $report_history
      * }
      */
     public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Fitness\FitnessRecord::initOnce();
         parent::__construct($data);
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Fitness.FitnessRecord.HourlyReportsEntry hourly_reports = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getHourlyReports()
+    {
+        return $this->hourly_reports;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Data.Fitness.FitnessRecord.HourlyReportsEntry hourly_reports = 1;</code>
+     * @param \POGOProtos\Data\Fitness\FitnessRecord\HourlyReportsEntry[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setHourlyReports($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Fitness\FitnessRecord\HourlyReportsEntry::class);
+        $this->hourly_reports = $arr;
+
+        return $this;
     }
 
     /**
@@ -104,6 +136,28 @@ class FitnessRecord extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Fitness\FitnessStats::class);
         $this->fitness_stats = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Fitness.FitnessMetricsReportHistory report_history = 5;</code>
+     * @return \POGOProtos\Data\Fitness\FitnessMetricsReportHistory
+     */
+    public function getReportHistory()
+    {
+        return $this->report_history;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Fitness.FitnessMetricsReportHistory report_history = 5;</code>
+     * @param \POGOProtos\Data\Fitness\FitnessMetricsReportHistory $var
+     * @return $this
+     */
+    public function setReportHistory($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Fitness\FitnessMetricsReportHistory::class);
+        $this->report_history = $var;
 
         return $this;
     }

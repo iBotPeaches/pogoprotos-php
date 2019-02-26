@@ -150,6 +150,10 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      */
     private $parent_form = 0;
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonThirdMoveAttributes third_move = 36;</code>
+     */
+    private $third_move = null;
+    /**
      * Generated from protobuf field <code>bool is_transferable = 37;</code>
      */
     private $is_transferable = false;
@@ -157,6 +161,34 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool is_deployable = 38;</code>
      */
     private $is_deployable = false;
+    /**
+     * Generated from protobuf field <code>repeated float combat_shoulder_camera_angle = 39;</code>
+     */
+    private $combat_shoulder_camera_angle;
+    /**
+     * Generated from protobuf field <code>bool is_tradable = 40;</code>
+     */
+    private $is_tradable = false;
+    /**
+     * Generated from protobuf field <code>repeated float combat_default_camera_angle = 41;</code>
+     */
+    private $combat_default_camera_angle;
+    /**
+     * Generated from protobuf field <code>repeated float combat_opponent_focus_camera_angle = 42;</code>
+     */
+    private $combat_opponent_focus_camera_angle;
+    /**
+     * Generated from protobuf field <code>repeated float combat_player_focus_camera_angle = 43;</code>
+     */
+    private $combat_player_focus_camera_angle;
+    /**
+     * Generated from protobuf field <code>repeated float combat_player_pokemon_position_offset = 44;</code>
+     */
+    private $combat_player_pokemon_position_offset;
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.Pokemon.AnimationOverride photobomb_animation_overrides = 45;</code>
+     */
+    private $photobomb_animation_overrides;
 
     /**
      * Constructor.
@@ -198,8 +230,16 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
      *     @type float $buddy_scale
      *     @type float[]|\Google\Protobuf\Internal\RepeatedField $buddy_portrait_offset
      *     @type int $parent_form
+     *     @type \POGOProtos\Settings\Master\PokemonSettings\PokemonThirdMoveAttributes $third_move
      *     @type bool $is_transferable
      *     @type bool $is_deployable
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $combat_shoulder_camera_angle
+     *     @type bool $is_tradable
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $combat_default_camera_angle
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $combat_opponent_focus_camera_angle
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $combat_player_focus_camera_angle
+     *     @type float[]|\Google\Protobuf\Internal\RepeatedField $combat_player_pokemon_position_offset
+     *     @type \POGOProtos\Settings\Master\Pokemon\AnimationOverride[]|\Google\Protobuf\Internal\RepeatedField $photobomb_animation_overrides
      * }
      */
     public function __construct($data = NULL) {
@@ -956,6 +996,28 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonThirdMoveAttributes third_move = 36;</code>
+     * @return \POGOProtos\Settings\Master\PokemonSettings\PokemonThirdMoveAttributes
+     */
+    public function getThirdMove()
+    {
+        return $this->third_move;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokemonSettings.PokemonThirdMoveAttributes third_move = 36;</code>
+     * @param \POGOProtos\Settings\Master\PokemonSettings\PokemonThirdMoveAttributes $var
+     * @return $this
+     */
+    public function setThirdMove($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\PokemonSettings_PokemonThirdMoveAttributes::class);
+        $this->third_move = $var;
+
+        return $this;
+    }
+
+    /**
      * Generated from protobuf field <code>bool is_transferable = 37;</code>
      * @return bool
      */
@@ -995,6 +1057,160 @@ class PokemonSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->is_deployable = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated float combat_shoulder_camera_angle = 39;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getCombatShoulderCameraAngle()
+    {
+        return $this->combat_shoulder_camera_angle;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated float combat_shoulder_camera_angle = 39;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setCombatShoulderCameraAngle($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->combat_shoulder_camera_angle = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_tradable = 40;</code>
+     * @return bool
+     */
+    public function getIsTradable()
+    {
+        return $this->is_tradable;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_tradable = 40;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsTradable($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_tradable = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated float combat_default_camera_angle = 41;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getCombatDefaultCameraAngle()
+    {
+        return $this->combat_default_camera_angle;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated float combat_default_camera_angle = 41;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setCombatDefaultCameraAngle($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->combat_default_camera_angle = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated float combat_opponent_focus_camera_angle = 42;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getCombatOpponentFocusCameraAngle()
+    {
+        return $this->combat_opponent_focus_camera_angle;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated float combat_opponent_focus_camera_angle = 42;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setCombatOpponentFocusCameraAngle($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->combat_opponent_focus_camera_angle = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated float combat_player_focus_camera_angle = 43;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getCombatPlayerFocusCameraAngle()
+    {
+        return $this->combat_player_focus_camera_angle;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated float combat_player_focus_camera_angle = 43;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setCombatPlayerFocusCameraAngle($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->combat_player_focus_camera_angle = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated float combat_player_pokemon_position_offset = 44;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getCombatPlayerPokemonPositionOffset()
+    {
+        return $this->combat_player_pokemon_position_offset;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated float combat_player_pokemon_position_offset = 44;</code>
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setCombatPlayerPokemonPositionOffset($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->combat_player_pokemon_position_offset = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.Pokemon.AnimationOverride photobomb_animation_overrides = 45;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getPhotobombAnimationOverrides()
+    {
+        return $this->photobomb_animation_overrides;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.Pokemon.AnimationOverride photobomb_animation_overrides = 45;</code>
+     * @param \POGOProtos\Settings\Master\Pokemon\AnimationOverride[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setPhotobombAnimationOverrides($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Settings\Master\Pokemon\AnimationOverride::class);
+        $this->photobomb_animation_overrides = $arr;
 
         return $this;
     }

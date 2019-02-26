@@ -49,6 +49,10 @@ class Raid extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool incremented_raid_friends = 9;</code>
      */
     private $incremented_raid_friends = false;
+    /**
+     * Generated from protobuf field <code>int64 completed_battle_ms = 10;</code>
+     */
+    private $completed_battle_ms = 0;
 
     /**
      * Constructor.
@@ -65,6 +69,7 @@ class Raid extends \Google\Protobuf\Internal\Message
      *     @type bool $finished_encounter
      *     @type bool $received_default_rewards
      *     @type bool $incremented_raid_friends
+     *     @type int|string $completed_battle_ms
      * }
      */
     public function __construct($data = NULL) {
@@ -266,6 +271,28 @@ class Raid extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->incremented_raid_friends = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 completed_battle_ms = 10;</code>
+     * @return int|string
+     */
+    public function getCompletedBattleMs()
+    {
+        return $this->completed_battle_ms;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 completed_battle_ms = 10;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setCompletedBattleMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->completed_battle_ms = $var;
 
         return $this;
     }

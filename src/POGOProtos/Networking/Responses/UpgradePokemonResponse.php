@@ -21,6 +21,10 @@ class UpgradePokemonResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.PokemonData upgraded_pokemon = 2;</code>
      */
     private $upgraded_pokemon = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData next_upgraded_pokemon = 3;</code>
+     */
+    private $next_upgraded_pokemon = null;
 
     /**
      * Constructor.
@@ -30,6 +34,7 @@ class UpgradePokemonResponse extends \Google\Protobuf\Internal\Message
      *
      *     @type int $result
      *     @type \POGOProtos\Data\PokemonData $upgraded_pokemon
+     *     @type \POGOProtos\Data\PokemonData $next_upgraded_pokemon
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +82,28 @@ class UpgradePokemonResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
         $this->upgraded_pokemon = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData next_upgraded_pokemon = 3;</code>
+     * @return \POGOProtos\Data\PokemonData
+     */
+    public function getNextUpgradedPokemon()
+    {
+        return $this->next_upgraded_pokemon;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.PokemonData next_upgraded_pokemon = 3;</code>
+     * @param \POGOProtos\Data\PokemonData $var
+     * @return $this
+     */
+    public function setNextUpgradedPokemon($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\PokemonData::class);
+        $this->next_upgraded_pokemon = $var;
 
         return $this;
     }

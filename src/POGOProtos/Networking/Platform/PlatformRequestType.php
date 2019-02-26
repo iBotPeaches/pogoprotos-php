@@ -10,36 +10,172 @@ namespace POGOProtos\Networking\Platform;
 class PlatformRequestType
 {
     /**
-     * Generated from protobuf enum <code>METHOD_UNSET = 0;</code>
+     * No implementation required
+     *
+     * Generated from protobuf enum <code>UNKNOWN = 0;</code>
      */
-    const METHOD_UNSET = 0;
+    const UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>BUY_ITEM_POKECOINS = 2;</code>
+     * ???
+     *
+     * Generated from protobuf enum <code>MAP_QUERY_REQUEST = 1;</code>
      */
-    const BUY_ITEM_POKECOINS = 2;
+    const MAP_QUERY_REQUEST = 1;
     /**
-     * Generated from protobuf enum <code>BUY_ITEM_ANDROID = 3;</code>
+     * Implemented
+     *
+     * Generated from protobuf enum <code>PURCHASE_SKU = 2;</code>
      */
-    const BUY_ITEM_ANDROID = 3;
+    const PURCHASE_SKU = 2;
     /**
-     * Generated from protobuf enum <code>BUY_ITEM_IOS = 4;</code>
+     * Implemented
+     *
+     * Generated from protobuf enum <code>REDEEM_GOOGLE_RECEIPT = 3;</code>
      */
-    const BUY_ITEM_IOS = 4;
+    const REDEEM_GOOGLE_RECEIPT = 3;
     /**
-     * Generated from protobuf enum <code>GET_STORE_ITEMS = 5;</code>
+     * ???
+     *
+     * Generated from protobuf enum <code>REDEEM_APPLE_RECEIPT = 4;</code>
      */
-    const GET_STORE_ITEMS = 5;
+    const REDEEM_APPLE_RECEIPT = 4;
     /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>GET_AVAILABLE_SKUS_AND_BALANCES = 5;</code>
+     */
+    const GET_AVAILABLE_SKUS_AND_BALANCES = 5;
+    /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>SEND_ENCRYPTED_SIGNATURE = 6;</code>
      */
     const SEND_ENCRYPTED_SIGNATURE = 6;
     /**
-     * Generated from protobuf enum <code>UNKNOWN_PTR_8 = 8;</code>
+     * ???
+     *
+     * Generated from protobuf enum <code>REDEEM_DESKTOP_RECEIPT = 7;</code>
      */
-    const UNKNOWN_PTR_8 = 8;
+    const REDEEM_DESKTOP_RECEIPT = 7;
     /**
-     * Generated from protobuf enum <code>JOIN_EVENT = 9;</code>
+     * Implemented
+     *
+     * Generated from protobuf enum <code>DOWNLOAD_PLATFORM_CLIENT_SETTINGS = 8;</code>
      */
-    const JOIN_EVENT = 9;
+    const DOWNLOAD_PLATFORM_CLIENT_SETTINGS = 8;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>REDEEM_PASSCODE = 9;</code>
+     */
+    const REDEEM_PASSCODE = 9;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>REGISTER_PUSH_NOTIFICATION = 10;</code>
+     */
+    const REGISTER_PUSH_NOTIFICATION = 10;
+    /**
+     * ???
+     *
+     * Generated from protobuf enum <code>UNREGISTER_PUSH_NOTIFICATION = 11;</code>
+     */
+    const UNREGISTER_PUSH_NOTIFICATION = 11;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>UPDATE_NOTIFICATION_STATUS = 12;</code>
+     */
+    const UPDATE_NOTIFICATION_STATUS = 12;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>ADD_NEW_POI = 13;</code>
+     */
+    const ADD_NEW_POI = 13;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>ADD_LOGIN_ACTION = 14;</code>
+     */
+    const ADD_LOGIN_ACTION = 14;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>REMOVE_LOGIN_ACTION = 15;</code>
+     */
+    const REMOVE_LOGIN_ACTION = 15;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>LIST_LOGIN_ACTION = 16;</code>
+     */
+    const LIST_LOGIN_ACTION = 16;
+    /**
+     * ???
+     *
+     * Generated from protobuf enum <code>COLLECT_CLIENT_TELEMETRY = 17;</code>
+     */
+    const COLLECT_CLIENT_TELEMETRY = 17;
+    /**
+     * ???
+     *
+     * Generated from protobuf enum <code>GET_SIGNED_URL_FOR_PHOTO_UPLOAD = 18;</code>
+     */
+    const GET_SIGNED_URL_FOR_PHOTO_UPLOAD = 18;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>REPLACE_LOGIN_ACTION = 19;</code>
+     */
+    const REPLACE_LOGIN_ACTION = 19;
+    /**
+     * ???
+     *
+     * Generated from protobuf enum <code>CHALLENGE = 20;</code>
+     */
+    const CHALLENGE = 20;
+    /**
+     * ???
+     *
+     * Generated from protobuf enum <code>SAFETY_NET_CHALLENGE = 21;</code>
+     */
+    const SAFETY_NET_CHALLENGE = 21;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>UPDATE_FITNESS_METRICS = 22;</code>
+     */
+    const UPDATE_FITNESS_METRICS = 22;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>GET_FITNESS_REPORT = 23;</code>
+     */
+    const GET_FITNESS_REPORT = 23;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>SET_IN_GAME_CURRENCY_EXCHANGE_RATE = 24;</code>
+     */
+    const SET_IN_GAME_CURRENCY_EXCHANGE_RATE = 24;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>REGISTER_DOWNSTREAM_SERVER_ACTIONS = 30;</code>
+     */
+    const REGISTER_DOWNSTREAM_SERVER_ACTIONS = 30;
+    /**
+     * ???
+     *
+     * Generated from protobuf enum <code>DOWNSTREAM_SERVER_ACTIONS = 31;</code>
+     */
+    const DOWNSTREAM_SERVER_ACTIONS = 31;
+    /**
+     * ???
+     *
+     * Generated from protobuf enum <code>TEMP_TEST_RESULT = 101;</code>
+     */
+    const TEMP_TEST_RESULT = 101;
 }
 

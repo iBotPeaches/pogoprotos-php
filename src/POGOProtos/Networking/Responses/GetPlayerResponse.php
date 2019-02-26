@@ -49,6 +49,10 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 warn_expire_ms = 9;</code>
      */
     private $warn_expire_ms = 0;
+    /**
+     * Generated from protobuf field <code>repeated int32 user_permission = 10;</code>
+     */
+    private $user_permission;
 
     /**
      * Constructor.
@@ -65,6 +69,7 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
      *     @type bool $was_suspended
      *     @type bool $suspended_message_acknowledged
      *     @type int|string $warn_expire_ms
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $user_permission
      * }
      */
     public function __construct($data = NULL) {
@@ -266,6 +271,28 @@ class GetPlayerResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->warn_expire_ms = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated int32 user_permission = 10;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getUserPermission()
+    {
+        return $this->user_permission;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated int32 user_permission = 10;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setUserPermission($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->user_permission = $arr;
 
         return $this;
     }

@@ -25,6 +25,14 @@ class FitnessStats extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.Fitness.FitnessMetrics pending = 3;</code>
      */
     private $pending = null;
+    /**
+     * Generated from protobuf field <code>double player_initial_walk_km = 4;</code>
+     */
+    private $player_initial_walk_km = 0.0;
+    /**
+     * Generated from protobuf field <code>double player_total_walk_km = 5;</code>
+     */
+    private $player_total_walk_km = 0.0;
 
     /**
      * Constructor.
@@ -35,6 +43,8 @@ class FitnessStats extends \Google\Protobuf\Internal\Message
      *     @type int|string $last_accumulated_timestamp_ms
      *     @type \POGOProtos\Data\Fitness\FitnessMetrics $accumulated
      *     @type \POGOProtos\Data\Fitness\FitnessMetrics $pending
+     *     @type float $player_initial_walk_km
+     *     @type float $player_total_walk_km
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +114,50 @@ class FitnessStats extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Fitness\FitnessMetrics::class);
         $this->pending = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>double player_initial_walk_km = 4;</code>
+     * @return float
+     */
+    public function getPlayerInitialWalkKm()
+    {
+        return $this->player_initial_walk_km;
+    }
+
+    /**
+     * Generated from protobuf field <code>double player_initial_walk_km = 4;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setPlayerInitialWalkKm($var)
+    {
+        GPBUtil::checkDouble($var);
+        $this->player_initial_walk_km = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>double player_total_walk_km = 5;</code>
+     * @return float
+     */
+    public function getPlayerTotalWalkKm()
+    {
+        return $this->player_total_walk_km;
+    }
+
+    /**
+     * Generated from protobuf field <code>double player_total_walk_km = 5;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setPlayerTotalWalkKm($var)
+    {
+        GPBUtil::checkDouble($var);
+        $this->player_total_walk_km = $var;
 
         return $this;
     }

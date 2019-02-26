@@ -85,5 +85,9 @@ class ItemType
      * Generated from protobuf enum <code>ITEM_TYPE_FRIEND_GIFT_BOX = 18;</code>
      */
     const ITEM_TYPE_FRIEND_GIFT_BOX = 18;
+    /**
+     * Generated from protobuf enum <code>ITEM_TYPE_TEAM_CHANGE = 19;</code>
+     */
+    const ITEM_TYPE_TEAM_CHANGE = 19;
 }
 

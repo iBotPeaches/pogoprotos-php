@@ -81,5 +81,9 @@ class ItemCategory
      * Generated from protobuf enum <code>ITEM_CATEGORY_FRIEND_GIFT_BOX = 17;</code>
      */
     const ITEM_CATEGORY_FRIEND_GIFT_BOX = 17;
+    /**
+     * Generated from protobuf enum <code>ITEM_CATEGORY_TEAM_CHANGE = 18;</code>
+     */
+    const ITEM_CATEGORY_TEAM_CHANGE = 18;
 }
 

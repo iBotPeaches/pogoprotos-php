@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class BootTime extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData duration = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PlatformMetricData duration = 1;</code>
      */
     private $duration = null;
     /**
@@ -28,7 +28,7 @@ class BootTime extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData $duration
+     *     @type \POGOProtos\Data\Telemetry\PlatformMetricData $duration
      *     @type int $boot_phase
      * }
      */
@@ -38,8 +38,8 @@ class BootTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData duration = 1;</code>
-     * @return \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PlatformMetricData duration = 1;</code>
+     * @return \POGOProtos\Data\Telemetry\PlatformMetricData
      */
     public function getDuration()
     {
@@ -47,13 +47,13 @@ class BootTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData duration = 1;</code>
-     * @param \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData $var
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PlatformMetricData duration = 1;</code>
+     * @param \POGOProtos\Data\Telemetry\PlatformMetricData $var
      * @return $this
      */
     public function setDuration($var)
     {
-        GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData::class);
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\PlatformMetricData::class);
         $this->duration = $var;
 
         return $this;

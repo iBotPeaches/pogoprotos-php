@@ -25,6 +25,10 @@ class BattleParty extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated uint64 ids = 3;</code>
      */
     private $ids;
+    /**
+     * Generated from protobuf field <code>string combat_league_id = 4;</code>
+     */
+    private $combat_league_id = '';
 
     /**
      * Constructor.
@@ -35,6 +39,7 @@ class BattleParty extends \Google\Protobuf\Internal\Message
      *     @type string $name
      *     @type int $team_number
      *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $ids
+     *     @type string $combat_league_id
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +109,28 @@ class BattleParty extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->ids = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string combat_league_id = 4;</code>
+     * @return string
+     */
+    public function getCombatLeagueId()
+    {
+        return $this->combat_league_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string combat_league_id = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCombatLeagueId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->combat_league_id = $var;
 
         return $this;
     }

@@ -50,11 +50,11 @@ class TradingPokemon extends \Google\Protobuf\Internal\Message
      */
     private $friend_level_cap = false;
     /**
-     * Generated from protobuf field <code>int32 move1 = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove move1 = 10;</code>
      */
     private $move1 = 0;
     /**
-     * Generated from protobuf field <code>int32 move2 = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove move2 = 11;</code>
      */
     private $move2 = 0;
     /**
@@ -93,6 +93,14 @@ class TradingPokemon extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool favorite = 20;</code>
      */
     private $favorite = false;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove move3 = 21;</code>
+     */
+    private $move3 = 0;
+    /**
+     * Generated from protobuf field <code>int64 creation_time_ms = 22;</code>
+     */
+    private $creation_time_ms = 0;
 
     /**
      * Constructor.
@@ -120,6 +128,8 @@ class TradingPokemon extends \Google\Protobuf\Internal\Message
      *     @type int $individual_stamina
      *     @type string $nickname
      *     @type bool $favorite
+     *     @type int $move3
+     *     @type int|string $creation_time_ms
      * }
      */
     public function __construct($data = NULL) {
@@ -326,7 +336,7 @@ class TradingPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 move1 = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove move1 = 10;</code>
      * @return int
      */
     public function getMove1()
@@ -335,20 +345,20 @@ class TradingPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 move1 = 10;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove move1 = 10;</code>
      * @param int $var
      * @return $this
      */
     public function setMove1($var)
     {
-        GPBUtil::checkInt32($var);
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonMove::class);
         $this->move1 = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>int32 move2 = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove move2 = 11;</code>
      * @return int
      */
     public function getMove2()
@@ -357,13 +367,13 @@ class TradingPokemon extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 move2 = 11;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove move2 = 11;</code>
      * @param int $var
      * @return $this
      */
     public function setMove2($var)
     {
-        GPBUtil::checkInt32($var);
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonMove::class);
         $this->move2 = $var;
 
         return $this;
@@ -563,6 +573,50 @@ class TradingPokemon extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->favorite = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove move3 = 21;</code>
+     * @return int
+     */
+    public function getMove3()
+    {
+        return $this->move3;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonMove move3 = 21;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setMove3($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonMove::class);
+        $this->move3 = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 creation_time_ms = 22;</code>
+     * @return int|string
+     */
+    public function getCreationTimeMs()
+    {
+        return $this->creation_time_ms;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 creation_time_ms = 22;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setCreationTimeMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->creation_time_ms = $var;
 
         return $this;
     }

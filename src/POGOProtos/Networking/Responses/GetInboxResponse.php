@@ -18,7 +18,7 @@ class GetInboxResponse extends \Google\Protobuf\Internal\Message
      */
     private $result = 0;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox inbox = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Inbox.ClientInbox inbox = 2;</code>
      */
     private $inbox = null;
 
@@ -29,7 +29,7 @@ class GetInboxResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $result
-     *     @type \POGOProtos\Networking\Responses\GetInboxResponse\ClientInbox $inbox
+     *     @type \POGOProtos\Data\Inbox\ClientInbox $inbox
      * }
      */
     public function __construct($data = NULL) {
@@ -60,8 +60,8 @@ class GetInboxResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox inbox = 2;</code>
-     * @return \POGOProtos\Networking\Responses\GetInboxResponse\ClientInbox
+     * Generated from protobuf field <code>.POGOProtos.Data.Inbox.ClientInbox inbox = 2;</code>
+     * @return \POGOProtos\Data\Inbox\ClientInbox
      */
     public function getInbox()
     {
@@ -69,13 +69,13 @@ class GetInboxResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Responses.GetInboxResponse.ClientInbox inbox = 2;</code>
-     * @param \POGOProtos\Networking\Responses\GetInboxResponse\ClientInbox $var
+     * Generated from protobuf field <code>.POGOProtos.Data.Inbox.ClientInbox inbox = 2;</code>
+     * @param \POGOProtos\Data\Inbox\ClientInbox $var
      * @return $this
      */
     public function setInbox($var)
     {
-        GPBUtil::checkMessage($var, \POGOProtos\Networking\Responses\GetInboxResponse_ClientInbox::class);
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Inbox\ClientInbox::class);
         $this->inbox = $var;
 
         return $this;

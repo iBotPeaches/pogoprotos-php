@@ -78,6 +78,10 @@ class ItemId
      */
     const ITEM_INCENSE_FLORAL = 404;
     /**
+     * Generated from protobuf enum <code>ITEM_INCENSE_BELUGA_BOX = 405;</code>
+     */
+    const ITEM_INCENSE_BELUGA_BOX = 405;
+    /**
      * Generated from protobuf enum <code>ITEM_TROY_DISK = 501;</code>
      */
     const ITEM_TROY_DISK = 501;
@@ -170,6 +174,10 @@ class ItemId
      */
     const ITEM_UP_GRADE = 1105;
     /**
+     * Generated from protobuf enum <code>ITEM_GEN4_EVOLUTION_STONE = 1106;</code>
+     */
+    const ITEM_GEN4_EVOLUTION_STONE = 1106;
+    /**
      * Generated from protobuf enum <code>ITEM_MOVE_REROLL_FAST_ATTACK = 1201;</code>
      */
     const ITEM_MOVE_REROLL_FAST_ATTACK = 1201;
@@ -201,5 +209,9 @@ class ItemId
      * Generated from protobuf enum <code>ITEM_FRIEND_GIFT_BOX = 1405;</code>
      */
     const ITEM_FRIEND_GIFT_BOX = 1405;
+    /**
+     * Generated from protobuf enum <code>ITEM_TEAM_CHANGE = 1406;</code>
+     */
+    const ITEM_TEAM_CHANGE = 1406;
 }
 

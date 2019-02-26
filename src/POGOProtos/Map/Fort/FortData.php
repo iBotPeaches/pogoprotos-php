@@ -42,11 +42,9 @@ class FortData extends \Google\Protobuf\Internal\Message
      */
     private $guard_pokemon_id = 0;
     /**
-     * (Gym only) Highest CP Pokemon at the gym.
-     *
-     * Generated from protobuf field <code>int32 guard_pokemon_cp = 7;</code>
+     * Generated from protobuf field <code>int32 guard_pokemon_level = 7;</code>
      */
-    private $guard_pokemon_cp = 0;
+    private $guard_pokemon_level = 0;
     /**
      * Generated from protobuf field <code>bool enabled = 8;</code>
      */
@@ -74,17 +72,15 @@ class FortData extends \Google\Protobuf\Internal\Message
      */
     private $active_fort_modifier;
     /**
-     * (Pokestop only)
-     *
-     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortLureInfo lure_info = 13;</code>
+     * Generated from protobuf field <code>.POGOProtos.Map.Pokemon.MapPokemon active_pokemon = 13;</code>
      */
-    private $lure_info = null;
+    private $active_pokemon = null;
     /**
      * (Pokestop only) Timestamp when the pokestop can be activated again to get items / xp.
      *
-     * Generated from protobuf field <code>int64 cooldown_complete_timestamp_ms = 14;</code>
+     * Generated from protobuf field <code>int64 cooldown_complete_ms = 14;</code>
      */
-    private $cooldown_complete_timestamp_ms = 0;
+    private $cooldown_complete_ms = 0;
     /**
      * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortSponsor sponsor = 15;</code>
      */
@@ -164,8 +160,7 @@ class FortData extends \Google\Protobuf\Internal\Message
      *           (Gym only) Team that owns the gym.
      *     @type int $guard_pokemon_id
      *           (Gym only) Highest CP Pokemon ID at the gym.
-     *     @type int $guard_pokemon_cp
-     *           (Gym only) Highest CP Pokemon at the gym.
+     *     @type int $guard_pokemon_level
      *     @type bool $enabled
      *     @type int $type
      *     @type int|string $gym_points
@@ -174,9 +169,8 @@ class FortData extends \Google\Protobuf\Internal\Message
      *           (Gym only) Whether someone is battling at the gym currently.
      *     @type int[]|\Google\Protobuf\Internal\RepeatedField $active_fort_modifier
      *           (Pokestop only)
-     *     @type \POGOProtos\Map\Fort\FortLureInfo $lure_info
-     *           (Pokestop only)
-     *     @type int|string $cooldown_complete_timestamp_ms
+     *     @type \POGOProtos\Map\Pokemon\MapPokemon $active_pokemon
+     *     @type int|string $cooldown_complete_ms
      *           (Pokestop only) Timestamp when the pokestop can be activated again to get items / xp.
      *     @type int $sponsor
      *     @type int $rendering_type
@@ -342,27 +336,23 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (Gym only) Highest CP Pokemon at the gym.
-     *
-     * Generated from protobuf field <code>int32 guard_pokemon_cp = 7;</code>
+     * Generated from protobuf field <code>int32 guard_pokemon_level = 7;</code>
      * @return int
      */
-    public function getGuardPokemonCp()
+    public function getGuardPokemonLevel()
     {
-        return $this->guard_pokemon_cp;
+        return $this->guard_pokemon_level;
     }
 
     /**
-     * (Gym only) Highest CP Pokemon at the gym.
-     *
-     * Generated from protobuf field <code>int32 guard_pokemon_cp = 7;</code>
+     * Generated from protobuf field <code>int32 guard_pokemon_level = 7;</code>
      * @param int $var
      * @return $this
      */
-    public function setGuardPokemonCp($var)
+    public function setGuardPokemonLevel($var)
     {
         GPBUtil::checkInt32($var);
-        $this->guard_pokemon_cp = $var;
+        $this->guard_pokemon_level = $var;
 
         return $this;
     }
@@ -490,27 +480,23 @@ class FortData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (Pokestop only)
-     *
-     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortLureInfo lure_info = 13;</code>
-     * @return \POGOProtos\Map\Fort\FortLureInfo
+     * Generated from protobuf field <code>.POGOProtos.Map.Pokemon.MapPokemon active_pokemon = 13;</code>
+     * @return \POGOProtos\Map\Pokemon\MapPokemon
      */
-    public function getLureInfo()
+    public function getActivePokemon()
     {
-        return $this->lure_info;
+        return $this->active_pokemon;
     }
 
     /**
-     * (Pokestop only)
-     *
-     * Generated from protobuf field <code>.POGOProtos.Map.Fort.FortLureInfo lure_info = 13;</code>
-     * @param \POGOProtos\Map\Fort\FortLureInfo $var
+     * Generated from protobuf field <code>.POGOProtos.Map.Pokemon.MapPokemon active_pokemon = 13;</code>
+     * @param \POGOProtos\Map\Pokemon\MapPokemon $var
      * @return $this
      */
-    public function setLureInfo($var)
+    public function setActivePokemon($var)
     {
-        GPBUtil::checkMessage($var, \POGOProtos\Map\Fort\FortLureInfo::class);
-        $this->lure_info = $var;
+        GPBUtil::checkMessage($var, \POGOProtos\Map\Pokemon\MapPokemon::class);
+        $this->active_pokemon = $var;
 
         return $this;
     }
@@ -518,25 +504,25 @@ class FortData extends \Google\Protobuf\Internal\Message
     /**
      * (Pokestop only) Timestamp when the pokestop can be activated again to get items / xp.
      *
-     * Generated from protobuf field <code>int64 cooldown_complete_timestamp_ms = 14;</code>
+     * Generated from protobuf field <code>int64 cooldown_complete_ms = 14;</code>
      * @return int|string
      */
-    public function getCooldownCompleteTimestampMs()
+    public function getCooldownCompleteMs()
     {
-        return $this->cooldown_complete_timestamp_ms;
+        return $this->cooldown_complete_ms;
     }
 
     /**
      * (Pokestop only) Timestamp when the pokestop can be activated again to get items / xp.
      *
-     * Generated from protobuf field <code>int64 cooldown_complete_timestamp_ms = 14;</code>
+     * Generated from protobuf field <code>int64 cooldown_complete_ms = 14;</code>
      * @param int|string $var
      * @return $this
      */
-    public function setCooldownCompleteTimestampMs($var)
+    public function setCooldownCompleteMs($var)
     {
         GPBUtil::checkInt64($var);
-        $this->cooldown_complete_timestamp_ms = $var;
+        $this->cooldown_complete_ms = $var;
 
         return $this;
     }

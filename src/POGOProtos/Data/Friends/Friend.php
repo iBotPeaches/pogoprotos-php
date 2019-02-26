@@ -41,6 +41,14 @@ class Friend extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 created_ms = 7;</code>
      */
     private $created_ms = 0;
+    /**
+     * Generated from protobuf field <code>string fb_user_id = 8;</code>
+     */
+    private $fb_user_id = '';
+    /**
+     * Generated from protobuf field <code>bool is_facebook_friendship = 9;</code>
+     */
+    private $is_facebook_friendship = false;
 
     /**
      * Constructor.
@@ -55,6 +63,8 @@ class Friend extends \Google\Protobuf\Internal\Message
      *     @type string $data_with_me
      *     @type int|string $version
      *     @type int|string $created_ms
+     *     @type string $fb_user_id
+     *     @type bool $is_facebook_friendship
      * }
      */
     public function __construct($data = NULL) {
@@ -212,6 +222,50 @@ class Friend extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->created_ms = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string fb_user_id = 8;</code>
+     * @return string
+     */
+    public function getFbUserId()
+    {
+        return $this->fb_user_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string fb_user_id = 8;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setFbUserId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->fb_user_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_facebook_friendship = 9;</code>
+     * @return bool
+     */
+    public function getIsFacebookFriendship()
+    {
+        return $this->is_facebook_friendship;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_facebook_friendship = 9;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsFacebookFriendship($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_facebook_friendship = $var;
 
         return $this;
     }

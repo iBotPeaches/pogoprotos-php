@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class FrameRate extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData sampled_frame_rate = 1;</code>
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PlatformMetricData sampled_frame_rate = 1;</code>
      */
     private $sampled_frame_rate = null;
 
@@ -24,7 +24,7 @@ class FrameRate extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData $sampled_frame_rate
+     *     @type \POGOProtos\Data\Telemetry\PlatformMetricData $sampled_frame_rate
      * }
      */
     public function __construct($data = NULL) {
@@ -33,8 +33,8 @@ class FrameRate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData sampled_frame_rate = 1;</code>
-     * @return \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PlatformMetricData sampled_frame_rate = 1;</code>
+     * @return \POGOProtos\Data\Telemetry\PlatformMetricData
      */
     public function getSampledFrameRate()
     {
@@ -42,13 +42,13 @@ class FrameRate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Networking.Platform.Telemetry.PlatformMetricData sampled_frame_rate = 1;</code>
-     * @param \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData $var
+     * Generated from protobuf field <code>.POGOProtos.Data.Telemetry.PlatformMetricData sampled_frame_rate = 1;</code>
+     * @param \POGOProtos\Data\Telemetry\PlatformMetricData $var
      * @return $this
      */
     public function setSampledFrameRate($var)
     {
-        GPBUtil::checkMessage($var, \POGOProtos\Networking\Platform\Telemetry\PlatformMetricData::class);
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Telemetry\PlatformMetricData::class);
         $this->sampled_frame_rate = $var;
 
         return $this;

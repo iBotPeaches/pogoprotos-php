@@ -25,6 +25,10 @@ class GetFitnessReportResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .POGOProtos.Data.Fitness.FitnessReport weekly_reports = 3;</code>
      */
     private $weekly_reports;
+    /**
+     * Generated from protobuf field <code>int64 week_reset_timestamp_since_monday_ms = 4;</code>
+     */
+    private $week_reset_timestamp_since_monday_ms = 0;
 
     /**
      * Constructor.
@@ -35,6 +39,7 @@ class GetFitnessReportResponse extends \Google\Protobuf\Internal\Message
      *     @type int $status
      *     @type \POGOProtos\Data\Fitness\FitnessReport[]|\Google\Protobuf\Internal\RepeatedField $daily_reports
      *     @type \POGOProtos\Data\Fitness\FitnessReport[]|\Google\Protobuf\Internal\RepeatedField $weekly_reports
+     *     @type int|string $week_reset_timestamp_since_monday_ms
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +109,28 @@ class GetFitnessReportResponse extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Fitness\FitnessReport::class);
         $this->weekly_reports = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 week_reset_timestamp_since_monday_ms = 4;</code>
+     * @return int|string
+     */
+    public function getWeekResetTimestampSinceMondayMs()
+    {
+        return $this->week_reset_timestamp_since_monday_ms;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 week_reset_timestamp_since_monday_ms = 4;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setWeekResetTimestampSinceMondayMs($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->week_reset_timestamp_since_monday_ms = $var;
 
         return $this;
     }

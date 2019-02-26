@@ -25,6 +25,14 @@ class IncomingFriendInvite extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 created_ms = 3;</code>
      */
     private $created_ms = 0;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.InvitationType invitation_type = 4;</code>
+     */
+    private $invitation_type = 0;
+    /**
+     * Generated from protobuf field <code>string full_name = 5;</code>
+     */
+    private $full_name = '';
 
     /**
      * Constructor.
@@ -35,6 +43,8 @@ class IncomingFriendInvite extends \Google\Protobuf\Internal\Message
      *     @type int $status
      *     @type string $player_id
      *     @type int|string $created_ms
+     *     @type int $invitation_type
+     *     @type string $full_name
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +114,50 @@ class IncomingFriendInvite extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->created_ms = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.InvitationType invitation_type = 4;</code>
+     * @return int
+     */
+    public function getInvitationType()
+    {
+        return $this->invitation_type;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.InvitationType invitation_type = 4;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setInvitationType($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\InvitationType::class);
+        $this->invitation_type = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string full_name = 5;</code>
+     * @return string
+     */
+    public function getFullName()
+    {
+        return $this->full_name;
+    }
+
+    /**
+     * Generated from protobuf field <code>string full_name = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setFullName($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->full_name = $var;
 
         return $this;
     }

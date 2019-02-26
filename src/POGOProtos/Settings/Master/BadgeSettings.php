@@ -37,6 +37,10 @@ class BadgeSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Settings.Master.EventBadgeSettings event_badge_settings = 6;</code>
      */
     private $event_badge_settings = null;
+    /**
+     * Generated from protobuf field <code>string combat_league_template_id = 7;</code>
+     */
+    private $combat_league_template_id = '';
 
     /**
      * Constructor.
@@ -50,6 +54,7 @@ class BadgeSettings extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Badge\BadgeCaptureReward[]|\Google\Protobuf\Internal\RepeatedField $capture_reward
      *     @type bool $event_badge
      *     @type \POGOProtos\Settings\Master\EventBadgeSettings $event_badge_settings
+     *     @type string $combat_league_template_id
      * }
      */
     public function __construct($data = NULL) {
@@ -185,6 +190,28 @@ class BadgeSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\EventBadgeSettings::class);
         $this->event_badge_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string combat_league_template_id = 7;</code>
+     * @return string
+     */
+    public function getCombatLeagueTemplateId()
+    {
+        return $this->combat_league_template_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string combat_league_template_id = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCombatLeagueTemplateId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->combat_league_template_id = $var;
 
         return $this;
     }

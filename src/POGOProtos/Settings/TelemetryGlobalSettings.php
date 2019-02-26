@@ -41,6 +41,10 @@ class TelemetryGlobalSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 frame_rate_sample_period_ms = 7;</code>
      */
     private $frame_rate_sample_period_ms = 0;
+    /**
+     * Generated from protobuf field <code>bool enable_omni_wrapper_sending = 8;</code>
+     */
+    private $enable_omni_wrapper_sending = false;
 
     /**
      * Constructor.
@@ -55,6 +59,7 @@ class TelemetryGlobalSettings extends \Google\Protobuf\Internal\Message
      *     @type int|string $update_interval_ms
      *     @type int|string $frame_rate_sample_interval_ms
      *     @type int|string $frame_rate_sample_period_ms
+     *     @type bool $enable_omni_wrapper_sending
      * }
      */
     public function __construct($data = NULL) {
@@ -212,6 +217,28 @@ class TelemetryGlobalSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->frame_rate_sample_period_ms = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_omni_wrapper_sending = 8;</code>
+     * @return bool
+     */
+    public function getEnableOmniWrapperSending()
+    {
+        return $this->enable_omni_wrapper_sending;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_omni_wrapper_sending = 8;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setEnableOmniWrapperSending($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_omni_wrapper_sending = $var;
 
         return $this;
     }

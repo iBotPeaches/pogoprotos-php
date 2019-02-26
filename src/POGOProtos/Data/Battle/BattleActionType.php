@@ -53,5 +53,9 @@ class BattleActionType
      * Generated from protobuf enum <code>ACTION_TIMED_OUT = 10;</code>
      */
     const ACTION_TIMED_OUT = 10;
+    /**
+     * Generated from protobuf enum <code>ACTION_SPECIAL_ATTACK_2 = 11;</code>
+     */
+    const ACTION_SPECIAL_ATTACK_2 = 11;
 }
 

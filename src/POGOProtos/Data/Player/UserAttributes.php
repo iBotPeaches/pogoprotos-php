@@ -18,35 +18,23 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
      */
     private $level = 0;
     /**
-     * Generated from protobuf field <code>int64 xp = 2;</code>
+     * Generated from protobuf field <code>int64 xp_percentage = 2;</code>
      */
-    private $xp = 0;
+    private $xp_percentage = 0;
     /**
-     * Generated from protobuf field <code>int32 avatar = 3;</code>
-     */
-    private $avatar = 0;
-    /**
-     * Generated from protobuf field <code>int64 item_count = 4;</code>
-     */
-    private $item_count = 0;
-    /**
-     * Generated from protobuf field <code>int64 pokemon_count = 5;</code>
-     */
-    private $pokemon_count = 0;
-    /**
-     * Generated from protobuf field <code>int64 pokecoin_count = 6;</code>
+     * Generated from protobuf field <code>int64 pokecoin_count = 3;</code>
      */
     private $pokecoin_count = 0;
     /**
-     * Generated from protobuf field <code>int32 team = 7;</code>
+     * Generated from protobuf field <code>int32 team = 4;</code>
      */
     private $team = 0;
     /**
-     * Generated from protobuf field <code>int32 catch_streak = 8;</code>
+     * Generated from protobuf field <code>int32 catch_streak = 5;</code>
      */
     private $catch_streak = 0;
     /**
-     * Generated from protobuf field <code>int32 spin_streak = 9;</code>
+     * Generated from protobuf field <code>int32 spin_streak = 6;</code>
      */
     private $spin_streak = 0;
 
@@ -57,10 +45,7 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $level
-     *     @type int|string $xp
-     *     @type int $avatar
-     *     @type int|string $item_count
-     *     @type int|string $pokemon_count
+     *     @type int|string $xp_percentage
      *     @type int|string $pokecoin_count
      *     @type int $team
      *     @type int $catch_streak
@@ -95,95 +80,29 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int64 xp = 2;</code>
+     * Generated from protobuf field <code>int64 xp_percentage = 2;</code>
      * @return int|string
      */
-    public function getXp()
+    public function getXpPercentage()
     {
-        return $this->xp;
+        return $this->xp_percentage;
     }
 
     /**
-     * Generated from protobuf field <code>int64 xp = 2;</code>
+     * Generated from protobuf field <code>int64 xp_percentage = 2;</code>
      * @param int|string $var
      * @return $this
      */
-    public function setXp($var)
+    public function setXpPercentage($var)
     {
         GPBUtil::checkInt64($var);
-        $this->xp = $var;
+        $this->xp_percentage = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>int32 avatar = 3;</code>
-     * @return int
-     */
-    public function getAvatar()
-    {
-        return $this->avatar;
-    }
-
-    /**
-     * Generated from protobuf field <code>int32 avatar = 3;</code>
-     * @param int $var
-     * @return $this
-     */
-    public function setAvatar($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->avatar = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>int64 item_count = 4;</code>
-     * @return int|string
-     */
-    public function getItemCount()
-    {
-        return $this->item_count;
-    }
-
-    /**
-     * Generated from protobuf field <code>int64 item_count = 4;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setItemCount($var)
-    {
-        GPBUtil::checkInt64($var);
-        $this->item_count = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>int64 pokemon_count = 5;</code>
-     * @return int|string
-     */
-    public function getPokemonCount()
-    {
-        return $this->pokemon_count;
-    }
-
-    /**
-     * Generated from protobuf field <code>int64 pokemon_count = 5;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setPokemonCount($var)
-    {
-        GPBUtil::checkInt64($var);
-        $this->pokemon_count = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>int64 pokecoin_count = 6;</code>
+     * Generated from protobuf field <code>int64 pokecoin_count = 3;</code>
      * @return int|string
      */
     public function getPokecoinCount()
@@ -192,7 +111,7 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int64 pokecoin_count = 6;</code>
+     * Generated from protobuf field <code>int64 pokecoin_count = 3;</code>
      * @param int|string $var
      * @return $this
      */
@@ -205,7 +124,7 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 team = 7;</code>
+     * Generated from protobuf field <code>int32 team = 4;</code>
      * @return int
      */
     public function getTeam()
@@ -214,7 +133,7 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 team = 7;</code>
+     * Generated from protobuf field <code>int32 team = 4;</code>
      * @param int $var
      * @return $this
      */
@@ -227,7 +146,7 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 catch_streak = 8;</code>
+     * Generated from protobuf field <code>int32 catch_streak = 5;</code>
      * @return int
      */
     public function getCatchStreak()
@@ -236,7 +155,7 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 catch_streak = 8;</code>
+     * Generated from protobuf field <code>int32 catch_streak = 5;</code>
      * @param int $var
      * @return $this
      */
@@ -249,7 +168,7 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 spin_streak = 9;</code>
+     * Generated from protobuf field <code>int32 spin_streak = 6;</code>
      * @return int
      */
     public function getSpinStreak()
@@ -258,7 +177,7 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 spin_streak = 9;</code>
+     * Generated from protobuf field <code>int32 spin_streak = 6;</code>
      * @param int $var
      * @return $this
      */

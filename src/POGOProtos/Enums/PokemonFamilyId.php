@@ -1013,5 +1013,9 @@ class PokemonFamilyId
      * Generated from protobuf enum <code>FAMILY_ARCEUS = 493;</code>
      */
     const FAMILY_ARCEUS = 493;
+    /**
+     * Generated from protobuf enum <code>FAMILY_MELTAN = 808;</code>
+     */
+    const FAMILY_MELTAN = 808;
 }
 

@@ -218,6 +218,22 @@ class BadgeType
      */
     const BADGE_POKEDEX_ENTRIES_GEN4 = 51;
     /**
+     * Generated from protobuf enum <code>BADGE_GREAT_LEAGUE = 52;</code>
+     */
+    const BADGE_GREAT_LEAGUE = 52;
+    /**
+     * Generated from protobuf enum <code>BADGE_ULTRA_LEAGUE = 53;</code>
+     */
+    const BADGE_ULTRA_LEAGUE = 53;
+    /**
+     * Generated from protobuf enum <code>BADGE_MASTER_LEAGUE = 54;</code>
+     */
+    const BADGE_MASTER_LEAGUE = 54;
+    /**
+     * Generated from protobuf enum <code>BADGE_PHOTOBOMB = 55;</code>
+     */
+    const BADGE_PHOTOBOMB = 55;
+    /**
      * Generated from protobuf enum <code>BADGE_EVENT_MIN = 2000;</code>
      */
     const BADGE_EVENT_MIN = 2000;
@@ -357,5 +373,57 @@ class BadgeType
      * Generated from protobuf enum <code>BADGE_YOKOSUKA_2_SEP_2018_KURIHAMA = 2034;</code>
      */
     const BADGE_YOKOSUKA_2_SEP_2018_KURIHAMA = 2034;
+    /**
+     * Generated from protobuf enum <code>BADGE_TOP_BANANA_1 = 2035;</code>
+     */
+    const BADGE_TOP_BANANA_1 = 2035;
+    /**
+     * Generated from protobuf enum <code>BADGE_TOP_BANANA_2 = 2036;</code>
+     */
+    const BADGE_TOP_BANANA_2 = 2036;
+    /**
+     * Generated from protobuf enum <code>BADGE_TOP_BANANA_3 = 2037;</code>
+     */
+    const BADGE_TOP_BANANA_3 = 2037;
+    /**
+     * Generated from protobuf enum <code>BADGE_PARTNER_EVENT_2019_0 = 2038;</code>
+     */
+    const BADGE_PARTNER_EVENT_2019_0 = 2038;
+    /**
+     * Generated from protobuf enum <code>BADGE_PARTNER_EVENT_2019_1 = 2039;</code>
+     */
+    const BADGE_PARTNER_EVENT_2019_1 = 2039;
+    /**
+     * Generated from protobuf enum <code>BADGE_PARTNER_EVENT_2019_2 = 2040;</code>
+     */
+    const BADGE_PARTNER_EVENT_2019_2 = 2040;
+    /**
+     * Generated from protobuf enum <code>BADGE_PARTNER_EVENT_2019_3 = 2041;</code>
+     */
+    const BADGE_PARTNER_EVENT_2019_3 = 2041;
+    /**
+     * Generated from protobuf enum <code>BADGE_PARTNER_EVENT_2019_4 = 2042;</code>
+     */
+    const BADGE_PARTNER_EVENT_2019_4 = 2042;
+    /**
+     * Generated from protobuf enum <code>BADGE_PARTNER_EVENT_2019_5 = 2043;</code>
+     */
+    const BADGE_PARTNER_EVENT_2019_5 = 2043;
+    /**
+     * Generated from protobuf enum <code>BADGE_PARTNER_EVENT_2019_6 = 2044;</code>
+     */
+    const BADGE_PARTNER_EVENT_2019_6 = 2044;
+    /**
+     * Generated from protobuf enum <code>BADGE_PARTNER_EVENT_2019_7 = 2045;</code>
+     */
+    const BADGE_PARTNER_EVENT_2019_7 = 2045;
+    /**
+     * Generated from protobuf enum <code>BADGE_PARTNER_EVENT_2019_8 = 2046;</code>
+     */
+    const BADGE_PARTNER_EVENT_2019_8 = 2046;
+    /**
+     * Generated from protobuf enum <code>BADGE_PARTNER_EVENT_2019_9 = 2047;</code>
+     */
+    const BADGE_PARTNER_EVENT_2019_9 = 2047;
 }
 

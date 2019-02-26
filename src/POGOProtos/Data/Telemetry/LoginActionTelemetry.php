@@ -22,17 +22,17 @@ class LoginActionTelemetry extends \Google\Protobuf\Internal\Message
      */
     private $first_time = false;
     /**
-     * Generated from protobuf field <code>string success = 3;</code>
+     * Generated from protobuf field <code>bool success = 3;</code>
      */
-    private $success = '';
+    private $success = false;
     /**
-     * Generated from protobuf field <code>string error = 4;</code>
+     * Generated from protobuf field <code>bool intent_existing = 4;</code>
+     */
+    private $intent_existing = false;
+    /**
+     * Generated from protobuf field <code>string error = 5;</code>
      */
     private $error = '';
-    /**
-     * Generated from protobuf field <code>string intent_existing = 5;</code>
-     */
-    private $intent_existing = '';
     /**
      * Generated from protobuf field <code>string auth_status = 6;</code>
      */
@@ -46,9 +46,9 @@ class LoginActionTelemetry extends \Google\Protobuf\Internal\Message
      *
      *     @type int $login_action_id
      *     @type bool $first_time
-     *     @type string $success
+     *     @type bool $success
+     *     @type bool $intent_existing
      *     @type string $error
-     *     @type string $intent_existing
      *     @type string $auth_status
      * }
      */
@@ -102,8 +102,8 @@ class LoginActionTelemetry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string success = 3;</code>
-     * @return string
+     * Generated from protobuf field <code>bool success = 3;</code>
+     * @return bool
      */
     public function getSuccess()
     {
@@ -111,20 +111,42 @@ class LoginActionTelemetry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string success = 3;</code>
-     * @param string $var
+     * Generated from protobuf field <code>bool success = 3;</code>
+     * @param bool $var
      * @return $this
      */
     public function setSuccess($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkBool($var);
         $this->success = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>string error = 4;</code>
+     * Generated from protobuf field <code>bool intent_existing = 4;</code>
+     * @return bool
+     */
+    public function getIntentExisting()
+    {
+        return $this->intent_existing;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool intent_existing = 4;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIntentExisting($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->intent_existing = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string error = 5;</code>
      * @return string
      */
     public function getError()
@@ -133,7 +155,7 @@ class LoginActionTelemetry extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string error = 4;</code>
+     * Generated from protobuf field <code>string error = 5;</code>
      * @param string $var
      * @return $this
      */
@@ -141,28 +163,6 @@ class LoginActionTelemetry extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->error = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string intent_existing = 5;</code>
-     * @return string
-     */
-    public function getIntentExisting()
-    {
-        return $this->intent_existing;
-    }
-
-    /**
-     * Generated from protobuf field <code>string intent_existing = 5;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setIntentExisting($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->intent_existing = $var;
 
         return $this;
     }

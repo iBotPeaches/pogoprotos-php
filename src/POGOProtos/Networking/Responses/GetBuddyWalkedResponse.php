@@ -25,6 +25,10 @@ class GetBuddyWalkedResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 candy_earned_count = 3;</code>
      */
     private $candy_earned_count = 0;
+    /**
+     * Generated from protobuf field <code>double km_remaining = 4;</code>
+     */
+    private $km_remaining = 0.0;
 
     /**
      * Constructor.
@@ -35,6 +39,7 @@ class GetBuddyWalkedResponse extends \Google\Protobuf\Internal\Message
      *     @type bool $success
      *     @type int $family_candy_id
      *     @type int $candy_earned_count
+     *     @type float $km_remaining
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +109,28 @@ class GetBuddyWalkedResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->candy_earned_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>double km_remaining = 4;</code>
+     * @return float
+     */
+    public function getKmRemaining()
+    {
+        return $this->km_remaining;
+    }
+
+    /**
+     * Generated from protobuf field <code>double km_remaining = 4;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setKmRemaining($var)
+    {
+        GPBUtil::checkDouble($var);
+        $this->km_remaining = $var;
 
         return $this;
     }
