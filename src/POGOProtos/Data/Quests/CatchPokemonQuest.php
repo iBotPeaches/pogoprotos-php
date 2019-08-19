@@ -9,11 +9,14 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- *
  * Generated from protobuf message <code>POGOProtos.Data.Quests.CatchPokemonQuest</code>
  */
 class CatchPokemonQuest extends \Google\Protobuf\Internal\Message
 {
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonId unique_pokemon_id = 1;</code>
+     */
+    private $unique_pokemon_id;
 
     /**
      * Constructor.
@@ -21,11 +24,34 @@ class CatchPokemonQuest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $unique_pokemon_id
      * }
      */
     public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Quests\CatchPokemonQuest::initOnce();
         parent::__construct($data);
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonId unique_pokemon_id = 1;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getUniquePokemonId()
+    {
+        return $this->unique_pokemon_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonId unique_pokemon_id = 1;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setUniquePokemonId($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\PokemonId::class);
+        $this->unique_pokemon_id = $arr;
+
+        return $this;
     }
 
 }

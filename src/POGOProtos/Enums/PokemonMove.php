@@ -1041,5 +1041,13 @@ class PokemonMove
      * Generated from protobuf enum <code>POWER_UP_PUNCH = 319;</code>
      */
     const POWER_UP_PUNCH = 319;
+    /**
+     * Generated from protobuf enum <code>CHARM_FAST = 320;</code>
+     */
+    const CHARM_FAST = 320;
+    /**
+     * Generated from protobuf enum <code>GIGA_IMPACT = 321;</code>
+     */
+    const GIGA_IMPACT = 321;
 }
 

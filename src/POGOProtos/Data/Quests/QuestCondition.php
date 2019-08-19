@@ -42,6 +42,11 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Quests\QuestCondition\WithBadgeType $with_badge_type
      *     @type \POGOProtos\Data\Quests\QuestCondition\WithPlayerLevel $with_player_level
      *     @type \POGOProtos\Data\Quests\QuestCondition\WithWinBattleStatus $with_win_battle_status
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithUniquePokemon $with_unique_pokemon
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithNpcCombat $with_npc_combat
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithPvpCombat $with_pvp_combat
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithLocation $with_location
+     *     @type \POGOProtos\Data\Quests\QuestCondition\WithDistance $with_distance
      * }
      */
     public function __construct($data = NULL) {
@@ -419,6 +424,116 @@ class QuestCondition extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithWinBattleStatus::class);
         $this->writeOneof(17, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithUniquePokemon with_unique_pokemon = 18;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithUniquePokemon
+     */
+    public function getWithUniquePokemon()
+    {
+        return $this->readOneof(18);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithUniquePokemon with_unique_pokemon = 18;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithUniquePokemon $var
+     * @return $this
+     */
+    public function setWithUniquePokemon($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithUniquePokemon::class);
+        $this->writeOneof(18, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithNpcCombat with_npc_combat = 19;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithNpcCombat
+     */
+    public function getWithNpcCombat()
+    {
+        return $this->readOneof(19);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithNpcCombat with_npc_combat = 19;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithNpcCombat $var
+     * @return $this
+     */
+    public function setWithNpcCombat($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithNpcCombat::class);
+        $this->writeOneof(19, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPvpCombat with_pvp_combat = 20;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithPvpCombat
+     */
+    public function getWithPvpCombat()
+    {
+        return $this->readOneof(20);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithPvpCombat with_pvp_combat = 20;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithPvpCombat $var
+     * @return $this
+     */
+    public function setWithPvpCombat($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithPvpCombat::class);
+        $this->writeOneof(20, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithLocation with_location = 21;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithLocation
+     */
+    public function getWithLocation()
+    {
+        return $this->readOneof(21);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithLocation with_location = 21;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithLocation $var
+     * @return $this
+     */
+    public function setWithLocation($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithLocation::class);
+        $this->writeOneof(21, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithDistance with_distance = 22;</code>
+     * @return \POGOProtos\Data\Quests\QuestCondition\WithDistance
+     */
+    public function getWithDistance()
+    {
+        return $this->readOneof(22);
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Data.Quests.QuestCondition.WithDistance with_distance = 22;</code>
+     * @param \POGOProtos\Data\Quests\QuestCondition\WithDistance $var
+     * @return $this
+     */
+    public function setWithDistance($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Data\Quests\QuestCondition_WithDistance::class);
+        $this->writeOneof(22, $var);
 
         return $this;
     }

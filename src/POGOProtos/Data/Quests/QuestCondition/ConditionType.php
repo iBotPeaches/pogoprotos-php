@@ -93,6 +93,26 @@ class ConditionType
      * Generated from protobuf enum <code>WITH_DAYS_IN_A_ROW = 20;</code>
      */
     const WITH_DAYS_IN_A_ROW = 20;
+    /**
+     * Generated from protobuf enum <code>WITH_UNIQUE_POKEMON = 21;</code>
+     */
+    const WITH_UNIQUE_POKEMON = 21;
+    /**
+     * Generated from protobuf enum <code>WITH_NPC_COMBAT = 22;</code>
+     */
+    const WITH_NPC_COMBAT = 22;
+    /**
+     * Generated from protobuf enum <code>WITH_PVP_COMBAT = 23;</code>
+     */
+    const WITH_PVP_COMBAT = 23;
+    /**
+     * Generated from protobuf enum <code>WITH_LOCATION = 24;</code>
+     */
+    const WITH_LOCATION = 24;
+    /**
+     * Generated from protobuf enum <code>WITH_DISTANCE = 25;</code>
+     */
+    const WITH_DISTANCE = 25;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

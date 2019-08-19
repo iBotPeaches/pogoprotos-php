@@ -42,7 +42,7 @@ class IncenseAttributes extends \Google\Protobuf\Internal\Message
      */
     private $pokemon_attracted_length_sec = 0;
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.Item.IncenseAttributes.IncensedPokemon spawn_table = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.Item.IncenseAttributes.SpawnTablePokemon spawn_table = 8;</code>
      */
     private $spawn_table;
     /**
@@ -63,7 +63,7 @@ class IncenseAttributes extends \Google\Protobuf\Internal\Message
      *     @type int $moving_time_between_encounter_seconds
      *     @type int $distance_required_for_shorter_interval_meters
      *     @type int $pokemon_attracted_length_sec
-     *     @type \POGOProtos\Settings\Master\Item\IncenseAttributes\IncensedPokemon[]|\Google\Protobuf\Internal\RepeatedField $spawn_table
+     *     @type \POGOProtos\Settings\Master\Item\IncenseAttributes\SpawnTablePokemon[]|\Google\Protobuf\Internal\RepeatedField $spawn_table
      *     @type float $spawn_table_probability
      * }
      */
@@ -227,7 +227,7 @@ class IncenseAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.Item.IncenseAttributes.IncensedPokemon spawn_table = 8;</code>
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.Item.IncenseAttributes.SpawnTablePokemon spawn_table = 8;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getSpawnTable()
@@ -236,13 +236,13 @@ class IncenseAttributes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.Item.IncenseAttributes.IncensedPokemon spawn_table = 8;</code>
-     * @param \POGOProtos\Settings\Master\Item\IncenseAttributes\IncensedPokemon[]|\Google\Protobuf\Internal\RepeatedField $var
+     * Generated from protobuf field <code>repeated .POGOProtos.Settings.Master.Item.IncenseAttributes.SpawnTablePokemon spawn_table = 8;</code>
+     * @param \POGOProtos\Settings\Master\Item\IncenseAttributes\SpawnTablePokemon[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setSpawnTable($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Settings\Master\Item\IncenseAttributes\IncensedPokemon::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Settings\Master\Item\IncenseAttributes\SpawnTablePokemon::class);
         $this->spawn_table = $arr;
 
         return $this;

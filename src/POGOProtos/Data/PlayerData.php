@@ -93,6 +93,10 @@ class PlayerData extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.Player.TeamChangeInfo team_change_info = 23;</code>
      */
     private $team_change_info = null;
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonId consumed_eevee_easter_eggs = 24;</code>
+     */
+    private $consumed_eevee_easter_eggs;
 
     /**
      * Constructor.
@@ -120,6 +124,7 @@ class PlayerData extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Combat\CombatPlayerPreferences $combat_player_preferences
      *     @type string $player_support_id
      *     @type \POGOProtos\Data\Player\TeamChangeInfo $team_change_info
+     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $consumed_eevee_easter_eggs
      * }
      */
     public function __construct($data = NULL) {
@@ -563,6 +568,28 @@ class PlayerData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Player\TeamChangeInfo::class);
         $this->team_change_info = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonId consumed_eevee_easter_eggs = 24;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getConsumedEeveeEasterEggs()
+    {
+        return $this->consumed_eevee_easter_eggs;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .POGOProtos.Enums.PokemonId consumed_eevee_easter_eggs = 24;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setConsumedEeveeEasterEggs($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \POGOProtos\Enums\PokemonId::class);
+        $this->consumed_eevee_easter_eggs = $arr;
 
         return $this;
     }

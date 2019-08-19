@@ -37,5 +37,9 @@ class PermissionContextTelemetryIds
      * Generated from protobuf enum <code>SETTINGS_TOGGLE = 6;</code>
      */
     const SETTINGS_TOGGLE = 6;
+    /**
+     * Generated from protobuf enum <code>NEARBY_PANEL_OPENED = 7;</code>
+     */
+    const NEARBY_PANEL_OPENED = 7;
 }
 

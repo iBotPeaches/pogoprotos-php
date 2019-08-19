@@ -57,6 +57,10 @@ class FortSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool enable_right_to_left_text_display = 11;</code>
      */
     private $enable_right_to_left_text_display = false;
+    /**
+     * Generated from protobuf field <code>bool enable_sponsored_poi_decorators = 12;</code>
+     */
+    private $enable_sponsored_poi_decorators = false;
 
     /**
      * Constructor.
@@ -75,6 +79,7 @@ class FortSettings extends \Google\Protobuf\Internal\Message
      *     @type int $max_player_total_deployed_pokemon
      *     @type bool $enable_hyperlinks_in_poi_descriptions
      *     @type bool $enable_right_to_left_text_display
+     *     @type bool $enable_sponsored_poi_decorators
      * }
      */
     public function __construct($data = NULL) {
@@ -320,6 +325,28 @@ class FortSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->enable_right_to_left_text_display = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_sponsored_poi_decorators = 12;</code>
+     * @return bool
+     */
+    public function getEnableSponsoredPoiDecorators()
+    {
+        return $this->enable_sponsored_poi_decorators;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_sponsored_poi_decorators = 12;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setEnableSponsoredPoiDecorators($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_sponsored_poi_decorators = $var;
 
         return $this;
     }

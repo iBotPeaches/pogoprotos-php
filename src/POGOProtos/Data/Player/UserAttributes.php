@@ -37,6 +37,138 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 spin_streak = 6;</code>
      */
     private $spin_streak = 0;
+    /**
+     * Generated from protobuf field <code>string buddy_name = 7;</code>
+     */
+    private $buddy_name = '';
+    /**
+     * Generated from protobuf field <code>bool is_egg_incubating = 8;</code>
+     */
+    private $is_egg_incubating = false;
+    /**
+     * Generated from protobuf field <code>bool has_eggs = 9;</code>
+     */
+    private $has_eggs = false;
+    /**
+     * Generated from protobuf field <code>int32 star_piece_count = 10;</code>
+     */
+    private $star_piece_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 lucky_egg_count = 11;</code>
+     */
+    private $lucky_egg_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 incense_ordinary_count = 12;</code>
+     */
+    private $incense_ordinary_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 incense_spicy_count = 13;</code>
+     */
+    private $incense_spicy_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 incense_cool_count = 14;</code>
+     */
+    private $incense_cool_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 incense_floral_count = 15;</code>
+     */
+    private $incense_floral_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 lure_ordinary_count = 16;</code>
+     */
+    private $lure_ordinary_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 lure_mossy_count = 17;</code>
+     */
+    private $lure_mossy_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 lure_glacial_count = 18;</code>
+     */
+    private $lure_glacial_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 lure_magnetic_count = 19;</code>
+     */
+    private $lure_magnetic_count = 0;
+    /**
+     * Generated from protobuf field <code>bool using_star_piece = 20;</code>
+     */
+    private $using_star_piece = false;
+    /**
+     * Generated from protobuf field <code>bool using_lucky_egg = 21;</code>
+     */
+    private $using_lucky_egg = false;
+    /**
+     * Generated from protobuf field <code>bool using_incense_ordinary = 22;</code>
+     */
+    private $using_incense_ordinary = false;
+    /**
+     * Generated from protobuf field <code>bool using_incense_spicy = 23;</code>
+     */
+    private $using_incense_spicy = false;
+    /**
+     * Generated from protobuf field <code>bool using_incense_cool = 24;</code>
+     */
+    private $using_incense_cool = false;
+    /**
+     * Generated from protobuf field <code>bool using_incense_floral = 25;</code>
+     */
+    private $using_incense_floral = false;
+    /**
+     * Generated from protobuf field <code>bool using_lure_ordinary = 26;</code>
+     */
+    private $using_lure_ordinary = false;
+    /**
+     * Generated from protobuf field <code>bool using_lure_mossy = 27;</code>
+     */
+    private $using_lure_mossy = false;
+    /**
+     * Generated from protobuf field <code>bool using_lure_glacial = 28;</code>
+     */
+    private $using_lure_glacial = false;
+    /**
+     * Generated from protobuf field <code>bool using_lure_magnetic = 29;</code>
+     */
+    private $using_lure_magnetic = false;
+    /**
+     * Generated from protobuf field <code>bool adventure_sync_opt_in = 30;</code>
+     */
+    private $adventure_sync_opt_in = false;
+    /**
+     * Generated from protobuf field <code>bool geo_fence_opt_in = 31;</code>
+     */
+    private $geo_fence_opt_in = false;
+    /**
+     * Generated from protobuf field <code>int32 kanto_dex_count = 32;</code>
+     */
+    private $kanto_dex_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 johto_dex_count = 33;</code>
+     */
+    private $johto_dex_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 hoenn_dex_count = 34;</code>
+     */
+    private $hoenn_dex_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 sinnoh_dex_count = 35;</code>
+     */
+    private $sinnoh_dex_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 friend_count = 36;</code>
+     */
+    private $friend_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 field_research_stamp_progress = 37;</code>
+     */
+    private $field_research_stamp_progress = 0;
+    /**
+     * Generated from protobuf field <code>int32 level_up = 38;</code>
+     */
+    private $level_up = 0;
+    /**
+     * Generated from protobuf field <code>bool sent_friend_request = 39;</code>
+     */
+    private $sent_friend_request = false;
 
     /**
      * Constructor.
@@ -50,6 +182,39 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
      *     @type int $team
      *     @type int $catch_streak
      *     @type int $spin_streak
+     *     @type string $buddy_name
+     *     @type bool $is_egg_incubating
+     *     @type bool $has_eggs
+     *     @type int $star_piece_count
+     *     @type int $lucky_egg_count
+     *     @type int $incense_ordinary_count
+     *     @type int $incense_spicy_count
+     *     @type int $incense_cool_count
+     *     @type int $incense_floral_count
+     *     @type int $lure_ordinary_count
+     *     @type int $lure_mossy_count
+     *     @type int $lure_glacial_count
+     *     @type int $lure_magnetic_count
+     *     @type bool $using_star_piece
+     *     @type bool $using_lucky_egg
+     *     @type bool $using_incense_ordinary
+     *     @type bool $using_incense_spicy
+     *     @type bool $using_incense_cool
+     *     @type bool $using_incense_floral
+     *     @type bool $using_lure_ordinary
+     *     @type bool $using_lure_mossy
+     *     @type bool $using_lure_glacial
+     *     @type bool $using_lure_magnetic
+     *     @type bool $adventure_sync_opt_in
+     *     @type bool $geo_fence_opt_in
+     *     @type int $kanto_dex_count
+     *     @type int $johto_dex_count
+     *     @type int $hoenn_dex_count
+     *     @type int $sinnoh_dex_count
+     *     @type int $friend_count
+     *     @type int $field_research_stamp_progress
+     *     @type int $level_up
+     *     @type bool $sent_friend_request
      * }
      */
     public function __construct($data = NULL) {
@@ -185,6 +350,732 @@ class UserAttributes extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->spin_streak = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string buddy_name = 7;</code>
+     * @return string
+     */
+    public function getBuddyName()
+    {
+        return $this->buddy_name;
+    }
+
+    /**
+     * Generated from protobuf field <code>string buddy_name = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setBuddyName($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->buddy_name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_egg_incubating = 8;</code>
+     * @return bool
+     */
+    public function getIsEggIncubating()
+    {
+        return $this->is_egg_incubating;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_egg_incubating = 8;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsEggIncubating($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_egg_incubating = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool has_eggs = 9;</code>
+     * @return bool
+     */
+    public function getHasEggs()
+    {
+        return $this->has_eggs;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool has_eggs = 9;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setHasEggs($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->has_eggs = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 star_piece_count = 10;</code>
+     * @return int
+     */
+    public function getStarPieceCount()
+    {
+        return $this->star_piece_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 star_piece_count = 10;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setStarPieceCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->star_piece_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 lucky_egg_count = 11;</code>
+     * @return int
+     */
+    public function getLuckyEggCount()
+    {
+        return $this->lucky_egg_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 lucky_egg_count = 11;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setLuckyEggCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->lucky_egg_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 incense_ordinary_count = 12;</code>
+     * @return int
+     */
+    public function getIncenseOrdinaryCount()
+    {
+        return $this->incense_ordinary_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 incense_ordinary_count = 12;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setIncenseOrdinaryCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->incense_ordinary_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 incense_spicy_count = 13;</code>
+     * @return int
+     */
+    public function getIncenseSpicyCount()
+    {
+        return $this->incense_spicy_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 incense_spicy_count = 13;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setIncenseSpicyCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->incense_spicy_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 incense_cool_count = 14;</code>
+     * @return int
+     */
+    public function getIncenseCoolCount()
+    {
+        return $this->incense_cool_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 incense_cool_count = 14;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setIncenseCoolCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->incense_cool_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 incense_floral_count = 15;</code>
+     * @return int
+     */
+    public function getIncenseFloralCount()
+    {
+        return $this->incense_floral_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 incense_floral_count = 15;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setIncenseFloralCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->incense_floral_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 lure_ordinary_count = 16;</code>
+     * @return int
+     */
+    public function getLureOrdinaryCount()
+    {
+        return $this->lure_ordinary_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 lure_ordinary_count = 16;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setLureOrdinaryCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->lure_ordinary_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 lure_mossy_count = 17;</code>
+     * @return int
+     */
+    public function getLureMossyCount()
+    {
+        return $this->lure_mossy_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 lure_mossy_count = 17;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setLureMossyCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->lure_mossy_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 lure_glacial_count = 18;</code>
+     * @return int
+     */
+    public function getLureGlacialCount()
+    {
+        return $this->lure_glacial_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 lure_glacial_count = 18;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setLureGlacialCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->lure_glacial_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 lure_magnetic_count = 19;</code>
+     * @return int
+     */
+    public function getLureMagneticCount()
+    {
+        return $this->lure_magnetic_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 lure_magnetic_count = 19;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setLureMagneticCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->lure_magnetic_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_star_piece = 20;</code>
+     * @return bool
+     */
+    public function getUsingStarPiece()
+    {
+        return $this->using_star_piece;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_star_piece = 20;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setUsingStarPiece($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->using_star_piece = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_lucky_egg = 21;</code>
+     * @return bool
+     */
+    public function getUsingLuckyEgg()
+    {
+        return $this->using_lucky_egg;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_lucky_egg = 21;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setUsingLuckyEgg($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->using_lucky_egg = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_incense_ordinary = 22;</code>
+     * @return bool
+     */
+    public function getUsingIncenseOrdinary()
+    {
+        return $this->using_incense_ordinary;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_incense_ordinary = 22;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setUsingIncenseOrdinary($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->using_incense_ordinary = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_incense_spicy = 23;</code>
+     * @return bool
+     */
+    public function getUsingIncenseSpicy()
+    {
+        return $this->using_incense_spicy;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_incense_spicy = 23;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setUsingIncenseSpicy($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->using_incense_spicy = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_incense_cool = 24;</code>
+     * @return bool
+     */
+    public function getUsingIncenseCool()
+    {
+        return $this->using_incense_cool;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_incense_cool = 24;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setUsingIncenseCool($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->using_incense_cool = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_incense_floral = 25;</code>
+     * @return bool
+     */
+    public function getUsingIncenseFloral()
+    {
+        return $this->using_incense_floral;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_incense_floral = 25;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setUsingIncenseFloral($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->using_incense_floral = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_lure_ordinary = 26;</code>
+     * @return bool
+     */
+    public function getUsingLureOrdinary()
+    {
+        return $this->using_lure_ordinary;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_lure_ordinary = 26;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setUsingLureOrdinary($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->using_lure_ordinary = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_lure_mossy = 27;</code>
+     * @return bool
+     */
+    public function getUsingLureMossy()
+    {
+        return $this->using_lure_mossy;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_lure_mossy = 27;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setUsingLureMossy($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->using_lure_mossy = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_lure_glacial = 28;</code>
+     * @return bool
+     */
+    public function getUsingLureGlacial()
+    {
+        return $this->using_lure_glacial;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_lure_glacial = 28;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setUsingLureGlacial($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->using_lure_glacial = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_lure_magnetic = 29;</code>
+     * @return bool
+     */
+    public function getUsingLureMagnetic()
+    {
+        return $this->using_lure_magnetic;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool using_lure_magnetic = 29;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setUsingLureMagnetic($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->using_lure_magnetic = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool adventure_sync_opt_in = 30;</code>
+     * @return bool
+     */
+    public function getAdventureSyncOptIn()
+    {
+        return $this->adventure_sync_opt_in;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool adventure_sync_opt_in = 30;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setAdventureSyncOptIn($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->adventure_sync_opt_in = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool geo_fence_opt_in = 31;</code>
+     * @return bool
+     */
+    public function getGeoFenceOptIn()
+    {
+        return $this->geo_fence_opt_in;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool geo_fence_opt_in = 31;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setGeoFenceOptIn($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->geo_fence_opt_in = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 kanto_dex_count = 32;</code>
+     * @return int
+     */
+    public function getKantoDexCount()
+    {
+        return $this->kanto_dex_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 kanto_dex_count = 32;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setKantoDexCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->kanto_dex_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 johto_dex_count = 33;</code>
+     * @return int
+     */
+    public function getJohtoDexCount()
+    {
+        return $this->johto_dex_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 johto_dex_count = 33;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setJohtoDexCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->johto_dex_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 hoenn_dex_count = 34;</code>
+     * @return int
+     */
+    public function getHoennDexCount()
+    {
+        return $this->hoenn_dex_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 hoenn_dex_count = 34;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setHoennDexCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->hoenn_dex_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 sinnoh_dex_count = 35;</code>
+     * @return int
+     */
+    public function getSinnohDexCount()
+    {
+        return $this->sinnoh_dex_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 sinnoh_dex_count = 35;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setSinnohDexCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->sinnoh_dex_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 friend_count = 36;</code>
+     * @return int
+     */
+    public function getFriendCount()
+    {
+        return $this->friend_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 friend_count = 36;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setFriendCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->friend_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 field_research_stamp_progress = 37;</code>
+     * @return int
+     */
+    public function getFieldResearchStampProgress()
+    {
+        return $this->field_research_stamp_progress;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 field_research_stamp_progress = 37;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setFieldResearchStampProgress($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->field_research_stamp_progress = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 level_up = 38;</code>
+     * @return int
+     */
+    public function getLevelUp()
+    {
+        return $this->level_up;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 level_up = 38;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setLevelUp($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->level_up = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool sent_friend_request = 39;</code>
+     * @return bool
+     */
+    public function getSentFriendRequest()
+    {
+        return $this->sent_friend_request;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool sent_friend_request = 39;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setSentFriendRequest($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->sent_friend_request = $var;
 
         return $this;
     }

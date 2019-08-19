@@ -46,8 +46,20 @@ class PokemonAnim
      */
     const LOOP = 8;
     /**
-     * Generated from protobuf enum <code>_MAX = 9;</code>
+     * Generated from protobuf enum <code>SLEEP_01 = 9;</code>
      */
-    const _MAX = 9;
+    const SLEEP_01 = 9;
+    /**
+     * Generated from protobuf enum <code>SLEEP_02 = 10;</code>
+     */
+    const SLEEP_02 = 10;
+    /**
+     * Generated from protobuf enum <code>SLEEP_WAIT = 11;</code>
+     */
+    const SLEEP_WAIT = 11;
+    /**
+     * Generated from protobuf enum <code>_MAX = 12;</code>
+     */
+    const _MAX = 12;
 }
 

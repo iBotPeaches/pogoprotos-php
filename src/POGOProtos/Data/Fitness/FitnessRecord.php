@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class FitnessRecord extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Fitness.FitnessRecord.HourlyReportsEntry hourly_reports = 1;</code>
+     * Generated from protobuf field <code>map<int64, .POGOProtos.Data.Fitness.FitnessMetrics> hourly_reports = 1;</code>
      */
     private $hourly_reports;
     /**
@@ -40,7 +40,7 @@ class FitnessRecord extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \POGOProtos\Data\Fitness\FitnessRecord\HourlyReportsEntry[]|\Google\Protobuf\Internal\RepeatedField $hourly_reports
+     *     @type array|\Google\Protobuf\Internal\MapField $hourly_reports
      *     @type \POGOProtos\Data\Fitness\FitnessSample[]|\Google\Protobuf\Internal\RepeatedField $raw_samples
      *     @type int|string $last_aggregation_timestamp_ms
      *     @type \POGOProtos\Data\Fitness\FitnessStats $fitness_stats
@@ -53,8 +53,8 @@ class FitnessRecord extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Fitness.FitnessRecord.HourlyReportsEntry hourly_reports = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * Generated from protobuf field <code>map<int64, .POGOProtos.Data.Fitness.FitnessMetrics> hourly_reports = 1;</code>
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getHourlyReports()
     {
@@ -62,13 +62,13 @@ class FitnessRecord extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .POGOProtos.Data.Fitness.FitnessRecord.HourlyReportsEntry hourly_reports = 1;</code>
-     * @param \POGOProtos\Data\Fitness\FitnessRecord\HourlyReportsEntry[]|\Google\Protobuf\Internal\RepeatedField $var
+     * Generated from protobuf field <code>map<int64, .POGOProtos.Data.Fitness.FitnessMetrics> hourly_reports = 1;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
     public function setHourlyReports($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Fitness\FitnessRecord\HourlyReportsEntry::class);
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::INT64, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Fitness\FitnessMetrics::class);
         $this->hourly_reports = $arr;
 
         return $this;

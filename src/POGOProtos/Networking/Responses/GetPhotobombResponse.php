@@ -34,7 +34,7 @@ class GetPhotobombResponse extends \Google\Protobuf\Internal\Message
      */
     private $encounter_location = '';
     /**
-     * Generated from protobuf field <code>uint64 encounter_id = 6;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 6;</code>
      */
     private $encounter_id = 0;
     /**
@@ -178,7 +178,7 @@ class GetPhotobombResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint64 encounter_id = 6;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 6;</code>
      * @return int|string
      */
     public function getEncounterId()
@@ -187,7 +187,7 @@ class GetPhotobombResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint64 encounter_id = 6;</code>
+     * Generated from protobuf field <code>fixed64 encounter_id = 6;</code>
      * @param int|string $var
      * @return $this
      */

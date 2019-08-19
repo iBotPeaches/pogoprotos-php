@@ -33,6 +33,14 @@ class FriendshipData extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 open_trade_expire_ms = 5;</code>
      */
     private $open_trade_expire_ms = 0;
+    /**
+     * Generated from protobuf field <code>bool is_lucky = 6;</code>
+     */
+    private $is_lucky = false;
+    /**
+     * Generated from protobuf field <code>int32 lucky_count = 7;</code>
+     */
+    private $lucky_count = 0;
 
     /**
      * Constructor.
@@ -45,6 +53,8 @@ class FriendshipData extends \Google\Protobuf\Internal\Message
      *     @type string $codename
      *     @type string $nickname
      *     @type int|string $open_trade_expire_ms
+     *     @type bool $is_lucky
+     *     @type int $lucky_count
      * }
      */
     public function __construct($data = NULL) {
@@ -158,6 +168,50 @@ class FriendshipData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->open_trade_expire_ms = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_lucky = 6;</code>
+     * @return bool
+     */
+    public function getIsLucky()
+    {
+        return $this->is_lucky;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_lucky = 6;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsLucky($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_lucky = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 lucky_count = 7;</code>
+     * @return int
+     */
+    public function getLuckyCount()
+    {
+        return $this->lucky_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 lucky_count = 7;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setLuckyCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->lucky_count = $var;
 
         return $this;
     }

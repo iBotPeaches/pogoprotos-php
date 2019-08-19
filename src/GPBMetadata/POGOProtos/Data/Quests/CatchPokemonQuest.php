@@ -14,11 +14,14 @@ class CatchPokemonQuest
         if (static::$is_initialized == true) {
           return;
         }
+        \GPBMetadata\POGOProtos\Enums\PokemonId::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
-            "0a650a2e504f474f50726f746f732f446174612f5175657374732f436174" .
-            "6368506f6b656d6f6e51756573742e70726f746f1216504f474f50726f74" .
-            "6f732e446174612e51756573747322130a114361746368506f6b656d6f6e" .
-            "5175657374620670726f746f33"
+            "0a9d010a2e504f474f50726f746f732f446174612f5175657374732f4361" .
+            "746368506f6b656d6f6e51756573742e70726f746f1216504f474f50726f" .
+            "746f732e446174612e517565737473224b0a114361746368506f6b656d6f" .
+            "6e517565737412360a11756e697175655f706f6b656d6f6e5f6964180120" .
+            "03280e321b2e504f474f50726f746f732e456e756d732e506f6b656d6f6e" .
+            "4964620670726f746f33"
         ));
 
         static::$is_initialized = true;

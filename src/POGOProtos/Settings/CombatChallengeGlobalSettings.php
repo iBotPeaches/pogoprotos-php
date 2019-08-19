@@ -21,6 +21,14 @@ class CombatChallengeGlobalSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 get_combat_challenge_polling_interval_sec = 2;</code>
      */
     private $get_combat_challenge_polling_interval_sec = 0;
+    /**
+     * Generated from protobuf field <code>bool enable_downstream_dispatch = 3;</code>
+     */
+    private $enable_downstream_dispatch = false;
+    /**
+     * Generated from protobuf field <code>bool enable_challenge_notifications = 4;</code>
+     */
+    private $enable_challenge_notifications = false;
 
     /**
      * Constructor.
@@ -30,6 +38,8 @@ class CombatChallengeGlobalSettings extends \Google\Protobuf\Internal\Message
      *
      *     @type int $distance_check_override_friendship_level
      *     @type int $get_combat_challenge_polling_interval_sec
+     *     @type bool $enable_downstream_dispatch
+     *     @type bool $enable_challenge_notifications
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +87,50 @@ class CombatChallengeGlobalSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->get_combat_challenge_polling_interval_sec = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_downstream_dispatch = 3;</code>
+     * @return bool
+     */
+    public function getEnableDownstreamDispatch()
+    {
+        return $this->enable_downstream_dispatch;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_downstream_dispatch = 3;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setEnableDownstreamDispatch($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_downstream_dispatch = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_challenge_notifications = 4;</code>
+     * @return bool
+     */
+    public function getEnableChallengeNotifications()
+    {
+        return $this->enable_challenge_notifications;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_challenge_notifications = 4;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setEnableChallengeNotifications($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_challenge_notifications = $var;
 
         return $this;
     }

@@ -70,24 +70,28 @@ class NotificationCategory
      */
     const BGMODE_POI_PROXIMITY = 14;
     /**
-     * Generated from protobuf enum <code>COMBAT_CHALLENGE_OPENED = 15;</code>
+     * Generated from protobuf enum <code>BGMODE_NAMED_BUDDY_CANDY = 15;</code>
      */
-    const COMBAT_CHALLENGE_OPENED = 15;
+    const BGMODE_NAMED_BUDDY_CANDY = 15;
     /**
-     * Generated from protobuf enum <code>FRIEND_INVITE_RECEIVED = 16;</code>
+     * Generated from protobuf enum <code>APP_BADGE_ONLY = 16;</code>
      */
-    const FRIEND_INVITE_RECEIVED = 16;
+    const APP_BADGE_ONLY = 16;
     /**
-     * Generated from protobuf enum <code>FRIEND_INVITE_ACCEPTED = 17;</code>
+     * Generated from protobuf enum <code>COMBAT_CHALLENGE_OPENED = 17;</code>
      */
-    const FRIEND_INVITE_ACCEPTED = 17;
+    const COMBAT_CHALLENGE_OPENED = 17;
     /**
-     * Generated from protobuf enum <code>BGMODE_NAMED_BUDDY_CANDY = 18;</code>
+     * Generated from protobuf enum <code>LUCKY_FRIEND = 18;</code>
      */
-    const BGMODE_NAMED_BUDDY_CANDY = 18;
+    const LUCKY_FRIEND = 18;
     /**
-     * Generated from protobuf enum <code>APP_BADGE_ONLY = 19;</code>
+     * Generated from protobuf enum <code>FRIEND_INVITE_RECEIVED = 19;</code>
      */
-    const APP_BADGE_ONLY = 19;
+    const FRIEND_INVITE_RECEIVED = 19;
+    /**
+     * Generated from protobuf enum <code>FRIEND_INVITE_ACCEPTED = 20;</code>
+     */
+    const FRIEND_INVITE_ACCEPTED = 20;
 }
 

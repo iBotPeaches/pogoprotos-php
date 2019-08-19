@@ -541,5 +541,17 @@ class Form
      * Generated from protobuf enum <code>SPINDA_19 = 132;</code>
      */
     const SPINDA_19 = 132;
+    /**
+     * Generated from protobuf enum <code>MEWTWO_A = 133;</code>
+     */
+    const MEWTWO_A = 133;
+    /**
+     * Generated from protobuf enum <code>MEWTWO_A_INTRO = 134;</code>
+     */
+    const MEWTWO_A_INTRO = 134;
+    /**
+     * Generated from protobuf enum <code>MEWTWO_NORMAL = 135;</code>
+     */
+    const MEWTWO_NORMAL = 135;
 }
 

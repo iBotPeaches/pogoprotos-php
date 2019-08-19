@@ -53,6 +53,18 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Map.Weather.DisplayWeather display_weather = 10;</code>
      */
     private $display_weather = null;
+    /**
+     * Generated from protobuf field <code>repeated string promo_image = 11;</code>
+     */
+    private $promo_image;
+    /**
+     * Generated from protobuf field <code>repeated string promo_description = 12;</code>
+     */
+    private $promo_description;
+    /**
+     * Generated from protobuf field <code>string call_to_action_link = 13;</code>
+     */
+    private $call_to_action_link = '';
 
     /**
      * Constructor.
@@ -70,6 +82,9 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
      *     @type string $checkin_image_url
      *     @type \POGOProtos\Data\Raid\EventInfo $event_info
      *     @type \POGOProtos\Map\Weather\DisplayWeather $display_weather
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $promo_image
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $promo_description
+     *     @type string $call_to_action_link
      * }
      */
     public function __construct($data = NULL) {
@@ -293,6 +308,72 @@ class GymGetInfoResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Map\Weather\DisplayWeather::class);
         $this->display_weather = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string promo_image = 11;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getPromoImage()
+    {
+        return $this->promo_image;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string promo_image = 11;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setPromoImage($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->promo_image = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string promo_description = 12;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getPromoDescription()
+    {
+        return $this->promo_description;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string promo_description = 12;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setPromoDescription($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->promo_description = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string call_to_action_link = 13;</code>
+     * @return string
+     */
+    public function getCallToActionLink()
+    {
+        return $this->call_to_action_link;
+    }
+
+    /**
+     * Generated from protobuf field <code>string call_to_action_link = 13;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCallToActionLink($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->call_to_action_link = $var;
 
         return $this;
     }

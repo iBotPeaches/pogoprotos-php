@@ -33,6 +33,10 @@ class DownloadRemoteConfigVersionMessage extends \Google\Protobuf\Internal\Messa
      * Generated from protobuf field <code>uint32 app_version = 5;</code>
      */
     private $app_version = 0;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.Store store = 6;</code>
+     */
+    private $store = 0;
 
     /**
      * Constructor.
@@ -45,6 +49,7 @@ class DownloadRemoteConfigVersionMessage extends \Google\Protobuf\Internal\Messa
      *     @type string $device_model
      *     @type string $locale
      *     @type int $app_version
+     *     @type int $store
      * }
      */
     public function __construct($data = NULL) {
@@ -158,6 +163,28 @@ class DownloadRemoteConfigVersionMessage extends \Google\Protobuf\Internal\Messa
     {
         GPBUtil::checkUint32($var);
         $this->app_version = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.Store store = 6;</code>
+     * @return int
+     */
+    public function getStore()
+    {
+        return $this->store;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.Store store = 6;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setStore($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\Store::class);
+        $this->store = $var;
 
         return $this;
     }

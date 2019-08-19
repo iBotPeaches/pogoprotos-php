@@ -25,5 +25,13 @@ class DeviceServiceTelemetryIds
      * Generated from protobuf enum <code>SFIDA_DEVICE_SERVICE = 3;</code>
      */
     const SFIDA_DEVICE_SERVICE = 3;
+    /**
+     * Generated from protobuf enum <code>AWARENESS = 4;</code>
+     */
+    const AWARENESS = 4;
+    /**
+     * Generated from protobuf enum <code>ADVENTURE_SYNC = 5;</code>
+     */
+    const ADVENTURE_SYNC = 5;
 }
 

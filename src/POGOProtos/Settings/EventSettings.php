@@ -17,6 +17,18 @@ class EventSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated string condolence_ribbon_country = 1;</code>
      */
     private $condolence_ribbon_country;
+    /**
+     * Generated from protobuf field <code>bool enable_event_link = 2;</code>
+     */
+    private $enable_event_link = false;
+    /**
+     * Generated from protobuf field <code>bool enable_event_link_for_children = 3;</code>
+     */
+    private $enable_event_link_for_children = false;
+    /**
+     * Generated from protobuf field <code>string event_webtoken_server_url = 4;</code>
+     */
+    private $event_webtoken_server_url = '';
 
     /**
      * Constructor.
@@ -25,6 +37,9 @@ class EventSettings extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string[]|\Google\Protobuf\Internal\RepeatedField $condolence_ribbon_country
+     *     @type bool $enable_event_link
+     *     @type bool $enable_event_link_for_children
+     *     @type string $event_webtoken_server_url
      * }
      */
     public function __construct($data = NULL) {
@@ -50,6 +65,72 @@ class EventSettings extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->condolence_ribbon_country = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_event_link = 2;</code>
+     * @return bool
+     */
+    public function getEnableEventLink()
+    {
+        return $this->enable_event_link;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_event_link = 2;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setEnableEventLink($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_event_link = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_event_link_for_children = 3;</code>
+     * @return bool
+     */
+    public function getEnableEventLinkForChildren()
+    {
+        return $this->enable_event_link_for_children;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool enable_event_link_for_children = 3;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setEnableEventLinkForChildren($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_event_link_for_children = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string event_webtoken_server_url = 4;</code>
+     * @return string
+     */
+    public function getEventWebtokenServerUrl()
+    {
+        return $this->event_webtoken_server_url;
+    }
+
+    /**
+     * Generated from protobuf field <code>string event_webtoken_server_url = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEventWebtokenServerUrl($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->event_webtoken_server_url = $var;
 
         return $this;
     }

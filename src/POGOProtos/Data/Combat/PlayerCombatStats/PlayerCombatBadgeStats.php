@@ -9,9 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>POGOProtos.Data.Combat.PlayerCombatStats.PlayerCombatBadgeStatsProto</code>
+ * Generated from protobuf message <code>POGOProtos.Data.Combat.PlayerCombatStats.PlayerCombatBadgeStats</code>
  */
-class PlayerCombatBadgeStatsProto extends \Google\Protobuf\Internal\Message
+class PlayerCombatBadgeStats extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>int32 num_won = 1;</code>
@@ -84,5 +84,5 @@ class PlayerCombatBadgeStatsProto extends \Google\Protobuf\Internal\Message
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.
-class_alias(PlayerCombatBadgeStatsProto::class, \POGOProtos\Data\Combat\PlayerCombatStats_PlayerCombatBadgeStatsProto::class);
+class_alias(PlayerCombatBadgeStats::class, \POGOProtos\Data\Combat\PlayerCombatStats_PlayerCombatBadgeStats::class);
 

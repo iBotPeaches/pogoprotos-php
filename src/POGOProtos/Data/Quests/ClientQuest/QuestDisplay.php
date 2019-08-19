@@ -45,6 +45,22 @@ class QuestDisplay extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string story_ending_description = 8;</code>
      */
     private $story_ending_description = '';
+    /**
+     * Generated from protobuf field <code>string tag_color = 9;</code>
+     */
+    private $tag_color = '';
+    /**
+     * Generated from protobuf field <code>string tag_string = 10;</code>
+     */
+    private $tag_string = '';
+    /**
+     * Generated from protobuf field <code>string sponsor_string = 11;</code>
+     */
+    private $sponsor_string = '';
+    /**
+     * Generated from protobuf field <code>string partner_id = 12;</code>
+     */
+    private $partner_id = '';
 
     /**
      * Constructor.
@@ -60,6 +76,10 @@ class QuestDisplay extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Quests\ClientQuest\QuestDisplay[]|\Google\Protobuf\Internal\RepeatedField $subdisplay
      *     @type bool $story_ending_quest
      *     @type string $story_ending_description
+     *     @type string $tag_color
+     *     @type string $tag_string
+     *     @type string $sponsor_string
+     *     @type string $partner_id
      * }
      */
     public function __construct($data = NULL) {
@@ -239,6 +259,94 @@ class QuestDisplay extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->story_ending_description = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string tag_color = 9;</code>
+     * @return string
+     */
+    public function getTagColor()
+    {
+        return $this->tag_color;
+    }
+
+    /**
+     * Generated from protobuf field <code>string tag_color = 9;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setTagColor($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->tag_color = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string tag_string = 10;</code>
+     * @return string
+     */
+    public function getTagString()
+    {
+        return $this->tag_string;
+    }
+
+    /**
+     * Generated from protobuf field <code>string tag_string = 10;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setTagString($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->tag_string = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string sponsor_string = 11;</code>
+     * @return string
+     */
+    public function getSponsorString()
+    {
+        return $this->sponsor_string;
+    }
+
+    /**
+     * Generated from protobuf field <code>string sponsor_string = 11;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setSponsorString($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->sponsor_string = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string partner_id = 12;</code>
+     * @return string
+     */
+    public function getPartnerId()
+    {
+        return $this->partner_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string partner_id = 12;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPartnerId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->partner_id = $var;
 
         return $this;
     }

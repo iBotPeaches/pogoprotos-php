@@ -33,6 +33,14 @@ class GetRaidDetailsMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>double player_lng_degrees = 5;</code>
      */
     private $player_lng_degrees = 0.0;
+    /**
+     * Generated from protobuf field <code>double gym_lat_degrees = 6;</code>
+     */
+    private $gym_lat_degrees = 0.0;
+    /**
+     * Generated from protobuf field <code>double gym_lng_degrees = 7;</code>
+     */
+    private $gym_lng_degrees = 0.0;
 
     /**
      * Constructor.
@@ -45,6 +53,8 @@ class GetRaidDetailsMessage extends \Google\Protobuf\Internal\Message
      *     @type int[]|\Google\Protobuf\Internal\RepeatedField $lobby_id
      *     @type float $player_lat_degrees
      *     @type float $player_lng_degrees
+     *     @type float $gym_lat_degrees
+     *     @type float $gym_lng_degrees
      * }
      */
     public function __construct($data = NULL) {
@@ -158,6 +168,50 @@ class GetRaidDetailsMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkDouble($var);
         $this->player_lng_degrees = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>double gym_lat_degrees = 6;</code>
+     * @return float
+     */
+    public function getGymLatDegrees()
+    {
+        return $this->gym_lat_degrees;
+    }
+
+    /**
+     * Generated from protobuf field <code>double gym_lat_degrees = 6;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setGymLatDegrees($var)
+    {
+        GPBUtil::checkDouble($var);
+        $this->gym_lat_degrees = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>double gym_lng_degrees = 7;</code>
+     * @return float
+     */
+    public function getGymLngDegrees()
+    {
+        return $this->gym_lng_degrees;
+    }
+
+    /**
+     * Generated from protobuf field <code>double gym_lng_degrees = 7;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setGymLngDegrees($var)
+    {
+        GPBUtil::checkDouble($var);
+        $this->gym_lng_degrees = $var;
 
         return $this;
     }

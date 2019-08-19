@@ -86,6 +86,18 @@ class ItemId
      */
     const ITEM_TROY_DISK = 501;
     /**
+     * Generated from protobuf enum <code>ITEM_TROY_DISK_GLACIAL = 502;</code>
+     */
+    const ITEM_TROY_DISK_GLACIAL = 502;
+    /**
+     * Generated from protobuf enum <code>ITEM_TROY_DISK_MOSSY = 503;</code>
+     */
+    const ITEM_TROY_DISK_MOSSY = 503;
+    /**
+     * Generated from protobuf enum <code>ITEM_TROY_DISK_MAGNETIC = 504;</code>
+     */
+    const ITEM_TROY_DISK_MAGNETIC = 504;
+    /**
      * Generated from protobuf enum <code>ITEM_X_ATTACK = 602;</code>
      */
     const ITEM_X_ATTACK = 602;

@@ -21,6 +21,18 @@ class EvolvePokemonMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId evolution_item_requirement = 2;</code>
      */
     private $evolution_item_requirement = 0;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId target_pokemon_id = 3;</code>
+     */
+    private $target_pokemon_id = 0;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.Form target_pokemon_form = 4;</code>
+     */
+    private $target_pokemon_form = 0;
+    /**
+     * Generated from protobuf field <code>bool use_special = 5;</code>
+     */
+    private $use_special = false;
 
     /**
      * Constructor.
@@ -30,6 +42,9 @@ class EvolvePokemonMessage extends \Google\Protobuf\Internal\Message
      *
      *     @type int|string $pokemon_id
      *     @type int $evolution_item_requirement
+     *     @type int $target_pokemon_id
+     *     @type int $target_pokemon_form
+     *     @type bool $use_special
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +92,72 @@ class EvolvePokemonMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
         $this->evolution_item_requirement = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId target_pokemon_id = 3;</code>
+     * @return int
+     */
+    public function getTargetPokemonId()
+    {
+        return $this->target_pokemon_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId target_pokemon_id = 3;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setTargetPokemonId($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\PokemonId::class);
+        $this->target_pokemon_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.Form target_pokemon_form = 4;</code>
+     * @return int
+     */
+    public function getTargetPokemonForm()
+    {
+        return $this->target_pokemon_form;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.Form target_pokemon_form = 4;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setTargetPokemonForm($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
+        $this->target_pokemon_form = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool use_special = 5;</code>
+     * @return bool
+     */
+    public function getUseSpecial()
+    {
+        return $this->use_special;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool use_special = 5;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setUseSpecial($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->use_special = $var;
 
         return $this;
     }

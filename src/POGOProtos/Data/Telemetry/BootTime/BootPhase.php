@@ -77,6 +77,10 @@ class BootPhase
      * Generated from protobuf enum <code>MODAL_TIME = 16;</code>
      */
     const MODAL_TIME = 16;
+    /**
+     * Generated from protobuf enum <code>INITIALIZE_ADJUST = 17;</code>
+     */
+    const INITIALIZE_ADJUST = 17;
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

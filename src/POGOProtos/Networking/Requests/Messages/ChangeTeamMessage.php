@@ -18,7 +18,7 @@ class ChangeTeamMessage extends \Google\Protobuf\Internal\Message
      */
     private $item = 0;
     /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId team = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team = 2;</code>
      */
     private $team = 0;
 
@@ -60,7 +60,7 @@ class ChangeTeamMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId team = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team = 2;</code>
      * @return int
      */
     public function getTeam()
@@ -69,13 +69,13 @@ class ChangeTeamMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId team = 2;</code>
+     * Generated from protobuf field <code>.POGOProtos.Enums.TeamColor team = 2;</code>
      * @param int $var
      * @return $this
      */
     public function setTeam($var)
     {
-        GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\TeamColor::class);
         $this->team = $var;
 
         return $this;

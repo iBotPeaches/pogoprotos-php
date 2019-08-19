@@ -45,5 +45,9 @@ class Costume
      * Generated from protobuf enum <code>WINTER_2018 = 8;</code>
      */
     const WINTER_2018 = 8;
+    /**
+     * Generated from protobuf enum <code>FEB_2019 = 9;</code>
+     */
+    const FEB_2019 = 9;
 }
 

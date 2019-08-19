@@ -9,9 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>POGOProtos.Settings.Master.Item.IncenseAttributes.IncensedPokemon</code>
+ * Generated from protobuf message <code>POGOProtos.Settings.Master.Item.IncenseAttributes.SpawnTablePokemon</code>
  */
-class IncensedPokemon extends \Google\Protobuf\Internal\Message
+class SpawnTablePokemon extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>.POGOProtos.Enums.PokemonId pokemon_id = 1;</code>
@@ -21,6 +21,10 @@ class IncensedPokemon extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>float weight = 2;</code>
      */
     private $weight = 0.0;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.Form form = 3;</code>
+     */
+    private $form = 0;
 
     /**
      * Constructor.
@@ -30,6 +34,7 @@ class IncensedPokemon extends \Google\Protobuf\Internal\Message
      *
      *     @type int $pokemon_id
      *     @type float $weight
+     *     @type int $form
      * }
      */
     public function __construct($data = NULL) {
@@ -81,8 +86,30 @@ class IncensedPokemon extends \Google\Protobuf\Internal\Message
         return $this;
     }
 
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.Form form = 3;</code>
+     * @return int
+     */
+    public function getForm()
+    {
+        return $this->form;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Enums.Form form = 3;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setForm($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Enums\Form::class);
+        $this->form = $var;
+
+        return $this;
+    }
+
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.
-class_alias(IncensedPokemon::class, \POGOProtos\Settings\Master\Item\IncenseAttributes_IncensedPokemon::class);
+class_alias(SpawnTablePokemon::class, \POGOProtos\Settings\Master\Item\IncenseAttributes_SpawnTablePokemon::class);
 

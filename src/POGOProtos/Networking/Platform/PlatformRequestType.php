@@ -177,5 +177,11 @@ class PlatformRequestType
      * Generated from protobuf enum <code>TEMP_TEST_RESULT = 101;</code>
      */
     const TEMP_TEST_RESULT = 101;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>GET_GMAP_SETTINGS = 5036;</code>
+     */
+    const GET_GMAP_SETTINGS = 5036;
 }
 

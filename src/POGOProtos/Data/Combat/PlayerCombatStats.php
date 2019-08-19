@@ -9,12 +9,14 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * TODO Map<int, PlayerCombatBadgeStatsProto> badges = 1;
- *
  * Generated from protobuf message <code>POGOProtos.Data.Combat.PlayerCombatStats</code>
  */
 class PlayerCombatStats extends \Google\Protobuf\Internal\Message
 {
+    /**
+     * Generated from protobuf field <code>map<int32, .POGOProtos.Data.Combat.PlayerCombatStats.PlayerCombatBadgeStats> badge = 1;</code>
+     */
+    private $badge;
 
     /**
      * Constructor.
@@ -22,11 +24,34 @@ class PlayerCombatStats extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
+     *     @type array|\Google\Protobuf\Internal\MapField $badge
      * }
      */
     public function __construct($data = NULL) {
         \GPBMetadata\POGOProtos\Data\Combat\PlayerCombatStats::initOnce();
         parent::__construct($data);
+    }
+
+    /**
+     * Generated from protobuf field <code>map<int32, .POGOProtos.Data.Combat.PlayerCombatStats.PlayerCombatBadgeStats> badge = 1;</code>
+     * @return \Google\Protobuf\Internal\MapField
+     */
+    public function getBadge()
+    {
+        return $this->badge;
+    }
+
+    /**
+     * Generated from protobuf field <code>map<int32, .POGOProtos.Data.Combat.PlayerCombatStats.PlayerCombatBadgeStats> badge = 1;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
+     */
+    public function setBadge($var)
+    {
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::INT32, \Google\Protobuf\Internal\GPBType::MESSAGE, \POGOProtos\Data\Combat\PlayerCombatStats\PlayerCombatBadgeStats::class);
+        $this->badge = $arr;
+
+        return $this;
     }
 
 }

@@ -21,6 +21,14 @@ class PokecoinPurchaseDisplaySettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated string enabled_countries = 2;</code>
      */
     private $enabled_countries;
+    /**
+     * Generated from protobuf field <code>repeated string enabled_currencies = 3;</code>
+     */
+    private $enabled_currencies;
+    /**
+     * Generated from protobuf field <code>bool use_pokecoin_purchase_display_gmt = 4;</code>
+     */
+    private $use_pokecoin_purchase_display_gmt = false;
 
     /**
      * Constructor.
@@ -30,6 +38,8 @@ class PokecoinPurchaseDisplaySettings extends \Google\Protobuf\Internal\Message
      *
      *     @type bool $feature_enabled
      *     @type string[]|\Google\Protobuf\Internal\RepeatedField $enabled_countries
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $enabled_currencies
+     *     @type bool $use_pokecoin_purchase_display_gmt
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +87,50 @@ class PokecoinPurchaseDisplaySettings extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->enabled_countries = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string enabled_currencies = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getEnabledCurrencies()
+    {
+        return $this->enabled_currencies;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string enabled_currencies = 3;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setEnabledCurrencies($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->enabled_currencies = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool use_pokecoin_purchase_display_gmt = 4;</code>
+     * @return bool
+     */
+    public function getUsePokecoinPurchaseDisplayGmt()
+    {
+        return $this->use_pokecoin_purchase_display_gmt;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool use_pokecoin_purchase_display_gmt = 4;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setUsePokecoinPurchaseDisplayGmt($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->use_pokecoin_purchase_display_gmt = $var;
 
         return $this;
     }

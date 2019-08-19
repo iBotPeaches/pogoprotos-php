@@ -29,6 +29,10 @@ class CheckPhotobombResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>fixed64 encounter_id = 4;</code>
      */
     private $encounter_id = 0;
+    /**
+     * Generated from protobuf field <code>string uri = 5;</code>
+     */
+    private $uri = '';
 
     /**
      * Constructor.
@@ -40,6 +44,7 @@ class CheckPhotobombResponse extends \Google\Protobuf\Internal\Message
      *     @type int $photobomb_pokemon_id
      *     @type \POGOProtos\Data\PokemonDisplay $photobomb_pokemon_display
      *     @type int|string $encounter_id
+     *     @type string $uri
      * }
      */
     public function __construct($data = NULL) {
@@ -131,6 +136,28 @@ class CheckPhotobombResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint64($var);
         $this->encounter_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string uri = 5;</code>
+     * @return string
+     */
+    public function getUri()
+    {
+        return $this->uri;
+    }
+
+    /**
+     * Generated from protobuf field <code>string uri = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setUri($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->uri = $var;
 
         return $this;
     }

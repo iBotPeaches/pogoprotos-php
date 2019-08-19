@@ -53,6 +53,14 @@ class ClientTelemetryClientSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool disable_omni_sending = 10;</code>
      */
     private $disable_omni_sending = false;
+    /**
+     * Generated from protobuf field <code>map<string, double> special_sampling_probability_map = 11;</code>
+     */
+    private $special_sampling_probability_map;
+    /**
+     * Generated from protobuf field <code>string player_external_ua_id = 12;</code>
+     */
+    private $player_external_ua_id = '';
 
     /**
      * Constructor.
@@ -70,6 +78,8 @@ class ClientTelemetryClientSettings extends \Google\Protobuf\Internal\Message
      *     @type float $player_hash
      *     @type string $player_external_omni_id
      *     @type bool $disable_omni_sending
+     *     @type array|\Google\Protobuf\Internal\MapField $special_sampling_probability_map
+     *     @type string $player_external_ua_id
      * }
      */
     public function __construct($data = NULL) {
@@ -293,6 +303,50 @@ class ClientTelemetryClientSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->disable_omni_sending = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>map<string, double> special_sampling_probability_map = 11;</code>
+     * @return \Google\Protobuf\Internal\MapField
+     */
+    public function getSpecialSamplingProbabilityMap()
+    {
+        return $this->special_sampling_probability_map;
+    }
+
+    /**
+     * Generated from protobuf field <code>map<string, double> special_sampling_probability_map = 11;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
+     */
+    public function setSpecialSamplingProbabilityMap($var)
+    {
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::DOUBLE);
+        $this->special_sampling_probability_map = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string player_external_ua_id = 12;</code>
+     * @return string
+     */
+    public function getPlayerExternalUaId()
+    {
+        return $this->player_external_ua_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string player_external_ua_id = 12;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPlayerExternalUaId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->player_external_ua_id = $var;
 
         return $this;
     }

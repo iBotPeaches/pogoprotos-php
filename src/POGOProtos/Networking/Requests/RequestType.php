@@ -66,6 +66,12 @@ class RequestType
     /**
      * Implemented
      *
+     * Generated from protobuf enum <code>GET_SERVER_TIME = 11;</code>
+     */
+    const GET_SERVER_TIME = 11;
+    /**
+     * Implemented
+     *
      * Generated from protobuf enum <code>FORT_SEARCH = 101;</code>
      */
     const FORT_SEARCH = 101;
@@ -892,17 +898,29 @@ class RequestType
      */
     const ENCOUNTER_PHOTOBOMB = 1104;
     /**
-     * Implemented
+     * UnUsed - Implemented
      *
-     * Generated from protobuf enum <code>GET_SIGNED_GMAP_URL = 1105;</code>
+     * Generated from protobuf enum <code>GET_SIGNED_GMAP_URL_DEPRECATED = 1105;</code>
      */
-    const GET_SIGNED_GMAP_URL = 1105;
+    const GET_SIGNED_GMAP_URL_DEPRECATED = 1105;
     /**
      * Implemented
      *
      * Generated from protobuf enum <code>CHANGE_TEAM = 1106;</code>
      */
     const CHANGE_TEAM = 1106;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>GET_WEB_TOKEN = 1107;</code>
+     */
+    const GET_WEB_TOKEN = 1107;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>COMPLETE_SNAPSHOT_SESSION = 1110;</code>
+     */
+    const COMPLETE_SNAPSHOT_SESSION = 1110;
     /**
      * Implemented
      *
@@ -1113,5 +1131,11 @@ class RequestType
      * Generated from protobuf enum <code>GENERATE_GMAP_SIGNED_URL = 5035;</code>
      */
     const GENERATE_GMAP_SIGNED_URL = 5035;
+    /**
+     * Implemented
+     *
+     * Generated from protobuf enum <code>GET_GMAP_SETTINGS = 5036;</code>
+     */
+    const GET_GMAP_SETTINGS = 5036;
 }
 

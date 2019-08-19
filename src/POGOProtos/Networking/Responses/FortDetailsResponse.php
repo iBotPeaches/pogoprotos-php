@@ -77,6 +77,14 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Data.Raid.EventInfo event_info = 16;</code>
      */
     private $event_info = null;
+    /**
+     * Generated from protobuf field <code>repeated string promo_description = 17;</code>
+     */
+    private $promo_description;
+    /**
+     * Generated from protobuf field <code>string call_to_action_link = 18;</code>
+     */
+    private $call_to_action_link = '';
 
     /**
      * Constructor.
@@ -100,6 +108,8 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
      *     @type bool $close_soon
      *     @type string $checkin_image_url
      *     @type \POGOProtos\Data\Raid\EventInfo $event_info
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $promo_description
+     *     @type string $call_to_action_link
      * }
      */
     public function __construct($data = NULL) {
@@ -455,6 +465,50 @@ class FortDetailsResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Data\Raid\EventInfo::class);
         $this->event_info = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string promo_description = 17;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getPromoDescription()
+    {
+        return $this->promo_description;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string promo_description = 17;</code>
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setPromoDescription($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->promo_description = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string call_to_action_link = 18;</code>
+     * @return string
+     */
+    public function getCallToActionLink()
+    {
+        return $this->call_to_action_link;
+    }
+
+    /**
+     * Generated from protobuf field <code>string call_to_action_link = 18;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCallToActionLink($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->call_to_action_link = $var;
 
         return $this;
     }

@@ -49,6 +49,18 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool is_raid_hidden = 9;</code>
      */
     private $is_raid_hidden = false;
+    /**
+     * Generated from protobuf field <code>bool is_scheduled_raid = 10;</code>
+     */
+    private $is_scheduled_raid = false;
+    /**
+     * Generated from protobuf field <code>bool is_free = 11;</code>
+     */
+    private $is_free = false;
+    /**
+     * Generated from protobuf field <code>string campaign_id = 12;</code>
+     */
+    private $campaign_id = '';
 
     /**
      * Constructor.
@@ -65,6 +77,9 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
      *     @type bool $complete
      *     @type bool $is_exclusive
      *     @type bool $is_raid_hidden
+     *     @type bool $is_scheduled_raid
+     *     @type bool $is_free
+     *     @type string $campaign_id
      * }
      */
     public function __construct($data = NULL) {
@@ -266,6 +281,72 @@ class RaidInfo extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->is_raid_hidden = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_scheduled_raid = 10;</code>
+     * @return bool
+     */
+    public function getIsScheduledRaid()
+    {
+        return $this->is_scheduled_raid;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_scheduled_raid = 10;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsScheduledRaid($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_scheduled_raid = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_free = 11;</code>
+     * @return bool
+     */
+    public function getIsFree()
+    {
+        return $this->is_free;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_free = 11;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsFree($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_free = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string campaign_id = 12;</code>
+     * @return string
+     */
+    public function getCampaignId()
+    {
+        return $this->campaign_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string campaign_id = 12;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCampaignId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->campaign_id = $var;
 
         return $this;
     }

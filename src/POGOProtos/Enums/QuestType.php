@@ -113,5 +113,13 @@ class QuestType
      * Generated from protobuf enum <code>QUEST_EVOLVE_INTO_POKEMON = 25;</code>
      */
     const QUEST_EVOLVE_INTO_POKEMON = 25;
+    /**
+     * Generated from protobuf enum <code>QUEST_COMPLETE_COMBAT = 27;</code>
+     */
+    const QUEST_COMPLETE_COMBAT = 27;
+    /**
+     * Generated from protobuf enum <code>QUEST_TAKE_SNAPSHOT = 28;</code>
+     */
+    const QUEST_TAKE_SNAPSHOT = 28;
 }
 

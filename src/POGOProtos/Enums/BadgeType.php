@@ -425,5 +425,109 @@ class BadgeType
      * Generated from protobuf enum <code>BADGE_PARTNER_EVENT_2019_9 = 2047;</code>
      */
     const BADGE_PARTNER_EVENT_2019_9 = 2047;
+    /**
+     * Generated from protobuf enum <code>BADGE_SENTOSA_18_APR_2019 = 2048;</code>
+     */
+    const BADGE_SENTOSA_18_APR_2019 = 2048;
+    /**
+     * Generated from protobuf enum <code>BADGE_SENTOSA_19_APR_2019 = 2049;</code>
+     */
+    const BADGE_SENTOSA_19_APR_2019 = 2049;
+    /**
+     * Generated from protobuf enum <code>BADGE_SENTOSA_20_APR_2019 = 2050;</code>
+     */
+    const BADGE_SENTOSA_20_APR_2019 = 2050;
+    /**
+     * Generated from protobuf enum <code>BADGE_SENTOSA_21_APR_2019 = 2051;</code>
+     */
+    const BADGE_SENTOSA_21_APR_2019 = 2051;
+    /**
+     * Generated from protobuf enum <code>BADGE_SENTOSA_22_APR_2019 = 2052;</code>
+     */
+    const BADGE_SENTOSA_22_APR_2019 = 2052;
+    /**
+     * Generated from protobuf enum <code>BADGE_DYNAMIC_EVENT_MIN = 5000;</code>
+     */
+    const BADGE_DYNAMIC_EVENT_MIN = 5000;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_GENERAL = 5001;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_GENERAL = 5001;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_EARLYACCESS = 5002;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_EARLYACCESS = 5002;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_00_SOUTH_GENERAL = 5003;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_00_SOUTH_GENERAL = 5003;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_00_SOUTH_EARLYACCESS = 5004;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_00_SOUTH_EARLYACCESS = 5004;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_01_NORTH_GENERAL = 5005;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_01_NORTH_GENERAL = 5005;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_01_NORTH_EARLYACCESS = 5006;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_01_NORTH_EARLYACCESS = 5006;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_01_SOUTH_GENERAL = 5007;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_01_SOUTH_GENERAL = 5007;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_01_SOUTH_EARLYACCESS = 5008;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_01_SOUTH_EARLYACCESS = 5008;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_02_NORTH_GENERAL = 5009;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_02_NORTH_GENERAL = 5009;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_02_NORTH_EARLYACCESS = 5010;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_02_NORTH_EARLYACCESS = 5010;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_02_SOUTH_GENERAL = 5011;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_02_SOUTH_GENERAL = 5011;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_02_SOUTH_EARLYACCESS = 5012;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_02_SOUTH_EARLYACCESS = 5012;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_03_NORTH_GENERAL = 5013;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_03_NORTH_GENERAL = 5013;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_03_NORTH_EARLYACCESS = 5014;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_03_NORTH_EARLYACCESS = 5014;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_03_SOUTH_GENERAL = 5015;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_03_SOUTH_GENERAL = 5015;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_03_SOUTH_EARLYACCESS = 5016;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_03_SOUTH_EARLYACCESS = 5016;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_04_NORTH_GENERAL = 5017;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_04_NORTH_GENERAL = 5017;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_04_NORTH_EARLYACCESS = 5018;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_04_NORTH_EARLYACCESS = 5018;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_04_SOUTH_GENERAL = 5019;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_04_SOUTH_GENERAL = 5019;
+    /**
+     * Generated from protobuf enum <code>BADGE_GOFEST_2019_AMERICAS_DAY_04_SOUTH_EARLYACCESS = 5020;</code>
+     */
+    const BADGE_GOFEST_2019_AMERICAS_DAY_04_SOUTH_EARLYACCESS = 5020;
 }
 

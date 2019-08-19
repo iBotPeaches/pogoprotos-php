@@ -37,6 +37,26 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Enums.Gender gender_requirement = 6;</code>
      */
     private $gender_requirement = 0;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId lure_item_requirement = 8;</code>
+     */
+    private $lure_item_requirement = 0;
+    /**
+     * Generated from protobuf field <code>bool must_be_buddy = 9;</code>
+     */
+    private $must_be_buddy = false;
+    /**
+     * Generated from protobuf field <code>bool only_daytime = 10;</code>
+     */
+    private $only_daytime = false;
+    /**
+     * Generated from protobuf field <code>bool only_nighttime = 11;</code>
+     */
+    private $only_nighttime = false;
+    /**
+     * Generated from protobuf field <code>int32 priority = 12;</code>
+     */
+    private $priority = 0;
 
     /**
      * Constructor.
@@ -50,6 +70,11 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
      *     @type float $km_buddy_distance_requirement
      *     @type int $form
      *     @type int $gender_requirement
+     *     @type int $lure_item_requirement
+     *     @type bool $must_be_buddy
+     *     @type bool $only_daytime
+     *     @type bool $only_nighttime
+     *     @type int $priority
      * }
      */
     public function __construct($data = NULL) {
@@ -185,6 +210,116 @@ class EvolutionBranch extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \POGOProtos\Enums\Gender::class);
         $this->gender_requirement = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId lure_item_requirement = 8;</code>
+     * @return int
+     */
+    public function getLureItemRequirement()
+    {
+        return $this->lure_item_requirement;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Inventory.Item.ItemId lure_item_requirement = 8;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setLureItemRequirement($var)
+    {
+        GPBUtil::checkEnum($var, \POGOProtos\Inventory\Item\ItemId::class);
+        $this->lure_item_requirement = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool must_be_buddy = 9;</code>
+     * @return bool
+     */
+    public function getMustBeBuddy()
+    {
+        return $this->must_be_buddy;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool must_be_buddy = 9;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setMustBeBuddy($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->must_be_buddy = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool only_daytime = 10;</code>
+     * @return bool
+     */
+    public function getOnlyDaytime()
+    {
+        return $this->only_daytime;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool only_daytime = 10;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setOnlyDaytime($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->only_daytime = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool only_nighttime = 11;</code>
+     * @return bool
+     */
+    public function getOnlyNighttime()
+    {
+        return $this->only_nighttime;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool only_nighttime = 11;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setOnlyNighttime($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->only_nighttime = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 priority = 12;</code>
+     * @return int
+     */
+    public function getPriority()
+    {
+        return $this->priority;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 priority = 12;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPriority($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->priority = $var;
 
         return $this;
     }

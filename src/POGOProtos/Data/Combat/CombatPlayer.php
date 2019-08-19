@@ -53,6 +53,10 @@ class CombatPlayer extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 minigame_defense_chances_left = 10;</code>
      */
     private $minigame_defense_chances_left = 0;
+    /**
+     * Generated from protobuf field <code>string combat_npc_personality_id = 11;</code>
+     */
+    private $combat_npc_personality_id = '';
 
     /**
      * Constructor.
@@ -70,6 +74,7 @@ class CombatPlayer extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\Combat\CombatAction $minigame_action
      *     @type int|string $quick_swap_available_ms
      *     @type int $minigame_defense_chances_left
+     *     @type string $combat_npc_personality_id
      * }
      */
     public function __construct($data = NULL) {
@@ -293,6 +298,28 @@ class CombatPlayer extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->minigame_defense_chances_left = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string combat_npc_personality_id = 11;</code>
+     * @return string
+     */
+    public function getCombatNpcPersonalityId()
+    {
+        return $this->combat_npc_personality_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string combat_npc_personality_id = 11;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCombatNpcPersonalityId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->combat_npc_personality_id = $var;
 
         return $this;
     }

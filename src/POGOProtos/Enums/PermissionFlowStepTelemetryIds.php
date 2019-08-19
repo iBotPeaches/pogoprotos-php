@@ -25,5 +25,9 @@ class PermissionFlowStepTelemetryIds
      * Generated from protobuf enum <code>LOCATION_PERMISSION = 3;</code>
      */
     const LOCATION_PERMISSION = 3;
+    /**
+     * Generated from protobuf enum <code>ACTIVITY_PERMISSIONS = 4;</code>
+     */
+    const ACTIVITY_PERMISSIONS = 4;
 }
 

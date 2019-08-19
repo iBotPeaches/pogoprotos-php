@@ -153,6 +153,18 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Settings.PokemonGlobalSettings pokemon_settings = 36;</code>
      */
     private $pokemon_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.AvatarGlobalSettings avatar_settings = 37;</code>
+     */
+    private $avatar_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.EvolutionV2Settings evolution_v2_settings = 38;</code>
+     */
+    private $evolution_v2_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.KoalaSettings koala_settings = 40;</code>
+     */
+    private $koala_settings = null;
 
     /**
      * Constructor.
@@ -195,6 +207,9 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Settings\ArPhotoGlobalSettings $ar_photo_settings
      *     @type \POGOProtos\Settings\PoiGlobalSettings $poi_settings
      *     @type \POGOProtos\Settings\PokemonGlobalSettings $pokemon_settings
+     *     @type \POGOProtos\Settings\AvatarGlobalSettings $avatar_settings
+     *     @type \POGOProtos\Settings\EvolutionV2Settings $evolution_v2_settings
+     *     @type \POGOProtos\Settings\KoalaSettings $koala_settings
      * }
      */
     public function __construct($data = NULL) {
@@ -968,6 +983,72 @@ class GlobalSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\PokemonGlobalSettings::class);
         $this->pokemon_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.AvatarGlobalSettings avatar_settings = 37;</code>
+     * @return \POGOProtos\Settings\AvatarGlobalSettings
+     */
+    public function getAvatarSettings()
+    {
+        return $this->avatar_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.AvatarGlobalSettings avatar_settings = 37;</code>
+     * @param \POGOProtos\Settings\AvatarGlobalSettings $var
+     * @return $this
+     */
+    public function setAvatarSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\AvatarGlobalSettings::class);
+        $this->avatar_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.EvolutionV2Settings evolution_v2_settings = 38;</code>
+     * @return \POGOProtos\Settings\EvolutionV2Settings
+     */
+    public function getEvolutionV2Settings()
+    {
+        return $this->evolution_v2_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.EvolutionV2Settings evolution_v2_settings = 38;</code>
+     * @param \POGOProtos\Settings\EvolutionV2Settings $var
+     * @return $this
+     */
+    public function setEvolutionV2Settings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\EvolutionV2Settings::class);
+        $this->evolution_v2_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.KoalaSettings koala_settings = 40;</code>
+     * @return \POGOProtos\Settings\KoalaSettings
+     */
+    public function getKoalaSettings()
+    {
+        return $this->koala_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.KoalaSettings koala_settings = 40;</code>
+     * @param \POGOProtos\Settings\KoalaSettings $var
+     * @return $this
+     */
+    public function setKoalaSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\KoalaSettings::class);
+        $this->koala_settings = $var;
 
         return $this;
     }

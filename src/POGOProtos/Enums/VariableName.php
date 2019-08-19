@@ -173,5 +173,9 @@ class VariableName
      * Generated from protobuf enum <code>POI_NAME = 1031;</code>
      */
     const POI_NAME = 1031;
+    /**
+     * Generated from protobuf enum <code>FRIEND_ID = 1032;</code>
+     */
+    const FRIEND_ID = 1032;
 }
 

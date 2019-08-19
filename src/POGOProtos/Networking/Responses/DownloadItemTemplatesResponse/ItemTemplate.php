@@ -177,6 +177,18 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.POGOProtos.Settings.Master.SmeargleMovesSettings smeargle_moves_settings = 44;</code>
      */
     private $smeargle_moves_settings = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokecoinPurchaseDisplayGmt pokecoin_purchase_display_gmt = 45;</code>
+     */
+    private $pokecoin_purchase_display_gmt = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.AdventureSyncV2Gmt adventure_sync_v2_gmt = 46;</code>
+     */
+    private $adventure_sync_v2_gmt = null;
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.LoadingScreen loading_screen_settings = 47;</code>
+     */
+    private $loading_screen_settings = null;
 
     /**
      * Constructor.
@@ -225,6 +237,9 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Settings\Master\OnboardingV2Settings $onboarding_v2_settings
      *     @type \POGOProtos\Settings\Master\PartyRecommendationSettings $party_recommendation_settings
      *     @type \POGOProtos\Settings\Master\SmeargleMovesSettings $smeargle_moves_settings
+     *     @type \POGOProtos\Settings\Master\PokecoinPurchaseDisplayGmt $pokecoin_purchase_display_gmt
+     *     @type \POGOProtos\Settings\Master\AdventureSyncV2Gmt $adventure_sync_v2_gmt
+     *     @type \POGOProtos\Settings\Master\LoadingScreen $loading_screen_settings
      * }
      */
     public function __construct($data = NULL) {
@@ -1130,6 +1145,72 @@ class ItemTemplate extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\SmeargleMovesSettings::class);
         $this->smeargle_moves_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokecoinPurchaseDisplayGmt pokecoin_purchase_display_gmt = 45;</code>
+     * @return \POGOProtos\Settings\Master\PokecoinPurchaseDisplayGmt
+     */
+    public function getPokecoinPurchaseDisplayGmt()
+    {
+        return $this->pokecoin_purchase_display_gmt;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.PokecoinPurchaseDisplayGmt pokecoin_purchase_display_gmt = 45;</code>
+     * @param \POGOProtos\Settings\Master\PokecoinPurchaseDisplayGmt $var
+     * @return $this
+     */
+    public function setPokecoinPurchaseDisplayGmt($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\PokecoinPurchaseDisplayGmt::class);
+        $this->pokecoin_purchase_display_gmt = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.AdventureSyncV2Gmt adventure_sync_v2_gmt = 46;</code>
+     * @return \POGOProtos\Settings\Master\AdventureSyncV2Gmt
+     */
+    public function getAdventureSyncV2Gmt()
+    {
+        return $this->adventure_sync_v2_gmt;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.AdventureSyncV2Gmt adventure_sync_v2_gmt = 46;</code>
+     * @param \POGOProtos\Settings\Master\AdventureSyncV2Gmt $var
+     * @return $this
+     */
+    public function setAdventureSyncV2Gmt($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\AdventureSyncV2Gmt::class);
+        $this->adventure_sync_v2_gmt = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.LoadingScreen loading_screen_settings = 47;</code>
+     * @return \POGOProtos\Settings\Master\LoadingScreen
+     */
+    public function getLoadingScreenSettings()
+    {
+        return $this->loading_screen_settings;
+    }
+
+    /**
+     * Generated from protobuf field <code>.POGOProtos.Settings.Master.LoadingScreen loading_screen_settings = 47;</code>
+     * @param \POGOProtos\Settings\Master\LoadingScreen $var
+     * @return $this
+     */
+    public function setLoadingScreenSettings($var)
+    {
+        GPBUtil::checkMessage($var, \POGOProtos\Settings\Master\LoadingScreen::class);
+        $this->loading_screen_settings = $var;
 
         return $this;
     }

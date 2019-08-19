@@ -49,6 +49,14 @@ class CombatNpcTrainer extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string trainer_quote = 10;</code>
      */
     private $trainer_quote = '';
+    /**
+     * Generated from protobuf field <code>string icon_url = 11;</code>
+     */
+    private $icon_url = '';
+    /**
+     * Generated from protobuf field <code>string backdrop_image_bundle = 12;</code>
+     */
+    private $backdrop_image_bundle = '';
 
     /**
      * Constructor.
@@ -65,6 +73,8 @@ class CombatNpcTrainer extends \Google\Protobuf\Internal\Message
      *     @type \POGOProtos\Data\NpcPokemon[]|\Google\Protobuf\Internal\RepeatedField $available_pokemon
      *     @type string $trainer_title
      *     @type string $trainer_quote
+     *     @type string $icon_url
+     *     @type string $backdrop_image_bundle
      * }
      */
     public function __construct($data = NULL) {
@@ -266,6 +276,50 @@ class CombatNpcTrainer extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->trainer_quote = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string icon_url = 11;</code>
+     * @return string
+     */
+    public function getIconUrl()
+    {
+        return $this->icon_url;
+    }
+
+    /**
+     * Generated from protobuf field <code>string icon_url = 11;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setIconUrl($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->icon_url = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string backdrop_image_bundle = 12;</code>
+     * @return string
+     */
+    public function getBackdropImageBundle()
+    {
+        return $this->backdrop_image_bundle;
+    }
+
+    /**
+     * Generated from protobuf field <code>string backdrop_image_bundle = 12;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setBackdropImageBundle($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->backdrop_image_bundle = $var;
 
         return $this;
     }

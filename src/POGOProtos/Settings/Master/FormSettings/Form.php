@@ -21,6 +21,10 @@ class Form extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 asset_bundle_value = 2;</code>
      */
     private $asset_bundle_value = 0;
+    /**
+     * Generated from protobuf field <code>string asset_bundle_suffix = 3;</code>
+     */
+    private $asset_bundle_suffix = '';
 
     /**
      * Constructor.
@@ -30,6 +34,7 @@ class Form extends \Google\Protobuf\Internal\Message
      *
      *     @type int $form
      *     @type int $asset_bundle_value
+     *     @type string $asset_bundle_suffix
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +82,28 @@ class Form extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->asset_bundle_value = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string asset_bundle_suffix = 3;</code>
+     * @return string
+     */
+    public function getAssetBundleSuffix()
+    {
+        return $this->asset_bundle_suffix;
+    }
+
+    /**
+     * Generated from protobuf field <code>string asset_bundle_suffix = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAssetBundleSuffix($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->asset_bundle_suffix = $var;
 
         return $this;
     }
